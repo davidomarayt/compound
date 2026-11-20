@@ -82,6 +82,6 @@ Evidence that this design works would include adoption by serious workflow provi
 
 The 17 November change is commercially meaningful, but still early. **It changes the invoice path, not the fundamental economics of correct outcomes.** An agent that fails to finish a task is expensive whether the invoice goes to the developer or the enterprise.
 
-See the [Anthropic private-company research hub](/companies/anthropic/) and our analysis of [always-on agent recovery costs](/wealth/anthropic-always-on-agents-business-case-permissions-cost/) for the wider product economics.
+See the [Anthropic stock research profile](/stocks/ant/) and our analysis of [always-on agent recovery costs](/wealth/anthropic-always-on-agents-business-case-permissions-cost/) for the wider product economics.
 
 *Research checked 18 November 2026. Linked billing was announced in Anthropic platform notes dated 17 November. All monetary figures are hypothetical sensitivity cases. Cover: TechCrunch / Kimberly White, September 2023, CC BY 2.0; unrelated archival interview photograph.*

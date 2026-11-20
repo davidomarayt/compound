@@ -11,10 +11,13 @@ CONDITIONS_URL = "/health/conditions/"
 MEASURES = {
     "prevalence": "Prevalence estimate",
     "registry": "Registry or care count",
-    "notifications": "Disease notifications",
+    "notifications": "Infectious disease notifications",
+    "procedure": "Procedures reported",
     "diagnoses": "New diagnoses",
     "hospital": "Hospital activity",
     "service": "Service activity",
+    "genetic": "Genetic frequency",
+    "mortality": "Deaths",
 }
 SECTIONS = (
     ("symptoms", "Symptoms and signs"),
@@ -32,6 +35,73 @@ TEST_SECTIONS = (
     ("complications", "After the test"),
     ("help", "Getting your results and advice"),
 )
+PROCEDURE_SECTIONS = (
+    ("symptoms", "Why it is offered"),
+    ("causes", "What it involves"),
+    ("diagnosis", "How to prepare"),
+    ("care", "What happens on the day"),
+    ("complications", "Risks and recovery"),
+    ("help", "Follow-up and getting help"),
+)
+SERVICE_SECTIONS = (
+    ("symptoms", "Who the service is for"),
+    ("causes", "How it works"),
+    ("diagnosis", "What to consider"),
+    ("care", "What to expect"),
+    ("complications", "Support and follow-up"),
+    ("help", "Where to get advice"),
+)
+SYMPTOM_SECTIONS = (
+    ("symptoms", "What you may notice"),
+    ("causes", "Possible causes"),
+    ("diagnosis", "How it is assessed"),
+    ("care", "Care and follow-up"),
+    ("complications", "What can happen next"),
+    ("help", "When to get help"),
+)
+TOPIC_SECTIONS = (
+    ("symptoms", "What to look out for"),
+    ("causes", "What to know"),
+    ("diagnosis", "Assessment and practical checks"),
+    ("care", "Practical next steps"),
+    ("complications", "Support and follow-up"),
+    ("help", "When to get help"),
+)
+CONTRACEPTION_SECTIONS = (
+    ("symptoms", "When this option may suit you"),
+    ("causes", "How it works"),
+    ("diagnosis", "What to consider"),
+    ("care", "How to use or access it"),
+    ("complications", "Side effects and practical considerations"),
+    ("help", "Where to get advice"),
+)
+TREATMENT_SECTIONS = (
+    ("symptoms", "When it may be used"),
+    ("causes", "How it works"),
+    ("diagnosis", "What to consider before starting"),
+    ("care", "What to expect during treatment"),
+    ("complications", "Side effects and follow-up"),
+    ("help", "When to get advice"),
+)
+VACCINATION_SECTIONS = (
+    ("symptoms", "Who is offered the vaccine"),
+    ("causes", "What it protects against"),
+    ("diagnosis", "What to know before vaccination"),
+    ("care", "What to expect"),
+    ("complications", "Side effects and follow-up"),
+    ("help", "Where to get advice"),
+)
+GUIDE_FORMATS = {
+    "condition": (SECTIONS, "How common is it in Ireland?", "MedicalCondition"),
+    "symptom": (SYMPTOM_SECTIONS, "Irish data on this symptom", "MedicalSymptom"),
+    "topic": (TOPIC_SECTIONS, "Irish data and evidence", "Thing"),
+    "contraception": (CONTRACEPTION_SECTIONS, "Irish contraception figures", "Thing"),
+    "treatment": (TREATMENT_SECTIONS, "Irish treatment figures", "MedicalTherapy"),
+    "vaccination": (VACCINATION_SECTIONS, "Irish vaccination figures", "MedicalProcedure"),
+    "test": (TEST_SECTIONS, "Irish testing figures", "MedicalTest"),
+    "procedure": (PROCEDURE_SECTIONS, "Irish procedure figures", "MedicalProcedure"),
+    "service": (SERVICE_SECTIONS, "Irish service figures", "Service"),
+}
 
 
 def load_conditions(content, article_urls):
@@ -66,7 +136,8 @@ def load_conditions(content, article_urls):
             source = sources[record["source"]]
             if urlsplit(source["url"]).scheme != "https":
                 raise ValueError(f"Invalid evidence source: {slug}")
-            records.append({**record, "label": MEASURES[record["measure"]], "citation": source})
+            measure_label = MEASURES[record["measure"]]
+            records.append({**record, "label": record.get("label", measure_label), "citation": source})
         guide = guides.get(slug)
         if guide:
             has_evidence_gap = bool(guide.get("evidence_gap", "").strip() and guide.get("sources"))
@@ -74,16 +145,25 @@ def load_conditions(content, article_urls):
                 not guide.get(key) for key, _ in SECTIONS
             ):
                 raise ValueError(f"Incomplete condition guide: {slug}")
-            for label, target in guide.get("links", {}).items():
-                if target not in article_urls:
-                    raise ValueError(f"Unknown related article for {slug}: {label} ({target})")
+            for links_key in ("links", "care_links"):
+                for label, target in guide.get(links_key, {}).items():
+                    if target not in article_urls:
+                        raise ValueError(f"Unknown related article for {slug}: {label} ({target})")
+        kind = guide.get("kind", "condition") if guide else "condition"
+        if kind not in GUIDE_FORMATS:
+            raise ValueError(f"Unknown condition guide type for {slug}: {kind}")
+        sections, evidence_heading, schema_type = GUIDE_FORMATS[kind]
+        if guide and (headings := guide.get("headings")):
+            sections = tuple((key, headings.get(key, label)) for key, label in sections)
         entry = {
             "name": name,
             "official_url": official_url,
             "url": f"{CONDITIONS_URL}{slug}/" if guide else official_url,
             "guide": guide,
             "records": records,
-            "sections": TEST_SECTIONS if guide and guide.get("kind") == "test" else SECTIONS,
+            "sections": sections,
+            "evidence_heading": evidence_heading,
+            "schema_type": schema_type,
         }
         by_slug[slug] = entry
         seen_urls[official_url] = entry

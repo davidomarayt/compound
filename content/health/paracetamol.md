@@ -91,11 +91,7 @@ A temperature reading and comfort are different outcomes. For pain, look at chan
 
 ## What information helps if there may have been a double dose?
 
-Have the packs, strengths, times and estimated amounts available. Seek urgent advice and pass on anything uncertain rather than waiting for symptoms.
-
-## How to make a medicine record useful if there is a possible double dose
-
-Write the time, brand, ingredient, strength and estimated amount for each product. Include cold remedies and prescription combinations, not just the medicine you think of as paracetamol. If you cannot remember an amount, say it is uncertain rather than filling the gap with an estimate you are not confident about. Have the packaging and the record ready when you contact a healthcare professional. Suspected overdose needs urgent advice even if you feel fine. [HSE paracetamol guidance](https://www2.hse.ie/medicines/paracetamol/)
+Get urgent advice straight away, even if you feel well. If you can, have the packs ready and tell the healthcare professional the brand, active ingredients, strength, amount and time for each product, including cold remedies and prescription combinations. Say which details are uncertain. [HSE paracetamol guidance](https://www2.hse.ie/medicines/paracetamol/)
 
 ## Why the first hours can be misleading
 

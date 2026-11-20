@@ -78,6 +78,12 @@
           <span class="pia-status-tag">{{ provider.status }}</span>
         </div>
         <p class="pia-provider-summary">{{ provider.statement }}</p>
+        {% if provider.related_brand_source_url %}
+        <aside class="pia-small" aria-label="Related official provider-brand announcement">
+          <p><strong>{{ provider.related_brand_name }} (related group insurer):</strong> {{ provider.related_brand_statement }}</p>
+          <p>Statement checked {{ provider.related_brand_checked }}. <a href="{{ provider.related_brand_source_url }}" rel="noopener noreferrer" target="_blank">Read the insurer's original IIA FAQ ↗</a>.</p>
+        </aside>
+        {% endif %}
         <dl class="pia-fee-facts">
           <div><dt>Opening availability</dt><dd>{{ provider.availability }}</dd></div>
           <div><dt>Account / ongoing fee</dt><dd>{{ provider.annual_fee }}</dd></div>

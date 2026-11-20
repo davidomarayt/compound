@@ -42,7 +42,22 @@ def test_missing_evidence_requires_a_documented_gap(tmp_path, catalogue):
         load_conditions(tmp_path, set())
 
 
-def test_test_guide_formats_documented_irish_data_gap(tmp_path, catalogue):
+@pytest.mark.parametrize(
+    ("kind", "schema_type", "section", "evidence_heading"),
+    [
+        ("test", "MedicalTest", "Preparing for the appointment", "Irish testing figures"),
+        ("procedure", "MedicalProcedure", "How to prepare", "Irish procedure figures"),
+        ("service", "Service", "What to consider", "Irish service figures"),
+        ("symptom", "MedicalSymptom", "How it is assessed", "Irish data on this symptom"),
+        ("topic", "Thing", "What to know", "Irish data and evidence"),
+        ("contraception", "Thing", "How to use or access it", "Irish contraception figures"),
+        ("vaccination", "MedicalProcedure", "What it protects against", "Irish vaccination figures"),
+    ],
+)
+def test_guide_formats_documented_irish_data_gap(
+    tmp_path, catalogue, kind, schema_type, section, evidence_heading
+):
+    catalogue["guides"]["test-topic"]["kind"] = kind
     catalogue["guides"]["test-topic"]["evidence_gap"] = "The source gives no national count."
     (tmp_path / "health-conditions.yml").write_text(yaml.safe_dump(catalogue), encoding="utf-8")
     directory = load_conditions(tmp_path, set())
@@ -63,8 +78,26 @@ def test_test_guide_formats_documented_irish_data_gap(tmp_path, catalogue):
         adsense={"slots": {}},
         analytics={},
     )
-    assert '"@type": "MedicalTest"' in html
-    assert "<h2>Preparing for the appointment</h2>" in html
-    assert "<h2>Irish testing figures</h2>" in html
+    assert f'"@type": "{schema_type}"' in html
+    assert f"<h2>{section}</h2>" in html
+    assert f"<h2>{evidence_heading}</h2>" in html
     assert "The source gives no national count." in html
     assert "<figcaption>" not in html
+
+
+def test_abortion_uses_procedure_language():
+    content = ROOT / "content"
+    editorial = yaml.safe_load((content / "health-conditions.yml").read_text(encoding="utf-8"))
+    related_urls = {
+        url
+        for guide in editorial["guides"].values()
+        for key in ("links", "care_links")
+        for url in guide.get(key, {}).values()
+    }
+    directory = load_conditions(content, related_urls)
+    entry = next(item for item in directory["featured"] if item["url"] == "/health/conditions/abortion/")
+
+    assert entry["schema_type"] == "MedicalProcedure"
+    assert dict(entry["sections"])["complications"] == "Aftercare and warning signs"
+    assert entry["records"][0]["measure"] == "procedure"
+    assert entry["records"][0]["label"] == "Reported terminations of pregnancy"

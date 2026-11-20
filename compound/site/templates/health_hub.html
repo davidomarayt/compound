@@ -55,10 +55,13 @@
       <p>Understand everyday medicines, explore health topics and use free calculators built for readers in Ireland.</p>
       <div class="health-masthead-links">
         {% if conditions_url %}
-        <a class="health-hub-button" href="{{ conditions_url }}">Health conditions A–Z</a>
+        <a class="health-hub-button" href="{{ conditions_url }}">Conditions A–Z</a>
         {% endif %}
-        <a class="health-masthead-link" href="#health-topics">Browse health topics</a>
+        {% if medicines_hub_url %}
+        <a class="health-hub-button" href="{{ medicines_hub_url }}">Common medicines</a>
+        {% endif %}
         <a class="health-masthead-link" href="#health-calculators">Find a calculator</a>
+        <a class="health-masthead-link" href="#health-topics">Browse health topics</a>
       </div>
     </div>
     <img src="/static/images/health.jpg" alt="" width="600" height="400" fetchpriority="high">

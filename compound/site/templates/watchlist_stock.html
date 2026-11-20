@@ -14,6 +14,12 @@
 <div class="company-fact-strip"><span><strong>Ticker:</strong> {{ company.ticker }}</span><span><strong>Listing:</strong> {{ company.exchange }}</span><span><strong>Home market:</strong> {{ company.market }}</span><span><strong>Industry:</strong> {{ company.sector }}</span></div>
 <p class="earnings-directory-source">Primary listing reference: <a href="{{ company.source }}" rel="noopener noreferrer" target="_blank">{{ company.exchange }} ↗</a>. For ADRs, prices refer to the named depositary receipt rather than the local ordinary share.</p>
 </div>
+{% if company.latest_development %}
+<section class="earnings-section earnings-method" aria-label="Latest verified company development">
+<div><h2>Latest verified development</h2><p><time datetime="{{ company.latest_development.date }}">{{ company.latest_development.date }}</time></p></div>
+<div><p>{{ company.latest_development.text }}</p><p><a href="{{ company.latest_development.source }}" rel="noopener noreferrer" target="_blank">Read the original source</a></p></div>
+</section>
+{% endif %}
 {% if report %}{% include "_company_quarters.html" %}{% elif not release %}
 <section class="earnings-section" id="earnings-company-results"><div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified filing</span></div><p>Compound checks this company's official filings. International reporting formats require additional verification; no quarterly figures are invented and no separate quarterly articles are automatically published.</p></section>{% endif %}
 {# Watchlist pages get at most one slot after a verified report plus related coverage. #}

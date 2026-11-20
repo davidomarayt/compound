@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 391
+- Published editorial articles and guides: 399
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 270
+## Wealth articles and guides — 278
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -132,8 +132,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?](https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/)
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/)
 - [Anthropic IPO Opens at $111.50. Here’s the ANT Lock-Up Release Schedule](https://compound.ie/news/anthropic-ipo-lockup-release-schedule/)
+- [Anthropic IPO: $83 Offer, $111.50 Opening and $97.17 First Close](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/)
 - [Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?](https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/)
-- [Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/)
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/)
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/)
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/)
@@ -173,6 +173,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [ConocoPhillips Returned 45% of Cash Flow. How Durable Is It When Price Does the Work?](https://compound.ie/wealth/conocophillips-cash-flow-shareholder-returns/)
 - [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/)
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/)
+- [D.R. Horton Returned $4.1 Billion as Home Demand Softened. Can It Continue?](https://compound.ie/wealth/dr-horton-cash-returns-land-control/)
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/)
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/)
 - [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/)
@@ -199,6 +200,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/)
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)
+- [Google Chose Blue Origin for Space-Based AI Computing. Who Captures the Economics?](https://compound.ie/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
 - [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
 - [GTA 6 Release: How Many Copies Could It Sell and What Does It Mean for TTWO?](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
@@ -235,7 +237,9 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/)
 - [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/)
 - [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/)
+- [Irish Employment Hits a Record, but 130,200 Part-Time Workers Want More Hours](https://compound.ie/news/ireland-employment-q3-2026-underemployment/)
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/)
+- [Irish House Prices Rose 4.7%: What the New €400,000 Median Means](https://compound.ie/news/irish-house-prices-september-2026/)
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
 - [Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates](https://compound.ie/news/irish-farm-prices-2026-milk-fertiliser-cso/)
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/)
@@ -287,17 +291,20 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/)
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/)
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/)
+- [One in Four Irish Pupils Used Back-to-School Support: What Families Can Check](https://compound.ie/news/irish-school-family-supports-cso-2026/)
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/)
 - [onsemi's Margins Are Recovering. How Much Is AI Doing?](https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/)
 - [OpenAI Is Building a Business Channel Inside ChatGPT. Who Captures the Value?](https://compound.ie/wealth/openai-business-agents-chatgpt-merchant-economics-2026/)
 - [OpenAI Launches GPT-6.2 Astra and Sol: The Cost of the New AI Race](https://compound.ie/news/openai-gpt-6-2-astra-sol-pricing-performance-2026/)
 - [OpenAI Says NATO Used Up to 300 Billion Tokens a Month. What Does That Prove?](https://compound.ie/wealth/openai-nato-cybersecurity-300-billion-tokens-economics/)
 - [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/)
+- [OpenAI's Accounting Plugin: Can AI Reconcile the Books Without Creating New Errors?](https://compound.ie/wealth/openai-accounting-plugin-bookkeeping-controls-economics/)
 - [OpenAI's Astra for Law Leads a Legal AI Benchmark. Why Does It Still Miss Four in Five Tasks?](https://compound.ie/wealth/openai-astra-law-legal-benchmark-reliability-economics/)
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/)
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/)
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/)
 - [Palmer Luckey's SLAB Project: $1B Valuation, Costs and Floating City Economics](https://compound.ie/news/palmer-luckey-slab-project-cost-valuation-floating-city/)
+- [Palo Alto Networks Grew 39%, but Gross Margin Fell 6.2 Points. What Changed?](https://compound.ie/wealth/palo-alto-growth-margin-acquisitions/)
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/)
 - [PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each](https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/)
 - [Pension Funds and Fees in Ireland: What to Check](https://compound.ie/wealth/pension-funds-fees-ireland/)
@@ -366,6 +373,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/)
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/)
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/)
+- [Walmart Spent $22.6 Billion on Capex. Is Its New Profit Mix Paying for It?](https://compound.ie/wealth/walmart-profit-mix-capex-cash/)
 - [Was Tesla's Cybertruck a Failure? The Numbers Behind the Wind-Down](https://compound.ie/news/tesla-cybertruck-success-failure-numbers/)
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/)
 - [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/)

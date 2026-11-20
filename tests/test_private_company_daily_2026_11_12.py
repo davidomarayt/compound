@@ -59,7 +59,8 @@ def test_daily_private_company_unique_sourced_real_photos():
         assert "CC BY 2.0" in meta["hero_image_credit"]
         assert "company-" + r["slug"] in meta["tags"]
         assert meta["hero_image_source"] == r["image_source"]
-        assert r["profile_url"].replace("https://compound.ie","") in raw
+        profile_path = "/stocks/ant/" if r["slug"] == "anthropic" else r["profile_url"].removeprefix("https://compound.ie")
+        assert profile_path in raw
         assert len(raw.split()) > 680
     watchlist = json.loads((ROOT / "content/company-watchlist.json").read_text())
     profiles = historical_profile_index(watchlist)
@@ -92,7 +93,8 @@ def test_daily_private_company_13_nov_stories_are_distinct_and_photo_sourced():
         assert meta["hero_image_url"] == record["photo_download_url"]
         assert meta["image"].endswith(Path(record["article_path"]).stem + ".jpg")
         assert "company-" + record["slug"] in meta["tags"]
-        assert record["profile_url"].removeprefix("https://compound.ie") in article
+        profile_path = "/stocks/ant/" if record["slug"] == "anthropic" else record["profile_url"].removeprefix("https://compound.ie")
+        assert profile_path in article
         assert record["primary_source_urls"][0] in article
         assert len(article.split()) >= 900
         assert_current_profile_uses_latest_sourced_disclosure(profiles[record["slug"]], record["slug"], records[record["slug"]])

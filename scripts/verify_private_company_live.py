@@ -19,6 +19,14 @@ SITE = "https://compound.ie"
 AD_LOADER = "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="
 
 
+def company_profile_paths() -> dict[str, str]:
+    watchlist = json.loads((ROOT / "content/company-watchlist.json").read_text(encoding="utf-8"))
+    return {
+        company["historical_private_slug"]: f'/stocks/{company["slug"]}/'
+        for company in watchlist["listed"] if company.get("historical_private_slug")
+    }
+
+
 def fetch(url: str, *, binary: bool = False) -> bytes:
     assert url.startswith(SITE + "/"), f"Unexpected host: {url}"
     command = [
@@ -44,6 +52,7 @@ def verify() -> None:
         print(f"Latest private-company ledger is older than seven days: {ledger_date}; skipping")
         return
     ledger = json.loads(ledger_file.read_text(encoding="utf-8"))
+    migrated_profiles = company_profile_paths()
     count = 0
     for story in ledger.get("articles", []):
         if story.get("status") in {"blocked", "skipped", "held_for_review", "failed"}:
@@ -58,7 +67,8 @@ def verify() -> None:
             fingerprint = story.get("live_required_fingerprint")
             assert fingerprint, f"Missing distinct update fingerprint in ledger: {url}"
             assert fingerprint in html, f"Updated canonical content not yet publicly visible: {url}"
-        assert f'href="/companies/{story["slug"]}/"' in html, url
+        profile_path = migrated_profiles.get(story["slug"], f'/companies/{story["slug"]}/')
+        assert f'href="{profile_path}"' in html, url
 
         slug = Path(urlparse(url).path.rstrip("/")).name
         social = f"{SITE}/static/discover/{slug}-16x9.webp"
@@ -71,7 +81,7 @@ def verify() -> None:
         photo_bytes = fetch(cover, binary=True)
         assert len(photo_bytes) > 50000 and photo_bytes[:3] == b"\xff\xd8\xff", cover
 
-        profile = f"{SITE}/companies/{story['slug']}/"
+        profile = SITE + profile_path
         hub = fetch(profile).decode("utf-8")
         assert f'href="{urlparse(url).path}"' in hub, f"Exact canonical article link missing from profile: {profile}"
         assert AD_LOADER in hub, f"Profile ad loader missing: {profile}"

@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 from urllib.parse import urlparse
 from PIL import Image
+from verify_private_company_live import company_profile_paths
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
 LEDGER_DIR = ROOT / "monitoring/private-company-publications"
@@ -15,6 +16,7 @@ def check() -> None:
     assert len(data["articles"]) == 3 and len({x["slug"] for x in data["articles"]}) == 3
     sitemap = (PUBLIC / "sitemap.xml").read_text(encoding="utf-8")
     audit = os.environ.get("COMPOUND_AUDIT_MODE", "").lower() in ("1", "true", "yes")
+    migrated_profiles = company_profile_paths()
     for item in data["articles"]:
         url = item["canonical_url"]
         loc = urlparse(url)
@@ -45,15 +47,16 @@ def check() -> None:
         assert f'property="og:image" content="https://compound.ie{social_rel}"' in html, url
         assert f'name="twitter:image" content="https://compound.ie{social_rel}"' in html, url
         assert item["image_source"] in html, url
-        hub = PUBLIC / "companies" / item["slug"] / "index.html"
+        profile_path = migrated_profiles.get(item["slug"], f'/companies/{item["slug"]}/')
+        hub = PUBLIC / profile_path.strip("/") / "index.html"
         assert hub.is_file(), f"Missing profile: {hub}"
         hub_html = hub.read_text(encoding="utf-8")
         assert f'href="{loc.path}"' in hub_html, f"Missing profile backlink: {url}"
-        assert f'href="/companies/{item["slug"]}/"' in html, f"Missing article backlink: {url}"
+        assert f'href="{profile_path}"' in html, f"Missing article backlink: {url}"
         assert f'<time datetime="{item["event_date"]}">' in hub_html or "Latest verified development" in hub_html
         if not audit:
             assert "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" in hub_html, f"Missing profile ad loader: {url}"
-        assert item["profile_url"] in sitemap
+        assert f"<loc>https://compound.ie{profile_path}</loc>" in sitemap
         print(f"PASS: {item['company']} canonical, research, licence, cover, social and reciprocal profile links")
 if __name__ == "__main__":
     check()

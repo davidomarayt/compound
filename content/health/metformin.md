@@ -102,4 +102,4 @@ If your illness affects eating or drinking, or if you have a procedure planned, 
 
 ## Related guides
 
-[Semaglutide](/health/medicines/semaglutide/) · [Tirzepatide](/health/medicines/tirzepatide/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)
+[Type 2 diabetes: diagnosis and follow-up](/health/conditions/type-2-diabetes/) · [Semaglutide](/health/medicines/semaglutide/) · [Tirzepatide](/health/medicines/tirzepatide/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)

@@ -10,7 +10,7 @@ reviewed: '2026-10-21'
 approved_by: User requested a researched editorial article and publication
 summary: A huge accounting loss does not establish a cash crisis. Anthropic’s prospective investors still need to interrogate its valuation, cash generation and spending commitments.
 meta_description: Anthropic’s reported $80.7bn loss includes a $72bn non-cash charge. Our editorial examines cash burn, Q3 profitability and the proposed IPO valuation.
-tags: [stocks, company-research, anthropic, artificial-intelligence, ipo, editorial]
+tags: [stock-ant, stocks, company-research, anthropic, artificial-intelligence, ipo, editorial]
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg
 hero_image_alt: Dario Amodei speaking at TechCrunch Disrupt on 20 September 2023; archival photograph
 hero_image_credit: Kimberly White/Getty Images for TechCrunch, via Wikimedia Commons — CC BY 2.0; archival, 20 September 2023
@@ -95,7 +95,7 @@ Before making a judgement about financial runway or valuation, investors need an
 - When do infrastructure payments fall due, and what flexibility exists?
 - What future margins and growth are already assumed in the offer price?
 
-Our [Anthropic company profile](/companies/anthropic/) provides a starting point for following the business. Readers assessing the wider AI investment cycle can also compare [Amazon](/stocks/amzn/), [Alphabet](/stocks/googl/) and [Microsoft](/stocks/msft/), while keeping each company’s economics separate.
+Our [Anthropic company profile](/stocks/ant/) provides a starting point for following the business. Readers assessing the wider AI investment cycle can also compare [Amazon](/stocks/amzn/), [Alphabet](/stocks/googl/) and [Microsoft](/stocks/msft/), while keeping each company’s economics separate.
 
 The editorial judgement is straightforward: the headline loss does not establish imminent bankruptcy, and explaining away that loss does not establish an attractive investment.
 
