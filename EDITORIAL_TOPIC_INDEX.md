@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 399 published articles and guides, 69 tools,
+**Included:** 400 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -95,6 +95,7 @@ For the complete register (including 510+ company profiles), open
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/) — **Wealth**
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/) — **Wealth**
 - [Diazepam in Ireland | GABA signalling, sedation and persistence](https://compound.ie/health/medicines/diazepam/) — **Health**
+- [Did Claude Solve the Riemann Hypothesis? What the Proof Claim Says](https://compound.ie/news/claude-riemann-hypothesis-proof/) — **Wealth**
 - [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/) — **Wealth**
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/) — **Wealth**
 - [Do I get public holiday pay if I don’t normally work that day?](https://compound.ie/wealth/public-holiday-pay-ireland-part-time/) — **Wealth**
