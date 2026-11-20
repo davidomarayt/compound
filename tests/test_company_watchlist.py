@@ -231,7 +231,7 @@ def test_anthropic_listing_preserves_legacy_company_route_and_research(settings)
 title: Anthropic before the IPO
 slug: anthropic-legacy-analysis
 pillar: wealth
-date: 2026-11-18
+date: 2026-10-10
 summary: Original pre-IPO research.
 tags: [company-anthropic, company-research]
 ---
