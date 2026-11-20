@@ -1,12 +1,18 @@
 {
-  "checked": "2026-11-19",
-  "companies_checked": 10,
+  "checked": "2026-11-20",
+  "companies_checked": 11,
   "companies": {
     "spcx": {
       "company": "SpaceX",
       "official_source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/",
       "regulatory": "SEC verified issuer: SPACE EXPLORATION TECHNOLOGIES CORP (1181412)",
       "official_source_status": "Checked 0 relevant investor links"
+    },
+    "ant": {
+      "company": "Anthropic",
+      "official_source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "regulatory": "Local-market / non-SEC disclosures",
+      "official_source_status": "Unavailable; retry next run: The read operation timed out"
     },
     "tsm": {
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
