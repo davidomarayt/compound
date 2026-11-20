@@ -155,7 +155,7 @@ sources:
     url: https://about.hse.ie/api/v2/download-file/file_based_publications/IMIS_2024_National_Report.pdf
   imj_flush:
     name: Irish Medical Journal, prevalence and severity of menopausal symptoms study
-    url: https://imj.ie/wp-content/uploads/2025/01/Prevalence-and-severity-of-menopausal-symptoms-in-peri-and-post-menopausal-women.pdf
+    url: https://research.tus.ie/en/publications/prevalence-and-severity-of-menopausal-symptoms-in-peri-and-post-m/
   irish_amp_ps:
     name: HSE 2024 Antimicrobial Point Prevalence Survey in Acute Hospitals, appendix
     url: https://assets.hse.ie/media/documents/Antimicrobial_Point_Prevalence_Survey_in_Acute_Hospitals_in_Ireland_2024_Appendix_2.pdf
