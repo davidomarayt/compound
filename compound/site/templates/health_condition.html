@@ -7,7 +7,7 @@
 <meta property="og:url" content="{{ site_url }}{{ entry.url }}">
 {% endblock %}
 {% block head %}
-<link rel="stylesheet" href="/static/health-conditions.css?v=1">
+<link rel="stylesheet" href="/static/health-conditions.css?v=2">
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "MedicalWebPage", "name": title, "url": site_url ~ entry.url, "inLanguage": "en-IE", "description": entry.guide.summary, "about": {"@type": entry.schema_type, "name": entry.name}, "publisher": {"@type": "Organization", "name": "Compound", "url": site_url}}|tojson }}</script>
 {% endblock %}
 {% block content %}
@@ -17,6 +17,15 @@
     <div><h1>{{ entry.name }}</h1><p>{{ entry.guide.summary }}</p><small>Sources checked <time datetime="{{ directory.checked }}">{{ directory.checked }}</time></small></div>
   </header>
   {% if entry.guide.emergency %}<p class="condition-emergency">{{ entry.guide.emergency }} <a href="tel:112">112</a> or <a href="tel:999">999</a>.</p>{% endif %}
+  {% if entry.pharmacy_eligibility %}
+  <aside class="condition-copy condition-pharmacy" aria-labelledby="condition-pharmacy-heading">
+    <h2 id="condition-pharmacy-heading">Can a pharmacist treat this?</h2>
+    <p>{{ entry.pharmacy_eligibility }} The pharmacist will check whether the service is suitable for you and can prescribe medicine if appropriate.</p>
+    <p>The pharmacy tells you the consultation fee upfront. The fee applies even if you have a Medical Card. Prescribed medicine may be covered separately through your Medical Card or the Drugs Payment Scheme.</p>
+    <p><a href="https://www2.hse.ie/services/pharmacies-common-conditions/">Find a participating pharmacy</a>. Some pharmacies take walk-ins and others ask you to book.</p>
+    <p><a href="https://www.hse.ie/services/common-conditions-service/">HSE Common Conditions Service eligibility and fees</a></p>
+  </aside>
+  {% endif %}
   <nav class="condition-toc" aria-label="On this page"><a href="#irish-data">Irish data</a>{% for key, label in entry.sections %}<a href="#{{ key }}">{{ label }}</a>{% endfor %}</nav>
   <section class="condition-copy" id="irish-data">
     <h2>{{ entry.evidence_heading }}</h2>
