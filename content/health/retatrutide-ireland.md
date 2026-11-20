@@ -1,755 +1,192 @@
 ---
-title: 'Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?'
-seo_title: 'Retatrutide Ireland: Availability, Results & GLP-1 Comparison'
+title: 'Retatrutide in Ireland: approval, Phase 3 results and side effects'
+seo_title: 'Retatrutide Ireland: Approval, Results & Side Effects'
 slug: retatrutide-ireland
-news_image_query: "clinical weight loss research doctor patient consultation"
 pillar: health
 draft: false
 publication_status: published
 date: 2026-09-24
-reviewed: 2026-09-24
-summary: 'Retatrutide has produced some of the largest weight-loss results yet reported in late-stage obesity trials, but it is still investigational and is not approved in Ireland. This guide explains how it works, what the Phase 2 and Phase 3 data actually show, where it stands in Ireland and how it compares with Mounjaro, Wegovy and Ozempic.'
-meta_description: 'Retatrutide is not approved in Ireland in 2026. See its Phase 2/3 weight-loss results, safety, likely availability and how it compares with Mounjaro, Wegovy and Ozempic.'
+research_checked: 2026-11-20
+editorial_review_status: pending
+summary: 'Retatrutide remains an investigational medicine with no Irish pharmacy launch date. The published Phase 3 obesity trial found 25.0% average weight loss at 80 weeks in one group. Here’s how to read the results, what side effects were reported and how the evidence compares with Mounjaro and Wegovy.'
+meta_description: 'Is retatrutide approved in Ireland? Learn what Phase 3 trials found, why two weight-loss figures are quoted, the side effects and how it compares with Mounjaro.'
 tags: [retatrutide, glp-1, mounjaro, wegovy, ozempic, obesity, weight-loss, medicines, ireland]
-related_tools:
-- weight-loss-calculator
-- bmi-calculator
+hero_image_url: https://images.pexels.com/photos/7659869/pexels-photo-7659869.jpeg?auto=compress&cs=tinysrgb&w=1600
+hero_image_alt: 'A clinician holding a clipboard during a patient consultation.'
+hero_image_credit: 'Thirdman on Pexels, Pexels License. Illustrative consultation photograph, April 2021.'
+hero_image_source: https://www.pexels.com/photo/doctor-consulting-a-patient-7659869/
+require_pinned_hero: true
 sources:
-- title: 'Eli Lilly: What to know about retatrutide — investigational status, mechanism and public availability. Updated July 2026.'
+- title: 'Eli Lilly on investigational status and the three receptor targets'
   url: https://www.lilly.com/news/stories/what-to-know-about-retatrutide
-- title: 'Jastreboff AM et al. Triple-Hormone-Receptor Agonist Retatrutide for Obesity — Phase 2 randomised trial. New England Journal of Medicine. 2023;389:514-526.'
-  url: https://www.nejm.org/doi/full/10.1056/NEJMoa2301972
-- title: 'Eli Lilly: TRIUMPH-1 Phase 3 topline results — 21 May 2026.'
+- title: 'Jastreboff et al. TRIUMPH-1 peer-reviewed Phase 3 obesity trial, NEJM, 2026'
+  url: https://pubmed.ncbi.nlm.nih.gov/42814954/
+- title: 'Eli Lilly TRIUMPH-1 efficacy analysis, extension and adverse-event data, May 2026'
   url: https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss
-- title: 'Eli Lilly: TRIUMPH-2 and TRIUMPH-3 Phase 3 topline results — 23 July 2026.'
-  url: https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional
-- title: 'Bajaj HS et al. TRANSCEND-T2D-1 — Phase 3 retatrutide trial in type 2 diabetes. The Lancet. 2026;407:2402-2413.'
+- title: 'Jastreboff et al. Phase 2 retatrutide obesity trial, NEJM, 2023'
+  url: https://pubmed.ncbi.nlm.nih.gov/37366315/
+- title: 'Bellido et al. TRIUMPH-2 in obesity and type 2 diabetes, The Lancet, 2026'
+  url: https://pubmed.ncbi.nlm.nih.gov/42810372/
+- title: 'Bajaj et al. TRANSCEND-T2D-1 in type 2 diabetes, The Lancet, 2026'
   url: https://pubmed.ncbi.nlm.nih.gov/42250575/
-- title: 'Eli Lilly Clinical Trials: TRIUMPH-5 — Phase 3 head-to-head retatrutide vs tirzepatide study.'
-  url: https://trials.lilly.com/en-US/trial/549215
-- title: 'EMA CTIS: TRIUMPH-5 retatrutide vs tirzepatide trial in the EU.'
-  url: https://euclinicaltrials.eu/ctis-public/view/2024-511450-49-00
-- title: 'Wilding JPH et al. Once-Weekly Semaglutide in Adults with Overweight or Obesity — STEP 1. New England Journal of Medicine. 2021.'
-  url: https://www.nejm.org/doi/full/10.1056/NEJMoa2032183
-- title: 'Jastreboff AM et al. Tirzepatide Once Weekly for the Treatment of Obesity — SURMOUNT-1. New England Journal of Medicine. 2022.'
-  url: https://www.nejm.org/doi/10.1056/NEJMoa2206038
-- title: 'Aronne LJ et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity — SURMOUNT-5. New England Journal of Medicine. 2025.'
+- title: 'Schnitzer et al. TRIUMPH-4 and TRIUMPH-1-OA knee osteoarthritis results, NEJM, November 2026'
+  url: https://www.nejm.org/doi/10.1056/NEJMoa2610676
+- title: 'Eli Lilly TRIUMPH-2 and TRIUMPH-3 results and planned US filing, July 2026'
+  url: https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional
+- title: 'TRIUMPH-5 retatrutide versus tirzepatide registration, NCT06662383'
+  url: https://clinicaltrials.gov/study/NCT06662383
+- title: 'Aronne et al. SURMOUNT-5 tirzepatide versus semaglutide trial, NEJM, 2025'
   url: https://pubmed.ncbi.nlm.nih.gov/40353578/
-- title: 'Pi-Sunyer X et al. Liraglutide 3.0 mg for Weight Management — SCALE. New England Journal of Medicine. 2015.'
-  url: https://www.nejm.org/doi/full/10.1056/NEJMoa1411892
-- title: 'RTÉ: Public warned not to take unapproved retatrutide — 23 August 2026.'
-  url: https://www.rte.ie/news/health/2026/0823/1588400-weight-loss-drug/
-- title: 'RTÉ Investigates: sale of unapproved retatrutide exposed in Ireland — December 2024.'
-  url: https://www.rte.ie/news/investigations-unit/2024/1209/1485182-sale-of-unapproved-us-weight-loss-trial-drug-exposed-in-ireland/
-- title: 'HPRA: More than 750,000 units of illegal medicines detained in 2025, including GLP-1-type products.'
-  url: https://www.hpra.ie/news-events/news/article/over-750-000-units-of-illegal-medicines-detained-by-the-hpra-in-2025
+- title: 'EMA product information for Mounjaro'
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro
+- title: 'EMA product information for Wegovy'
+  url: https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf
+- title: 'EMA product information for Ozempic'
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/ozempic
+- title: 'EMA retatrutide paediatric investigation plan'
+  url: https://www.ema.europa.eu/en/medicines/human/paediatric-investigation-plans/emea-003258-pip02-23
+- title: 'HPRA on EU and Irish medicine authorisation procedures'
+  url: https://www.hpra.ie/regulation/human-medicine/marketing-authorisation-holders/new-applications/licensing-procedures
+- title: 'HPRA on clinical trial records in Ireland and the EU'
+  url: https://www.hpra.ie/regulation/human-medicine/patients-and-healthcare-professionals/clinical-trials/clinical-trials-regulation
+- title: 'HPRA advice on buying medicines online and reporting illegal supply'
+  url: https://www.hpra.ie/safety-information/how-we-monitor-safety/medicines/dangers-of-buying-prescription-medicines-online
+- title: 'NCPE overview of medicine reimbursement decisions in Ireland'
+  url: https://www.ncpe.ie/submission-process/overview-of-the-drug-reimbursement-process/
+- title: 'TRIUMPH-Outcomes cardiovascular and kidney trial, NCT06383390'
+  url: https://clinicaltrials.gov/study/NCT06383390
+- title: 'TRIUMPH-6 weight maintenance trial, NCT06859268'
+  url: https://clinicaltrials.gov/study/NCT06859268
 ---
 
-<p class="glp-note">Ireland-focused guide · reviewed 24 September 2026. Retatrutide is investigational and is not approved for public use. This article explains the evidence; it is not a route to obtain an unapproved medicine.</p>
+<p class="glp-note">Evidence and Irish availability checked <time datetime="2026-11-20">20 November 2026</time>.</p>
 
-Retatrutide may be the most important obesity medicine that you **cannot currently get from an Irish pharmacy**.
+**Retatrutide is not approved in Ireland.** There is no authorised pharmacy product, official Irish price or confirmed Irish launch date. Eli Lilly is studying it as a weekly injection that activates three hormone receptors involved in appetite and metabolism.
 
-The once-weekly injection being developed by Eli Lilly has produced some of the largest average weight reductions yet reported in late-stage drug trials for obesity.
+In the published Phase 3 TRIUMPH-1 trial, adults with obesity or qualifying overweight, without diabetes, lost an average of **25.0% of their starting weight at 80 weeks** in the highest-dose group, compared with **3.9% with placebo**. Lilly reported **28.3%** for the same group using a different analysis. A direct comparison with tirzepatide, the active ingredient in Mounjaro, is still awaiting results. [TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/) · [TRIUMPH-5 trial register](https://clinicaltrials.gov/study/NCT06662383)
 
-That has created understandable interest in Ireland — and a lot of misleading information online.
+<nav class="glp-callout" aria-label="Jump to a retatrutide topic">
+<p><strong>Jump to</strong> <a href="#ireland-access">Irish approval and cost</a> · <a href="#phase-3-results">Phase 3 results</a> · <a href="#mounjaro-and-wegovy">Mounjaro and Wegovy</a> · <a href="#side-effects">Side effects</a> · <a href="#retatrutide-faq">FAQs</a></p>
+</nav>
 
-The essential facts are:
+## Can you get retatrutide in Ireland? {#ireland-access}
 
-- **retatrutide is not approved in Ireland;**
-- **it is not approved by the EMA, FDA or any other medicines regulator for public use;**
-- **there is no legitimate Irish retail price for it;**
-- it remains an **investigational medicine** being studied in Phase 3 trials;
-- separate trials suggest weight loss may be greater than that seen in pivotal trials of Wegovy and Mounjaro, but **retatrutide has not yet beaten Mounjaro in a published head-to-head trial**.
+Retatrutide is investigational and is available through Lilly’s authorised clinical trials subject to a trial’s locations, recruitment and eligibility. A GP cannot prescribe it through the usual Irish pharmacy route. An item's appearance in the EMA database can be misleading here. The public retatrutide entry records a **paediatric investigation plan**, which is a decision about research requirements. EU marketing authorisation is a separate regulatory decision. [Lilly investigational status](https://www.lilly.com/news/stories/what-to-know-about-retatrutide) · [EMA decision](https://www.ema.europa.eu/en/medicines/human/paediatric-investigation-plans/emea-003258-pip02-23) · [HPRA authorisation procedures](https://www.hpra.ie/regulation/human-medicine/marketing-authorisation-holders/new-applications/licensing-procedures)
 
-The study that could answer that last question directly — **TRIUMPH-5, retatrutide versus tirzepatide** — is already underway and is expected to complete in late 2026.
-
-That makes this a medicine worth watching very closely.
-
-## Retatrutide Ireland: the short answer
-
-| Question | Answer as of September 2026 |
+| Irish access question | Position on 20 November 2026 |
 |---|---|
-| **What is retatrutide?** | An investigational once-weekly injection that activates **GIP, GLP-1 and glucagon receptors** |
-| **Is retatrutide a GLP-1?** | It acts on GLP-1, but it is more accurately described as a **triple hormone receptor agonist** |
-| **Is it approved in Ireland?** | **No** |
-| **Can a GP prescribe it in Ireland?** | Not as an approved commercial medicine |
-| **Can you buy it from an Irish pharmacy?** | **No legitimate approved retail product exists** |
-| **Can you buy “retatrutide” online?** | Products sold outside authorised clinical trials are unapproved and may be illegal or unsafe |
-| **How much weight loss has it produced?** | Up to **28.3% average weight loss at 80 weeks** in Lilly's TRIUMPH-1 efficacy analysis; 25.0% in the treatment-regimen analysis |
-| **Has that Phase 3 obesity result been peer-reviewed?** | The main TRIUMPH-1 obesity results were company-reported topline data at the time of review; Phase 2 obesity and Phase 3 diabetes data are peer-reviewed |
-| **When will it be available in Ireland?** | There is **no confirmed Irish launch date** |
+| Can I get it from a GP or pharmacy? | No authorised commercial product is available. |
+| How much does retatrutide cost? | There is no official Irish pharmacy price. |
+| Will the HSE cover it? | There is no announced HSE reimbursement decision. |
+| When could it launch? | There is no confirmed Irish date. Authorisation, Irish supply and any HSE funding decision are separate steps. |
+| Can I ask about a trial? | Check the official register for study locations and recruitment status. Eligibility is assessed by the trial team. |
 
-## What is retatrutide?
+Lilly has said it plans a **US FDA submission in the first quarter of 2027**. That is a company filing plan. For Ireland, the meaningful milestones are a public EU assessment or authorisation, a confirmed local launch, and any subsequent reimbursement decision. Irish clinical trial records are searchable through the HPRA’s guidance on the EU Clinical Trials Information System. [Lilly filing plan](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional) · [HPRA clinical trials](https://www.hpra.ie/regulation/human-medicine/patients-and-healthcare-professionals/clinical-trials/clinical-trials-regulation) · [NCPE reimbursement process](https://www.ncpe.ie/submission-process/overview-of-the-drug-reimbursement-process/)
 
-Retatrutide is an experimental peptide medicine developed by Eli Lilly.
+## What is retatrutide and how does it work? {#how-retatrutide-works}
 
-Its development code is **LY3437943**.
+Retatrutide, also called **LY3437943** in trial records, is a single peptide designed to activate **GIP, GLP-1 and glucagon receptors**. The scientific name for this is a *triple receptor agonist*. “Reta” is a nickname and “GLP-3” is an informal label without a recognised drug-class meaning. [Lilly’s mechanism summary](https://www.lilly.com/news/stories/what-to-know-about-retatrutide)
 
-In clinical trials it is given as a **once-weekly subcutaneous injection**.
+| Receptor | Role in the research |
+|---|---|
+| **GLP-1** | Helps regulate appetite and satiety. It also supports glucose-dependent insulin release. |
+| **GIP** | An incretin signal involved in insulin release and nutrient handling. Tirzepatide combines GIP and GLP-1 activity. |
+| **Glucagon** | Influences how the liver handles glucose and other fuels. Its possible contribution to energy expenditure is part of the rationale for including it. |
 
-What makes it different from the best-known obesity medicines is the number of hormone receptors it targets.
+Lilly funded the main retatrutide trials discussed here. The trials measure the combined effect of the molecule in people. They cannot tell us how many kilograms of weight change came from activating each receptor. [Phase 2 obesity trial](https://pubmed.ncbi.nlm.nih.gov/37366315/)
 
-### Wegovy and Ozempic
+## Retatrutide Phase 3 results {#phase-3-results}
 
-Semaglutide activates the:
+**TRIUMPH-1** randomised **2,339 adults**. The published weight results were 17.6%, 23.7% and 25.0% average loss in the three retatrutide groups, compared with 3.9% for placebo. The chart shows the treatment-regimen analysis reported in the paper. It accounts for events such as people discontinuing study treatment. [TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/)
 
-**GLP-1 receptor**
+<figure class="glp-figure" aria-labelledby="triumph-1-chart-caption">
+<figcaption id="triumph-1-chart-caption"><strong>TRIUMPH-1 body-weight reduction at 80 weeks.</strong> Published treatment-regimen analysis. Values are average percentages of starting body weight. The bars share a 0% to 30% scale.</figcaption>
+<div class="glp-row"><div class="glp-bar-label"><span>Placebo</span><strong>3.9%</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:13%"></div></div></div>
+<div class="glp-row"><div class="glp-bar-label"><span>Retatrutide 4 mg study group</span><strong>17.6%</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:58.67%"></div></div></div>
+<div class="glp-row"><div class="glp-bar-label"><span>Retatrutide 9 mg study group</span><strong>23.7%</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:79%"></div></div></div>
+<div class="glp-row"><div class="glp-bar-label"><span>Retatrutide 12 mg study group</span><strong>25.0%</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:83.33%"></div></div></div>
+<div class="glp-axis" aria-hidden="true"><span>0%</span><span>10%</span><span>20%</span><span>30%</span></div>
+</figure>
 
-### Mounjaro
+### Why do headlines quote 25.0%, 28.3% and roughly 30%?
 
-Tirzepatide activates:
+- **25.0%** came from the published 80-week treatment-regimen analysis for the highest-dose group. It answers what happened after assignment to treatment, accounting for events such as discontinuation.
+- **28.3%** came from Lilly’s 80-week efficacy analysis for that same group. It estimates the effect under continued-treatment assumptions.
+- **Roughly 30%** came from a 104-week extension in a selected group with a starting BMI of at least 35 who had completed the main study period. The result describes that extension group.
 
-**GIP + GLP-1 receptors**
+These are group averages from specified analyses. The 80-week results include people who responded differently, and the extension involved a narrower set of participants. [Peer-reviewed TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/) · [Lilly’s efficacy and extension results](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss)
 
-### Retatrutide
+### What other trials found
 
-Retatrutide activates:
+| Study and population | Main result to know |
+|---|---|
+| **Phase 2 obesity**, 338 adults | Average weight loss was 24.2% in the highest-dose group and 2.1% with placebo at 48 weeks. [NEJM paper](https://pubmed.ncbi.nlm.nih.gov/37366315/) |
+| **TRIUMPH-2**, obesity or overweight with type 2 diabetes | At 80 weeks, the published treatment-regimen analysis showed 18.8% average weight loss in the highest-dose group versus 5.1% with placebo. The study also found improvements in blood glucose control. [Lancet paper](https://pubmed.ncbi.nlm.nih.gov/42810372/) |
+| **TRANSCEND-T2D-1**, type 2 diabetes managed with diet and exercise at entry | A separate 40-week trial focused on HbA1c, a measure of average blood glucose. HbA1c fell more with retatrutide than with placebo. [Lancet paper](https://pubmed.ncbi.nlm.nih.gov/42250575/) |
+| **TRIUMPH-3**, severe obesity and established cardiovascular disease | Lilly’s topline report found up to 22.6% average weight loss at 80 weeks in its efficacy analysis. That figure measures body weight. A dedicated outcomes trial is testing cardiovascular and kidney events. [Lilly results](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional) · [Outcomes trial](https://clinicaltrials.gov/study/NCT06383390) |
+| **TRIUMPH-4**, painful knee osteoarthritis with obesity or overweight | In the November peer-reviewed report, the highest-dose group lost 23.7% on average versus 4.6% with placebo at 68 weeks using a treatment-policy approach. Both retatrutide groups improved on the knee-pain scale relative to placebo. [NEJM paper](https://www.nejm.org/doi/10.1056/NEJMoa2610676) |
 
-**GIP + GLP-1 + glucagon receptors**
+**What about heart health?** In Lilly’s TRIUMPH-3 report, two ways of grouping cardiovascular events gave estimates pointing in different directions. Both confidence intervals included the possibility of no difference. These analyses leave the effect on heart attacks, strokes and cardiovascular deaths uncertain. The dedicated TRIUMPH-Outcomes trial should give a clearer answer. [Lilly TRIUMPH-3 report](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional) · [Outcomes trial](https://clinicaltrials.gov/study/NCT06383390)
 
-That third component — glucagon receptor agonism — is the main reason retatrutide is often described as a **triple agonist**.
+The **November knee osteoarthritis paper** also reports pain improvement in the TRIUMPH-1 osteoarthritis subgroup. Its outcome was reported pain on a standard scale. TRIUMPH-1 separately found fewer breathing interruptions per hour in its obstructive sleep apnoea subgroup. Neither result establishes a new approved use. The two publications share the TRIUMPH-1 osteoarthritis participants, so those participants count once when assessing the evidence. [Knee osteoarthritis paper](https://www.nejm.org/doi/10.1056/NEJMoa2610676) · [TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/)
 
-## Is retatrutide a “GLP-3”?
+## Retatrutide vs Mounjaro, Wegovy and Ozempic {#mounjaro-and-wegovy}
 
-No.
+| Medicine | Receptor targets | EU status relevant to Ireland |
+|---|---|---|
+| **Retatrutide** | GIP, GLP-1 and glucagon | Investigational. |
+| **Mounjaro** (tirzepatide) | GIP and GLP-1 | Authorised for qualifying people with type 2 diabetes and for weight management in eligible adults. |
+| **Wegovy** (semaglutide) | GLP-1 | Authorised for weight management in eligible patients. |
+| **Ozempic** (semaglutide) | GLP-1 | Authorised for adults with type 2 diabetes. It contains the same active ingredient as Wegovy, with its own authorised use and product information. |
 
-You may see retatrutide called:
+[EMA Mounjaro](https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro) · [EMA Wegovy](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf) · [EMA Ozempic](https://www.ema.europa.eu/en/medicines/human/EPAR/ozempic)
 
-- “GLP-3”;
-- “triple G”;
-- “reta”.
+**Retatrutide vs Mounjaro.** TRIUMPH-5 is the direct Phase 3 comparison in adults with obesity. Its primary endpoint is percentage body-weight change at week 80. The registry listed it as active and no longer recruiting when checked, with no posted results. The estimated primary completion month is November 2026. That is the estimated end of primary data collection. A release date for the findings remains unconfirmed. [TRIUMPH-5 register](https://clinicaltrials.gov/study/NCT06662383)
 
-“Triple G” is an informal nickname.
+**Retatrutide vs Wegovy.** In the separate SURMOUNT-5 trial, tirzepatide and semaglutide produced 20.2% and 13.7% average weight loss respectively at 72 weeks. That was a direct comparison of those two medicines. Comparing those averages with retatrutide’s 80-week number cannot tell you how much extra weight a patient might lose by switching. The trials differed in duration, design, and how they handled events such as treatment discontinuation. [SURMOUNT-5 paper](https://pubmed.ncbi.nlm.nih.gov/40353578/)
 
-But **GLP-3 is not a scientific drug class**.
+## Retatrutide side effects and safety {#side-effects}
 
-Lilly itself says the more accurate term is **triple agonist**, because the molecule activates three different receptors: GIP, GLP-1 and glucagon.
+Digestive symptoms were the most frequently reported side effects in TRIUMPH-1. Examples included nausea, diarrhoea, constipation and vomiting. Lilly’s trial summary reported nausea in **42.4%** of the 12 mg group and **14.8%** of the placebo group. It also reported **dysesthesia** in **12.5%** and **0.9%**, respectively. Dysesthesia means an altered or unpleasant sensation, such as tingling or skin sensitivity. Those percentages describe people in this trial, at the studied dose. [TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/) · [Lilly safety table](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss)
 
-There is no third GLP hormone being targeted.
+The peer-reviewed knee osteoarthritis paper reported more serious adverse events with retatrutide than with placebo in both trials. The TRIUMPH-2 paper also found that low blood pressure and altered sensation occurred more often with retatrutide. Longer follow-up and regulatory evaluation will help establish how often rarer harms occur and which patients face higher risks. Treatment discontinuation and quality of life also matter when weighing potential benefits and harms. [Knee osteoarthritis paper](https://www.nejm.org/doi/10.1056/NEJMoa2610676) · [TRIUMPH-2 paper](https://pubmed.ncbi.nlm.nih.gov/42810372/)
 
-## How does retatrutide work?
+### What about online “research peptide” vials?
 
-The simplest explanation is that it combines several metabolic signals in one molecule.
+A label saying “research use only” provides no assurance that a vial contains what it claims or is suitable for injection. The active ingredient, strength and sterility can be uncertain. The HPRA warns against buying prescription medicines online and provides an official route to report suspected illegal supply. If you have already used an unregulated product and are concerned about symptoms, contact a healthcare professional and tell them what you took. [HPRA advice and reporting](https://www.hpra.ie/safety-information/how-we-monitor-safety/medicines/dangers-of-buying-prescription-medicines-online) · [Lilly safety statement](https://www.lilly.com/news/stories/what-to-know-about-retatrutide)
 
-### GLP-1
+## What to watch next {#what-to-watch}
 
-GLP-1 receptor activation can:
+1. **TRIUMPH-5 results.** Read the direct comparison alongside rates of side effects and treatment discontinuation. [Trial register](https://clinicaltrials.gov/study/NCT06662383)
+2. **European authorisation and Irish access.** Look for a published regulatory decision, approved product information and confirmation of Irish supply. Any HSE reimbursement decision has its own process. [HPRA authorisation guide](https://www.hpra.ie/regulation/human-medicine/marketing-authorisation-holders/new-applications/licensing-procedures) · [NCPE process](https://www.ncpe.ie/submission-process/overview-of-the-drug-reimbursement-process/)
+3. **Weight maintenance and health outcomes.** TRIUMPH-6 studies maintenance. TRIUMPH-Outcomes tests cardiovascular and kidney outcomes. Average weight loss alone cannot tell us whether a treatment prevents those events or how durable weight reduction is. [Maintenance trial](https://clinicaltrials.gov/study/NCT06859268) · [Outcomes trial](https://clinicaltrials.gov/study/NCT06383390)
 
-- reduce appetite;
-- increase feelings of fullness;
-- slow gastric emptying;
-- increase glucose-dependent insulin secretion.
+## Retatrutide FAQs {#retatrutide-faq}
 
-This is the pathway used by semaglutide medicines such as Wegovy and Ozempic.
+### Is there an Irish retatrutide price or a brand name?
 
-### GIP
+There is no official Irish pharmacy price or authorised retatrutide brand for routine supply. LY3437943 is Lilly’s development code. Prices shown on websites selling research vials do not represent Irish pharmacy prices.
 
-GIP receptor activation is also involved in insulin secretion and energy metabolism.
+### Will retatrutide be available in Ireland in 2027?
 
-Tirzepatide — Mounjaro — combines **GIP and GLP-1 agonism**.
+There is no confirmed date. Lilly’s planned US submission gives a potential US filing milestone. Irish availability depends on European regulatory progress and a local launch.
 
-### Glucagon
+### Does 25% average weight loss mean everyone lost that much?
 
-Glucagon is more complicated.
+No. It was the mean for the highest-dose arm in a defined trial analysis at week 80. Starting weight, diabetes status, treatment discontinuation and individual response all matter when interpreting a trial average.
 
-It is often taught simply as the hormone that raises blood glucose.
+### Is retatrutide available as a pill?
 
-But glucagon signalling also affects:
+The Phase 3 retatrutide trials discussed here studied an injection. Oral GLP-1 medicines are separate treatments, including [orforglipron](/health/medicines/orforglipron/).
 
-- liver metabolism;
-- fat metabolism;
-- energy expenditure.
+### Has retatrutide been shown to work better than Mounjaro?
 
-The idea behind retatrutide is that combining glucagon receptor activity with GIP and GLP-1 activity may produce stronger effects on energy balance and body weight than incretin activity alone.
+The direct TRIUMPH-5 comparison had no published results at the time of this evidence check. Until those results are available, neither the size of the difference nor the relative tolerability is established.
 
-That is a plausible mechanism.
+## More on GLP-1 medicines in Ireland {#related-guides}
 
-The clinical trials — not the mechanism — are what determine whether it actually works and whether the benefit is worth the risks.
-
-## Can you get retatrutide in Ireland?
-
-**Not as an approved medicine.**
-
-Eli Lilly states that retatrutide is investigational and is not approved by any regulatory agency for public use.
-
-That means there is currently:
-
-- no authorised Retatrutide-branded medicine;
-- no normal Irish pharmacy supply;
-- no approved Irish retail price;
-- no licensed commercial prescription pathway.
-
-Lilly says retatrutide is legally available only through its clinical trials.
-
-If a legitimate clinical trial is recruiting, participation depends on strict eligibility criteria and trial locations — it is not the same as receiving a normal prescription.
-
-The HPRA provides a public route for checking clinical trials taking place in Ireland and the wider EU.
-
-## But people are already using “retatrutide” in Ireland
-
-Yes — and that is precisely why the distinction between **trial medicine** and **black-market product** matters.
-
-RTÉ Investigates reported in 2024 that an unapproved product presented as retatrutide was being sold in Ireland.
-
-In August 2026, RTÉ again reported warnings about people using retatrutide obtained outside regulated clinical trials.
-
-Lilly's position is explicit: anything claiming to be retatrutide sold to consumers outside its authorised clinical-trial supply chain is **not an approved Lilly medicine**.
-
-The risks are not only the theoretical side effects of retatrutide itself.
-
-With an unregulated vial, you may not reliably know:
-
-- whether it contains retatrutide at all;
-- the concentration;
-- whether the vial is sterile;
-- whether contaminants are present;
-- whether the compound has degraded;
-- whether the labelling is accurate.
-
-The HPRA has separately warned about large volumes of illegal and falsified medicines entering Ireland, including GLP-1-type products.
-
-## Can you buy retatrutide online in Ireland?
-
-There may be websites or social-media sellers willing to take money for products labelled “retatrutide,” “reta” or “research peptide.”
-
-That does **not** make those products an approved medicine.
-
-There is currently no legitimate consumer version of retatrutide to price-shop.
-
-If a website is advertising “retatrutide 10 mg” or a similar vial for personal weight loss, that is fundamentally different from an authorised Wegovy or Mounjaro product supplied through the regulated prescription and pharmacy system.
-
-## Retatrutide price in Ireland: how much will it cost?
-
-There is **no official Irish price**.
-
-Retatrutide has not been approved or commercially launched.
-
-Therefore:
-
-> **Any current “retatrutide price in Ireland” is not the pharmacy price of an approved retatrutide medicine.**
-
-If the medicine receives European authorisation in future, Irish pricing would depend on factors such as:
-
-- Lilly's launch price;
-- available presentations;
-- private pharmacy pricing;
-- whether public reimbursement is sought;
-- any HSE reimbursement decision.
-
-None of those has produced an official Irish retail price yet.
-
-## The Phase 2 result that first made retatrutide famous
-
-The first major obesity result came from a peer-reviewed Phase 2 trial published in the **New England Journal of Medicine** in 2023.
-
-The trial enrolled adults with obesity, or overweight plus a weight-related condition.
-
-At **48 weeks**, average weight change was:
-
-| Retatrutide dose | Average weight change at 48 weeks |
-|---|---:|
-| 1 mg | **-8.7%** |
-| 4 mg combined | **-17.1%** |
-| 8 mg combined | **-22.8%** |
-| 12 mg | **-24.2%** |
-| Placebo | **-2.1%** |
-
-At the highest 12 mg dose:
-
-- **100%** of participants achieved at least 5% weight loss;
-- **93%** achieved at least 10%;
-- **83%** achieved at least 15%.
-
-Those numbers were striking enough on their own.
-
-But the trial was Phase 2 and relatively small.
-
-The key question was whether similar effects would survive much larger Phase 3 testing.
-
-## Retatrutide Phase 3 results: what TRIUMPH-1 reported
-
-In May 2026, Lilly announced topline results from **TRIUMPH-1**, its large Phase 3 obesity trial.
-
-The trial involved more than 2,300 adults with obesity or overweight plus a weight-related condition, without diabetes.
-
-At **80 weeks**, Lilly reported the following efficacy-estimand results:
-
-| Group | Average weight change |
-|---|---:|
-| Retatrutide 4 mg | **-19.0%** |
-| Retatrutide 9 mg | **-25.9%** |
-| Retatrutide 12 mg | **-28.3%** |
-| Placebo | **-2.2%** |
-
-At 12 mg:
-
-- **62.5%** achieved at least 25% weight loss;
-- **45.3%** achieved at least 30%;
-- **27.2%** achieved at least 35%.
-
-For context, a person starting at **100 kg** would correspond to an average reduction of about **28 kg** if they experienced exactly the 28.3% mean result.
-
-That is only an illustration.
-
-Individual results vary substantially.
-
-### Why you may also see “25%” quoted
-
-Lilly reported more than one statistical estimand.
-
-Under its **treatment-regimen estimand**, which incorporates what happened regardless of treatment adherence and certain additional interventions, the 12 mg group lost an average of:
-
-**25.0%**
-
-rather than 28.3%.
-
-Both figures came from the same trial but answer slightly different questions.
-
-Using only the larger number without explaining that distinction makes the result look more certain than it is.
-
-## Did people keep losing weight after 80 weeks?
-
-A prespecified extension followed a subset of people with a starting BMI of at least 35 who had completed the main study and tolerated treatment.
-
-At **104 weeks**, Lilly reported average weight loss of up to:
-
-**30.3%**
-
-under the efficacy estimand.
-
-That extension population was selected and should not be treated as the expected result for every future patient.
-
-But it suggests the weight curve had not necessarily plateaued for everyone by week 80.
-
-## What did retatrutide do in people with type 2 diabetes?
-
-This is important because weight loss is usually smaller in obesity trials involving type 2 diabetes.
-
-A Phase 3 trial called **TRANSCEND-T2D-1** was published in **The Lancet** in June 2026.
-
-At 40 weeks, average weight change was:
-
-- **-11.5%** with 4 mg;
-- **-13.9%** with 9 mg;
-- **-15.3%** with 12 mg;
-- **-2.6%** with placebo.
-
-HbA1c also fell substantially, by up to about **1.94 percentage points** from baseline in the 12 mg group.
-
-This was a peer-reviewed Phase 3 result.
-
-It supports the biological effect of retatrutide beyond the company's obesity press releases.
-
-## Retatrutide vs Mounjaro vs Wegovy: what the numbers show
-
-This is the comparison most people will want.
-
-But there is a major warning:
-
-> **These are results from different trials, conducted in different populations, over different lengths of time, with different statistical methods. They are not a head-to-head ranking.**
-
-With that caveat:
-
-| Medicine / study | Mechanism | Trial population | Duration | Reported average weight change |
-|---|---|---|---:|---:|
-| **Retatrutide 12 mg — TRIUMPH-1** | GIP + GLP-1 + glucagon | Obesity/overweight, no diabetes | 80 weeks | **-28.3% efficacy estimand; -25.0% treatment-regimen** |
-| **Retatrutide 12 mg — Phase 2** | GIP + GLP-1 + glucagon | Obesity/overweight, no diabetes | 48 weeks | **-24.2%** |
-| **Tirzepatide 15 mg — SURMOUNT-1** | GIP + GLP-1 | Obesity/overweight, no diabetes | 72 weeks | **-20.9%** |
-| **Semaglutide 2.4 mg — STEP 1** | GLP-1 | Obesity/overweight, no diabetes | 68 weeks | **-14.9%** |
-| **Liraglutide 3.0 mg — SCALE** | GLP-1 | Obesity/overweight, no diabetes | 56 weeks | **-8.0%** |
-
-Separate trials therefore suggest an approximate progression:
-
-**liraglutide < semaglutide < tirzepatide < retatrutide**
-
-for average weight loss in the specific studies shown.
-
-But that sequence is **not yet a proven head-to-head hierarchy**.
-
-### What we already know from Mounjaro vs Wegovy head-to-head
-
-There **is** now a direct head-to-head obesity trial for two approved medicines.
-
-In **SURMOUNT-5**, tirzepatide was compared directly with semaglutide over 72 weeks in 751 adults with obesity and without type 2 diabetes.
-
-Average weight reduction was approximately:
-
-- **20.2% with tirzepatide**;
-- **13.7% with semaglutide**.
-
-That result confirms that trial-to-trial comparisons can sometimes be tested properly when the drugs are studied in the same protocol.
-
-Retatrutide has not yet had that published head-to-head moment.
-
-That is why the pending **TRIUMPH-5 retatrutide-versus-tirzepatide trial** matters much more than simply placing separate headline percentages beside each other.
-
-## Retatrutide vs Mounjaro: is retatrutide actually better?
-
-We do not know yet.
-
-This is perhaps the most important point in the entire article.
-
-Mounjaro contains **tirzepatide**, a dual GIP/GLP-1 agonist.
-
-Retatrutide adds **glucagon receptor agonism**.
-
-The separate trial averages make retatrutide look stronger.
-
-But comparing separate trials can mislead because participants, baseline BMI, follow-up time, discontinuation rules and statistical methods differ.
-
-Fortunately, the proper trial is already happening.
-
-### TRIUMPH-5
-
-TRIUMPH-5 is a Phase 3 study directly comparing:
-
-**retatrutide vs tirzepatide**
-
-in around 800 adults with obesity.
-
-There is no placebo arm.
-
-The primary outcome is percentage change in body weight.
-
-Lilly's public trial information lists completion in **late 2026**.
-
-Until that trial reports, claims that retatrutide has definitively “beaten Mounjaro” are premature.
-
-For Compound, **TRIUMPH-5 is the study to watch**.
-
-## Retatrutide vs Wegovy
-
-Wegovy contains **semaglutide 2.4 mg**.
-
-Semaglutide activates the GLP-1 receptor.
-
-In STEP 1, average weight loss with semaglutide was **14.9% at 68 weeks**, compared with 2.4% with placebo.
-
-Retatrutide's reported averages in separate trials are substantially larger.
-
-Again, this is not a direct comparison.
-
-Wegovy also has an established regulatory, manufacturing and safety history that retatrutide does not yet have.
-
-A medicine cannot be judged on weight loss alone.
-
-## Retatrutide vs Ozempic
-
-Ozempic also contains **semaglutide**, but it is a different medicinal product from Wegovy.
-
-Ozempic is authorised for type 2 diabetes.
-
-Wegovy is the semaglutide product specifically authorised for weight management.
-
-That means “retatrutide vs Ozempic” is not the cleanest efficacy comparison for obesity.
-
-If you are comparing obesity-trial weight loss, **retatrutide vs Wegovy** is the more relevant semaglutide comparison.
-
-For Irish access and indication differences, see [How to get Ozempic in Ireland](/health/how-to-get-ozempic-ireland/) and [Wegovy, Mounjaro and Ozempic prices in Ireland](/health/wegovy-mounjaro-ozempic-cost-ireland/).
-
-## Is retatrutide just “stronger Mounjaro”?
-
-Not exactly.
-
-Mounjaro and retatrutide share GIP and GLP-1 receptor activity.
-
-But retatrutide also activates the glucagon receptor.
-
-That could affect energy expenditure and metabolism in ways that are not simply equivalent to increasing the dose of tirzepatide.
-
-The medicines are distinct molecules.
-
-Milligram doses cannot be compared directly.
-
-For example:
-
-**12 mg retatrutide is not “weaker” than 15 mg tirzepatide because the number is smaller.**
-
-Milligrams only describe the mass of the specific molecule being administered.
-
-## What side effects has retatrutide caused?
-
-Because retatrutide is investigational, it does not yet have a final approved patient-information leaflet.
-
-The best evidence currently comes from trials.
-
-### Phase 2
-
-The most common adverse events were gastrointestinal and were generally:
-
-- dose-related;
-- mild to moderate;
-- more manageable with a lower starting dose.
-
-The Phase 2 trial also reported **dose-dependent increases in heart rate**, which peaked around week 24 and then declined.
-
-That remains an important safety signal to monitor.
-
-### TRIUMPH-1 Phase 3
-
-Lilly reported the following adverse-event rates at the 12 mg dose:
-
-| Event | Retatrutide 12 mg | Placebo |
-|---|---:|---:|
-| Nausea | **42.4%** | 14.8% |
-| Diarrhoea | **32.0%** | 13.5% |
-| Constipation | **26.1%** | 10.9% |
-| Vomiting | **25.3%** | 4.8% |
-| Dysesthesia / altered sensation | **12.5%** | 0.9% |
-
-Discontinuation because of adverse events occurred in:
-
-**11.3%** of participants at 12 mg versus **4.9%** with placebo.
-
-Those figures come from Lilly's Phase 3 topline release.
-
-They are useful, but a final regulatory safety profile will require full review of the complete data package.
-
-## What is dysesthesia?
-
-One relatively unusual signal reported in TRIUMPH-1 was **dysesthesia**.
-
-This is an umbrella term for abnormal sensations, which can include:
-
-- tingling;
-- burning;
-- altered skin sensation;
-- uncomfortable sensitivity.
-
-Lilly reported dysesthesia more frequently at the higher retatrutide doses.
-
-Most events were described as mild to moderate and many resolved while treatment continued.
-
-It is still an area worth watching as more detailed Phase 3 publications appear.
-
-## Is retatrutide safe?
-
-The correct answer in 2026 is:
-
-**Its safety is still being established.**
-
-There is now substantial clinical-trial exposure, including several successful Phase 3 studies.
-
-That is very different from saying the medicine has completed regulatory safety review.
-
-Before approval, regulators will assess:
-
-- all adverse events;
-- serious adverse events;
-- cardiovascular signals;
-- pancreatitis and gallbladder events;
-- renal effects;
-- gastrointestinal tolerability;
-- dosing and escalation;
-- drug interactions;
-- pregnancy and reproductive data;
-- manufacturing quality;
-- long-term benefit-risk balance.
-
-The medicine's final contraindications and warnings do not exist yet in the form of an approved Irish/EU product label.
-
-## Why the glucagon component could matter for safety
-
-Glucagon receptor agonism is part of what makes retatrutide scientifically interesting.
-
-It also means researchers need to understand effects beyond appetite suppression.
-
-Potential areas of interest include:
-
-- heart rate;
-- glucose regulation;
-- liver metabolism;
-- lean mass;
-- energy expenditure;
-- cardiovascular outcomes.
-
-Lilly is running large outcomes studies rather than relying on weight loss alone.
-
-One of those programmes includes a cardiovascular and renal outcomes trial involving thousands of participants.
-
-That kind of evidence will be important if retatrutide eventually becomes a widely used long-term medicine.
-
-## Will retatrutide replace Mounjaro or Wegovy?
-
-There is no basis for saying that yet.
-
-If approved, retatrutide could become another major treatment option.
-
-Whether it becomes preferable for a particular person would depend on much more than average weight loss:
-
-- tolerability;
-- medical history;
-- diabetes;
-- cardiovascular disease;
-- response to treatment;
-- side effects;
-- cost;
-- reimbursement;
-- supply;
-- patient preference.
-
-Some people may also achieve sufficient benefit on lower-dose or existing medicines without needing the strongest possible weight-loss effect.
-
-## When will retatrutide be available in Ireland?
-
-There is **no confirmed Irish date**.
-
-As of September 2026:
-
-- retatrutide remains investigational;
-- Lilly has reported several positive Phase 3 studies;
-- Lilly has said it plans a US regulatory submission in **Q1 2027**;
-- the company says it now has data to support broader global regulatory submissions.
-
-A US submission does not automatically make the medicine available in Europe or Ireland.
-
-For ordinary Irish pharmacy availability, there would first need to be an appropriate European regulatory pathway and authorisation, followed by commercial launch.
-
-Public reimbursement would be a separate question again.
-
-So anyone giving a guaranteed Irish launch month today is speculating.
-
-## Could Ireland get retatrutide before approval through a trial?
-
-Clinical trials are the legitimate route by which investigational medicines are given to participants before approval.
-
-But trials have strict entry criteria and specific sites.
-
-They are not a substitute for commercial access.
-
-If you want to check whether a retatrutide trial is recruiting in Ireland, use official clinical-trial registers such as the **HPRA trial finder / EU Clinical Trials Information System**, rather than paying a private seller claiming to offer “trial-grade” retatrutide.
-
-## Will retatrutide be covered by the HSE?
-
-It is much too early to know.
-
-Retatrutide first needs regulatory authorisation.
-
-After that, public funding would depend on a separate Irish reimbursement process, including evidence, price and cost-effectiveness.
-
-The current HSE funding position for approved GLP-1 and obesity medicines cannot simply be projected onto a medicine that has not launched.
-
-## Why retatrutide could matter so much
-
-The potential importance of retatrutide is not just that the 28.3% number is larger than earlier obesity-drug trial averages.
-
-It is that pharmacological treatment is moving into a range of weight loss that historically was difficult to achieve without bariatric surgery.
-
-That raises new questions:
-
-- How much weight loss is optimal?
-- How should lean mass be protected?
-- Which patients need maximum efficacy?
-- What happens when treatment is stopped?
-- Can cardiovascular and kidney outcomes improve?
-- Will very large weight loss change the economics of obesity treatment?
-- How tolerable will the highest doses be in routine care?
-
-Retatrutide may become one of the medicines that forces those questions into everyday clinical practice.
-
-Or later data could expose limitations that are less visible in headline weight-loss numbers.
-
-That is why the next phase of evidence matters.
-
-## The three retatrutide developments to watch next
-
-### 1. TRIUMPH-5: retatrutide vs tirzepatide
-
-This is the big one.
-
-It should tell us much more reliably whether the triple agonist actually produces greater weight loss than Mounjaro's active ingredient under the same trial conditions.
-
-### 2. Full peer-reviewed publication of the obesity Phase 3 programme
-
-Topline company data are useful.
-
-Full journal publication allows closer scrutiny of:
-
-- missing data;
-- discontinuations;
-- adverse events;
-- subgroup outcomes;
-- statistical methods.
-
-### 3. Regulatory submissions
-
-The next major practical milestone is not another viral percentage.
-
-It is regulators receiving and reviewing the full evidence package.
-
-That is the point at which questions about real Irish availability begin to become concrete.
-
-## Retatrutide FAQs
-
-### Is retatrutide available in Ireland?
-
-No. Retatrutide is not an approved medicine in Ireland and there is no authorised pharmacy product for public use.
-
-### Can I get retatrutide from my GP?
-
-Not as an approved commercial prescription. Retatrutide remains investigational.
-
-### Is retatrutide stronger than Mounjaro?
-
-Separate studies have reported greater average weight loss with retatrutide, but that does not prove superiority. The Phase 3 TRIUMPH-5 trial is directly comparing retatrutide with tirzepatide.
-
-### How much weight can you lose on retatrutide?
-
-Lilly's TRIUMPH-1 Phase 3 topline analysis reported average weight loss of up to **28.3% at 80 weeks** at 12 mg under the efficacy estimand. The treatment-regimen analysis was **25.0%**. Results vary between individuals.
-
-### Is retatrutide better than Wegovy?
-
-Separate obesity trials reported larger average weight reductions with retatrutide than with semaglutide 2.4 mg, but the medicines were not tested against each other in those trials.
-
-### Is retatrutide the same as Ozempic?
-
-No. Ozempic contains semaglutide and activates the GLP-1 receptor. Retatrutide is a different investigational molecule that activates GIP, GLP-1 and glucagon receptors.
-
-### Is retatrutide “GLP-3”?
-
-No. “GLP-3” is an informal and scientifically inaccurate nickname. Retatrutide is a GIP/GLP-1/glucagon triple receptor agonist.
-
-### What is “reta”?
-
-“Reta” is simply a shortened nickname people use online for retatrutide.
-
-### How much does retatrutide cost in Ireland?
-
-There is no official Irish pharmacy price because retatrutide has not been approved or commercially launched.
-
-### Can you buy research retatrutide online?
-
-Products advertised online are not an approved retatrutide medicine. Lilly warns against products claiming to be retatrutide outside its clinical trials because purity, dose and contents cannot be reliably assured.
-
-
-## More on GLP-1 medicines in Ireland
-
-- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — Put retatrutide in the wider Irish treatment landscape.
-- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — How approved prescription access currently works.
-- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — Compare currently available medicines and prices.
-- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — Safety information for approved GLP-1-based treatments.
-- [**What happens after stopping a GLP-1?**](/health/stopping-glp1-weight-regain/) — What long-term discontinuation evidence shows.
-
-## Bottom line
-
-Retatrutide has moved from an interesting Phase 2 drug to one of the most closely watched late-stage obesity medicines in the world.
-
-The evidence so far is genuinely impressive:
-
-- **24.2% average weight loss at 48 weeks** in the peer-reviewed Phase 2 12 mg group;
-- up to **28.3% at 80 weeks** in Lilly's TRIUMPH-1 Phase 3 efficacy analysis;
-- meaningful glucose and weight reductions in a peer-reviewed Phase 3 type 2 diabetes trial.
-
-But the equally important fact for an Irish reader is:
-
-> **Retatrutide is not currently an approved medicine in Ireland and cannot be obtained through the normal prescription and pharmacy system.**
-
-The comparison with Mounjaro is also not settled.
-
-The separate trials make retatrutide look extremely powerful.
-
-The direct **TRIUMPH-5 retatrutide-versus-tirzepatide trial** is what could tell us whether that apparent advantage holds up when the drugs are tested against each other.
-
-For now, the useful position is to watch the data — not to treat unregulated online products as an early-access version of a future medicine.
-
-For currently available Irish options, see [Wegovy, Mounjaro and Ozempic costs in Ireland](/health/wegovy-mounjaro-ozempic-cost-ireland/) and [How to get Ozempic in Ireland](/health/how-to-get-ozempic-ireland/).
+- [GLP-1 medicines in Ireland](/health/glp1-medicines-ireland-rise-evidence/) explains the treatment landscape.
+- [Wegovy, Mounjaro and Ozempic costs](/health/wegovy-mounjaro-ozempic-cost-ireland/) covers pharmacy costs for existing medicines.
+- [HSE and medical card coverage](/health/glp1-hse-medical-card-ireland/) explains how public funding differs by product and indication.
+- [GLP-1 side effects and when to seek help](/health/glp1-side-effects-when-to-seek-help/) covers approved medicines.
+- [Weight regain after stopping GLP-1 medicines](/health/stopping-glp1-weight-regain/) looks at the evidence for other medicines.
