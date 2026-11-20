@@ -296,7 +296,7 @@ sources:
     url: https://data.oireachtas.ie/ie/oireachtas/debateRecord/seanad/2026-11-12/debate/mul%40/main.pdf
   healthy_ireland_periods_2022:
     name: Healthy Ireland Survey 2022, menstrual health module
-    url: https://www.ucd.ie/issda/t4media/0021-07_healthy_ireland_2022_summary_report.pdf
+    url: https://www.drugsandalcohol.ie/37636/1/Healthy_Ireland_2022.pdf
   hpra_ed_2024:
     name: HPRA-hosted erectile dysfunction pharmacist training material
     url: https://assets.hpra.ie/products/Human/38661/6ce4e9e4-3d68-4eb5-9af6-3ddc97e74e5b.pdf
@@ -327,6 +327,9 @@ sources:
   nans_vitamin_d:
     name: Cashman and colleagues, vitamin D status of Irish adults in the National Adult Nutrition Survey
     url: https://pubmed.ncbi.nlm.nih.gov/22883239/
+  healthy_ireland_menopause_2025:
+    name: Department of Health, Healthy Ireland Summary Report 2025
+    url: https://www.dentalhealth.ie/assets/files/pdf/healthy_ireland_summary_report_2025_web_07112025.pdf
 evidence:
   eczema:
   - value: About 10%
@@ -2234,6 +2237,24 @@ evidence:
       estimate combined vitamin and mineral deficiencies.
     source: nans_vitamin_d
     locator: Abstract, year-round prevalence for serum 25(OH)D below 30 nmol/L
+    measure: prevalence
+  vaginal-dryness:
+  - value: 36% reported vaginal dryness, itching or discomfort
+    period: '2025'
+    population: Women in the Healthy Ireland Survey who were experiencing or had experienced menopause
+    note: Participants reported a group of symptoms. The figure does not isolate dryness or estimate its prevalence across all ages
+      and causes.
+    source: healthy_ireland_menopause_2025
+    locator: Page 40, symptoms reported by menopause phase
+    measure: prevalence
+  itchy-skin:
+  - value: 33% reported dry or itchy skin
+    period: '2025'
+    population: Women in the Healthy Ireland Survey who were experiencing or had experienced menopause
+    note: Participants reported dryness or itching together. The figure cannot isolate itch alone or estimate prevalence in the wider
+      population.
+    source: healthy_ireland_menopause_2025
+    locator: Page 40, symptoms reported by menopause phase
     measure: prevalence
 guides:
   asthma:
@@ -11588,8 +11609,6 @@ guides:
     aliases: Vaginal dryness, dryness during sex, genitourinary symptoms of menopause
     summary: Vaginal dryness can cause day-to-day irritation or discomfort during sex. Hormone changes are one cause, and treatments
       depend on the symptoms and your medical history.
-    evidence_gap: Irish menopause or service figures are not a measure of vaginal dryness across all ages and causes. No national
-      prevalence figure was identified in the sources reviewed.
     symptoms:
     - You may feel dry, itchy, sore or have pain with penetration. Some people notice urinary symptoms. Bleeding or a new change
       in discharge is worth raising with a clinician.
@@ -12161,8 +12180,6 @@ guides:
     aliases: Pruritus, itchy skin without rash, widespread itch
     summary: An itch can come from dry or irritated skin, an infection or another condition. Where it occurs, when it began and whether
       there is a rash affect the next steps.
-    evidence_gap: Irish estimates for particular diseases such as eczema do not measure itch from every cause. No separate national
-      prevalence estimate for itchy skin was identified.
     symptoms:
     - Notice whether the itch is limited to one area or widespread, and whether there are bumps, scales, broken skin or anyone nearby
       with similar symptoms.
