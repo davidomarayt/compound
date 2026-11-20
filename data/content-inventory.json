@@ -3343,6 +3343,28 @@
         "status": "published"
       },
       {
+        "title": "Irish Employment Hits a Record, but 130,200 Part-Time Workers Want More Hours",
+        "url": "/news/ireland-employment-q3-2026-underemployment/",
+        "source": "content/wealth/ireland-employment-q3-2026-underemployment.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-employment-q3-2026-underemployment",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "employment",
+          "jobs",
+          "wages",
+          "underemployment",
+          "unemployment",
+          "labour-market",
+          "cso"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?",
         "url": "/news/irish-house-prices-overvalued-17-percent-2026/",
         "source": "content/wealth/irish-house-prices-overvalued-17-percent-2026.md",
@@ -3360,6 +3382,28 @@
           "first-time-buyers",
           "property",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Irish House Prices Rose 4.7%: What the New €400,000 Median Means",
+        "url": "/news/irish-house-prices-september-2026/",
+        "source": "content/wealth/irish-house-prices-september-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-house-prices-september-2026",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "housing",
+          "house-prices",
+          "property",
+          "mortgages",
+          "first-time-buyers",
+          "affordability",
+          "cso"
         ],
         "status": "published"
       },
@@ -4616,6 +4660,29 @@
         "tags": [
           "medicines",
           "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "One in Four Irish Pupils Used Back-to-School Support: What Families Can Check",
+        "url": "/news/irish-school-family-supports-cso-2026/",
+        "source": "content/wealth/irish-school-family-supports-cso-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-school-family-supports-cso-2026",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "families",
+          "schools",
+          "education",
+          "social-welfare",
+          "back-to-school",
+          "working-family-payment",
+          "household-costs",
+          "cso"
         ],
         "status": "published"
       },
