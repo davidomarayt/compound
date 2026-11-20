@@ -249,6 +249,21 @@ sources:
   rotunda_2024_physio:
     name: Rotunda Hospital Annual Report 2024, physiotherapy service
     url: https://rotunda.ie/rotunda-pdfs/Clinical%20Reports/2024%20The%20Rotunda%20Annual%20Report.pdf?_t=1763639783
+  bv_irish_review:
+    name: American Journal of Obstetrics and Gynecology, systematic review of bacterial vaginosis prevalence
+    url: https://lib.itg.be/pdf/itg/2013/2013ajog0505.pdf
+  hiqa_zoster_hta:
+    name: HIQA, health technology assessment of shingles vaccination
+    url: https://www.hiqa.ie/sites/default/files/2024-07/HZ-vaccination-HTA.pdf
+  hse_cosi2022:
+    name: UCC Food-EPI evidence update, citing Ireland’s Childhood Obesity Surveillance Initiative round 6
+    url: https://www.ucc.ie/en/media/research/foodpath/generalcontent/EvidenceUpdate_Food_EPI_2020-2025.pdf
+  irspen_screening2023:
+    name: Irish Society for Clinical Nutrition and Metabolism, national malnutrition screening survey
+    url: https://kclpure.kcl.ac.uk/portal/en/publications/national-malnutrition-screening-survey-republic-of-ireland-2023-a/
+  noca_hip2025:
+    name: NOCA, Irish Hip Fracture Database National Report 2025
+    url: https://a.storyblok.com/f/265949/x/805703c2b0/irish-hip-fracture-database-national-report-2025-final.pdf
 evidence:
   eczema:
   - value: About 10%
@@ -1806,6 +1821,60 @@ evidence:
     source: rotunda_2024_physio
     locator: Physiotherapy service, Table 1 adult new outpatients
     measure: service
+  bacterial-vaginosis-pregnancy:
+  - value: 8.7% had bacterial vaginosis
+    period: 1999–2001
+    population: 203 pregnant women sampled at routine antenatal care in Dublin, at 18 to 35 weeks
+    note: The systematic review reports a figure based on a vaginal Gram stain scoring system. The study excluded women with symptoms
+      of vaginitis and those who had recently taken antibiotics. It is regional and historical.
+    source: bv_irish_review
+    locator: Table 3, Ireland study
+    measure: prevalence
+  childrens-weight:
+  - value: 17.7% living with overweight or obesity
+    period: 2022–2023
+    population: Primary-school children in the Irish Childhood Obesity Surveillance Initiative round 6
+    note: The figure combines the study’s overweight and obesity categories and applies to children surveyed in participating primary
+      schools.
+    source: hse_cosi2022
+    locator: Evidence of implementation, Obesity Policy and Action Plan
+    measure: prevalence
+  malnutrition:
+  - value: 33.8% screened at risk of malnutrition
+    period: November 2023
+    population: 3,662 adult patients screened on admission at 26 Irish hospitals
+    note: This includes people classified as at risk as well as people who were already malnourished. It is a hospital estimate and
+      does not measure prevalence in the community.
+    source: irspen_screening2023
+    locator: Abstract, national screening survey results
+    measure: prevalence
+  pressure-ulcers:
+  - value: 3% developed a new pressure ulcer
+    period: '2025'
+    population: 4,171 patients discharged alive after hip fracture admission in the Irish Hip Fracture Database
+    note: 120 patients developed a new pressure ulcer of grade 2 or higher after admission, within the audit window. These figures
+      apply to this hip fracture group.
+    source: noca_hip2025
+    locator: Irish Hip Fracture Standard 3, figure 2.4
+    measure: hospital
+  shingles:
+  - value: 285 inpatient discharges per year on average
+    period: 2013–2022
+    population: Irish Hospital Inpatient Enquiry records listing shingles as the primary diagnosis
+    note: This is the mean annual count of inpatient discharges. It excludes people managed only outside hospital and does not measure
+      incidence across the population.
+    source: hiqa_zoster_hta
+    locator: Section 3.5.2, hospitalisations
+    measure: hospital
+  slapped-cheek-syndrome:
+  - value: 411 positive IgM tests
+    period: January to December 2024
+    population: Parvovirus B19 samples tested at Ireland’s National Virus Reference Laboratory
+    note: The figure includes all tested ages and represents 5.9% of tests. It does not count all infections or estimate how many
+      children had the typical rash.
+    source: hpsc_parvovirus_lab
+    locator: Parvovirus B19 in Ireland, 2024
+    measure: registry
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -9183,3 +9252,291 @@ guides:
       speech problems, even if they improve.
     sources:
       Clinical guidance and further reading: https://www.hse.ie/eng/dementia-pathways/files/model-of-care-for-dementia-in-ireland.pdf
+  bacterial-vaginosis-pregnancy:
+    aliases: BV in pregnancy, bacterial vaginosis while pregnant
+    summary: Bacterial vaginosis is a change in the usual mix of bacteria in the vagina. If you have symptoms in pregnancy, your
+      midwife, GP or obstetrician can assess them.
+    symptoms:
+    - Discharge may become thin, greyish or white and develop a fishy smell. Some people have no symptoms. Itching or pain may suggest
+      another cause that needs checking.
+    causes:
+    - BV happens when the balance of the vaginal microbiome changes and certain bacteria grow in greater numbers. Douching and scented
+      products can disrupt the vaginal environment.
+    diagnosis:
+    - A clinician can ask about the discharge and examine you if needed. They may take a swab or perform other tests to distinguish
+      BV from thrush or other infections.
+    care:
+    - If treatment is needed, your maternity clinician can choose an antibiotic suitable during pregnancy. Avoid douching and discuss
+      uncertain symptoms before using over-the-counter treatments for thrush.
+    complications:
+    - BV can recur after treatment. In pregnancy it is associated with a higher chance of some complications, including preterm birth,
+      although most affected pregnancies do not have these complications.
+    help:
+    - Contact your GP, midwife or obstetrician if discharge changes smell or appearance. Phone the maternity unit promptly for bleeding,
+      persistent watery leakage, fever or significant abdominal pain.
+  blocked-plugged-duct-breastfeeding:
+    aliases: Narrowed milk duct, plugged duct, localised breast inflammation
+    summary: A tender area while breastfeeding can develop when swelling narrows milk ducts. Gentle care can help and a fever or
+      deteriorating symptoms may signal mastitis.
+    evidence_gap: Irish maternity surveys describe breastfeeding experiences and challenges. Available figures do not isolate how
+      often blocked or narrowed ducts occur among people breastfeeding in Ireland.
+    symptoms:
+    - A small area may feel sore, firm or swollen. The skin can look red, although redness may be harder to see on darker skin.
+    causes:
+    - Local inflammation narrows passageways for milk. Pressure on the breast, excess milk production or changes to feeding can contribute
+      and a solid plug is usually not the cause.
+    diagnosis:
+    - A lactation consultant, public health nurse or GP can review symptoms and feeding. Fever, widespread redness or a persistent
+      lump may warrant an examination.
+    care:
+    - Continue feeding on your usual pattern as tolerated. A cold compress can help with discomfort. Avoid deep massage and pumping
+      extra milk to try to clear the area.
+    complications:
+    - Symptoms can progress to mastitis or sometimes an abscess. A lump that stays or gets larger after other symptoms improve should
+      be examined by a clinician.
+    help:
+    - Contact your GP promptly if fever or flu-like symptoms develop, the redness spreads or the area fails to improve. A lactation
+      professional can help address recurring episodes.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/blocked-plugged-duct-breastfeeding/
+  breast-lumps:
+    aliases: Breast lump, lump in breast, lump in armpit
+    summary: A new lump in the breast or armpit should be checked. Many lumps have benign causes, and examination and imaging can
+      help distinguish them.
+    evidence_gap: Irish cancer figures count confirmed diagnoses, and symptomatic clinic figures include several types of breast
+      concern. Neither measures the prevalence of breast lumps in the community.
+    symptoms:
+    - You may feel a new lump or thickening or notice a change in the breast shape. Look for associated skin dimpling, nipple inversion,
+      unusual discharge or an armpit lump.
+    causes:
+    - Cysts, fibroadenomas and several other benign changes can cause lumps. An infection and breast cancer are other possibilities.
+      The feel of a lump alone cannot reliably determine the cause.
+    diagnosis:
+    - Your GP can examine the area and arrange referral if needed. A symptomatic breast clinic may use ultrasound, mammography and
+      sometimes a needle sample according to the findings.
+    care:
+    - Keep a note of when you first noticed the lump and if it changes with your cycle. Treatment or follow-up depends on what the
+      assessment shows.
+    complications:
+    - A painful lump with redness and fever may be an infection or abscess. A persistent lump may need imaging or sampling, even
+      if a recent screening mammogram was normal.
+    help:
+    - Contact your GP promptly for a new breast or armpit lump or a change in skin or nipple. Seek same-day advice for a hot, painful
+      breast with fever or feeling unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/breast-lumps/
+  breast-pain:
+    aliases: Mastalgia, sore breasts, cyclical breast pain
+    summary: Breast pain can follow a menstrual pattern, arise from the chest wall or accompany other breast symptoms. A persistent
+      focal change should be assessed.
+    evidence_gap: Irish symptomatic breast service activity includes several different reasons for referral. It cannot show how many
+      people have breast pain or how often it occurs.
+    symptoms:
+    - Pain may be dull and affect both breasts before a period, or occur in one area and worsen when touched or moved. Mention redness,
+      a lump or nipple changes.
+    causes:
+    - Hormonal changes, pregnancy and some medicines can contribute. A chest muscle strain, an ill-fitting bra or an infection can
+      also feel like breast pain.
+    diagnosis:
+    - A GP may ask about your cycle, medicines and recent changes, then examine your breast and chest wall. Other symptoms and the
+      examination guide any referral.
+    care:
+    - A supportive bra and keeping a pain diary may help. Ask a pharmacist about suitable pain relief, especially if pregnant or
+      breastfeeding. Follow up if pain persists.
+    complications:
+    - Persistent pain may interfere with exercise and sleep. A hot, swollen area with fever can indicate infection, which may progress
+      if it is not assessed.
+    help:
+    - Seek same-day advice for breast redness, swelling or heat with fever. Arrange a GP check for a new lump, nipple discharge,
+      skin change or pain that persists.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/breast-pain/
+  childrens-weight:
+    aliases: Childhood overweight, childhood obesity, child growth and weight
+    summary: Children gain weight as they grow. A healthcare professional can interpret a child’s height and weight together over
+      time and discuss changes that help the whole family.
+    symptoms:
+    - Weight alone tells little about health. A sustained change on a growth chart, becoming noticeably less active or difficulties
+      with sleep can give a clinician more context.
+    causes:
+    - Growth, inherited factors, medicines, food access, sleep and opportunities to be active all influence weight. A supportive
+      conversation can focus on changes within the family’s control.
+    diagnosis:
+    - A GP or public health nurse may plot height and weight on age- and sex-specific charts. The pattern over time and how the child
+      is developing are important.
+    care:
+    - Talk about regular meals, enjoyable movement and sleep without shaming the child. Ask a clinician about family-based support
+      before starting a diet or trying to restrict a child’s intake.
+    complications:
+    - Children can experience bullying and distress about weight. Some children with obesity also develop sleep, joint or metabolic
+      problems that can benefit from early care.
+    help:
+    - Talk to your GP or public health nurse if growth changes unexpectedly or there are concerns about eating, sleep or wellbeing.
+      Promptly seek advice for rapid unexplained weight loss.
+  headaches-pregnancy:
+    aliases: Pregnancy headache, headache while pregnant
+    summary: A mild headache can occur during pregnancy. New severe or persistent pain, particularly with visual symptoms, can signal
+      a problem that needs urgent assessment.
+    evidence_gap: Ireland tracks pre-eclampsia and related maternity outcomes. Those data cannot show how many pregnant people experience
+      headache from all causes.
+    symptoms:
+    - A headache may feel like pressure or throbbing. Report whether it started suddenly, follows your usual migraine pattern or
+      comes with vision changes, vomiting or swelling.
+    causes:
+    - Tiredness, changes in sleep, dehydration or migraine can contribute. After 20 weeks, headache can also be a sign of pre-eclampsia,
+      especially with other symptoms.
+    diagnosis:
+    - A clinician may measure blood pressure, test urine and ask about pain, medicines and other symptoms. Severe, sudden or unusual
+      pain may need more urgent investigation.
+    care:
+    - Take regular fluids, eat at regular intervals and rest when possible. Ask a pharmacist or maternity clinician about safe pain
+      relief and check before taking anti-inflammatory medicines.
+    complications:
+    - Poor sleep and recurrent pain can affect daily life. When headache accompanies high blood pressure or other signs of pre-eclampsia,
+      early assessment reduces the risk of serious complications.
+    help:
+    - Contact your maternity team immediately for a severe or persistent headache with visual changes, pain under the ribs or sudden
+      swelling. Seek emergency help for a sudden worst-ever headache or neurological changes.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/headaches-pregnancy/
+  how-to-check-your-breasts:
+    kind: procedure
+    aliases: Breast awareness, breast self-check, breast self-exam
+    summary: Checking your breasts helps you notice new changes. Get familiar with how they normally look and feel at different times
+      of the month or stages of life.
+    evidence_gap: Irish breast screening records describe screening mammograms. They do not measure how often people check their
+      breasts at home or what those checks find.
+    symptoms:
+    - Look for a change in shape, swelling, dimpling, changes on or around the nipple, or unusual discharge. Feel for an unfamiliar
+      lump or thickened area.
+    causes:
+    - Hormones, age, pregnancy and breastfeeding can change breast tissue. Knowing your usual pattern helps you explain a change
+      to your GP when you first notice it.
+    diagnosis:
+    - Look at both breasts with your arms in different positions and feel the whole breast and armpit. The HSE demonstration shows
+      one practical way to check.
+    care:
+    - Raise anything new with your GP. Continue to attend eligible screening appointments and tell a clinician promptly about symptoms
+      that appear between those appointments.
+    complications:
+    - A self-check cannot determine the cause of a change or detect all cancers. A recent normal screening result still leaves a
+      new symptom worth investigating.
+    help:
+    - Contact your GP promptly for a new lump, unexplained change in skin or nipple, or bloody discharge. Get same-day advice about
+      redness with fever or feeling unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/how-to-check-your-breasts/
+  malnutrition:
+    aliases: Undernutrition, protein-energy malnutrition, nutrition risk
+    summary: Malnutrition develops when the body does not get or use enough energy or nutrients. It can occur at any body weight
+      and may show up during illness or recovery.
+    symptoms:
+    - Possible signs include unintended weight loss, looser clothes, poor appetite, weakness and slow recovery. In children, a change
+      in the growth pattern can warrant assessment.
+    causes:
+    - Causes include eating too little, difficulty swallowing, poor absorption and higher needs during illness. Pain, dental problems,
+      isolation or difficulty preparing food may contribute.
+    diagnosis:
+    - A clinician can ask about recent intake, weight change, medical history and practical barriers. Screening may be followed by
+      a dietitian assessment, blood tests or swallowing review.
+    care:
+    - Care addresses the cause and the person’s nutritional needs. A dietitian can recommend ways to fortify food, suitable supplements
+      or more specialised support when intake is inadequate.
+    complications:
+    - Malnutrition can reduce strength, impair healing and increase infection risk. After very little intake for several days, some
+      people need medically supervised nutrition because restarting food can cause dangerous electrolyte shifts.
+    help:
+    - Contact your GP if weight is falling without explanation or eating has become difficult. Seek urgent advice if you cannot drink,
+      are severely weak or have confusion.
+  pelvic-organ-prolapse:
+    aliases: POP, vaginal prolapse, cystocele, rectocele
+    summary: Pelvic organ prolapse occurs when support for the bladder, uterus or bowel weakens and the organ bulges into the vagina.
+      Treatment depends on which symptoms affect daily life.
+    evidence_gap: Irish service activity and estimates for pelvic floor disorders group several different conditions. They cannot
+      establish a current national prevalence for pelvic organ prolapse specifically.
+    symptoms:
+    - Typical symptoms include heaviness, dragging or a bulge in the vagina. Some people have trouble emptying the bladder or bowel,
+      discomfort during sex or urinary leakage.
+    causes:
+    - Supporting muscles and connective tissues can weaken over time. Pregnancy and birth, constipation with straining, persistent
+      cough and previous pelvic surgery can contribute.
+    diagnosis:
+    - A GP or specialist can ask about urinary and bowel symptoms and examine the vagina. They may check whether more than one area
+      is affected.
+    care:
+    - Options include pelvic floor physiotherapy, addressing constipation, using a pessary or considering surgery. A specialist can
+      explain the likely benefits and trade-offs for your symptoms.
+    complications:
+    - Prolapse can affect bowel or bladder emptying and lead to discomfort during daily activities. Follow-up matters if a pessary
+      causes bleeding, pain, discharge or difficulty passing urine.
+    help:
+    - Arrange a GP review for a new or bothersome bulge. Seek urgent advice if you cannot pass urine, have severe pain or feel unwell
+      with fever.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/national-pppgs/national-clinical-practice-guideline-diagnosis-and-management-of-pelvic-organ-prolapse/
+  pressure-ulcers:
+    aliases: Pressure injuries, pressure sores, bedsores
+    summary: Pressure ulcers are skin and tissue injuries caused by sustained pressure, sometimes with friction or shearing. An early
+      change in colour, texture or temperature can be the first sign.
+    symptoms:
+    - Check skin over bones and under devices. Persistent discolouration, unusual warmth, firmness, pain, a blister or broken skin
+      can signal an injury. Colour changes can be subtler on darker skin.
+    causes:
+    - Remaining in one position for a long time can reduce blood flow to tissue. Risk rises with limited movement, reduced sensation,
+      moisture, poor nutrition and some medical conditions.
+    diagnosis:
+    - A nurse or clinician examines the skin and wound, checks depth and looks for infection. They also assess movement, nutrition
+      and pressure from mattresses, chairs or devices.
+    care:
+    - A care plan can include assisted repositioning, pressure-relieving surfaces, moisture management and dressings. Avoid rubbing
+      the affected area and ask a nurse how to relieve pressure safely.
+    complications:
+    - Deeper wounds can extend into muscle or bone. An infected ulcer can delay healing, increase pain and in severe cases lead to
+      infection in the bloodstream.
+    help:
+    - Ask a clinician to review any persistent discolouration or wound at a pressure point. Seek urgent help for spreading redness,
+      fever, rapidly worsening pain or sudden confusion.
+  shingles:
+    aliases: Herpes zoster, zoster, shingles rash
+    summary: Shingles is a reactivation of the chickenpox virus. A painful rash usually develops on one side, and treatment can be
+      time-sensitive when the eye or immune system is involved.
+    symptoms:
+    - Burning, itching or tingling can appear before the rash. Small blisters then often develop in a band on one side of the trunk
+      or on one side of the face.
+    causes:
+    - After chickenpox, the virus remains in nerves. It can reactivate later, with risk increasing with age or a weakened immune
+      system. Susceptible contacts can catch chickenpox from exposure to blister fluid.
+    diagnosis:
+    - A pharmacist or GP can advise if the rash looks like shingles. Clinicians sometimes test a blister sample if the rash is unusual
+      or the diagnosis is uncertain.
+    care:
+    - Seek advice promptly because antiviral medicines help most when started early. Keep blisters clean and covered when possible
+      and avoid close contact with susceptible people at higher risk until all lesions crust.
+    complications:
+    - Some people experience persistent nerve pain after the rash fades. Shingles near the eye can threaten vision, and widespread
+      illness is more likely with a weakened immune system.
+    help:
+    - Contact a GP or out-of-hours service immediately for a rash on the nose or around the eye, visual changes, or suspected shingles
+      with a severely weakened immune system.
+  slapped-cheek-syndrome:
+    aliases: Fifth disease, parvovirus B19, erythema infectiosum
+    summary: Slapped cheek syndrome usually causes a mild illness in children. A person who is pregnant, immunocompromised or has
+      a chronic red blood cell disorder may need advice after exposure.
+    symptoms:
+    - Children may first feel tired or have a temperature, sore throat or headache. A bright cheek rash or a lacy rash on the trunk
+      and limbs may follow.
+    causes:
+    - Parvovirus B19 spreads between people, often before the rash appears. In most healthy children, the immune system clears the
+      illness without treatment.
+    diagnosis:
+    - The pattern of illness and rash may be enough for a clinician to recognise it. Blood tests are sometimes used when someone
+      is pregnant or at greater risk of complications.
+    care:
+    - Rest, fluids and suitable pain relief can help. A child who feels well is usually past the most infectious period by the time
+      the typical rash appears.
+    complications:
+    - The virus can briefly reduce red blood cell production. This can cause important anaemia in some people with blood conditions
+      and may cause complications in pregnancy.
+    help:
+    - Call your GP or maternity team about exposure if you are pregnant or at higher risk. Get urgent advice if a child is very pale,
+      breathless or unusually drowsy.
