@@ -2,33 +2,33 @@
   "cik": 1601046,
   "company": "Keysight Technologies",
   "latest": {
-    "accession": "0001601046-26-000036",
-    "filed": "2026-09-02",
-    "form": "10-Q",
-    "fp": "Q3",
     "fy": 2026,
+    "fp": "Q4",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-19",
+    "form": "8-K",
+    "accession": "0001601046-26-000040",
+    "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 2.3,
-        "prior_year": 1.1,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 1994000000,
+        "prior_year": 1419000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 397000000,
-        "prior_year": 191000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 486000000,
+        "prior_year": 233000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 1846000000,
-        "prior_year": 1352000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 2.82,
+        "prior_year": 1.35,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q4",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-19",
+      "form": "8-K",
+      "accession": "0001601046-26-000040",
+      "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
+      "metrics": {
+        "revenue": {
+          "current": 1994000000,
+          "prior_year": 1419000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 486000000,
+          "prior_year": 233000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 2.82,
+          "prior_year": 1.35,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "SEC XBRL for prior periods; original SEC 8-K earnings exhibit for latest quarter; GAAP, no estimates",
   "ticker": "KEYS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-20"
 }
