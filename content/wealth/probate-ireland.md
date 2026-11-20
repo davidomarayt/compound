@@ -48,6 +48,8 @@ sources:
     url: https://www.revenue.ie/en/gains-gifts-and-inheritance/statement-of-affairs-probate-form-s2/the-new-application-process.aspx
   - title: "Revenue: Gift and Inheritance Tax (CAT) — tax on inheritances."
     url: https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/index.aspx
+  - title: "Law Society of Ireland: Payment of funeral expenses — bank payment practice before a grant (published 7 October 2011; verified 20 November 2026)."
+    url: https://www.lawsociety.ie/Solicitors/knowledge-base/Practice-Notes/Payment-of-funeral-expenses
 ---
 
 Probate is often described as if it were one form.
@@ -261,6 +263,8 @@ That usually means identifying:
 - unpaid bills;
 - funeral expenses where relevant;
 - other debts.
+
+**If funeral costs are due before probate:** An itemised funeral bill may need paying before a Grant of Representation is issued. The [Law Society of Ireland's practice note](https://www.lawsociety.ie/Solicitors/knowledge-base/Practice-Notes/Payment-of-funeral-expenses) explains that, where the deceased's bank account has enough funds, many banks will consider paying the funeral director directly against an invoice without first requiring a grant. This is not guaranteed: check the particular bank's bereavement procedure, documentation requirements and available account funds before relying on early payment. Retain the invoice and payment records with the estate papers. For other costs that arise in administering the estate, see [Probate Costs & Fees in Ireland](/wealth/probate-costs-fees-ireland/).
 
 The value used in the probate process is not simply a guess.
 
