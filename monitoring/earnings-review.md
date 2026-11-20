@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-19
+Checked: 2026-11-20
 
 - 499 saved profiles checked against structural and issuer rules.
-- 116 existing company articles; 90 mapped to monitored issuers.
-- 109 pending review items; 17 recorded decisions.
+- 122 existing company articles; 102 mapped to monitored issuers.
+- 115 pending review items; 15 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,14 +18,6 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
-
-### UNMAPPED · article_mapping · medium
-
-ID: `12c9af68758b858e87028ca9`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -61,14 +53,6 @@ Files: `content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.m
 
 ### UNMAPPED · article_mapping · medium
 
-ID: `29d13142a8df3da39e83060c`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md`
-
-### UNMAPPED · article_mapping · medium
-
 ID: `599619534c0f5ef04be07509`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -77,19 +61,19 @@ Files: `content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `5e3e1c0f7805d7247a2c7624`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-accounting-plugin-bookkeeping-controls-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `60365dff6ba25ee3226c33ee`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics.md`
-
-### UNMAPPED · article_mapping · medium
-
-ID: `6605e416085729d965f45d56`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -125,11 +109,11 @@ Files: `content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md`
 
 ### UNMAPPED · article_mapping · medium
 
-ID: `88b03a85f03510b3801dd389`
+ID: `8bb520030ff066c827c2d062`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
-Files: `content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md`
+Files: `content/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -157,30 +141,6 @@ Files: `content/wealth/openai-astra-law-legal-benchmark-reliability-economics.md
 
 ### UNMAPPED · article_mapping · medium
 
-ID: `b08ae5372476782fde9168cc`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md`
-
-### UNMAPPED · article_mapping · medium
-
-ID: `d8cd404b933af68d51e04381`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md`
-
-### UNMAPPED · article_mapping · medium
-
-ID: `da843b900adfb5e6fff8e433`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics.md`
-
-### UNMAPPED · article_mapping · medium
-
 ID: `db2f004713638d126726a1ff`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -202,14 +162,6 @@ ID: `ef0eea7b0dda3c7b7e4b2082`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md`
-
-### UNMAPPED · article_mapping · medium
-
-ID: `facdcccedde7c19d5764eeaa`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -308,16 +260,6 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/meta-advertising-growth-ai-cash-flow.md`, `content/earnings-profiles/meta.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
-
-### MSFT · article_review · medium
-
-ID: `4fbb6c06312949b560dbfdf7`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/msft.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm · Q1 FY2027 · period end 2026-09-30 · filed 2026-10-28
 
 ### MSFT · article_review · medium
 
@@ -563,6 +505,16 @@ Files: `content/wealth/apple-earnings-tariff-refunds-services.md`, `content/earn
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm · FY FY2026 · period end 2026-09-26 · filed 2026-11-03
 
+### AAPL · article_review · low
+
+ID: `ab474be64d41e147c1d0fc4b`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/apple-vendor-receivables-concentration.md`, `content/earnings-profiles/aapl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm · FY FY2026 · period end 2026-09-26 · filed 2026-11-03
+
 ### ABNB · article_review · low
 
 ID: `6275f266037381958b0b19bb`
@@ -592,6 +544,78 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md`, `content/earnings-profiles/amzn.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
+
+### ANT · article_review · low
+
+ID: `0b2ad80065e19606ee4007a5`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `0bf066c0c7d56df2bb5bc9eb`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `1e34150922976ed4b6e40552`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `7ff381933457af85987f0ef5`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `953cb3b9c05d9e688c5b8740`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `acbc969d28444184be71d2d3`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `c06d32acf28e2eadc324d08f`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `d42d6837ba2636c54c729389`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `fd006288f5347abd97d87b67`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/ant.json`
 
 ### APTV · article_review · low
 
@@ -682,6 +706,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/cvs-separation-segment-economics.md`, `content/earnings-profiles/cvs.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
+
+### DHI · article_review · low
+
+ID: `4d15dec186f45f2e4809bfae`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/dr-horton-cash-returns-land-control.md`, `content/earnings-profiles/dhi.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/882184/000088218426000157/dhi-20260930.htm · FY FY2026 · period end 2026-09-30 · filed 2026-11-18
 
 ### DIS · article_review · low
 
@@ -913,6 +947,16 @@ Files: `content/wealth/onsemi-margin-recovery-ai-data-centre.md`, `content/earni
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1097864/000109786426000021/on-20261002.htm · Q3 FY2026 · period end 2026-10-02 · filed 2026-11-02
 
+### PANW · article_review · low
+
+ID: `1256e5ce62d2aca843b4b261`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/palo-alto-growth-margin-acquisitions.md`, `content/earnings-profiles/panw.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm · Q1 FY2027 · period end 2026-10-31 · filed 2026-11-19
+
 ### RDDT · article_review · low
 
 ID: `5c19dedad246065c859c0288`
@@ -1022,6 +1066,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/western-digital-earnings-ai-storage-cash-flow.md`, `content/earnings-profiles/wdc.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm · Q1 FY2027 · period end 2026-10-02 · filed 2026-10-23
+
+### WMT · article_review · low
+
+ID: `60f2798be198b9eb4f25e65f`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/walmart-profit-mix-capex-cash.md`, `content/earnings-profiles/wmt.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm · Q3 FY2027 · period end 2026-10-31 · filed 2026-11-19
 
 ### XYZ · article_review · low
 
