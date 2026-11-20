@@ -7,8 +7,8 @@
   "target_new_articles": 3,
   "new_article_count_prepared": 2,
   "canonical_updates_prepared": 1,
-  "confirmed_live_new_articles": 0,
-  "status": "prepared_pending_pr_ci",
+  "confirmed_live_new_articles": 2,
+  "status": "two_new_one_canonical_update_verified_live_via_github_runner",
   "ads_policy": "Standard ad loader and CMP on released articles and company hubs, independent of human-review status; no guarantee of ad fill",
   "editorial_quality_gate": "19-20 Nov primary/source evidence, topic-index and prior 14–30-day overlap checked; no filler or duplicated IPO canonical; licensed real archival images only; exact-head test/performance and deployment/live verification required",
   "prior_publication_recovery": {
@@ -51,13 +51,14 @@
       "profile_url": "https://compound.ie/companies/openai/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_started",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: independent GitHub Pages mobile-audit job 136155895356, site run 44696053186 (merge commit 1972f494715f95f902db777ae9c9e1524e4bbf29), 2026-11-20T07:48:22Z; verified fetched live HTML, canonical, pinned cover JPEG, OG/Twitter WebP, exact profile backlink and AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-20T07:48:22Z"
     },
     {
       "company": "Anthropic",
@@ -88,13 +89,14 @@
       "live_required_fingerprint": "$97.17",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_started",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: independent GitHub Pages mobile-audit job 136155895356, site run 44696053186 (merge commit 1972f494715f95f902db777ae9c9e1524e4bbf29), 2026-11-20T07:48:22Z; verified fetched live HTML, canonical, pinned cover JPEG, OG/Twitter WebP, exact profile backlink and AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "updated_canonical_verified_live",
+      "live_verified_at_utc": "2026-11-20T07:48:22Z"
     },
     {
       "company": "Blue Origin",
@@ -123,36 +125,51 @@
       "profile_url": "https://compound.ie/companies/blue-origin/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_started",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: independent GitHub Pages mobile-audit job 136155895356, site run 44696053186 (merge commit 1972f494715f95f902db777ae9c9e1524e4bbf29), 2026-11-20T07:48:22Z; verified fetched live HTML, canonical, pinned cover JPEG, OG/Twitter WebP, exact profile backlink and AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-20T07:48:22Z"
     }
   ],
   "profile_updates": [
     {
       "slug": "openai",
-      "status": "pending_update_18_nov_accounting_plugin"
+      "status": "verified_sourced_profile_and_article_backlinks_live"
     },
     {
       "slug": "anthropic",
-      "status": "IPO-first-trade canonical updated; stock-directory migration separate draft PR #198 requires coordination"
+      "status": "historical_private_profile_preserved_pending_listed_migration_PR198"
     },
     {
       "slug": "blue-origin",
-      "status": "pending_update_google_19_nov_new_glenn"
+      "status": "verified_sourced_profile_and_article_backlinks_live"
     }
   ],
   "production_deployment": {
-    "status": "not_started",
-    "confirmed_live_urls": 0,
-    "confirmed_live_new_articles": 0,
-    "confirmed_updated_canonicals": 0,
-    "branch_protection": "Unprotected historically; exact-head CI enforced and native protections recommended"
+    "status": "github_pages_deployed_independently_verified",
+    "merge_commit_sha": "1972f494715f95f902db777ae9c9e1524e4bbf29",
+    "site_workflow_run": 44696053186,
+    "site_workflow_url": "https://github.com/davidomarayt/compound/actions/runs/44696053186",
+    "mobile_audit_job": 136155895356,
+    "verified_at_utc": "2026-11-20T07:48:22Z",
+    "confirmed_live_urls": 3,
+    "confirmed_live_new_articles": 2,
+    "confirmed_updated_canonicals": 1,
+    "verified_checks": [
+      "canonical HTTP content",
+      "unique Anthropic $97.17 fingerprint",
+      "real pinned documentary cover JPEG",
+      "OG/Twitter WebP images fetched",
+      "company profile article backlink",
+      "article and profile AdSense loader"
+    ],
+    "branch_protection": "Production branch lacks native protection; premerge exact-head test and performance checks passed; recommend enabling native protection"
   },
-  "updated_at_utc": "2026-11-20",
-  "anthropic_listing_note": "Verified Nasdaq public listing on 19 November; previous private-company category must be retired via separately validated PR #198, not silently treated as private."
+  "updated_at_utc": "2026-11-20T07:48:22Z",
+  "anthropic_listing_note": "Verified Nasdaq public listing on 19 November; previous private-company category must be retired via separately validated PR #198, not silently treated as private.",
+  "confirmed_updated_canonicals": 1
 }
