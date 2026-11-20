@@ -23,14 +23,14 @@ def _breadcrumb_items(html):
 def test_watchlist_registry_covers_requested_companies():
     root = Path(__file__).parents[1]
     data = json.loads((root / "content" / "company-watchlist.json").read_text())
-    assert len(data["listed"]) == 10
-    assert len(data["private"]) == 13
+    assert len(data["listed"]) == 11
+    assert len(data["private"]) == 12
     assert {c["slug"] for c in data["listed"]} == {
-        "spcx", "tsm", "asml", "005930-ks", "tm", "0700-hk",
+        "spcx", "ant", "tsm", "asml", "005930-ks", "tm", "0700-hk",
         "1211-hk", "7974-t", "nvo", "mc-pa"
     }
     assert {c["slug"] for c in data["private"]} == {
-        "openai", "anthropic", "bytedance", "databricks", "stripe",
+        "openai", "bytedance", "databricks", "stripe",
         "revolut", "blue-origin", "anduril", "neuralink", "epic-games",
         "valve", "canva", "lego"
     }
@@ -210,3 +210,43 @@ def test_watchlist_rejects_collisions_with_sp500_tickers(settings):
     }), encoding="utf-8")
     with pytest.raises(ValueError, match="Duplicate company slug"):
         build_site(settings)
+
+def test_anthropic_listing_preserves_legacy_company_route_and_research(settings):
+    """An IPO must not strand canonical pre-IPO links or discard historical coverage."""
+    listed = {
+        "slug": "ant", "name": "Anthropic", "ticker": "ANT",
+        "exchange": "Nasdaq", "market": "United States",
+        "sector": "Artificial intelligence",
+        "summary": "Nasdaq-listed since 19 November 2026.",
+        "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+        "tv_symbol": "NASDAQ:ANT", "historical_private_slug": "anthropic",
+    }
+    (settings.content_dir / "company-watchlist.json").write_text(
+        json.dumps({"checked": "2026-11-20", "listed": [listed], "private": []}),
+        encoding="utf-8",
+    )
+    wealth = settings.content_dir / "wealth"
+    wealth.mkdir(parents=True, exist_ok=True)
+    (wealth / "anthropic-legacy-analysis.md").write_text("""---
+title: Anthropic before the IPO
+slug: anthropic-legacy-analysis
+pillar: wealth
+date: 2026-11-18
+summary: Original pre-IPO research.
+tags: [company-anthropic, company-research]
+---
+Research based on pre-IPO disclosures.
+""", encoding="utf-8")
+    build_site(settings)
+    stock = (settings.public_dir / "stocks/ant/index.html").read_text(encoding="utf-8")
+    previous = (settings.public_dir / "companies/anthropic/index.html").read_text(encoding="utf-8")
+    index = (settings.public_dir / "companies/index.html").read_text(encoding="utf-8")
+    sitemap = (settings.public_dir / "sitemap.xml").read_text(encoding="utf-8")
+    assert "Anthropic before the IPO" in stock
+    assert 'href="/wealth/anthropic-legacy-analysis/"' in stock
+    assert 'href="/stocks/ant/"' not in index or "Anthropic" not in index
+    assert "http-equiv=\"refresh\"" in previous
+    assert "https://example.test/stocks/ant/" in previous
+    assert 'name="robots" content="noindex,follow"' in previous
+    assert "<loc>https://example.test/stocks/ant/</loc>" in sitemap
+    assert "<loc>https://example.test/companies/anthropic/</loc>" not in sitemap
