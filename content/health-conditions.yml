@@ -90,7 +90,50 @@ sources:
   hiqa_teledermatology:
     name: HIQA health technology assessment of teledermatology
     url: https://www.hiqa.ie/sites/default/files/2026-03/HTA-Teledermatology-Report.pdf
+  psoriasis_atlas:
+    name: Global Psoriasis Atlas, Ireland country profile
+    url: https://www.globalpsoriasisatlas.org/modules/prevalence-page/country-pdf?aposDocId=nukxyzx1wdfn4a77xlkkw9hs&locale=en
 evidence:
+  eczema:
+  - value: About 10%
+    period: Reported by HIQA in 2026
+    population: Adults in Ireland
+    note: Approximate estimate for atopic dermatitis. HIQA notes that reliable Irish data are scarce.
+    source: hiqa_teledermatology
+    locator: page 84, Eczema (atopic dermatitis)
+    measure: prevalence
+  eczema-babies-children:
+  - value: About 20%
+    period: Reported by HIQA in 2026
+    population: Children in Ireland
+    note: Approximate estimate for atopic dermatitis. HIQA notes that reliable Irish data are scarce.
+    source: hiqa_teledermatology
+    locator: page 84, Eczema (atopic dermatitis)
+    measure: prevalence
+  psoriasis:
+  - value: 1.72%
+    period: Ireland profile accessed November 2026
+    population: All ages in Ireland
+    note: Modelled estimate for physician-diagnosed psoriasis. The reported uncertainty range is 0.65% to 4.49%.
+    source: psoriasis_atlas
+    locator: Overall, physician or dermatologist diagnosed prevalence
+    measure: prevalence
+  hidradenitis-suppurativa:
+  - value: 221 of 15,547 (1.4%)
+    period: Six-month study in 2015, reported by HIQA in 2026
+    population: Patients seen at four Irish dermatology clinics
+    note: Clinic-based proportion. The people attending dermatology clinics differ from the general population.
+    source: hiqa_teledermatology
+    locator: page 85, Hidradenitis suppurativa
+    measure: prevalence
+  rosacea:
+  - value: 2.7%
+    period: 2010 study, reported by HIQA in 2026
+    population: Sample of 1,000 workers in Ireland
+    note: Study estimate for papulopustular rosacea, the subtype associated with bumps and pustules. HIQA says national prevalence for rosacea is unknown.
+    source: hiqa_teledermatology
+    locator: page 87, Rosacea
+    measure: prevalence
   acne:
   - value: 23.2%
     period: 2021 model estimate, reported by HIQA in 2026
@@ -2171,3 +2214,448 @@ guides:
     - Ask who will contact you with results and when to follow up if you have heard nothing. The person who ordered the test can explain whether a result matters in the context of your symptoms, medicines and previous results.
     sources:
       HSE common types of blood test: https://www2.hse.ie/conditions/blood-tests/common-types/
+  genital-herpes-hsv:
+    aliases: genital herpes HSV HSV-1 HSV-2 genital sores blisters
+    summary: Genital herpes can cause painful blisters or ulcers around the genitals or anus. A sexual health clinic can test a fresh sore and discuss treatment and ways to reduce the risk of passing on the virus.
+    symptoms:
+    - The first recognised episode can cause tender blisters that open into sores, pain when passing urine and swollen glands in the groin. Some people also feel feverish or generally unwell.
+    - Some infections cause little or no noticeable illness. A later recurrence can begin with tingling or irritation and may be milder than the first episode.
+    causes:
+    - Either type of herpes simplex virus can cause genital herpes. HSV-1 can be passed from the mouth to the genitals during oral sex. After infection, the virus stays in nearby nerves and can become active again.
+    - The virus can pass through intimate contact even when there is no visible sore. Condoms reduce the risk, though skin outside the covered area can still be involved.
+    diagnosis:
+    - Contact a GP or sexual health clinic while a blister or sore is still present if possible. A clinician can swab the lesion and consider other causes of genital ulcers, including syphilis.
+    - A routine STI screen generally does not include a herpes blood test. Ask the clinician which tests are appropriate for your symptoms and circumstances.
+    care:
+    - Antiviral tablets can help shorten a first episode. If outbreaks recur often, ask about tablets to start when symptoms begin or daily suppressive treatment. Avoid sexual contact while you have warning symptoms or sores.
+    complications:
+    - Pain can make it difficult to pass urine. Genital herpes around the time of birth can cause serious illness in a newborn, so tell your maternity team about a first episode, recurrence or past diagnosis.
+    help:
+    - Arrange an appointment promptly for new genital sores. Get urgent help if you cannot pass urine or feel very unwell. Contact your maternity team promptly if you develop symptoms during pregnancy.
+    sources:
+      HSE genital herpes guidance: https://www2.hse.ie/conditions/genital-herpes-hsv/
+      HSE herpes in newborns: https://www2.hse.ie/conditions/neonatal-herpes/
+  trichomonas-vaginalis-tv:
+    aliases: trichomoniasis trich TV trichomonas vaginalis
+    summary: Trichomoniasis is a treatable sexually transmitted infection. It can cause genital irritation or discharge, but people with no symptoms can still pass it on.
+    symptoms:
+    - Changes in vaginal discharge, a strong smell, soreness or itching can occur. Some people notice pain when passing urine or during or after sex.
+    - People with a penis often have no symptoms. When symptoms occur they can include discharge, irritation around the foreskin or discomfort when passing urine.
+    causes:
+    - Trichomonas vaginalis is a parasite that can infect the vagina or urethra. The symptoms overlap with thrush, bacterial vaginosis and other STIs, which require different treatment.
+    diagnosis:
+    - A GP or sexual health clinic can arrange testing, usually with a vaginal swab or a urine sample depending on your anatomy and symptoms. Contact the clinic if a partner has been diagnosed, even if you feel well.
+    care:
+    - A clinician treats the infection with antibiotics and can arrange testing and treatment for partners. The HSE advises waiting a week after you and your partners have finished treatment before having sex again.
+    - If symptoms return, contact the clinic. It can assess whether you need another test, treatment for reinfection or investigation for a different cause.
+    complications:
+    - Untreated infection can last months. During pregnancy it is associated with a higher risk of early birth or low birth weight. Tell your doctor or midwife if you are pregnant when arranging assessment.
+    help:
+    - Contact a GP or sexual health clinic if you have unusual discharge, irritation, pain when passing urine or a partner who has tested positive.
+    sources:
+      HSE trichomoniasis guidance: https://www2.hse.ie/conditions/trichomonas-vaginalis-tv/
+  lymphogranuloma-venereum-lgv:
+    aliases: LGV lymphogranuloma venereum LGV chlamydia proctitis rectal chlamydia
+    summary: LGV is a form of chlamydia that can cause rectal pain, bleeding or discharge. It needs specific testing and a longer course of treatment than uncomplicated chlamydia.
+    symptoms:
+    - Rectal infection can cause bleeding, pus, pain and a persistent feeling that you need to open your bowels. There may also be constipation or diarrhoea.
+    - A small painless genital sore can be easy to miss. Swelling or pain in the groin can develop later. Tell the clinician where symptoms occur so they can choose the right sample.
+    causes:
+    - Certain strains of Chlamydia trachomatis can inflame mucosal tissue and nearby lymph nodes. The infection spreads through sexual contact and can affect anyone exposed to it.
+    diagnosis:
+    - A sexual health clinician may swab the area involved, such as the rectum or a sore. If the sample tests positive for chlamydia and LGV is suspected, the laboratory can test further to identify the strain.
+    care:
+    - Take the full course prescribed by the clinic. Ask when to return for a test to check the infection has cleared, when it is safe to have sex again and how partners can get testing and treatment.
+    complications:
+    - Early treatment usually prevents lasting problems. Persistent inflammation can damage tissue in the affected area. Ongoing bleeding or pain after treatment needs reassessment.
+    help:
+    - Contact a sexual health clinic or GP promptly about rectal discharge, pain or bleeding, especially after sexual contact. Other causes of rectal bleeding also need medical assessment.
+    sources:
+      HSE LGV guidance: https://www2.hse.ie/conditions/lymphogranuloma-venereum-lgv/
+  legionnaires-disease:
+    aliases: legionnaires disease legionellosis legionella pneumonia
+    summary: Legionnaires’ disease is a serious form of pneumonia. If you are unwell with cough, fever or breathing difficulty, mention recent travel, hospital stays or spa visits when you seek help.
+    emergency: If someone has severe difficulty breathing, call
+    symptoms:
+    - Fever, headache, muscle aches and exhaustion can begin before the cough. Breathlessness or chest pain can develop as the lung infection progresses.
+    - Symptoms resemble other types of pneumonia. Recent hotel, healthcare or spa exposure can help a clinician decide whether to test for Legionella.
+    causes:
+    - Lung infection can occur when a person breathes in tiny water droplets carrying Legionella bacteria. Older adults, smokers and people with chronic illness or a weakened immune system are more vulnerable to severe illness.
+    diagnosis:
+    - A clinician checks breathing and may arrange a chest X-ray to look for pneumonia. Hospital teams can use urine or respiratory samples to help determine whether Legionella is responsible.
+    care:
+    - Antibiotics are used to treat the infection. Hospital care may be needed for antibiotics through a vein, oxygen or more intensive breathing support. Energy and exercise tolerance can take weeks to recover.
+    complications:
+    - Severe pneumonia can impair breathing and require intensive care. Seek reassessment if breathing worsens or you feel much more unwell during recovery.
+    help:
+    - Seek urgent medical assessment for a persistent bad cough with fever, breathlessness or severe chest pain. Tell the clinician where you have been in the preceding 10 days. Go to an emergency department if you are very unwell.
+    sources:
+      HSE Legionnaires’ disease guidance: https://www2.hse.ie/conditions/legionnaires-disease/
+      HPSC public factsheet: https://www.hpsc.ie/a-z/respiratory/legionellosis/factsheet/legionnairesdiseasefactsheetforthepublic/
+  listeriosis:
+    aliases: listeria listeriosis food poisoning pregnancy listeria
+    summary: Listeriosis is an uncommon foodborne infection. Pregnant people, newborns and people with weakened immune systems need prompt assessment if they may have it.
+    emergency: If someone has a seizure, becomes suddenly confused or is difficult to wake, call
+    symptoms:
+    - Listeriosis can cause fever, aches, diarrhoea or nausea. People with a healthy immune system may have mild symptoms or feel well.
+    - In pregnancy, symptoms may be mild even if the infection affects the baby. A severe headache with a stiff neck or sensitivity to light can signal a serious infection.
+    causes:
+    - Listeria bacteria can enter the body through contaminated food and can sometimes enter the bloodstream. During pregnancy the infection can reach the baby through the placenta.
+    diagnosis:
+    - A clinician asks about symptoms, pregnancy, medicines and possible food exposure. Tell them if you have eaten food linked to a recall. Tests depend on the clinical circumstances and can include blood samples when invasive infection is suspected.
+    care:
+    - Many mild illnesses improve with rest and fluids. People with suspected invasive illness or infection during pregnancy need medical assessment for antibiotic treatment and monitoring. Follow HSE and Food Safety Authority of Ireland advice on recalls and food safety in pregnancy.
+    complications:
+    - Severe infection can cause sepsis or meningitis. Infection during pregnancy can lead to pregnancy loss, early delivery or serious illness in the newborn.
+    help:
+    - Seek urgent advice from your GP or maternity team if you are pregnant and think you may have listeriosis. Seek urgent assessment for a baby with possible infection or if you have a weakened immune system and develop symptoms.
+    sources:
+      HSE listeriosis guidance: https://www2.hse.ie/conditions/listeriosis/
+      HPSC public factsheet: https://www.hpsc.ie/a-z/gastroenteric/listeriosis/factsheets/
+  lyme-disease:
+    aliases: lyme disease tick bite bullseye erythema migrans borrelia neuroborreliosis
+    summary: Lyme disease can develop after a bite from an infected tick. A rash that expands over several days is an important clue, even if you never noticed a tick.
+    symptoms:
+    - An expanding red or darker patch may develop around the bite. The middle can clear, though the rash can also have an even colour. A small mark immediately after a bite can be local irritation.
+    - Fever, tiredness, headaches and aches can occur with or without a rash. Later illness can affect nerves or joints, causing symptoms such as facial weakness or joint swelling.
+    causes:
+    - Lyme disease is caused by Borrelia bacteria carried by some ticks. Ticks can attach after time in long grass, woodland or bracken. Check your skin after spending time in those settings.
+    diagnosis:
+    - A GP may diagnose Lyme disease from a characteristic rash and the history alone. When blood tests are appropriate, an early negative result can be followed by a repeat test if the doctor still suspects Lyme disease.
+    care:
+    - A GP can prescribe antibiotics. Some people with severe illness need hospital assessment and antibiotics through a vein. If symptoms persist afterwards, ask your GP to review them and check whether another cause needs investigation.
+    - If you find a tick attached to your skin, use fine-tipped tweezers or a tick removal tool. Grip it as close to the skin as possible and remove it steadily. Note the date and seek advice if symptoms develop.
+    complications:
+    - The infection can affect the nervous system, joints and, less often, the heart. Ireland’s notification figures cover Lyme neuroborreliosis, the form involving the nervous system.
+    help:
+    - Contact your GP if you develop an expanding rash or flu-like illness after a tick bite or time in places where ticks live. If possible, photograph the rash as it changes and tell your GP when it began.
+    sources:
+      HSE diagnosis and treatment: https://www2.hse.ie/conditions/lyme-disease/
+      HPSC factsheet and Irish surveillance scope: https://www.hpsc.ie/a-z/lymedisease/factsheet
+  tetanus:
+    aliases: tetanus lockjaw tetanus vaccine puncture wound tetanus booster
+    summary: A deep or dirty wound can need urgent assessment for tetanus prevention. A stiff jaw or painful muscle spasms after a wound can be a medical emergency.
+    emergency: For severe muscle stiffness or spasms or difficulty breathing after a wound, call
+    symptoms:
+    - Early illness can cause a tight jaw and trouble opening the mouth or swallowing. Painful cramps or spasms can then affect the neck, back, abdomen or limbs.
+    - Symptoms can begin days or weeks after the injury. If you have a concerning wound, get advice about prevention while you still feel well.
+    causes:
+    - Bacteria from the environment can enter damaged skin and produce a toxin that affects the nerves controlling muscles. Puncture wounds, bites and contaminated wounds can increase risk. Tetanus does not pass between people.
+    diagnosis:
+    - A clinician will examine the wound and ask how it happened and when you last received a tetanus vaccine. Severe stiffness and spasms require immediate assessment for possible tetanus.
+    care:
+    - Wound care and vaccination advice depend on the injury and previous doses. Some wounds also need tetanus immunoglobulin. Bring any available vaccine records, but seek care even if you cannot find them.
+    - Tetanus itself requires hospital treatment, which can include medicines to control spasms and support with breathing.
+    complications:
+    - Severe spasms can affect breathing and swallowing and may cause fractures. Ireland recorded no tetanus notifications in 2025, but wound assessment still matters because exposure can happen anywhere.
+    help:
+    - Contact a GP or out-of-hours GP urgently for a deep or contaminated wound, especially if your vaccination history is uncertain. Go to an emergency department or call an ambulance if severe stiffness, spasms or breathing problems develop.
+    sources:
+      HSE wound and emergency advice: https://www2.hse.ie/conditions/tetanus/
+      NIAC immunisation guidelines: https://www.hiqa.ie/sites/default/files/NIAC/Immunisation_Guidelines/Chapter_21_Tetanus.pdf
+  malaria:
+    aliases: malaria travel fever antimalarial falciparum malaria
+    summary: A fever after travel to a malaria-risk area needs urgent assessment. Malaria remains possible if you took preventive tablets or returned home months ago.
+    emergency: If someone with suspected malaria has a seizure, is confused or is struggling to breathe, call
+    symptoms:
+    - Fever, shaking chills, headache, aches, vomiting or diarrhoea can resemble flu or a stomach infection. A fever that comes and goes can still need assessment.
+    - Symptoms usually begin within weeks of infection. Some forms of malaria can cause illness months later, which makes earlier travel relevant to the assessment.
+    causes:
+    - A mosquito bite can pass on a parasite that first develops in the liver and then infects red blood cells. Malaria diagnosed in Ireland is generally linked to travel in areas where it circulates.
+    diagnosis:
+    - Tell the clinician which countries and regions you visited, the dates and whether you took antimalarial tablets. Suspected malaria needs urgent blood testing and may require repeat samples if the first test is negative.
+    care:
+    - Clinicians choose treatment based on the parasite, the severity of illness and where infection was acquired. Severe malaria needs immediate hospital care. Before future travel, ask a travel health clinic about preventive tablets and bite avoidance for your destination.
+    complications:
+    - Malaria can become life-threatening and cause severe anaemia, breathing problems or problems with the brain and other organs. Prompt testing and treatment reduce the risk.
+    help:
+    - Seek urgent medical assessment the same day if you develop a fever or flu-like illness after visiting a malaria-risk area. If you cannot get prompt assessment through your GP, go to an emergency department and give your travel history.
+    sources:
+      HSE malaria guidance: https://www2.hse.ie/conditions/malaria/
+      HPSC suspected malaria guidance: https://www.hpsc.ie/a-z/vectorborne/malaria/guidance/HPSC%20Clinical%20Guidelines%20on%20the%20Management%20of%20Suspected%20Malaria%20Jul17web.pdf
+  shigella:
+    aliases: shigella shigellosis bloody diarrhoea dysentery
+    summary: Shigella can cause diarrhoea, fever and severe stomach cramps. A stool test can identify the infection and help clinicians decide how to treat it.
+    symptoms:
+    - Diarrhoea may contain blood or mucus. Cramps, fever and an urgent need to use the toilet can occur. Frequent diarrhoea can make it hard to replace the fluid you lose.
+    causes:
+    - Shigella bacteria infect the bowel. Infection can be acquired through contaminated food, hands or sexual contact. It can still pass to others after diarrhoea has settled.
+    diagnosis:
+    - Your GP can arrange a stool test. Tell them about travel, illness in close contacts, possible sexual exposure or work with food, children or patients. If sexual exposure is likely, ask about testing for other STIs.
+    care:
+    - Rest and fluids are usually enough for mild illness. A clinician may use antibiotics in severe cases or in specific circumstances. Resistance affects which medicine is likely to work.
+    - Wash hands with soap and water after using the toilet and before handling food. Follow public health advice on returning to work, particularly in healthcare, childcare or food handling, and ask when it is safe to resume sex.
+    complications:
+    - Severe diarrhoea can cause dehydration. People with weakened immune systems may need hospital care, particularly if symptoms worsen or the infection is difficult to treat.
+    help:
+    - Contact your GP promptly for bloody diarrhoea, worsening pain, a high fever or signs of dehydration such as passing much less urine.
+    sources:
+      HSE testing and follow-up: https://www2.hse.ie/conditions/shigella/
+      HSE infectious diarrhoea prescribing guidance: https://assets.hse.ie/media/documents/Infectious_diarrhoea_guideline.pdf
+  mpox:
+    aliases: mpox monkeypox mpox rash blisters lesions
+    summary: Mpox can cause painful spots or blisters, sometimes alongside fever or swollen glands. Phone a GP or sexual health clinic before visiting if you think you may have it.
+    symptoms:
+    - The rash may be limited to a small area or appear in several places. Spots can develop into blisters and then scabs. They can occur near the genitals or anus or around the mouth.
+    - Fever, headaches, aches and swollen glands can occur. Some people first notice the rash, so tell the clinician if you have had close contact with someone diagnosed with mpox.
+    causes:
+    - Mpox is a viral infection that can pass through close physical contact, including intimate contact. It may also spread through shared bedding or towels used by someone with active lesions.
+    diagnosis:
+    - A clinician assesses the rash and may take a swab from a lesion. Herpes and other infections can produce similar symptoms. Phone first so staff can arrange assessment and advise on limiting close contact.
+    care:
+    - Treatment often focuses on relief of pain and other symptoms. Follow the clinic’s advice on how long to avoid close contact and sharing towels or bedding. Ask the HSE sexual health service whether vaccination is recommended for you.
+    complications:
+    - Pain can be severe if lesions affect the anus, mouth or genitals. People with weakened immunity may be more vulnerable to severe disease. Eye symptoms or worsening pain need prompt review.
+    help:
+    - Call a GP or sexual health clinic about a new rash if you suspect mpox. Tell them if you are pregnant, have a weakened immune system or have had contact with a confirmed case.
+    sources:
+      HSE mpox symptoms, testing and vaccination: https://www2.hse.ie/conditions/mpox/
+  group-b-strep:
+    aliases: group B strep GBS streptococcus agalactiae pregnancy newborn infection
+    summary: Group B strep is often carried without symptoms. If it is found during pregnancy, your maternity team can explain what it means for labour and for your baby after birth.
+    emergency: If a newborn is hard to wake, has trouble breathing or turns blue, call
+    symptoms:
+    - Carrying group B strep usually causes no symptoms. A newborn with an infection may feed poorly, seem unusually sleepy, breathe fast or have an abnormal temperature.
+    causes:
+    - Group B streptococcus can live in the digestive or genital tract without causing illness. It can pass to a baby around birth and occasionally cause a serious infection.
+    diagnosis:
+    - In Ireland, a urine test or vaginal swab taken for another reason may find group B strep during pregnancy. Tell your midwife about any positive result or a previous baby affected by group B strep.
+    - A newborn who seems ill needs immediate clinical assessment. Hospital staff can take samples to help identify the cause and start treatment if they suspect serious infection.
+    care:
+    - Your team may recommend antibiotics through a vein during labour to reduce the risk of early infection in the baby. Ask when to phone the maternity unit if labour starts or your waters break and whether your baby will need observation afterwards.
+    complications:
+    - Group B strep can cause sepsis, pneumonia or meningitis in a newborn. The national surveillance figure covers invasive infection across age groups, so it cannot tell you how often it is carried during pregnancy.
+    help:
+    - Discuss a positive result with your midwife or obstetric team. Seek urgent medical assessment if a newborn is feeding poorly, seems unusually sleepy or shows signs of illness.
+    sources:
+      HSE group B strep in pregnancy and babies: https://www2.hse.ie/conditions/group-b-strep/
+  cytomegalovirus-pregnancy:
+    aliases: CMV cytomegalovirus congenital CMV cCMV pregnancy
+    summary: Cytomegalovirus is common and often causes few symptoms. If infection is suspected during pregnancy, a maternity team can assess the timing and discuss whether the baby needs follow-up.
+    symptoms:
+    - Many people feel well. When symptoms occur they can include fever, tiredness, sore throat and swollen glands, which can resemble many other infections.
+    - Babies with congenital CMV can look well at birth. Some have signs such as jaundice, hearing problems or a smaller than expected head size.
+    causes:
+    - CMV can pass through body fluids, including saliva and urine. It can remain in the body after an earlier infection and become active again. A pregnant person can pass the virus through the placenta.
+    - Handwashing after changing nappies or wiping a child’s nose, using separate cutlery and avoiding sharing cups can help reduce exposure.
+    diagnosis:
+    - A blood test may help the medical team establish whether a pregnant person has had CMV and when infection may have occurred. If a baby needs testing, ask the team when it should be done, since timing soon after birth helps distinguish congenital infection from infection acquired later.
+    care:
+    - Follow-up during pregnancy depends on what the tests show. After birth, a specialist may recommend antiviral treatment for babies with certain symptoms and arrange hearing or developmental follow-up where needed.
+    complications:
+    - Congenital CMV can cause permanent hearing loss even in a baby who initially appears well. More severe infection can affect the brain, eyes or other organs. The Irish notification count measures confirmed reports of congenital infection and does not measure all maternal CMV infections.
+    help:
+    - Speak to your GP or maternity team if you develop persistent flu-like symptoms during pregnancy or are concerned about a possible exposure. Ask who will explain the results and organise any follow-up for the baby.
+    sources:
+      HSE CMV overview: https://www2.hse.ie/conditions/cytomegalovirus-pregnancy/overview/
+      HSE diagnosing CMV: https://www2.hse.ie/conditions/cytomegalovirus-pregnancy/diagnosing/
+      HSE treatment and hearing follow-up: https://www2.hse.ie/conditions/cytomegalovirus-pregnancy/treatment/
+      HSE reducing exposure: https://www2.hse.ie/conditions/cytomegalovirus-pregnancy/prevention/
+  neonatal-herpes:
+    aliases: neonatal herpes newborn herpes HSV baby cold sore
+    summary: Herpes infection in a newborn can become serious quickly. Seek urgent assessment for a newborn with suspected herpes, especially if they feed poorly, have fever or develop blisters.
+    emergency: If your baby is difficult to wake, has a seizure, turns blue or has breathing problems, call
+    symptoms:
+    - Some newborns develop blisters or sores near the eyes or mouth or elsewhere on the skin. Others may first become irritable, feed less or have a fever. A baby can be seriously ill without an obvious blister.
+    causes:
+    - A baby can be exposed to herpes simplex around birth or after birth through close contact with an active cold sore. First genital herpes infection late in pregnancy carries particular risk to the baby.
+    diagnosis:
+    - Hospital staff will assess the baby and may take swabs and other samples. Tell them about cold sore contact or genital herpes during pregnancy if you know of it, without delaying care to confirm the exposure.
+    care:
+    - A baby with suspected neonatal herpes needs urgent hospital assessment for antiviral treatment through a vein. If you have a cold sore or warning tingling, avoid kissing the baby and wash your hands before contact.
+    - Tell your midwife or obstetrician if you have genital herpes during pregnancy. If you have blisters on or near a nipple, call your GP or maternity team for feeding advice.
+    complications:
+    - Herpes can affect only the skin, eyes or mouth, or it can spread to the brain, lungs or other organs. Early treatment improves the chance of recovery.
+    help:
+    - Contact an urgent GP service or go to an emergency department if you suspect neonatal herpes and the baby has fever, sores, poor feeding or irritability.
+    sources:
+      HSE signs, emergency advice and prevention: https://www2.hse.ie/conditions/neonatal-herpes/
+  rabies:
+    aliases: rabies animal bite scratch bat travel post-exposure vaccination
+    summary: Get medical help immediately after a possible rabies exposure, even if you feel well or were vaccinated before travel. Preventive treatment needs to begin before symptoms.
+    symptoms:
+    - Symptoms can include fever, headache and unusual discomfort around the site of a bite. Later illness can cause swallowing problems, agitation or weakness. Do not wait for symptoms to seek care.
+    causes:
+    - Rabies is a virus that affects the nervous system. A potentially infected mammal’s bite, scratch or saliva contacting broken skin, the mouth or the eyes can require assessment. Ask about bat contact even if you cannot see a wound.
+    diagnosis:
+    - After an exposure, a clinician assesses the animal, location, wound and your vaccination history. Tell them where and when it happened and whether you received any treatment abroad.
+    care:
+    - Wash a bite or scratch immediately with plenty of soap and water and seek medical help straight away. A clinician decides if you need a course of vaccine and whether rabies immunoglobulin is needed.
+    - If treatment starts abroad, keep the written record and contact your GP when you return to Ireland so they can check whether more doses or follow-up are needed.
+    complications:
+    - Once rabies symptoms start, the disease is almost invariably fatal. The absence of Irish notifications does not remove the risk from bites or other exposures abroad.
+    help:
+    - Get immediate local medical attention after contact with an animal that could have rabies. Seek advice even if you had travel vaccinations or the wound looks small.
+    sources:
+      HSE rabies exposure and treatment guidance: https://www.hse.ie/conditions/rabies/
+  dengue-fever:
+    aliases: dengue dengue fever severe dengue fever after travel
+    summary: Dengue can cause sudden fever, headache and aches after travel. Severe abdominal pain, bleeding or breathing problems after the fever begins need emergency care.
+    emergency: If you develop severe abdominal pain, vomiting blood or difficulty breathing with possible dengue, call
+    symptoms:
+    - Fever can come on suddenly with headache, pain behind the eyes, aching joints, nausea or rash. A clinician needs to consider other causes, including malaria when the travel history fits.
+    - Severe dengue can develop after the initial illness and sometimes as the temperature comes down. Pay attention to new bleeding, repeated vomiting or worsening abdominal pain.
+    causes:
+    - Dengue is caused by a virus passed on by mosquitoes. Travellers can be exposed in tropical regions and in some parts of southern Europe. Mention every place visited, including short stays in a risk area.
+    diagnosis:
+    - Give your GP the places and dates of travel and when you first felt unwell. They may arrange a blood test and check whether other infections also need urgent testing.
+    care:
+    - Rest, fluids and paracetamol if suitable can help with mild illness after assessment. The HSE advises avoiding aspirin and ibuprofen when dengue is suspected because of bleeding risk. Ask a clinician about any medicine you already take regularly.
+    complications:
+    - Severe dengue can cause dangerous bleeding or circulation problems and needs hospital care. Ongoing tiredness can last for weeks after milder illness.
+    help:
+    - Contact your GP if you develop fever or flu-like symptoms within two weeks of visiting a dengue-risk area. Seek emergency help for severe symptoms even if the initial fever has started to improve.
+    sources:
+      HSE dengue symptoms, prevention and emergency guidance: https://www2.hse.ie/conditions/dengue-fever/
+  diphtheria:
+    aliases: diphtheria throat infection diphtheria vaccine
+    summary: Diphtheria is a rare bacterial illness that can cause a sore throat and neck swelling. Phone ahead for urgent medical advice if you suspect infection or have had contact with a case.
+    emergency: If someone is struggling to breathe, call
+    symptoms:
+    - Throat infection can cause fever, hoarseness, a sore throat or swollen glands in the neck. Some infections affect the skin and cause a sore that takes time to heal.
+    causes:
+    - Bacteria can spread during close contact, including from a person who does not feel ill. Some strains produce a toxin that can cause serious illness beyond the original site of infection.
+    diagnosis:
+    - The clinician will consider your symptoms, relevant travel, vaccination history and known contacts. They may take a swab and notify public health if infection is suspected.
+    care:
+    - Treatment can include antibiotics and, when indicated, an antitoxin. A public health team can advise close contacts about assessment, preventive treatment or vaccination.
+    - Children are offered protection as part of the Irish routine immunisation programme. Ask the GP or immunisation office to check records if you are unsure which doses were received.
+    complications:
+    - Severe infection can affect breathing, the heart and nerves. A person with suspected respiratory diphtheria needs urgent assessment even if the first symptoms resemble an ordinary sore throat.
+    help:
+    - Phone a GP, out-of-hours GP or emergency department for urgent advice after a known exposure or if you suspect diphtheria. Calling first helps the service manage possible exposure to other patients.
+    sources:
+      HSE diphtheria guidance: https://www2.hse.ie/conditions/diphtheria/
+  polio:
+    aliases: polio poliomyelitis acute flaccid paralysis polio vaccine post-polio
+    summary: Polio is vaccine-preventable. Sudden inability to move part of the body or difficulty breathing is an emergency, whatever the suspected cause.
+    emergency: If you or your child suddenly cannot move a limb or has difficulty breathing, call
+    symptoms:
+    - Most people infected with poliovirus feel well or have a brief flu-like illness with fever, aches or a sore throat. Rarely, weakness or paralysis develops, often in the legs.
+    causes:
+    - Poliovirus usually spreads when tiny amounts of infected stool contaminate hands, food or water. In a small share of infections it affects the nerves that control muscles.
+    diagnosis:
+    - Sudden muscle weakness has several possible causes that need urgent hospital assessment. Tell staff about recent travel and vaccinations if you know them. Clinicians can coordinate testing with public health services when polio is suspected.
+    care:
+    - Hospital treatment supports breathing or other affected functions. Physiotherapy, rehabilitation and mobility support can help with recovery. Check with your GP about catch-up vaccination if records are incomplete.
+    complications:
+    - Weakness can take weeks or months to improve and may persist. Some people who previously had polio develop new fatigue or weakness years later, known as post-polio syndrome, which needs a separate assessment. The Irish surveillance figure is for acute paralytic polio.
+    help:
+    - Call emergency services if sudden weakness prevents movement or breathing becomes difficult. Ask a GP or travel health clinic about polio vaccination before travel if you are unsure of your protection.
+    sources:
+      HSE polio guidance: https://www2.hse.ie/conditions/polio/
+  botulism:
+    aliases: botulism infant botulism foodborne botulism floppy baby
+    summary: Botulism is a rare illness that can rapidly weaken muscles used for swallowing and breathing. Suspected botulism needs immediate emergency care.
+    emergency: If you think you or your baby has symptoms of botulism, call
+    symptoms:
+    - Adults may develop blurred or double vision, slurred speech or trouble swallowing before weakness spreads. Breathing can become difficult.
+    - In babies, a weak cry, poor feeding, constipation and an unusually floppy head or limbs can be signs. Tell emergency staff if these symptoms are new or getting worse.
+    causes:
+    - Botulism results from a toxin that interferes with the signals nerves send to muscles. Clinicians consider foodborne, infant and wound botulism depending on symptoms and history.
+    diagnosis:
+    - Emergency teams assess breathing, swallowing and muscle weakness. Tell them when symptoms began and whether anyone else who shared a meal has similar symptoms. Treatment decisions can be urgent while confirmatory testing is arranged.
+    care:
+    - Hospital treatment may include antitoxin and support with breathing. Recovery can require rehabilitation as muscle function returns. The HSE advises against giving honey to a child under one year old.
+    complications:
+    - Breathing failure can develop if respiratory muscles weaken. A person may require intensive care, and recovery can take weeks or months.
+    help:
+    - Call emergency services or go to an emergency department if you suspect botulism. Do not wait for a scheduled appointment, particularly if swallowing, speech or breathing changes.
+    sources:
+      HSE botulism emergency and treatment guidance: https://www2.hse.ie/conditions/botulism/
+  eczema:
+    aliases: eczema adult eczema atopic dermatitis itchy skin eczema flare
+    summary: Eczema can make the skin itchy, dry and sore and interrupt sleep. A GP or pharmacist can help you build a routine for everyday skin care and a plan for flares.
+    symptoms:
+    - Itching, dryness and patches of inflamed or cracked skin are typical. Patches often affect the hands, elbows, knees or face. On brown or black skin, changes in colour or texture may be easier to see than redness.
+    - Ask for help if itching disrupts sleep or work. If the rash keeps returning, note whether wet work, detergents, gloves, jewellery or a new skincare product coincide with it.
+    causes:
+    - In atopic eczema the skin barrier holds less moisture, and inflammation makes the skin more sensitive. Other types of eczema have different causes, including repeated contact with irritants or allergy to something touching the skin.
+    diagnosis:
+    - A GP will examine the rash and ask about where it starts, how long it lasts and what makes it worse. If a contact allergy is suspected, a dermatologist may arrange patch testing.
+    care:
+    - Use an emollient regularly and ask a pharmacist about suitable cleansers. A GP may prescribe a topical steroid for flares and explain how much to use, where to apply it and for how long.
+    - Seek a treatment review if you need repeated courses, if a sensitive area such as the eyelids is affected, or if the plan is difficult to follow around work or sleep.
+    complications:
+    - Scratching can break the skin and make infection more likely. Fluid, yellow crusts, swelling, pain or fever can signal infection. Rapidly worsening painful patches with clusters of blisters can be eczema herpeticum.
+    help:
+    - Contact your GP for a rash that persists or interferes with daily life. Get urgent assessment for rapidly worsening painful eczema or clusters of blisters, particularly if you feel feverish or unwell.
+    sources:
+      HSE eczema diagnosis and signs of infection: https://www2.hse.ie/conditions/eczema/
+      HSE eczema treatment: https://www2.hse.ie/conditions/eczema/treatment/
+  eczema-babies-children:
+    aliases: baby eczema infant eczema child eczema atopic dermatitis children
+    summary: In babies and children, eczema often causes itchy, sore patches and broken sleep. A GP can diagnose the rash and give you a plan for daily care, flares and signs of infection.
+    symptoms:
+    - Babies may have patches on the face. Children can also get them in the neck, inside the elbows, behind the knees or on the hands. Inflamed skin may darken or look purple or grey on brown or black skin.
+    - A baby may rub their face or seem unsettled at night. Older children may scratch until their skin bleeds, especially when warm or tired.
+    causes:
+    - Atopic eczema affects the skin barrier, which lets moisture escape more easily. Heat, some soaps and other irritants can trigger flares. A family history of eczema, asthma or hay fever makes atopic eczema more likely.
+    diagnosis:
+    - The GP can usually recognise eczema by examining the skin. A swab may help if the skin appears infected. Photographs from a bad flare can help when the skin looks better by the appointment.
+    care:
+    - Use an emollient regularly, including when the skin is settled. Ask the GP to show you how and where to use any prescribed steroid cream. Share the instructions with anyone who regularly looks after your child.
+    - Keep fingernails short and use a soap substitute if recommended. Keep clothing and bedding exposed to emollients away from cigarettes, candles and open flames.
+    complications:
+    - Oozing, crusting, warmth or pain can suggest infection. Painful rash with rapidly spreading blisters, especially after contact with a cold sore, needs urgent assessment for eczema herpeticum.
+    help:
+    - Contact your GP if your child’s eczema flares and fails to improve after a few days of their usual treatment or if you see signs of infection. Seek urgent help for rapidly spreading painful blisters or a child who is becoming unwell.
+    sources:
+      HSE eczema in babies and children: https://www2.hse.ie/conditions/eczema-babies-children/
+      HSE urgent advice for eczema herpeticum: https://www2.hse.ie/conditions/eczema/
+  psoriasis:
+    aliases: psoriasis plaque psoriasis scalp psoriasis nail psoriasis psoriatic arthritis
+    summary: Psoriasis can cause persistent scaly patches on the skin or changes in the nails. Tell your GP if you also have swollen or stiff joints, as this can need separate treatment.
+    symptoms:
+    - Plaque psoriasis often causes thick, scaly patches on the scalp, elbows, knees or lower back. Their colour varies with skin tone. Patches can itch, crack or bleed.
+    - Nail changes can include tiny pits, thickening or separation from the nail bed. Mention joint swelling, morning stiffness or a whole swollen finger or toe to your GP.
+    causes:
+    - Inflammation speeds up the turnover of skin cells, allowing them to build up into plaques. The pattern can change over time and symptoms may flare after illness or skin injury.
+    diagnosis:
+    - A GP usually examines the skin and nails and may refer you to a dermatologist if the diagnosis is unclear or the impact is significant. Joint symptoms may need assessment by a rheumatologist.
+    care:
+    - Treatment depends on where the plaques are, how extensive they are and their effect on everyday life. Creams or ointments are often used first. Specialists can offer light therapy or medicines that act throughout the body when appropriate.
+    - Tell your GP if applying treatment to the scalp, hands or other areas is difficult or if it affects sleep, work or confidence. These details can inform treatment choices.
+    complications:
+    - Psoriatic arthritis can damage joints over time if untreated. Uncommon forms of psoriasis can cause widespread redness or pus-filled blisters and may need emergency treatment.
+    help:
+    - Book a GP visit if you think you have psoriasis or if an existing treatment is no longer controlling it. Seek urgent assessment for a rapidly spreading painful rash or widespread pustules, particularly with fever or chills.
+    sources:
+      HSE diagnosis and joint symptoms: https://www2.hse.ie/conditions/psoriasis/
+      HSE treatment options: https://www2.hse.ie/conditions/psoriasis/treatment/
+  hidradenitis-suppurativa:
+    aliases: hidradenitis suppurativa HS recurrent boils armpit groin abscess
+    summary: Hidradenitis suppurativa causes recurrent painful lumps in places such as the armpits or groin. Recognising the pattern early can help prevent scarring and make treatment easier to plan.
+    symptoms:
+    - Tender lumps or abscesses can arise in the same area repeatedly, including beneath the breasts or around the buttocks. Some drain, leaving scars or small openings in the skin.
+    - Tell your GP if lumps recur in skin folds or on both sides of the body. Photographs and a record of when each lump appeared can help if it has settled before the visit.
+    causes:
+    - Inflammation starts around blocked hair follicles. The condition can run in families. It cannot be passed on by touching affected skin, and washing more frequently will not resolve it.
+    diagnosis:
+    - A clinician looks at where lumps occur, how often they recur and whether there are scars or channels under the skin. A swab can help if a secondary infection is suspected.
+    care:
+    - Your GP can discuss pain relief and medicines to reduce inflammation. A dermatologist can offer other treatment for persistent or extensive disease, including specialist medicines or surgery. Ask about dressings if draining areas are difficult to manage.
+    complications:
+    - Repeated inflammation can leave scars and channels under the skin. Pain or drainage can interfere with movement, work and relationships. A sudden change with spreading redness or fever can suggest a secondary infection.
+    help:
+    - Arrange a GP visit for recurrent boils or drainage in skin folds. Seek prompt care if pain is escalating, redness is spreading or you feel feverish.
+    sources:
+      HSE hidradenitis suppurativa diagnosis and care: https://www2.hse.ie/conditions/hidradenitis-suppurativa/
+  rosacea:
+    aliases: rosacea facial flushing papulopustular rosacea ocular rosacea
+    summary: Rosacea can cause facial flushing, stinging and bumps. Eye pain, blurred vision or new sensitivity to light need urgent assessment.
+    symptoms:
+    - Flushing may come and go at first. Later, the cheeks or nose can stay discoloured or feel hot or sting. Some people develop visible fine blood vessels or small bumps.
+    - Eye symptoms can include dry or gritty eyes and crusted or sore eyelids. Facial colour changes can be harder to see on darker skin, so burning or new sensitivity is worth mentioning.
+    causes:
+    - Rosacea involves inflammation in facial skin. Sun exposure, heat, exercise or alcohol can trigger symptoms for some people. A brief diary can help identify what brings on your own flares.
+    diagnosis:
+    - A GP assesses the pattern and considers conditions such as acne, eczema and other causes of a facial rash. Tell them about eye symptoms, recent skincare changes and any products you have already tried.
+    care:
+    - Gentle skin care and daily sun protection can help. A GP may prescribe a cream or tablets depending on the symptoms. Persistent symptoms may need a dermatology review.
+    complications:
+    - Rosacea can affect the surface of the eye. Inflammation of the cornea can threaten sight if it goes untreated. Some people also develop thicker skin around the nose over time.
+    help:
+    - Make a GP appointment if facial symptoms keep returning or bother you. Contact a GP urgently for a painful, red or gritty eye, blurred vision or new difficulty looking at light.
+    sources:
+      HSE rosacea symptoms, treatment and eye advice: https://www2.hse.ie/conditions/rosacea/
