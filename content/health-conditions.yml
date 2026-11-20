@@ -267,6 +267,33 @@ sources:
   lenus_dehydration_2016:
     name: Walsh and colleagues, Irish emergency hospital admission study in BMJ Open
     url: https://www.lenus.ie/bitstreams/1efb6ec2-5be1-4e9d-b69d-5b01f6e2d466/download
+  angelman_ireland_2025:
+    name: Angelman Syndrome Ireland, first Irish Angelman research study
+    url: https://www.angelman.ie/2025/11/irelands-first-angelman-syndrome-research-study/
+  chi_spinal_2025:
+    name: Children's Health Ireland spinal surgery service update
+    url: https://www.childrenshealthireland.ie/news/spinal-surgery-updates/
+  debra_eb_2023:
+    name: Debra Ireland, people living with epidermolysis bullosa
+    url: https://debra.ie/news/people-living-with-eb-need-mental-health-support/
+  hpsc_avian_2025:
+    name: HPSC public health update on avian influenza in Ireland
+    url: https://www.hpsc.ie/news/hse-warns-of-danger-of-wild-birds-dont-touch-sick-or-dead-wild-birds-updated-november-2025/
+  hse_fasd_2022:
+    name: HSE position on prevention of fetal alcohol spectrum disorders
+    url: https://www.drugsandalcohol.ie/37703/
+  hse_hpv_prevalence_2024:
+    name: HSE National Screening Service, HPV prevalence in CervicalCheck attendees
+    url: https://www2.healthservice.hse.ie/organisation/nss/news/new-study-provides-insights-into-hpv-prevalence-among-women-attending-cervical-screening-in-ireland/
+  hse_scoliosis_2025:
+    name: HSE and Children's Health Ireland response to parliamentary question 46933/25
+    url: https://www.hse.ie/eng/about/personalpq/pq/2025-pq-responses/september-2025/pq-46933-25-peadar-toibin.pdf
+  oireachtas_fgm_2024:
+    name: Joint Committee on Disability Matters, report on harmonisation with the UNCRPD
+    url: https://data.oireachtas.ie/ie/oireachtas/committee/dail/33/joint_committee_on_disability_matters/reports/2024/2024-01-24_towards-harmonisation-of-national-legislation-with-the-united-nations-convention-on-the-rights-of-persons-with-disabilities_ga.pdf
+  oireachtas_spiking_2026:
+    name: Seanad Éireann debate, 12 November 2026
+    url: https://data.oireachtas.ie/ie/oireachtas/debateRecord/seanad/2026-11-12/debate/mul%40/main.pdf
 evidence:
   eczema:
   - value: About 10%
@@ -1904,6 +1931,141 @@ evidence:
       does not estimate how many people had tonsillitis.
     source: hpo_2023
     locator: Principal procedure by age and discharge type, block 0412
+    measure: hospital
+  angelman-syndrome:
+  - value: Approximately 300 people
+    period: 2025 publication
+    population: People living with Angelman syndrome in Ireland
+    note: An estimate published by the Irish patient organisation. It states that the exact number is unknown and does not describe
+      this as a registry count.
+    source: angelman_ireland_2025
+    locator: Estimated number living with Angelman syndrome
+    measure: prevalence
+  arthroscopy:
+  - value: 317 discharges
+    period: '2023'
+    population: Irish acute public hospital day-case and inpatient discharges in HIPE arthroscopy groups I24A and I24B
+    note: The sum covers the arthroscopy diagnosis-related groups and can miss arthroscopy when a discharge is grouped under another
+      procedure. It is not an all-provider total.
+    source: hpo_2023
+    locator: Table 4.5, groups I24A and I24B
+    measure: hospital
+  bird-flu:
+  - value: 0 human cases notified as of the update
+    period: November 2025
+    population: Human avian influenza notifications to the HPSC in Ireland
+    note: A dated surveillance snapshot about human cases. It does not describe the number of infected birds or animals or establish
+      the current count.
+    source: hpsc_avian_2025
+    locator: Key points
+    measure: notifications
+  circumcision-in-boys:
+  - value: 1,131 discharges
+    period: '2023'
+    population: Male patients aged 0 to 14 with circumcision recorded among all procedures in Irish acute public hospital discharges
+    note: The count describes discharges with the procedure recorded. It does not cover all private or community activity or tell
+      why each procedure was performed.
+    source: hpo_2023
+    locator: Day-case and inpatient discharges by age and sex, all procedures 30653-00
+    measure: hospital
+  circumcision-men:
+  - value: 801 discharges in age groups 15 and over
+    period: '2023'
+    population: Male patients aged 15 and over with circumcision recorded among all procedures in Irish acute public hospital discharges
+    note: The total adds published groups aged 15 to 44, 45 to 64 and 65 and over. The first group includes some adolescents and
+      cannot be split into adult-only data.
+    source: hpo_2023
+    locator: Day-case and inpatient discharges by age and sex, all procedures 30653-00
+    measure: hospital
+  coronary-artery-bypass-graft:
+  - value: 732 inpatient discharges
+    period: '2023'
+    population: Irish acute public hospital inpatient discharges in four HIPE coronary bypass groups F05A to F06B
+    note: This total covers bypass groups classified by coronary bypass with and without invasive cardiac investigation. Bypass combined
+      with other procedures can be grouped separately.
+    source: hpo_2023
+    locator: Table 4.5, groups F05A, F05B, F06A and F06B
+    measure: hospital
+  epidermolysis-bullosa:
+  - value: Approximately 300 people
+    period: 2023 publication
+    population: Children and adults living with epidermolysis bullosa in Ireland
+    note: Approximate patient-organisation estimate across types of EB. The statement does not report a population registry count
+      or subtype breakdown.
+    source: debra_eb_2023
+    locator: Opening summary of the February 2023 statement
+    measure: prevalence
+  female-genital-mutilation:
+  - value: 5,790 women and girls
+    period: 2016 census data, estimate published in 2017
+    population: Women and girls living in Ireland estimated to have undergone FGM
+    note: AkiDwA's estimate, reported by the Oireachtas committee in 2024. It reflects an estimated population living with the effects
+      of FGM, not procedures performed in Ireland.
+    source: oireachtas_fgm_2024
+    locator: Paragraph 153 on population estimates
+    measure: prevalence
+  fetal-alcohol-spectrum-disorders:
+  - value: 2.8% to 7.4%
+    period: 2022 position paper
+    population: Estimated prevalence in the population of Ireland
+    note: The range summarises estimates cited by the HSE. It should be read as an indication of possible burden, since it is not
+      a count of confirmed diagnoses from an Irish registry.
+    source: hse_fasd_2022
+    locator: Position paper summary
+    measure: prevalence
+  having-surgery:
+  - value: More than 1,000 operations
+    period: From January 2024 through the update reporting December 2025 activity
+    population: Operations carried out by Children's Health Ireland spinal services in Ireland
+    note: This is surgery volume across the spinal service, which serves children with different diagnoses. It does not estimate
+      how many children have scoliosis or another spinal condition.
+    source: chi_spinal_2025
+    locator: Spinal treatment abroad section, comparison with surgery in Ireland
+    measure: hospital
+  human-papillomavirus-hpv:
+  - value: 11.2%
+    period: April 2020 to March 2023
+    population: Women aged 25 to 65 screened by CervicalCheck in Irish primary care settings
+    note: Average HPV prevalence in the study of cervical screening results. The estimate applies to the group screened and does
+      not measure HPV across all ages, all sexes or all anatomical sites.
+    source: hse_hpv_prevalence_2024
+    locator: What we found
+    measure: prevalence
+  pacemaker:
+  - value: 1,461 discharges
+    period: '2023'
+    population: Irish acute public hospital day-case and inpatient discharges in HIPE complete-system pacemaker groups F12A and F12B
+    note: Covers implantation and replacement of a total system in these groups. Generator-only replacements and other device procedures
+      are reported elsewhere.
+    source: hpo_2023
+    locator: Table 4.5, groups F12A and F12B
+    measure: hospital
+  scoliosis:
+  - value: 418 scoliosis operations
+    period: '2018'
+    population: Operations for children with scoliosis at Children's Health Ireland
+    note: Historical service activity. The figure counts operations, may include more than one operation per child and does not measure
+      how many people in Ireland have scoliosis.
+    source: hse_scoliosis_2025
+    locator: Activity table, 2018 scoliosis column
+    measure: hospital
+  spiking:
+  - value: 339 reports
+    period: January 2021 to December 2025
+    population: Suspected incidents of spiking reported to An Garda Síochána in Ireland
+    note: The Seanad debate cites the Garda report total. The figures cover suspected reported incidents, with unreported incidents
+      outside the count.
+    source: oireachtas_spiking_2026
+    locator: Statement on reported spiking incidents
+    measure: service
+  varicose-veins:
+  - value: 4,030 discharges with leg varicose vein ligation recorded
+    period: '2023'
+    population: Irish acute public hospital day-case and inpatient discharges with a procedure in blocks 0727 or 0728
+    note: The total describes treated hospital activity. It excludes untreated disease and care outside the report, and is not an
+      estimate of varicose vein prevalence.
+    source: hpo_2023
+    locator: Day-case and inpatient discharges by age and sex, all procedures 0727–0728
     measure: hospital
 guides:
   asthma:
@@ -9896,3 +10058,633 @@ guides:
     help:
     - Seek urgent care for severe one-sided pain, difficulty opening your mouth or inability to drink. Call 112 or 999 if breathing
       is difficult or you cannot swallow your saliva.
+  addisons-disease:
+    aliases: Primary adrenal insufficiency, Addisonian crisis, adrenal hormones
+    summary: Addison's disease occurs when the adrenal glands cannot make enough cortisol and often aldosterone. Treatment replaces
+      the missing hormones, with a separate plan for illness or injury.
+    emergency: 'Collapse, severe confusion or suspected adrenal crisis: call'
+    evidence_gap: The HSE gives an estimate of the proportion of Irish Addison's cases that are autoimmune, but does not give a national
+      estimate of the number living with primary adrenal insufficiency.
+    symptoms:
+    - Tiredness, muscle weakness, weight loss without trying and dizziness when standing can develop gradually. Some people notice
+      patches of darker skin or darkening inside the mouth.
+    causes:
+    - An autoimmune reaction can damage the adrenal cortex. Cortisol supports the body's response to stress, while aldosterone helps
+      regulate fluid balance and blood pressure.
+    diagnosis:
+    - A clinician can check cortisol and related hormones and may arrange a stimulation test to see how the adrenal glands respond.
+      Other tests help find the cause.
+    care:
+    - Prescription hormone replacement is usually lifelong. Ask the endocrine team for written sick-day rules, emergency injection
+      training if prescribed, and advice on carrying a steroid emergency card.
+    complications:
+    - A severe fall in cortisol can cause an adrenal crisis. Vomiting or diarrhoea is especially concerning if you cannot keep replacement
+      medicine down. People can usually live actively with appropriate treatment.
+    help:
+    - Contact your doctor if fatigue, weight loss and dizziness persist. If an adrenal crisis is suspected, follow your emergency
+      plan and call 112 or 999.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/addisons-disease/
+  agoraphobia:
+    aliases: Fear of leaving home, panic on public transport, agoraphobia
+    summary: Agoraphobia involves strong fear in places where it may feel difficult to escape or get help. Avoidance can gradually
+      narrow daily activities.
+    evidence_gap: General Irish anxiety statistics combine different conditions. The sources reviewed did not establish how many
+      people in Ireland specifically have agoraphobia.
+    symptoms:
+    - Public transport, queues, open areas or leaving home alone can feel overwhelming. Some people experience a racing heart, shaking,
+      dizziness or a fear of losing control.
+    causes:
+    - A panic attack or other frightening experience can lead to anticipatory fear. Avoidance brings short-term relief but can make
+      feared situations harder to return to.
+    diagnosis:
+    - A GP or mental health professional asks which situations you fear, how long this has been happening and how it affects daily
+      life. They can assess overlapping panic or physical symptoms.
+    care:
+    - Cognitive behavioural therapy can help identify predictions about what will happen and practise facing feared situations gradually.
+      A clinician may discuss medicine when appropriate.
+    complications:
+    - Avoidance can affect work, study, relationships and medical appointments. A plan that starts with manageable steps can help
+      people regain independence over time.
+    help:
+    - Talk to your GP if fear or avoidance is restricting daily life. If leaving home makes appointments difficult, ask whether the
+      service can start with a phone or video consultation.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/agoraphobia/
+  angelman-syndrome:
+    aliases: Angelman syndrome, UBE3A, developmental delay
+    summary: Angelman syndrome is a rare genetic condition affecting development, communication and movement. Specialist support
+      often starts well before a child has a confirmed diagnosis.
+    symptoms:
+    - Babies may have feeding difficulties or develop motor skills slowly. Speech often remains very limited, and problems with balance,
+      seizures and difficulty sleeping can emerge.
+    causes:
+    - Brain cells normally rely mainly on the copy of UBE3A inherited from the mother. Angelman syndrome occurs when that copy is
+      missing or does not work as expected.
+    diagnosis:
+    - A paediatrician or paediatric neurologist considers the child's development and examination and arranges genetic tests. Clinical
+      genetics can explain what the result means for the family.
+    care:
+    - Physiotherapy, occupational therapy and communication support can help a child take part in daily life. Their team can also
+      make an individual plan for seizures, sleep and feeding.
+    complications:
+    - Support needs often continue into adulthood. Regular reviews can pick up changes in movement, spinal curvature, feeding or
+      seizure control and help plan the transition to adult services.
+    help:
+    - Speak to the public health nurse or GP if your child is missing milestones, losing skills or having possible seizures. Ask
+      for a written seizure plan if diagnosed.
+  arthroscopy:
+    kind: procedure
+    aliases: Keyhole joint surgery, knee arthroscopy, joint camera
+    summary: Arthroscopy lets a surgeon look inside a joint and sometimes treat a problem using small incisions. What you gain from
+      it depends on the exact diagnosis.
+    symptoms:
+    - It can help when a specialist suspects a particular injury or joint problem that can be assessed or treated with keyhole surgery.
+      It is not needed for every sore joint.
+    causes:
+    - A slim camera sends an image to a screen. The surgeon can introduce small instruments through separate incisions to perform
+      the treatment agreed before the operation.
+    diagnosis:
+    - Ask what the procedure aims to change, what alternatives exist and how recovery will affect work or caring duties. Follow the
+      hospital's fasting and medicine instructions.
+    care:
+    - Your anaesthetic depends on the joint, operation and health history. Many people go home the same day after the team checks
+      pain control and safe mobility.
+    complications:
+    - Pain, stiffness and swelling can follow surgery. Physiotherapy or mobility aids may help. Recovery can differ substantially
+      between an examination and a repair inside the joint.
+    help:
+    - Follow the hospital's wound and exercise instructions. Contact the team for fever or increasing redness, and seek emergency
+      care for chest pain or new severe breathlessness.
+  bird-flu:
+    aliases: Avian influenza, bird flu exposure, HPSC
+    summary: Avian influenza mainly affects birds. Human infection is uncommon, but someone who becomes unwell after relevant contact
+      with an infected animal should seek prompt advice.
+    symptoms:
+    - People who become ill may have fever, cough, muscle aches, headache or red eyes. Worsening breathlessness or feeling very unwell
+      can signal a more serious illness.
+    causes:
+    - In Ireland, public advice is to avoid handling sick or dead wild birds. People who work with poultry or other potentially affected
+      animals should follow workplace health guidance.
+    diagnosis:
+    - A clinician asks about recent animal exposure, travel and symptom timing. Public health teams can advise the clinician on safe
+      assessment and whether specialist testing is appropriate.
+    care:
+    - Phone ahead before attending a healthcare setting if you have symptoms after a relevant exposure. A hospital team may use antiviral
+      medicines and supportive care if needed.
+    complications:
+    - Some infections can develop into serious respiratory illness. Public health may follow up people with relevant exposures, depending
+      on the circumstances and current guidance.
+    help:
+    - If you become unwell after relevant animal contact, phone a GP or GP out-of-hours service and describe the exposure. Call 112
+      or 999 for severe breathing difficulty.
+  circumcision-in-boys:
+    kind: procedure
+    aliases: Child circumcision, foreskin surgery in boys, phimosis operation
+    summary: Circumcision removes the foreskin. For a child, a specialist can explain whether surgery is medically indicated and
+      whether a less invasive treatment may help first.
+    symptoms:
+    - Doctors may discuss it for scarring, repeated inflammation or specific foreskin problems. In younger children, a foreskin that
+      still cannot be pulled back is often a normal stage.
+    causes:
+    - The surgeon removes the foreskin and typically uses stitches that dissolve. A clinician will discuss alternatives such as a
+      steroid cream when these are appropriate.
+    diagnosis:
+    - Ask about anaesthesia, fasting, regular medicines and how pain will be managed. Tell the hospital if your child develops a
+      cough or fever before the operation.
+    care:
+    - A child usually has a general anaesthetic. The team checks recovery and explains how to help with washing, pain relief and
+      loose clothing before going home.
+    complications:
+    - Swelling or bruising is common early in recovery. Follow the surgeon's instructions about school, sport, swimming and when
+      your child can become active again.
+    help:
+    - Ask the hospital for urgent advice if your child cannot pass urine, has increasing pain or has significant bleeding. Follow
+      their instructions if you suspect a wound infection.
+  circumcision-men:
+    kind: procedure
+    aliases: Adult circumcision, foreskin removal, surgery for tight foreskin
+    summary: Adult circumcision is surgery to remove the foreskin. It can help with some persistent foreskin problems, and the specialist
+      can explain how recovery may affect daily activities.
+    symptoms:
+    - It may be offered for a very tight or scarred foreskin or recurrent inflammation. Ask which alternatives remain suitable for
+      the cause and severity of your symptoms.
+    causes:
+    - The surgeon removes the foreskin and closes the incision, usually with dissolvable stitches. The team explains the expected
+      appearance and practical effects of the operation.
+    diagnosis:
+    - Tell the team about medicines and any allergies. Follow their fasting advice and arrange collection afterwards if your anaesthetic
+      means you cannot travel home alone.
+    care:
+    - The operation may use general or local anaesthesia depending on the situation. Before discharge, ask how to care for the wound
+      and use pain relief safely.
+    complications:
+    - Temporary swelling and sensitivity are common. Bleeding or infection can occur. Return to sport or sexual activity according
+      to the team's advice and allow the wound to heal.
+    help:
+    - Contact the hospital promptly for significant bleeding, inability to pass urine, fever or worsening pain. Ask how to arrange
+      review if the wound does not heal as expected.
+  coronary-artery-bypass-graft:
+    kind: procedure
+    aliases: CABG, heart bypass, coronary bypass surgery
+    summary: Coronary artery bypass graft surgery creates new routes for blood to reach parts of the heart muscle. Follow-up includes
+      rehabilitation and ongoing care for coronary heart disease.
+    emergency: 'Severe chest pain or sudden breathing difficulty: call'
+    symptoms:
+    - A heart team may consider bypass surgery for some people with narrowed coronary arteries, depending on the pattern of disease,
+      symptoms and overall health.
+    causes:
+    - A surgeon uses blood vessels from another part of the body to direct blood around blocked or narrowed sections. The number
+      of grafts depends on which arteries are affected.
+    diagnosis:
+    - Before surgery, the team may review heart tests and check for factors that affect recovery. Follow their instructions about
+      medicines, fasting and who will help after discharge.
+    care:
+    - The operation uses general anaesthesia. After surgery, a hospital team monitors breathing, heart rhythm and pain and helps
+      you start moving safely as you recover.
+    complications:
+    - Recovery takes weeks. Cardiac rehabilitation can guide activity and support long-term heart health. Possible complications
+      include infection, rhythm changes, stroke or heart attack.
+    help:
+    - Raise concerns about wounds, fever or worsening symptoms with your surgical team. Call 112 or 999 for severe chest pain, collapse
+      or sudden severe breathing difficulty.
+  digeorge-syndrome:
+    aliases: DiGeorge syndrome, 22q11.2 deletion syndrome, velocardiofacial syndrome
+    summary: A small missing segment of chromosome 22 can affect the heart, immune system, palate and development. The combination
+      varies widely, even within the same family.
+    evidence_gap: The HSE gives a general frequency estimate without identifying it as a measured Irish rate. A national count of
+      people living with the deletion was not available from the sources reviewed.
+    symptoms:
+    - Some babies have heart problems, feeding or speech difficulties, repeated infections or symptoms of low calcium. Learning and
+      mental health difficulties can become clearer later in life.
+    causes:
+    - A missing segment of chromosome 22 affects several genes involved in early development. The deletion often arises for the first
+      time, but it can also be inherited.
+    diagnosis:
+    - A specialist can confirm the deletion with a genetic blood test. The team may also check the heart, palate, calcium level,
+      immune function and developmental needs.
+    care:
+    - Treatment is tailored to the findings. It can include cardiology care, immunology advice and speech and language therapy. The
+      team can advise on vaccines if immunity is affected.
+    complications:
+    - Follow-up can identify new concerns as a child grows. Clinical genetics can discuss testing for relatives and explain the chance
+      of passing the deletion on.
+    help:
+    - Speak to a GP or paediatric team about feeding or recurrent infections. Seek urgent medical assessment for a first seizure,
+      breathing difficulty or sudden deterioration.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/digeorge-syndrome/
+  epidermolysis-bullosa:
+    aliases: EB skin fragility, butterfly skin, inherited blistering disorder
+    summary: Epidermolysis bullosa describes inherited conditions in which skin blisters or tears after relatively minor rubbing
+      or injury. The affected parts of the body and severity depend on the subtype.
+    symptoms:
+    - Blisters can appear soon after birth or become more obvious later. Some people mainly have painful blisters on hands or feet,
+      while others develop widespread wounds or mouth problems.
+    causes:
+    - Gene changes affect the proteins that hold layers of skin together. Different changes account for different patterns of blistering,
+      scarring and involvement inside the body.
+    diagnosis:
+    - A dermatologist or specialist EB service assesses the blistering pattern and can arrange genetic testing or a skin biopsy to
+      confirm the subtype and guide treatment.
+    care:
+    - Specialist nurses can teach families how to handle skin and dress wounds. Pain relief, nutrition, dental care and physiotherapy
+      can be planned around the person's needs.
+    complications:
+    - Recurrent wounds can become infected. Some forms cause scarring, swallowing problems or a higher risk of skin cancer, so specialist
+      teams arrange follow-up according to the subtype.
+    help:
+    - Seek medical advice promptly for unexplained blistering in a newborn or spreading redness, fever or increasing pain around
+      a wound. Contact the specialist team about a wound that does not heal.
+  female-genital-mutilation:
+    aliases: FGM, female genital cutting, specialist FGM clinic Ireland
+    summary: Female genital mutilation can have lasting effects on physical and mental health. In Ireland, specialist care is available
+      and concerns about a child can be reported to Gardaí or Tusla.
+    emergency: 'Immediate danger or life-threatening bleeding: call'
+    symptoms:
+    - Survivors may have pain, difficulty passing urine, infections, difficulties with periods or sex, or distress. Troubles can
+      emerge years later, including during pregnancy or childbirth.
+    causes:
+    - FGM changes or injures genital tissue for non-medical reasons. Healing can leave scar tissue, and the nature and severity of
+      long-term effects differ from person to person.
+    diagnosis:
+    - A clinician can listen to your concerns and discuss options confidentially. If an examination could help, the clinician should
+      explain the reason and seek your consent first.
+    care:
+    - The HSE describes free specialist care and counselling, with self-referral available. Your maternity team can discuss a plan
+      for pregnancy and birth and arrange specialist support.
+    complications:
+    - Treatment may help with pain, urinary or sexual difficulties, childbirth planning and emotional wellbeing. A specialist can
+      explain whether surgery to relieve certain complications is appropriate.
+    help:
+    - If a child may be at risk, contact Tusla or Gardaí. If someone is in immediate danger, call 112 or 999. Seek prompt medical
+      care for bleeding, infection or severe pain.
+  fetal-alcohol-spectrum-disorders:
+    aliases: FASD, fetal alcohol syndrome, prenatal alcohol exposure
+    summary: Fetal alcohol spectrum disorders describe lasting effects of alcohol exposure before birth. Assessment can help match
+      support to a child's learning and daily living needs.
+    symptoms:
+    - A child may struggle with attention, language, memory, coordination or coping with changes. Some have growth or physical differences,
+      while others have difficulties that are less visible.
+    causes:
+    - Alcohol crosses the placenta and can interfere with development, including development of the brain. The HSE advises avoiding
+      alcohol throughout pregnancy because a safe amount has not been established.
+    diagnosis:
+    - Specialists consider developmental and medical history along with physical and neurodevelopmental findings. A GP or paediatrician
+      can help assess other explanations and identify appropriate referrals.
+    care:
+    - Individual supports may include speech and language therapy, occupational therapy, school accommodations and regular routines.
+      A care plan should reflect what helps the child participate and learn.
+    complications:
+    - Needs can change as schoolwork and social demands become more complex. Earlier recognition can help families and teachers adapt
+      expectations and provide practical support.
+    help:
+    - If you are concerned about drinking in pregnancy, talk to your GP or midwife for confidential support. For concerns about a
+      child's development, speak to the public health nurse or GP.
+  having-surgery:
+    kind: procedure
+    aliases: Paediatric spinal surgery, spinal fusion recovery, Children's Health Ireland
+    summary: Children's spinal surgery is planned with a specialist team. The team explains the operation, what preparation is needed
+      and how parents can support recovery at home.
+    evidence_gap: Children’s Health Ireland reports activity across its paediatric spinal service. Service totals can include multiple
+      diagnoses and procedures and cannot give prevalence of any one condition.
+    symptoms:
+    - Specialists may offer surgery when a spinal curve is severe or growing and an operation is expected to improve alignment, function
+      or the risk of further progression.
+    causes:
+    - The operation depends on the child's diagnosis and growth. Spinal fusion uses implants to hold the spine in an improved position
+      while selected bones heal together.
+    diagnosis:
+    - The team explains medicines, fasting and any pre-operative assessments. Tell them about recent illness and ask who to call
+      if your child becomes unwell before admission.
+    care:
+    - The care team manages anaesthesia, pain relief and early mobilisation. A physiotherapist or nurse usually helps with moving,
+      and parents receive instructions before the child goes home.
+    complications:
+    - Recovery varies with the operation and child. Infection, bleeding and nerve injury are among the risks the surgeon discusses.
+      Ask for individual guidance on school and activity.
+    help:
+    - Follow the discharge plan for wound reviews and appointments. Contact the team for fever, increasing wound redness or uncontrolled
+      pain. Seek emergency care for sudden new weakness or trouble breathing.
+    sources:
+      Clinical guidance and further reading: https://www.childrenshealthireland.ie/news/spinal-surgery-updates/
+  hoarding-disorder:
+    aliases: Compulsive hoarding, difficulty discarding possessions, unsafe clutter
+    summary: Hoarding disorder involves ongoing difficulty parting with possessions, leading to clutter that interferes with ordinary
+      use of rooms or causes significant distress.
+    evidence_gap: Housing or fire-service reports describe selected incidents. The sources reviewed did not establish national prevalence
+      of clinically defined hoarding disorder in Ireland.
+    symptoms:
+    - Discarding items can cause intense distress. Walkways, cooking areas or beds may become hard to use. Some people avoid visitors
+      because they feel embarrassed about the clutter.
+    causes:
+    - Items may feel essential for future use, memory or security. Difficulty making decisions can add to the problem. Hoarding can
+      coexist with anxiety, depression or other difficulties.
+    diagnosis:
+    - Assessment explores the impact on living spaces, safety and wellbeing, and whether a medical or another mental health issue
+      is contributing. The person should be involved throughout.
+    care:
+    - Treatment often includes adapted cognitive behavioural therapy and gradual practice sorting, organising and letting go of items.
+      Collaborating on realistic goals helps build trust.
+    complications:
+    - Blocked exits can increase fire risk, and clutter can contribute to falls or difficulties with hygiene and repairs. A sustainable
+      safety plan may need support over time.
+    help:
+    - Contact a GP if clutter causes distress or makes essential rooms unusable. For an immediate danger such as a fire, leave the
+      area and contact emergency services.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hoarding-disorder/
+  human-papillomavirus-hpv:
+    aliases: HPV infection, high-risk HPV, cervical screening, genital warts
+    summary: Human papillomavirus is a group of common viruses. Many infections clear without treatment. Some types cause genital
+      warts and persistent infection with certain types can lead to cancer.
+    symptoms:
+    - Most people have no symptoms. Warts, a persistent lump or unusual vaginal bleeding are reasons to get advice, even if you recently
+      attended routine screening.
+    causes:
+    - HPV can pass through intimate skin contact. Persistent infection with certain high-risk types can change cells over time. The
+      types that cause genital warts usually differ from those causing cancer.
+    diagnosis:
+    - CervicalCheck looks for high-risk HPV as part of cervical screening. A clinician can assess symptoms separately and explain
+      when a positive result needs repeat testing or colposcopy.
+    care:
+    - Vaccination lowers the risk from the types it covers. Attend cervical screening if eligible, even if vaccinated. Warts or abnormal
+      cells can be treated where appropriate.
+    complications:
+    - A positive cervical HPV result often clears, and follow-up helps find cell changes early. Keeping appointments matters because
+      persistence increases the chance of changes needing care.
+    help:
+    - Contact your GP, sexual health clinic or screening provider as appropriate. Bring symptoms such as bleeding after sex to a
+      clinician without waiting for your next screening invitation.
+  hypochondria:
+    aliases: Health anxiety, illness anxiety, fear of illness, hypochondria
+    summary: Health anxiety can make worries about being seriously ill dominate everyday life. The distress is real, and it can continue
+      alongside a diagnosed physical condition.
+    evidence_gap: General anxiety data cannot establish the number of people with health anxiety specifically. The sources reviewed
+      did not provide a reliable Irish population estimate.
+    symptoms:
+    - People may repeatedly check their body, search for symptoms, seek reassurance or avoid appointments altogether. Reassurance
+      can relieve worry for a while before it returns.
+    causes:
+    - Normal sensations, changes in health or a frightening experience can trigger worry. Focusing on sensations and searching for
+      explanations can make them feel more threatening.
+    diagnosis:
+    - A GP can consider physical symptoms on their merits and ask how much time worry takes up. A mental health assessment looks
+      at checking, avoidance and the impact on daily routines.
+    care:
+    - Cognitive behavioural therapy can help people change checking and reassurance habits and respond differently to uncertainty.
+      A clinician may discuss other treatments if anxiety or depression is also present.
+    complications:
+    - Health anxiety can affect sleep, relationships and work. Agreeing a follow-up plan with your GP can help you act on new symptoms
+      without repeatedly checking the same concern.
+    help:
+    - Ask for help if worrying about illness is taking over your day. Discuss a new or changing physical symptom normally and tell
+      your GP how much worry it is causing.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hypochondria/
+  lynch-syndrome:
+    aliases: Hereditary colorectal cancer, HNPCC, mismatch repair, Lynch genetic testing
+    summary: Lynch syndrome is an inherited tendency to develop certain cancers, especially bowel and womb cancer. A confirmed result
+      can change the screening and prevention options available to you.
+    evidence_gap: The HSE gives a worldwide estimate, which cannot establish prevalence in Ireland. Counts of families referred for
+      testing would omit people whose variant has never been identified.
+    symptoms:
+    - People with Lynch syndrome usually feel well from the inherited change itself. Persistent bowel changes, bleeding or unusual
+      vaginal bleeding still need assessment regardless of genetic testing status.
+    causes:
+    - A change affecting DNA mismatch repair makes it harder for cells to fix some copying errors. A parent with the change has a
+      one-in-two chance of passing it to each child.
+    diagnosis:
+    - Genetics teams review the family history and may use tumour results to guide a blood or saliva test. Relatives can discuss
+      a test for a known family variant.
+    care:
+    - Surveillance is tailored to the gene and family history. It can include scheduled colonoscopy and discussion of approaches
+      to lowering risk, including options related to womb or ovarian cancer.
+    complications:
+    - Cancer risk varies by gene, age and family history. A confirmed result also helps relatives decide whether they want predictive
+      testing and a personalised care plan.
+    help:
+    - Talk to your GP if several close relatives have had related cancers, particularly at younger ages, or if a relative shares
+      a confirmed Lynch result.
+    sources:
+      Clinical guidance and further reading: https://www.cancer.ie/cancer-information/cancer-types/lynch-syndrome
+  pacemaker:
+    kind: procedure
+    aliases: Heart pacemaker, pacemaker insertion, slow heart rate
+    summary: A pacemaker helps keep the heart beating at an appropriate rate. Your cardiology team can explain why you need it and
+      what follow-up will involve.
+    symptoms:
+    - A pacemaker can be offered when a slow heart rhythm or an interruption in the heart's electrical signals causes symptoms such
+      as dizziness, tiredness or fainting.
+    causes:
+    - The device monitors the heart's rhythm and sends electrical impulses when needed. Many systems use leads inside the heart,
+      and some people may be offered a leadless device.
+    diagnosis:
+    - Tell the team about medicines, especially blood thinners, and follow their instructions on which to take. Ask who will take
+      you home and when you can return to normal activities.
+    care:
+    - In many cases the device is inserted under local anaesthetic. The team checks its position and settings and observes you for
+      complications before discharge.
+    complications:
+    - The insertion site may be sore or bruised. Infection, bleeding and a lead moving are possible complications. Regular checks
+      confirm the device is working and monitor the battery.
+    help:
+    - Contact your device clinic for increasing wound redness, a fever or returning dizzy spells. Call 112 or 999 for severe chest
+      pain, collapse or serious breathing difficulty.
+  phobias:
+    aliases: Specific phobia, intense fear, exposure therapy
+    summary: A phobia is intense fear related to a particular object or situation. A fear becomes a clinical concern when it causes
+      ongoing distress or disrupts daily life.
+    evidence_gap: Irish surveys that group anxiety conditions cannot identify the proportion with a specific phobia. The sources
+      reviewed did not establish a national prevalence estimate.
+    symptoms:
+    - Anticipating or facing the trigger can cause trembling, nausea, sweating or a racing heart. People may change their routines
+      to avoid the feared object or situation.
+    causes:
+    - Fear can develop after an upsetting experience, by observing others or without a clear starting point. Avoidance can make it
+      harder to learn that a situation can be tolerated.
+    diagnosis:
+    - A clinician asks what triggers the fear, what you expect to happen and how much avoidance affects you. Other patterns of anxiety
+      sometimes call for a different assessment.
+    care:
+    - Cognitive behavioural therapy may include planned, gradual exposure with a trained practitioner. Progress starts at a manageable
+      level and builds as confidence grows.
+    complications:
+    - A phobia can affect travel, education or healthcare, depending on the trigger. Treatment can help someone do things they previously
+      avoided, even if some anxiety remains.
+    help:
+    - Speak to your GP if fear is limiting everyday activities or preventing treatment such as dental care. Tell the healthcare team
+      early if an appointment involves a known trigger.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/phobias/
+  pilonidal-sinus:
+    aliases: Pilonidal cyst, painful lump near tailbone, pilonidal abscess
+    summary: A pilonidal sinus is a small channel in the skin near the top of the cleft between the buttocks. Some cause no problems
+      until they become infected.
+    evidence_gap: The available HIPE group combines perianal and pilonidal procedures and cannot isolate pilonidal sinus nationally.
+      It also excludes cases managed without hospital care.
+    symptoms:
+    - An infection may cause a painful lump, swelling, bleeding or a discharge. Sitting can be uncomfortable, and symptoms can worsen
+      quickly if an abscess forms.
+    causes:
+    - Hair and pressure or friction in the cleft can contribute to inflammation. An opening can persist after the acute infection
+      improves and sometimes causes repeated problems.
+    diagnosis:
+    - A clinician can usually identify the condition by examining the area and asking when swelling or discharge began. Different
+      problems near the anus can need other assessment.
+    care:
+    - An infected abscess may need drainage. A surgical team can explain options for recurrent disease, how each wound heals and
+      what dressing changes are likely to involve.
+    complications:
+    - Recovery ranges from simple wound care to several weeks of dressings after some operations. Recurrence is possible, and continued
+      pain or discharge warrants follow-up with the treating team.
+    help:
+    - Ask for an urgent GP appointment for a painful lump that bleeds or leaks pus. Seek medical assessment promptly for fever, spreading
+      redness or worsening illness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pilonidal-sinus/
+  scoliosis:
+    aliases: Curved spine, adolescent idiopathic scoliosis, spinal curvature
+    summary: Scoliosis is a sideways curve and rotation of the spine. In children and teenagers, decisions about monitoring or treatment
+      depend partly on how much growth remains.
+    symptoms:
+    - One shoulder or hip may sit higher, clothing may hang unevenly, or ribs may stand out on one side. Some people have back pain,
+      especially in adulthood.
+    causes:
+    - Many curves that develop in adolescence have no identifiable cause. Others are present at birth, are related to a neuromuscular
+      condition or appear with age-related spinal changes.
+    diagnosis:
+    - The clinician examines the back and may ask the person to bend forward. An X-ray can confirm the curve and measure its degree
+      if a specialist recommends it.
+    care:
+    - Smaller curves may simply need monitoring. A brace can reduce progression for some growing children. A spinal team may discuss
+      surgery for a severe or progressing curve.
+    complications:
+    - Some curves increase during growth, so follow-up timing matters. Severe curves can affect function and rarely breathing. Physiotherapy
+      can help manage some symptoms or support recovery after treatment.
+    help:
+    - Contact a GP if you notice a new asymmetry in your child's back. Seek urgent care for new weakness, loss of bladder or bowel
+      control or numbness around the groin.
+  seasonal-affective-disorder:
+    aliases: SAD, depression in winter, seasonal depression
+    summary: Seasonal affective disorder is depression that returns in a seasonal pattern, most often worsening during autumn or
+      winter and improving at another time of year.
+    evidence_gap: Irish surveys asking about depression generally do not distinguish a recurring seasonal pattern. The sources reviewed
+      did not establish a national prevalence figure for SAD.
+    symptoms:
+    - Low mood, loss of interest and low energy can occur. Some people sleep more, crave carbohydrate-rich food or find it harder
+      to get up and keep a routine.
+    causes:
+    - Changes in daylight may affect body rhythms and sleep timing. The cause is not fully understood and factors such as existing
+      mood difficulties can also matter.
+    diagnosis:
+    - A clinician asks about symptoms, their impact and how mood changes over more than one season. They can assess other possible
+      causes and check for past episodes of unusually high mood.
+    care:
+    - Treatment can include psychological therapy or prescribed medicine. Regular daylight exposure and activity may support a routine.
+      Discuss light therapy with a clinician first if you are considering it.
+    complications:
+    - A recurring pattern can affect relationships, sleep and work. Planning ahead with a clinician can help you recognise a change
+      early and start the care that previously helped.
+    help:
+    - Speak to your GP if symptoms persist, recur or disrupt daily life. Seek immediate help through emergency services if you are
+      at immediate risk of harming yourself.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/seasonal-affective-disorder/
+  selective-mutism:
+    aliases: Child speaking at home but not school, situational mutism, selective mutism
+    summary: Selective mutism is an anxiety-related difficulty speaking in specific situations, even though the person can speak
+      in settings where they feel comfortable.
+    evidence_gap: Clinical referrals miss children who have not reached services. The sources reviewed did not establish a reliable
+      population estimate for selective mutism in Ireland.
+    symptoms:
+    - A child may talk freely at home but become still, look away or communicate with gestures at school. The pattern can also occur
+      in particular activities or public places.
+    causes:
+    - Anxiety can make speaking feel impossible in certain settings. A new environment or pressure to respond publicly can make participation
+      harder for the child.
+    diagnosis:
+    - Assessment considers where speech occurs, how long the pattern has lasted and the child's language, hearing and development.
+      Parents, school and clinicians can share observations across settings.
+    care:
+    - Small, planned steps can make communication more comfortable. Adults can agree ways to reduce pressure and support responses,
+      with input from a speech and language therapist or psychologist when needed.
+    complications:
+    - The difficulty can affect participation, learning and friendships. A consistent plan across home and school helps give the
+      child more opportunities to communicate without being singled out.
+    help:
+    - Talk to the child's teacher and GP if the pattern persists and interferes with school life. Ask which local assessment and
+      communication supports can help.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/selective-mutism/
+  social-anxiety:
+    aliases: Social phobia, fear of being judged, social anxiety disorder
+    summary: Social anxiety involves a strong fear of being watched, embarrassed or judged in social situations. It can affect ordinary
+      activities like eating in public or speaking at work.
+    evidence_gap: Irish estimates for all anxiety disorders do not give the prevalence of social anxiety disorder. The sources reviewed
+      did not establish a national estimate for this diagnosis.
+    symptoms:
+    - People may worry long before an event, blush, shake or feel sick during it, and replay conversations afterwards. Some avoid
+      activities they would otherwise enjoy.
+    causes:
+    - Fear of negative judgement can become linked to specific situations or occur more widely. Avoidance and habits such as relying
+      on rehearsed answers can keep the fear going.
+    diagnosis:
+    - A GP or mental health professional asks about the situations involved, how long the fear has lasted and whether it affects
+      work, school or friendships.
+    care:
+    - Individual cognitive behavioural therapy can help test fears and practise social situations gradually. A clinician can talk
+      through other treatment options if therapy is unavailable or insufficient.
+    complications:
+    - Social anxiety may lead to isolation, difficulty at school or work or low mood. Treatment goals can focus on concrete activities
+      the person wants to take part in again.
+    help:
+    - Speak to a GP if social fear interferes with attendance, relationships or work. For a young person, ask about support from
+      their GP, school or local services.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/social-anxiety/
+  spiking:
+    aliases: Drink spiking, suspected spiking, SATU
+    summary: Spiking means someone was given a substance without their agreement. If you suspect it, getting to a safe place with
+      someone you trust and getting medical help are the immediate priorities.
+    emergency: 'Unconsciousness, seizure or trouble breathing: call'
+    symptoms:
+    - Someone may suddenly feel unusually sleepy, confused, sick or unable to move as expected. Memory gaps, loss of consciousness
+      or feeling far more affected than expected are possible.
+    causes:
+    - Symptoms can overlap with effects of alcohol and other medical problems. How someone feels alone cannot confirm whether spiking
+      occurred or reveal the substance involved.
+    diagnosis:
+    - A clinician can check consciousness, breathing and injuries and decide what tests are appropriate. Tell them the approximate
+      timing, any medicines taken and what you remember.
+    care:
+    - Tell someone you trust or a member of staff. Stay with the affected person, check breathing and follow emergency instructions
+      if they become difficult to wake or have a seizure.
+    complications:
+    - If sexual assault may have occurred, a Sexual Assault Treatment Unit can explain healthcare, support and forensic options.
+      You can ask for care before deciding whether to report.
+    help:
+    - Call 112 or 999 if the person is hard to wake, has a seizure or has trouble breathing. If you are safe, Gardaí can also advise
+      how to report an incident.
+  varicose-veins:
+    aliases: Varicose veins in legs, swollen visible veins, venous reflux
+    summary: Varicose veins are enlarged veins that often appear on the legs. They can cause aching or skin changes, although some
+      people mainly notice how the veins look.
+    symptoms:
+    - Veins can appear swollen or twisted. Legs may feel heavy, itchy or achy, especially after standing. Ankle swelling or skin
+      colour changes can occur over time.
+    causes:
+    - Vein valves usually help blood return towards the heart. When valves do not close properly, blood can pool and stretch the
+      vein. Pregnancy and age can affect risk.
+    diagnosis:
+    - A clinician examines the legs and asks when symptoms occur. A specialist may use duplex ultrasound to show how blood moves
+      through the veins before selecting treatment.
+    care:
+    - Activity and raising the legs can ease some symptoms. Depending on the assessment, treatment may include methods that close
+      or remove affected veins. Ask before using compression if circulation is uncertain.
+    complications:
+    - Some people develop skin inflammation, a persistent ulcer or bleeding from a vein. A painful swollen leg can have other causes
+      and needs assessment rather than relying on appearance.
+    help:
+    - Seek urgent help for new one-sided leg swelling or persistent bleeding. Apply direct pressure to a bleeding vein and call 112
+      or 999 if bleeding is heavy or you feel faint.
