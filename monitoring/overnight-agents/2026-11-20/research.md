@@ -1,0 +1,34 @@
+# Compound overnight Research — 20 November 2026 (Europe/Dublin)
+
+**Worker roles:** Original Research (5) and Private Company Intelligence (6). **Source/default and GitHub Pages publishing branch confirmed:** `claude/clever-babbage-uibieq`, from connected repository metadata and `.github/workflows/site.yml`. This is a worker-stage evidence record, **not a publication**. Reviewed `AGENTS.md`, `docs/overnight-agents.md`, `EDITORIAL_TOPIC_INDEX.md`, `CONTENT_INVENTORY.md`, `data/content-inventory.json`, company watchlist, the 12–19 November nightly records (the directory contains none earlier), 20 November discovery/content records, 19 November company publisher ledger and currently open PRs, including #176, #175, #192. **One** substantive research-and-engineering draft: [PR #198](https://github.com/davidomarayt/compound/pull/198).
+
+## 5. Original Research — REVIEW_ONLY: DISTINCT_PRIMARY_DATA_BRIEF (not published)
+
+**New primary source:** [CSO, Productivity in Ireland Q2 2026](https://www.cso.ie/en/releasesandpublications/fp/fp-piiq/productivityinirelandquarter22026/), **published 19 Nov 2026 at 11:00 Europe/Dublin**, measuring **Q2 2026**, a **Frontier Series** statistical output. Source checked 20 Nov. Its Q2 figures below are **seasonally adjusted** euros of *constant-price gross value added per hour worked*, not wages or earnings. Official quarter-on-quarter percentage changes are CSO **log growth rates** computed from unrounded source values.
+
+| CSO measure | Q2 2026 published value | Change from Q1 2026, as reported by CSO |
+| --- | ---: | ---: |
+| Total economy labour productivity | **€118.40 per hour** | **+6.0%** |
+| Domestic sector (sectors not classified as foreign-dominated) | **€59.00 per hour** | **+0.3%** |
+| Foreign-MNE-dominated sectors | **€519.90 per hour** | **+12.0%** |
+| EU average comparator, Q2 2026 | **€48.20 per hour** | EU total +0.6% |
+
+**New reproducible reader-useful comparisons** from the published rounded hourly levels, **not additional official growth rates**:
+- `€519.90 / €59.00 = 8.81×`: foreign-MNE-dominated-sector GVA per labour hour relative to domestic-sector GVA per hour **in this release**; the **€460.90/hour difference** is *not pay or a wage gap*. It cannot be multiplied by an individual's hours to estimate their wage or salary.
+- `€59.00 / €48.20 = 1.2241`: Ireland's domestic productivity level was **22.4% above the published EU comparator** in the same quarter, while total `€118.40 / €48.20 = 2.46×`. The total and domestic series describe **different sector compositions**; this is not an argument that a typical worker earns 2.46 times an EU wage.
+- `€519.90 - €59.00 = €460.90 per hour`; rates shown to two decimals. The source's **+0.3% domestic quarterly growth** must not be silently replaced by `(59.0/58.9-1)*100` using **rounded** levels or by treating log growth as simple percentage change.
+
+**Method limits:** the CSO defines the foreign sector as sectors where foreign-owned multinationals account for more than 85% of turnover on average; it does **not** mean every employer/worker in those sectors is foreign-owned. Foreign-driven GVA can distort headline comparisons; numerator is sector value added, denominator is hours **including secondary jobs**. Quarterly swings and methodology revisions matter. No causal assertion about individual wages, business profits, productivity-driven salary growth, tax receipts or living standards. No extrapolation to November 2026. Topic fingerprint: `CSO-2026-11-19-productivity-Q2|total-v-domestic-GVA-per-hour-v-EU`. The previous 12–19 Nov research records covered CPI, September mortgage rates, farmland, payroll, first-time-buyer study and property-price index, **not this release**. Existing content index/inventory search found no same-intent productivity guide or tool. **Disposition:** original-source research brief only, potential future existing-economy explainer with careful MNE caveats; **no thin new article or page change by this role**.
+
+## 6. Private Company Intelligence — CHANGED: LISTING-STATUS CORRECTION STAGED, NOT LIVE
+
+**Primary and secondary event verification:**
+- [Nasdaq Newsroom, Anthropic Marks its IPO at Nasdaq](https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq), dated **19 Nov 2026, 3:30pm EST**, explicitly says **Anthropic (ANT) began trading** on Nasdaq on 19 Nov, opening at **$111.50**. This supersedes the [18 Nov Anthropic pricing release](https://www.anthropic.com/news/anthropic-prices-initial-public-offering), which described a **future expected** debut and a $83 offer price. Opening price is historical, **not a current quote**.
+- [Reuters, 19 Nov trading-day report](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) independently reports an ANT session and $97.17 close. This is secondary context; no price/valuation news story was created.
+- The source registry still held Anthropic in `private` with dated text saying listing was expected, even though the live `/companies/` directory labels all its contents privately held. **SpaceX is already listed as SPCX** in the registry; do not mistake it for a private issuer. OpenAI and other genuinely private profiles remain under their current owner. No new source-backed OpenAI/other private-company change was established by this worker; do not duplicate 07:00 publisher work.
+
+**Fix proposed in [draft PR #198](https://github.com/davidomarayt/compound/pull/198)**, owned jointly with Technical SEO/UX: move Anthropic from private to listed ANT only after verified Nasdaq fact; preserve old `/companies/anthropic/` bookmarks as a noindex canonical redirect to `/stocks/ant/` and match prior `company-anthropic` tagged research. No new article, no claimed current market price, no estimate presented as filing, no new editorial reviewed date. **High-priority QA coordination needed:** 07:00 private-company automation still explicitly expects Anthropic. This worker **did not and must not edit/disable that automation**; the listing-migration PR must not merge until the independent release owner resolves workflow alignment. Status: **CHANGED / DRAFT PR OPEN / UNMERGED / NOT DEPLOYED / NOT VERIFIED LIVE**.
+
+## Coordination and no-duplication
+
+Current company publication ledger for 19 Nov shows the publisher updated the **existing** 18 Nov Anthropic IPO pricing article rather than creating another IPO article. Previous overnight brief #19 also covered the 18 Nov priced-offering split. This stage did not duplicate those events, did not change SEO metadata on existing IPO news, and did not call an issuer private after confirmed trading. The other worker owns [PR #192](https://github.com/davidomarayt/compound/pull/192) for probate; its files and topical scope do not overlap this PR. No new research publication, no merge, no production deployment, no ad-account, consent, secrets or automation edits.
