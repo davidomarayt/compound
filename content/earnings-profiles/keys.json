@@ -3,7 +3,7 @@
   "company": "Keysight Technologies",
   "latest": {
     "fy": 2026,
-    "fp": "Q4",
+    "fp": "FY",
     "period_end": "2026-10-31",
     "filed": "2026-11-19",
     "form": "8-K",
@@ -11,20 +11,20 @@
     "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
     "metrics": {
       "revenue": {
-        "current": 1994000000,
-        "prior_year": 1419000000,
+        "current": 7157000000,
+        "prior_year": 5375000000,
         "unit": "USD",
         "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 486000000,
-        "prior_year": 233000000,
+        "current": 1513000000,
+        "prior_year": 850000000,
         "unit": "USD",
         "tag": "SEC Exhibit reported GAAP net_income"
       },
       "diluted_eps": {
-        "current": 2.82,
-        "prior_year": 1.35,
+        "current": 8.75,
+        "prior_year": 4.91,
         "unit": "USD/shares",
         "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
@@ -120,7 +120,7 @@
     },
     {
       "fy": 2026,
-      "fp": "Q4",
+      "fp": "FY",
       "period_end": "2026-10-31",
       "filed": "2026-11-19",
       "form": "8-K",
@@ -128,20 +128,20 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
       "metrics": {
         "revenue": {
-          "current": 1994000000,
-          "prior_year": 1419000000,
+          "current": 7157000000,
+          "prior_year": 5375000000,
           "unit": "USD",
           "tag": "SEC Exhibit reported GAAP revenue"
         },
         "net_income": {
-          "current": 486000000,
-          "prior_year": 233000000,
+          "current": 1513000000,
+          "prior_year": 850000000,
           "unit": "USD",
           "tag": "SEC Exhibit reported GAAP net_income"
         },
         "diluted_eps": {
-          "current": 2.82,
-          "prior_year": 1.35,
+          "current": 8.75,
+          "prior_year": 4.91,
           "unit": "USD/shares",
           "tag": "SEC Exhibit reported GAAP diluted_eps"
         }
