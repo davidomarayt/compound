@@ -33,7 +33,7 @@
   <section class="condition-copy">
     <h2>Sources and further reading</h2>
     <ul>
-      <li><a href="{{ entry.official_url }}">HSE guidance on {{ entry.name }}</a></li>
+      <li><a href="{{ entry.official_url }}">HSE guidance for this topic</a></li>
       {% for label, target in entry.guide.get("sources", {}).items() %}<li><a href="{{ target }}">{{ label }}</a></li>{% endfor %}
       {% for label, target in entry.guide.get("links", {}).items() %}<li><a href="{{ target }}">{{ label }}</a></li>{% endfor %}
     </ul>

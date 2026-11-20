@@ -530,6 +530,7 @@ evidence:
     source: hpsc2025
     locator: table 1
     measure: notifications
+    label: Lyme neuroborreliosis notifications
   lymphogranuloma-venereum-lgv:
   - value: '56'
     period: 2025 (provisional)
@@ -884,6 +885,7 @@ evidence:
     source: stillbirth_cso
     locator: Stillbirths
     measure: registry
+    label: Registered stillbirths
   endometriosis:
   - value: About 1 in 10
     period: HSE response published 2025
@@ -1163,13 +1165,14 @@ evidence:
     locator: Chapter 2, epidemiology of ruptured AAA
     measure: hospital
   abortion:
-  - value: 10,600 notifications
+  - value: '10,600'
     period: '2025'
-    population: Terminations carried out under the 2018 Act and notified to the Irish Minister for Health
-    note: This is a notified activity count. It does not describe Irish residents who obtained care outside Ireland.
+    population: Terminations of pregnancy carried out in Ireland under the 2018 Act
+    note: The Department of Health counted terminations reported to the Minister for Health under section 20 of the Act. The figure covers care provided in Ireland.
     source: doh_top_2025
     locator: Reported annual total
-    measure: notifications
+    measure: procedure
+    label: Reported terminations of pregnancy
   acute-cholecystitis:
   - value: 20,886 admission episodes
     period: January 2017–July 2023
@@ -1238,6 +1241,7 @@ evidence:
     source: nss_2025
     locator: Numbers screened per programme 2025
     measure: service
+    label: People screened
   breast-screening:
   - value: 173,443
     period: 2025, provisional
@@ -1246,6 +1250,7 @@ evidence:
     source: nss_2025
     locator: Numbers screened per programme 2025
     measure: service
+    label: People screened
   bronchiolitis:
   - value: 24 RSV hospitalisations
     period: Autumn 2024 programme update, published 16 December
@@ -1263,6 +1268,7 @@ evidence:
     source: earsnet_2025
     locator: Candida species causing bloodstream infections, Table 34
     measure: notifications
+    label: Reported bloodstream infections
   cervical-screening:
   - value: 209,699
     period: 2025, provisional
@@ -1272,6 +1278,7 @@ evidence:
     source: nss_2025
     locator: Numbers screened per programme 2025
     measure: service
+    label: People screened
   colposcopy:
   - value: 45,080 first attendances
     period: 1 April 2023–31 December 2024
@@ -1297,6 +1304,7 @@ evidence:
     source: noca_sids
     locator: Table 4.4, postneonatal deaths
     measure: mortality
+    label: Deaths recorded as sudden infant death syndrome
   cpe:
   - value: 1,471 reported CPE detections
     period: '2025'
@@ -1305,6 +1313,7 @@ evidence:
     source: cpe_2025
     locator: 2025 national trends and source of detection
     measure: notifications
+    label: Laboratory detections
   crohns-disease:
   - value: 5.9 new cases per 100,000
     period: 2011 estimate, as reported by Crohn’s & Colitis Ireland
@@ -1322,6 +1331,7 @@ evidence:
     source: nss_2025
     locator: Numbers screened per programme 2025
     measure: service
+    label: People screened
   ectopic-pregnancy:
   - value: 987 recorded ectopic pregnancies
     period: '2024'
@@ -1349,6 +1359,7 @@ evidence:
     source: hpsc2025
     locator: Table 1, Campylobacter infection
     measure: notifications
+    label: Campylobacter notifications
   glutaric-aciduria-type-1-ga1:
   - value: 1 in 85,379
     period: 2018–2024
@@ -1374,6 +1385,7 @@ evidence:
     source: newborn_2024
     locator: National Newborn Bloodspot Screening Programme, 2024 summary metrics
     measure: service
+    label: Babies screened
   hepatitis:
   - value: 572 hepatitis B notifications
     period: 2025, provisional
@@ -1398,6 +1410,7 @@ evidence:
     source: imj_flush
     locator: Table 2 and discussion
     measure: prevalence
+    label: Symptoms reported by study participants
   hpv-vaccine:
   - value: 74.9%
     period: 2023/24 school cohort
@@ -1407,6 +1420,7 @@ evidence:
     source: hpsc_school_2024
     locator: Summary and Trends, national uptake, row 45
     measure: service
+    label: HPV vaccine uptake
   idiopathic-pulmonary-fibrosis:
   - value: 154 participants
     period: Registry pilot described in the 2025 report
@@ -1457,6 +1471,7 @@ evidence:
     source: hpsc_school_2024
     locator: Summary and Trends, national uptake, row 45
     measure: service
+    label: MenACWY vaccine uptake
   menb-vaccine:
   - value: 85.3%
     period: Q3 2025
@@ -1465,6 +1480,7 @@ evidence:
     source: hpsc_infant_2025
     locator: National 24 months, Q3 2025, MenB3; national commentary
     measure: service
+    label: MenB vaccine uptake
   meningitis-and-septicaemia:
   - value: 60 meningococcal disease notifications
     period: 2025, provisional
@@ -1483,6 +1499,7 @@ evidence:
     source: healthyireland2025
     locator: Menopause section, impact of symptoms
     measure: prevalence
+    label: Reported menopause symptoms
   miscarriage:
   - value: About 20% of clinical pregnancies
     period: Historical estimate cited in the Irish guideline
@@ -1492,6 +1509,7 @@ evidence:
     source: miscarriage_guideline
     locator: Miscarriage Care in Ireland
     measure: prevalence
+    label: Estimated share of clinical pregnancies
   mmr-vaccine:
   - value: 86.3%
     period: Q3 2025
@@ -1500,6 +1518,7 @@ evidence:
     source: hpsc_infant_2025
     locator: National 24 months, Q3 2025, MMR1; national commentary
     measure: service
+    label: First-dose MMR vaccine uptake
   mrsa:
   - value: 2.73 per 100,000 people
     period: '2025'
@@ -1508,14 +1527,16 @@ evidence:
     source: earsnet_2025
     locator: Table 1, EU targets and Irish incidence data
     measure: notifications
+    label: Reported bloodstream infection rate
   newborn-hearing-screening:
   - value: 52,862
     period: '2024'
     population: Babies screened by the national Irish programme
-    note: Number of babies offered and completing screening is tracked separately. This is the number screened.
+    note: The programme tracks offers and completed screenings separately. This is the number of babies screened.
     source: newborn_2024
     locator: Table 14
     measure: service
+    label: Babies screened
   - value: '68'
     period: '2024'
     population: Babies in the Irish newborn hearing programme
@@ -1523,6 +1544,7 @@ evidence:
     source: newborn_2024
     locator: Table 14 and screening yield section
     measure: diagnoses
+    label: Cases identified through screening
   obstructive-sleep-apnoea:
   - value: 121 of 301 referrals
     period: May and July 2024
@@ -1532,6 +1554,7 @@ evidence:
     source: its_sleep
     locator: Abstract 7.6, referrals to St James’s Hospital
     measure: service
+    label: Referrals for suspected sleep apnoea
   organ-donation:
   - value: 207 transplants
     period: '2025'
@@ -1602,6 +1625,7 @@ evidence:
     source: hpsc_school_2024
     locator: Summary and Trends, national uptake, row 45
     measure: service
+    label: School Tdap vaccine uptake
   vre:
   - value: 110 resistant isolates
     period: '2025'
@@ -1611,6 +1635,7 @@ evidence:
     source: earsnet_2025
     locator: Enterococcus faecium annual results
     measure: notifications
+    label: Resistant laboratory isolates
   who-a-hip-replacement-is-for:
   - value: 22,249 primary total hip replacements
     period: 2015–2024
@@ -1629,6 +1654,7 @@ evidence:
     source: irish_paediatric_rhinitis
     locator: Results, demographics
     measure: registry
+    label: Diagnoses at one clinic
   ankle-pain:
   - value: 7%
     period: '2024'
@@ -1638,6 +1664,7 @@ evidence:
     source: hsa_injuries_2024
     locator: Figure 1.3, most injured body parts
     measure: registry
+    label: Share of reported work injuries
   bowel-polyps:
   - value: 849 people
     period: 2022–2023
@@ -1647,6 +1674,7 @@ evidence:
     source: hse_polyps
     locator: Programme results
     measure: service
+    label: People who had advanced polyps removed
   chemotherapy:
   - value: 147,943 day-patient discharges
     period: '2024'
@@ -1665,6 +1693,7 @@ evidence:
     source: gaelic_suspected_concussion
     locator: Abstract, results
     measure: registry
+    label: Suspected concussions in the study
   gum-disease:
   - value: 4.9%
     period: 2019 estimate
@@ -1700,6 +1729,7 @@ evidence:
     source: noca_icu_2024
     locator: National audit, coverage and patient counts
     measure: service
+    label: Adult critical care patients
   palliative-care:
   - value: 15,253 patients
     period: '2024'
@@ -1709,6 +1739,7 @@ evidence:
     source: hse_palliative_2024
     locator: Service activity by setting
     measure: service
+    label: Specialist palliative care at home
   scabies:
   - value: 51 notified outbreaks
     period: '2024'
@@ -1727,6 +1758,7 @@ evidence:
     source: healthyireland2025
     locator: Contraception section, hormonal coil use by menopause phase
     measure: prevalence
+    label: Reported hormonal coil use
   eating-disorders:
   - value: 894 referrals
     period: '2024'
@@ -1736,6 +1768,7 @@ evidence:
     source: hse_eating_referrals
     locator: Verified 2023 and 2024 table
     measure: service
+    label: Referrals to HSE eating disorder services
   external-male-condom:
   - value: 13%
     period: Healthy Ireland Survey 2025
@@ -1745,6 +1778,7 @@ evidence:
     source: healthyireland2025
     locator: Contraception section, use by method and age
     measure: prevalence
+    label: Reported condom use
   fertility:
   - value: 5,818 referrals
     period: '2025'
@@ -1754,6 +1788,7 @@ evidence:
     source: hse_fertility_2025
     locator: Executive summary and regional referrals
     measure: service
+    label: Referrals to HSE fertility hubs
   intrauterine-system-ius:
   - value: 5%
     period: Healthy Ireland Survey 2025
@@ -1762,6 +1797,7 @@ evidence:
     source: healthyireland2025
     locator: Contraception section, use by method and gender
     measure: prevalence
+    label: Reported hormonal coil use
   molar-pregnancy:
   - value: 131 registered complete or partial moles
     period: '2021'
@@ -1780,6 +1816,7 @@ evidence:
     source: nsrf_2025
     locator: Executive summary, national estimates
     measure: hospital
+    label: Estimated emergency department presentations
   the-copper-coil:
   - value: 3%
     period: Healthy Ireland Survey 2025
@@ -1789,6 +1826,7 @@ evidence:
     source: healthyireland2025
     locator: Contraception section, use by method and gender
     measure: prevalence
+    label: Reported copper coil use
   the-implant:
   - value: 2%
     period: Healthy Ireland Survey 2025
@@ -1797,6 +1835,7 @@ evidence:
     source: healthyireland2025
     locator: Contraception section, use by method and age
     measure: prevalence
+    label: Reported contraceptive implant use
   diabetes-and-pregnancy:
   - value: 12.4% met gestational diabetes criteria
     period: Historical ATLANTIC DIP cohort, reported 2015
@@ -1806,6 +1845,7 @@ evidence:
     source: atlanticdip_gdm
     locator: Methods, ATLANTIC DIP cohort
     measure: prevalence
+    label: Gestational diabetes in the study
   esbls:
   - value: 279 ESBL-positive isolates
     period: '2025'
@@ -1815,6 +1855,7 @@ evidence:
     source: hpsc_ears2025
     locator: Table 6, extended spectrum beta-lactamase production
     measure: registry
+    label: Laboratory isolates
   healthcare-associated-infections:
   - value: 7.4% with an active infection
     period: May 2023
@@ -1833,6 +1874,7 @@ evidence:
     source: hpsc_parvovirus_lab
     locator: Parvovirus B19 in Ireland, 2024
     measure: registry
+    label: Positive laboratory tests
   pelvic-girdle-pain-pregnancy:
   - value: 2,260 new outpatient records
     period: '2024'
@@ -1842,6 +1884,7 @@ evidence:
     source: rotunda_2024_physio
     locator: Physiotherapy service, Table 1 adult new outpatients
     measure: service
+    label: Physiotherapy outpatient records
   pneumococcal-vaccine:
   - value: 84.2% uptake
     period: Q4 2024
@@ -1851,6 +1894,7 @@ evidence:
     source: hpsc_ipd2024
     locator: Background, vaccine uptake at 24 months
     measure: service
+    label: Childhood pneumococcal vaccine uptake
   sexually-transmitted-infections:
   - value: 18,906 notifications
     period: '2025'
@@ -1869,6 +1913,7 @@ evidence:
     source: hpsc_ears2025
     locator: Section 2, Staphylococcus aureus
     measure: registry
+    label: Invasive laboratory isolates
   urinary-catheter:
   - value: 14.3% with a urinary catheter
     period: May 2023
@@ -1887,6 +1932,7 @@ evidence:
     source: rotunda_2024_physio
     locator: Physiotherapy service, Table 1 adult new outpatients
     measure: service
+    label: Physiotherapy outpatient records
   bacterial-vaginosis-pregnancy:
   - value: 8.7% had bacterial vaginosis
     period: 1999–2001
@@ -1905,6 +1951,7 @@ evidence:
     source: hse_cosi2022
     locator: Evidence of implementation, Obesity Policy and Action Plan
     measure: prevalence
+    label: Overweight and obesity estimate
   malnutrition:
   - value: 33.8% screened at risk of malnutrition
     period: November 2023
@@ -1941,6 +1988,7 @@ evidence:
     source: hpsc_parvovirus_lab
     locator: Parvovirus B19 in Ireland, 2024
     measure: registry
+    label: Positive laboratory tests
   dehydration:
   - value: 0.5 emergency admissions per 1,000 older adults
     period: '2016'
@@ -2040,6 +2088,7 @@ evidence:
     source: oireachtas_fgm_2024
     locator: Paragraph 153 on population estimates
     measure: prevalence
+    label: Estimated number of women and girls affected
   fetal-alcohol-spectrum-disorders:
   - value: 2.8% to 7.4%
     period: 2022 position paper
@@ -2094,6 +2143,7 @@ evidence:
     source: oireachtas_spiking_2026
     locator: Statement on reported spiking incidents
     measure: service
+    label: Reports to An Garda Síochána
   varicose-veins:
   - value: 4,030 discharges with leg varicose vein ligation recorded
     period: '2023'
@@ -2157,6 +2207,7 @@ evidence:
     source: healthy_ireland_periods_2022
     locator: Section 8, Menstrual Health and Period Poverty
     measure: prevalence
+    label: Reported impact on daily activities
   periods:
   - value: 56% had periods monthly or irregularly
     period: '2022'
@@ -2166,6 +2217,7 @@ evidence:
     source: healthy_ireland_periods_2022
     locator: Section 8, Current menstrual status by age
     measure: prevalence
+    label: Reported menstrual status
   stomach-ache:
   - value: 8,867 inpatient discharges in the minor-complexity group
     period: '2023'
@@ -2193,6 +2245,7 @@ evidence:
     source: hse_sunburn_2024parents
     locator: Research findings on reported childhood sunburn
     measure: prevalence
+    label: Parent-reported sunburn
   venous-leg-ulcer:
   - value: Around 1 in 500 people
     period: 2023 model of care publication
@@ -2238,6 +2291,7 @@ evidence:
     source: nans_vitamin_d
     locator: Abstract, year-round prevalence for serum 25(OH)D below 30 nmol/L
     measure: prevalence
+    label: Low vitamin D estimate
   vaginal-dryness:
   - value: 36% reported vaginal dryness, itching or discomfort
     period: '2025'
@@ -2247,6 +2301,7 @@ evidence:
     source: healthy_ireland_menopause_2025
     locator: Page 40, symptoms reported by menopause phase
     measure: prevalence
+    label: Symptoms reported in the menopause survey
   itchy-skin:
   - value: 33% reported dry or itchy skin
     period: '2025'
@@ -2256,6 +2311,7 @@ evidence:
     source: healthy_ireland_menopause_2025
     locator: Page 40, symptoms reported by menopause phase
     measure: prevalence
+    label: Symptoms reported in the menopause survey
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -2915,6 +2971,7 @@ guides:
     - Contact your GP if low mood or loss of interest persists or makes everyday life difficult. Seek urgent help if
       you feel unable to stay safe.
   back-pain:
+    kind: symptom
     aliases: low back pain lower back ache lumbar pain lumbago
     summary: Back pain is common and can limit movement, sleep and work. A GP or physiotherapist can help assess persistent
       symptoms, and a few specific warning signs need urgent attention.
@@ -3213,6 +3270,7 @@ guides:
       HSE recovering from a heart attack: https://www2.hse.ie/conditions/heart-attack/recovering-from/
       European Society of Cardiology guidelines: https://academic.oup.com/eurheartj/article/44/38/3720/7243210
   neck-pain:
+    kind: symptom
     aliases: neck stiffness cervical pain trapped nerve
     summary: Neck pain often improves within weeks. Pain after an injury or symptoms such as weakness need a different assessment from everyday stiffness.
     symptoms:
@@ -3270,6 +3328,7 @@ guides:
     sources:
       HSE treatment options: https://www2.hse.ie/conditions/non-melanoma-skin-cancer/treatment/
   stillbirth:
+    kind: topic
     aliases: stillborn baby pregnancy loss fetal death maternity bereavement reduced movements
     summary: If you are worried about your baby's movements, call your maternity unit straight away. If your baby has died, the maternity team can explain the next steps and support you and your family.
     symptoms:
@@ -4027,6 +4086,13 @@ guides:
     aliases: abortion termination of pregnancy Ireland My Options medical surgical abortion
     summary: The HSE's My Options service can explain how to access abortion care in Ireland. Contact it early if you think you may
       want an abortion, especially if you are unsure how far along you are.
+    headings:
+      symptoms: Deciding whether to seek care
+      causes: Types of abortion care
+      diagnosis: Preparing for an appointment
+      care: What to expect
+      complications: Aftercare and warning signs
+      help: How to get help
     symptoms:
     - People seek abortion care for different reasons. A GP, clinic or hospital can discuss your situation confidentially. My Options
       provides information about services and supports for people making a decision.
@@ -4296,7 +4362,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/babies-who-are-small-growing-slowly/
   bcg-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: BCG vaccine tuberculosis TB newborn selective immunisation Ireland
     summary: BCG helps protect young children from some severe forms of tuberculosis. In Ireland it is offered to babies who are
       assessed as having a higher risk of TB exposure.
@@ -4421,6 +4487,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
   braxton-hicks:
+    kind: topic
     aliases: Braxton Hicks practice contractions false labour tightenings pregnancy
     summary: Braxton Hicks are intermittent tightenings of the womb. Regular, stronger or painful contractions, especially before
       37 weeks, need advice from your maternity unit.
@@ -4472,6 +4539,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
   breech-presentation:
+    kind: topic
     aliases: breech baby breech presentation external cephalic version ECV
     summary: A breech baby is positioned feet or bottom first. If the baby remains breech near the end of pregnancy, your maternity
       team will discuss whether to try turning the baby and how to plan the birth.
@@ -4623,6 +4691,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
   chest-pain:
+    kind: symptom
     aliases: chest pain chest tightness chest pressure heart attack pain breathing
     summary: Chest pain has many causes. New pressure, tightness or severe discomfort with sweating, nausea, breathlessness or pain
       spreading to the arm or jaw needs emergency help.
@@ -5590,6 +5659,7 @@ guides:
     - Contact your GP promptly if you notice jaundice, dark urine or have concerns about exposure. Seek emergency help if someone
       with suspected liver illness becomes confused, collapses or is very unwell.
   high-temperature:
+    kind: symptom
     aliases: fever children high temperature baby thermometer child temperature
     summary: Fever is a sign of illness. A baby younger than three months with a temperature of 38°C or higher needs urgent medical
       advice.
@@ -5642,6 +5712,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
   hot-flushes:
+    kind: symptom
     aliases: hot flushes hot flashes night sweats menopause vasomotor symptoms
     summary: Hot flushes are sudden waves of warmth that can occur around menopause. If symptoms disturb sleep or have no clear explanation,
       discuss them with a GP.
@@ -5664,7 +5735,7 @@ guides:
     - Speak to your GP if flushes regularly interrupt sleep or daily activities. Get advice for persistent drenching sweats without
       an obvious cause or sweats with fever or weight loss.
   hpv-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: HPV vaccine human papillomavirus Gardasil school vaccine cervical cancer HPV Ireland
     summary: The HPV vaccine protects against important types of human papillomavirus that can cause cancer or genital warts. The
       HSE offers it through the school programme.
@@ -6012,7 +6083,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
   menacwy-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: MenACWY vaccine meningococcal A C W Y booster secondary school vaccination
     summary: MenACWY protects against four groups of meningococcal bacteria. Meningococcal infection can cause meningitis or septicaemia,
       so symptoms still need urgent assessment after vaccination.
@@ -6035,7 +6106,7 @@ guides:
     - Contact the school vaccination team about a missed appointment or incomplete record. Seek emergency help if you suspect meningitis
       or septicaemia, regardless of vaccination history.
   menb-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: MenB vaccine meningococcal B Bexsero infant vaccine immunisation Ireland
     summary: The MenB vaccine helps protect babies against meningococcal group B disease. Ireland includes it in the primary childhood
       immunisation programme.
@@ -6081,9 +6152,17 @@ guides:
     - Call emergency services if meningitis or sepsis is possible. Do not wait for a rash, a stiff neck or for all symptoms to appear.
       If illness worsens unexpectedly, seek help again.
   menopause:
+    kind: topic
     aliases: menopause perimenopause postmenopause HRT periods symptoms Ireland
     summary: Menopause is reached after 12 months without a period due to the natural transition. Perimenopause is the time leading
       up to it, when symptoms can start even if periods continue.
+    headings:
+      symptoms: Signs and symptoms
+      causes: What happens in the body
+      diagnosis: How menopause is assessed
+      care: Managing symptoms
+      complications: Health changes after menopause
+      help: When to get medical advice
     symptoms:
     - Periods can become irregular, lighter or heavier. Hot flushes, night sweats, changes in sleep or mood, and vaginal dryness
       can affect daily life. Symptoms can change over time.
@@ -6103,6 +6182,7 @@ guides:
     - Contact your GP if symptoms affect work, sleep or daily life, or appear before age 45. Arrange prompt review of bleeding after
       menopause and ask about follow-up if taking HRT.
   miscarriage:
+    kind: topic
     aliases: miscarriage early pregnancy loss threatened miscarriage missed miscarriage
     summary: Bleeding in pregnancy can have several causes. A maternity team can assess whether a pregnancy is continuing and explain
       the options if a miscarriage is confirmed.
@@ -6128,7 +6208,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://research.ucc.ie/en/publications/national-clinical-practice-guideline-first-trimester-miscarriage-/
   mmr-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: MMR vaccine measles mumps rubella MMRV childhood vaccination catch up
     summary: MMR protects against measles, mumps and rubella. In Ireland the recommended product and schedule can depend on your
       child's age and date of birth.
@@ -6494,6 +6574,7 @@ guides:
     - Contact a GP urgently for breathlessness, pain on breathing, coughing blood or suspected pneumonia in someone at higher risk.
       Get emergency help for severe breathing problems or confusion.
   postmenopausal-bleeding:
+    kind: symptom
     aliases: postmenopausal bleeding spotting after menopause vaginal bleeding after periods stop
     summary: Bleeding after menopause needs a GP assessment, even if it happens once or is only light spotting. There are several
       possible causes, including changes that need treatment.
@@ -6646,6 +6727,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www.hpsc.ie/a-z/other/scarletfever/factsheet
   shortness-breath:
+    kind: symptom
     aliases: shortness of breath dyspnoea breathlessness breathing difficulty
     summary: Breathlessness can develop suddenly or gradually. Sudden severe difficulty breathing needs emergency help, particularly
       with chest pain or a change in colour.
@@ -6721,6 +6803,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/spirometry/
   spotting:
+    kind: symptom
     aliases: spotting early pregnancy bleeding first trimester blood pregnancy
     summary: Light bleeding in early pregnancy can have more than one cause. Tell your maternity or early pregnancy team, particularly
       if you also have pain.
@@ -6748,7 +6831,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/spotting/
   tdap-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: Tdap booster tetanus diphtheria whooping cough pertussis school vaccine
     summary: The Tdap booster refreshes protection against tetanus, diphtheria and whooping cough. The Irish school programme offers
       it during first year of secondary school.
@@ -6947,6 +7030,7 @@ guides:
     - Tell healthcare workers about a previous VRE result. If a patient develops fever or seems more unwell during treatment, contact
       the treating team promptly.
   warning-signs-during-pregnancy:
+    kind: topic
     aliases: pregnancy warning signs maternity triage bleeding reduced movements severe headache
     summary: Contact your maternity service immediately if your baby's usual movements change, you have bleeding or severe pain,
       or you develop other warning signs during pregnancy.
@@ -7047,6 +7131,7 @@ guides:
     - Contact your GP if symptoms interfere with sleep, remain one-sided or do not respond to usual pharmacy care. Seek urgent help
       if breathing suddenly becomes difficult.
   ankle-pain:
+    kind: symptom
     aliases: ankle pain sore ankle ankle sprain swollen ankle walking
     summary: Ankle pain may follow a twist or build up with activity. A change in shape or difficulty bearing weight after injury
       needs prompt assessment.
@@ -7095,6 +7180,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/athletes-foot/
   bleeding-from-the-bottom-rectal-bleeding:
+    kind: symptom
     aliases: rectal bleeding bleeding from bottom blood in stool bright red black stool
     summary: Blood in or on the stool can have several causes. Tell your GP about new or unexplained bleeding, even if it stops by
       itself.
@@ -7194,7 +7280,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/carpal-tunnel-syndrome/
   chemotherapy:
-    kind: procedure
+    kind: treatment
     aliases: chemotherapy chemo cancer treatment systemic anticancer therapy infusion tablets
     summary: Chemotherapy can treat cancer by damaging cancer cells or preventing them from dividing. Ask your oncology team what
       the treatment is meant to achieve and which symptoms require immediate advice.
@@ -7393,6 +7479,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/dental-abscess/
   dry-eyes:
+    kind: symptom
     aliases: dry eyes dry eye disease tear film burning gritty eyes screen contact lenses
     summary: Dry eyes can feel gritty, sore or watery. Redness with pain, light sensitivity or a change in vision needs medical assessment.
     evidence_gap: Rates depend on whether studies count symptoms, formal diagnoses or abnormalities on testing. A comparable Irish
@@ -7590,7 +7677,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/home-oxygen-therapy/
   hormone-therapy-for-cancer:
-    kind: procedure
+    kind: treatment
     aliases: hormone therapy cancer endocrine therapy breast prostate tamoxifen hormonal treatment
     summary: Hormone therapy can slow cancers that depend on hormones to grow. The medicine, expected benefit and length of treatment
       vary with the type of cancer.
@@ -7617,7 +7704,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/hormone-therapy-for-cancer/
   immunotherapy:
-    kind: procedure
+    kind: treatment
     aliases: cancer immunotherapy checkpoint inhibitor immune side effects oncology
     summary: Cancer immunotherapy uses the immune system to help fight cancer. Some side effects can start during or after treatment
       and need early assessment.
@@ -7643,6 +7730,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/immunotherapy/
   indigestion:
+    kind: symptom
     aliases: indigestion dyspepsia upper abdominal fullness belching after eating
     summary: Indigestion describes discomfort around the upper abdomen or chest after eating. Persistent symptoms or difficulty swallowing
       should be reviewed.
@@ -7846,6 +7934,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/plantar-fasciitis/
   red-eye:
+    kind: symptom
     aliases: red eye painful red eye blurred vision contact lens eye redness
     summary: A red eye can come from irritation or infection. Pain, vision changes, light sensitivity or a red eye in a contact lens
       wearer needs prompt assessment.
@@ -7947,6 +8036,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/sciatica/
   shoulder-pain:
+    kind: symptom
     aliases: shoulder pain sore shoulder rotator cuff painful arm movement
     summary: Shoulder pain can come from tendons, joints or sometimes another area of the body. A sudden injury with deformity or
       inability to lift the arm needs prompt assessment.
@@ -8078,7 +8168,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/stye/
   targeted-therapy:
-    kind: procedure
+    kind: treatment
     aliases: targeted therapy cancer precision medicine HER2 EGFR oncology
     summary: Targeted cancer therapy acts on a specific feature involved in cancer growth. Tumour testing can help determine whether
       a given treatment is likely to help.
@@ -8182,6 +8272,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/tinnitus/
   vertigo:
+    kind: symptom
     aliases: vertigo spinning dizziness BPPV balance inner ear
     summary: Vertigo is a sensation of spinning or movement. Symptoms triggered by rolling over in bed can have a different cause
       from continuous vertigo or dizziness with a new neurological symptom.
@@ -8418,7 +8509,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/bulimia/
   combined-oral-contraception-the-pill:
-    kind: procedure
+    kind: contraception
     aliases: combined pill combined oral contraceptive oestrogen progestogen COC contraception
     summary: The combined pill contains two hormones to prevent pregnancy. A clinician can check whether it suits you and explain
       what to do if you miss a pill.
@@ -8492,7 +8583,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://about.hse.ie/publications/hcp-eating-disorders-model-of-care/
   emergency-contraception:
-    kind: procedure
+    kind: contraception
     aliases: emergency contraception morning after pill emergency coil unprotected sex
     summary: Emergency contraception can reduce the chance of pregnancy after sex without contraception or after a method fails.
       Seek advice as soon as possible because options have time limits.
@@ -8519,7 +8610,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/emergency-contraception/
   external-male-condom:
-    kind: procedure
+    kind: contraception
     aliases: external condom condom use barrier contraception STI latex
     summary: External condoms reduce the risk of pregnancy and many sexually transmitted infections. They work best when used correctly
       from the start of sex.
@@ -8566,6 +8657,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://about.hse.ie/publications/hse-fertility-services-report-2025/
   heavy-periods:
+    kind: symptom
     aliases: heavy periods heavy menstrual bleeding menorrhagia anaemia period flooding
     summary: Heavy periods can disrupt daily life and cause iron deficiency. Tell your GP how bleeding affects work, sleep or ordinary
       activity, even if it has been heavy for a long time.
@@ -8689,6 +8781,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/obsessive-compulsive-disorder/
   period-pain:
+    kind: symptom
     aliases: period pain painful periods menstrual cramps dysmenorrhoea pelvic pain
     summary: Period cramps are common, but pain that prevents everyday activities or changes over time deserves assessment. Conditions
       such as endometriosis or adenomyosis can cause similar symptoms.
@@ -8846,6 +8939,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/schizophrenia/
   self-harm:
+    kind: topic
     aliases: self harm emotional distress crisis injury support safety plan Ireland
     summary: If you have hurt yourself or feel at risk of doing so, you can get help with both the physical harm and what led to
       it. You do not have to manage it on your own.
@@ -8915,7 +9009,7 @@ guides:
     - Discuss troublesome bleeding, suspected movement or inability to feel the implant with the clinic. Ask about backup contraception
       before starting medicines that might interact.
   the-mini-pill:
-    kind: procedure
+    kind: contraception
     aliases: mini pill progestogen only pill POP contraception progesterone daily
     summary: The mini pill is a progestogen-only contraceptive. How late you can take it and still be protected depends on which
       product was prescribed.
@@ -8942,7 +9036,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/services/sexual-health/free-contraception/
   the-patch:
-    kind: procedure
+    kind: contraception
     aliases: contraceptive patch combined hormonal patch weekly oestrogen progestogen
     summary: The contraceptive patch releases hormones through the skin. It needs replacing on the recommended schedule, and advice
       after detachment depends on how long it was off.
@@ -8968,7 +9062,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/the-patch/
   vaginal-ring:
-    kind: procedure
+    kind: contraception
     aliases: vaginal ring combined contraceptive ring NuvaRing hormonal vaginal contraception
     summary: The vaginal ring is a flexible contraceptive placed in the vagina. The product has a schedule for insertion, removal
       and replacement.
@@ -9124,6 +9218,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/common-cold/
   cough:
+    kind: symptom
     aliases: Persistent cough, dry cough, chesty cough
     summary: Cough clears material from the airways. How long it lasts and what else is happening, such as fever or breathlessness,
       help determine what to do next.
@@ -9368,6 +9463,7 @@ guides:
     - Call your GP or maternity team about known exposure, a new rash or unexplained joint pain. Phone ahead before attending in
       person so the service can limit exposure to others.
   pelvic-girdle-pain-pregnancy:
+    kind: symptom
     aliases: PGP, symphysis pubis dysfunction, SPD
     summary: Pregnancy-related pelvic girdle pain affects the joints and muscles around the pelvis. Daily movements like walking,
       climbing stairs and rolling over in bed can become painful.
@@ -9417,7 +9513,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/pleurisy/
   pneumococcal-vaccine:
-    kind: procedure
+    kind: vaccination
     aliases: Pneumococcal immunisation, pneumococcal jab, PPV23, PCV
     summary: Pneumococcal vaccines reduce the risk of serious disease caused by some types of pneumococcal bacteria. The vaccine
       and schedule depend on age and medical risk.
@@ -9488,6 +9584,7 @@ guides:
     - Seek prompt advice for possible recent HIV exposure because preventive treatment is time-sensitive. Arrange same-day assessment
       for fever with severe pelvic pain, or sudden severe testicular pain.
   shortness-of-breath-or-chest-pain-in-pregnancy:
+    kind: symptom
     aliases: Pregnancy breathlessness, chest pain while pregnant
     summary: Breathing can feel different as pregnancy progresses. Sudden breathlessness, chest pain or faintness needs urgent attention
       because pregnancy increases the chance of some serious conditions.
@@ -9537,6 +9634,7 @@ guides:
     - Get medical advice if redness spreads, a wound produces pus or fever develops. Call 112 or 999 for severe illness with confusion,
       collapse or difficulty breathing.
   stomach-pain-cramps-pregnancy:
+    kind: symptom
     aliases: Abdominal pain in pregnancy, pregnancy cramps
     summary: Abdominal pain during pregnancy can come from digestion or stretching ligaments, but pain with other symptoms may need
       immediate assessment at any stage.
@@ -9681,6 +9779,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/blocked-plugged-duct-breastfeeding/
   breast-lumps:
+    kind: symptom
     aliases: Breast lump, lump in breast, lump in armpit
     summary: A new lump in the breast or armpit should be checked. Many lumps have benign causes, and examination and imaging can
       help distinguish them.
@@ -9707,6 +9806,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/breast-lumps/
   breast-pain:
+    kind: symptom
     aliases: Mastalgia, sore breasts, cyclical breast pain
     summary: Breast pain can follow a menstrual pattern, arise from the chest wall or accompany other breast symptoms. A persistent
       focal change should be assessed.
@@ -9733,6 +9833,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/breast-pain/
   childrens-weight:
+    kind: topic
     aliases: Childhood overweight, childhood obesity, child growth and weight
     summary: Children gain weight as they grow. A healthcare professional can interpret a child’s height and weight together over
       time and discuss changes that help the whole family.
@@ -9755,6 +9856,7 @@ guides:
     - Talk to your GP or public health nurse if growth changes unexpectedly or there are concerns about eating, sleep or wellbeing.
       Promptly seek advice for rapid unexplained weight loss.
   headaches-pregnancy:
+    kind: symptom
     aliases: Pregnancy headache, headache while pregnant
     summary: A mild headache can occur during pregnancy. New severe or persistent pain, particularly with visual symptoms, can signal
       a problem that needs urgent assessment.
@@ -9781,12 +9883,18 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/headaches-pregnancy/
   how-to-check-your-breasts:
-    kind: procedure
+    kind: topic
     aliases: Breast awareness, breast self-check, breast self-exam
     summary: Checking your breasts helps you notice new changes. Get familiar with how they normally look and feel at different times
       of the month or stages of life.
     evidence_gap: Irish breast screening records describe screening mammograms. They do not measure how often people check their
       breasts at home or what those checks find.
+    headings:
+      symptoms: Changes to look for
+      causes: What can affect how breasts feel
+      diagnosis: How to check
+      care: What to do if you notice a change
+      complications: What a self-check can tell you
     symptoms:
     - Look for a change in shape, swelling, dimpling, changes on or around the nipple, or unusual discharge. Feel for an unfamiliar
       lump or thickened area.
@@ -9997,6 +10105,7 @@ guides:
     - Seek emergency care if someone becomes confused or unusually drowsy, has a seizure, or has not passed urine all day. Call 112
       or 999 if they collapse or are hard to wake.
   earache:
+    kind: symptom
     aliases: Ear pain, otalgia, child earache
     summary: Earache can come from the ear itself or from nearby areas such as the jaw, teeth or throat. The right treatment depends
       on what is causing it.
@@ -10048,6 +10157,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/earwax-build-up/
   feeling-sick-nausea:
+    kind: symptom
     aliases: Nausea, feeling queasy, queasiness
     summary: Nausea is the feeling you may vomit. How it starts and what else is happening, such as pain, headache or a medicine
       change, can help identify the cause.
@@ -10074,6 +10184,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/feeling-sick-nausea/
   fever-adults:
+    kind: symptom
     aliases: Pyrexia, high temperature in adults
     summary: A temperature of 38°C or higher is usually a fever in adults. The symptoms, how long the fever lasts and your medical
       risk help decide when to get care.
@@ -10127,6 +10238,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/insect-bites-stings/
   nosebleed:
+    kind: symptom
     aliases: Epistaxis, bleeding from nose
     summary: Most nosebleeds stop with steady pressure on the soft part of the nose. Heavy bleeding, bleeding after a head injury
       or bleeding that continues needs medical assessment.
@@ -10200,6 +10312,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/perforated-eardrum-overview/
   sore-throat:
+    kind: symptom
     aliases: Pharyngitis, painful throat, throat pain
     summary: Sore throat is often caused by a short-lived infection. Difficulty breathing, drooling or rapid deterioration can signal
       a problem that needs emergency care.
@@ -10486,10 +10599,18 @@ guides:
     - Seek medical advice promptly for unexplained blistering in a newborn or spreading redness, fever or increasing pain around
       a wound. Contact the specialist team about a wound that does not heal.
   female-genital-mutilation:
+    kind: topic
     aliases: FGM, female genital cutting, specialist FGM clinic Ireland
     summary: Female genital mutilation can have lasting effects on physical and mental health. In Ireland, specialist care is available
       and concerns about a child can be reported to Gardaí or Tusla.
     emergency: 'Immediate danger or life-threatening bleeding: call'
+    headings:
+      symptoms: Possible effects
+      causes: How FGM can affect health
+      diagnosis: Talking to a clinician
+      care: Specialist care in Ireland
+      complications: Treatment and support
+      help: Getting help or reporting a concern
     symptoms:
     - Survivors may have pain, difficulty passing urine, infections, difficulties with periods or sex, or distress. Troubles can
       emerge years later, including during pregnancy or childbirth.
@@ -10833,10 +10954,18 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/social-anxiety/
   spiking:
+    kind: topic
     aliases: Drink spiking, suspected spiking, SATU
     summary: Spiking means someone was given a substance without their agreement. If you suspect it, getting to a safe place with
       someone you trust and getting medical help are the immediate priorities.
     emergency: 'Unconsciousness, seizure or trouble breathing: call'
+    headings:
+      symptoms: Signs of possible spiking
+      causes: Other possible explanations
+      diagnosis: How a clinician can help
+      care: What to do now
+      complications: Support after sexual assault
+      help: Emergency help and reporting
     symptoms:
     - Someone may suddenly feel unusually sleepy, confused, sick or unable to move as expected. Memory gaps, loss of consciousness
       or feeling far more affected than expected are possible.
@@ -10878,6 +11007,7 @@ guides:
     - Seek urgent help for new one-sided leg swelling or persistent bleeding. Apply direct pressure to a bleeding vein and call 112
       or 999 if bleeding is heavy or you feel faint.
   dizziness:
+    kind: symptom
     aliases: Light-headedness, feeling unsteady, new dizziness
     summary: Dizziness can mean spinning, unsteadiness or feeling about to faint. Describing the sensation and what brings it on
       helps guide what happens next.
@@ -10901,6 +11031,7 @@ guides:
     - Contact a GP for recurrent or persistent dizziness. Call 112 or 999 if sudden dizziness comes with facial droop, weakness,
       trouble speaking or a sudden severe loss of balance.
   dizziness-and-fainting-pregnancy:
+    kind: symptom
     aliases: Feeling faint while pregnant, pregnancy dizziness, pregnancy syncope
     summary: Light-headedness can occur during pregnancy, especially early on. What to do depends on whether it passes quickly and
       whether you also have pain, bleeding or other symptoms.
@@ -10950,6 +11081,7 @@ guides:
     - Contact your GP if the problem keeps happening. Seek emergency care for a painful prolonged erection that lasts four hours
       or more, including after certain treatments.
   excessive-thirst:
+    kind: symptom
     aliases: Polydipsia, constant thirst, drinking more water, excessive urination
     summary: Thirst after exercise, hot weather or illness often settles once you replace fluids. Persistent unexplained thirst,
       especially with more frequent urination, deserves a medical check.
@@ -10976,6 +11108,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/excessive-thirst/
   fainting:
+    kind: symptom
     aliases: Syncope, passing out, blackout
     summary: Fainting is a short loss of consciousness. Many episodes are triggered by standing, heat or distress, but some require
       urgent assessment for a heart or other medical problem.
@@ -11025,6 +11158,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heartburn-indigestion-pregnancy/
   irregular-periods:
+    kind: symptom
     aliases: Variable menstrual cycles, irregular bleeding, unpredictable periods
     summary: Irregular periods are cycles that vary in length or timing. A change from your usual pattern matters, especially if
       it persists, occurs with other symptoms or affects pregnancy plans.
@@ -11051,6 +11185,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/irregular-periods/
   leg-cramps:
+    kind: symptom
     aliases: Night leg cramps, calf spasms, nocturnal cramps
     summary: Leg cramps are sudden painful tightening of a muscle, usually in the calf, foot or thigh. Night cramps can disturb sleep
       and leave short-lived soreness.
@@ -11077,6 +11212,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/leg-cramps/
   leg-cramps-pregnancy:
+    kind: symptom
     aliases: Calf spasm in pregnancy, night cramps in pregnancy, foot cramp
     summary: Leg cramps are sudden painful muscle spasms, often in the calf or foot at night. A cramp should ease, while a red, swollen
       leg needs urgent assessment.
@@ -11147,6 +11283,7 @@ guides:
     - Ask your GP about persistent swelling. Seek urgent assessment if a swollen area becomes hot, red or painful, particularly with
       fever, chills or a sudden change.
   ovulation-pain:
+    kind: symptom
     aliases: Mid-cycle pain, mittelschmerz, one-sided ovulation pain
     summary: Some people have a short episode of lower abdominal pain around ovulation. Severe pain, pain that does not settle or
       a possible pregnancy needs a different assessment.
@@ -11173,6 +11310,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/ovulation-pain/
   period-problems:
+    kind: symptom
     aliases: Menstrual problems, heavy periods, painful periods, period symptoms
     summary: When periods change or symptoms interfere with life, the timing of pain, bleeding and mood changes helps point to the
       kind of assessment that can help.
@@ -11195,9 +11333,17 @@ guides:
     - Seek advice if symptoms interfere with daily life or bleeding changes unexpectedly. Get urgent help for very heavy bleeding,
       faintness or severe pain when pregnancy is possible.
   periods:
+    kind: topic
     aliases: Menstruation, menstrual cycle, first period, period tracking
     summary: A period is bleeding that happens as the womb lining sheds. Tracking the timing, flow and symptoms can help you recognise
       what is usual for you.
+    headings:
+      symptoms: What to expect
+      causes: How the menstrual cycle works
+      diagnosis: Tracking your cycle
+      care: Managing your period
+      complications: Changes worth discussing
+      help: When to get medical advice
     symptoms:
     - Bleeding lasts several days for many people. Mild cramps can occur. The length and flow can vary with age, contraception and
       changes such as approaching menopause.
@@ -11269,6 +11415,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/pubic-lice-crabs/
   round-ligament-pain-pregnancy:
+    kind: symptom
     aliases: Pregnancy ligament pain, sharp pain moving in pregnancy, groin pain
     summary: Pain from the round ligaments can feel sharp or pulling at the side of the lower abdomen or groin. It often starts during
       a quick movement and settles with rest.
@@ -11321,6 +11468,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/skin-problems-pregnancy/
   sore-ribs-pregnancy:
+    kind: symptom
     aliases: Rib pain while pregnant, third trimester rib discomfort, upper abdomen pregnancy
     summary: As pregnancy progresses, pressure and changes in posture can make the ribs sore. Severe pain, shortness of breath or
       symptoms of pre-eclampsia need prompt assessment.
@@ -11347,6 +11495,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/sore-ribs-pregnancy/
   stomach-ache:
+    kind: symptom
     aliases: Abdominal pain, tummy pain, stomach pain
     summary: Pain in the abdomen can come from the bowel, bladder, reproductive organs or other structures. The location, timing
       and accompanying symptoms help determine how urgently it needs assessment.
@@ -11370,6 +11519,7 @@ guides:
     - Get urgent help for sudden or severe pain, blood in vomit or black stools, or symptoms during pregnancy. Call 112 or 999 if
       someone collapses or is severely unwell.
   stopped-or-missed-periods:
+    kind: symptom
     aliases: Amenorrhoea, missed period, periods stopped, no period
     summary: Pregnancy is one common reason a period is missed. Repeated missed periods can also reflect changes in hormones, medicines,
       energy intake or other areas of health.
@@ -11422,6 +11572,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/stretch-marks-pregnancy/
   swollen-ankles-feet-and-legs-oedema:
+    kind: symptom
     aliases: Leg oedema, ankle swelling, fluid retention in the feet
     summary: Swelling in the feet or ankles can follow prolonged standing or sitting. A new swollen leg, breathing symptoms or repeated
       swelling can signal a medical problem.
@@ -11449,6 +11600,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/swollen-ankles-feet-and-legs-oedema/
   swollen-ankles-feet-fingers-pregnancy:
+    kind: symptom
     aliases: Pregnancy swelling, oedema in pregnancy, swollen hands in pregnancy
     summary: Gradual swelling of both feet is common as pregnancy progresses. Sudden swelling, changes in vision or swelling mainly
       in one leg can need urgent medical attention.
@@ -11528,6 +11680,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/thumb-wrist-pain-after-baby/
   tiredness-fatigue-pregnancy:
+    kind: symptom
     aliases: Pregnancy fatigue, first trimester exhaustion, tired in early pregnancy
     summary: Tiredness is common in early pregnancy. When it is severe, persists or comes with symptoms such as breathlessness, it
       is worth asking your maternity team about other possible causes.
@@ -11554,6 +11707,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/tiredness-fatigue-pregnancy/
   unintentional-weight-loss:
+    kind: symptom
     aliases: Unexplained weight loss, losing weight without trying, involuntary weight loss
     summary: Losing weight without changing what you eat or how active you are can have many causes. Continuing or substantial weight
       loss needs medical assessment.
@@ -11580,6 +11734,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/unintentional-weight-loss/
   vaginal-discharge-pregnancy:
+    kind: symptom
     aliases: Normal pregnancy discharge, show before labour, possible waters breaking
     summary: Discharge often increases in pregnancy. A new smell, itching, bleeding or leaking watery fluid changes what advice you
       need and when to seek it.
@@ -11606,6 +11761,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/vaginal-discharge-pregnancy/
   vaginal-dryness:
+    kind: symptom
     aliases: Vaginal dryness, dryness during sex, genitourinary symptoms of menopause
     summary: Vaginal dryness can cause day-to-day irritation or discomfort during sex. Hormone changes are one cause, and treatments
       depend on the symptoms and your medical history.
@@ -11835,6 +11991,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/dupuytrens-contracture/
   elbow-and-arm-pain:
+    kind: symptom
     aliases: Sore arm, elbow pain, forearm pain
     summary: Arm and elbow pain can come from an injury, tendon irritation or another condition. Symptoms that appear with chest
       pressure or shortness of breath need emergency assessment.
@@ -11862,7 +12019,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/elbow-and-arm-pain/
   emollients:
-    kind: service
+    kind: treatment
     aliases: Moisturisers for eczema, emollient creams and ointments, soap substitutes
     summary: Emollients help trap moisture and protect dry skin. The right choice depends on where you need it, what feels tolerable
       and any advice from your healthcare team.
@@ -11941,6 +12098,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/flat-feet-in-children/
   foot-drop:
+    kind: symptom
     aliases: Drop foot, weak ankle lift, foot dragging, steppage gait
     summary: Foot drop is difficulty lifting the front of the foot. It can cause trips and may reflect a problem involving a nerve,
       muscle or the brain or spinal cord.
@@ -12020,6 +12178,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/ganglion-cyst/
   hand-pain:
+    kind: symptom
     aliases: Painful hand, finger pain, hand or thumb joint pain
     summary: Hand pain can follow an injury or build with joint, tendon or nerve problems. The pattern of pain and changes in movement
       help narrow the possibilities.
@@ -12073,6 +12232,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/hand-tendon-repair/
   heel-pain:
+    kind: symptom
     aliases: Pain under or behind heel, heel injury, sore heel when walking
     summary: Heel pain can come from the tissue under the foot, the Achilles tendon or an injury. Where the pain sits and when it
       started affect the next steps.
@@ -12177,6 +12337,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/ingrown-toenail/
   itchy-skin:
+    kind: symptom
     aliases: Pruritus, itchy skin without rash, widespread itch
     summary: An itch can come from dry or irritated skin, an infection or another condition. Where it occurs, when it began and whether
       there is a rash affect the next steps.
@@ -12227,6 +12388,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/joint-hypermobility-children/
   pain-in-the-ball-of-the-foot:
+    kind: symptom
     aliases: Metatarsalgia, forefoot pain, pain under toe joints
     summary: The ball of the foot bears weight as you push off when walking. Pain there can come from pressure, joint irritation,
       a trapped nerve or injury.
@@ -12253,6 +12415,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/pain-in-the-ball-of-the-foot/
   pain-in-the-bottom-of-the-foot:
+    kind: symptom
     aliases: Sole pain, plantar foot pain, arch pain
     summary: Pain under the foot may involve the heel, arch or forefoot. Its location and timing can help distinguish a pressure
       problem from an injury or another condition.
@@ -12279,6 +12442,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/pain-in-the-bottom-of-the-foot/
   pain-in-the-top-of-the-foot:
+    kind: symptom
     aliases: Dorsal foot pain, sore top of foot, painful instep
     summary: Pain over the top of the foot can follow a twist, repeated exercise or pressure from shoes. Swelling, bruising or difficulty
       walking after injury can need urgent assessment.
@@ -12383,6 +12547,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/positional-talipes/
   rash:
+    kind: symptom
     aliases: Skin rash, spots, blotches on skin, rash assessment
     summary: A rash can reflect infection, allergy, irritation or another illness. The speed of change and symptoms such as fever,
       pain or difficulty breathing matter as much as appearance.
@@ -12458,6 +12623,7 @@ guides:
     - Get urgent advice for extensive blistering, marked swelling, dizziness or vomiting, or a young child with significant sunburn.
       Call emergency services if someone becomes confused or collapses.
   toe-pain:
+    kind: symptom
     aliases: Sore toe, painful big toe, toe injury
     summary: A sore toe can result from shoe pressure, a nail problem, joint inflammation or injury. Severe pain, infection or a
       change in shape can require prompt care.
@@ -12555,6 +12721,7 @@ guides:
     - Call 112 or 999 for life-threatening bleeding. Get urgent care if there is a deep wound, dirt that cannot be removed, a bite,
       loss of sensation or spreading infection.
   catarrh:
+    kind: symptom
     aliases: Postnasal drip, mucus in throat, nasal catarrh
     summary: Catarrh is a build-up of mucus in the nose or throat. It often eases after a cold, while persistent symptoms may need
       assessment for another cause.
@@ -12634,7 +12801,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/common-illnesses/
   diaphragm-the-cap:
-    kind: service
+    kind: contraception
     aliases: Contraceptive diaphragm, cervical cap, hormone-free barrier contraception
     summary: A contraceptive diaphragm or cap covers the cervix to reduce the chance of pregnancy. Its protection depends on correct
       use each time and differs from STI protection.
@@ -12661,6 +12828,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/diaphragm-the-cap/
   dry-mouth:
+    kind: symptom
     aliases: Xerostomia, sticky mouth, reduced saliva
     summary: A dry mouth can make speaking, eating and swallowing uncomfortable. Medicines and dehydration are common contributors,
       and ongoing dryness can affect teeth and gums.
@@ -12687,6 +12855,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/dry-mouth/
   early-or-delayed-puberty:
+    kind: topic
     aliases: Precocious puberty, late puberty, delayed development in puberty
     summary: Puberty begins at different ages. Development unusually early or late, or changes that progress rapidly, can be checked
       to see whether growth or hormone levels need assessment.
@@ -12739,6 +12908,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/excessive-sweating-hyperhidrosis/
   fabricated-induced-illness-by-caregivers:
+    kind: topic
     aliases: Fabricated or induced illness, FII, child safeguarding, Tusla
     summary: Fabricated or induced illness is a form of abuse. If you are concerned about a child, report what you have observed
       so safeguarding professionals can assess it.
@@ -12845,6 +13015,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/glandular-fever/
   hair-loss:
+    kind: symptom
     aliases: Alopecia, hair shedding, thinning hair, patchy hair loss
     summary: Hair loss can appear as thinning, increased shedding or a discrete bald patch. The pattern and condition of the scalp
       help identify whether treatment is available.
@@ -12923,6 +13094,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/hiatus-hernia/
   hiccups:
+    kind: symptom
     aliases: Hiccoughs, diaphragm spasms, hiccups lasting more than two days
     summary: Hiccups are short involuntary spasms followed by a characteristic sound. Most last only minutes. Hiccups lasting longer
       than two days need clinical advice.
@@ -12976,7 +13148,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/how-to-clean-your-hands/
   injectable-contraception:
-    kind: service
+    kind: contraception
     aliases: Contraceptive injection, depot progestogen, repeat contraception injection
     summary: A progestogen injection protects against pregnancy for a fixed interval. Discuss side effects, when repeat doses are
       due and plans for pregnancy before choosing it.
@@ -13003,6 +13175,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/injectable-contraception/
   itchy-bottom:
+    kind: symptom
     aliases: Anal itching, pruritus ani, itch around anus
     summary: Itching around the anus can come from irritation, an infection or another problem. It often improves with gentle care,
       while bleeding, pain or persistent symptoms need assessment.
@@ -13029,6 +13202,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/itchy-bottom/
   lost-or-changed-sense-of-smell:
+    kind: symptom
     aliases: Anosmia, reduced smell, parosmia, distorted smell
     summary: Smell can become weaker, disappear or change after a cold or another illness. An ongoing change can affect eating and
       how you notice smoke or spoiled food.
@@ -13055,6 +13229,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/lost-or-changed-sense-of-smell/
   lumps:
+    kind: symptom
     aliases: New lump, bump under the skin, growing swelling
     summary: Lumps can arise from skin, glands or deeper tissues. Many are benign, but a growing lump, a new breast or testicular
       lump, or a persistent unexplained lump should be checked.
@@ -13081,6 +13256,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/lumps/
   male-menopause:
+    kind: topic
     aliases: Midlife symptoms in men, low testosterone, late-onset hypogonadism
     summary: The term male menopause can obscure several different causes of fatigue, low mood or reduced sex drive in midlife. A
       clinical assessment can identify what may help.
@@ -13107,6 +13283,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/male-menopause/
   medically-unexplained-symptoms:
+    kind: symptom
     aliases: Persistent physical symptoms, ongoing symptoms with normal tests, functional symptoms
     summary: When physical symptoms persist without a clear explanation, they still deserve care. Assessment and treatment can focus
       on what helps daily life while remaining open to new findings.
@@ -13133,6 +13310,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/medically-unexplained-symptoms/
   memory-loss-amnesia:
+    kind: symptom
     aliases: Amnesia, forgetfulness, memory problems
     summary: Occasional forgetfulness is common. New memory loss, lapses that interfere with everyday tasks or difficulty following
       familiar routines can benefit from assessment.
@@ -13160,6 +13338,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/memory-loss-amnesia/
   metallic-taste:
+    kind: symptom
     aliases: Taste of metal, dysgeusia, altered taste
     summary: A metallic taste can develop with dental problems, a recent infection, pregnancy or some medicines. The timing and any
       change in smell can help identify the cause.
@@ -13264,6 +13443,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/nail-problems/
   night-sweats:
+    kind: symptom
     aliases: Drenching night sweats, sweating during sleep, waking with wet bedding
     summary: Night sweats mean sweating enough to soak nightwear or bedding in a room that is reasonably cool. Frequent, unexplained
       episodes are worth discussing with a clinician.
@@ -13391,6 +13571,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/penis-problems/
   pins-and-needles:
+    kind: symptom
     aliases: Paraesthesia, tingling, numbness in hands or feet
     summary: Pins and needles often settle when you move after leaning on a limb. Persistent, recurrent or sudden tingling with other
       symptoms can warrant medical assessment.
@@ -13572,6 +13753,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/sleepwalking/
   smelly-urine:
+    kind: symptom
     aliases: Strong-smelling pee, change in urine odour, ammonia smell
     summary: Urine can smell stronger after some foods or when you drink less. Pain, fever or other urinary changes matter more than
       smell alone when considering infection.
@@ -13598,6 +13780,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/smelly-urine/
   snoring:
+    kind: symptom
     aliases: Loud snoring, noisy breathing during sleep, sleep apnoea warning signs
     summary: Snoring comes from vibration as air moves through a narrowed upper airway during sleep. Pauses in breathing, choking
       noises or daytime sleepiness can indicate obstructive sleep apnoea.
@@ -13624,6 +13807,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/snoring/
   sore-or-dry-lips:
+    kind: symptom
     aliases: Chapped lips, cracked lips, sore mouth corners
     summary: Lips can become dry or sore from the weather, licking or irritation. Cracks at the corners or a sore area that does
       not heal may need different care.
@@ -13650,6 +13834,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/sore-or-dry-lips/
   sore-or-white-tongue:
+    kind: symptom
     aliases: White tongue coating, sore tongue, pale patches on tongue
     summary: A sore tongue or white coating can have several causes, including irritation, an infection or a change in the tongue's
       surface. Persistent patches need assessment.
@@ -13783,6 +13968,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/swallowing-pills/
   swollen-glands:
+    kind: symptom
     aliases: Enlarged lymph nodes, swollen neck glands, lymphadenopathy
     summary: Swollen glands are often lymph nodes reacting to an infection near them. A persistent, hard or enlarging node needs
       review even if it does not hurt.
@@ -13835,6 +14021,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/threadworms/
   tremor-shaking-hands:
+    kind: symptom
     aliases: Hand tremor, shaky hands, resting tremor, essential tremor
     summary: A tremor is movement you cannot fully control. A small amount of shaking can be normal, while new or worsening tremor
       can have a treatable cause.
@@ -13885,6 +14072,7 @@ guides:
     - Seek advice before starting high-dose products or giving supplements to a child. Contact a clinician if symptoms such as persistent
       tiredness or unexplained weight loss continue.
   vomiting-babies-children:
+    kind: symptom
     aliases: Child vomiting, baby throwing up, dehydration in children
     summary: Vomiting in a child is often short-lived. The child's age, hydration and whether the vomit is green, bloody or associated
       with pain affect how urgently they need care.
@@ -13912,6 +14100,7 @@ guides:
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/vomiting-babies-children/
   watering-eyes:
+    kind: symptom
     aliases: Watery eyes, epiphora, blocked tear duct, tearing
     summary: Eyes can water when the surface is irritated or tears do not drain normally. New pain, redness or a change in vision
       changes how urgently you need advice.
