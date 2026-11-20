@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "listed": [
     {
       "slug": "spcx",
@@ -11,6 +11,24 @@
       "tv_symbol": "NASDAQ:SPCX",
       "summary": "Space launch, Starlink connectivity and AI infrastructure.",
       "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/"
+    },
+    {
+      "slug": "ant",
+      "name": "Anthropic",
+      "ticker": "ANT",
+      "exchange": "Nasdaq",
+      "sector": "Artificial intelligence",
+      "market": "United States",
+      "tv_symbol": "NASDAQ:ANT",
+      "summary": "Claude AI models, enterprise software and developer APIs. Nasdaq-listed since 19 November 2026.",
+      "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "website": "https://www.anthropic.com/",
+      "historical_private_slug": "anthropic",
+      "latest_development": {
+        "date": "2026-11-19",
+        "text": "Nasdaq confirmed Anthropic (ANT) began public trading on 19 November 2026, opening at $111.50 per share. A first-day opening price is not a current quote or a valuation estimate.",
+        "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      }
     },
     {
       "slug": "tsm",
@@ -123,18 +141,6 @@
         "date": "2026-11-17",
         "text": "OpenAI updated its Astra for Law configuration built on GPT-6.2 Astra and opened requests to all ChatGPT Enterprise customers through Trusted Access. On 120 LAB-AA assignments the configuration achieved 20.8% full credit, against 15.0% for general GPT-6.2 Astra. No specialist-product revenue or adoption totals were disclosed.",
         "source": "https://openai.com/index/astra-law-6-2/"
-      }
-    },
-    {
-      "slug": "anthropic",
-      "name": "Anthropic",
-      "sector": "Artificial intelligence",
-      "summary": "Claude AI models, developer APIs and enterprise agents. On 18 November it priced a 980-million-share Nasdaq IPO at $83 per share, with trading expected—not yet verified—on 19 November.",
-      "website": "https://www.anthropic.com/",
-      "latest_development": {
-        "date": "2026-11-18",
-        "text": "Anthropic confirmed pricing its Class A IPO at $83 per share on 18 November: 980m base shares, including 956,351,354 primary and 23,648,646 secondary. Nasdaq trading under ANT was expected on 19 November, but had not been confirmed at this research check; the offer was scheduled to close 20 November subject to conditions.",
-        "source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
       }
     },
     {
