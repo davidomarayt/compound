@@ -12,6 +12,9 @@ sources:
   tilda:
     name: TILDA, Trinity College Dublin, hypertension study
     url: https://tilda.tcd.ie/news-events/2026/2602-New-TILDA-Research-Hypertension-Guidelines/
+  hpsc_hcv_burden:
+    name: HPSC, Epidemiology of Hepatitis C in Ireland
+    url: https://www.drugsandalcohol.ie/43872/1/Epidemiology_of_Hepatitis_C_in_Ireland_2025.pdf
   hse_chronic:
     name: HSE National Framework for Integrated Care
     url: https://about.hse.ie/api/v2/download-file/healthcare_professional_publications/National-framework-integrated-care-ICPCDM.pdf/
@@ -166,6 +169,13 @@ evidence:
     locator: table 1
     measure: notifications
   hepatitis-c:
+  - value: 0.57%
+    period: 2014–2016 specimens
+    population: Adults in Ireland
+    note: Historical estimate of active chronic infection based on residual serum samples. The 95% confidence interval was 0.40% to 0.81%. The estimate predates expanded access to curative treatment.
+    source: hpsc_hcv_burden
+    locator: Hepatitis C prevalence in Ireland
+    measure: prevalence
   - value: '454'
     period: 2025 (provisional)
     population: Republic of Ireland
@@ -1922,3 +1932,98 @@ guides:
     - Contact a GP or maternity unit urgently after exposure or symptoms if pregnant and unsure of immunity, or if a newborn or someone with a weakened immune system is affected. Seek urgent medical advice if breathing is affected or the person is getting much more unwell.
     sources:
       HSE antiviral prescribing guideline: https://assets.hse.ie/media/documents/Chickenpox_guideline.pdf
+  chlamydia:
+    aliases: chlamydia STI chlamydia trachomatis
+    summary: Chlamydia often has no symptoms. A urine test or swab can diagnose it, and treatment and partner follow-up help prevent complications and reinfection.
+    symptoms:
+    - Burning when passing urine, unexpected discharge or bleeding between periods or after sex can occur. Some people have pelvic pain or testicular discomfort. Many people feel entirely well.
+    causes:
+    - Chlamydia is a bacterial infection passed through sexual contact. It can affect the genital tract or rectum. Antibiotic treatment clears the infection but does not make you immune to getting it again.
+    diagnosis:
+    - A clinic may use a first-catch urine sample or swabs from relevant sites. Timing matters after exposure, so ask whether you should test now and repeat later. A clinician may recommend tests for other sexually transmitted infections at the same visit.
+    care:
+    - A healthcare professional can prescribe suitable antibiotics and explain when to resume sex. Tell them if you may be pregnant, since this can affect the choice of treatment.
+    - Ask which recent partners should be offered testing and treatment and whether you should return for a repeat test. A clinic can help with partner notification.
+    complications:
+    - Untreated infection can cause pelvic inflammatory disease, which increases the risk of fertility problems and ectopic pregnancy. It can also cause painful inflammation around a testicle.
+    help:
+    - Contact a GP or sexual health clinic for symptoms or a partner's positive result. Seek urgent assessment for severe pelvic pain, fever with pelvic pain or sudden severe testicular pain.
+    sources:
+      HSE clinical guidance on chlamydia: https://assets.hse.ie/media/documents/Chlamydia_trachomatis_guideline.pdf
+      HSE home STI testing: https://www2.hse.ie/living-well/sexual-wellbeing/free-home-sti-tests/
+  gonorrhoea:
+    aliases: gonorrhea gonorrhoea STI gonococcus
+    summary: Gonorrhoea can affect the genitals, throat or rectum. Testing matters even when you feel well, and a clinic may ask you back to confirm that treatment worked.
+    symptoms:
+    - Symptoms can include pain when passing urine, unusual discharge, bleeding between periods or swollen or painful testicles. Rectal infection may cause pain, discharge or bleeding. Some infections have no noticeable symptoms.
+    causes:
+    - Gonorrhoea is a bacterial infection spread through sexual contact. The sites exposed help determine which samples are appropriate. Antibiotic resistance is one reason the clinic may request additional testing.
+    diagnosis:
+    - A urine test or swabs can detect the infection. A clinic may also take a swab for culture to check susceptibility to antibiotics, especially where treatment has not worked as expected.
+    care:
+    - Treatment usually involves an antibiotic injection. Follow the clinic's instructions about when to return for a test of cure and when you can safely resume sex.
+    - A clinic can help notify recent sexual partners so they can be offered care. Being treated once does not prevent a new infection.
+    complications:
+    - Without treatment, infection can cause pelvic inflammatory disease or painful swelling around a testicle. In uncommon cases infection spreads beyond its original site.
+    help:
+    - Contact a sexual health clinic or GP if you have symptoms or a partner has tested positive. Seek urgent advice if you have a fever with severe pelvic pain, or urgent assessment for sudden severe testicular pain.
+    sources:
+      HSE clinical guidance on gonorrhoea: https://assets.hse.ie/media/documents/Gonorrhoea_guideline.pdf
+      HSE home STI testing: https://www2.hse.ie/living-well/sexual-wellbeing/free-home-sti-tests/
+  hepatitis-c:
+    aliases: hep C HCV chronic hepatitis C liver infection
+    summary: Hepatitis C can persist for years without symptoms and damage the liver. A blood test can confirm active infection, which can usually be cured with antiviral treatment.
+    symptoms:
+    - Many people have no early symptoms. Some feel unusually tired or unwell. Yellowing of the skin or eyes can occur and warrants medical assessment. Feeling healthy cannot rule out infection.
+    causes:
+    - Hepatitis C spreads when infected blood enters another person's bloodstream. The virus can establish a long-term infection in the liver. People with past blood exposure may benefit from testing even if it occurred years ago.
+    diagnosis:
+    - A hepatitis C antibody test can show past exposure. An RNA test can establish whether the virus is still present. A clinician can explain whether additional tests are needed to check liver health.
+    care:
+    - HSE hepatitis C treatment is free. Most people who need treatment can take direct-acting antiviral tablets. Your team can check for interactions and arrange a follow-up blood test to confirm whether treatment cleared the infection.
+    - A person can acquire hepatitis C again after cure. Ask whether you need further testing based on exposure or follow-up for existing liver damage.
+    complications:
+    - Over years, untreated infection can scar the liver and increase the risk of cirrhosis and liver cancer. Advanced scarring can warrant continued monitoring after successful treatment.
+    help:
+    - Speak to your GP or use the HSE testing route if you may have been exposed. Ask for advice even if you have no symptoms. Seek urgent medical assessment for new jaundice.
+    sources:
+      HSE hepatitis C testing and diagnosis: https://www2.hse.ie/conditions/hepatitis-c/diagnosis/
+      HSE hepatitis C treatment: https://www2.hse.ie/conditions/hepatitis-c/treatment/
+  hiv:
+    aliases: HIV AIDS human immunodeficiency virus antiretroviral therapy PrEP PEP
+    summary: HIV can be treated effectively. Testing is the way to find out whether you have HIV, and a recent possible exposure needs prompt advice about time-sensitive prevention.
+    symptoms:
+    - Some people experience a fever, rash or sore throat in the weeks after acquiring HIV. Others notice nothing. These symptoms have many causes, so testing is needed to establish whether HIV is present.
+    causes:
+    - HIV affects immune cells called CD4 cells. Without treatment it can weaken the immune system over time. AIDS describes an advanced stage of untreated or inadequately treated infection.
+    diagnosis:
+    - A blood test can detect HIV. If you test soon after exposure, you may need to repeat it after the window period. A reactive screening test requires confirmation and follow-up through a healthcare service.
+    care:
+    - Antiretroviral treatment suppresses HIV and protects the immune system. Your clinical team monitors the amount of virus in the blood. People who maintain an undetectable viral load on treatment do not pass HIV to sexual partners, known as U=U.
+    - Sexual health services can discuss prevention options, including PrEP for people who could benefit and PEP after a recent possible exposure.
+    complications:
+    - Without treatment, a weakened immune system can leave a person vulnerable to serious infections. Effective treatment and follow-up substantially reduce that risk.
+    help:
+    - For a recent possible exposure, contact a sexual health or infectious disease service immediately, or an emergency department out of hours. PEP must be started as soon as possible and within 72 hours if the clinician recommends it. Do not wait for symptoms or a home test.
+    sources:
+      HSE HIV post-exposure prophylaxis: https://www2.hse.ie/conditions/hiv/hiv-post-exposure-prophylaxis-pep/
+      HSE home STI testing: https://www2.hse.ie/living-well/sexual-wellbeing/free-home-sti-tests/
+      HPSC HIV surveillance and reports: https://www.hpsc.ie/a-z/hivandaids/hivdataandreports/
+  syphilis:
+    aliases: syphilis treponema pallidum chancre
+    summary: A painless sore or a rash can be a sign of syphilis. The symptoms can disappear while the infection remains, so testing and follow-up matter.
+    symptoms:
+    - An early sore may occur on or near the genitals, mouth or anus. It can heal without treatment. A later phase may cause a rash, including on the palms or soles, swollen glands or feeling unwell. Some people have no obvious symptoms.
+    causes:
+    - Syphilis is caused by bacteria that can pass through contact with an infectious sore during sex and from a pregnant person to their baby. The stage of infection affects the care needed.
+    diagnosis:
+    - Sexual health clinics usually use blood tests. Sometimes a sore can be swabbed. An early blood test may need repeating, and a history of past treatment helps the clinician interpret the results.
+    care:
+    - A healthcare professional chooses antibiotic treatment based on the stage and circumstances. Keep follow-up blood test appointments to check the response, even if the sore or rash has gone.
+    - The clinic can help with testing and advice for recent partners. Ask the clinic when it is safe to have sex again.
+    complications:
+    - Untreated infection can affect the nervous system, eyes or other organs. In pregnancy, untreated syphilis can harm the baby, so prompt assessment and treatment are important.
+    help:
+    - Contact a sexual health clinic if you have an unexplained sore, rash or a partner who has tested positive. If you are pregnant and may have been exposed or have a positive result, contact your maternity or sexual health team promptly.
+    sources:
+      HSE home STI testing: https://www2.hse.ie/living-well/sexual-wellbeing/free-home-sti-tests/
