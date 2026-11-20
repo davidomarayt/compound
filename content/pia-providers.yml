@@ -17,7 +17,7 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Not published'
-    checked: '2026-11-15'
+    checked: '2026-11-20'
     source_url: 'https://www.aib.ie/make-a-plan/investments/personal-investment-account'
     source_label: 'AIB — Personal Investment Account'
     fee_model:
@@ -39,9 +39,13 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Full PIA product range not published'
-    checked: '2026-11-15'
+    checked: '2026-11-20'
     source_url: 'https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/'
     source_label: 'Bank of Ireland — Personal Investment Account'
+    related_brand_name: 'New Ireland Assurance'
+    related_brand_statement: 'New Ireland Assurance, an insurer in Bank of Ireland Group, separately says it will offer an Individual Investment Account (IIA) at the proposed July 2027 launch. Its first-party FAQ describes funds investing in shares and bonds but no product-specific fees, detailed fund menu or open application process. This is a related brand announcement, not a second live Bank of Ireland product.'
+    related_brand_source_url: 'https://www.newireland.ie/investments/individual-investment-account-faqs/'
+    related_brand_checked: '2026-11-20'
     fee_model:
       verified: false
     referral:
@@ -61,31 +65,9 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Full PIA product range not published'
-    checked: '2026-11-15'
+    checked: '2026-11-20'
     source_url: 'https://www.irishlife.ie/investments/pia/'
     source_label: 'Irish Life — Personal Investment Accounts'
-    fee_model:
-      verified: false
-    referral:
-      active: false
-      approved: false
-  - name: New Ireland Assurance
-    slug: new-ireland-assurance
-    category: Insurer
-    stage: launch-planned
-    status: 'Plans an Individual Investment Account for July 2027, subject to legislation'
-    statement: 'New Ireland Assurance says it will offer an Individual Investment Account (IIA) and publish application details closer to the proposed July 2027 launch. It describes funds investing in shares and bonds but has not named its final fund menu or prices. New Ireland is a Bank of Ireland Group insurer; this listing does not imply an independent banking group or distinct final terms.'
-    availability: 'Not open yet'
-    annual_fee: 'Not published'
-    dealing_fee: 'Not published'
-    fund_fee: 'Not published'
-    fx_fee: 'Not published'
-    minimum_investment: 'Not published'
-    transfer_terms: 'Not published'
-    investment_range: 'Plans investment funds holding shares and bonds; exact funds not published'
-    checked: '2026-11-20'
-    source_url: 'https://www.newireland.ie/investments/individual-investment-account-faqs/'
-    source_label: 'New Ireland Assurance — Individual Investment Account FAQs'
     fee_model:
       verified: false
     referral:
@@ -105,7 +87,7 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Full PIA product range not published'
-    checked: '2026-11-15'
+    checked: '2026-11-20'
     source_url: 'https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/'
     source_label: 'PTSB — Personal Investment Account'
     fee_model:
@@ -127,7 +109,7 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Funds discussed; individual options not published'
-    checked: '2026-11-15'
+    checked: '2026-11-20'
     source_url: 'https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/'
     source_label: 'Zurich — Guide to Ireland’s new Investment Account'
     fee_model:
