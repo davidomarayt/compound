@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-20
+Checked: 2026-11-21
 
 - 499 saved profiles checked against structural and issuer rules.
-- 122 existing company articles; 102 mapped to monitored issuers.
-- 115 pending review items; 15 recorded decisions.
+- 129 existing company articles; 104 mapped to monitored issuers.
+- 122 pending review items; 15 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,6 +18,14 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `157a7bc43afea04ffeedb0da`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/ies-data-center-growth-acquisition-cash.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -77,11 +85,27 @@ Files: `content/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics.m
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `63e79d1c034b7d9a1b8647cb`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/canva-ai-controls-opt-out-creator-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `6846a74417c329fc63f7faf5`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/databricks-always-on-genie-enterprise-agent-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `69e3350d92b48150ecccb7f5`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/bj-membership-margin-capex.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -149,11 +173,27 @@ Files: `content/wealth/openai-chatgpt-wallet-agentic-checkout-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `e59ed5dbd3c1661e3a390b2a`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `e8a450658190ddaca84a3d55`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `eea192b526f7a5b5acaadd4c`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/moog-record-results-control-weakness.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -757,6 +797,16 @@ Files: `content/wealth/alphabet-waymo-term-loan.md`, `content/earnings-profiles/
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
+### GOOGL · article_review · low
+
+ID: `f108883cc08f593b5ffc020b`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/alphabet-data-centre-credit-backstops.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
 ### HON · article_review · low
 
 ID: `12374d854994476420edb231`
@@ -996,6 +1046,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/tapestry-coach-kate-spade-capital-returns.md`, `content/earnings-profiles/tpr.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1116132/000111613226000031/tpr-20260926.htm · Q1 FY2027 · period end 2026-09-26 · filed 2026-11-05
+
+### TSLA · article_review · low
+
+ID: `17dd36830184c629f1b53882`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/tesla-texas-polysilicon-plant-2026.md`, `content/earnings-profiles/tsla.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
 ### TSLA · article_review · low
 
