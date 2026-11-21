@@ -65,7 +65,7 @@ def test_mortgage_stress_arithmetic_and_contribution_limit():
     page = ARTICLE.read_text(encoding="utf-8")
     for figure in ("€40,000", "€30,000", "€10,000", "€36,000", "€9,000"):
         assert figure in page
-    assert "would not reset" in page
+    assert "would not reset" in page.replace("**", "")
 
 
 def test_pia_mortgage_guide_outgoing_and_backlinks():
