@@ -4,7 +4,7 @@
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-10-new-ireland-assurance-boi-group-related-brand-original-faq-checked-2026-11-20",
   "action": "source_backed_related_brand_update_to_existing_provider_comparison",
-  "status": "revised_pending_exact_head_ci",
+  "status": "merged_and_public_new_ireland_text_verified_2026-11-21_ads_social_pending",
   "new_articles": 0,
   "existing_canonical_page_updates": 1,
   "canonical_urls": [
@@ -64,15 +64,30 @@
   "qa": {
     "source_and_fees": "first-party FAQ and ownership footer verified; no invented provider fees",
     "regressions": "Initial head test failed at test_pia_source_export.py because fixed five-provider count; new head awaiting full CI test/performance; hardcoded tests preserved",
-    "live_new_provider": "Pending live verification of related-brand link and text on /pia/providers/ after successful merge and Pages deployment",
-    "ads": "pending exact public HTML verification",
-    "images": "no hero/image changes; preserve existing canonical assets"
+    "live_new_provider": "Verified in public rendered page 21 Nov: related-brand text and source link present at established /pia/providers/ canonical.",
+    "ads": "Not verified: reader did not expose raw script and slot markup, and direct HTTP check was blocked by network DNS.",
+    "images": "Existing canonical image metadata unchanged; actual OG/Twitter asset response not independently verified."
   },
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/pia-new-ireland-provider-2026-11-20",
-  "live_http_verified": false,
-  "verified_live_result": null,
+  "live_http_verified": true,
+  "verified_live_result": {
+    "verified_at_dublin_date": "2026-11-21",
+    "canonical_url": "https://compound.ie/pia/providers/",
+    "content_fingerprint": "New Ireland Assurance (related group insurer) and 'Statement checked 2026-11-20' independently visible with original insurer FAQ link",
+    "provider_count": 5,
+    "verified_via": "Public web reader fetched rendered page content; raw HTML response headers and asset HTTP status unavailable",
+    "ads_cmp": "not_verified",
+    "hero_og_twitter": "not_verified",
+    "deployment_attribution": "public content observed; exact release deployment SHA not independently confirmed"
+  },
   "human_review": "not asserted",
   "communication": "no email or social posts",
-  "quality_gate_note": "Initial six-card proposal triggered existing required CI regression tests that freeze five named primary providers. No tests were changed or weakened; proposal revised to retain five card identities and include New Ireland as clearly labelled related-group first-party source, with source-URL validation and synced CSV. Fresh exact-head CI is mandatory."
+  "quality_gate_note": "Initial six-card proposal triggered existing required CI regression tests that freeze five named primary providers. No tests were changed or weakened; proposal revised to retain five card identities and include New Ireland as clearly labelled related-group first-party source, with source-URL validation and synced CSV. Fresh exact-head CI is mandatory.",
+  "production_deployment_confirmed": "public updated HTML visible; underlying Pages merge-to-deploy correlation pending",
+  "follow_up": [
+    "Verify raw live HTML ad loader, CMP and configured slots; fetch OG/Twitter images with HTTP status.",
+    "Preserve original source and five-provider neutral comparison; no duplicate publication."
+  ],
+  "recovery_from_pr216": "Supersedes pending reconciliation PR #216 with corrected public status in 21 November scoped run."
 }
