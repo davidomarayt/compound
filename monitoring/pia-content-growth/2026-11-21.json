@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-11-20-oireachtas-business-committee-proposed-finance-bill-report-final-24-25-nov-2026",
+  "status": "changes_committed_pending_exact_head_ci_and_public_verification",
+  "action": "update_existing_pia_launch_tracker_and_canonical_guide_not_new_article",
+  "new_articles": 0,
+  "existing_canonical_page_updates": 2,
+  "canonical_urls": [
+    "https://compound.ie/pia/#pia-launch-tracker",
+    "https://compound.ie/wealth/personal-investment-account-ireland/"
+  ],
+  "source_urls": [
+    "https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf",
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/",
+    "https://www.newireland.ie/investments/individual-investment-account-faqs/",
+    "https://www.centralbank.ie/consumer-hub/investing-your-money-consumer-faq"
+  ],
+  "new_evidence": {
+    "publication_date": "2026-11-20",
+    "event_date": "2026-11-24 and 2026-11-25 (future proposed sittings)",
+    "source": "Dáil Business Committee report of proposed arrangements",
+    "detail": "Report and Final Stages proposed for Tue 24 Nov 3.49–6.49 p.m. and Wed 25 Nov resumed no earlier than 3.30 p.m.; arrangements are not an actual completed stage",
+    "confidence": "primary official parliamentary report; not evidence of passage"
+  },
+  "legal_status": "Finance (No. 2) Bill 2026 as amended in Select Committee remains a draft for purposes of this run; newer completion/enactment not independently established; Individual Investment Account (IIA) is Bill terminology, PIA is editorial/provider shorthand",
+  "launch_status": "1 July 2027 is conditional Government target, not confirmed account-opening date",
+  "tracker": {
+    "changed": true,
+    "global_checked_date_retained": "2026-11-15",
+    "reason": "Not every existing source/status (including official Bill landing) independently accessible; new 20 November agenda source is item-level verified, not global refresh",
+    "milestone_changed": "enacted-law remains unverified; proposed agenda referenced with exact dates",
+    "provider_dataset_changed": false,
+    "provider_csv_regeneration_required": false
+  },
+  "recovery": {
+    "original_date": "2026-11-20",
+    "canonical_url": "https://compound.ie/pia/providers/",
+    "status": "updated provider text publicly visible on 21 Nov",
+    "content_fingerprint": "New Ireland Assurance (related group insurer), statement checked 2026-11-20",
+    "ad_loader_cmp": "pending raw HTML/slot verification",
+    "images": "pending OG/Twitter HTTP asset checks"
+  },
+  "source_blockers": [
+    "Oireachtas Bill 98 canonical landing returned HTTP 403, so final legislative status not independently verified",
+    "No announced provider presented a complete product-specific fee schedule or open application during check",
+    "Container direct network DNS unavailable; web text reader cannot validate raw ad/CMP or OG/Twitter asset HTTP response"
+  ],
+  "deduplication": "Reviewed 21 Nov editorial topic index and inventory, prior PIA ledgers 16–20 Nov, relevant calculator and guide links, recent/pending PIA PR #216; no competing standalone legislation article. New evidence belongs on established /pia/ and complete guide.",
+  "qa": {
+    "source_check": "Dáil Business Committee PDF pages 1–2 inspected, source dates and future stage wording verified",
+    "arithmetic": "No invented projections or returns",
+    "asset_policy": "No hero-image changes; existing metadata retained",
+    "ci": "pending",
+    "static_build": "pending",
+    "production": "pending",
+    "human_review": "not asserted",
+    "ad_policy": "Existing advertising and consent controls untouched; full verification pending"
+  },
+  "production_branch": "claude/clever-babbage-uibieq",
+  "base_sha_at_branch_creation": "f2e4cb33e218bd63954c2f4d2c1af016a0b7994a",
+  "work_branch": "automation/pia-2026-11-21-dail-next-stage",
+  "live_http_verified": false,
+  "verified_live_result": null,
+  "communication": "No email or social actions"
+}
