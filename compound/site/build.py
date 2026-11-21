@@ -360,6 +360,15 @@ class Page:
     body_html: str
     canonical_path: str = ""
     meta_description: str = ""
+    sources_checked: date | None = None
+    hero_image_url: str = ""
+    hero_image_alt: str = ""
+    hero_image_credit: str = ""
+    hero_image_source: str = ""
+
+    @property
+    def is_claims_page(self) -> bool:
+        return self.url.startswith("/wheres-my-money/what-can-i-claim/")
 
     @property
     def url(self) -> str:
@@ -627,9 +636,24 @@ def load_pages(content_dir: Path) -> list[Page]:
         canonical_path = str(meta.get("canonical_path") or f"/{p.stem}/")
         if not re.fullmatch(r"/(?:[a-z0-9]+(?:-[a-z0-9]+)*/)+", canonical_path):
             raise ValueError(f"Invalid page canonical path: {p}")
-        pages.append(Page(title=str(meta.get("title") or p.stem.title()), slug=p.stem,
-                          body_html=render_markdown(body), canonical_path=canonical_path,
-                          meta_description=str(meta.get("meta_description") or "")))
+        page = Page(
+            title=str(meta.get("title") or p.stem.title()),
+            slug=p.stem,
+            body_html=render_markdown(body),
+            canonical_path=canonical_path,
+            meta_description=str(meta.get("meta_description") or ""),
+            sources_checked=_as_date(meta["sources_checked"]) if meta.get("sources_checked") else None,
+            hero_image_url=str(meta.get("hero_image_url") or ""),
+            hero_image_alt=str(meta.get("hero_image_alt") or ""),
+            hero_image_credit=str(meta.get("hero_image_credit") or ""),
+            hero_image_source=str(meta.get("hero_image_source") or ""),
+        )
+        if page.is_claims_page and meta.get("require_pinned_hero"):
+            asset = Path(__file__).parent / page.hero_image_url.lstrip("/")
+            if not (page.hero_image_url.startswith("/static/") and asset.is_file()
+                    and page.hero_image_alt and page.hero_image_credit and page.hero_image_source):
+                raise ValueError(f"Missing pinned hero or photo credit: {p}")
+        pages.append(page)
     return pages
 
 
@@ -1977,6 +2001,14 @@ def build_site(settings: Settings) -> dict:
                 "description": pg.meta_description, "image": "", "reading_minutes": 5,
                 "date_label": "Solar hub",
             })
+        if pg.is_claims_page:
+            index.append({
+                "title": pg.title, "url": pg.url, "pillar": "Wealth",
+                "date": pg.sources_checked.isoformat() if pg.sources_checked else "",
+                "summary": pg.meta_description, "description": pg.meta_description,
+                "tags": ["supports", "entitlements", "grants", "tax relief"],
+                "image": pg.hero_image_url, "reading_minutes": 4, "date_label": "",
+            })
     if any(pg.slug == "insurance" for pg in pages):
         index.insert(0, {
             "title": "Insurance Tools & Guides Ireland — Life, Mortgage, Income & Health",
@@ -2216,7 +2248,12 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + a.url, (a.research_checked or a.reviewed or a.date).isoformat())
         for a in articles
     )
-    sitemap_entries.extend((settings.site_base_url + pg.url, "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None) for pg in pages if pg.slug != "solar-installer-portal")
+    sitemap_entries.extend(
+        (settings.site_base_url + pg.url,
+         pg.sources_checked.isoformat() if pg.sources_checked else
+         "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None)
+        for pg in pages if pg.slug != "solar-installer-portal"
+    )
 
     # Canonical stock hub URLs only; old earnings-company aliases are noindex.
     sitemap_entries.extend(

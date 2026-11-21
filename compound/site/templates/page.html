@@ -8,13 +8,24 @@
 {% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
 {% elif page.slug == 'caffeine-calculator' %}<meta name="description" content="{{ page.meta_description|e }}">
 
-{% elif is_solar or page.url.startswith('/pia/') %}<meta name="description" content="{{ page.meta_description|e }}">
+{% elif is_solar or page.is_claims_page or page.url.startswith('/pia/') %}<meta name="description" content="{{ page.meta_description|e }}">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
 {% else %}{{ super() }}{% endif %}
 {% endblock %}
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ page.url }}">
 {% if page.slug == 'solar-installer-portal' %}<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+{% elif page.is_claims_page %}
+<meta property="og:type" content="{{ 'article' if page.hero_image_url else 'website' }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.meta_description }}">
+<meta property="og:url" content="{{ site_url }}{{ page.url }}">
+<meta property="og:site_name" content="Compound">
+<meta name="twitter:card" content="{{ 'summary_large_image' if page.hero_image_url else 'summary' }}">
+{% if page.hero_image_url %}<meta property="og:image" content="{{ site_url }}{{ page.hero_image_url }}">
+<meta property="og:image:alt" content="{{ page.hero_image_alt }}">
+<meta name="twitter:image" content="{{ site_url }}{{ page.hero_image_url }}">{% endif %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":{{ ('CollectionPage' if page.slug == 'what-can-i-claim' else 'WebPage')|tojson }},"name":{{ page.title|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"description":{{ page.meta_description|tojson }},"inLanguage":"en-IE"{% if page.sources_checked %},"dateModified":{{ page.sources_checked.isoformat()|tojson }}{% endif %},"isPartOf":{"@type":"WebSite","name":"Compound","url":{{ site_url|tojson }}}}</script>
 {% elif page.slug == 'caffeine-calculator' %}
 <meta property="og:type" content="website">
 <meta property="og:title" content="Caffeine Calculator: How Much Is Left at Bedtime? | Compound">
@@ -72,7 +83,8 @@
 {% endif %}
 {% endblock %}
 {% block post_styles %}
-{% if page.slug == 'caffeine-calculator' %}<link rel="stylesheet" href="/static/caffeine-page.css?v=1"><script type="module" src="/static/caffeine-page.js?v=1"></script>
+{% if page.is_claims_page %}<link rel="stylesheet" href="/static/claims-directory.css?v=1"><script src="/static/claims-directory.js?v=1" defer></script>
+{% elif page.slug == 'caffeine-calculator' %}<link rel="stylesheet" href="/static/caffeine-page.css?v=1"><script type="module" src="/static/caffeine-page.js?v=1"></script>
 {% elif page.slug == 'pia-invest-now-or-wait' %}<link rel="stylesheet" href="/static/pia-wait.css?v=20261117-1"><script src="/static/pia-wait.js?v=20261117-1" defer></script>
 {% elif page.slug == 'pia-vs-ordinary-investing' %}<link rel="stylesheet" href="/static/pia-investing.css?v=20261113-1"><script src="/static/pia-investing.js?v=20261113-1" defer></script>
 {% elif page.slug == 'pia-vs-pension' %}<link rel="stylesheet" href="/static/pia-pension.css?v=20261113-1"><script src="/static/pia-pension.js?v=20261113-1" defer></script>
@@ -88,7 +100,8 @@
 {% endif %}
 {% endblock %}
 {% block content %}
-{% if page.slug in ['rent-commute-map','sun-path-explorer'] %}{% include 'irish_explorer.html' %}
+{% if page.is_claims_page %}{% include 'claims_directory.html' %}
+{% elif page.slug in ['rent-commute-map','sun-path-explorer'] %}{% include 'irish_explorer.html' %}
 {% elif page.slug == 'ireland-rent-map' %}{% include 'rent_map.html' %}
 {% elif page.slug == 'caffeine-calculator' %}
 <div class="caf-page">
