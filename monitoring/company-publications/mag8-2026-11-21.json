@@ -5,9 +5,9 @@
   "company": "Amazon.com Inc.",
   "ticker": "AMZN",
   "selection": "Least recently featured eligible company, 6 November; the Lilly-only exception expired after 18 November.",
-  "status": "held-for-review",
-  "publication_state": "prepublication_checks",
-  "new_articles_published": 0,
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/amazon-aws-backlog-customer-funding.md",
   "canonical_url": "https://compound.ie/wealth/amazon-aws-backlog-customer-funding/",
@@ -43,19 +43,88 @@
     "human_reviewed_by": null,
     "human_reviewed_at": null,
     "second_pass": "Separate source-led review checks financial definitions, independently recomputed calculations, quarterly versus cumulative periods, distinct search intent, plain-language interpretation, disclosures, title/meta, internal links and original sources. No human approval claimed.",
-    "release_gates_pending": [
-      "exact-head CI and full build",
-      "deployment and live canonical/discovery/ads verification"
-    ],
+    "release_gates_pending": [],
     "validation": [
       "10 existing publication/company tests passed.",
       "Pinned hero processing and article template rendering passed.",
       "Wide and square crops visually inspected.",
-      "Rendered neutral Compound Research attribution, standard ads loader and no false human approval."
+      "Rendered neutral Compound Research attribution, standard ads loader and no false human approval.",
+      "Exact-head CI passed: 405 tests and 2 subtests, full production build and Lighthouse mobile performance.",
+      "Production site build, deployment, verify-live, verify-finance-discovery and mobile-audit all passed.",
+      "Fetched article canonical, hero and OG/Twitter image, sitemap, finance JSON/directory and Amazon profile backlink. Profile ad loader and slots 2138650464/8512487125 verified; article standard Auto Ads loader present, no fixed slots configured.",
+      "Live browser cover, credit/date, Compound Research attribution, headline and financial table visually checked. Advertisement frames present; no assertion of ad fill. Fetched live social image visually checked."
     ]
   },
-  "live_verification": null,
-  "pull_requests": [],
-  "outcome_notes": "At most one new article per Dublin date. No paid LLM API usage or social posting. Schedule unchanged. Not counted until live fetched.",
-  "article_sha256": "15e940c81c70aec70b6bc5e170623eb7d2d9222d17eaf744ca068ff860c4cd43"
+  "live_verification": {
+    "verified_at": "2026-11-21T18:19:52.021211+00:00",
+    "url": "https://compound.ie/wealth/amazon-aws-backlog-customer-funding/",
+    "canonical": true,
+    "article_text": true,
+    "neutral_attribution": true,
+    "article_ad_loader": true,
+    "profile_ad_loader": true,
+    "stock_backlink": true,
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "image_credit_and_archival_date": true,
+    "single_h1": true,
+    "indexable": true,
+    "primary_and_internal_links": true,
+    "social_image": "https://compound.ie/static/discover/amazon-aws-backlog-customer-funding-16x9.webp",
+    "social_sha256": "d218b0c3c2e6798314b4c64fe3e3dd6b07101378d063e4a0268d0e0d97ecab0f",
+    "hero_sha256": "cbe1e7979f4458ab0cba4556d631811b3e4ff3c7a121d3da5b200d3c0f3bfc26",
+    "article_slots": [],
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "browser_rendered_cover": true,
+    "browser_rendered_comparison_table": true,
+    "browser_neutral_attribution": true,
+    "browser_advertisement_frames_present": true,
+    "live_social_image_visually_checked": true
+  },
+  "pull_requests": [
+    {
+      "number": 242,
+      "url": "https://github.com/davidomarayt/compound/pull/242",
+      "head": "a35eb7d711cc7126d9edc7801248203fbda0b671",
+      "merge": "f457e2affc08d494ca181b9430868528b8c84cb8",
+      "ci_run": 44933952451,
+      "ci": "success",
+      "site_run": 44934654461,
+      "site": "success"
+    }
+  ],
+  "outcome_notes": "Exactly one fetched live new Mag8 article for 21 November. No paid LLM API usage or social posting; schedule unchanged. Neutral truthful attribution and review records retained; standard ads enabled without fill or human-approval claims.",
+  "article_sha256": "15e940c81c70aec70b6bc5e170623eb7d2d9222d17eaf744ca068ff860c4cd43",
+  "deployment_jobs": [
+    {
+      "id": 136938537452,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 136938964876,
+      "name": "deploy",
+      "conclusion": "success"
+    },
+    {
+      "id": 136939092871,
+      "name": "verify-live",
+      "conclusion": "success"
+    },
+    {
+      "id": 136939092880,
+      "name": "verify-finance-discovery",
+      "conclusion": "success"
+    },
+    {
+      "id": 136939092921,
+      "name": "mobile-audit",
+      "conclusion": "success"
+    }
+  ]
 }
+
