@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 412 published articles and guides, 69 tools,
+**Included:** 413 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -413,6 +413,7 @@ For the complete register (including 510+ company profiles), open
 - [Why SpaceX’s Lenders Reportedly Want Its AI Chips to Stay on Earth](https://compound.ie/news/spacex-gpu-financing-orbit-collateral/) — **Wealth**
 - [Why you feel more tired in autumn: what darker days do to sleep and mood](https://compound.ie/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/) — **Life**
 - [Why your time off doesn’t always feel like a break](https://compound.ie/life/why-time-off-doesnt-feel-like-a-break/) — **Life**
+- [Will Irish Banks Accept a PIA for a Mortgage Deposit? Investing vs Trading Explained](https://compound.ie/wealth/pia-mortgage-deposit-ireland/) — **Wealth**
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/) — **Wealth**
 - [Workplace stress in Ireland: new study finds job design matters for wellbeing](https://compound.ie/news/workplace-stress-ireland-job-design-wellbeing-2026/) — **Life**
 - [Your Commute Could Be Costing You 10 Days a Year](https://compound.ie/life/commute-time-ireland-hidden-cost/) — **Life**

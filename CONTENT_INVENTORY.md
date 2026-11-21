@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 412
+- Published editorial articles and guides: 413
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 291
+## Wealth articles and guides — 292
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -401,6 +401,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Who keeps the profit on an AI rack? AMD, Arista and Supermicro report](https://compound.ie/wealth/ai-infrastructure-earnings/)
 - [Who Would Pay for Palmer Luckey’s SLAB? The First Customer Could Decide](https://compound.ie/news/palmer-luckey-slab-first-customer-financing/)
 - [Why SpaceX’s Lenders Reportedly Want Its AI Chips to Stay on Earth](https://compound.ie/news/spacex-gpu-financing-orbit-collateral/)
+- [Will Irish Banks Accept a PIA for a Mortgage Deposit? Investing vs Trading Explained](https://compound.ie/wealth/pia-mortgage-deposit-ireland/)
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/)
