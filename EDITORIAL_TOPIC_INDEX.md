@@ -8,12 +8,13 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 407 published articles and guides, 69 tools,
+**Included:** 410 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
 
 - [7 in 10 young adults are considering leaving Ireland — but the migration data tells a more complicated story](https://compound.ie/news/young-people-considering-emigration-ireland-2026/) — **Life**
+- [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/) — **Wealth**
 - [A Buddhist monk has begun 12 years on a mountain. What can it teach us about the modern mind?](https://compound.ie/news/12-year-buddhist-retreat-meditation-mental-wellbeing/) — **Life**
 - [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/) — **Life**
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/) — **Wealth**
@@ -115,6 +116,7 @@ For the complete register (including 510+ company profiles), open
 - [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/) — **Wealth**
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/) — **Wealth**
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/) — **Wealth**
+- [Employment Permits Portal Still Offline: What Applicants Can Do Now](https://compound.ie/news/ireland-employment-permits-portal-outage-2026/) — **Wealth**
 - [Escitalopram in Ireland | The serotonin transporter and the delay in symptom change](https://compound.ie/health/medicines/escitalopram/) — **Health**
 - [Esomeprazole in Ireland | The stomach proton pump and time to acid suppression](https://compound.ie/health/medicines/esomeprazole/) — **Health**
 - [EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?](https://compound.ie/news/eu-rwanda-deportation-centre-cost-2026/) — **Wealth**
@@ -196,6 +198,7 @@ For the complete register (including 510+ company profiles), open
 - [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/) — **Wealth**
 - [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/) — **Life**
 - [Irish Employment Hits a Record, but 130,200 Part-Time Workers Want More Hours](https://compound.ie/news/ireland-employment-q3-2026-underemployment/) — **Wealth**
+- [Irish EV Buyers Put Running Costs First — and Home Charging Matters More](https://compound.ie/news/irish-ev-running-costs-home-charging-2026/) — **Wealth**
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/) — **Wealth**
 - [Irish House Prices Rose 4.7%: What the New €400,000 Median Means](https://compound.ie/news/irish-house-prices-september-2026/) — **Wealth**
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**
