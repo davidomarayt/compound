@@ -64,7 +64,7 @@
       "company": "Anthropic",
       "slug": "anthropic",
       "action": "substantive_canonical_update",
-      "event_date": "2026-11-20",
+      "event_date": "2026-11-19",
       "article_path": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
       "story_fingerprint": "2026-11-20-anthropic-ipo-close-1127m-full-option-313253007-class-n-26000m-placement-issuer-primary-proceeds",
       "primary_source_urls": [
@@ -92,7 +92,9 @@
       "social_image_verified": false,
       "ads_presence_verified": false,
       "live_http_verified": false,
-      "status": "prepared_canonical_update_pending_ci"
+      "status": "prepared_canonical_update_pending_ci",
+      "update_event_date": "2026-11-20",
+      "event_date_explanation": "The established canonical's Nasdaq trading event occurred 19 Nov; the source-backed IPO closing and full option exercise covered by this update occurred 20 Nov. The update_event_date, not event_date, dates the new claims. Profile latest_development retains a separately sourced 19 Nov Nasdaq listing milestone and date."
     },
     {
       "company": "Canva",
