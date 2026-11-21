@@ -459,6 +459,7 @@
           "finance",
           "anthropic",
           "company-anthropic",
+          "stock-ant",
           "ipo",
           "nasdaq",
           "investing"
@@ -1142,6 +1143,28 @@
         "status": "published"
       },
       {
+        "title": "Canva Now Lets Users Turn Off Generative AI. Could More Choice Be Good for Its Business?",
+        "url": "/wealth/canva-ai-controls-opt-out-creator-economics/",
+        "source": "content/wealth/canva-ai-controls-opt-out-creator-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "canva-ai-controls-opt-out-creator-economics",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-canva",
+          "canva",
+          "design-software",
+          "generative-ai",
+          "creator-economy",
+          "subscriptions"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Capital Gains Tax in Ireland: How Much CGT Do You Pay?",
         "url": "/wealth/capital-gains-tax-ireland/",
         "source": "content/wealth/capital-gains-tax-ireland.md",
@@ -1253,6 +1276,28 @@
           "openai",
           "artificial-intelligence",
           "enterprise-software"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "ChatGPT Space Comes to Plus: Can Collaboration Turn OpenAI's Consumer Users Into Teams?",
+        "url": "/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics/",
+        "source": "content/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-chatgpt-space-plus-rollout-collaboration-economics",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "chatgpt",
+          "chatgpt-space",
+          "collaboration",
+          "software-economics"
         ],
         "status": "published"
       },
