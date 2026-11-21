@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-20",
+  "checked": "2026-11-21",
   "listed": [
     {
       "slug": "spcx",
@@ -135,11 +135,11 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "Developer and enterprise AI systems, including specialist legal research and an 18 November accounting workflow for reconciliation and month-end reporting.",
+      "summary": "Developer and enterprise AI, specialist workflows and collaborative ChatGPT Space pages; Plus rollout announced 20 November 2026.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-18",
-        "text": "OpenAI's 18 November ChatGPT release notes introduced an Accounting plugin for reconciling transactions, drafting invoice entries and preparing month-end reports. Desktop and workspace configuration apply; no separately published fee, independent accuracy score or Irish package integration was disclosed.",
+        "date": "2026-11-20",
+        "text": "OpenAI's 20 November ChatGPT notes say Space is rolling out to eligible Plus adults, with interactive pages, presentations and collaborator access. Availability is gradual; Free accounts cannot view shared pages, public links are unavailable, and no Space-specific revenue was disclosed.",
         "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
       }
     },
@@ -240,8 +240,13 @@
       "slug": "canva",
       "name": "Canva",
       "sector": "Design software",
-      "summary": "Visual design, collaboration and publishing software.",
-      "website": "https://www.canva.com/"
+      "summary": "Privately held visual-design and collaboration company. Its 19 November AI Controls add individual generation opt-outs and reduced AI-generated library discovery for Free and Pro users.",
+      "website": "https://www.canva.com/",
+      "latest_development": {
+        "date": "2026-11-19",
+        "text": "Canva introduced two AI Controls on 19 November 2026: a generative-AI feature switch and a separate option to reduce AI-generated content in discovery, without extra charges on Free and Pro. Assistive editing remains accessible and no customer-revenue impact was disclosed.",
+        "source": "https://www.canva.com/newsroom/news/ai-controls-canva/"
+      }
     },
     {
       "slug": "lego",
