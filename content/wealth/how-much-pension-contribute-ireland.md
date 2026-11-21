@@ -18,6 +18,10 @@ sources:
   url: https://pensionsauthority.ie/scheme-members-and-prsa-contributors/lifecycle/paying_more_to_improve_benefits/
 - title: 'Pensions Authority: Additional voluntary contributions'
   url: https://pensionsauthority.ie/scheme-members-and-prsa-contributors/understanding-pensions/paying_more_to_improve_benefits/additional_voluntary_contributions_avcs_/
+- title: 'MyFutureFund: participant contribution schedule'
+  url: https://myfuturefund.ie/participant/contributions
+- title: 'MyFutureFund: minimum pension contribution standards for exemption'
+  url: https://myfuturefund.ie/employer-faq
 ---
 
 <div class="pension-course" markdown="1">
@@ -60,6 +64,14 @@ That gives €6,000 a year before investment returns.
 If the employee instead contributes 2%, and the employer only matches 2%, the total falls to €2,400.
 
 For many workers, reaching the full employer match is the most important first pension contribution decision.
+
+## If your employer offers no pension: check MyFutureFund
+
+The matching example above assumes your employer offers a qualifying pension arrangement. Since **1 January 2026**, Ireland's **MyFutureFund** auto-enrolment scheme has provided a different route for eligible employees whose employment is not covered by a qualifying pension through payroll. Eligibility depends on age, earnings and the actual payroll arrangement. Not every nominal workplace pension automatically creates an exemption: [the scheme's employer guidance](https://myfuturefund.ie/employer-faq) explains minimum contribution standards for defined-contribution and PRSA arrangements.
+
+For **2026–2028**, a participating employee contributes **1.5%** of contributable gross pay, their employer adds **1.5%**, and the State adds **0.5%**. On an illustrative €40,000 of fully contributable annual pay, that is €600 employee + €600 employer + €200 State = **€1,400** before fees or investment returns. The employee contribution comes from **net pay**; the State top-up replaces ordinary Income Tax relief on that MyFutureFund contribution, rather than being an additional tax credit. See [MyFutureFund's official contribution rules](https://myfuturefund.ie/participant/contributions).
+
+Before deciding how much to save, compare the **actual** employer funding, employee after-tax cost, fees and access rules for your situation. Use Compound's [MyFutureFund Calculator](/myfuturefund-calculator/) and [MyFutureFund vs private pension guide](/wealth/myfuturefund-vs-private-pension-ireland/). These are alternative arrangements or employment-specific treatments, **not** amounts to add together automatically for the same job.
 
 ## Then understand your Revenue ceiling
 
