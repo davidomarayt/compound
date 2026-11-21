@@ -5,6 +5,7 @@ Previews render to /preview/<token>/ with noindex and are never listed anywhere.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import os
@@ -770,20 +771,38 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
         return
     source = HERE / a.image.lstrip("/")
 
-    # The news-image pipeline can temporarily fall back to a branded SVG when
-    # the stock-photo provider is rate-limited. Pillow cannot rasterise SVGs,
-    # so skip Discover derivatives rather than failing the entire site build.
-    # A later successful image refresh will restore the normal raster variants.
+    # SVGs cannot be rasterised by Pillow. Keep their pre-existing behaviour.
     if source.suffix.lower() == ".svg":
         return
 
     target_dir = output_dir / "static" / "discover"
     target_dir.mkdir(parents=True, exist_ok=True)
+
+    # Discover derivatives are expensive to encode (three WebP crops per
+    # article). Use the original image bytes plus a versioned conversion
+    # recipe; any new photograph regenerates all three sizes automatically.
+    raw_cache = os.environ.get("COMPOUND_ARTICLE_CACHE_DIR", "").strip()
+    cached = None
+    if raw_cache:
+        digest = hashlib.sha256(source.read_bytes() + b"discover-webp-v1-88-6").hexdigest()
+        cached = Path(raw_cache).resolve() / "discover" / digest[:2] / digest
+        names = [f"{a.slug}-{ratio}.webp" for ratio in DISCOVER_IMAGE_SIZES]
+        if all((cached / name).is_file() and (cached / name).stat().st_size > 0
+               for name in names):
+            for name in names:
+                shutil.copyfile(cached / name, target_dir / name)
+            return
+
     with Image.open(source) as image:
         rgb = ImageOps.exif_transpose(image).convert("RGB")
         for ratio, size in DISCOVER_IMAGE_SIZES.items():
             rendered = ImageOps.fit(rgb, size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
-            rendered.save(target_dir / f"{a.slug}-{ratio}.webp", "WEBP", quality=88, method=6)
+            name = f"{a.slug}-{ratio}.webp"
+            destination = target_dir / name
+            rendered.save(destination, "WEBP", quality=88, method=6)
+            if cached is not None:
+                cached.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(destination, cached / name)
 
 
 def site_identity_jsonld(site_url: str) -> str:
