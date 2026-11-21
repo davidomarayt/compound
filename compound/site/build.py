@@ -5,6 +5,7 @@ Previews render to /preview/<token>/ with noindex and are never listed anywhere.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import os
@@ -32,6 +33,7 @@ from compound.site.spending_programmes import prepare_programmes
 from compound.site.spending_votes import prepare_votes
 from compound.site.spending_vote30 import prepare_vote30_subheads
 from compound.site.earnings_view import load_company_report
+from compound.site.incremental import ArticleRenderCache, render_key
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
 
@@ -769,20 +771,38 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
         return
     source = HERE / a.image.lstrip("/")
 
-    # The news-image pipeline can temporarily fall back to a branded SVG when
-    # the stock-photo provider is rate-limited. Pillow cannot rasterise SVGs,
-    # so skip Discover derivatives rather than failing the entire site build.
-    # A later successful image refresh will restore the normal raster variants.
+    # SVGs cannot be rasterised by Pillow. Keep their pre-existing behaviour.
     if source.suffix.lower() == ".svg":
         return
 
     target_dir = output_dir / "static" / "discover"
     target_dir.mkdir(parents=True, exist_ok=True)
+
+    # Discover derivatives are expensive to encode (three WebP crops per
+    # article). Use the original image bytes plus a versioned conversion
+    # recipe; any new photograph regenerates all three sizes automatically.
+    raw_cache = os.environ.get("COMPOUND_ARTICLE_CACHE_DIR", "").strip()
+    cached = None
+    if raw_cache:
+        digest = hashlib.sha256(source.read_bytes() + b"discover-webp-v1-88-6").hexdigest()
+        cached = Path(raw_cache).resolve() / "discover" / digest[:2] / digest
+        names = [f"{a.slug}-{ratio}.webp" for ratio in DISCOVER_IMAGE_SIZES]
+        if all((cached / name).is_file() and (cached / name).stat().st_size > 0
+               for name in names):
+            for name in names:
+                shutil.copyfile(cached / name, target_dir / name)
+            return
+
     with Image.open(source) as image:
         rgb = ImageOps.exif_transpose(image).convert("RGB")
         for ratio, size in DISCOVER_IMAGE_SIZES.items():
             rendered = ImageOps.fit(rgb, size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
-            rendered.save(target_dir / f"{a.slug}-{ratio}.webp", "WEBP", quality=88, method=6)
+            name = f"{a.slug}-{ratio}.webp"
+            destination = target_dir / name
+            rendered.save(destination, "WEBP", quality=88, method=6)
+            if cached is not None:
+                cached.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(destination, cached / name)
 
 
 def site_identity_jsonld(site_url: str) -> str:
@@ -1207,6 +1227,13 @@ def build_site(settings: Settings) -> dict:
                 raise ValueError(f"Credit the Wikimedia Commons file page: {article.slug}")
         elif not article.image.startswith("/static/images/") or not (HERE / article.image.lstrip("/")).is_file():
             raise ValueError(f"Missing local cover image for {article.slug}")
+
+    # Fingerprinted article cache; non-article pages and discovery files are always regenerated.
+    article_cache = ArticleRenderCache.from_environment(
+        site_root=HERE, content_dir=settings.content_dir,
+        site_base_url=settings.site_base_url,
+        email_form_action=settings.email_form_action,
+    )
 
     # Wipe rendered output except previews (they belong to the pending queue, not the content dir).
     if out.exists():
@@ -1770,24 +1797,34 @@ def build_site(settings: Settings) -> dict:
             (earnings_profile_by_ticker[tag] for tag in a.tags
              if tag in earnings_profile_by_ticker), None
         )
-        context = article_context(
-            env, settings, a, False,
-            earnings_ticker=profile[2] if profile else "",
-            earnings_company_name=profile[1] if profile else "",
+        recommendations = related(a, articles)
+        article_path = out / a.url.strip("/") / "index.html"
+        # Series articles depend on their complete publication order; render those
+        # fresh rather than caching an incomplete dependency graph.
+        fingerprint = render_key(
+            base=article_cache.base, article=a, recommendations=recommendations,
+            tools=linked_tools, profile=profile,
         )
-        context["stock_company_url"] = profile[0] if profile else ""
-        context["stock_company_name"] = profile[1] if profile else ""
-        context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
-        if is_automated_earnings:
-            context["earnings_company_url"] = profile[0] if profile else ""
-            context["earnings_company_name"] = profile[1] if profile else ""
-        if linked_tools:
-            context["article_body"] = insert_article_tool_cta(
-                context["article_body"], linked_tools[0], env, a.pillar
+        if a.series_id or not article_cache.reuse(a.url, fingerprint, article_path):
+            context = article_context(
+                env, settings, a, False,
+                earnings_ticker=profile[2] if profile else "",
+                earnings_company_name=profile[1] if profile else "",
             )
-        _write(out / a.url.strip("/") / "index.html",
-               env.get_template(article_template(a)).render(
-                   **context, related=related(a, articles), linked_tools=linked_tools))
+            context["stock_company_url"] = profile[0] if profile else ""
+            context["stock_company_name"] = profile[1] if profile else ""
+            context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
+            if is_automated_earnings:
+                context["earnings_company_url"] = profile[0] if profile else ""
+                context["earnings_company_name"] = profile[1] if profile else ""
+            if linked_tools:
+                context["article_body"] = insert_article_tool_cta(
+                    context["article_body"], linked_tools[0], env, a.pillar
+                )
+            _write(article_path, env.get_template(article_template(a)).render(
+                **context, related=recommendations, linked_tools=linked_tools))
+            if not a.series_id:
+                article_cache.store(a.url, fingerprint, article_path)
         if a.pillar == "happiness":
             legacy_url = f"/happiness/{a.slug}/"
             if a.url != legacy_url:
@@ -2255,7 +2292,9 @@ def build_site(settings: Settings) -> dict:
         sitemap_rows.append(row)
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(sitemap_rows) + "</urlset>\n")
-    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages), "tools": len(tools)}
+    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages),
+            "tools": len(tools), "article_cache_hits": article_cache.hits,
+            "article_cache_misses": article_cache.misses}
 
 
 def render_preview(settings: Settings, token: str, article: Article) -> Path:
