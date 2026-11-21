@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 404 published articles and guides, 69 tools,
+**Included:** 407 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -61,6 +61,7 @@ For the complete register (including 510+ company profiles), open
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Beta blockers in Ireland | Adrenaline signals, heart rate and differences between products](https://compound.ie/health/medicines/beta-blockers/) — **Health**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
+- [BJ’s Comps Rose 13.5%, but Merchandise Margin Fell. Can Membership Growth Carry the Build?](https://compound.ie/wealth/bj-membership-margin-capex/) — **Wealth**
 - [Block’s Lending Engine Is Growing Fast. Are Credit Costs Keeping Up?](https://compound.ie/wealth/block-cash-app-lending-credit-losses/) — **Wealth**
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/) — **Wealth**
 - [Blue Origin Has Qualified a New Glenn Valve Fix. The Hard Part Is Returning to Flight.](https://compound.ie/wealth/blue-origin-new-glenn-valve-fix-launch-economics/) — **Wealth**
@@ -178,6 +179,7 @@ For the complete register (including 510+ company profiles), open
 - [How to stop worrying and overthinking: what the trials actually show](https://compound.ie/life/how-to-stop-worrying-and-overthinking/) — **Life**
 - [IBM Earnings: Stronger Cash Flow, but the Recovery Is Uneven](https://compound.ie/wealth/ibm-earnings-software-growth-cash-flow/) — **Wealth**
 - [IDEXX's Recurring Diagnostics Engine Is Expanding. How Durable Is It?](https://compound.ie/wealth/idexx-recurring-diagnostics-growth-margin/) — **Wealth**
+- [IES’ Data-Centre Backlog Doubled. Can It Fund a $691 Million Acquisition and Bigger Buyback?](https://compound.ie/wealth/ies-data-center-growth-acquisition-cash/) — **Wealth**
 - [Income Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/income-protection-insurance-ireland/) — **Wealth**
 - [Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?](https://compound.ie/wealth/inheritance-tax-ireland/) — **Wealth**
 - [Insulation Grants in Ireland: Costs, Grants & What to Upgrade First](https://compound.ie/wealth/insulation-grants-ireland/) — **Wealth**
@@ -242,6 +244,7 @@ For the complete register (including 510+ company profiles), open
 - [Mirtazapine in Ireland | Receptor signalling, wakefulness and appetite](https://compound.ie/health/medicines/mirtazapine/) — **Health**
 - [Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins](https://compound.ie/wealth/molina-healthcare-earnings-medicaid-margins/) — **Wealth**
 - [Monster Sold More Cases but Earned Less per Case. Can Volume Carry the Margin?](https://compound.ie/wealth/monster-case-volume-margin-pressure/) — **Wealth**
+- [Moog Set Records, but Its Financial Controls Failed. How Much Should Investors Discount?](https://compound.ie/wealth/moog-record-results-control-weakness/) — **Wealth**
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/) — **Wealth**
 - [Mortgage Approval in Ireland: How Much Can You Borrow?](https://compound.ie/wealth/mortgage-approval-affordability-ireland/) — **Wealth**
 - [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/) — **Wealth**
