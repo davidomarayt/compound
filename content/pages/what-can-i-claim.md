@@ -5,18 +5,18 @@ meta_description: 'Find Irish family payments, first-time buyer schemes and PAYE
 sources_checked: 2026-11-21
 ---
 <div class="claim-paths">
-  <section>
-    <h2><a href="/wheres-my-money/what-can-i-claim/having-a-baby/">Having a baby</a></h2>
+  <a href="/wheres-my-money/what-can-i-claim/having-a-baby/" aria-labelledby="claim-path-baby">
+    <h2 id="claim-path-baby">Having a baby</h2>
     <p>Plan your leave, register for Child Benefit and work out childcare costs before returning to work.</p>
-  </section>
-  <section>
-    <h2><a href="/wealth/first-time-buyer-supports-ireland/#compare-buying-routes">Buying your first home</a></h2>
+  </a>
+  <a href="/wealth/first-time-buyer-supports-ireland/#compare-buying-routes" aria-labelledby="claim-path-home">
+    <h2 id="claim-path-home">Buying your first home</h2>
     <p>Compare a private new build, a council affordable home and buying second-hand.</p>
-  </section>
-  <section>
-    <h2><a href="/wheres-my-money/what-can-i-claim/paye-refund-checklist/">Checking your PAYE refund</a></h2>
+  </a>
+  <a href="/wheres-my-money/what-can-i-claim/paye-refund-checklist/" aria-labelledby="claim-path-paye">
+    <h2 id="claim-path-paye">Checking your PAYE refund</h2>
     <p>Find the credits and expenses to check, gather the records and file directly through Revenue.</p>
-  </section>
+  </a>
 </div>
 
 <section class="claim-lookup" aria-labelledby="claim-lookup-title">
