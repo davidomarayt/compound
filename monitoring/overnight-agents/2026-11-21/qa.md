@@ -1,6 +1,6 @@
 # Compound.ie — independent overnight Editor-in-Chief QA — 2026-11-21 (Europe/Dublin)
 
-**Status at initial QA write (21 November, approximately 06:28 UTC):** two independent worker PRs passed their exact-head test and performance/build jobs and were safely merged using the exact expected PR head SHA. Both are **MERGED**, but **DEPLOYMENT and PUBLIC CANONICAL VERIFICATION are still pending** at this checkpoint. This is **automated editorial QA, not human review**. The publishing branch `claude/clever-babbage-uibieq` was independently confirmed as repo default and the GitHub Pages publishing branch in `.github/workflows/site.yml`.
+**Status after production check (21 November 2026):** two independent worker PRs passed their exact-head test and performance/build jobs and were safely merged using the exact expected PR head SHA. Both are **MERGED and DEPLOYED** via successful GitHub Pages build and deploy at 06:34 UTC; however, **the changed content on both canonical public URLs has not been independently verified live** because a separate public fetch returned older page text. This is **automated editorial QA, not human review**. The publishing branch `claude/clever-babbage-uibieq` was independently confirmed as repo default and the GitHub Pages publishing branch in `.github/workflows/site.yml`.
 
 ## Required daily worker records checked
 - [Discovery](discovery.md): Search Console Growth and Content Gap, recorded after the 00:15 worker; source-backed correction in PR #224 and metrics blocked.
@@ -47,10 +47,19 @@
 
 | Item | Approved | Merged | Production deployed | Public URL verified changed | Held/skipped |
 | --- | --- | --- | --- | --- | --- |
-| PR #224 RSU guide | Yes, automated QA only | Yes, `529a26e` | Pending | No | No |
-| PR #225 stocks provenance | Yes, automated QA only | Yes, `9d250f2` | Pending | No | No |
+| PR #224 RSU guide | Yes, automated QA only | Yes, `529a26e` | Yes, via final Pages `44875615319` | No; external fetch showed original 33% wording | No |
+| PR #225 stocks provenance | Yes, automated QA only | Yes, `9d250f2` | Yes, via final Pages `44875615319` | No; external fetch showed original SEC-backed cards | No |
 | Original Research brief | Review only | No | No | No | Publication skipped |
 | Private Company Intelligence | No material correction | No | No | No | Skipped |
 | GSC/GA4/AdSense analysis | Metrics unavailable | No | No | No | Blocked data access |
 
 **Follow-up:** re-read the latest GitHub Pages run and independently fetch `https://compound.ie/wealth/rsu-share-options-tax-ireland/` and `https://compound.ie/stocks/` after successful deployment. Do not treat CI completion alone as a verified-live assertion.
+
+## Post-merge deployment and independent public-HTML checkpoint (21 Nov, after 06:34 UTC)
+
+- **GitHub confirmed production deploy:** [GitHub Pages workflow 44875615319](https://github.com/davidomarayt/compound/actions/runs/44875615319) on final merged source head `9d250f203c3e58b31601a4a32e7793954f839f7d`: `build` successful at **06:33:45 UTC**, `deploy` successful at **06:34:08 UTC**, `verify-finance-discovery` successful at **06:34:18 UTC** and `verify-live` successful at **06:34:28 UTC**. At final QA check, `mobile-audit` was still in progress; its eventual result cannot be presumed.
+- The workflow's `verify-live` **does** fetch the production `/stocks/` directory and check canonical, stock links, company counts, and representative ads, but **does not assert the newly changed source-neutral featured-card text**. It does not explicitly test changed RSU paragraph text. Passing this generic smoke test is evidence of deployed functioning site, not independent confirmation of either new correction appearing publicly.
+- An independent post-deploy fetch via web access to [RSU canonical](https://compound.ie/wealth/rsu-share-options-tax-ireland/) returned the **old undated 33%** paragraph and old **€900.90** example; an independent fetch to [Stocks canonical](https://compound.ie/stocks/) returned the **old “SEC-backed earnings available”** cards and “Filing-linked figures.” Those responses may be affected by the retrieval service's cache or by delayed/stale public edge content; this run cannot determine which. Accordingly, **both corrected URLs remain `DEPLOYED / CHANGED_COPY_NOT_VERIFIED_LIVE`**, **not** `VERIFIED_LIVE`.
+- The site source template preserves the standard configured AdSense loader, established ad slots and consent/CMP UI. The returned public-page text extraction does not prove newly rendered ad-loader or slot presence on either updated page, nor AdSense fill, publisher approval, or human editorial review. This is a **verification gap**, not a generic ad-based publishing hold.
+- The first merge's [Pages job 44875592098](https://github.com/davidomarayt/compound/actions/runs/44875592098) and [CI job 44875592149](https://github.com/davidomarayt/compound/actions/runs/44875592149) were cancelled as later merges/commits superseded their source heads. The final merge's generic CI 44875615368 was cancelled after a subsequent QA-report write, while both PR-specific exact-head workflows passed before merging; do not misstate the cancelled generic checks as failed tests.
+- **Next verification action:** compare the production HTML of both canonical pages directly against the required new phrases and the configured ad loader and consent/privacy links, ideally using an uncached HTTP request or the GitHub Pages live-run verification script, then append a further report only if the change is genuinely observed. Keep the release state as deployed but **not independently verified live** until such evidence exists. If still stale after a reasonable cache window, diagnose GitHub Pages artifact/routing/cache rather than claiming success.
