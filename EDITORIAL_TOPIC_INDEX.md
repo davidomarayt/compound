@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 410 published articles and guides, 69 tools,
+**Included:** 411 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -369,6 +369,7 @@ For the complete register (including 510+ company profiles), open
 - [Tesla Stock Guide: Cars, Energy, Autonomy and Valuation](https://compound.ie/wealth/tesla-q3-2026-autonomy-investment-case/) — **Wealth**
 - [Tesla's energy business: why more battery deployments do not guarantee more profit](https://compound.ie/wealth/tesla-energy-storage-margins/) — **Wealth**
 - [Tesla's Roadster Flew. Can It Actually Move the Business?](https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/) — **Wealth**
+- [Tesla’s $3.1 Billion Texas Polysilicon Plan: Can Solar Manufacturing Pay Off?](https://compound.ie/news/tesla-texas-polysilicon-plant-2026/) — **Wealth**
 - [The Fed has raised US interest rates: what could it mean for Ireland?](https://compound.ie/news/fed-rate-hike-ireland-september-2026/) — **Wealth**
 - [The Ploughing: a history of gathering, and why it matters for wellbeing](https://compound.ie/life/ploughing-championships-history-community-mental-health/) — **Life**
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
