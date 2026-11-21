@@ -11,6 +11,7 @@ import json
 import os
 import re
 import shutil
+from datetime import date
 from pathlib import Path
 
 
@@ -60,13 +61,16 @@ class ArticleRenderCache:
         raw = os.environ.get("COMPOUND_ARTICLE_CACHE_DIR", "").strip()
         directory = Path(raw).resolve() if raw else None
         code = sorted((site_root / "templates").rglob("*.html"))
-        code += sorted(site_root.glob("*.py"))
+        # Include all Python modules used to assemble pages, not only the
+        # site module: changes to imports must invalidate cached HTML.
+        code += sorted(site_root.parent.rglob("*.py"))
         code += [content_dir / "site.yml"]
         # All article pages use the same year; audit and production cannot share.
         base = hash_inputs(code, extras={
             "site_base_url": site_base_url,
             "email_form_action": email_form_action,
             "audit": os.environ.get("COMPOUND_AUDIT_MODE", ""),
+            "year": date.today().year,
         })
         return cls(directory, base)
 
