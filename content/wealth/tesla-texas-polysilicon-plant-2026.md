@@ -21,6 +21,11 @@ tags:
 - energy
 - united-states
 - company-research
+hero_image_url: https://upload.wikimedia.org/wikipedia/commons/4/48/Tesla_Model_Y_2025_at_Santana_Row_dllu_01.jpg
+hero_image_alt: Tesla Model Y at Santana Row in March 2025, archival Tesla photograph; this does not depict the proposed Texas polysilicon factory.
+hero_image_credit: Dllu / Wikimedia Commons — CC BY-SA 4.0; 3 March 2025
+hero_image_source: https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_2025_at_Santana_Row_dllu_01.jpg
+require_pinned_hero: true
 social:
   enabled: false
 sources:
