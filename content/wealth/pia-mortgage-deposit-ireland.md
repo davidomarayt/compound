@@ -30,8 +30,10 @@ sources:
     url: https://www.aib.ie/help-and-guidance/mortgages-faq/what-lenders-look-for-in-bank-statements-for-mortgage
   - title: "AIB: Documentation for first-time-buyer mortgage applications"
     url: https://aib.ie/help-and-guidance/mortgages-faq/first-time-buyer-documentation-need-to-supply
-  - title: "Bank of Ireland: Mortgage Application Form, January 2026, pp. 4 and 11 (account statements, proof of funds, shares as other assets)"
-    url: https://personalbanking.bankofireland.com/app/uploads/6695131-Mortgage-Application-Form-Jan-2026-FA.pdf
+  - title: "AIB: Your Mortgage Checklist (outside-AIB investment statements and proof of source of funding)"
+    url: https://www.aib.ie/content/dam/aib/personal/docs/our-products/mortgages/mortgage-checklist.pdf
+  - title: "Bank of Ireland: Mortgage Application Form, June 2026, pp. 4 and 11 (account statements, proof of funds, shares as other assets)"
+    url: https://personalbanking.bankofireland.com/app/uploads/Mortgage-Application-Form-June-2026.pdf
   - title: "Bank of Ireland: First-time buyer mortgage FAQ (gambling transaction disclosure)"
     url: https://personalbanking.bankofireland.com/borrow/mortgages/first-time-buyer/
   - title: "CCPC: Thinking of investing (risk and time horizon)"
@@ -82,7 +84,7 @@ The [Competition and Consumer Protection Commission (CCPC)](https://www.ccpc.ie/
 
 ### Evidence from Bank of Ireland's actual application form
 
-Bank of Ireland's **January 2026 mortgage application form** makes a distinction that matters for PIA investors:
+Bank of Ireland's **June 2026 mortgage application form** makes a distinction that matters for PIA investors:
 
 | What the application asks about | What it tells us | What it **does not** prove |
 | --- | --- | --- |
@@ -91,7 +93,9 @@ Bank of Ireland's **January 2026 mortgage application form** makes a distinction
 | Proof of deposit funding | It asks about the source of funds, with supporting documents where needed. | That an app screenshot alone will satisfy every lender. |
 | Account statements | Its checklist requests six months of non-BOI current-account statements and 12 months of savings statements showing the build-up. | That every Irish lender uses exactly the same period or documentation. |
 
-These details are on **pages 4 and 11** of the bank's [January 2026 application form](https://personalbanking.bankofireland.com/app/uploads/6695131-Mortgage-Application-Form-Jan-2026-FA.pdf). AIB separately requires records of accounts, savings and debts, including statements for accounts held outside AIB. [AIB mortgage document guidance](https://aib.ie/help-and-guidance/mortgages-faq/first-time-buyer-documentation-need-to-supply).
+These details are on **pages 4 and 11** of the bank's [June 2026 application form](https://personalbanking.bankofireland.com/app/uploads/Mortgage-Application-Form-June-2026.pdf). AIB goes further in its [published mortgage checklist](https://www.aib.ie/content/dam/aib/personal/docs/our-products/mortgages/mortgage-checklist.pdf): it specifically requests **six months of statements for investments** held outside AIB, alongside the same period for savings and borrowing accounts. The bank also says it may request documentary evidence of the source of the balance of funds before loan offer. This is unusually direct evidence that **investments are an acknowledged account category**, although it still does not promise that invested money will qualify as cash deposit funds or that monthly ETF purchases will satisfy an affordability test.
+
+**Documentation periods can differ even within one lender’s published material.** Bank of Ireland’s June 2026 paper form requests twelve months of non-BOI savings statements in its checklist, while its [current online documentation checklist](https://personalbanking.bankofireland.com/borrow/mortgages/documentation-checklist/) lists six months. Ask your mortgage specialist which requirements apply to your individual application; do not assume the older or longer checklist is universally binding.
 
 **What this means:** There is strong evidence that lenders already know how to **ask about investments and shares**. There is **not yet evidence** that Bank of Ireland, AIB or another lender will automatically accept an unliquidated PIA balance as the final deposit, or count a €750 monthly fund purchase exactly as a €750 monthly savings deposit. It would be misleading to claim either.
 
@@ -246,7 +250,7 @@ There is a further question for people who already invest outside a PIA: **movin
 
 ### Can a bank accept money withdrawn from an investment account as a house deposit?
 
-**Potentially**, where the borrower can evidence ownership, source and access to the funds, and the mortgage lender is satisfied. Shares are explicitly listed in Bank of Ireland's January 2026 application under **other assets**, but that is not an assurance that every invested asset counts at full market value as immediately usable deposit cash.
+**Potentially**, where the borrower can evidence ownership, source and access to the funds, and the mortgage lender is satisfied. Shares are explicitly listed in Bank of Ireland's June 2026 application under **other assets**, but that is not an assurance that every invested asset counts at full market value as immediately usable deposit cash.
 
 ### If I invest €750 a month instead of saving €750, will the bank see that as savings?
 
@@ -278,7 +282,7 @@ It equals the **standard 10% minimum mortgage deposit** only while it remains wo
 
 ### Does PIA investing replace my need to show six months of good bank statements?
 
-No. Mortgage lenders still assess income, outgoings, borrowings and account management. Document requests vary by lender and circumstances. Bank of Ireland's January 2026 form requests six months of non-BOI current-account statements and twelve months of savings history for relevant accounts.
+No. Mortgage lenders still assess income, outgoings, borrowings and account management. Document requests vary by lender and circumstances. Bank of Ireland's June 2026 form requests six months of non-BOI current-account statements and twelve months of savings history for relevant accounts.
 
 ### Can a couple each withdraw from a separate PIA for a joint mortgage deposit?
 
