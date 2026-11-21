@@ -1,0 +1,58 @@
+{
+  "story_fingerprint": "e7434de3c3965d5908dcdbf1",
+  "company": "MOG.A/MOG.B",
+  "date": "2026-11-21",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Moog's record sales, backlog and free cash flow must be assessed separately from unusual benefits and a pervasive material weakness in financial reporting controls.",
+  "article_path": "content/wealth/moog-record-results-control-weakness.md",
+  "canonical_url": "https://compound.ie/wealth/moog-record-results-control-weakness/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/67887/000162828026075202/mog-20261003.htm",
+    "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q4/Moog-FY26-Q4-Earnings-Release.pdf"
+  ],
+  "identity": {
+    "issuer": "Moog Inc.",
+    "CIK": 67887,
+    "filing_accession": "0001628280-26-075202",
+    "fiscal_year": 2026,
+    "fiscal_period": "FY",
+    "period_end": "2026-10-03",
+    "filing_date": "2026-11-20",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked the editorial topic index, both content inventories, prior 14 days of articles, public ledgers and recent PRs. No Moog article or active attempt addresses cash/backlog alongside the new control weakness. Moog has no maintained /stocks/mog.a/ or /stocks/mog.b/ profile, so none was invented.",
+  "claim_checks": [
+    {"claim": "FY sales $4.522939bn, +17%, and GAAP net earnings $419.921m, +79%", "source_indexes": [0, 1], "location_or_arithmetic": "10-K earnings statement and official results release", "result": "verified in separate claim pass"},
+    {"claim": "Reported segment margin 13.9% vs 11.6%; adjusted segment margin 14.2% vs 13.0%", "source_indexes": [0, 1], "location_or_arithmetic": "Results release; GAAP and adjusted comparisons kept separate", "result": "verified in separate claim pass"},
+    {"claim": "Adjusted net earnings $396m, +42%; FY included $30m of IEEPA tariff-refund claims and tax benefits", "source_indexes": [0, 1], "location_or_arithmetic": "Release year highlights and 10-K MD&A", "result": "verified in separate claim pass"},
+    {"claim": "Total backlog $7.73bn, +29%; 12-month backlog $3.42bn, +14%", "source_indexes": [0], "location_or_arithmetic": "10-K MD&A backlog table; definition of 12-month backlog retained", "result": "verified in separate claim pass"},
+    {"claim": "Operating cash flow $443.037m; capex $135.822m; company-defined FCF $307m", "source_indexes": [0, 1], "location_or_arithmetic": "10-K cash flows; 443.037-135.822=307.215", "result": "verified in separate claim pass"},
+    {"claim": "Customer advances supported operating cash while receivables partly offset", "source_indexes": [0], "location_or_arithmetic": "10-K liquidity discussion; presented as management explanation", "result": "verified in separate claim pass"},
+    {"claim": "$500m of 4.25% notes due 2027 refinanced with 5.50% notes due 2034", "source_indexes": [0], "location_or_arithmetic": "10-K financing discussion", "result": "verified in separate claim pass"},
+    {"claim": "Management and KPMG concluded ICFR was ineffective; KPMG adverse ICFR opinion but unqualified financial-statement opinion", "source_indexes": [0], "location_or_arithmetic": "10-K Item 9A and auditor reports; article explicitly distinguishes the two opinions", "result": "verified in separate claim pass"},
+    {"claim": "No restatement announced in the filing and management performed additional procedures", "source_indexes": [0], "location_or_arithmetic": "10-K Item 9A; absence narrowly described, not proof no future issue", "result": "verified in separate claim pass"}
+  ],
+  "fact_check_notes": [
+    "The article does not allege fraud or a misstatement; it uses the filing's definition of material weakness.",
+    "The financial-statement and internal-control audit opinions are kept distinct.",
+    "Backlog is not treated as guaranteed revenue, and customer advances are not treated as permanent cash conversion. No price target or consensus figure is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:A_Moog_Inc._manufacturing_plant_in_Peachtree,_North_Carolina_03.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/4/48/A_Moog_Inc._manufacturing_plant_in_Peachtree%2C_North_Carolina_03.jpg",
+    "photographer": "Harrison Keely",
+    "license": "CC BY 4.0",
+    "capture_date": "2025-04-08",
+    "description": "Moog manufacturing plant in Peachtree, North Carolina; archival image cropped and resized",
+    "unique_asset": true,
+    "published_image_sha256": "8822d2bc9fd16f144c67cc6c55f53a09cff0fe9ca396115360070d88aa9b3230"
+  },
+  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "pending", "deployment": "pending"},
+  "article_sha256": "d11d0237b0e44161dce6bcf6af5c4e97d8c6dbd548ddad3ef230f4c0f837580b",
+  "publication": null,
+  "new_articles_published": 0
+}
