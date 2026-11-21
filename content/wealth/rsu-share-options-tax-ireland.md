@@ -44,8 +44,10 @@ sources:
     url: https://www.revenue.ie/en/additional-incomes/employment-related-shares/unapproved-share-option-schemes/disposal-share-options.aspx
   - title: "Revenue: Share reporting obligations — payroll withholding and annual share-scheme reporting. Checked 4 October 2026."
     url: https://www.revenue.ie/en/employing-people/share-schemes/employer-reporting/index.aspx
-  - title: "Revenue: How to calculate CGT — 33% standard rate and €1,270 annual personal exemption. Checked 4 October 2026."
+  - title: "Revenue: How to calculate CGT — €1,270 annual exemption and standard/historic rates. Rate section checked 21 November 2026."
     url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
+  - title: "Revenue eBrief 142/26 (6 October 2026): standard CGT reduced to 31% for disposals on or after 7 October 2026; development land remains 33%. Checked 21 November 2026."
+    url: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx
   - title: "Revenue: When and how to pay and file CGT — payment and return deadlines. Checked 4 October 2026."
     url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx
   - title: "Revenue: Selling or disposing of shares — FIFO and share-loss rules. Checked 4 October 2026."
@@ -74,7 +76,7 @@ Those stages use different rules, different tax bases and different filing respo
 <p>If you then hold the shares and later sell them, a separate CGT calculation can arise. Your employer does not normally calculate or pay that CGT for you.</p>
 </div>
 
-This guide reflects Revenue rules checked on **4 October 2026** and separates the payroll event from the later investor tax obligations.
+This guide separates the payroll event from the later investor tax obligations. The RSU and share-option payroll rules were checked on **4 October 2026**; the **later-sale CGT rate and example below** were specifically rechecked against Revenue on **21 November 2026**. This is not a full re-review of the other sections.
 
 It focuses on the common position for an Irish employee receiving ordinary RSUs or unapproved share options. Approved schemes, KEEP, internationally mobile employees, directors, non-domiciled individuals and unusual plan structures can require different treatment.
 
@@ -162,7 +164,7 @@ The later sale is a separate event.
 
 Revenue states that a disposal of RSU shares may give rise to CGT and that you must report the disposal yourself.
 
-For most ordinary share gains, the standard CGT rate is **33%**.
+For most ordinary share gains realised on a disposal **on or after 7 October 2026**, the standard CGT rate is **31%**, down from **33% for earlier standard disposals up to 6 October 2026**. Revenue still applies a separate 33% rate to development land. The **share disposal date**, not the RSU vesting or option exercise date, matters for the standard CGT rate. See our [Capital Gains Tax guide](/wealth/capital-gains-tax-ireland/) for the dates, exceptions and wider calculation.
 
 Individuals also have an annual **€1,270 personal CGT exemption**.
 
@@ -186,9 +188,9 @@ If your full €1,270 annual exemption is still available:
 
 **Taxable gain: €4,000 − €1,270 = €2,730.**
 
-At 33%:
+Assuming the sale is a standard disposal **on or after 7 October 2026**, the 31% CGT calculation is **€2,730 × 31% = €846.30**.
 
-**Illustrative CGT: €900.90.**
+For the same taxable gain on a standard disposal **up to 6 October 2026**, the former 33% rate would instead produce **€900.90**. These are illustrative figures before other personal circumstances, losses or reliefs.
 
 The payroll tax at vesting and the CGT on the later €4,000 increase are different taxes on different parts of the economic return.
 
