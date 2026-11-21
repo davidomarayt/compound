@@ -44,7 +44,10 @@ def render_key(*, base: str, article: object, recommendations: list[object],
         "profile": profile,
     }
     return hashlib.sha256(
-        json.dumps(payload, sort_keys=True, default=str, ensure_ascii=False).encode("utf-8")
+        # Preserve source insertion order: trial tables and other metadata can
+        # contain mixed integer/string keys, which JSON cannot sort together.
+        # A different order causes a safe cache miss rather than stale output.
+        json.dumps(payload, sort_keys=False, default=str, ensure_ascii=False).encode("utf-8")
     ).hexdigest()
 
 
