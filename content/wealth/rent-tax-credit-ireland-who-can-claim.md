@@ -8,7 +8,7 @@ slug: rent-tax-credit-ireland-who-can-claim
 news_image_query: "rental apartment keys tenancy paperwork Ireland"
 pillar: wealth
 date: '2026-09-13'
-summary: The Rent Tax Credit is worth up to €1,000 a year for a single renter and €2,000 for a jointly assessed couple, but you have to claim it yourself. Here is who qualifies, what the RTB (Residential Tenancies Board) registration rule really means, how to claim in myAccount (Revenue's online service for individuals) or on Form 11, and why the 2022 year disappears on 31 December 2026.
+summary: The 2026 Rent Tax Credit is worth up to €1,000 a year for a single renter and €2,000 for a jointly assessed couple, with a higher 2027–2028 maximum proposed in Budget 2027, but you have to claim it yourself. Here is who qualifies, what the RTB (Residential Tenancies Board) registration rule really means, how to claim in myAccount (Revenue's online service for individuals) or on Form 11, and why the 2022 year disappears on 31 December 2026.
 tags:
 - rent-tax-credit
 - renting
@@ -23,6 +23,8 @@ sources:
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
 - title: 'Revenue: How much Rent Tax Credit can you claim'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx
+- title: 'Oireachtas: Budget Statement 2027, Dáil Éireann, 6 October 2026 — announced rent-credit increase (legislation pending verification)'
+  url: https://www.oireachtas.ie/en/debates/debate/dail/2026-10-06/3/
 - title: 'Revenue: Rent Tax Credit qualifying conditions'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/qualifying-conditions.aspx
 - title: 'Revenue: Rent Tax Credit for your principal private residence'
@@ -39,11 +41,11 @@ sources:
   url: https://rtb.ie/register-tenancies/register-a-tenancy/who-should-register/
 figures:
 - value: €1,000
-  label: Maximum credit, single person, 2024 to 2028
+  label: Maximum credit, single person, 2024 to 2026 (2027–2028 proposal separate)
   source_url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
   quote: For 2024 to 2028, the maximum value of the Rent Tax Credit is €2,000 per year for jointly assessed married couples or civil partners. The maximum value is €1,000 in all other cases, including single persons.
 - value: €2,000
-  label: Maximum credit, jointly assessed couple, 2024 to 2028
+  label: Maximum credit, jointly assessed couple, 2024 to 2026 (2027–2028 proposal separate)
   source_url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
   quote: For 2024 to 2028, the maximum value of the Rent Tax Credit is €2,000 per year for jointly assessed married couples or civil partners.
 - value: €500
@@ -136,17 +138,19 @@ item_id: 149
 draft_id: 19
 approved_by: telegram:DavieXBT
 ---
-If you pay rent for a home in Ireland, you can probably knock up to €1,000 a year off your income tax bill, or €2,000 if you are a married couple or civil partners taxed jointly ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). That is the Rent Tax Credit. It is not paid automatically. You have to claim it, and you can claim it for every year back to 2022.
+If you pay qualifying rent for a home in Ireland, you can potentially knock up to €1,000 off your **2026** income tax bill, or €2,000 if you are a married couple or civil partners taxed jointly ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). That is the Rent Tax Credit. It is not paid automatically. You have to claim it, and you can claim it for every year back to 2022.
 
 The catch is the four-year rule. Revenue only lets you go back four years, so the 2022 credit must be claimed by 31 December 2026 or it is gone for good ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/four-year-rule/index.aspx)). If you have been renting since 2022 and never claimed, this is the year to sort it.
 
 If you want to check the amount rather than just the eligibility rules, use Compound's [Rent Tax Credit Calculator](/rent-tax-credit-calculator/). For the wider PAYE picture, see [Tax Credits in Ireland Explained](/wealth/tax-credits-ireland-explained/), and follow the [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/) for any change to the credit after 2026.
 
+**2027–2028 planning note (source checked 18 November 2026):** Budget 2027 announced a higher maximum of **€1,150 for an individual** and **€2,300 for a jointly assessed couple**, proposed for the **2027 and 2028 tax years** ([Oireachtas Budget Statement, 6 October 2026](https://www.oireachtas.ie/en/debates/debate/dail/2026-10-06/3/)). These are **not the 2026 claim limits**. Revenue's live [Rent Tax Credit overview](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx), checked on 18 November, still displays the previous €1,000/€2,000 amounts for 2024–2028; the final legislative position and updated Revenue claim rules were not independently verified. See the [Budget 2027 rent-credit explanation](/wealth/rent-tax-credit-budget-2027-ireland/) and select the correct year in the [Rent Tax Credit Calculator](/rent-tax-credit-calculator/) before planning a claim.
+
 ## What is the Rent Tax Credit and how much is it worth in 2026?
 
 The Rent Tax Credit is available for the tax years 2022 to 2028 and reduces the amount of income tax you owe for the year ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). A tax credit comes straight off your tax bill, so €1,000 of credit means €1,000 less tax, not €1,000 less taxable income.
 
-The maximum depends on the year. For 2022 and 2023, it was €1,000 for jointly assessed married couples or civil partners and €500 in all other cases, including single people ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). For 2024 to 2028, it is €2,000 for jointly assessed couples and €1,000 in all other cases ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). The maximum has not gone up for 2026. The 2024 to 2028 figures are the ones that apply this year.
+The maximum depends on the year. For 2022 and 2023, it was €1,000 for jointly assessed married couples or civil partners and €500 in all other cases, including single people ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). For **2024–2026**, the maximum is €2,000 for jointly assessed couples and €1,000 in all other cases ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). The maximum **did not increase for 2026**. The Revenue webpage currently also labels these amounts as applicable through 2028, but Budget 2027 separately announced higher **proposed 2027–2028** caps (see the dated planning note above). Do not treat the 2027 proposal as a 2026 entitlement or assume the final law has been confirmed.
 
 You do not automatically get the full amount. Relief is granted at 20% of the rent you paid ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx)). Revenue's worked examples use a "specified amount" of €5,000 in rent for a single person and €10,000 for a jointly assessed couple, which is what you need to pay in the year to reach the maximum credit ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx)). Most renters paying market rent are well past those figures.
 
@@ -224,4 +228,4 @@ None of these are reasons not to check. Log into myAccount, look at 2022 first, 
 
 ## Related Compound guides
 
-Before claiming, use the [Rent Tax Credit Calculator](/rent-tax-credit-calculator/) to estimate the maximum credit your rent and Income Tax liability could support. For the wider system, see [Tax credits in Ireland explained](/wealth/tax-credits-ireland-explained/). Budget 2027 may also change the credit, so the latest position is tracked in [Rent Tax Credit and Budget 2027](/wealth/rent-tax-credit-budget-2027-ireland/).
+Before claiming, use the [Rent Tax Credit Calculator](/rent-tax-credit-calculator/) to estimate the maximum credit your rent and Income Tax liability could support. For the wider system, see [Tax credits in Ireland explained](/wealth/tax-credits-ireland-explained/). Budget 2027 has announced **proposed higher maximums for 2027–2028**; follow the separate [Rent Tax Credit and Budget 2027 guide](/wealth/rent-tax-credit-budget-2027-ireland/) and Revenue's updated claim guidance for the eventual statutory position.
