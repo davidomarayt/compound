@@ -7,9 +7,9 @@
   "target_new_articles_maximum": 3,
   "new_article_count_prepared": 2,
   "canonical_updates_prepared": 1,
-  "confirmed_live_new_articles": 0,
-  "confirmed_updated_canonicals": 0,
-  "status": "prepared_requires_independent_ci_editorial_photo_deployment_and_live_verification",
+  "confirmed_live_new_articles": 2,
+  "confirmed_updated_canonicals": 1,
+  "status": "github_pages_deployed_all_three_canonicals_independently_verified_live",
   "ads_policy": "Standard article/profile ads and existing consent/CMP remain enabled from publication, unrelated to human review; ad fill not guaranteed",
   "prior_publication_recovery": {
     "checked_dates": [
@@ -54,11 +54,14 @@
       "profile_url": "https://compound.ie/companies/openai/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "status": "published_verified_live",
+      "verified_live_result": "PASS: independent GitHub Pages site/mobile-audit job 136774566741, run 44880039014 (deploy head a34a185311812911107a89ff41ccac3d4ea6a852), 2026-11-21T07:35:58Z; fetched exact public canonical HTML, pinned real JPEG cover, OG/Twitter WebP, company hub backlinks and article/profile AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "live_verified_at_utc": "2026-11-21T07:35:58Z"
     },
     {
       "company": "Anthropic",
@@ -88,13 +91,16 @@
       "live_required_fingerprint": "1,127,000,000 shares",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "status": "prepared_canonical_update_pending_ci",
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "status": "updated_canonical_verified_live",
       "update_event_date": "2026-11-20",
-      "event_date_explanation": "The established canonical's Nasdaq trading event occurred 19 Nov; the source-backed IPO closing and full option exercise covered by this update occurred 20 Nov. The update_event_date, not event_date, dates the new claims. Profile latest_development retains a separately sourced 19 Nov Nasdaq listing milestone and date."
+      "event_date_explanation": "The established canonical's Nasdaq trading event occurred 19 Nov; the source-backed IPO closing and full option exercise covered by this update occurred 20 Nov. The update_event_date, not event_date, dates the new claims. Profile latest_development retains a separately sourced 19 Nov Nasdaq listing milestone and date.",
+      "verified_live_result": "PASS: independent GitHub Pages site/mobile-audit job 136774566741, run 44880039014 (deploy head a34a185311812911107a89ff41ccac3d4ea6a852), 2026-11-21T07:35:58Z; fetched exact public canonical HTML, pinned real JPEG cover, OG/Twitter WebP, company hub backlinks and article/profile AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "live_verified_at_utc": "2026-11-21T07:35:58Z"
     },
     {
       "company": "Canva",
@@ -122,42 +128,52 @@
       "profile_url": "https://compound.ie/companies/canva/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "status": "published_verified_live",
+      "verified_live_result": "PASS: independent GitHub Pages site/mobile-audit job 136774566741, run 44880039014 (deploy head a34a185311812911107a89ff41ccac3d4ea6a852), 2026-11-21T07:35:58Z; fetched exact public canonical HTML, pinned real JPEG cover, OG/Twitter WebP, company hub backlinks and article/profile AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "live_verified_at_utc": "2026-11-21T07:35:58Z"
     }
   ],
   "profile_updates": [
     {
       "slug": "openai",
       "profile_url": "https://compound.ie/companies/openai/",
-      "status": "prepared_watchlist_latest_development"
+      "status": "verified_sourced_profile_and_article_backlinks_live"
     },
     {
       "slug": "anthropic",
       "profile_url": "https://compound.ie/stocks/ant/",
-      "status": "prepared_listed_stock_latest_development"
+      "status": "verified_sourced_profile_and_article_backlinks_live"
     },
     {
       "slug": "canva",
       "profile_url": "https://compound.ie/companies/canva/",
-      "status": "prepared_watchlist_latest_development"
+      "status": "verified_sourced_profile_and_article_backlinks_live"
     }
   ],
   "production_deployment": {
-    "status": "not_started",
-    "confirmed_live_urls": 0,
-    "confirmed_live_new_articles": 0,
-    "confirmed_updated_canonicals": 0,
-    "verification_gate": [
-      "exact PR SHA CI test and performance",
-      "independent editorial and real licensed photo QA",
-      "static build with correct cover social tags and backlink",
-      "GitHub Pages site/mobile-audit",
-      "fetch each real canonical, profile, and OG assets, ad script"
+    "status": "github_pages_deployed_independently_verified",
+    "merge_commit_sha": "a34a185311812911107a89ff41ccac3d4ea6a852",
+    "site_workflow_run": 44880039014,
+    "site_workflow_url": "https://github.com/davidomarayt/compound/actions/runs/44880039014",
+    "mobile_audit_job": 136774566741,
+    "verified_at_utc": "2026-11-21T07:35:58Z",
+    "confirmed_live_urls": 3,
+    "confirmed_live_new_articles": 2,
+    "confirmed_updated_canonicals": 1,
+    "verified_checks": [
+      "canonical HTTP HTML with canonical tags",
+      "Anthropic update fingerprint 1,127,000,000 shares",
+      "authentic pinned JPEG cover fetched",
+      "OG/Twitter image tags and linked WebP fetched",
+      "exact company profile backlink",
+      "article and profile AdSense loader"
     ]
   },
-  "branch_protection": "Native production protection previously absent; current direct protection API returned 403 to integration, enforce equivalent exact-commit CI and compare before merge; recommend native protection"
+  "branch_protection": "Native production protection previously absent; current direct protection API returned 403 to integration, enforce equivalent exact-commit CI and compare before merge; recommend native protection",
+  "updated_at_utc": "2026-11-21T07:35:58Z"
 }
