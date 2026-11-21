@@ -2,8 +2,8 @@
   "story_fingerprint": "600be052d03f82147d879216",
   "company": "BJ",
   "date": "2026-11-21",
-  "status": "prepared",
-  "publication_state": "prepared_not_published",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
   "story_thesis": "BJ's traffic, membership and digital growth must be assessed against gasoline-inflated comparable sales, promotion-driven merchandise-margin pressure, a one-time litigation benefit and approximately $800 million of annual capital spending.",
@@ -52,8 +52,24 @@
     "unique_asset": true,
     "published_image_sha256": "dd4ba813a1e56aa0e661655c5177cfbfb366115b618faefb011bca57c02853b2"
   },
-  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "pending", "deployment": "pending"},
+  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "passed on exact PR head e5e77cd8370dbea8b06943dac1a43882a69e5949 in workflow run 44889403022", "deployment": "passed: build, deploy, verify-live and verify-finance-discovery succeeded for merge commit 4b063850cb53fff15193c8135d665f93e144508d in site workflow run 44890363664", "live_verification": "passed: HTTP 200 canonical and cover/social assets; expected title, thesis figures, primary-source links and licensed-image credit; indexable robots metadata; standard ad loader; sitemap and finance catalogue inclusion; Open Graph/Twitter image 1200x675"},
   "article_sha256": "f8e6fece8ebc5417aa6c756757ff31eaea9aba39cf7e4d90dfd3319d498a8a2e",
-  "publication": null,
-  "new_articles_published": 0
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/229",
+    "validated_head_sha": "e5e77cd8370dbea8b06943dac1a43882a69e5949",
+    "merge_commit_sha": "4b063850cb53fff15193c8135d665f93e144508d",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/44889403022",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44890363664",
+    "live_verified_at": "2026-11-21T09:48:41Z",
+    "live_url": "https://compound.ie/wealth/bj-membership-margin-capex/",
+    "live_cover_url": "https://compound.ie/static/images/evergreen/bj-membership-margin-capex.jpg",
+    "live_cover_sha256": "291d54564b551072ceeb8959d1323e13feae40a31f0afdd630c553906d7422b2",
+    "live_cover_dimensions": [5152, 3864],
+    "live_social_image_url": "https://compound.ie/static/discover/bj-membership-margin-capex-16x9.webp",
+    "live_social_image_sha256": "14b1bb6e82f532fc9f80af7252624bca405d110eaa2ee8fef3cd13dea705309b",
+    "live_social_image_dimensions": [1200, 675],
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  },
+  "new_articles_published": 1
 }

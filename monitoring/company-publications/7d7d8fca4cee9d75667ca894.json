@@ -2,8 +2,8 @@
   "story_fingerprint": "7d7d8fca4cee9d75667ca894",
   "company": "IESC",
   "date": "2026-11-21",
-  "status": "prepared",
-  "publication_state": "prepared_not_published",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
   "story_thesis": "IES's data-centre-driven backlog and margin growth must convert into cash while the company integrates the $691 million DBM acquisition and considers a much larger repurchase authorisation.",
@@ -55,8 +55,24 @@
     "unique_asset": true,
     "published_image_sha256": "91cb4843eb0ea0928cb90e7cf558051b16b38f966427f3105647efd500813d13"
   },
-  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "pending", "deployment": "pending"},
+  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "passed on exact PR head e5e77cd8370dbea8b06943dac1a43882a69e5949 in workflow run 44889403022", "deployment": "passed: build, deploy, verify-live and verify-finance-discovery succeeded for merge commit 4b063850cb53fff15193c8135d665f93e144508d in site workflow run 44890363664", "live_verification": "passed: HTTP 200 canonical and cover/social assets; expected title, thesis figures, primary-source links and licensed-image credit; indexable robots metadata; standard ad loader; sitemap and finance catalogue inclusion; Open Graph/Twitter image 1200x675"},
   "article_sha256": "9c426fdc08093c5251727b290315513e49ef2ff98da22d798fa573bc5448b3b7",
-  "publication": null,
-  "new_articles_published": 0
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/229",
+    "validated_head_sha": "e5e77cd8370dbea8b06943dac1a43882a69e5949",
+    "merge_commit_sha": "4b063850cb53fff15193c8135d665f93e144508d",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/44889403022",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44890363664",
+    "live_verified_at": "2026-11-21T09:48:41Z",
+    "live_url": "https://compound.ie/wealth/ies-data-center-growth-acquisition-cash/",
+    "live_cover_url": "https://compound.ie/static/images/evergreen/ies-data-center-growth-acquisition-cash.jpg",
+    "live_cover_sha256": "83117e1542334b0bfd0c511787b6fb71b79a69a549eca7507cfa2bdcb50004a9",
+    "live_cover_dimensions": [4096, 3072],
+    "live_social_image_url": "https://compound.ie/static/discover/ies-data-center-growth-acquisition-cash-16x9.webp",
+    "live_social_image_sha256": "0fe6bd9f4abe399a4010acce4aef98574958dadf3430ec4dec41d03746165c34",
+    "live_social_image_dimensions": [1200, 675],
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  },
+  "new_articles_published": 1
 }
