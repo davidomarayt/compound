@@ -86,28 +86,52 @@
   }
   const source = document.getElementById('search-data');
   if (!source) return;
-  const index = JSON.parse(source.textContent), input = document.getElementById('q'), results = document.getElementById('results'), status = document.getElementById('search-status');
+  const index = JSON.parse(source.textContent);
+  const input = document.getElementById('q');
+  const results = document.getElementById('results');
+  const status = document.getElementById('search-status');
+  const more = document.getElementById('search-more');
+  const pageSize = 24;
+  let matches = [];
+  let shown = 0;
+  let activeQuery = '';
   const wordsOf = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
   const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text) node.textContent = text; return node; };
+
+  // The search index is already present for fast local filtering. Render cards
+  // in small, explicit batches so the landing page does not create hundreds of
+  // images and links before the reader has even entered a query.
+  function appendCard(a) {
+    const card = el('article', 'compound-story'), imageLink = el('a', 'card-image'); imageLink.href = a.url; imageLink.setAttribute('aria-label', 'Read ' + a.title);
+    const img = el('img'); if (a.image) img.src = a.image; img.alt = ''; img.loading = 'lazy'; img.width = 800; img.height = 520; imageLink.append(img);
+    const content = el('div', 'card-content'), meta = el('p', 'meta'); meta.append(el('span', 'category category-' + a.pillar.toLowerCase(), a.pillar), el('span', '', a.reading_minutes + ' min read'));
+    const heading = el('h3'), link = el('a', '', a.title); link.href = a.url; heading.append(link);
+    content.append(meta, heading, el('p', 'summary', a.description));
+    const bottom = el('div', 'card-bottom'), date = el('time', '', a.date_label); date.dateTime = a.date;
+    const read = el('a', '', 'Read story ↗'); read.href = a.url; read.setAttribute('aria-label', 'Read ' + a.title); bottom.append(date, read); content.append(bottom); if (a.image) card.append(imageLink); card.append(content); results.append(card);
+  }
+  function showNext() {
+    const next = matches.slice(shown, shown + pageSize);
+    next.forEach(({a}) => appendCard(a));
+    shown += next.length;
+    if (more) more.hidden = shown >= matches.length;
+    status.textContent = matches.length
+      ? 'Showing ' + shown + ' of ' + matches.length + (activeQuery ? ' matching' : '') + ' stories'
+      : (activeQuery ? 'No stories found.' : 'No stories available.');
+  }
   function run() {
     const query = wordsOf(input.value), words = query.split(/\s+/).filter(Boolean);
-    const matches = index.map(a => { const hay = wordsOf(a.title + ' ' + a.summary + ' ' + a.tags.join(' ')); return {a, match: words.every(w => hay.includes(w)), score: words.filter(w => wordsOf(a.title).includes(w)).length}; }).filter(x => x.match).sort((a, b) => b.score - a.score);
+    activeQuery = query;
+    matches = index.map(a => { const hay = wordsOf(a.title + ' ' + a.summary + ' ' + a.tags.join(' ')); return {a, match: words.every(w => hay.includes(w)), score: words.filter(w => wordsOf(a.title).includes(w)).length}; }).filter(x => x.match).sort((a, b) => b.score - a.score);
+    shown = 0;
     results.replaceChildren();
-    status.textContent = query ? matches.length + (matches.length === 1 ? ' story found' : ' stories found') : 'All ' + index.length + ' stories';
-    matches.forEach(({a}) => {
-      const card = el('article', 'compound-story'), imageLink = el('a', 'card-image'); imageLink.href = a.url; imageLink.setAttribute('aria-label', 'Read ' + a.title);
-      const img = el('img'); if (a.image) img.src = a.image; img.alt = ''; img.loading = 'lazy'; img.width = 800; img.height = 520; imageLink.append(img);
-      const content = el('div', 'card-content'), meta = el('p', 'meta'); meta.append(el('span', 'category category-' + a.pillar.toLowerCase(), a.pillar), el('span', '', a.reading_minutes + ' min read'));
-      const heading = el('h3'), link = el('a', '', a.title); link.href = a.url; heading.append(link);
-      content.append(meta, heading, el('p', 'summary', a.description));
-      const bottom = el('div', 'card-bottom'), date = el('time', '', a.date_label); date.dateTime = a.date;
-      const read = el('a', '', 'Read story ↗'); read.href = a.url; read.setAttribute('aria-label', 'Read ' + a.title); bottom.append(date, read); content.append(bottom); if (a.image) card.append(imageLink); card.append(content); results.append(card);
-    });
     if (!matches.length) results.append(el('p', 'empty', 'No stories found. Try a broader topic such as sleep, tax or wellbeing.'));
+    showNext();
   }
   input.value = new URLSearchParams(location.search).get('q') || '';
   input.addEventListener('input', run);
   input.form.addEventListener('submit', event => { event.preventDefault(); run(); });
   document.querySelectorAll('[data-query]').forEach(button => button.addEventListener('click', () => { input.value = button.dataset.query; run(); input.focus(); }));
+  if (more) more.addEventListener('click', showNext);
   run();
 })();
