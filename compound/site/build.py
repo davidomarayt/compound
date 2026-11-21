@@ -1778,21 +1778,6 @@ def build_site(settings: Settings) -> dict:
             (earnings_profile_by_ticker[tag] for tag in a.tags
              if tag in earnings_profile_by_ticker), None
         )
-        context = article_context(
-            env, settings, a, False,
-            earnings_ticker=profile[2] if profile else "",
-            earnings_company_name=profile[1] if profile else "",
-        )
-        context["stock_company_url"] = profile[0] if profile else ""
-        context["stock_company_name"] = profile[1] if profile else ""
-        context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
-        if is_automated_earnings:
-            context["earnings_company_url"] = profile[0] if profile else ""
-            context["earnings_company_name"] = profile[1] if profile else ""
-        if linked_tools:
-            context["article_body"] = insert_article_tool_cta(
-                context["article_body"], linked_tools[0], env, a.pillar
-            )
         recommendations = related(a, articles)
         article_path = out / a.url.strip("/") / "index.html"
         # Series articles depend on their complete publication order; render those
@@ -1802,6 +1787,21 @@ def build_site(settings: Settings) -> dict:
             tools=linked_tools, profile=profile,
         )
         if a.series_id or not article_cache.reuse(a.url, fingerprint, article_path):
+            context = article_context(
+                env, settings, a, False,
+                earnings_ticker=profile[2] if profile else "",
+                earnings_company_name=profile[1] if profile else "",
+            )
+            context["stock_company_url"] = profile[0] if profile else ""
+            context["stock_company_name"] = profile[1] if profile else ""
+            context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
+            if is_automated_earnings:
+                context["earnings_company_url"] = profile[0] if profile else ""
+                context["earnings_company_name"] = profile[1] if profile else ""
+            if linked_tools:
+                context["article_body"] = insert_article_tool_cta(
+                    context["article_body"], linked_tools[0], env, a.pillar
+                )
             _write(article_path, env.get_template(article_template(a)).render(
                 **context, related=recommendations, linked_tools=linked_tools))
             if not a.series_id:
