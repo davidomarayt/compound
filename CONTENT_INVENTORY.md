@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 407
+- Published editorial articles and guides: 410
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,8 +116,9 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 286
+## Wealth articles and guides — 289
 
+- [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -193,6 +194,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/)
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/)
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/)
+- [Employment Permits Portal Still Offline: What Applicants Can Do Now](https://compound.ie/news/ireland-employment-permits-portal-outage-2026/)
 - [EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?](https://compound.ie/news/eu-rwanda-deportation-centre-cost-2026/)
 - [EV vs Petrol vs Diesel in Ireland: Which Is Cheapest to Own?](https://compound.ie/wealth/ev-vs-petrol-vs-diesel-ireland/)
 - [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/)
@@ -244,6 +246,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/)
 - [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/)
 - [Irish Employment Hits a Record, but 130,200 Part-Time Workers Want More Hours](https://compound.ie/news/ireland-employment-q3-2026-underemployment/)
+- [Irish EV Buyers Put Running Costs First — and Home Charging Matters More](https://compound.ie/news/irish-ev-running-costs-home-charging-2026/)
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/)
 - [Irish House Prices Rose 4.7%: What the New €400,000 Median Means](https://compound.ie/news/irish-house-prices-september-2026/)
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
