@@ -59,3 +59,18 @@ def test_disabled_cache_and_invalid_urls_fall_back(tmp_path):
     enabled = ArticleRenderCache(tmp_path / "cache", "version")
     assert not enabled.reuse("/../../private/", "hash", out)
     assert not out.exists()
+
+
+def test_mixed_numeric_and_string_keys_in_article_metadata(tmp_path):
+    """Regression: real article charts include nested int and string keys."""
+    article = _article()
+    article.charts = [{"values": {1: "point a", "2": "point b"}}]
+    first = render_key(base="site", article=article,
+                       recommendations=[], tools=[], profile=None)
+    again = render_key(base="site", article=article,
+                       recommendations=[], tools=[], profile=None)
+    assert first == again
+    article.charts[0]["values"][1] = "changed"
+    changed = render_key(base="site", article=article,
+                         recommendations=[], tools=[], profile=None)
+    assert changed != first
