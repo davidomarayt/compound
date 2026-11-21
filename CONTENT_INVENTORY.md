@@ -12,7 +12,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
-- Information and policy pages: 33
+- Information and policy pages: 34
 - Main hubs: 11
 - Public-company directory profiles: 512
 - Private-company directory profiles: 12
@@ -622,11 +622,12 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
 - Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
 
-## Information and policy pages — 33
+## Information and policy pages — 34
 
 - [About](https://compound.ie/about/)
 - [Caffeine Calculator: How Much Caffeine Is Left at Bedtime?](https://compound.ie/caffeine-calculator/)
 - [Can I hold this share, bond or ETF in an Irish PIA?](https://compound.ie/pia-investment-eligibility/)
+- [Caring for a Parent in Ireland: What Help Can You Get?](https://compound.ie/claim-caring-for-a-parent/)
 - [Contact](https://compound.ie/contact/)
 - [Cookie policy](https://compound.ie/cookies/)
 - [Disclaimer](https://compound.ie/disclaimer/)
