@@ -12,7 +12,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
-- Information and policy pages: 30
+- Information and policy pages: 33
 - Main hubs: 11
 - Public-company directory profiles: 512
 - Private-company directory profiles: 12
@@ -622,7 +622,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
 - Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
 
-## Information and policy pages — 30
+## Information and policy pages — 33
 
 - [About](https://compound.ie/about/)
 - [Caffeine Calculator: How Much Caffeine Is Left at Bedtime?](https://compound.ie/caffeine-calculator/)
@@ -641,6 +641,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Ireland Rent Map](https://compound.ie/ireland-rent-map/)
 - [Irish sun path explorer](https://compound.ie/sun-path-explorer/)
 - [Life](https://compound.ie/life/)
+- [PAYE Tax Refund Checklist for Ireland](https://compound.ie/claim-paye-refund/)
 - [PIA vs ETF vs Shares Calculator Ireland: After-Tax Comparison](https://compound.ie/pia-vs-ordinary-investing/)
 - [PIA vs Pension Calculator Ireland: Tax Relief, Fees & Growth](https://compound.ie/pia-vs-pension/)
 - [Privacy policy](https://compound.ie/privacy/)
@@ -654,6 +655,8 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
 - [Solar Panels, Inverters & Batteries Ireland: Equipment Guide](https://compound.ie/solar-equipment/)
 - [Solar Quote Comparison Calculator Ireland](https://compound.ie/solar-compare-quotes/)
+- [What Can I Claim? Irish Supports & Tax Reliefs](https://compound.ie/what-can-i-claim/)
+- [What Can You Claim After Having a Baby in Ireland?](https://compound.ie/claim-having-a-baby/)
 
 ## Site hubs and directories — 11
 
