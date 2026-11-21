@@ -1,6 +1,6 @@
 ---
-title: "Weight Loss Pills in Ireland (2026): What Works, Prescriptions and New Tablets"
-seo_title: "Weight Loss Pills Ireland 2026: Orlistat, Mysimba, Wegovy & New Drugs"
+title: "Weight Loss Pills in Ireland"
+seo_title: "Weight Loss Pills in Ireland | Treatments, Costs & New Drugs"
 slug: weight-loss-pills-ireland
 canonical_path: /health/weight-loss-pills-ireland/
 pillar: health
