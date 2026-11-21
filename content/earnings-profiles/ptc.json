@@ -2,33 +2,33 @@
   "cik": 857005,
   "company": "PTC Inc.",
   "latest": {
-    "accession": "0001193125-26-328444",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001193125-26-470217",
+    "filed": "2026-11-20",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.03,
-        "prior_year": 1.17,
+        "current": 8.93,
+        "prior_year": 6.08,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 118780000,
-        "prior_year": 141328000,
+        "current": 1033284000,
+        "prior_year": 733997000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 600049000,
-        "prior_year": 643937000,
+        "current": 2733431000,
+        "prior_year": 2739226000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526328444/ptc-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526470217/ptc-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526328444/ptc-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-470217",
+      "filed": "2026-11-20",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.93,
+          "prior_year": 6.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1033284000,
+          "prior_year": 733997000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2733431000,
+          "prior_year": 2739226000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526470217/ptc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PTC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-21"
 }
