@@ -8,6 +8,19 @@ import yaml
 
 
 CONDITIONS_URL = "/health/conditions/"
+COMMON_CONDITIONS_SERVICE_ELIGIBILITY = {
+    "allergic-rhinitis": "A participating pharmacist can assess allergic rhinitis from age 2.",
+    "cold-sores": "A participating pharmacist can assess cold sores from 1 month of age.",
+    "conjunctivitis": (
+        "A participating pharmacist can assess infective conjunctivitis from 6 months of age "
+        "and allergic conjunctivitis from age 2."
+    ),
+    "cystitis": "A participating pharmacist can assess uncomplicated cystitis in women aged 16 to 64.",
+    "impetigo": "A participating pharmacist can assess impetigo from 2 months of age.",
+    "oral-thrush": "A participating pharmacist can assess oral thrush from 1 month of age.",
+    "shingles": "A participating pharmacist can assess shingles from age 18.",
+    "vaginal-thrush": "A participating pharmacist can assess vaginal thrush from age 16 to 60.",
+}
 MEASURES = {
     "prevalence": "Prevalence estimate",
     "registry": "Registry or care count",
@@ -164,6 +177,7 @@ def load_conditions(content, article_urls):
             "sections": sections,
             "evidence_heading": evidence_heading,
             "schema_type": schema_type,
+            "pharmacy_eligibility": COMMON_CONDITIONS_SERVICE_ELIGIBILITY.get(slug),
         }
         by_slug[slug] = entry
         seen_urls[official_url] = entry
