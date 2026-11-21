@@ -70,6 +70,8 @@ Use the [Mortgage Borrowing Calculator](/mortgage-borrowing-calculator/) to mode
 
 ## The 10% deposit rule still applies
 
+**What if your deposit is held in investments?** See our [PIA and mortgage-deposit evidence guide](/wealth/pia-mortgage-deposit-ireland/) for Bank of Ireland and AIB documentation, regular investing versus frequent trading, and why an ETF balance may need to be liquidated before purchase.
+
 For principal-home purchases, first-time and second/subsequent buyers are generally limited to 90% Loan-to-Value.
 
 That means the property price must satisfy both:

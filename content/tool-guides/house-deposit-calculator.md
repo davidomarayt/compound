@@ -1,5 +1,7 @@
 ## What this calculator is for
 
+**Have you invested your deposit in shares or a future PIA?** Use the amount you could genuinely access, not an assumed future stock-market balance. Our [guide to PIAs and mortgage deposits](/wealth/pia-mortgage-deposit-ireland/) explains market risk, how lenders assess funds and how regular investing differs from speculative trading.
+
 This calculator shows the **standard minimum deposit implied by Ireland's loan-to-value rules** and the maximum mortgage that LTV alone would permit.
 
 For a principal home it models the standard 90% maximum LTV. For a buy-to-let purchase it models the standard 70% maximum LTV.

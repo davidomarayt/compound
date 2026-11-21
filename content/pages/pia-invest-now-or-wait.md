@@ -8,6 +8,8 @@ meta_description: "Should you invest now or wait for Ireland's PIA in July 2027?
 
 ## Should I invest now or wait for the PIA in Ireland?
 
+**Planning to buy a home?** This calculator deals with investing before the scheme opens, not mortgage underwriting. Our separate [PIA and mortgage-deposit guide](/wealth/pia-mortgage-deposit-ireland/) explains what lenders might ask if your deposit is invested in an ETF or shares, including evidence of source of funds.
+
 **Short answer:** There is no general rule that you should stop investing until the proposed **Personal Investment Account (PIA)** launches. If your money is for a long-term goal, waiting in cash means missing potential market gains, but investing now exposes you to potential losses and existing Irish investment taxes. **Selling today's investments to fund a future PIA can itself create a tax bill.** If the money might be needed within the next few years, keeping it safe and accessible may be more important than any hypothetical market return.
 
 The right comparison is not simply "tax-free PIA versus taxed shares". It is **investing now in an ordinary account and potentially selling on 1 July 2027** versus **holding cash until then**, after allowing for investment costs, CGT or fund exit tax on a sale, deposit interest tax (DIRT), and the proposed PIA contribution cap. That is what our independent calculator models.
