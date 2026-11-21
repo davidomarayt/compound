@@ -114,6 +114,44 @@ Ask a registered Irish pharmacy for a price on the *specific formulation, streng
 
 The [HSE warns against buying obesity medicines online](https://www2.hse.ie/conditions/obesity/medicines/) because products may be counterfeit or unsafe. Be sceptical of sellers advertising unapproved experimental tablets, “research peptides,” or guaranteed rapid weight loss.
 
+## Am I eligible for a weight-management medicine in Ireland?
+
+A medicine is usually considered in the context of a person's overall health, not simply whether they want to lose a few kilograms. Body mass index (BMI) is one screening measure; clinicians also consider weight-related conditions, previous treatment, other medicines, pregnancy plans, and whether the possible benefits outweigh the risks.
+
+For **prescription orlistat**, the [HSE's guidance](https://www2.hse.ie/conditions/obesity/medicines/) describes use with a reduced-calorie diet when someone has a **BMI of at least 30**, or **at least 28 with a weight-related condition**. For **Mysimba**, the [EMA indication](https://www.ema.europa.eu/en/medicines/human/EPAR/mysimba) is a BMI of at least **30**, or **27–under 30 with a weight-related condition** such as type 2 diabetes, abnormal blood lipids or controlled high blood pressure. These are indication thresholds, not an automatic entitlement to a prescription, and the eligibility criteria of newer drugs are product-specific.
+
+An appointment is more useful if you bring a list of current medicines (including supplements), your weight and relevant health history, and any previous experience with weight-management treatment. A pharmacist can help check medicine interactions and whether a named product is actually stocked locally.
+
+## The safety differences that matter most
+
+**Orlistat:** Because unabsorbed fat passes through the bowel, frequent oily stools, urgency and diarrhoea can occur. The [HSE notes](https://www2.hse.ie/conditions/obesity/medicines/) that a lower-fat diet can reduce these effects. Orlistat may affect absorption of vitamins **A, D, E and K**; a pharmacist can advise whether a multivitamin is appropriate and when to take it. Interactions with other drugs matter, including anticoagulants, so disclose all medication before starting.
+
+**Mysimba:** This medicine requires particular care with **blood pressure, seizure risk, opioid-containing painkillers and certain psychiatric medicines**. In its [2025 European safety review](https://www.ema.europa.eu/en/medicines/human/referrals/mysimba), regulators concluded that benefits continue to outweigh risks within the authorised use, but **cardiovascular safety beyond 12 months remains uncertain**. They strengthened annual reassessment requirements. Patients should not discontinue prescribed medicines or change an opioid treatment plan on their own to start Mysimba.
+
+**GLP-1 tablets:** Nausea, vomiting, constipation and diarrhoea may be troublesome; individual product leaflets include additional warnings and instructions. Symptoms that are severe or persistent require medical advice. The right product for a person with diabetes may differ from the one authorised specifically for obesity. Pregnancy and breastfeeding plans should be raised before any weight-management prescription. See the [GLP-1 side-effects guide](/health/glp1-side-effects-when-to-seek-help/) and [pregnancy guide](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/).
+
+## When should you know whether a pill is helping?
+
+A useful prescription should have a **planned reassessment point**, not an indefinite repeat without checking results.
+
+- For **orlistat**, the [HSE says](https://www2.hse.ie/conditions/obesity/medicines/) a doctor may advise stopping if weight loss is below **5% after three months**.
+- For **Mysimba**, the [EMA says](https://www.ema.europa.eu/en/medicines/human/EPAR/mysimba) treatment should stop after **16 weeks** if at least **5% of initial weight** has not been lost. Following the 2025 safety review, treatment should also be stopped after one year if that weight loss has not been maintained, and cardiovascular risk and benefit should be reassessed annually.
+- For **newer GLP-1 tablets**, follow the specific approved leaflet and prescriber's monitoring plan. Do not transfer Mysimba's or orlistat's stopping thresholds to a different medicine.
+
+For illustration, **5% of 100 kg is 5 kg**. The percentage is a response threshold for some treatment decisions, not a promise that every eligible patient will lose that amount.
+
+## A practical Irish pharmacy cost checklist
+
+Comparing two medicines by a headline pack price alone can give the wrong answer. Before starting, ask the pharmacy and prescriber these questions:
+
+1. **Is the exact brand and strength stocked?** An EU marketing authorisation does not mean the Irish pharmacy can obtain it.
+2. **How much is a full month at the prescribed maintenance dose?** Starter packs and dose-escalation packs may have different costs.
+3. **Are consultations, dispensing or monitoring charged separately?** Include the complete expected expense.
+4. **Does any HSE scheme actually cover this product for my indication?** The [HSE states that prescription orlistat and Mysimba are not covered by the medical card, Long-Term Illness Scheme or Drugs Payment Scheme](https://www2.hse.ie/conditions/obesity/medicines/). Coverage for other products must be checked separately.
+5. **What happens if treatment is ineffective or not tolerated?** Ask when follow-up will occur and whether stopping or switching would change your costs.
+
+A genuinely useful comparison pairs **outcomes, risks and real total cost**. It does not invent a price for a medicine still in trials or assume that a newly approved tablet will reach Irish pharmacies immediately.
+
 ## What to do next
 
 For a clinical decision, start with a GP or an appropriately qualified prescriber and a registered pharmacist. If weight management treatment is appropriate, discuss your medical history, other medicines, treatment preferences and monitoring plan. **Do not change between semaglutide tablets, other GLP-1 products or injections without prescribing advice.**
