@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 411 published articles and guides, 69 tools,
+**Included:** 412 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -300,6 +300,7 @@ For the complete register (including 510+ company profiles), open
 - [Perindopril in Ireland | The ACE pathway and blood test follow-up](https://compound.ie/health/medicines/perindopril/) — **Health**
 - [Personal Investment Account Ireland (PIA): Complete 2027 Guide](https://compound.ie/wealth/personal-investment-account-ireland/) — **Wealth**
 - [PIA Dividend vs Growth Portfolio: Which Builds More Wealth?](https://compound.ie/wealth/pia-dividend-vs-growth-portfolio/) — **Wealth**
+- [PIAs for Couples in Ireland: Joint Accounts, €24,000 Limits and Tax Examples](https://compound.ie/wealth/pia-for-couples-ireland/) — **Wealth**
 - [Pickleball in Ireland: How to Play, Rules, Clubs & Where to Start](https://compound.ie/life/pickleball-ireland/) — **Life**
 - [Planning Appeals Ireland: Deadline, Fees and How the Process Works](https://compound.ie/wealth/planning-appeal-ireland/) — **Wealth**
 - [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/) — **Wealth**

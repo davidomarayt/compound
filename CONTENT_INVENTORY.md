@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 411
+- Published editorial articles and guides: 412
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 290
+## Wealth articles and guides — 291
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -325,6 +325,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Pensions in Ireland 101: A Complete Beginner’s Guide](https://compound.ie/wealth/pensions-in-ireland/)
 - [Personal Investment Account Ireland (PIA): Complete 2027 Guide](https://compound.ie/wealth/personal-investment-account-ireland/)
 - [PIA Dividend vs Growth Portfolio: Which Builds More Wealth?](https://compound.ie/wealth/pia-dividend-vs-growth-portfolio/)
+- [PIAs for Couples in Ireland: Joint Accounts, €24,000 Limits and Tax Examples](https://compound.ie/wealth/pia-for-couples-ireland/)
 - [Planning Appeals Ireland: Deadline, Fees and How the Process Works](https://compound.ie/wealth/planning-appeal-ireland/)
 - [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/)
 - [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/)
