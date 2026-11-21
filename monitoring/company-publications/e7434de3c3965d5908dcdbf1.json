@@ -2,8 +2,8 @@
   "story_fingerprint": "e7434de3c3965d5908dcdbf1",
   "company": "MOG.A/MOG.B",
   "date": "2026-11-21",
-  "status": "prepared",
-  "publication_state": "prepared_not_published",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
   "story_thesis": "Moog's record sales, backlog and free cash flow must be assessed separately from unusual benefits and a pervasive material weakness in financial reporting controls.",
@@ -51,8 +51,24 @@
     "unique_asset": true,
     "published_image_sha256": "8822d2bc9fd16f144c67cc6c55f53a09cff0fe9ca396115360070d88aa9b3230"
   },
-  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "pending", "deployment": "pending"},
+  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "passed on exact PR head e5e77cd8370dbea8b06943dac1a43882a69e5949 in workflow run 44889403022", "deployment": "passed: build, deploy, verify-live and verify-finance-discovery succeeded for merge commit 4b063850cb53fff15193c8135d665f93e144508d in site workflow run 44890363664", "live_verification": "passed: HTTP 200 canonical and cover/social assets; expected title, thesis figures, primary-source links and licensed-image credit; indexable robots metadata; standard ad loader; sitemap and finance catalogue inclusion; Open Graph/Twitter image 1200x675"},
   "article_sha256": "d11d0237b0e44161dce6bcf6af5c4e97d8c6dbd548ddad3ef230f4c0f837580b",
-  "publication": null,
-  "new_articles_published": 0
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/229",
+    "validated_head_sha": "e5e77cd8370dbea8b06943dac1a43882a69e5949",
+    "merge_commit_sha": "4b063850cb53fff15193c8135d665f93e144508d",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/44889403022",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44890363664",
+    "live_verified_at": "2026-11-21T09:48:41Z",
+    "live_url": "https://compound.ie/wealth/moog-record-results-control-weakness/",
+    "live_cover_url": "https://compound.ie/static/images/evergreen/moog-record-results-control-weakness.jpg",
+    "live_cover_sha256": "7c771beda25f0de02ddcae86e60c8269e58bbd2daba65d9dc608ce61f7c92e53",
+    "live_cover_dimensions": [4032, 3024],
+    "live_social_image_url": "https://compound.ie/static/discover/moog-record-results-control-weakness-16x9.webp",
+    "live_social_image_sha256": "d849ca987a035670d3178910438f454bebb17bb93af6f81bb48a74700fc2c8c1",
+    "live_social_image_dimensions": [1200, 675],
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  },
+  "new_articles_published": 1
 }
