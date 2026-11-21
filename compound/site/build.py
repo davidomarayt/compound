@@ -32,6 +32,7 @@ from compound.site.spending_programmes import prepare_programmes
 from compound.site.spending_votes import prepare_votes
 from compound.site.spending_vote30 import prepare_vote30_subheads
 from compound.site.earnings_view import load_company_report
+from compound.site.incremental import ArticleRenderCache, render_key
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
 
@@ -1208,6 +1209,13 @@ def build_site(settings: Settings) -> dict:
         elif not article.image.startswith("/static/images/") or not (HERE / article.image.lstrip("/")).is_file():
             raise ValueError(f"Missing local cover image for {article.slug}")
 
+    # Fingerprinted article cache; non-article pages and discovery files are always regenerated.
+    article_cache = ArticleRenderCache.from_environment(
+        site_root=HERE, content_dir=settings.content_dir,
+        site_base_url=settings.site_base_url,
+        email_form_action=settings.email_form_action,
+    )
+
     # Wipe rendered output except previews (they belong to the pending queue, not the content dir).
     if out.exists():
         for child in out.iterdir():
@@ -1785,9 +1793,19 @@ def build_site(settings: Settings) -> dict:
             context["article_body"] = insert_article_tool_cta(
                 context["article_body"], linked_tools[0], env, a.pillar
             )
-        _write(out / a.url.strip("/") / "index.html",
-               env.get_template(article_template(a)).render(
-                   **context, related=related(a, articles), linked_tools=linked_tools))
+        recommendations = related(a, articles)
+        article_path = out / a.url.strip("/") / "index.html"
+        # Series articles depend on their complete publication order; render those
+        # fresh rather than caching an incomplete dependency graph.
+        fingerprint = render_key(
+            base=article_cache.base, article=a, recommendations=recommendations,
+            tools=linked_tools, profile=profile,
+        )
+        if a.series_id or not article_cache.reuse(a.url, fingerprint, article_path):
+            _write(article_path, env.get_template(article_template(a)).render(
+                **context, related=recommendations, linked_tools=linked_tools))
+            if not a.series_id:
+                article_cache.store(a.url, fingerprint, article_path)
         if a.pillar == "happiness":
             legacy_url = f"/happiness/{a.slug}/"
             if a.url != legacy_url:
@@ -2255,7 +2273,9 @@ def build_site(settings: Settings) -> dict:
         sitemap_rows.append(row)
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(sitemap_rows) + "</urlset>\n")
-    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages), "tools": len(tools)}
+    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages),
+            "tools": len(tools), "article_cache_hits": article_cache.hits,
+            "article_cache_misses": article_cache.misses}
 
 
 def render_preview(settings: Settings, token: str, article: Article) -> Path:
