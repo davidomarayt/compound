@@ -53,6 +53,8 @@ sources:
 
 Ireland is getting a new **Personal Investment Account**, usually shortened to **PIA**.
 
+**Investing with a spouse or partner?** The draft allows only sole-name accounts, but two eligible adults could each use their own contribution limit and €50,000 annual-value threshold. Read [PIAs for couples in Ireland: joint accounts, gifting and worked tax examples](/wealth/pia-for-couples-ireland/) to see why legal ownership matters.
+
 Budget 2027 set the headline numbers: the account is planned to open from **1 July 2027**, contributions will be capped at **€12,000 a year**, there will be **no minimum contribution**, and an annual **1% PIA tax** will apply only to the portion of the relevant account value above **€50,000**.
 
 The account is intended to hold investments such as **shares, bonds, investment funds and ETFs** under one simpler tax framework. The Department of Finance roadmap also says the normal retail-investment tax regime, including **eight-year deemed disposal**, will not apply inside the account.

@@ -169,6 +169,10 @@ Crucially, **convenience does not improve the expected returns of the shares or 
 
 **Generally, that is how Revolut's joint account terms describe ownership**, subject to applicable law and any rights between the individuals outside the account. Do not assume the app keeps an unequal contribution split.
 
+### Is Revolut’s joint investment account the proposed 2027 PIA?
+
+**No.** Revolut’s currently available joint brokerage product is distinct from the proposed sole-name Irish Personal Investment Account (PIA). Under the draft PIA rules, each eligible partner would open their own tax-framework account; see our [PIA guide for couples, including two contribution limits and separate €50,000 thresholds](/wealth/pia-for-couples-ireland/).
+
 ### Is the joint investment account tax-free in Ireland?
 
 **No.** Normal Irish investment tax rules still apply. Direct shares and qualifying ETFs may follow different regimes.
