@@ -21,6 +21,10 @@ tags:
 - energy
 - united-states
 - company-research
+hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Tesla_Solar_Roof-8.jpg/1280px-Tesla_Solar_Roof-8.jpg"
+hero_image_alt: "Aerial photograph of an installed Tesla Solar Roof on a home in Onalaska, Wisconsin, photographed in 2023; archival illustration, not the proposed Texas polysilicon factory."
+hero_image_credit: "Wikideas1 / Wikimedia Commons · CC0 1.0 · 6 November 2023"
+hero_image_source: "https://commons.wikimedia.org/wiki/File:Tesla_Solar_Roof-8.jpg"
 social:
   enabled: false
 sources:
