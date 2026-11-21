@@ -46,6 +46,8 @@ That makes couples' planning different from simply opening one shared investment
 
 **Useful next steps:** [PIA calculator](/pia-calculator/) · [PIA versus pension](/pia/vs-pension/) · [Compare PIA providers](/pia/providers/) · [Full Irish PIA guide](/wealth/personal-investment-account-ireland/).
 
+**Buying a home together?** If either partner expects to use PIA investments for the deposit, see [what Irish mortgage lenders actually look for, and why investing is not the same as frequent trading](/wealth/pia-mortgage-deposit-ireland/).
+
 ## Can a married couple open a joint PIA in Ireland?
 
 **No, not under the current proposal.** Section 747L of the amended Bill requires an account to be opened and held in the **sole name of a qualifying individual**. Section 747O also requires the holder's declaration to acknowledge that joint ownership is not permitted. This applies whether a couple is married, in a civil partnership or unmarried.
