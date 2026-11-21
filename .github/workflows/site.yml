@@ -391,6 +391,13 @@ jobs:
           key: editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
             editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-
+      - name: Restore article and Discover image cache from production build
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/compound-article-html
+          key: article-render-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            article-render-v1-${{ runner.os }}-
       - name: Render approved bespoke covers for mobile QA
         run: python scripts/render_editorial_heroes.py
       - name: Attach required News photos before the QA rebuild
@@ -403,6 +410,7 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+          COMPOUND_ARTICLE_CACHE_DIR: .cache/compound-article-html
       - name: Install browser for Solar Hub mobile audit
         run: |
           python -m pip install "playwright==1.55.0"
