@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 416
+- Published editorial articles and guides: 419
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 295
+## Wealth articles and guides — 298
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -203,6 +203,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Extension of farmer fuel supports being considered ahead of Budget 2027](https://compound.ie/news/farmer-fuel-supports-budget-2027/)
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/)
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/)
+- [Frontline’s Tanker Rates Surged, but How Much of the Windfall Is Durable?](https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/)
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/)
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/)
 - [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/)
@@ -265,6 +266,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/)
 - [Live Nation’s Crowds Are Growing. Which Segment Carries the Economics?](https://compound.ie/wealth/live-nation-attendance-segment-economics/)
 - [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/)
+- [Magnera Generated $115 Million of Free Cash Flow. Is That Enough for $1.85 Billion of Debt?](https://compound.ie/wealth/magnera-cash-flow-debt-volume/)
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/)
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/)
 - [Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?](https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/)
@@ -351,6 +353,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/)
 - [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/)
 - [Revolut Pay Enters Uber Checkout. Can Rewards Turn Payments Into a Habit?](https://compound.ie/wealth/revolut-pay-uber-rewards-payment-economics-2026/)
+- [RLX Revenue Rose 69.7%, but the Acquisition Changed the Economics](https://compound.ie/wealth/rlx-acquisition-revenue-margin-cash/)
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/)
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/)
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)

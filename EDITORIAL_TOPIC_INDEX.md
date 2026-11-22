@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 416 published articles and guides, 69 tools,
+**Included:** 419 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -130,6 +130,7 @@ For the complete register (including 510+ company profiles), open
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/) — **Wealth**
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/) — **Wealth**
 - [Folic acid in Ireland | Folate metabolism, new cells and two distinct uses](https://compound.ie/health/medicines/folic-acid/) — **Health**
+- [Frontline’s Tanker Rates Surged, but How Much of the Windfall Is Durable?](https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/) — **Wealth**
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/) — **Wealth**
 - [Furosemide in Ireland | Salt transport in the kidney and monitoring fluid balance](https://compound.ie/health/medicines/furosemide/) — **Health**
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/) — **Wealth**
@@ -229,6 +230,7 @@ For the complete register (including 510+ company profiles), open
 - [Looksmaxxing: What the Internet Promises Men — and What the Science Actually Says](https://compound.ie/health/looksmaxxing-science-male-attractiveness/) — **Health**
 - [Low-dose aspirin in Ireland | Platelets, thromboxane and prevention decisions](https://compound.ie/health/medicines/low-dose-aspirin/) — **Health**
 - [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/) — **Health**
+- [Magnera Generated $115 Million of Free Cash Flow. Is That Enough for $1.85 Billion of Debt?](https://compound.ie/wealth/magnera-cash-flow-debt-volume/) — **Wealth**
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/) — **Wealth**
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/) — **Wealth**
 - [Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?](https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/) — **Wealth**
@@ -334,6 +336,7 @@ For the complete register (including 510+ company profiles), open
 - [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/) — **Wealth**
 - [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/) — **Wealth**
 - [Revolut Pay Enters Uber Checkout. Can Rewards Turn Payments Into a Habit?](https://compound.ie/wealth/revolut-pay-uber-rewards-payment-economics-2026/) — **Wealth**
+- [RLX Revenue Rose 69.7%, but the Acquisition Changed the Economics](https://compound.ie/wealth/rlx-acquisition-revenue-margin-cash/) — **Wealth**
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/) — **Wealth**
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/) — **Wealth**
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/) — **Wealth**
