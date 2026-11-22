@@ -21,11 +21,17 @@ if (filter) {
   filter.hidden = false;
 }
 
-document.querySelectorAll('[data-claim-tool]').forEach(link => {
+document.querySelectorAll('[data-claim-tool], [data-claim-guide]').forEach(link => {
   link.addEventListener('click', () => {
     let consent;
     try { consent = localStorage.getItem('compound_analytics_consent'); } catch (_) { return; }
-    if (consent === 'granted' && typeof window.gtag === 'function') {
+    if (consent !== 'granted' || typeof window.gtag !== 'function') return;
+    if (link.dataset.claimGuide) {
+      window.gtag('event', 'claims_guide_click', {
+        calculator: link.dataset.claimSource,
+        guide: link.dataset.claimGuide,
+      });
+    } else {
       window.gtag('event', 'claims_calculator_click', { tool: link.dataset.claimTool });
     }
   });

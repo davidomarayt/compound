@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% set has_claim_guide = tool.slug in ["home-care-cost-calculator", "childcare-cost-calculator", "rent-tax-credit-calculator"] %}
 {% block head_title %}{{ tool.seo_title or tool.title }} | Compound{% endblock %}
 {% block meta %}<meta name="description" content="{{ tool.meta_description }}">{% endblock %}
 {% block head %}
@@ -6,6 +7,7 @@
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="{{ 'summary_large_image' if tool.hero_image_url else 'summary' }}">
 {% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261119-nursing-home-cost">{% endif %}
 {% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% elif tool.slug == "pia-calculator" %}<script defer src="/static/tools.js?v=20261113-pia-events-20261119-home-care-college"></script>{% else %}<script defer src="/static/tools.js?v=20261119-home-care-college"></script>{% endif %}
+{% if has_claim_guide %}<script defer src="/static/claims-directory.js?v=2"></script>{% endif %}
 {% if tool.hero_image_url %}
 {% set social_image = tool.hero_image_url if tool.hero_image_url.startswith("https://") else site_url ~ tool.hero_image_url %}
 <meta property="og:image" content="{{ social_image }}">
@@ -88,6 +90,11 @@
           {% endif %}
           {% endif %}
           {% if field.help %}<small class="tool-field-help" id="tool-help-{{ field.id }}">{{ field.help }}</small>{% endif %}
+          {% if tool.slug == "home-care-cost-calculator" and field.id == "day_hse" %}
+          <small class="tool-field-help"><a href="/wheres-my-money/what-can-i-claim/caring-for-a-parent/#home-support" data-claim-guide="caring-for-a-parent" data-claim-source="{{ tool.slug }}">How to apply for HSE Home Support</a></small>
+          {% elif tool.slug == "childcare-cost-calculator" and field.id == "rate_1" %}
+          <small class="tool-field-help"><a href="/wheres-my-money/what-can-i-claim/having-a-baby/#childcare" data-claim-guide="having-a-baby" data-claim-source="{{ tool.slug }}">Check childcare subsidies and what you can claim during leave</a></small>
+          {% endif %}
         </div>
       {% endfor %}
       </div>
@@ -105,6 +112,9 @@
         <ul data-tool-insight-list></ul>
       </div>
       <p class="tool-result-note">{{ tool.result_note or 'Planning estimate only. Read the notes below before relying on the result.' }}</p>
+      {% if tool.slug == "rent-tax-credit-calculator" %}
+      <p class="tool-result-note"><a href="/wheres-my-money/what-can-i-claim/paye-refund-checklist/#file-with-revenue" data-claim-guide="paye-refund-checklist" data-claim-source="{{ tool.slug }}">How to claim through Revenue</a></p>
+      {% endif %}
       <a class="tool-method-link" href="#method-and-limitations">See calculation method & assumptions ↓</a>
       <div class="tool-scenario-summary" data-tool-scenario-summary hidden>
         <span>Scenario</span><div data-tool-scenario-chips></div>

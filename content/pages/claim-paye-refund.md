@@ -29,7 +29,7 @@ Gather receipts for qualifying medical expenses and subtract reimbursements, inc
 
 Check the institution, course and type of fee against [Revenue’s tuition fee rules](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/education/tuition-fees-paid-for-third-level-education/index.aspx). Keep the fee statement and payment records. Check how grants, employer payments and the relevant disregard affect the qualifying amount.
 
-## File through Revenue myAccount
+## File through Revenue myAccount {#file-with-revenue}
 
 1. Sign in to [Revenue myAccount](https://www.ros.ie/myaccount-web/sign_in.html) and choose **PAYE Services**.
 2. Select **Review your tax for the previous 4 years**, choose the relevant year and request a review. File a separate return for each year.
