@@ -39,8 +39,10 @@ sources:
   url: https://www.statesavings.ie/our-products
 - title: 'Revenue: CGT, gifts and inherited assets. Checked 17 September 2026.'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx
-- title: 'Revenue: calculating CGT, market value and the annual exemption. Checked 17 September 2026.'
+- title: 'Revenue: calculating CGT, market value and the annual exemption. Standard rate rechecked 22 November 2026; other details originally checked 17 September.'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
+- title: 'Revenue eBrief 142/26, 6 October 2026: 31% standard CGT for most disposals from 7 October 2026, development land exception. Rechecked 22 November 2026.'
+  url: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx
 - title: 'Revenue: TCA Part 27, investment undertakings and offshore funds; sections 739B–739G and 747D–747E. Finance Act 2025 edition; checked 17 September 2026.'
   url: https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part27.pdf
 - title: 'Revenue: TCA Part 26, sections 730C, 730D, 730F and 730GB, life-policy events, rates and death-related set-off. Finance Act 2025 edition; checked 17 September 2026.'
@@ -186,7 +188,7 @@ The comparison below assumes ordinary arrangements for Irish-resident individual
 <table><caption>What is held inside the savings arrangement?</caption><thead><tr><th scope="col">Asset or product</th><th scope="col">Tax on returns</th><th scope="col">Handover detail to check</th></tr></thead><tbody>
 <tr><th scope="row">Bank or credit-union deposits</th><td>Irish deposit interest normally has DIRT deducted at 33%, subject to exemptions.</td><td>Moving existing child-owned cash is not a sale of shares. A parent’s gift of their own cash is still considered for CAT.</td></tr>
 <tr><th scope="row">State Savings</th><td>Specified fixed-term products have tax-free returns. The State Savings Deposit Account is subject to DIRT.</td><td>Tax-free interest does not exempt a gift or inheritance. Check whose name the product is in, maturity and repayment rules.</td></tr>
-<tr><th scope="row">Direct company shares</th><td>Most gains fall under 33% CGT; dividends have separate income-tax rules.</td><td>A genuine bare-trust transfer can preserve holdings and their existing cost basis. A sale, or a gift of parent-owned shares, is different.</td></tr>
+<tr><th scope="row">Direct company shares</th><td>For most ordinary share disposals on or after 7 October 2026, gains fall under 31% standard CGT (33% for earlier standard disposals); dividends have separate income-tax rules.</td><td>A genuine bare-trust transfer can preserve holdings and their existing cost basis. A sale, or a gift of parent-owned shares, is different.</td></tr>
 <tr><th scope="row">Investment funds and ETFs within the Irish fund regime</th><td>Generally 38% on relevant income and gains from 1 January 2026, with eight-year deemed-disposal rules.</td><td>Tax can arise without cashing out. Turning 18 does not erase earlier liabilities or restart acquisition dates. Check any actual transfer.</td></tr>
 <tr><th scope="row">Irish life-assurance investment plans</th><td>Generally 38% exit tax on gains at chargeable events from 1 January 2026; eight-year events also apply.</td><td>Surrender or assignment can trigger tax. Being a “child plan” or held under a trust is not a blanket exemption.</td></tr>
 </tbody></table></div>
@@ -195,9 +197,11 @@ Sources: [DIRT rate](https://www.revenue.ie/en/additional-incomes/dirt/what-dirt
 
 ### Shares: tax is on the gain, not the whole pot
 
-Suppose ordinary shares already owned by the child cost **€30,000** and are sold for **€50,000**. Assume no fees, losses or other gains, and that the child’s full **€1,270 annual CGT exemption** is available. The illustrative CGT is (€20,000 − €1,270) × 33% = **€6,180.90**, leaving €43,819.10 after that tax.
+Suppose ordinary shares already owned by the child cost **€30,000** and are sold for **€50,000 on or after 7 October 2026**. Assume no fees, losses or other gains, and that the child’s full **€1,270 annual CGT exemption** is available. For a standard share disposal at the 31% rate, the illustrative CGT is (€20,000 − €1,270) × 31% = **€5,806.30**, leaving **€44,193.70** after that tax. For a comparable standard disposal up to 6 October 2026, the earlier 33% rate would instead have produced **€6,180.90** of CGT and **€43,819.10** remaining.
 
-Simply retaining those shares on turning 18 would not produce the same sale calculation. The annual exemption also does not accumulate over the child’s lifetime. [Revenue: how to calculate CGT](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx).
+The **disposal date**, not the child’s eighteenth birthday or the original share-purchase date, determines which standard CGT rate applies; other asset classes and future legislation can change the answer. Simply retaining those shares on turning 18 would not produce the same sale calculation. The annual exemption also does not accumulate over the child’s lifetime. For rate dates, exceptions and allowable losses, see our [Capital Gains Tax guide](/wealth/capital-gains-tax-ireland/) and [Revenue: how to calculate CGT](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx).
+
+*Rate-check note (22 November 2026):* Only the standard CGT rate in the comparison table and this worked share-disposal example were rechecked against [Revenue eBrief 142/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx). The other ownership, trust, CAT and product-tax sections retain their original source-check dates; this is not a full re-review of the guide.
 
 ### ETFs: an accumulating fund does not mean tax can always wait
 
