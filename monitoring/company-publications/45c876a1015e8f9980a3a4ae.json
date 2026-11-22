@@ -1,0 +1,80 @@
+{
+  "story_fingerprint": "45c876a1015e8f9980a3a4ae",
+  "company": "Frontline plc",
+  "ticker": "FRO",
+  "date": "2026-11-22",
+  "status": "ready_for_pr",
+  "publication_state": "local_gates_passed",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to the 11 November factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Frontline's exceptional spot-tanker rates and profit-linked payout must be assessed after ballast days, vessel-sale proceeds, fleet commitments, debt and shipping cyclicality.",
+  "article_path": "content/wealth/frontline-tanker-rates-dividends-fleet.md",
+  "canonical_url": "https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/913290/000091957426008221/p15160196_exh-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/913290/000091957426008221/p15160196_6-k.htm",
+    "https://www.sec.gov/Archives/edgar/data/913290/000162828026021774/fro-20251231.htm"
+  ],
+  "identity": {
+    "issuer": "Frontline plc",
+    "CIK": 913290,
+    "results_accession": "0000919574-26-008221",
+    "annual_accession": "0001628280-26-021774",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3 and first nine months",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-20",
+    "currency": "USD",
+    "accounting_basis": "IFRS",
+    "units": "millions except per-share and daily-rate amounts"
+  },
+  "candidate_review": {
+    "screened_companies": ["Magnera Corporation", "Frontline plc", "RLX Technology Inc.", "Matthews International Corporation", "BitFuFu Inc."],
+    "selection_reason": "Fresh transport-sector story with a specific contracted-rate, payout and fleet-financing question not answered by recent Compound coverage."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, monitoring/company-publications, the live site, the past 14 days of posts, recent merged/open PRs and concurrent Compound/FairPath publication records. No Frontline analysis, stock profile or active attempt answers this thesis; no /stocks/fro/ URL was invented.",
+  "claim_checks": [
+    {"claim": "Q3 revenue $921.3m, profit $641.4m/$2.88 per share, adjusted profit $530.9m/$2.38 and dividend $2.38", "source_indexes": [0, 1], "location_or_arithmetic": "Release highlights, profit bridge and dividend section", "result": "verified; adjusted and IFRS measures separated"},
+    {"claim": "Q3 average spot TCEs of $148,500 VLCC, $102,500 Suezmax and $67,800 LR2/Aframax per day", "source_indexes": [0], "location_or_arithmetic": "TCE table; company-defined non-GAAP measure", "result": "verified in separate claim pass"},
+    {"claim": "Partly covered Q4 contracted spot TCEs of $562,600/$324,300/$190,800 at 68%-69% coverage", "source_indexes": [0], "location_or_arithmetic": "Contracted-rate table; not presented as full-quarter guidance", "result": "verified in separate claim pass"},
+    {"claim": "Full-quarter spot TCEs expected below currently contracted rates because of 667/324/274 ballast days", "source_indexes": [0], "location_or_arithmetic": "Release guidance and TCE appendix", "result": "verified as management expectation"},
+    {"claim": "Two vessel sales produced $270m gross and $179m net cash, $111.2m gain and $0.80 special dividend", "source_indexes": [0], "location_or_arithmetic": "Vessel-sale and adjusted-profit sections", "result": "verified in separate claim pass"},
+    {"claim": "Nine-month operating cash $1.528bn, vessel/newbuilding additions $989.8m, vessel-sale proceeds $1.233bn and dividends $1.334bn", "source_indexes": [0], "location_or_arithmetic": "Cash-flow statement; simple residual 1,528.320 - 989.769 = 538.551", "result": "verified; residual not labelled company free cash flow"},
+    {"claim": "Nine newbuildings cost $1.224bn; $288.7m commitment remained at quarter-end with disclosed later payments", "source_indexes": [0, 2], "location_or_arithmetic": "Newbuilding update and post-balance-sheet annual-filing disclosure", "result": "verified in separate claim pass"},
+    {"claim": "Quarter-end cash $279.7m, current debt $216.9m and long-term debt $2.427bn", "source_indexes": [0], "location_or_arithmetic": "Balance sheet", "result": "verified in separate claim pass"},
+    {"claim": "Tanker markets are historically volatile and cyclical; dividends are discretionary", "source_indexes": [2], "location_or_arithmetic": "20-F liquidity/risk and dividend sections", "result": "verified as company risk disclosure"}
+  ],
+  "fact_check_notes": [
+    "Contracted Q4 rates are not multiplied by calendar days or described as full-quarter realised rates.",
+    "Vessel-sale gain, cash proceeds and special dividend are kept separate from adjusted profit and ordinary operating cash.",
+    "TCE and adjusted profit are labelled company-defined non-GAAP measures; no commodity-price forecast or price target appears."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:VLCC_Aktaia,_Oil_tanker.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/4/42/VLCC_Aktaia%2C_Oil_tanker.jpg",
+    "photographer": "Martian-2008",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2017-05-07",
+    "description": "VLCC Aktaia at a terminal; representative tanker photograph explicitly not identified as a Frontline vessel",
+    "unique_asset": true,
+    "published_image_sha256": "b70517f24d5bfd6ef09a18418143066765e3ba81e4d56d94785f5c088bee67d7",
+    "dimensions": [1920, 1080],
+    "visual_inspection": "passed: authentic topic-specific tanker photograph; vessel identity and representative use stated"
+  },
+  "gates": {
+    "source_verification": "passed: SEC 6-K, furnished current release and latest annual Form 20-F inspected directly",
+    "duplicate_originality": "passed: distinct cash-payout and fleet-financing thesis with independent cash-allocation calculation",
+    "editorial_qa": "passed: 964-word analysis separately checked for accuracy, thesis specificity, original synthesis, balance, readability, metadata, disclosures and non-duplication",
+    "offline_tests": "passed: 38 focused image, discovery, earnings-review, pending-review advertising and SEO tests",
+    "build": "passed: production-canonical audit build generated 419 articles, 910 tags, 39 pages and 62 tools",
+    "render": "passed: canonical, indexability, body, source and internal links, truthful image credit, 1200x675 social image (sha256 18687a6ab3b7564005dc3239cdcc3d7ca63108f9e03cd1b47c2ba6b41c210187), sitemap and finance catalogue inspected",
+    "ads": "passed locally: pending-review advertising test passed; committed production config retains client ca-pub-6115783809711785, and the current live article template renders that loader. Exact-page live check remains required after deployment",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "69535b32168424e5b88f9b4eee9e52aff8f3879207a6e64427ebb162880894b2",
+  "publication": {},
+  "new_articles_published": 0
+}
