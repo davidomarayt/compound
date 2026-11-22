@@ -1,34 +1,34 @@
 {
   "cik": 354950,
-  "company": "Home Depot (The)",
+  "company": "The Home Depot",
   "latest": {
-    "accession": "0000354950-26-000184",
-    "filed": "2026-11-17",
-    "form": "8-K",
+    "accession": "0001628280-26-075287",
+    "filed": "2026-11-20",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 3.72,
         "prior_year": 3.62,
-        "tag": "SEC Exhibit reported GAAP diluted_eps",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
         "current": 3713000000,
         "prior_year": 3601000000,
-        "tag": "SEC Exhibit reported GAAP net_income",
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
         "current": 43398000000,
         "prior_year": 41352000000,
-        "tag": "SEC Exhibit reported GAAP revenue",
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
     "period_end": "2026-11-01",
-    "source": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026075287/hd-20261101.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026058715/hd-20260802.htm"
     },
     {
-      "accession": "0000354950-26-000184",
-      "filed": "2026-11-17",
-      "form": "8-K",
+      "accession": "0001628280-26-075287",
+      "filed": "2026-11-20",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 3.72,
           "prior_year": 3.62,
-          "tag": "SEC Exhibit reported GAAP diluted_eps",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
           "current": 3713000000,
           "prior_year": 3601000000,
-          "tag": "SEC Exhibit reported GAAP net_income",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
           "current": 43398000000,
           "prior_year": 41352000000,
-          "tag": "SEC Exhibit reported GAAP revenue",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
           "unit": "USD"
         }
       },
       "period_end": "2026-11-01",
-      "source": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026075287/hd-20261101.htm"
     }
   ],
-  "source_type": "US SEC XBRL for earlier periods; SEC Form 8-K earnings exhibit for latest quarter; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HD",
-  "updated": "2026-11-18"
+  "updated": "2026-11-22"
 }
