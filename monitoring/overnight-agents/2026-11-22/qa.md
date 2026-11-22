@@ -65,3 +65,12 @@ Read [discovery.md](discovery.md), [content.md](content.md), [research.md](resea
 | Analytics-blocked specialist roles | 2 |
 
 No production secrets, paid integrations, pricing, consent, payment flows, ad settings, automated schedules or other workflow ownership changed. Morning report should re-fetch deployment and changed public pages; it must not infer publication from merge status.
+
+
+## Post-merge production checkpoint (after QA report creation)
+
+- [GitHub Pages #44994273486](https://github.com/davidomarayt/compound/actions/runs/44994273486) for **`f131f84aea5e14bce1fe01a78f1ece8ec2050060`** now has **build SUCCESS**, **deploy SUCCESS**, **verify-live SUCCESS** and **verify-finance-discovery SUCCESS**. The independent `mobile-audit` job was still **IN PROGRESS** at this checkpoint, so the *whole workflow* is not yet labelled successful.
+- The generic live-verification job performed a direct curl fetch of `https://compound.ie/compound-interest-calculator/` and asserted the standard AdSense loader exists there. It did **not** assert this PR's new CGT example, actual new JS version, new child-savings text or the child-savings contextual link.
+- Independent public webpage retrieval after the deploy job still showed the earlier **33% CGT** explanatory content for the calculator and child-savings page. Because this retrieval may reflect crawler/cache snapshots rather than a fresh origin response, it cannot establish either a production regression or a successful updated deployment. **Keep both individual canonical pages `NOT_VERIFIED_LIVE` despite successful Pages deploy** until new text and versioned executable code are independently fetched from the public origin.
+- Source-of-truth production-branch files *do* contain `€5,806.30` and the new CGT article link; `compound-calculator.js` contains `standardCgtRate=0.31` with deposit DIRT remaining 0.33; page template refers to `?v=20261122-cgt`. These are **source verification**, not a live browser check.
+- Updated state totals: **2 approved, 2 merged, production Pages deploy job 1 successful, changed canonicals 0 independently verified live, 1 mobile-audit stage pending**. The 08:00 report should reassess the whole workflow and actual changed public HTML/JavaScript separately; source merge is not evidence of public propagation.
