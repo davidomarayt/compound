@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-22",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "editorial/private-company-2026-11-22-research",
+  "target_new_articles": 3,
+  "new_article_count_prepared": 2,
+  "canonical_updates_prepared": 1,
+  "confirmed_live_new_articles": 0,
+  "confirmed_updated_canonicals": 0,
+  "status": "editorial_prepared_pending_exact_head_ci_and_public_verification",
+  "ads_policy": "Standard AdSense loader and consent controls remain enabled independent of human editorial-review status; actual ad fill not guaranteed",
+  "editorial_quality_gate": "Primary sources checked November 22; effective-date versus announcement-date distinctions, original thesis, original hypothetical arithmetic, and archived-documentary photo licensing checked; CI and exact live-production fetch still required",
+  "prior_publication_recovery": {
+    "checked_dates": [
+      "2026-11-20",
+      "2026-11-21"
+    ],
+    "prior_ledgers_record_live_verification": true,
+    "recovery_needed": false
+  },
+  "duplication_checks": {
+    "index_snapshot": "2026-11-22",
+    "lookback_days": 30,
+    "openai": "20 November policy effective date and model-access intermediary requirements distinguish it from November OpenAI model/product, Space, and agent security stories",
+    "anthropic": "Second trading session 20 November belongs as an update to established /news/anthropic-ipo-pricing-nasdaq/, not a second IPO post; public ANT classification remains",
+    "third_company": "Databricks November 19 cross-regulatory cloud sharing GA distinct from November 11 EMEA capital plan and autonomous Genie economics",
+    "competing_workflows": "Inspected Nov 22 topic index, inventory, company-watchlist, Nov 20/21 ledgers and open publishing PRs; dedicated scoped branch; no unrelated changes"
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "action": "new_article",
+      "event_date": "2026-11-20",
+      "article_path": "content/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk.md",
+      "story_fingerprint": "2026-11-20-openai-usage-policies-model-access-intermediary-preapproval-substitute-training-human-review",
+      "primary_source_urls": [
+        "https://openai.com/policies/usage-policies/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Open_AI_Forum_-_India_AI_Impact_Summit_2026.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Open_AI_Forum_-_India_AI_Impact_Summit_2026.jpg",
+      "photo_focal_y": 0.48,
+      "image_license": "CC BY-SA 4.0",
+      "photo_provenance": "Charlie4404 / Wikimedia Commons authentic New Delhi OpenAI Forum panel, 20 February 2026, clearly archival and not the 20 November 2026 policy change; cropped derivative with attribution",
+      "claim_checks": [
+        "OpenAI policy page effective 20 November 2026, changelog announced 21 October, not a same-day breaking release",
+        "Prior review applies to intermediary granting third parties direct model access, excludes applications solely integrating models for features",
+        "Prohibition on substitute-model training/feedback data subject to expressly permitted contractual exception; high-stakes actions need human review",
+        "Hypothetical 30 x 2 hours = 60h x €60 = €3,600; six extra x 4 = 24h; total 84h x €60 = €5,040"
+      ],
+      "canonical_url": "https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": "NOT VERIFIED: must pass exact PR head test and performance, GitHub Pages site/mobile-audit fetch of canonical HTML, real cover JPEG, OG/Twitter WebP, reciprocal profile links and advertising loader",
+      "deployment_status": "pending_quality_gated_merge_and_live_audit",
+      "status": "pending_ci_deployment_live_verification"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "action": "substantive_canonical_update",
+      "event_date": "2026-11-19",
+      "update_event_date": "2026-11-20",
+      "article_path": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+      "story_fingerprint": "2026-11-20-ant-ipo-second-session-close-8891-vs-9717-first-close-vs-83-offer-and-market-entry-price",
+      "primary_source_urls": [
+        "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+        "https://www.nasdaq.com/market-activity/stocks/ant/historical",
+        "https://www.reuters.com/business/anthropics-post-debut-stumble-delivers-reality-check-ai-trade-2026-11-20/",
+        "https://www.anthropic.com/news/ipo-close"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+      "photo_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg/1280px-Nasdaq_MarketSite_%2851494550508%29.jpg",
+      "photo_focal_y": 0.45,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Retained existing Ajay Suresh genuine Nasdaq MarketSite archival photograph dated 19 September 2021, not depiction of 2026 IPO",
+      "claim_checks": [
+        "Nasdaq verified ANT listing 19 November 2026; preserve existing watchlist listing milestone as 19 November for regression history",
+        "First-day close $97.17; Friday second-day regular session close $88.91, -$8.26 (-8.5%); $88.91-$83 IPO allocation=$5.91 (+7.1%)",
+        "Illustrative 100 shares at $111.50 public opening $11,150; at $88.91 $8,891, paper -$2,259 (-20.26%); if allocated at $83, unrealized +$591 before costs",
+        "No fabricated second-day issuer revenue and no claim market-wide selling proves a precise driver; retained single canonical IPO URL"
+      ],
+      "canonical_url": "https://compound.ie/news/anthropic-ipo-pricing-nasdaq/",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "live_required_fingerprint": "The November 20 regular-session close was $88.91.",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": "NOT VERIFIED: must pass exact PR head test and performance, GitHub Pages site/mobile-audit fetch of canonical HTML, real cover JPEG, OG/Twitter WebP, reciprocal profile links and advertising loader",
+      "deployment_status": "pending_quality_gated_merge_and_live_audit",
+      "status": "pending_ci_deployment_live_verification"
+    },
+    {
+      "company": "Databricks",
+      "slug": "databricks",
+      "action": "new_article",
+      "event_date": "2026-11-19",
+      "article_path": "content/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics.md",
+      "story_fingerprint": "2026-11-19-databricks-open-sharing-cross-regulatory-domain-ga-supported-regions-governance-economics",
+      "primary_source_urls": [
+        "https://docs.databricks.com/aws/en/release-notes/product/2026/november",
+        "https://docs.databricks.com/aws/en/opensharing/share-data-databricks",
+        "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Data_%2B_AI_Summit_2026.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Data_%2B_AI_Summit_2026.jpg",
+      "photo_focal_y": 0.48,
+      "image_license": "CC BY-SA 4.0",
+      "photo_provenance": "Grant Terzakis / Databricks Comms authentic June 2026 Data and AI Summit, Wikimedia Commons CC BY-SA 4.0; archival photo not November 19 release",
+      "claim_checks": [
+        "Databricks release notes describe November 19 generally available cross-regulatory-domain sharing and phased workspace rollout",
+        "Docs show selected supported commercial, AWS GovCloud, GovCloud DoD and Azure China routes; some provider pairs excluded, Azure Government excluded",
+        "Technical feature not regulatory clearance, customer remains responsible for use/data handling",
+        "Hypothetical 30h reconciliations less 10h and 8h governance = 12h net x €65 = €780/month, not company financial guidance",
+        "August 2026 company-stated revenue run rate and funding valuation are dated, unaudited disclosure and not the OpenSharing feature's financial results"
+      ],
+      "canonical_url": "https://compound.ie/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics/",
+      "profile_url": "https://compound.ie/companies/databricks/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": "NOT VERIFIED: must pass exact PR head test and performance, GitHub Pages site/mobile-audit fetch of canonical HTML, real cover JPEG, OG/Twitter WebP, reciprocal profile links and advertising loader",
+      "deployment_status": "pending_quality_gated_merge_and_live_audit",
+      "status": "pending_ci_deployment_live_verification"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "status": "source_update_committed_public_backlink_pending_verification"
+    },
+    {
+      "slug": "anthropic",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "status": "existing_public_ANT_profile_and_canonical_update_pending_verification"
+    },
+    {
+      "slug": "databricks",
+      "profile_url": "https://compound.ie/companies/databricks/",
+      "status": "source_update_committed_public_backlink_pending_verification"
+    }
+  ],
+  "production_deployment": {
+    "status": "pending",
+    "confirmed_live_urls": 0,
+    "confirmed_live_new_articles": 0,
+    "confirmed_updated_canonicals": 0
+  },
+  "branch_protection": "Native branch protection previously absent; equivalent exact-head test/performance CI, base comparison, licensed photo and independent source QA enforced before merge; native protection recommended",
+  "updated_at_utc": "2026-11-22T07:00:00Z"
+}
