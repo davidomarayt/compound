@@ -668,7 +668,8 @@ def test_bespoke_flagships_match_quality_system():
     assert "dateModified" in compound_template
     assert "cc-trust" in compound_partial
     assert "cc-share" in compound_partial and "cc-export" in compound_partial and "cc-report" in compound_partial
-    assert "Rules checked 22 September 2026" in compound_partial
+    assert "CGT rate checked 22 November 2026" in compound_partial
+    assert "other tax assumptions last checked 22 September 2026" in compound_partial
 
     assert "dateModified" in bmi_template
     assert "bmi-trust" in bmi_template
