@@ -1,0 +1,77 @@
+{
+  "story_fingerprint": "443f62d1930a5eed8af748cd",
+  "company": "Magnera Corporation",
+  "ticker": "MAGN",
+  "date": "2026-11-22",
+  "status": "ready_for_pr",
+  "publication_state": "local_gates_passed",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to the 11 November factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Magnera's fiscal 2026 cash generation and debt repayment must be assessed against organic volume decline, merger-adjusted profit, floating-rate exposure and $1.848 billion of debt.",
+  "article_path": "content/wealth/magnera-cash-flow-debt-volume.md",
+  "canonical_url": "https://compound.ie/wealth/magnera-cash-flow-debt-volume/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/41719/000114036126044950/ef20086010_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/41719/000114036126044950/ef20086010_8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/41719/000004171926000049/form10q.htm"
+  ],
+  "identity": {
+    "issuer": "Magnera Corporation",
+    "CIK": 41719,
+    "results_accession": "0001140361-26-044950",
+    "quarterly_accession": "0000041719-26-000049",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q4 and full year",
+    "period_end": "2026-09-26",
+    "filing_date": "2026-11-19",
+    "currency": "USD",
+    "units": "millions except percentages"
+  },
+  "candidate_review": {
+    "screened_companies": ["Magnera Corporation", "Frontline plc", "RLX Technology Inc.", "Matthews International Corporation", "BitFuFu Inc."],
+    "selection_reason": "Fresh industrial-materials story with a specific cash-conversion and leverage question; neither a routine quarterly recap nor overlapping recent coverage."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, monitoring/company-publications, the live site, the past 14 days of posts, recent merged/open PRs and concurrent Compound/FairPath publication records. No Magnera article, stock profile or active attempt answers this thesis; no /stocks/magn/ URL was invented.",
+  "claim_checks": [
+    {"claim": "Fiscal 2026 net sales $3.296bn, adjusted EBITDA $378m and operating loss $37m including $106m impairment", "source_indexes": [0, 1], "location_or_arithmetic": "Results highlights and annual income table; GAAP and non-GAAP measures kept separate", "result": "verified in separate claim pass"},
+    {"claim": "Q4 net sales $851m, adjusted EBITDA $97m, 4% organic volume decline and $43m price increase", "source_indexes": [0], "location_or_arithmetic": "Q4 highlights and segment discussion", "result": "verified in separate claim pass"},
+    {"claim": "Fiscal 2026 operating cash flow $178m, net capital additions $63m and company-defined free cash flow $115m", "source_indexes": [0], "location_or_arithmetic": "178 - 63 = 115; release reconciliation", "result": "verified in separate claim pass"},
+    {"claim": "Year-end debt $1.848bn, cash $294m and approximate net debt $1.554bn", "source_indexes": [0], "location_or_arithmetic": "1,848 - 294 = 1,554; balance sheet", "result": "verified in separate claim pass"},
+    {"claim": "Free cash flow was about 7.4% of net debt and covered about 94% of $122m debt repayments", "source_indexes": [0], "location_or_arithmetic": "115 / 1,554 = 7.40%; 115 / 122 = 94.26%", "result": "verified in separate claim pass"},
+    {"claim": "June-quarter $706m term loan bore SOFR plus 4.25 points and a 25bp move implied about $2m annual interest", "source_indexes": [2], "location_or_arithmetic": "Form 10-Q interest-rate-risk section", "result": "verified in separate claim pass"},
+    {"claim": "Fiscal 2027 guidance: adjusted EBITDA $390m-$410m, operating cash flow $195m-$215m and free cash flow $110m-$130m", "source_indexes": [0], "location_or_arithmetic": "Management guidance; midpoint adjusted EBITDA growth (400 / 378) - 1 = 5.82%", "result": "verified as guidance, not fact or Compound forecast"}
+  ],
+  "fact_check_notes": [
+    "Reported and comparable sales are distinguished; acquisition, currency and pricing effects are not described as organic growth.",
+    "The release's conference-call wording and Form 8-K event date differ, so the article identifies the release as furnished with the dated 8-K rather than asserting an unsupported release date.",
+    "Adjusted EBITDA and free cash flow are labelled company-defined non-GAAP measures; no price, consensus estimate or unsupported forecast appears."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Material_Non-Woven_Fabric.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Material_Non-Woven_Fabric.jpg",
+    "photographer": "Anh Nhi Đỗ Lê",
+    "license": "CC0 1.0",
+    "capture_date": "2017-12-18",
+    "description": "Representative non-woven material rolls, explicitly not identified as Magnera product",
+    "unique_asset": true,
+    "published_image_sha256": "d37c09da3b21cdab15f4ec3cfd0f76714a56abce6017f8c4c51370502fb33e6b",
+    "dimensions": [1920, 1309],
+    "visual_inspection": "passed: authentic product-category photograph; no misleading company identification"
+  },
+  "gates": {
+    "source_verification": "passed: SEC 8-K, furnished fiscal-year release and latest available Form 10-Q inspected directly",
+    "duplicate_originality": "passed: distinct leverage and cash-conversion thesis with independently derived net-debt and coverage calculations",
+    "editorial_qa": "passed: 996-word analysis separately checked for accuracy, thesis specificity, original synthesis, balance, readability, metadata, disclosures and non-duplication",
+    "offline_tests": "passed: 38 focused image, discovery, earnings-review, pending-review advertising and SEO tests",
+    "build": "passed: production-canonical audit build generated 419 articles, 910 tags, 39 pages and 62 tools",
+    "render": "passed: canonical, indexability, body, source and internal links, truthful image credit, 1200x675 social image (sha256 8bf85c97e2f40fc6a1c08e2738e3132f2a95dc988b03f58d5b4382c720c8ec0e), sitemap and finance catalogue inspected",
+    "ads": "passed locally: pending-review advertising test passed; committed production config retains client ca-pub-6115783809711785, and the current live article template renders that loader. Exact-page live check remains required after deployment",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "d9f8cdd14abe4d4b846a542e923149e9b0b200fe2ef00aeb9289515e690476b6",
+  "publication": {},
+  "new_articles_published": 0
+}

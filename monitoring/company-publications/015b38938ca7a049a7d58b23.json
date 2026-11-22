@@ -1,0 +1,81 @@
+{
+  "story_fingerprint": "015b38938ca7a049a7d58b23",
+  "company": "RLX Technology Inc.",
+  "ticker": "RLX",
+  "date": "2026-11-22",
+  "status": "ready_for_pr",
+  "publication_state": "local_gates_passed",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to the 11 November factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "RLX Technology's 69.7% revenue growth is primarily acquisition-consolidation growth and must be assessed against a 7.9-point gross-margin decline, weaker operating profit, negative year-to-date operating cash flow and future minority-interest options.",
+  "article_path": "content/wealth/rlx-acquisition-revenue-margin-cash.md",
+  "canonical_url": "https://compound.ie/wealth/rlx-acquisition-revenue-margin-cash/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1828365/000110465926130340/tm2630355d1_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1828365/000110465926130340/tm2630355d1_6k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1828365/000110465926047278/rlx-20251231x20f.htm"
+  ],
+  "identity": {
+    "issuer": "RLX Technology Inc.",
+    "CIK": 1828365,
+    "results_accession": "0001104659-26-130340",
+    "annual_accession": "0001104659-26-047278",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3 and first nine months",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-20",
+    "currency": "RMB",
+    "accounting_basis": "US GAAP",
+    "convenience_exchange_rate": "RMB6.7045 per USD",
+    "units": "millions except per-ADS amounts"
+  },
+  "candidate_review": {
+    "screened_companies": ["Magnera Corporation", "Frontline plc", "RLX Technology Inc.", "Matthews International Corporation", "BitFuFu Inc."],
+    "selection_reason": "Fresh regulated-consumer-sector story with a specific acquisition-quality, margin and cash-conversion question; article makes no product-health claim."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, monitoring/company-publications, the live site, the past 14 days of posts, recent merged/open PRs and concurrent Compound/FairPath publication records. No RLX analysis, stock profile or active attempt answers this thesis; no /stocks/rlx/ URL was invented.",
+  "claim_checks": [
+    {"claim": "Q3 revenue RMB1,916.6m, +69.7%, primarily due to July consolidation of a new European entity; international share 86.5%", "source_indexes": [0, 1], "location_or_arithmetic": "Release highlights and revenue discussion", "result": "verified; not described as organic growth"},
+    {"claim": "Gross profit RMB446.6m, +26.7%, and gross margin 23.3% versus 31.2%", "source_indexes": [0], "location_or_arithmetic": "Release profit and margin sections; margin change = -7.9 points", "result": "verified in separate claim pass"},
+    {"claim": "Operating expense RMB407.1m versus RMB259.3m; GAAP operating income RMB39.5m versus RMB93.3m", "source_indexes": [0], "location_or_arithmetic": "Release expense and income sections", "result": "verified in separate claim pass"},
+    {"claim": "Derived GAAP operating margin approximately 2.1% versus 8.3%", "source_indexes": [0], "location_or_arithmetic": "39.463 / 1,916.6 = 2.06%; 93.251 / 1,129.3 = 8.26%", "result": "verified Compound calculation"},
+    {"claim": "Q3 GAAP net income RMB147.1m, non-GAAP net income RMB235.6m and non-GAAP operating income RMB143.8m", "source_indexes": [0], "location_or_arithmetic": "Release highlights and reconciliation; measures separated", "result": "verified in separate claim pass"},
+    {"claim": "Q3 operating cash RMB40.0m versus RMB357.5m; nine-month operating cash negative RMB92.0m versus positive RMB794.3m", "source_indexes": [0], "location_or_arithmetic": "Condensed cash-flow statement", "result": "verified in separate claim pass"},
+    {"claim": "Financial assets RMB13.4828bn at September versus RMB13.8834bn at June, or convenience US$2.011bn", "source_indexes": [0], "location_or_arithmetic": "Liquidity section; company translation rate RMB6.7045/USD", "result": "verified; not labelled entirely unrestricted cash"},
+    {"claim": "July acquisition created RMB249.6m mezzanine equity and future call/put options over part of remaining non-controlling interest", "source_indexes": [0], "location_or_arithmetic": "Balance-sheet note", "result": "verified; no future option value inferred"},
+    {"claim": "Earlier 2025 European acquisition cost RMB744.3m for preference shares and 66.9% of ordinary shares", "source_indexes": [2], "location_or_arithmetic": "Form 20-F acquisition note", "result": "verified and distinguished from July 2026 entity"}
+  ],
+  "fact_check_notes": [
+    "The article does not identify the July 2026 entity with the 2025 Totally Wicked acquisition; they are explicitly distinguished.",
+    "Company explanations about UK excise-duty working capital and acquisition integration are attributed to management and not presented as proven causes.",
+    "US-dollar figures are labelled convenience translations; no health claim, market-share claim, consensus estimate or price target appears."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Crystal_Bar_vaping_device,_Hillegersberg,_Rotterdam_(2023)_01.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Crystal_Bar_vaping_device%2C_Hillegersberg%2C_Rotterdam_%282023%29_01.jpg",
+    "photographer": "Donald Trung Quoc Don",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2023-06-16",
+    "description": "Representative vaping device photographed in Rotterdam, explicitly not identified as an RLX product",
+    "unique_asset": true,
+    "published_image_sha256": "c8f8474fb426ce410754bde1733fdbcfda0166c6d208504734bdbe9b2a709ad3",
+    "dimensions": [1920, 1080],
+    "visual_inspection": "passed: authentic topic-specific product-category photograph; unrelated brand and representative use stated"
+  },
+  "gates": {
+    "source_verification": "passed: SEC 6-K, furnished current release and latest annual Form 20-F inspected directly",
+    "duplicate_originality": "passed: distinct acquisition-quality thesis with independent operating-margin calculations",
+    "editorial_qa": "passed: 987-word analysis separately checked for accuracy, thesis specificity, original synthesis, balance, readability, metadata, disclosures and non-duplication",
+    "offline_tests": "passed: 38 focused image, discovery, earnings-review, pending-review advertising and SEO tests",
+    "build": "passed: production-canonical audit build generated 419 articles, 910 tags, 39 pages and 62 tools",
+    "render": "passed: canonical, indexability, body, source and internal links, truthful image credit, 1200x675 social image (sha256 f6ce5075f09ab64681a9bad750154cd1a7636f5f412fc5018e813c26c5519774), sitemap and finance catalogue inspected",
+    "ads": "passed locally: pending-review advertising test passed; committed production config retains client ca-pub-6115783809711785, and the current live article template renders that loader. Exact-page live check remains required after deployment",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "b137c30b6c812c6c5c3073add60b60e914c4691b0008ade759e6e2215f00a038",
+  "publication": {},
+  "new_articles_published": 0
+}
