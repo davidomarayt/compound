@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-22",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-11-12-finance-bill-98a-section27-pia-vs-pension-death-estate-comparison-2026-11-22",
+  "action": "substantive_existing_canonical_pia_vs_pension_update",
+  "status": "pr_pending_ci_and_live_verification",
+  "new_articles": 0,
+  "existing_canonical_page_updates": 1,
+  "canonical_urls": [
+    "https://compound.ie/pia/vs-pension/"
+  ],
+  "proposed_changes": [
+    "Replace outdated 19 October as-introduced legislative source with 12 November committee-amended Finance (No. 2) Bill 2026 No. 98a, section 27; describe Individual Investment Account (IIA) as draft legal term and PIA as reader-facing shorthand",
+    "Add source-backed practical comparison of proposed account closure on death with existing PRSA/pension death-benefit rules, explicitly separating estate administration from inheritance-tax treatment",
+    "Preserve original 13 November calculator inputs, projections, mathematical review date, canonical URL, metadata, internal links, site advertising and consent settings"
+  ],
+  "source_urls": [
+    "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf",
+    "https://pensionsauthority.ie/web-page/personal-retirement-savings-accounts-prsas/",
+    "https://pensionsauthority.ie/scheme-members-and-prsa-contributors/understanding-pensions/benefits_payable_on_death/benefits_payable_on_death_after_leaving_service/",
+    "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx",
+    "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/",
+    "https://www.newireland.ie/investments/individual-investment-account-faqs/"
+  ],
+  "source_checks": {
+    "checked_date": "2026-11-22",
+    "bill_draft": "Official committee-amended No. 98a dated 12 November contains draft IIA provisions in section 27, proposed section 747Y dealing with administration after death; parliamentary PDF independently inspected; not final law",
+    "death_comparison": "Pensions Authority original PRSA page describes estate payment on death before retirement and possible inheritance tax; occupational pension death benefits differ by arrangement",
+    "proposed_stage": "Dáil Business Committee report published 20 November proposes, not confirms, Report and Final Stages on 24 and 25 November; future dates as of this run",
+    "launch_status": "Revenue notice dated 7 October conditions 1 July 2027 target on enactment, with provider readiness also not established",
+    "provider_findings": "Original statements from AIB, Bank of Ireland, Irish Life, PTSB, Zurich and New Ireland rechecked; no verified new complete provider-specific fee schedule or open application",
+    "blocked_sources": [
+      "Canonical Oireachtas Bill 98 listing returned HTTP 403; independent confirmation of latest official stage unavailable"
+    ]
+  },
+  "launch_tracker": {
+    "path": "content/pia-launch-tracker.yml",
+    "changed": false,
+    "global_checked_date_retained": "2026-11-15",
+    "reason": "No independently verified new legislative outcome, numerical provider fee, opening date or commencement; one official bill source remains blocked",
+    "provider_dataset_changed": false,
+    "provider_csv_changed": false
+  },
+  "deduplication": "Read 22 Nov EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, all existing PIA canonical tool guides and 19–21 Nov PIA ledgers; compared 21 Nov couples and mortgage PRs #240/#241, open PIA PR search, private company workflows and prior Guide/launch tracker releases. No standalone new page or near-duplicate.",
+  "prior_release_recovery": {
+    "date": "2026-11-21",
+    "affected_urls": [
+      "https://compound.ie/pia/#pia-launch-tracker",
+      "https://compound.ie/wealth/personal-investment-account-ireland/"
+    ],
+    "current_result": "22 November web reader now shows the unique 24–25 November proposed stages passage and tracker heading on both public canonical pages. Their content fingerprint is visibly recovered; exact ad loader/CMP and image HTTP asset responses remain unverified.",
+    "status": "public_updated_content_visible_assets_and_ads_not_fully_verified"
+  },
+  "qa": {
+    "factual": "12 November committee-amended draft and Revenue conditional target separated from enacted law; PRSA death benefits checked with Pensions Authority; no provider fees or inheritance exemptions invented",
+    "arithmetic": "PIA and pension numerical calculator and 12 existing worked scenarios unchanged",
+    "originality": "Distinct decision question: legacy PIA vs pension source status and inheritance on death, incorporated in established canonical page",
+    "links": "All internal links target existing canonical PIA, pensions and couples pages; external sources HTTPS",
+    "images": "No new images, photos or social previews; existing page metadata unchanged",
+    "advertising": "No changes to site ad loader, standard placements or consent controls. Production page-specific ad/CMP presence remains to verify.",
+    "tests": "Pending exact-PR-head CI test and performance, site static build and final live checks"
+  },
+  "production_branch": "claude/clever-babbage-uibieq",
+  "base_sha_at_branch_creation": "6ff85f6a05a9f97e6f1debe5031c0bc65a80440f",
+  "work_branch": "automation/pia-2026-11-22-pension-estate-source-update",
+  "release": {
+    "editorial_commit_sha": "b5f1ab2e831097e063007328c665269e6793c7d7",
+    "pr_url": null,
+    "pr_head_sha": null,
+    "exact_head_test": "pending",
+    "exact_head_performance": "pending",
+    "merge_sha": null,
+    "github_pages_run": null
+  },
+  "live_http_verified": false,
+  "verified_live_result": null,
+  "production_deployment_confirmed": false,
+  "communication": "No email or social posting"
+}
