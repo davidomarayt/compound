@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-21
+Checked: 2026-11-22
 
 - 499 saved profiles checked against structural and issuer rules.
-- 129 existing company articles; 104 mapped to monitored issuers.
-- 122 pending review items; 15 recorded decisions.
+- 135 existing company articles; 105 mapped to monitored issuers.
+- 128 pending review items; 15 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -21,6 +21,14 @@ Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `0aeeb851b395ae68bee36238`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/magnera-cash-flow-debt-volume.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `157a7bc43afea04ffeedb0da`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -34,6 +42,14 @@ ID: `15bd78b122116bf855e5118c`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/mattel-tariff-refund-margin.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `1a4d46030633de5eff9079ec`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/rlx-acquisition-revenue-margin-cash.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -61,11 +77,27 @@ Files: `content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.m
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `3b7738537cea9953bd513d1b`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `599619534c0f5ef04be07509`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `5ba022a8269f4725b4040611`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/frontline-tanker-rates-dividends-fleet.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -146,6 +178,14 @@ ID: `917d8a920f4985a8f7625a86`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `950255ec5b246c132e70b5dc`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -564,6 +604,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/airbnb-bookings-free-cash-flow.md`, `content/earnings-profiles/abnb.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-05
+
+### AMZN · article_review · low
+
+ID: `15b1d68c95807c6bff73d570`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/amazon-aws-backlog-customer-funding.md`, `content/earnings-profiles/amzn.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
 
 ### AMZN · article_review · low
 
