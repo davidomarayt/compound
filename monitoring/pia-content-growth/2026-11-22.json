@@ -4,7 +4,7 @@
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-11-12-finance-bill-98a-section27-pia-vs-pension-death-estate-comparison-2026-11-22",
   "action": "substantive_existing_canonical_pia_vs_pension_update",
-  "status": "pr_pending_ci_and_live_verification",
+  "status": "merged_git_pages_deployed_specific_public_update_fingerprint_unverified",
   "new_articles": 0,
   "existing_canonical_page_updates": 1,
   "canonical_urls": [
@@ -67,22 +67,49 @@
     "links": "All internal links target existing canonical PIA, pensions and couples pages; external sources HTTPS",
     "images": "No new images, photos or social previews; existing page metadata unchanged",
     "advertising": "No changes to site ad loader, standard placements or consent controls. Production page-specific ad/CMP presence remains to verify.",
-    "tests": "Pending exact-PR-head CI test and performance, site static build and final live checks"
+    "tests": "Editorial PR #247 head 0fc558729e97b63aa9b1f16fcedd701ed3f6946f: GitHub Actions CI run 45005909481 test and performance both SUCCESS on exact latest head; static compound build succeeded; no tests changed. Production Pages run 45006543332 on merge d907c5e541ae55d04fe17cfc81bc4b889df00310: build, deploy, generic verify-live, mobile-audit and finance-discovery all SUCCESS.",
+    "public_fingerprint": "Independent public web reader on 22 November after successful Pages deploy still returned the OLD 13 November introductory sentence ('The PIA examples use the Finance Bill as introduced on 19 October 2026') and did not show 'What happens if the account holder dies? PIA versus pension inheritance'. Therefore do not mark new text as verified live. Raw HTTPS direct fetch from container was blocked by DNS, not proof of failed deployment.",
+    "ad_and_social_assets": "Site verifier checks standard ad configuration on other canonical pages. The exact updated /pia/vs-pension/ raw HTML ad loader/CMP/slot and OG/Twitter image requests not independently fetched; no full page-specific asset claim. Existing canonical page metadata preserved."
   },
   "production_branch": "claude/clever-babbage-uibieq",
   "base_sha_at_branch_creation": "6ff85f6a05a9f97e6f1debe5031c0bc65a80440f",
   "work_branch": "automation/pia-2026-11-22-pension-estate-source-update",
   "release": {
     "editorial_commit_sha": "b5f1ab2e831097e063007328c665269e6793c7d7",
-    "pr_url": null,
-    "pr_head_sha": null,
-    "exact_head_test": "pending",
-    "exact_head_performance": "pending",
-    "merge_sha": null,
-    "github_pages_run": null
+    "pr_url": "https://github.com/davidomarayt/compound/pull/247",
+    "pr_head_sha": "0fc558729e97b63aa9b1f16fcedd701ed3f6946f",
+    "exact_head_test": "success",
+    "exact_head_performance": "success",
+    "merge_sha": "d907c5e541ae55d04fe17cfc81bc4b889df00310",
+    "github_pages_run": 45006543332,
+    "exact_head_ci_run_id": 45005909481,
+    "merged_at_dublin_date": "2026-11-22",
+    "github_pages_url": "https://github.com/davidomarayt/compound/actions/runs/45006543332",
+    "github_pages_jobs": {
+      "build": "success",
+      "deploy": "success",
+      "verify_live_generic": "success",
+      "mobile_audit": "success",
+      "finance_discovery": "success"
+    }
   },
   "live_http_verified": false,
-  "verified_live_result": null,
-  "production_deployment_confirmed": false,
-  "communication": "No email or social posting"
+  "verified_live_result": {
+    "canonical_url": "https://compound.ie/pia/vs-pension/",
+    "expected_fingerprint": "What happens if the account holder dies? PIA versus pension inheritance",
+    "date_checked": "2026-11-22",
+    "raw_http_result": "unverified_from_this_runtime",
+    "web_reader_result": "Old 13 November introduction returned; updated unique estate heading not found",
+    "ad_loader_cmp": "not_verified_for_updated_canonical",
+    "social_image_http": "not_verified_for_updated_canonical",
+    "status": "exact_new_content_not_independently_verified",
+    "follow_up": "Re-fetch canonical HTML from production with a fresh reader or permitted GitHub Pages runner, assert unique estate section and updated 22 November amended-Bill opening, verify ad script, CMP, OG/Twitter image URLs and assets, then reconcile ledger without new content."
+  },
+  "production_deployment_confirmed": true,
+  "communication": "No email or social posting",
+  "follow_up": [
+    "Verify exact newly added 22 November proposed IIA section-747Y vs pension estate text on canonical live /pia/vs-pension/; generic GitHub Pages success does not prove updated passage.",
+    "Fetch live page raw canonical HTML for ads/CMP and social-image URLs and HTTP status.",
+    "Retain unchanged 15 Nov tracker-wide checked date until all sources, including 403 Oireachtas Bill stage page, can be independently checked."
+  ]
 }
