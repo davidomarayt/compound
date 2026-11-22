@@ -7,11 +7,11 @@
   "target_new_articles": 3,
   "new_article_count_prepared": 2,
   "canonical_updates_prepared": 1,
-  "confirmed_live_new_articles": 0,
-  "confirmed_updated_canonicals": 0,
-  "status": "editorial_prepared_pending_exact_head_ci_and_public_verification",
+  "confirmed_live_new_articles": 2,
+  "confirmed_updated_canonicals": 1,
+  "status": "github_pages_deployed_all_three_canonicals_independently_verified_live",
   "ads_policy": "Standard AdSense loader and consent controls remain enabled independent of human editorial-review status; actual ad fill not guaranteed",
-  "editorial_quality_gate": "Primary sources checked November 22; effective-date versus announcement-date distinctions, original thesis, original hypothetical arithmetic, and archived-documentary photo licensing checked; CI and exact live-production fetch still required",
+  "editorial_quality_gate": "Exact PR head c1ffcabc4fa9f96dd1e231a724c53166a4bea921: test and performance passed; substantive source/editorial/photography verification and site static build passed; GitHub Pages deployed merge 3a38c48e5ad7ae019b324e46f676972cced5294d; mobile-audit runner independently fetched all three live canonical HTML, real JPEG covers, OG/Twitter WebP, profile backlinks and AdSense loaders at 2026-11-22 07:25:19 UTC.",
   "prior_publication_recovery": {
     "checked_dates": [
       "2026-11-20",
@@ -54,13 +54,15 @@
       "profile_url": "https://compound.ie/companies/openai/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": "NOT VERIFIED: must pass exact PR head test and performance, GitHub Pages site/mobile-audit fetch of canonical HTML, real cover JPEG, OG/Twitter WebP, reciprocal profile links and advertising loader",
-      "deployment_status": "pending_quality_gated_merge_and_live_audit",
-      "status": "pending_ci_deployment_live_verification"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: GitHub Pages site run 44997821891 mobile-audit at 2026-11-22 07:25:19 UTC fetched current canonical HTML, real JPEG cover, OG/Twitter WebP, reciprocal profile link and AdSense loader: https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/",
+      "deployment_status": "github_pages_deployed_verified",
+      "status": "new_article_published_live_verified",
+      "live_verification_at_utc": "2026-11-22T07:25:19Z",
+      "live_verification_run": "https://github.com/davidomarayt/compound/actions/runs/44997821891"
     },
     {
       "company": "Anthropic",
@@ -92,13 +94,15 @@
       "live_required_fingerprint": "The November 20 regular-session close was $88.91.",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": "NOT VERIFIED: must pass exact PR head test and performance, GitHub Pages site/mobile-audit fetch of canonical HTML, real cover JPEG, OG/Twitter WebP, reciprocal profile links and advertising loader",
-      "deployment_status": "pending_quality_gated_merge_and_live_audit",
-      "status": "pending_ci_deployment_live_verification"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: GitHub Pages site run 44997821891 mobile-audit at 2026-11-22 07:25:19 UTC fetched current canonical HTML with exact new second-close passage, real JPEG cover, OG/Twitter WebP, reciprocal profile link and AdSense loader: https://compound.ie/news/anthropic-ipo-pricing-nasdaq/",
+      "deployment_status": "github_pages_deployed_verified",
+      "status": "updated_existing_canonical_live_verified",
+      "live_verification_at_utc": "2026-11-22T07:25:19Z",
+      "live_verification_run": "https://github.com/davidomarayt/compound/actions/runs/44997821891"
     },
     {
       "company": "Databricks",
@@ -128,38 +132,57 @@
       "profile_url": "https://compound.ie/companies/databricks/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": "NOT VERIFIED: must pass exact PR head test and performance, GitHub Pages site/mobile-audit fetch of canonical HTML, real cover JPEG, OG/Twitter WebP, reciprocal profile links and advertising loader",
-      "deployment_status": "pending_quality_gated_merge_and_live_audit",
-      "status": "pending_ci_deployment_live_verification"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: GitHub Pages site run 44997821891 mobile-audit at 2026-11-22 07:25:19 UTC fetched current canonical HTML, real JPEG cover, OG/Twitter WebP, reciprocal profile link and AdSense loader: https://compound.ie/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics/",
+      "deployment_status": "github_pages_deployed_verified",
+      "status": "new_article_published_live_verified",
+      "live_verification_at_utc": "2026-11-22T07:25:19Z",
+      "live_verification_run": "https://github.com/davidomarayt/compound/actions/runs/44997821891"
     }
   ],
   "profile_updates": [
     {
       "slug": "openai",
       "profile_url": "https://compound.ie/companies/openai/",
-      "status": "source_update_committed_public_backlink_pending_verification"
+      "status": "public_canonical_and_reciprocal_backlink_verified_live",
+      "verified_at_utc": "2026-11-22T07:25:19Z"
     },
     {
       "slug": "anthropic",
       "profile_url": "https://compound.ie/stocks/ant/",
-      "status": "existing_public_ANT_profile_and_canonical_update_pending_verification"
+      "status": "public_canonical_and_reciprocal_backlink_verified_live",
+      "verified_at_utc": "2026-11-22T07:25:19Z"
     },
     {
       "slug": "databricks",
       "profile_url": "https://compound.ie/companies/databricks/",
-      "status": "source_update_committed_public_backlink_pending_verification"
+      "status": "public_canonical_and_reciprocal_backlink_verified_live",
+      "verified_at_utc": "2026-11-22T07:25:19Z"
     }
   ],
   "production_deployment": {
-    "status": "pending",
-    "confirmed_live_urls": 0,
-    "confirmed_live_new_articles": 0,
-    "confirmed_updated_canonicals": 0
+    "status": "success_verified_live",
+    "workflow": "site",
+    "workflow_run_id": 44997821891,
+    "workflow_run_url": "https://github.com/davidomarayt/compound/actions/runs/44997821891",
+    "verified_merge_sha": "3a38c48e5ad7ae019b324e46f676972cced5294d",
+    "branch": "claude/clever-babbage-uibieq",
+    "mobile_audit": "success",
+    "verify_live": "success",
+    "canonical_html_cover_og_twitter_ads_and_backlinks": "PASS for three pages",
+    "verified_at_utc": "2026-11-22T07:25:19Z",
+    "confirmed_live_urls": 3,
+    "confirmed_live_new_articles": 2,
+    "confirmed_updated_canonicals": 1,
+    "notes": "Direct independent web reader for two newly published pages unavailable; public GitHub Actions curl verifier fetched all pages/assets and verified exact Anthropic update fingerprint. AdSense loader presence not guaranteed ad fill."
   },
   "branch_protection": "Native branch protection previously absent; equivalent exact-head test/performance CI, base comparison, licensed photo and independent source QA enforced before merge; native protection recommended",
-  "updated_at_utc": "2026-11-22T07:00:00Z"
+  "updated_at_utc": "2026-11-22T07:25:19Z",
+  "confirmed_live_pages": 3,
+  "editorial_pr": "https://github.com/davidomarayt/compound/pull/245",
+  "ci_pr_head_sha": "c1ffcabc4fa9f96dd1e231a724c53166a4bea921",
+  "production_merge_sha": "3a38c48e5ad7ae019b324e46f676972cced5294d"
 }
