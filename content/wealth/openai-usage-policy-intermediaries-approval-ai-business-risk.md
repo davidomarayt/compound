@@ -24,8 +24,6 @@ image_source: https://commons.wikimedia.org/wiki/File:Open_AI_Forum_-_India_AI_I
 sources:
 - title: "OpenAI — Usage policies effective 20 November 2026; update announced 21 October"
   url: https://openai.com/policies/usage-policies/
-- title: "OpenAI — previous usage-policy version, linked from current official policy"
-  url: https://openai.com/policies/usage-policies/
 - title: "Wikimedia Commons — Charlie4404 OpenAI Forum photograph, CC BY-SA 4.0"
   url: https://commons.wikimedia.org/wiki/File:Open_AI_Forum_-_India_AI_Impact_Summit_2026.jpg
 ---
