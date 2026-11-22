@@ -8,8 +8,8 @@
   "slots_already_filled_at_start": 0,
   "publishing_branch": "claude/clever-babbage-uibieq",
   "verified_base_commit": "8047c8b148df4695f77c5e16d85344c72a2ef3ee",
-  "programme_status": "checks_passed_pending_pr",
-  "confirmed_publications": 0,
+  "programme_status": "published_live_verified",
+  "confirmed_publications": 3,
   "new_articles": 3,
   "canonical_updates": 0,
   "held_for_review": 0,
@@ -21,7 +21,7 @@
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "checks_passed_pending_pr",
+      "status": "published_live_verified",
       "source_path": "content/wealth/irish-gift-voucher-rights-ccpc-2026.md",
       "canonical_url": "https://compound.ie/news/irish-gift-voucher-rights-ccpc-2026/",
       "primary_sources": [
@@ -55,15 +55,17 @@
         "source": "https://commons.wikimedia.org/wiki/File:Gift_card_assortment.jpg",
         "processing": "Cropped to 1600 × 900; modification and unrelated illustrative brands disclosed"
       },
-      "publication_commit": null,
-      "deployment_status": "pending_pr"
+      "publication_commit": "20ad78fa76309eeb9ad68d81c8ea759bad1a8b7c",
+      "deployment_status": "live_verified",
+      "live_verified_at_utc": "2026-11-22T10:25:40Z",
+      "live_html_sha256": "5c4a77e74c5dc29255fa40dae3ef694eb56c6b8a38d7de63a3c1eef9e29ab863"
     },
     {
       "topic": "Bank of Ireland Youth Mind and Money 2026 saving and investment-confidence gap",
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "checks_passed_pending_pr",
+      "status": "published_live_verified",
       "source_path": "content/wealth/irish-young-savers-investing-survey-2026.md",
       "canonical_url": "https://compound.ie/news/irish-young-savers-investing-survey-2026/",
       "primary_sources": [
@@ -97,15 +99,17 @@
         "source": "https://commons.wikimedia.org/wiki/File:The_Bank_of_Ireland_in_College_Green_-_geograph.org.uk_-_1738168.jpg",
         "processing": "Cropped to 1600 × 900; modification disclosed"
       },
-      "publication_commit": null,
-      "deployment_status": "pending_pr"
+      "publication_commit": "20ad78fa76309eeb9ad68d81c8ea759bad1a8b7c",
+      "deployment_status": "live_verified",
+      "live_verified_at_utc": "2026-11-22T10:25:40Z",
+      "live_html_sha256": "6d2af91dce8b171054df1a3586134e285ffcf57a924b377444d3b836a5cefc77"
     },
     {
       "topic": "Confirmed 2027/28 Irish school-transport charges and family cost impact",
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "checks_passed_pending_pr",
+      "status": "published_live_verified",
       "source_path": "content/wealth/ireland-school-transport-fees-2027.md",
       "canonical_url": "https://compound.ie/news/ireland-school-transport-fees-2027/",
       "primary_sources": [
@@ -140,8 +144,10 @@
         "source": "https://commons.wikimedia.org/wiki/File:Bus_%C3%89ireann.jpg",
         "processing": "Cropped to 1600 × 900; archival status and modification disclosed"
       },
-      "publication_commit": null,
-      "deployment_status": "pending_pr"
+      "publication_commit": "20ad78fa76309eeb9ad68d81c8ea759bad1a8b7c",
+      "deployment_status": "live_verified",
+      "live_verified_at_utc": "2026-11-22T10:25:40Z",
+      "live_html_sha256": "fa7c80bcfd5d6d9c322e725fce310b6b02bc883a07b42f52aa8732dc2fccf060"
     }
   ],
   "deduplication": {
@@ -157,22 +163,27 @@
   },
   "checks": {
     "editorial": "passed independent accuracy, materiality, redundancy, calculation, source-scope, readability, metadata and internal-link review",
-    "advertising": "offline render contains the standard ca-pub-6115783809711785 loader and consent hooks on all three pages; live verification pending",
+    "advertising": "verified live: all three public pages contain the standard ca-pub-6115783809711785 loader and consent hooks; ad fill is not claimed",
     "images": "Three distinct licensed 1600 × 900 photographs prepared and visually inspected. Full build generated valid 1200 × 675, 1200 × 900 and 1200 × 1200 WebP discovery/social crops for each article.",
     "tests": "13 focused pytest tests passed with 2 subtests and one non-blocking pytest-alias deprecation warning; full static build passed with 422 articles, 918 tags, 39 pages and 62 tools; rendered pages have one H1, canonical/social metadata, standard ads and consent, no noindex, and sitemap entries",
-    "deployment": "pending_pr"
+    "deployment": "passed by direct live verification: all three article URLs, 1600 × 900 covers and 1200 × 675 discovery/social images returned HTTP 200; canonical, one H1, source text, indexability, standard ads, consent, social metadata and sitemap entries were verified"
   },
   "recoverable_failures": [
     {
       "stage": "fresh_checkout_offline_build",
       "status": "recovered",
       "detail": "A fresh checkout lacks 115 historical generated cover files and 51 older news front-matter image selections that are normally restored by the CI image cache. The full build was completed in an isolated temporary fixture by rehydrating each exact pinned or already-published topic-specific cover; no historical content or temporary assets are included in this publication change."
+    },
+    {
+      "stage": "deployment_run_attribution",
+      "status": "evidence_available_without_run_id",
+      "detail": "The GitHub Actions connector did not return a site workflow run associated with merge commit 20ad78fa76309eeb9ad68d81c8ea759bad1a8b7c. Publication is nevertheless independently confirmed from the exact public article, cover, social-image and sitemap responses; no deployment run ID is fabricated."
     }
   ],
-  "pull_request": null,
-  "pull_request_head_commit": null,
-  "publication_commit": null,
-  "pr_ci_run": null,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/251",
+  "pull_request_head_commit": "6a02bd9aba5727f14585f798613e51c09930d510",
+  "publication_commit": "20ad78fa76309eeb9ad68d81c8ea759bad1a8b7c",
+  "pr_ci_run": "https://github.com/davidomarayt/compound/actions/runs/45011397982",
   "deployment_run": null,
-  "verified_at_utc": null
+  "verified_at_utc": "2026-11-22T10:25:40Z"
 }
