@@ -64,6 +64,8 @@ For principal-home purchases, the Central Bank's current mortgage measures requi
 
 For a €400,000 home, a 10% deposit is €40,000.
 
+If some of your house deposit is **invested in shares or an ETF**, rather than sitting in cash, consider whether it will still be worth the required amount when you buy. Our [PIA and mortgage-deposit guide](/wealth/pia-mortgage-deposit-ireland/) explains how Irish lenders document invested assets, why regular ETF investing differs from speculative trading, and what may be needed before drawdown.
+
 That is only the **minimum mortgage deposit**.
 
 It is not the total cash requirement.

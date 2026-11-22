@@ -1,0 +1,124 @@
+---
+title: What is omeprazole? Uses, side effects and how long it takes to work
+seo_title: Omeprazole in Ireland | Uses, Side Effects and How Long It Takes
+slug: omeprazole
+pillar: health
+canonical_path: /health/medicines/omeprazole/
+date: '2026-11-19'
+research_checked: '2026-11-20'
+editorial_review_status: pending
+summary: Omeprazole reduces stomach acid. Learn how long it takes to help with reflux, what to expect from a pharmacy
+  course, and when to ask for help.
+meta_description: Irish adult guide to omeprazole and Losec. Learn how long it takes to work, pharmacy vs prescription
+  use, side effects and important interactions.
+tags:
+- medicines
+- digestive-health
+- omeprazole
+image: /static/images/evergreen/omeprazole-guide.jpg
+social_image: /static/images/evergreen/omeprazole-guide.jpg
+image_alt: Omeprazole 20 mg capsules photographed in Sweden
+image_credit: W.carter, 2017 · CC0 1.0 · cropped
+image_source: https://commons.wikimedia.org/wiki/File:Omeprazol_Activis_capsules.jpg
+require_pinned_hero: true
+sources:
+- title: HPRA | Omeprazole prescribing information, section 5.1
+  url: https://assets.hpra.ie/products/Human/27211/Licence_PA2315-129-001_02092024160756.pdf
+- title: HSE | Omeprazole
+  url: https://www2.hse.ie/medicines/omeprazole/
+- title: HPRA | Losec Control 20 mg, Irish authorisation and product documents
+  url: https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/28005
+- title: HPRA | Losec Control 20 mg patient leaflet
+  url: https://assets.hpra.ie/products/Human/28005/7d53c61b-f1e6-46a0-9f45-5bd4a67a1546.pdf
+- title: HSE | Heartburn and acid reflux
+  url: https://www2.hse.ie/conditions/heartburn-and-acid-reflux/
+- title: HSE | Chest pain and when to call for emergency help
+  url: https://www2.hse.ie/conditions/chest-pain/
+- title: DailyMed | Omeprazole Tablet, Delayed Release (US label)
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ceaec04-3ca3-4c7c-9184-51a42686a595
+- title: NICE  |  Gastro-oesophageal reflux and dyspepsia in adults
+  url: https://www.nice.org.uk/guidance/cg184/chapter/Recommendations
+- title: NHS SPS  |  Clopidogrel and proton pump inhibitors
+  url: https://sps.nhs.uk/articles/using-clopidogrel-with-proton-pump-inhibitors-ppis/
+medicine_index_name: Omeprazole
+medicine_search_aliases:
+- Losec
+- PPI
+- reflux
+---
+
+**Omeprazole is a proton pump inhibitor (PPI) that reduces stomach acid.** It’s used for heartburn and acid reflux, and doctors also prescribe it for some stomach ulcers. If you’re taking it for reflux, you may need **two to three days** of treatment before symptoms start to improve. [HSE omeprazole guidance](https://www2.hse.ie/medicines/omeprazole/)
+
+This guide covers adults in Ireland. Follow the leaflet for your exact product or the directions on your prescription. Sources checked 19 November 2026.
+
+## The Science Behind the Drug
+
+**Omeprazole targets the proton pump in the stomach’s acid-producing cells.** Those cells, called parietal cells, use an enzyme called **H⁺/K⁺-ATPase** to move hydrogen ions into the stomach in exchange for potassium ions. That is the final step in secreting stomach acid.
+
+Omeprazole starts as an inactive **prodrug**. The very acidic environment next to an active pump converts it to a form that binds to the pump and disables it. The cell can make replacement pumps, so it can resume acid secretion. [HPRA prescribing information](https://assets.hpra.ie/products/Human/27211/Licence_PA2315-129-001_02092024160756.pdf) · [Review of proton pump inhibition and recovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC5942154/)
+
+### The proton pump and staged symptom assessment
+
+After it is absorbed, omeprazole becomes activated in the acidic channels of stomach parietal cells. It blocks the hydrogen-potassium ATPase that releases acid into the stomach. New active pumps gradually replace ones it has blocked. This explains why its time course differs from an antacid that neutralises acid already present. [DailyMed source](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ceaec04-3ca3-4c7c-9184-51a42686a595)
+
+## How long does omeprazole take to work?
+
+The Irish **Losec Control 20 mg** leaflet says improvement can take two to three days. If your symptoms clear completely, the leaflet says to stop the pharmacy course. If symptoms get worse or are still there after 14 days, speak to your GP. For recurring heartburn, ask a pharmacist or your GP about the cause and the best next step. [HPRA patient leaflet](https://assets.hpra.ie/products/Human/28005/7d53c61b-f1e6-46a0-9f45-5bd4a67a1546.pdf) · [HSE reflux guidance](https://www2.hse.ie/conditions/heartburn-and-acid-reflux/)
+
+## Can you buy omeprazole without a prescription in Ireland?
+
+**Yes. Irish pharmacies can supply certain products without a prescription**, including Losec Control 20 mg gastro-resistant tablets for short-term reflux treatment in adults. Ask the pharmacist to check whether the product suits you. [HPRA product listing](https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/28005)
+
+- **Pharmacy course:** The usual dose for Losec Control is one 20 mg tablet daily for up to 14 days. The leaflet recommends taking it in the morning, preferably on an empty stomach. Swallow it whole. If swallowing is difficult, check the instructions for the exact product with your pharmacist. [Irish patient leaflet](https://assets.hpra.ie/products/Human/28005/7d53c61b-f1e6-46a0-9f45-5bd4a67a1546.pdf)
+- **Prescription course:** Your dose and treatment length depend on why it was prescribed. A GP may prescribe a longer course for reflux or another condition. Follow the prescription and check with your GP before stopping long-term treatment. [HSE omeprazole guidance](https://www2.hse.ie/medicines/omeprazole/) · [HSE reflux guidance](https://www2.hse.ie/conditions/heartburn-and-acid-reflux/)
+
+## What are the side effects of omeprazole?
+
+Headache, nausea, diarrhoea, constipation, wind and stomach discomfort are possible. Ask a pharmacist or GP if side effects are persistent or troubling. [Irish patient leaflet](https://assets.hpra.ie/products/Human/28005/7d53c61b-f1e6-46a0-9f45-5bd4a67a1546.pdf)
+
+Longer courses can lower magnesium or vitamin B12 levels in some people. The HSE advises discussing long-term treatment with your GP before stopping because symptoms can return when acid production rebounds. [HSE guidance on long-term use](https://www2.hse.ie/medicines/omeprazole/)
+
+## Who should speak to a pharmacist or GP first?
+
+Tell them if you have liver problems, are pregnant or breastfeeding, or take other medicines. Make a point of mentioning **clopidogrel**, warfarin and any HIV medicines. The Losec Control leaflet specifically says to avoid it if you take **nelfinavir**. Keep taking prescribed medicines as directed and ask your pharmacist or prescriber to check the combination. [HSE interactions](https://www2.hse.ie/medicines/omeprazole/) · [Irish patient leaflet](https://assets.hpra.ie/products/Human/28005/7d53c61b-f1e6-46a0-9f45-5bd4a67a1546.pdf)
+
+If you also take [ibuprofen](/health/medicines/ibuprofen/), mention it to your pharmacist or GP. Ibuprofen can upset the stomach, and its suitability depends on your health and other medicines. [HSE omeprazole guidance](https://www2.hse.ie/medicines/omeprazole/) · [HSE NSAID guidance](https://www2.hse.ie/medicines/nsaids/)
+
+## When should you get medical help?
+
+- **Call 112 or 999** for sudden chest pain with tightness or heaviness, pain spreading to the arm, back, neck or jaw, or pain accompanied by breathlessness, sweating or nausea. These can be signs of a heart attack. Call emergency services for signs of a severe allergic reaction such as trouble breathing or swelling of the lips, tongue or throat. [HSE chest pain guidance](https://www2.hse.ie/conditions/chest-pain/) · [HSE omeprazole guidance](https://www2.hse.ie/medicines/omeprazole/)
+- **Get urgent medical help** if you vomit blood or pass black, tarry stools. **Contact your GP** if food sticks when you swallow, you keep vomiting, or you are losing weight without trying. [Irish patient leaflet](https://assets.hpra.ie/products/Human/28005/7d53c61b-f1e6-46a0-9f45-5bd4a67a1546.pdf) · [HSE reflux guidance](https://www2.hse.ie/conditions/heartburn-and-acid-reflux/)
+
+[Browse the Common Medicines guides](/health/medicines/).
+
+*Photo licence: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).*
+
+## What the evidence measures
+
+Ask whether the expected outcome is less heartburn, healing or protection while a risk persists. Those goals may have different treatment and review windows.
+
+## Two approaches to acid symptoms
+
+| What to check | Why it matters |
+|---|---|
+| Antacid | acts on acid already in the stomach |
+| Omeprazole | reduces the acid made by active pumps |
+
+
+## Why do clinicians ask how long I have taken it?
+
+The reason for starting treatment may change. The review considers whether symptoms, healing or protection against an ongoing risk still justifies the same plan.
+
+## How to read a good response to acid suppression
+
+Write down the goal with the clinician. For reflux, that could be fewer episodes after meals or fewer nights waking with symptoms. For a prescription meant to protect the stomach alongside another medicine, the absence of symptoms alone does not settle whether protection is still needed. If you are unsure, check the original indication and review date before stopping a long-standing prescription. [Reflux guideline](https://www.nice.org.uk/guidance/cg184/chapter/Recommendations)
+
+## Why an infection test can change the timing conversation
+
+Testing for *Helicobacter pylori* is a separate question from treating a symptom. A proton pump inhibitor can affect the accuracy of some tests. If a breath or stool test is planned, tell the clinic you take omeprazole and ask how they want you to prepare. The decision should take account of why you are taking it. [Reflux guideline](https://www.nice.org.uk/guidance/cg184/chapter/Recommendations)
+
+If you take [clopidogrel](/health/medicines/clopidogrel/), flag both prescriptions at review. A clinician can consider gastrointestinal protection and the interaction together. Seek assessment for persistent difficulty swallowing, unexplained weight loss or signs of bleeding even if your heartburn is better. [Specialist Pharmacy Service interaction guidance](https://sps.nhs.uk/articles/using-clopidogrel-with-proton-pump-inhibitors-ppis/) · [HSE omeprazole guidance](https://www2.hse.ie/medicines/omeprazole/)
+
+## Related guides
+
+[Antacids](/health/medicines/antacids/) · [Esomeprazole](/health/medicines/esomeprazole/) · [Lansoprazole](/health/medicines/lansoprazole/) · [Pantoprazole](/health/medicines/pantoprazole/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)

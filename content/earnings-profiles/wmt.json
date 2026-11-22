@@ -2,33 +2,33 @@
   "cik": 104169,
   "company": "Walmart",
   "latest": {
-    "accession": "0000104169-26-000154",
-    "filed": "2026-08-28",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2027,
+    "fp": "Q3",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-19",
+    "form": "8-K",
+    "accession": "0000104169-26-000168",
+    "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 0.8,
-        "prior_year": 0.88,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 188835000000,
+        "prior_year": 179496000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit GAAP total revenues"
       },
       "net_income": {
-        "current": 6366000000,
-        "prior_year": 7026000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 4945000000,
+        "prior_year": 6143000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit GAAP net income attributable to Walmart"
       },
-      "revenue": {
-        "current": 186100000000,
-        "prior_year": 175750000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 0.62,
+        "prior_year": 0.77,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit GAAP diluted EPS attributable to Walmart"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm"
+    },
+    {
+      "fy": 2027,
+      "fp": "Q3",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-19",
+      "form": "8-K",
+      "accession": "0000104169-26-000168",
+      "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
+      "metrics": {
+        "revenue": {
+          "current": 188835000000,
+          "prior_year": 179496000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit GAAP total revenues"
+        },
+        "net_income": {
+          "current": 4945000000,
+          "prior_year": 6143000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit GAAP net income attributable to Walmart"
+        },
+        "diluted_eps": {
+          "current": 0.62,
+          "prior_year": 0.77,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit GAAP diluted EPS attributable to Walmart"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC XBRL for earlier periods; SEC Form 8-K earnings exhibit for latest quarter; no analyst estimates",
   "ticker": "WMT",
-  "updated": "2026-10-15"
+  "updated": "2026-11-20"
 }

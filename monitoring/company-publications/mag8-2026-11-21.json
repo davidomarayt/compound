@@ -1,0 +1,130 @@
+{
+  "series": "mag8",
+  "date": "2026-11-21",
+  "timezone": "Europe/Dublin",
+  "company": "Amazon.com Inc.",
+  "ticker": "AMZN",
+  "selection": "Least recently featured eligible company, 6 November; the Lilly-only exception expired after 18 November.",
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/amazon-aws-backlog-customer-funding.md",
+  "canonical_url": "https://compound.ie/wealth/amazon-aws-backlog-customer-funding/",
+  "story_fingerprint": "AMZN-2026Q3-long-term-commitments-versus-customer-funding",
+  "story_thesis": "Contracted demand rose strongly, but group unearned revenue and net working-capital movements cannot establish the amount of upfront AWS cash funding.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS.md, topic index, inventory JSON and source Amazon articles; no existing backlog/customer-funding question. Existing earnings/capex and advertising timing articles remain distinct and earnings article linked.",
+    "Checked Mag8/legacy Mag7 records and source posts: no 21 November series publication. Morning batch BJ, MOG.A and IESC is distinct.",
+    "Fetched existing live Amazon earnings, stock guide and advertising articles. Checked past 14 days, recent/open Compound PRs and FairPath PRs; overnight research and cross-site watchdog inspected. OpenAI procurement, other AI infrastructure and PIA/consumer workflows answer different questions."
+  ],
+  "claim_checks": [
+    "Directly inspected both SEC 10-Qs. Periods 30 June and 30 September 2026, original contract terms longer than one year; commitments primarily AWS, not an AWS-only cash balance.",
+    "578-496=82 billion;82/496=16.532258%. This is net change in outstanding commitments, not gross signings. Remaining lives 6.4 and6.1 years are not recognition schedules.",
+    "Current unearned 20.428/21.708 billion; long-term4.5/6.5 billion. Totals24.928/28.208; increase3.280;growth13.157895%. Article rounds totals24.9/28.2,increase3.3,growth13.2; long-term source inputs are rounded.",
+    "Both notes define unearned revenue as payments received or due before service, primarily AWS prepayments and Prime. No inferred AWS funded percentage.",
+    "First-half cash-flow adjustment74m; nine-month3355m;difference3281m matches separately reportedQ3. Net working-capital contribution already included in OCF, not gross deposits.",
+    "Scenario interpretations labelled analysis, no fabricated fresh event, forecast or management guidance. No unsupported counterparty financial claims."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Amazon_Datacenter.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Amazon_Datacenter.jpg",
+    "credit": "Visitor7",
+    "license": "CC BY-SA 3.0",
+    "capture_date": "2013-10-10",
+    "archival": true,
+    "qa": "Original Commons licence/date directly fetched. Unique source photo; generated 1200x675 wide and1200x1200 square crops visually inspected: actual data-centre building retained. Archival caption and linked share-alike licence included."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "human_reviewed_at": null,
+    "second_pass": "Separate source-led review checks financial definitions, independently recomputed calculations, quarterly versus cumulative periods, distinct search intent, plain-language interpretation, disclosures, title/meta, internal links and original sources. No human approval claimed.",
+    "release_gates_pending": [],
+    "validation": [
+      "10 existing publication/company tests passed.",
+      "Pinned hero processing and article template rendering passed.",
+      "Wide and square crops visually inspected.",
+      "Rendered neutral Compound Research attribution, standard ads loader and no false human approval.",
+      "Exact-head CI passed: 405 tests and 2 subtests, full production build and Lighthouse mobile performance.",
+      "Production site build, deployment, verify-live, verify-finance-discovery and mobile-audit all passed.",
+      "Fetched article canonical, hero and OG/Twitter image, sitemap, finance JSON/directory and Amazon profile backlink. Profile ad loader and slots 2138650464/8512487125 verified; article standard Auto Ads loader present, no fixed slots configured.",
+      "Live browser cover, credit/date, Compound Research attribution, headline and financial table visually checked. Advertisement frames present; no assertion of ad fill. Fetched live social image visually checked."
+    ]
+  },
+  "live_verification": {
+    "verified_at": "2026-11-21T18:19:52.021211+00:00",
+    "url": "https://compound.ie/wealth/amazon-aws-backlog-customer-funding/",
+    "canonical": true,
+    "article_text": true,
+    "neutral_attribution": true,
+    "article_ad_loader": true,
+    "profile_ad_loader": true,
+    "stock_backlink": true,
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "image_credit_and_archival_date": true,
+    "single_h1": true,
+    "indexable": true,
+    "primary_and_internal_links": true,
+    "social_image": "https://compound.ie/static/discover/amazon-aws-backlog-customer-funding-16x9.webp",
+    "social_sha256": "d218b0c3c2e6798314b4c64fe3e3dd6b07101378d063e4a0268d0e0d97ecab0f",
+    "hero_sha256": "cbe1e7979f4458ab0cba4556d631811b3e4ff3c7a121d3da5b200d3c0f3bfc26",
+    "article_slots": [],
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "browser_rendered_cover": true,
+    "browser_rendered_comparison_table": true,
+    "browser_neutral_attribution": true,
+    "browser_advertisement_frames_present": true,
+    "live_social_image_visually_checked": true
+  },
+  "pull_requests": [
+    {
+      "number": 242,
+      "url": "https://github.com/davidomarayt/compound/pull/242",
+      "head": "a35eb7d711cc7126d9edc7801248203fbda0b671",
+      "merge": "f457e2affc08d494ca181b9430868528b8c84cb8",
+      "ci_run": 44933952451,
+      "ci": "success",
+      "site_run": 44934654461,
+      "site": "success"
+    }
+  ],
+  "outcome_notes": "Exactly one fetched live new Mag8 article for 21 November. No paid LLM API usage or social posting; schedule unchanged. Neutral truthful attribution and review records retained; standard ads enabled without fill or human-approval claims.",
+  "article_sha256": "15e940c81c70aec70b6bc5e170623eb7d2d9222d17eaf744ca068ff860c4cd43",
+  "deployment_jobs": [
+    {
+      "id": 136938537452,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 136938964876,
+      "name": "deploy",
+      "conclusion": "success"
+    },
+    {
+      "id": 136939092871,
+      "name": "verify-live",
+      "conclusion": "success"
+    },
+    {
+      "id": 136939092880,
+      "name": "verify-finance-discovery",
+      "conclusion": "success"
+    },
+    {
+      "id": 136939092921,
+      "name": "mobile-audit",
+      "conclusion": "success"
+    }
+  ]
+}
+

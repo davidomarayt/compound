@@ -47,6 +47,13 @@ jobs:
         with:
           node-version: "22"
       - run: pip install -e .
+      - name: Restore incremental article and Discover-image cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/compound-article-html
+          key: article-render-audit-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            article-render-audit-v1-${{ runner.os }}-
       - name: Restore verified editorial image cache
         uses: actions/cache/restore@v4
         with:
@@ -67,6 +74,7 @@ jobs:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
           COMPOUND_AUDIT_MODE: "1"
+          COMPOUND_ARTICLE_CACHE_DIR: .cache/compound-article-html
       - name: Validate 12 November private-company static content in audit mode
         run: COMPOUND_AUDIT_MODE=1 python scripts/verify_private_company_publications.py
       - name: Assert published electricity news routes exist

@@ -5,10 +5,12 @@ slug: first-time-buyer-supports-ireland
 pillar: wealth
 date: 2026-09-23
 reviewed: 2026-09-23
+research_checked: 2026-11-21
 summary: 'Chapter 3 of Buying a Home in Ireland 101: compare Help to Buy and the First Home Scheme, including 2026 eligibility, €30,000 HTB maximum, FHS equity limits, price ceilings and service charges.'
 meta_description: 'First-time buyer supports Ireland: Help to Buy up to €30,000 and First Home Scheme shared equity up to 30%, with 2026 rules, ceilings and charges.'
 tags: [first-time buyer, help to buy, first home scheme, ireland, mortgage, shared equity]
 related_tools:
+- help-to-buy-calculator
 - first-home-scheme-calculator
 - house-deposit-calculator
 - mortgage-borrowing-calculator
@@ -27,6 +29,12 @@ sources:
   url: https://www.firsthomescheme.ie/about-the-scheme/property-price-ceilings/
 - title: 'First Home Scheme: Service charges'
   url: https://www.firsthomescheme.ie/about-the-scheme/service-charges/
+- title: 'Department of Housing: Local Authority Affordable Purchase Scheme'
+  url: https://www.gov.ie/en/department-of-housing-local-government-and-heritage/services/local-authority-affordable-purchase-scheme/
+- title: 'Revenue: Help to Buy manual, section 7.4.1'
+  url: https://www.revenue.ie/en/tax-professionals/tdm-wm/income-tax-capital-gains-tax-corporation-tax/part-15/15-01-46.pdf
+- title: 'Local Government Ireland: Local Authority Home Loan'
+  url: https://www.localgov.ie/grants-and-funding/local-authority-home-loan
 ---
 
 <div class="home-course" markdown="1">
@@ -50,7 +58,7 @@ The First Home Scheme is shared equity.
 
 That distinction matters because one reduces your upfront funding gap, while the other gives the scheme an equity share in your home.
 
-## Help to Buy in one minute
+## Help to Buy in one minute {#help-to-buy-in-one-minute}
 
 Revenue's enhanced Help to Buy scheme currently runs to **31 December 2029**.
 
@@ -112,7 +120,7 @@ A clawback can arise if the conditions are breached.
 
 Do not use HTB for a purchase you already plan to turn into an investment property soon after closing.
 
-## The First Home Scheme
+## The First Home Scheme {#the-first-home-scheme}
 
 The FHS is different.
 
@@ -262,13 +270,25 @@ That can be valuable.
 
 It should still be understood before signing.
 
-## Other affordable-purchase schemes
+## Compare three ways to buy {#compare-buying-routes}
 
-Local authorities and approved housing bodies can also have affordable-purchase arrangements.
+These prices and mortgage amounts are illustrative. Keep stamp duty, legal fees, valuation and survey costs outside the purchase-price figures below.
 
-Eligibility, income limits, property allocations and equity terms differ from HTB and the national FHS.
+<div class="table-wrap" markdown="1">
 
-If you are considering a specific local authority scheme, use that scheme's current documentation.
+| Route | Illustrative funding | What to check first |
+| --- | --- | --- |
+| **Private new build at €450,000** | €360,000 mortgage + €45,000 buyer cash + €30,000 Help to Buy leaves a **€15,000 gap**. First Home Scheme equity could fill it if the buyer and property qualify. | Check the local First Home Scheme price ceiling and actual tax paid before treating either amount as available. |
+| **Council affordable home valued at €400,000** | If the council sets your purchase price at €320,000, its €80,000 contribution represents a **20% equity share**. A €290,000 mortgage plus €30,000 cash would cover the buyer price in this example. | Check the council’s advertised property, application dates and equity terms. Ask about Help to Buy before counting it as part of your funding. |
+| **Ordinary second-hand home at €350,000** | A €315,000 mortgage plus €35,000 cash would cover the price, subject to loan approval. | Check the [Local Authority Home Loan](https://www.localgov.ie/grants-and-funding/local-authority-home-loan) if appropriate. The First Home Scheme’s tenant route is a separate exception for qualifying buyers purchasing the home they already rent. |
+
+</div>
+
+For a qualifying council affordable purchase contracted on or after 11 October 2023, Revenue can include the council’s Affordable Dwelling Contribution alongside the qualifying mortgage in the **Help to Buy 70% loan-to-value test**. The other Help to Buy conditions still apply. Check [Revenue’s guidance](https://www.revenue.ie/en/tax-professionals/tdm-wm/income-tax-capital-gains-tax-corporation-tax/part-15/15-01-46.pdf) and the council’s offer before depending on the combination.
+
+Run your numbers through the [Help to Buy calculator](/help-to-buy-calculator/) and the [First Home Scheme calculator](/first-home-scheme-calculator/), or browse other Irish supports in [What Can I Claim?](/wheres-my-money/what-can-i-claim/).
+
+<p><small>Sources for the buying-route comparison checked 21 November 2026.</small></p>
 
 ## Which support should you use?
 

@@ -1,0 +1,133 @@
+{
+  "series": "mag8",
+  "date": "2026-11-20",
+  "timezone": "Europe/Dublin",
+  "company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "selection": "Least recently featured in Mag8 ledger: 5 November. Lilly-only exception applied on 18 November; Apple completed 19 November.",
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/alphabet-data-centre-credit-backstops.md",
+  "canonical_url": "https://compound.ie/wealth/alphabet-data-centre-credit-backstops/",
+  "story_fingerprint": "GOOGL-2026Q3-executed-credit-backstops-notional-versus-fair-value",
+  "article_sha256": "b736b3a2824560bb327f41d3558a00a02d9a346d71e9d66548438fe7aad0c949",
+  "story_thesis": "Executed contingent exposure grew while its fair-value liability fell; assess capacity recovery and future commitments separately from cash capex or forecast losses.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+    "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS.md, editorial topic index, inventory and JSON; searched all source content for backstop, Crux and credit derivative. No matching article or audience question.",
+    "Enumerated past 14 days of posts and Mag8 ledgers; no 20 November Mag8 or legacy Mag7 publication/audit. Apple 19 November and Lilly 18 November already recorded live.",
+    "Fetched live Alphabet capex analysis, Waymo financing article, stock profile and finance catalogue; no backstop-credit analysis. Existing capex and Waymo articles crosslinked; their cash-spending and non-parent-guaranteed-loan theses remain separate.",
+    "Today morning batch WMT/PANW/DHI; private publisher OpenAI accounting, Anthropic IPO canonical update and Blue Origin Google Suncatcher. Orbital compute deliberately excluded. Current Riemann proof, retatrutide and health work distinct.",
+    "Recent and all open Compound PRs inspected; FairPath PR25 six family guides and hosting blocker, other FairPath PRs distinct. Overnight 20 November research/QA, private-company ledger and cross-site watchdog checked."
+  ],
+  "claim_checks": [
+    "Q3 Note 3 directly opened in web reader and downloaded: notional 48012 million, fair-value liability 606 million, zero credit-derivative assets. Period 30 September 2026; filed 29 October.",
+    "Q2 Note 3 directly opened and downloaded independently: 43785 million notional, 815 million fair-value liability; period 30 June 2026. Both columns refer to executed credit derivatives, not all infrastructure commitments.",
+    "48012-43785=4227 million; 4227/43785=9.653991%, rounded 9.7%. 606-815=-209 million; -209/815=-25.644172%, rounded -25.6%. Ratios 815/43785=1.861368%;606/48012=1.262184%; not default probabilities.",
+    "Q2 and Q3 terms independently compared: remaining duration up to 15 years; maximum payments only under specified default scenarios; exposure declines with underlying payments; lease assumption/sublease rights and conditional termination/offsets. No alleged defaults or universal recovery value.",
+    "Q3 contingent commitments: rounded executed 48.0 + future 27.7 =75.7 billion. Crux 10.0 included in 27.7, not added again. Not used as a like-for-like comparison with June executed 43.785. Crux related-party/unconsolidated status and unknown standalone creditworthiness disclosed.",
+    "Official earnings call directly inspected: management expects ROIC above cost of capital. Article labels expectation rather than achieved backstop returns. Operating scenarios and valuation implications explicitly analysis, no debt/loss/expense conflation."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Google_data_center_and_wind_turbines_in_Eemshaven.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Google_data_center_and_wind_turbines_in_Eemshaven.jpg",
+    "credit": "Wvdp",
+    "license": "CC0 1.0",
+    "capture_date": "2023-01-06",
+    "archival": true,
+    "qa": "Original Commons licence and EXIF date inspected. Wide 1200x675 and square 1200x1200 generated crops visually inspected, infrastructure remains visible. Explicitly not identified as a backstopped property; unique photo in source inventory."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "human_reviewed_at": null,
+    "second_pass": "Separate source-led verification after drafting: recomputed every number, compared periods/categories and checked recovery conditionality, originality, readability, disclosures, title/meta, source/internal links, licensing and actual rendered crops. No human approval claimed.",
+    "rendered": "Neutral Compound Research attribution and standard adsbygoogle loader present; no false human review. Standard consent and ad settings retained.",
+    "validation": [
+      "10 focused existing publication/company tests passed.",
+      "New article image preparation and template rendering passed.",
+      "Exact-head CI passed: 388 tests, 2 subtests, full production build and Lighthouse performance.",
+      "Production build and deployment succeeded; verify-live and verify-finance-discovery passed.",
+      "Fetched canonical, hero, OG/Twitter image, sitemap, finance JSON/directory and Alphabet stock backlink. Profile ad loader and slots 2138650464/8512487125 verified. Article standard Auto Ads loader present; no fixed article slots configured.",
+      "Live browser: actual cover, credits, headline, date, Compound Research attribution, table and article body inspected. Advertisement frames present; no claim of impression fill. Live social image visually inspected.",
+      "Post-deployment mobile-audit passed; all five site workflow jobs successful."
+    ],
+    "release_gates_pending": []
+  },
+  "live_verification": {
+    "verified_at": "2026-11-20T18:24:00.396252+00:00",
+    "url": "https://compound.ie/wealth/alphabet-data-centre-credit-backstops/",
+    "canonical": true,
+    "article_text": true,
+    "neutral_attribution": true,
+    "article_ad_loader": true,
+    "article_slots": [],
+    "profile_ad_loader": true,
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "stock_backlink": true,
+    "social_image": "https://compound.ie/static/discover/alphabet-data-centre-credit-backstops-16x9.webp",
+    "social_sha256": "5dde7e3be8186dfa503b8b70849853cd3164b72dafb393314e42314941f2c3b5",
+    "hero_sha256": "bf79869786e20207f979d42d2cb60ec5c7c856891083372953fb620e7b97ecbc",
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "image_credit_and_archival_date": true,
+    "primary_and_internal_links": true,
+    "single_h1": true,
+    "indexable": true,
+    "browser_rendered_cover": true,
+    "browser_rendered_comparison_table": true,
+    "browser_neutral_attribution": true,
+    "browser_advertisement_frames_present": true,
+    "live_social_image_visually_checked": true
+  },
+  "pull_requests": [
+    {
+      "number": 221,
+      "url": "https://github.com/davidomarayt/compound/pull/221",
+      "head": "9036fb649602fb36f7dec0f974442bf9dc9d8941",
+      "merge": "33888856196882d7111a1555b23d40a3ae54220b",
+      "ci_run": 44788866237,
+      "ci": "success",
+      "site_run": 44791067120,
+      "site": "success"
+    }
+  ],
+  "outcome_notes": "Exactly one fetched live new Mag8 article for 20 November. No paid LLM API dependency or social posting. Schedule unchanged. No human approval or AdSense compliance asserted; standard ads enabled with no ad-fill promise.",
+  "deployment_jobs": [
+    {
+      "id": 136478532938,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482666536,
+      "name": "deploy",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482883220,
+      "name": "mobile-audit",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482883289,
+      "name": "verify-live",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482883552,
+      "name": "verify-finance-discovery",
+      "conclusion": "success"
+    }
+  ]
+}
+

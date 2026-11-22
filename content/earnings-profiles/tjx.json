@@ -2,33 +2,33 @@
   "cik": 109198,
   "company": "TJX Companies",
   "latest": {
-    "accession": "0000109198-26-000048",
-    "filed": "2026-08-28",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2027,
+    "fp": "Q3",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-18",
+    "form": "8-K",
+    "accession": "0000109198-26-000058",
+    "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 1.36,
-        "prior_year": 1.1,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 15952000000,
+        "prior_year": 15117000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 1520000000,
-        "prior_year": 1243000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 1543000000,
+        "prior_year": 1442000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 15180000000,
-        "prior_year": 14401000000,
-        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.39,
+        "prior_year": 1.28,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-08-01",
-    "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000048/tjx-20260801.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-08-01",
       "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000048/tjx-20260801.htm"
+    },
+    {
+      "fy": 2027,
+      "fp": "Q3",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-18",
+      "form": "8-K",
+      "accession": "0000109198-26-000058",
+      "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm",
+      "metrics": {
+        "revenue": {
+          "current": 15952000000,
+          "prior_year": 15117000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 1543000000,
+          "prior_year": 1442000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 1.39,
+          "prior_year": 1.28,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC XBRL for earlier periods; SEC Form 8-K earnings exhibit for latest quarter; no analyst estimates",
   "ticker": "TJX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-19"
 }

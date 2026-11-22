@@ -1,0 +1,121 @@
+{
+  "series": "mag8",
+  "date": "2026-11-19",
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "selection": "Least recently featured in Mag8 ledger: 4 November; 18 November Lilly override completed yesterday.",
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/apple-vendor-receivables-concentration.md",
+  "canonical_url": "https://compound.ie/wealth/apple-vendor-receivables-concentration/",
+  "story_fingerprint": "AAPL-FY2026-vendor-nontrade-receivables-counterparty-concentration",
+  "article_sha256": "49a2947f73105a72e9ae067d972dbf459bb4193ecdf190e79e22a83712aee83b",
+  "story_thesis": "Measure concentrated vendor receivables and reconcile the fourth-quarter working-capital use without implying default or double-subtracting cash flow.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+    "https://www.apple.com/ie/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS.md, editorial topic index, inventory and JSON; inspected Apple source articles and live commitments/profile pages; no existing vendor-receivable concentration analysis.",
+    "Enumerated past 14 days of source posts and publication ledgers. No 19 November Mag8 or legacy Mag7 article. Today company batch Cisco/Disney/Tyson; private batch OpenAI/Anduril and Anthropic update; Irish news and medication work distinct.",
+    "Recent/open Compound PRs and FairPath PRs checked: health guides, Anthropic lockup, PIA, SLAB, Irish household news and FairPath operator monitor/mealtime guide do not overlap.",
+    "Existing Apple supply-commitment piece concerns future purchases; this piece concerns amounts already owed to Apple and unidentified-counterparty concentration. Crosslinked, not repeated."
+  ],
+  "claim_checks": [
+    "10-K balance 39896m vs 33180m; June 10-Q 27509m. Change 12387m QoQ=45.0289%, YoY=20.2411%.",
+    "10-K shares 45%+27%=72%; June 47%+22%=69%; prior year 46%+23%=69%. Approx exposures 28725.12m,18981.21m,22894.2m; rounding and unknown vendor identity explicitly caveated.",
+    "Cash-flow statements: FY vendor movement -6716m minus nine-month +5671m = Q4 -12387m; independent balance difference +12387m. Not a loss/expense or gross purchases.",
+    "Official Q4 release separately confirms approx 28bn OCF; already includes receivables effect. 10% scenario 3989.6m labelled sensitivity, no forecast/default/overdue claim.",
+    "Note 4 component-sale accounting directly checked in both filings; annual risk section confirms unsecured balances. Fiscal periods and 3 November annual filing date checked."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:A13_APL1W85_iPhone11_mlb_820-01523-A.jpg",
+    "credit": "Sonic8400",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2020-12-28",
+    "archival": true,
+    "qa": "Generated 16:9 and square crops visually inspected; Apple A13 and component board remain visible; no current-device claim."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "human_reviewed_at": null,
+    "ads": "Standard advertising immediately, preserve consent; no human-review ad gate.",
+    "second_pass": "Recomputed all bridge arithmetic; read source disclosures separately from draft; checked accounting interpretation, uncertainty, originality, period labels, headings, links, metadata, licence and actual crops.",
+    "rendered": "Compound Research attribution and ad loader present; no invented human review.",
+    "release_gates_pending": [],
+    "validation": [
+      "10 focused tests passed; full exact-head test/performance CI passed.",
+      "Production build, deployment, verify-live, finance-discovery and mobile-audit all passed.",
+      "Wide/square crops and fetched live social image visually inspected; genuine topic-specific Apple component photograph and accurate archival credit.",
+      "Fetched live canonical, unique story text, neutral attribution, Auto Ads loader, profile configured slots/backlink, source/internal links, indexability, sitemap, finance directory and JSON verified."
+    ]
+  },
+  "live_verification": {
+    "verified_at": "2026-11-19T18:25:02.762276+00:00",
+    "url": "https://compound.ie/wealth/apple-vendor-receivables-concentration/",
+    "canonical": true,
+    "article_text": true,
+    "neutral_attribution": true,
+    "article_ad_loader": true,
+    "article_slots": "No fixed article slots configured; standard Auto Ads loader present.",
+    "profile_ad_loader": true,
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "stock_backlink": true,
+    "social_image": "https://compound.ie/static/discover/apple-vendor-receivables-concentration-16x9.webp",
+    "social_sha256": "1843415c8ed0c8ff94da7a437a218a68267a5004687dbdf271dea2e978bed7b8",
+    "hero_sha256": "83118d78238f9cc042c0715eaf4f1edf437af91e278567d871d02b9cc3476ed9",
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "image_credit_and_archival_date": true,
+    "primary_and_internal_links": true,
+    "single_h1": true,
+    "indexable": true
+  },
+  "pull_requests": [
+    {
+      "number": 189,
+      "url": "https://github.com/davidomarayt/compound/pull/189",
+      "head": "a49cfc94fb15ca9a83ce2b6796b01533c64ad399",
+      "merge": "6f279b24495578dc2593977cae32507307e4d200",
+      "ci_run": 44584215405,
+      "ci": "success",
+      "site_run": 44586313731,
+      "site": "success"
+    }
+  ],
+  "deployment_jobs": [
+    {
+      "id": 135780083027,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 135784019537,
+      "name": "deploy",
+      "conclusion": "success"
+    },
+    {
+      "id": 135784338968,
+      "name": "mobile-audit",
+      "conclusion": "success"
+    },
+    {
+      "id": 135784339343,
+      "name": "verify-live",
+      "conclusion": "success"
+    },
+    {
+      "id": 135784339383,
+      "name": "verify-finance-discovery",
+      "conclusion": "success"
+    }
+  ],
+  "outcome_notes": "Exactly one new Mag8 article for 19 November. No paid LLM API dependency or social posting. Schedule unchanged. No human review or AdSense compliance asserted; standard ads enabled, with no ad-fill promise."
+}

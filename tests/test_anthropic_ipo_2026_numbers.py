@@ -33,7 +33,7 @@ def test_company_numbers_have_the_right_periods_and_ipo_is_not_treated_as_tradin
         assert value in text
     assert "not a final ipo or market price" in text.lower()
     assert "not a personalised recommendation" in text
-    assert "/companies/anthropic/" in text
+    assert "/stocks/ant/" in text
     assert "/wealth/anthropic-loss-ipo-valuation/" in text
     assert "18 November" in text
     assert re.search(r"Run-Rate Revenue.*not.*GAAP", text, flags=re.IGNORECASE | re.DOTALL)

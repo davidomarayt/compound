@@ -80,6 +80,6 @@ Self-hosting gives organisations with stricter infrastructure policies another r
 
 This subject differs from our [always-on agent blueprint analysis](/wealth/anthropic-always-on-agents-business-case-permissions-cost/), which focuses on event queues, timers and recovery within an application. The new product decision is who actually operates the platform and carries the compliance and maintenance work. It also complements our analysis of [Claude service interruptions](/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/), without implying self-hosting removes dependencies on remote model availability.
 
-Follow the [Anthropic private-company research hub](/companies/anthropic/) for primary-source updates. Anthropic has filed for a proposed IPO, but this product announcement alone does not establish a listing date or imply publicly traded Anthropic shares.
+Follow the [Anthropic stock research profile](/stocks/ant/) for primary-source updates. Anthropic has filed for a proposed IPO, but this product announcement alone does not establish a listing date or imply publicly traded Anthropic shares.
 
 *Research checked 17 November 2026, based primarily on Anthropic's 12 November private-beta announcement. All task volumes and financial examples are illustrative. Photograph: TechCrunch / Kimberly White, September 2023, CC BY 2.0, archival adapted crop.*

@@ -88,6 +88,6 @@ For any critical Claude integration, test how the workflow responds when login w
 
 Anthropic had marked the cited core incidents resolved at the time of this research check. The defensible business conclusion is not that Claude is uniquely unreliable. It is that **agent reliability must be measured at the outcome layer**, including dependencies, missed schedules and recovery after a vendor marks its own systems operational.
 
-Track subsequent disclosures through the [Anthropic company hub](/companies/anthropic/). No unverified root cause, customer-loss figure or claim of blanket SLA non-compliance is made.
+Track subsequent disclosures through the [Anthropic company hub](/stocks/ant/). No unverified root cause, customer-loss figure or claim of blanket SLA non-compliance is made.
 
 *Research checked 14 November 2026. Incident times come from Anthropic's status records, not independently measured traffic. Illustrative reliability arithmetic is Compound analysis. Cover: Simon Walker / UK Prime Minister, 24 May 2023, CC BY 2.0, archival cropped photograph, not the outage.*

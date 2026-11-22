@@ -1,0 +1,140 @@
+{% set health_topics = [
+  ("weight-metabolism", "Weight & metabolism", "BMI, weight management and metabolic health.", [
+    ("/weight-loss-calculator/", "Calorie & weight loss calculator"),
+    ("/bmi-calculator/", "BMI calculator"),
+    ("/health/stopping-glp1-weight-regain/", "What happens after stopping a GLP-1?"),
+    ("/health/glp1-medicines-ireland-rise-evidence/", "The rise of GLP-1 medicines in Ireland"),
+    ("/health/health-for-a-100-year-life/", "Health for a 100-year life"),
+  ]),
+  ("nutrition-performance", "Nutrition & performance", "Energy needs, protein, nutrients and supplements.", [
+    ("/nutrition-needs-calculator/", "Nutrition needs calculator"),
+    ("/alcohol-units-calories-cost-calculator/", "Alcohol units, calories & cost"),
+    ("/health/how-much-protein-do-you-need-ireland/", "How much protein do you actually need?"),
+    ("/health/macronutrients-micronutrients-guide-ireland/", "Macronutrients & micronutrients explained"),
+    ("/health/creatine-benefits-dosage-safety-ireland/", "Creatine: benefits, dosage and safety"),
+    ("/health/vitamin-d-ireland-winter-who-should-take-it/", "Vitamin D in Ireland: who should take it?"),
+    ("/health/standard-drinks-ireland-pints-wine-spirits/", "Standard drinks in Ireland explained"),
+  ]),
+  ("sleep-recovery", "Sleep & recovery", "Sleep needs for adults and children, plus caffeine and bedtime.", [
+    ("/caffeine-calculator/", "Caffeine & sleep calculator"),
+    ("/health/how-much-sleep-do-adults-need/", "How much sleep do adults need?"),
+    ("/health/how-much-sleep-does-a-child-need/", "How much sleep does a child need?"),
+    ("/health/health-for-a-100-year-life/", "Where sleep fits in long-term health"),
+  ]),
+  ("heart-health", "Heart health", "Blood pressure, cholesterol, alcohol and prevention.", [
+    ("/alcohol-units-calories-cost-calculator/", "Alcohol units, calories & cost"),
+    ("/health/how-to-lower-cholesterol-what-moves-ldl/", "What actually lowers LDL cholesterol?"),
+    ("/health/lower-blood-pressure-naturally-what-works/", "What works for lowering blood pressure?"),
+    ("/health/standard-drinks-ireland-pints-wine-spirits/", "Standard drinks in Ireland: pints, wine and spirits"),
+    ("/health/health-for-a-100-year-life/", "Health for a 100-year life"),
+  ]),
+  ("pregnancy-family", "Pregnancy & family", "Due dates, scans, appointments and medicine safety.", [
+    ("/pregnancy-due-date-calculator/", "Pregnancy due date calculator"),
+    ("/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/", "GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and the evidence"),
+    ("/health/pregnancy-week-by-week-ireland-appointments/", "Pregnancy week by week: GP, hospital and scan schedule"),
+    ("/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/", "LMP vs scan: how accurate is your due date?"),
+    ("/health/how-much-sleep-does-a-child-need/", "How much sleep does a child need?"),
+  ]),
+  ("medicines-healthcare", "Medicines & healthcare", "Common medicines, GLP-1 treatments and access to care in Ireland.", [
+    ("/health/retatrutide-ireland/", "Retatrutide in Ireland: availability, results and how it compares"),
+    ("/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/", "GLP-1s and pregnancy: what is known about safety?"),
+    ("/health/how-to-get-ozempic-ireland/", "How to get Ozempic in Ireland"),
+    ("/health/wegovy-mounjaro-ozempic-cost-ireland/", "Wegovy, Mounjaro and Ozempic costs in Ireland"),
+    ("/health/glp1-side-effects-when-to-seek-help/", "GLP-1 side effects and when to seek help"),
+    ("/health/glp1-hse-medical-card-ireland/", "GLP-1 medicines, the HSE and Medical Card"),
+    ("/health/glp1-medicines-ireland-rise-evidence/", "The rise of GLP-1 medicines in Ireland"),
+    ("/health/stopping-glp1-weight-regain/", "What happens when you stop a GLP-1?"),
+    ("/news/ireland-sepsis-strategy-warning-signs-2026/", "Ireland's new sepsis strategy and warning signs"),
+  ]),
+] %}
+<div class="health-hub">
+  <header class="health-masthead">
+    <div class="health-masthead-copy">
+      <span class="health-imprint">COMPOUND HEALTH</span>
+      <h1>Health guides and tools</h1>
+      <p>Understand everyday medicines, explore health topics and use free calculators built for readers in Ireland.</p>
+      <div class="health-masthead-links">
+        {% if conditions_url %}
+        <a class="health-hub-button" href="{{ conditions_url }}">Conditions A–Z</a>
+        {% endif %}
+        {% if medicines_hub_url %}
+        <a class="health-hub-button" href="{{ medicines_hub_url }}">Common medicines</a>
+        {% endif %}
+        <a class="health-masthead-link" href="#health-calculators">Find a calculator</a>
+        <a class="health-masthead-link" href="#health-topics">Browse health topics</a>
+      </div>
+    </div>
+    <img src="/static/images/health.jpg" alt="" width="600" height="400" fetchpriority="high">
+  </header>
+
+  <div class="health-start">
+    {% if medicines_hub_url %}
+    <section class="health-feature health-feature-medicines" aria-labelledby="health-medicines-feature">
+      <h2 id="health-medicines-feature">Common medicines</h2>
+      <p>Look up a medicine by its generic or brand name. Find Irish guides to uses, side effects and when to ask a pharmacist.</p>
+      <a class="health-hub-button" href="{{ medicines_hub_url }}">Open the medicines dashboard</a>
+      <ul class="health-medicine-links" aria-label="Medicine guides">
+        {% for a in articles if a.url.startswith(medicines_hub_url) %}
+          {% if a.slug in ['paracetamol', 'ibuprofen', 'omeprazole'] %}
+          <li><a href="{{ a.url }}">{{ a.slug|capitalize }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    <section class="health-feature health-feature-tools" id="health-calculators" aria-labelledby="health-calculators-heading">
+      <h2 id="health-calculators-heading">Health calculators</h2>
+      <ul class="health-tool-list">
+        <li><a href="/caffeine-calculator/"><strong>Caffeine &amp; sleep</strong><span>See how much caffeine may remain at bedtime.</span></a></li>
+        <li><a href="/nutrition-needs-calculator/"><strong>Nutrition needs</strong><span>Estimate calories, protein and macros.</span></a></li>
+        <li><a href="/pregnancy-due-date-calculator/"><strong>Pregnancy due date</strong><span>Estimate your due date and pregnancy milestones.</span></a></li>
+        <li><a href="/bmi-calculator/"><strong>BMI calculator</strong><span>Calculate BMI and understand the result.</span></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="health-topics" id="health-topics" aria-labelledby="health-topics-heading">
+    <div class="health-section-title">
+      <h2 id="health-topics-heading">Browse by topic</h2>
+      <nav class="health-topic-nav" aria-label="Jump to a health topic">
+        {% for id, label, intro, links in health_topics %}
+        <a href="#{{ id }}">{{ label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+    {% for id, label, intro, links in health_topics %}
+    <section class="health-topic" id="{{ id }}" aria-labelledby="{{ id }}-heading">
+      <div class="health-topic-intro">
+        <h3 id="{{ id }}-heading">{{ label }}</h3>
+        <p>{{ intro }}</p>
+        {% if id == 'medicines-healthcare' and medicines_hub_url %}
+        <a href="{{ medicines_hub_url }}">Common Medicines directory</a>
+        {% endif %}
+      </div>
+      <ul class="health-topic-reading">
+        {% for url, label in links %}
+        <li><a href="{{ url }}">{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </section>
+
+  {% if articles %}
+  <section class="health-latest" id="health-latest" aria-labelledby="health-latest-heading">
+    <div class="health-section-title"><h2 id="health-latest-heading">Latest from Health</h2></div>
+    <div class="story-grid">{% for a in articles[:6] %}{% include "_card.html" %}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  <section class="health-evidence" aria-labelledby="health-evidence-heading">
+    <h2 id="health-evidence-heading">How we source our guides</h2>
+    <div>
+      <p>We prioritise Irish guidance from sources such as the HSE and HPRA and link to the evidence behind each guide. Our calculators explain their assumptions so you can understand what the result estimates.</p>
+      <p><a href="/editorial-policy/">Read our editorial policy</a></p>
+    </div>
+  </section>
+
+  {% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
+  {% include "_signup.html" %}
+</div>

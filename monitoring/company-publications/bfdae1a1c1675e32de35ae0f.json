@@ -1,0 +1,142 @@
+{
+  "story_fingerprint": "bfdae1a1c1675e32de35ae0f",
+  "company": "DHI",
+  "date": "2026-11-20",
+  "status": "published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "D.R. Horton's option-heavy land strategy supports cash conversion and buybacks, but planned capital returns use nearly all guided operating cash while orders and margins are weakening.",
+  "article_path": "content/wealth/dr-horton-cash-returns-land-control.md",
+  "canonical_url": "https://compound.ie/wealth/dr-horton-cash-returns-land-control/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/a9302026exhibit991.htm",
+    "https://www.sec.gov/Archives/edgar/data/882184/000088218426000157/dhi-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "D.R. Horton, Inc.",
+    "CIK": 882184,
+    "release_accession": "0000882184-26-000119",
+    "filing_accession": "0000882184-26-000157",
+    "fiscal_year": 2026,
+    "fiscal_period": "FY",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-18",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, both content inventories, the live site, the prior 14 days of posts, open and merged PRs, company-publication records and concurrent Compound/FairPath workflows. D.R. Horton has a maintained stock profile but no canonical article answering the land-control, cash-conversion and capital-return question. No active attempt uses this fingerprint.",
+  "claim_checks": [
+    {
+      "claim": "Fiscal 2026 operating cash flow $3.507bn; buybacks $3.551bn; dividends $513.3m; combined return $4.065bn",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release capital returns and 10-K cash-flow/equity statements; 3.5513 + 0.5133 = $4.0646bn",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Net income $2.937bn, -19%, and operating cash flow +3%; cash conversion about 119%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release and 10-K; 3.5072 / 2.9374 = 119.4%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Homebuilding inventory $20.325bn versus $20.3165bn; construction and finished homes down $124.8m; residential land/lots up $114.1m",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-K homebuilding inventory table; 7.6189 - 7.7437 = -$124.8m and 12.6272 - 12.5131 = +$114.1m",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Cash released from construction/finished homes and residential land categories was $167.5m",
+      "source_indexes": [1],
+      "location_or_arithmetic": "Cash-flow statement; $146.3m + $21.2m = $167.5m",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "130,500 owned lots and 440,100 controlled lots; 77% of total land position controlled through contracts",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-K land and lot table; company reports 23% owned and 77% controlled",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "$2.6bn deposits support contracts with $28.7bn remaining purchase price; most deposits non-refundable on termination",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-K land and lot purchase-contract disclosure; limited specific-performance subset is noted in source review",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Q4 orders 18,619, -7%; order value -9%; cancellations 23% versus 20%; homebuilding pre-tax margin 10.6%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release homebuilding section and 10-K MD&A",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "28,200 homes in inventory, 17,700 unsold, 8,800 completed unsold and 600 completed more than six months",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release and 10-K homes-in-inventory disclosures",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Fourth-quarter inventory impairments $105.8m, mostly rental segment",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-K inventory note; $541.4m of $597.5m impaired carrying value was in rental, producing $105.8m of charges",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 guidance: operating cash flow about $3.5bn, repurchases about $3.0bn and dividends about $500m",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results release outlook; plans equal the operating-cash-flow target but are not described as guaranteed",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Liquidity $7.2bn, debt to total capital 20.8%, FY2026 share count reduced 8%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results highlights and 10-K capital resources/equity disclosure",
+      "result": "verified in separate claim pass"
+    }
+  ],
+  "fact_check_notes": [
+    "Homebuilding land and home investment flows are operating cash-flow items, so property-and-equipment capex is not treated as the full investment required by the business.",
+    "The article says buybacks can be reduced and does not treat guidance or repurchase authorisation as a guaranteed distribution.",
+    "The cover is relevant US housing construction but is explicitly not identified as a D.R. Horton project. No current price, consensus estimate, quotation or unsupported forecast is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Blackhawk_Subdivsion_Construction_Pflugerville_TX.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/7/72/Blackhawk_Subdivsion_Construction_Pflugerville_TX.jpg",
+    "photographer": "KevinMoralesRealtor",
+    "license": "CC0 1.0",
+    "capture_date": "2018-06-11",
+    "description": "Housing-subdivision excavation in Pflugerville, Texas; archival image not identified as a D.R. Horton development",
+    "unique_asset": true,
+    "source_sha256": "732be685e570b74b543ac00d6dcfcc89744f624c97edc003ead5cc32c84293e5",
+    "published_image_sha256": "6243fe579d552d2538b560536d105b56c6110627f9ee47a99ebf78e2f906046a"
+  },
+  "gates": {
+    "offline_tests": "passed: 51 tests passed (news images, finance discovery, earnings review/SEO, stock inline ads and pending-research ads)",
+    "build": "passed: production canonical build completed with 396 articles, 870 tags, 35 pages and 62 tools",
+    "render": "passed: canonical, metadata, indexing, internal links, source credit, sitemap, finance catalogue, cover and 1200x675 social image inspected",
+    "ads": "passed: production render includes the configured ca-pub-6115783809711785 loader; article display slots are blank in the existing site configuration, so no fixed slot was invented",
+    "ci": "passed: PR #215 exact head 523575062d22b4fa4b5435bdb9c7ed9c05de2fa2, workflow 44711551976 test and performance jobs successful",
+    "deployment": "passed: GitHub Pages workflow 44713451115 completed successfully for merge c8a66863d4dafafe8b5d7b9dcb944681f7148ccc; build, deploy, verify-live, finance discovery and mobile audit all succeeded"
+  },
+  "article_sha256": "283921c201bb12837c1b7bb26cc20f9f58bbca29f83d15e469dcae000db12bec",
+  "publication_state": "live_verified",
+  "publication": {
+    "pr_url": "https://github.com/davidomarayt/compound/pull/215",
+    "validated_pr_head": "523575062d22b4fa4b5435bdb9c7ed9c05de2fa2",
+    "merge_commit": "c8a66863d4dafafe8b5d7b9dcb944681f7148ccc",
+    "deployment_run": 44713451115,
+    "deployment_completed_at": "2026-11-20T09:57:20Z",
+    "verified_live_at": "2026-11-20T09:57:20Z",
+    "live_url": "https://compound.ie/wealth/dr-horton-cash-returns-land-control/",
+    "page_http_200": true,
+    "canonical_and_indexing_verified": true,
+    "live_social_image": "https://compound.ie/static/discover/dr-horton-cash-returns-land-control-16x9.webp",
+    "social_image_http_200": true,
+    "social_image_dimensions": "1200x675",
+    "live_credit_verified": true,
+    "sitemap_verified": true,
+    "finance_catalogue_verified": true,
+    "adsense_loader_verified": true,
+    "live_ad_frames_observed": 0
+  },
+  "new_articles_published": 1
+}

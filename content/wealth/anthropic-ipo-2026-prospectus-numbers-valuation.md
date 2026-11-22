@@ -214,7 +214,7 @@ The question is not whether Anthropic has value. Its paying customers, rapid ado
 
 A terrific company can still be an unattractive investment if the IPO already prices in an extraordinary outcome. Conversely, a large reported accounting loss does not prove that the equity is worthless. For the next stage of the story, we would prioritise **the final priced prospectus, the exact diluted share count, Q4 reported revenue and the disclosed cost of committed compute** over speculative first-day share-price predictions.
 
-Continue with the [Anthropic private-company research profile](/companies/anthropic/), our [earlier accounting-loss explainer](/wealth/anthropic-loss-ipo-valuation/), or the [Compound company research directory](/stocks/) for comparisons with listed infrastructure providers. The financial analysis above is not a personalised recommendation to subscribe for shares.
+Continue with the [Anthropic stock research profile](/stocks/ant/), our [earlier accounting-loss explainer](/wealth/anthropic-loss-ipo-valuation/), or the [Compound company research directory](/stocks/) for comparisons with listed infrastructure providers. The financial analysis above is not a personalised recommendation to subscribe for shares.
 
 *Research checked 16 November 2026, Europe/Dublin. US-dollar amounts, period definitions, source dates and proposed share terms are preserved. SEC figures include unaudited 2026 interim data. Market-sensitive terms can change before pricing. Forecast tables are explicitly illustrative and are not statements of Anthropic management guidance.*
 

@@ -1,0 +1,78 @@
+---
+title: Ferrous fumarate in Ireland | Iron absorption, haemoglobin and the difference between two blood tests
+slug: ferrous-fumarate
+pillar: health
+canonical_path: /health/medicines/ferrous-fumarate/
+date: '2026-11-19'
+summary: Iron absorption, haemoglobin and the difference between two blood tests.
+meta_description: Ferrous fumarate explained for Irish readers. Iron absorption, haemoglobin and the difference
+  between two blood tests. See what to ask about safety and where to find the official leaflet.
+tags:
+- medicines
+- medicines-a-z
+draft: false
+sources:
+- title: HSE | Ferrous fumarate
+  url: https://www2.hse.ie/medicines/ferrous-fumarate/
+- title: HPRA | Find Irish-authorised medicines and their patient leaflets
+  url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Iron deficiency anaemia
+  url: https://www2.hse.ie/conditions/iron-deficiency-anaemia/
+image: /static/images/evergreen/az-ferrous-fumarate.jpg
+image_alt: Microscopy photograph of a blood sample from a patient with iron deficiency anaemia
+image_credit: Dr Graham Beards · 2012 · CC BY-SA 3.0 · framed
+image_source: https://commons.wikimedia.org/wiki/File:Iron_deficiency_anemia_blood_film.jpg
+require_pinned_hero: true
+research_checked: '2026-11-20'
+editorial_review_status: pending
+medicine_index_name: Ferrous fumarate
+medicine_search_aliases:
+- iron
+- anaemia
+---
+
+## At a glance
+
+Ferrous fumarate is an iron salt used to replace iron. Confirm which salt and amount of elemental iron your product contains when comparing packs. [HSE guide](https://www2.hse.ie/medicines/ferrous-fumarate/)
+
+## The Science Behind the Drug
+
+### Iron absorption, haemoglobin and the difference between two blood tests
+
+Absorbed iron enters the circulation, binds to transferrin and becomes available for making haemoglobin in developing red blood cells. Ferritin helps store iron. Inflammation can change how iron is handled and can also affect ferritin, so a clinician may interpret several tests together. [HSE source](https://www2.hse.ie/medicines/ferrous-fumarate/)
+
+## What the evidence measures
+
+Haemoglobin and ferritin answer different questions. Haemoglobin tracks anaemia, while ferritin helps assess iron stores in context. Improvement in red cells and replenishment of stores can happen on different timescales.
+
+## Read the test names
+
+| What to check | Why it matters |
+|---|---|
+| Haemoglobin | oxygen-carrying protein in red blood cells |
+| Ferritin | marker of iron stores interpreted alongside the clinical picture |
+
+
+## Why would two iron packs with similar names show different numbers?
+
+The mass of the iron salt and the amount of elemental iron are different quantities. Compare the elemental iron and exact formulation with a pharmacist before switching.
+
+## When to ask for help or a medication review
+
+Keep iron away from children, since overdose can be dangerous. Ask about interactions with thyroid medicine, some antibiotics and antacids, and ask how the cause of the iron deficiency will be followed up. [HSE patient guidance](https://www2.hse.ie/medicines/ferrous-fumarate/)
+
+## What the lab results can tell you about the response
+
+Haemoglobin tells you about the oxygen-carrying protein in red blood cells. Ferritin reflects iron stores, but it can also rise during inflammation, so a clinician may interpret it with other blood tests and the clinical picture. When treatment is helping, the time course of the blood count may differ from that of iron stores. Ask which results will be checked again and which result would change the plan. [HSE ferrous fumarate guidance](https://www2.hse.ie/medicines/ferrous-fumarate/) · [HSE iron deficiency anaemia guidance](https://www2.hse.ie/conditions/iron-deficiency-anaemia/)
+
+## What to compare if the pharmacist offers another pack
+
+Bring the ferrous fumarate packet or photograph its ingredient panel. The weight of the salt and the amount of elemental iron are different measurements. Two numbers that look similar on packages are therefore not enough to judge whether they provide the same amount of iron. Ask the pharmacist to confirm the replacement and whether other drugs, such as [levothyroxine](/health/medicines/levothyroxine/), require particular timing. [HSE ferrous fumarate guidance](https://www2.hse.ie/medicines/ferrous-fumarate/)
+
+If constipation, nausea or stomach discomfort makes you miss doses, bring that up before the next test. The response is easier to interpret when the prescriber knows what you actually took. It is also worth asking whether the reason for iron loss or poor absorption has been investigated. [HSE iron deficiency anaemia guidance](https://www2.hse.ie/conditions/iron-deficiency-anaemia/)
+
+## Related guides
+
+[Folic acid](/health/medicines/folic-acid/) · [Levothyroxine](/health/medicines/levothyroxine/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)
+
+*Microscopy photograph of a blood sample from a patient with iron deficiency anaemia. [Image licence](https://creativecommons.org/licenses/by-sa/3.0).*

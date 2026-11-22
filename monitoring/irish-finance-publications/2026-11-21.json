@@ -1,0 +1,182 @@
+{
+  "run_date": "2026-11-21",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "edition_key": "2026-11-21/morning",
+  "morning_search_cutoff": "2026-11-21T09:48:44+00:00",
+  "target_maximum": 3,
+  "slots_already_filled_at_start": 0,
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "verified_base_commit": "2fe4fb52c6ce4fb7b3359c44526498b71990d53a",
+  "programme_status": "published_live_verified",
+  "confirmed_publications": 3,
+  "new_articles": 3,
+  "canonical_updates": 0,
+  "held_for_review": 0,
+  "skipped": 0,
+  "failed": 0,
+  "articles": [
+    {
+      "topic": "CSO Sustainable Mobility and Transport 2024: EV running-cost motives and home-charging access",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "published_live_verified",
+      "source_path": "content/wealth/irish-ev-running-costs-home-charging-2026.md",
+      "canonical_url": "https://compound.ie/news/irish-ev-running-costs-home-charging-2026/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/ep/p-smt/sustainablemobilityandtransport2024/keyfindings/",
+        "https://www.cso.ie/en/releasesandpublications/ep/p-smt/sustainablemobilityandtransport2024/electricvehicles/",
+        "https://www.cso.ie/en/releasesandpublications/ep/p-smt/sustainablemobilityandtransport2024/backgroundnotes/"
+      ],
+      "distinct_thesis": "The new survey shows lower running costs influenced more EV owners than environmental benefit, while home charging became materially more important; a worked comparison shows why the saving depends on mileage and charging mix rather than the drivetrain label alone.",
+      "claim_checks": [
+        {
+          "claim": "Running affordability influenced 72.1%, environmental contribution 59.4%, reduced motor tax 34.4%, home charging 24.4%, grants 20.1% and public charging 6.3% of surveyed EV owners.",
+          "basis": "CSO release published 20 November 2026; multiple responses were allowed.",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Home charging rose from 10.4% in 2021 to 24.4% in 2024, a 14-point or approximately 2.35-times increase.",
+          "basis": "24.4 - 10.4 = 14.0 percentage points; 24.4 / 10.4 = 2.346.",
+          "status": "calculation_verified"
+        },
+        {
+          "claim": "Illustrative 15,000km annual energy cost is €637.50 for a 17kWh/100km EV at €0.25/kWh and €1,665 for a 6L/100km petrol car at €1.85/L.",
+          "basis": "2,550kWh × €0.25 = €637.50; 900L × €1.85 = €1,665. Prices and efficiencies are explicitly labelled assumptions, not market averages.",
+          "status": "calculation_verified_with_scope"
+        }
+      ],
+      "photo": {
+        "asset": "compound/site/static/images/evergreen/irish-ev-running-costs-home-charging-2026.jpg",
+        "subject": "Driver charging an electric car",
+        "credit": "KEACINADO / Wikimedia Commons",
+        "licence": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Electric_Car_charging.jpg",
+        "processing": "Cropped to 1600 × 900; modification disclosed in credit"
+      },
+      "publication_commit": "23aebbe17521b4272476ca48c2a173cc1515e05e",
+      "deployment_status": "live_http_200_canonical_image_sitemap_ads_consent_verified"
+    },
+    {
+      "topic": "Central Bank Financial Stability Review 2026:II mortgage repayment stress scenarios",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "published_live_verified",
+      "source_path": "content/wealth/irish-mortgage-rate-stress-central-bank-2026.md",
+      "canonical_url": "https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/",
+      "primary_sources": [
+        "https://www.centralbank.ie/docs/default-source/publications/financial-stability-review/financial-stability/financial-stability-review-2026-ii.pdf",
+        "https://www.centralbank.ie/news/article/press-release-central-bank-of-irelands-financial-stability-review-19-november-2026"
+      ],
+      "distinct_thesis": "The Central Bank's scenarios show that most exposed borrowers would see modest changes but a material tail could face increases above €200; the analysis explains the denominator and stress assumptions so a scenario is not mistaken for a forecast.",
+      "claim_checks": [
+        {
+          "claim": "57% of PDH borrowers at retail banks are exposed to near-term rate changes through SVR, tracker or a fixed rate expiring within a year.",
+          "basis": "Central Bank Financial Stability Review 2026:II, page 37.",
+          "status": "verified_primary_source_with_scope"
+        },
+        {
+          "claim": "A 100bp shock puts about 14% of the exposed group in the €100–€200 increase band and just under 7% above €200; at 200bp the figures are 28% and 20%.",
+          "basis": "Central Bank stress scenario; article states full pass-through and that this is not a forecast.",
+          "status": "verified_primary_source_with_scope"
+        },
+        {
+          "claim": "A €250,000 repayment mortgage over 20 years rises from €1,449.90 at 3.5% to €1,581.62 at 4.5% and €1,719.72 at 5.5%.",
+          "basis": "Standard monthly amortisation formula, constant rate, no fees or overpayments.",
+          "status": "calculation_verified_with_scope"
+        }
+      ],
+      "photo": {
+        "asset": "compound/site/static/images/evergreen/irish-mortgage-rate-stress-central-bank-2026.jpg",
+        "subject": "Central Bank of Ireland headquarters, Dublin",
+        "credit": "Metro Centric / Wikimedia Commons",
+        "licence": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Ireland_New_HQ.jpg",
+        "processing": "Cropped to 1600 × 900; modification disclosed in credit"
+      },
+      "publication_commit": "23aebbe17521b4272476ca48c2a173cc1515e05e",
+      "deployment_status": "live_http_200_canonical_image_sitemap_ads_consent_verified"
+    },
+    {
+      "topic": "Employment Permits Portal outage: limited alternative-process test and practical applicant guidance",
+      "edition": "morning",
+      "content_type": "news_service",
+      "action": "new_article",
+      "status": "published_live_verified",
+      "source_path": "content/wealth/ireland-employment-permits-portal-outage-2026.md",
+      "canonical_url": "https://compound.ie/news/ireland-employment-permits-portal-outage-2026/",
+      "primary_sources": [
+        "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/employment-permits-portal-service/employment-permits-portal-service.html",
+        "https://www.enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/employment-permits-portal-service/employment-permits-portal-service-faq.html",
+        "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/current-application-processing-dates/",
+        "https://enterprise.gov.ie/en/publications/employment-permits-portal-personal-data-security-incident.html"
+      ],
+      "distinct_thesis": "The 19 November recovery step is limited testing rather than a general reopening; the service article separates the actions for submitted, draft, new, renewal and appeal cases and preserves the distinction between flexibility and a legal deadline extension.",
+      "claim_checks": [
+        {
+          "claim": "The Department began testing a temporary alternative process with a limited number of companies while the portal remains unavailable.",
+          "basis": "Official service update dated 19 November 2026.",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "New applications cannot generally be submitted by email; review and appeal applications remain subject to the 28-day deadline and can use EPreviews@enterprise.gov.ie.",
+          "basis": "Official portal service FAQ; article does not describe limited company testing as universal access.",
+          "status": "verified_primary_source_with_scope"
+        },
+        {
+          "claim": "The 20 November processing-date snapshot showed 23 October for Critical Skills, General and other new applications; 22 October for ICT new; 16 October for ICT renewals; 14 October for other renewals; and 6 May for reviews/appeals.",
+          "basis": "Official current application processing dates page, captured as a dated queue snapshot rather than a completion promise.",
+          "status": "verified_primary_source_with_date_scope"
+        }
+      ],
+      "photo": {
+        "asset": "compound/site/static/images/evergreen/ireland-employment-permits-portal-outage-2026.jpg",
+        "subject": "Department building at 23 Kildare Street, Dublin",
+        "credit": "J.-H. Janßen / Wikimedia Commons",
+        "licence": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dublin_23_Kildare_Street_02.JPG",
+        "processing": "Cropped to 1600 × 900; modification disclosed in credit"
+      },
+      "publication_commit": "23aebbe17521b4272476ca48c2a173cc1515e05e",
+      "deployment_status": "live_http_200_canonical_image_sitemap_ads_consent_verified"
+    }
+  ],
+  "deduplication": {
+    "inventory_and_live_source": "Checked AGENTS.md, EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and current source files. No existing canonical answers the new CSO EV-decision evidence, Central Bank repayment stress distribution or current permits-portal recovery question. Existing EV and mortgage tools are linked as calculations rather than duplicated.",
+    "recent_content": "Checked the past 14 days of posts and recent commits. Excluded the 19–20 November housing, first-time-buyer, employment, wage, family-support and consumer-credit events and avoided their search intent.",
+    "open_prs_and_workflows": "Checked open pull requests and current private-company, PIA and overnight workflow ledgers. The proposed events and audience questions are distinct; unrelated work remains untouched.",
+    "afternoon_handoff": "Count these three morning items once only if their public URLs are fetched successfully. The afternoon check must search only for material original developments first public after 2026-11-21T09:48:44+00:00 and must not republish these events or intents."
+  },
+  "weekly_reporting": {
+    "status": "fresh_access_check_failed_authentication",
+    "checked_at": "2026-11-21",
+    "google_search_console": "NOT_AUTHENTICATED",
+    "google_analytics_4": "NOT_AUTHENTICATED",
+    "search_vs_social": "No current authenticated Search Console clicks or GA4 referral data are available, so no organic-versus-social comparison or revenue attribution is recorded.",
+    "available_ledger_total": "Nine morning articles are live-verified in the available 19–21 November ledgers. No morning ledgers exist in this checkout for 12–18 November, so this is not represented as a complete seven-day publication total."
+  },
+  "checks": {
+    "editorial": "Source, arithmetic, date scope, duplication, originality, readability, metadata and internal-link QA passed; editorial_review_status remains truthfully pending and no human approval is claimed.",
+    "advertising": "Each live page contains the standard ca-pub-6115783809711785 loader and existing consent/privacy controls. Loader presence is verified; ad fill is not asserted.",
+    "images": "Three distinct licensed 1600 × 900 local photographs passed attribution, metadata and visual crop inspection. Local production render generated matching 16:9 WebP Open Graph and Twitter images for all three slugs.",
+    "tests": "Focused repository suite: 65 passed with one dependency deprecation warning. Repository-local image pipeline and full static build completed with 410 articles, 898 tags, 35 pages and 62 tools; rendered canonicals, one-H1 rule, sitemap entries, social images, ads and consent checks passed. One non-fatal Pillow warning concerned a pre-existing oversized image outside this batch.",
+    "deployment": "GitHub Pages site workflow 44896393705 passed build, deploy, mobile audit, finance discovery and live verification. All three canonical URLs, source photographs and social images returned HTTP 200; canonicals, one-H1 rule, indexability, sitemap entries, ad loader and consent hooks were verified. The dedicated Irish morning live-URL workflow 44896393628 passed on retry after the Pages deployment."
+  },
+  "recoverable_failures": [
+    {
+      "workflow": "Verify Irish morning news live URLs",
+      "run": "https://github.com/davidomarayt/compound/actions/runs/44896393628",
+      "initial_result": "failed_before_pages_deployment_completed",
+      "recovery": "reran_failed_jobs_after_site_deploy",
+      "final_result": "success_on_attempt_2"
+    }
+  ],
+  "pull_request": "https://github.com/davidomarayt/compound/pull/232",
+  "pull_request_head_commit": "019d968b59e3d04951442f92b3e3e1960f27daff",
+  "publication_commit": "23aebbe17521b4272476ca48c2a173cc1515e05e",
+  "pr_ci_run": "https://github.com/davidomarayt/compound/actions/runs/44895403430",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44896393705",
+  "verified_at_utc": "2026-11-21T11:04:52Z"
+}

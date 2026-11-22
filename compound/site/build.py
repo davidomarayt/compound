@@ -5,6 +5,7 @@ Previews render to /preview/<token>/ with noindex and are never listed anywhere.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import os
@@ -23,6 +24,7 @@ from PIL import Image, ImageOps
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
+from compound.site.health_conditions import CONDITIONS_URL, condition_search_entries, load_conditions
 from compound.site.finance_discovery import catalogue, source_links, write_discovery
 from compound.site.stock_names import normalise_company_names
 from compound.site.pia import load_pia_tracker, load_pia_launch_tracker
@@ -31,12 +33,15 @@ from compound.site.spending_programmes import prepare_programmes
 from compound.site.spending_votes import prepare_votes
 from compound.site.spending_vote30 import prepare_vote30_subheads
 from compound.site.earnings_view import load_company_report
+from compound.site.incremental import ArticleRenderCache, render_key
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
 PILLAR_PUBLIC_SLUGS = {"wealth": "wealth", "health": "health", "happiness": "life"}
+
+MEDICINES_HUB_URL = "/health/medicines/"
 
 COURSE_PARENTS = {
     # Investing in Ireland 101
@@ -314,6 +319,8 @@ class Article:
     related_tools: list[str] = field(default_factory=list)
     research_review_pending: bool = False
     research_checked: date | None = None
+    medicine_index_name: str = ""
+    medicine_search_aliases: list[str] = field(default_factory=list)
 
     @property
     def body_with_charts(self) -> str:
@@ -353,6 +360,15 @@ class Page:
     body_html: str
     canonical_path: str = ""
     meta_description: str = ""
+    sources_checked: date | None = None
+    hero_image_url: str = ""
+    hero_image_alt: str = ""
+    hero_image_credit: str = ""
+    hero_image_source: str = ""
+
+    @property
+    def is_claims_page(self) -> bool:
+        return self.url.startswith("/wheres-my-money/what-can-i-claim/")
 
     @property
     def url(self) -> str:
@@ -587,6 +603,8 @@ def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | 
         publication_status=status,
         research_review_pending=meta.get("editorial_review_status") == "pending",
         research_checked=_as_date(meta["research_checked"]) if meta.get("research_checked") else None,
+        medicine_index_name=str(meta.get("medicine_index_name") or ""),
+        medicine_search_aliases=[str(alias) for alias in (meta.get("medicine_search_aliases") or [])],
         canonical_path=canonical_path,
         seo_title=str(meta.get("seo_title") or ""),
         reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
@@ -618,9 +636,24 @@ def load_pages(content_dir: Path) -> list[Page]:
         canonical_path = str(meta.get("canonical_path") or f"/{p.stem}/")
         if not re.fullmatch(r"/(?:[a-z0-9]+(?:-[a-z0-9]+)*/)+", canonical_path):
             raise ValueError(f"Invalid page canonical path: {p}")
-        pages.append(Page(title=str(meta.get("title") or p.stem.title()), slug=p.stem,
-                          body_html=render_markdown(body), canonical_path=canonical_path,
-                          meta_description=str(meta.get("meta_description") or "")))
+        page = Page(
+            title=str(meta.get("title") or p.stem.title()),
+            slug=p.stem,
+            body_html=render_markdown(body),
+            canonical_path=canonical_path,
+            meta_description=str(meta.get("meta_description") or ""),
+            sources_checked=_as_date(meta["sources_checked"]) if meta.get("sources_checked") else None,
+            hero_image_url=str(meta.get("hero_image_url") or ""),
+            hero_image_alt=str(meta.get("hero_image_alt") or ""),
+            hero_image_credit=str(meta.get("hero_image_credit") or ""),
+            hero_image_source=str(meta.get("hero_image_source") or ""),
+        )
+        if page.is_claims_page and meta.get("require_pinned_hero"):
+            asset = Path(__file__).parent / page.hero_image_url.lstrip("/")
+            if not (page.hero_image_url.startswith("/static/") and asset.is_file()
+                    and page.hero_image_alt and page.hero_image_credit and page.hero_image_source):
+                raise ValueError(f"Missing pinned hero or photo credit: {p}")
+        pages.append(page)
     return pages
 
 
@@ -762,20 +795,38 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
         return
     source = HERE / a.image.lstrip("/")
 
-    # The news-image pipeline can temporarily fall back to a branded SVG when
-    # the stock-photo provider is rate-limited. Pillow cannot rasterise SVGs,
-    # so skip Discover derivatives rather than failing the entire site build.
-    # A later successful image refresh will restore the normal raster variants.
+    # SVGs cannot be rasterised by Pillow. Keep their pre-existing behaviour.
     if source.suffix.lower() == ".svg":
         return
 
     target_dir = output_dir / "static" / "discover"
     target_dir.mkdir(parents=True, exist_ok=True)
+
+    # Discover derivatives are expensive to encode (three WebP crops per
+    # article). Use the original image bytes plus a versioned conversion
+    # recipe; any new photograph regenerates all three sizes automatically.
+    raw_cache = os.environ.get("COMPOUND_ARTICLE_CACHE_DIR", "").strip()
+    cached = None
+    if raw_cache:
+        digest = hashlib.sha256(source.read_bytes() + b"discover-webp-v1-88-6").hexdigest()
+        cached = Path(raw_cache).resolve() / "discover" / digest[:2] / digest
+        names = [f"{a.slug}-{ratio}.webp" for ratio in DISCOVER_IMAGE_SIZES]
+        if all((cached / name).is_file() and (cached / name).stat().st_size > 0
+               for name in names):
+            for name in names:
+                shutil.copyfile(cached / name, target_dir / name)
+            return
+
     with Image.open(source) as image:
         rgb = ImageOps.exif_transpose(image).convert("RGB")
         for ratio, size in DISCOVER_IMAGE_SIZES.items():
             rendered = ImageOps.fit(rgb, size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
-            rendered.save(target_dir / f"{a.slug}-{ratio}.webp", "WEBP", quality=88, method=6)
+            name = f"{a.slug}-{ratio}.webp"
+            destination = target_dir / name
+            rendered.save(destination, "WEBP", quality=88, method=6)
+            if cached is not None:
+                cached.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(destination, cached / name)
 
 
 def site_identity_jsonld(site_url: str) -> str:
@@ -876,7 +927,11 @@ def article_breadcrumb_jsonld(a: Article, site_url: str) -> str:
             "name": PILLAR_LABELS.get(a.pillar, a.pillar.title()),
             "item": f"{base}/{a.public_pillar_slug}/",
         })
-        parent = COURSE_PARENTS.get(a.slug)
+        parent = (
+            ("Common Medicines", MEDICINES_HUB_URL)
+            if a.url.startswith(MEDICINES_HUB_URL)
+            else COURSE_PARENTS.get(a.slug)
+        )
         if parent:
             items.append({
                 "@type": "ListItem",
@@ -956,6 +1011,7 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
         article=article,
         # Editorial review status controls attribution, not advertising eligibility.
         ads_allowed=True,
+        medicines_hub_url=MEDICINES_HUB_URL if article.url.startswith(MEDICINES_HUB_URL) else "",
         preview=preview,
         series=series,
         article_body=body,
@@ -1100,6 +1156,8 @@ def build_site(settings: Settings) -> dict:
     # Consolidated company profiles supersede individual quarterly article URLs.
     articles = [a for a in all_articles if "automated-earnings" not in a.tags]
     pages = load_pages(settings.content_dir)
+    conditions = load_conditions(settings.content_dir, {article.url for article in articles})
+    conditions_url = CONDITIONS_URL if conditions else ""
     tools = load_tools(settings.content_dir)
     tools_by_slug = tool_catalogue(settings.content_dir, tools)
     # A source-backed snapshot; never manufacture programme-level allocations.
@@ -1155,7 +1213,13 @@ def build_site(settings: Settings) -> dict:
     reserved.update(programme["url"] for programme in spending["programmes"])
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
+    reserved.add(MEDICINES_HUB_URL)
     reserved.update(pg.url for pg in pages)
+    if conditions:
+        condition_urls = {CONDITIONS_URL, *(entry["url"] for entry in conditions["featured"])}
+        if conflict := reserved.intersection(condition_urls):
+            raise ValueError(f"Condition routes conflict with existing pages: {sorted(conflict)}")
+        reserved.update(condition_urls)
     if len({pg.url for pg in pages}) != len(pages):
         raise ValueError("Duplicate static page canonical routes")
     seen_urls = set(reserved)
@@ -1187,6 +1251,13 @@ def build_site(settings: Settings) -> dict:
                 raise ValueError(f"Credit the Wikimedia Commons file page: {article.slug}")
         elif not article.image.startswith("/static/images/") or not (HERE / article.image.lstrip("/")).is_file():
             raise ValueError(f"Missing local cover image for {article.slug}")
+
+    # Fingerprinted article cache; non-article pages and discovery files are always regenerated.
+    article_cache = ArticleRenderCache.from_environment(
+        site_root=HERE, content_dir=settings.content_dir,
+        site_base_url=settings.site_base_url,
+        email_form_action=settings.email_form_action,
+    )
 
     # Wipe rendered output except previews (they belong to the pending queue, not the content dir).
     if out.exists():
@@ -1490,6 +1561,9 @@ def build_site(settings: Settings) -> dict:
         tags = {("company-" if private else "stock-") + c["slug"]}
         if not private and c["ticker"].lower() not in earnings_profile_by_ticker:
             tags.add(c["ticker"].lower())
+        # Pre-IPO reporting keeps its original company-anthropic tag after listing.
+        if not private and c.get("historical_private_slug"):
+            tags.add("company-" + c["historical_private_slug"])
         return sorted((a for a in articles if "automated-earnings" not in a.tags and any(t in a.tags for t in tags)),
                       key=lambda a: (a.date, a.slug), reverse=True)
     # Source-checked 10-Q/10-K reports for eligible additional US issuers link
@@ -1524,6 +1598,8 @@ def build_site(settings: Settings) -> dict:
         profile = (f'/stocks/{c["slug"]}/', c["name"], c["tv_symbol"])
         earnings_profile_by_ticker["stock-" + c["slug"]] = profile
         earnings_profile_by_ticker.setdefault(c["ticker"].lower(), profile)
+        if c.get("historical_private_slug"):
+            earnings_profile_by_ticker["company-" + c["historical_private_slug"]] = profile
     for c in private_companies:
         earnings_profile_by_ticker["company-" + c["slug"]] = (f'/companies/{c["slug"]}/', c["name"], "")
     # Preserve existing quarter URLs with noindex + canonical redirects.
@@ -1668,6 +1744,39 @@ def build_site(settings: Settings) -> dict:
                    checked=watchlist.get("checked", "not yet"),
                    has_coverage=bool(stories), ads_allowed=bool(stories)))
 
+    # Keep historical private-company bookmarks working when an issuer lists.
+    # The generated redirect has a canonical stock destination and noindex tag.
+    for c in extra_listed:
+        if c.get("historical_private_slug"):
+            _write(out / "companies" / c["historical_private_slug"] / "index.html",
+                   _redirect_html(f"/stocks/{c['slug']}/", settings.site_base_url))
+
+    medicine_guides = sorted(
+        (a for a in by_pillar["health"] if a.url.startswith(MEDICINES_HUB_URL)),
+        key=lambda a: a.slug,
+    )
+    medicines_hub_url = MEDICINES_HUB_URL if medicine_guides else ""
+    if medicine_guides:
+        _write(out / MEDICINES_HUB_URL.strip("/") / "index.html",
+               env.get_template("medicines.html").render(
+                   title="Common Medicines in Ireland", pillar="health",
+                   medicines_hub_url=medicines_hub_url, guides=medicine_guides,
+                   az_guides=sorted((guide for guide in medicine_guides if guide.medicine_index_name),
+                                    key=lambda guide: guide.medicine_index_name.casefold()),
+                   oral_glp_guide=next((a for a in by_pillar["health"]
+                                       if a.slug == "oral-glp-1-medicines-ireland"), None)))
+
+    if conditions:
+        _write(out / CONDITIONS_URL.strip("/") / "index.html",
+               env.get_template("health_conditions.html").render(
+                   title="Health Conditions A–Z in Ireland", pillar="health",
+                   directory=conditions, conditions_url=conditions_url))
+        for entry in conditions["featured"]:
+            _write(out / entry["url"].strip("/") / "index.html",
+                   env.get_template("health_condition.html").render(
+                       title=f'{entry["name"]} in Ireland', pillar="health",
+                       entry=entry, directory=conditions, conditions_url=conditions_url))
+
     for p in PILLARS:
         if p == "happiness":
             # Public branding moved from /happiness/ to /life/. GitHub Pages
@@ -1679,7 +1788,9 @@ def build_site(settings: Settings) -> dict:
                 _redirect_html("/life/", settings.site_base_url),
             )
             continue
-        _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
+        _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(
+            pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p],
+            medicines_hub_url=medicines_hub_url, conditions_url=conditions_url))
 
     # PIA Centre: retain the existing pillar article and tool URLs as canonicals.
     # Static provider facts live in a dated primary-source tracker, not code.
@@ -1710,24 +1821,34 @@ def build_site(settings: Settings) -> dict:
             (earnings_profile_by_ticker[tag] for tag in a.tags
              if tag in earnings_profile_by_ticker), None
         )
-        context = article_context(
-            env, settings, a, False,
-            earnings_ticker=profile[2] if profile else "",
-            earnings_company_name=profile[1] if profile else "",
+        recommendations = related(a, articles)
+        article_path = out / a.url.strip("/") / "index.html"
+        # Series articles depend on their complete publication order; render those
+        # fresh rather than caching an incomplete dependency graph.
+        fingerprint = render_key(
+            base=article_cache.base, article=a, recommendations=recommendations,
+            tools=linked_tools, profile=profile,
         )
-        context["stock_company_url"] = profile[0] if profile else ""
-        context["stock_company_name"] = profile[1] if profile else ""
-        context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
-        if is_automated_earnings:
-            context["earnings_company_url"] = profile[0] if profile else ""
-            context["earnings_company_name"] = profile[1] if profile else ""
-        if linked_tools:
-            context["article_body"] = insert_article_tool_cta(
-                context["article_body"], linked_tools[0], env, a.pillar
+        if a.series_id or not article_cache.reuse(a.url, fingerprint, article_path):
+            context = article_context(
+                env, settings, a, False,
+                earnings_ticker=profile[2] if profile else "",
+                earnings_company_name=profile[1] if profile else "",
             )
-        _write(out / a.url.strip("/") / "index.html",
-               env.get_template(article_template(a)).render(
-                   **context, related=related(a, articles), linked_tools=linked_tools))
+            context["stock_company_url"] = profile[0] if profile else ""
+            context["stock_company_name"] = profile[1] if profile else ""
+            context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
+            if is_automated_earnings:
+                context["earnings_company_url"] = profile[0] if profile else ""
+                context["earnings_company_name"] = profile[1] if profile else ""
+            if linked_tools:
+                context["article_body"] = insert_article_tool_cta(
+                    context["article_body"], linked_tools[0], env, a.pillar
+                )
+            _write(article_path, env.get_template(article_template(a)).render(
+                **context, related=recommendations, linked_tools=linked_tools))
+            if not a.series_id:
+                article_cache.store(a.url, fingerprint, article_path)
         if a.pillar == "happiness":
             legacy_url = f"/happiness/{a.slug}/"
             if a.url != legacy_url:
@@ -1880,6 +2001,14 @@ def build_site(settings: Settings) -> dict:
                 "description": pg.meta_description, "image": "", "reading_minutes": 5,
                 "date_label": "Solar hub",
             })
+        if pg.is_claims_page:
+            index.append({
+                "title": pg.title, "url": pg.url, "pillar": "Wealth",
+                "date": pg.sources_checked.isoformat() if pg.sources_checked else "",
+                "summary": pg.meta_description, "description": pg.meta_description,
+                "tags": ["supports", "entitlements", "grants", "tax relief"],
+                "image": pg.hero_image_url, "reading_minutes": 4, "date_label": "",
+            })
     if any(pg.slug == "insurance" for pg in pages):
         index.insert(0, {
             "title": "Insurance Tools & Guides Ireland — Life, Mortgage, Income & Health",
@@ -2016,6 +2145,8 @@ def build_site(settings: Settings) -> dict:
                 "description": c["summary"], "image": "", "reading_minutes": 3,
                 "date_label": "Company profile",
             })
+    if conditions:
+        index[0:0] = condition_search_entries(conditions)
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -2104,11 +2235,25 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + f"/{PILLAR_PUBLIC_SLUGS[p]}/", None)
         for p in PILLARS
     )
+    if conditions:
+        sitemap_entries.append((settings.site_base_url + CONDITIONS_URL, conditions["checked"]))
+        sitemap_entries.extend(
+            (settings.site_base_url + entry["url"], conditions["checked"])
+            for entry in conditions["featured"]
+        )
+    if medicine_guides:
+        latest_medicine_update = max(a.research_checked or a.reviewed or a.date for a in medicine_guides)
+        sitemap_entries.append((settings.site_base_url + medicines_hub_url, latest_medicine_update.isoformat()))
     sitemap_entries.extend(
         (settings.site_base_url + a.url, (a.research_checked or a.reviewed or a.date).isoformat())
         for a in articles
     )
-    sitemap_entries.extend((settings.site_base_url + pg.url, "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None) for pg in pages if pg.slug != "solar-installer-portal")
+    sitemap_entries.extend(
+        (settings.site_base_url + pg.url,
+         pg.sources_checked.isoformat() if pg.sources_checked else
+         "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None)
+        for pg in pages if pg.slug != "solar-installer-portal"
+    )
 
     # Canonical stock hub URLs only; old earnings-company aliases are noindex.
     sitemap_entries.extend(
@@ -2172,7 +2317,8 @@ def build_site(settings: Settings) -> dict:
                  else "Official issuer earnings release")}]),
         })
     finance = catalogue(settings.site_base_url, articles, tools, discovery_stocks, has_calculator)
-    write_discovery(settings.site_base_url, out, env, finance, sitemap_by_url)
+    write_discovery(settings.site_base_url, out, env, finance, sitemap_by_url,
+                    medicines_hub_url=medicines_hub_url)
 
     sitemap_rows = []
     for url, lastmod in sitemap_by_url.items():
@@ -2183,7 +2329,9 @@ def build_site(settings: Settings) -> dict:
         sitemap_rows.append(row)
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(sitemap_rows) + "</urlset>\n")
-    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages), "tools": len(tools)}
+    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages),
+            "tools": len(tools), "article_cache_hits": article_cache.hits,
+            "article_cache_misses": article_cache.misses}
 
 
 def render_preview(settings: Settings, token: str, article: Article) -> Path:

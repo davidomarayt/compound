@@ -33,6 +33,8 @@ sources:
     url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf
   - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026 committee amendments, dated 3 November 2026; proposals, not enacted text."
     url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/3/amendment/numberedList/eng/b9826d-dcnl.pdf
+  - title: "Houses of the Oireachtas: Dáil Business Committee report dated 20 November 2026, proposed Report and Final Stages for 24–25 November; this is a proposed timetable, not a legislative outcome. Checked 21 November 2026."
+    url: https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf
   - title: "RTÉ: Irish Investment Account to open on 1 July 2027 — Budget 2027 announcement. 6 October 2026."
     url: https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/
   - title: "RTÉ: At a glance — key points from Budget 2027. 6 October 2026."
@@ -50,6 +52,10 @@ sources:
 ---
 
 Ireland is getting a new **Personal Investment Account**, usually shortened to **PIA**.
+
+**Investing with a spouse or partner?** The draft allows only sole-name accounts, but two eligible adults could each use their own contribution limit and €50,000 annual-value threshold. Read [PIAs for couples in Ireland: joint accounts, gifting and worked tax examples](/wealth/pia-for-couples-ireland/) to see why legal ownership matters.
+
+**Saving for a first home?** Our [PIA and mortgage-deposit guide](/wealth/pia-mortgage-deposit-ireland/) looks at evidence from Irish lenders, regular S&P 500 ETF investing versus active trading, portfolio risk and how to prove the source of a deposit.
 
 Budget 2027 set the headline numbers: the account is planned to open from **1 July 2027**, contributions will be capped at **€12,000 a year**, there will be **no minimum contribution**, and an annual **1% PIA tax** will apply only to the portion of the relevant account value above **€50,000**.
 
@@ -91,6 +97,12 @@ But there is an important caveat: **this is a proposed account, not an account y
 <p><strong>Choose your next PIA step:</strong> <a href="/pia/">start at the PIA Centre</a>, <a href="/pia-calculator/">model growth and the proposed charge</a>, <a href="/pia/vs-pension/">compare PIA with a pension</a>, <a href="/pia/investment-eligibility/">check an ETF or share</a>, or <a href="/pia/providers/">check verified provider announcements</a>. Provider fees and final product details may still change.</p>
 
 <p class="pia-status"><strong>Committee-amended text verified: 19 November 2026.</strong> The official <a href="https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf">Finance (No. 2) Bill 2026, No. 98a, as amended in Select Committee</a> contains proposed <em>Individual Investment Account (IIA)</em> provisions in section 27. The earlier introduced version used section 26. This verifies an amended draft, <strong>not</strong> final enactment, commencement or the latest completed parliamentary stage. The 1 July 2027 target remains conditional. Provider references retain their original source-check dates; this is not a whole-article editorial re-review.</p>
+
+<h2 id="pia-next-dail-stages">What happens next to the Irish investment account Bill?</h2>
+
+**New parliamentary timetable evidence checked 21 November 2026.** The <a href="https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf">Dáil Business Committee report dated 20 November</a> proposes taking **Report and Final Stages of Finance (No. 2) Bill 2026 on Tuesday 24 November**, with proceedings scheduled to resume **Wednesday 25 November**. The report places the Tuesday debate in the 3.49–6.49 p.m. slot and Wednesday’s resumed proceedings no earlier than 3.30 p.m. These are **proposed parliamentary business arrangements**, not proof that either debate has taken place or that a vote has passed.
+
+For prospective PIA investors, the next useful question is whether the Dáil advances the Bill, what amendments survive, and whether subsequent legislative and commencement steps change any IIA terms. A committee-approved draft or a date in a parliamentary calendar does **not** create an account that can be opened or lock in the proposed €12,000 contribution cap, €50,000 threshold, 1% charge or 1 July 2027 Government opening target. The latest final stage still needs verification against the official legislative record, which was not accessible during this source check. Use the <a href="/pia/#pia-launch-tracker">dated PIA launch tracker</a> for milestone evidence and <a href="/pia/providers/">provider announcements</a> for separately confirmed product readiness.
 
 <h2 id="pia-at-a-glance">Personal Investment Account Ireland: the rules at a glance</h2>
 
@@ -535,7 +547,7 @@ For someone investing specifically for retirement, pension tax relief can be ext
 
 This is not a universal “pension first” rule. Employer contributions, tax relief, time horizon, access needs and personal circumstances all matter.
 
-Our [Pension vs Investing in Ireland guide](/wealth/pension-vs-investing-ireland/) explains that decision in detail.
+Use the [PIA vs pension calculator](/pia/vs-pension/#pia-pension-comparison) to model the same take-home budget in both accounts, including pension tax relief and any additional employer match. Our [Pension vs Investing in Ireland guide](/wealth/pension-vs-investing-ireland/) explains the broader retirement decision.
 
 <h2 id="pia-vs-savings">PIA vs savings account: what is the difference?</h2>
 

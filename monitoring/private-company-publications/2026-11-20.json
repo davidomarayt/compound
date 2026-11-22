@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-20",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-20",
+  "target_new_articles": 3,
+  "new_article_count_prepared": 2,
+  "canonical_updates_prepared": 1,
+  "confirmed_live_new_articles": 2,
+  "status": "two_new_one_canonical_update_verified_live_via_github_runner",
+  "ads_policy": "Standard ad loader and CMP on released articles and company hubs, independent of human-review status; no guarantee of ad fill",
+  "editorial_quality_gate": "19-20 Nov primary/source evidence, topic-index and prior 14–30-day overlap checked; no filler or duplicated IPO canonical; licensed real archival images only; exact-head test/performance and deployment/live verification required",
+  "prior_publication_recovery": {
+    "checked_dates": [
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "prior_ledgers_record_live_verification": true,
+    "recovery_needed": false
+  },
+  "duplication_checks": {
+    "index_snapshot": "2026-11-20",
+    "openai": "New accounting workflow distinct from Nov 17 media distribution and Nov 19 legal model/earlier NATO partnership",
+    "anthropic": "Nov 18 pre-open IPO price and Nov 19 issuer-final terms already at existing canonical; update with 19 Nov Nasdaq market debut and first close rather than duplicate",
+    "third_company": "Blue Origin's Nov 19 Google orbital compute launch agreement distinct from earlier New Glenn BE-4 valve fix article",
+    "competing_workflows": "Checked recent PRs, current inventory and ledgers; pending Anthropic classification migration PR #198 under independent quality gate, no competing changes made"
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "action": "new_article",
+      "event_date": "2026-11-18",
+      "article_path": "content/wealth/openai-accounting-plugin-bookkeeping-controls-economics.md",
+      "story_fingerprint": "2026-11-18-openai-accounting-plugin-month-end-review-reconciliation-economics",
+      "primary_source_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Account_Book_Ledger_MET_DP214206.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Account_Book_Ledger_MET_DP214206.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC0 1.0",
+      "photo_provenance": "Metropolitan Museum of Art archival photograph of historic John Carlin account book, 1835–1856; museum collection CC0, not 2026 product",
+      "claim_checks": [
+        "OpenAI release notes dated 18 November 2026 describe Accounting plugin use in reconciliation, invoice-entry drafts and month-end reports",
+        "No disclosed accounting-specific plugin price, Ireland integrations, independently measured success rate or autonomous posting",
+        "Hypothetical 1000 records x 3min=50h; x 1min=16.67h + 10h independent review=26.67h; net 23.33h x €35 approximately €816.67, not measured benefit"
+      ],
+      "canonical_url": "https://compound.ie/wealth/openai-accounting-plugin-bookkeeping-controls-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: independent GitHub Pages mobile-audit job 136155895356, site run 44696053186 (merge commit 1972f494715f95f902db777ae9c9e1524e4bbf29), 2026-11-20T07:48:22Z; verified fetched live HTML, canonical, pinned cover JPEG, OG/Twitter WebP, exact profile backlink and AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-20T07:48:22Z"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "action": "substantive_canonical_update",
+      "event_date": "2026-11-19",
+      "article_path": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+      "story_fingerprint": "2026-11-19-anthropic-nasdaq-first-trade-11150-close-9717-83-ipo-allocation",
+      "primary_source_urls": [
+        "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+        "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+        "https://apnews.com/article/b6a74b8949021207dc162fcc876c4649"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+      "photo_focal_y": 0.45,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Ajay Suresh / Wikimedia Commons, genuine Nasdaq MarketSite archival 19 September 2021, 2026 listing event not depicted; retained existing cover",
+      "claim_checks": [
+        "Nasdaq source confirms ANT began trading 19 November 2026, at $111.50",
+        "Anthropic priced 980m shares at $83 on 18 November, including 956351354 primary and 23648646 secondary",
+        "Reuters and AP independently report 19 November first close $97.17; opening-to-close loss 14.33/111.50=12.85%, close vs IPO +14.17/83=17.07%",
+        "Company is now listed; open concurrent PR #198 proposes migration to /stocks/ant/ and must be coordinated; no fictional private stock ticker or separate IPO article"
+      ],
+      "canonical_url": "https://compound.ie/news/anthropic-ipo-pricing-nasdaq/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "live_required_fingerprint": "$97.17",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: independent GitHub Pages mobile-audit job 136155895356, site run 44696053186 (merge commit 1972f494715f95f902db777ae9c9e1524e4bbf29), 2026-11-20T07:48:22Z; verified fetched live HTML, canonical, pinned cover JPEG, OG/Twitter WebP, exact profile backlink and AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "updated_canonical_verified_live",
+      "live_verified_at_utc": "2026-11-20T07:48:22Z"
+    },
+    {
+      "company": "Blue Origin",
+      "slug": "blue-origin",
+      "action": "new_article",
+      "event_date": "2026-11-19",
+      "article_path": "content/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics.md",
+      "story_fingerprint": "2026-11-19-google-project-suncatcher-blue-origin-new-glenn-q1-2029-launch-contract-ai-compute-unit-economics",
+      "primary_source_urls": [
+        "https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher",
+        "https://www.blueorigin.com/news/returning-launch-complex-36-to-two-pads",
+        "https://www.blueorigin.com/news/gs1-3-hotfire-updates"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Blue_Origin_New_Glenn_Rocket_Successful_Launch_(9387521).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Blue_Origin_New_Glenn_Rocket_Successful_Launch_%289387521%29.jpg",
+      "photo_focal_y": 0.48,
+      "image_license": "US government public domain",
+      "photo_provenance": "Senior Airman Samuel Becker / United States Space Force, real New Glenn launch 13 November 2025, archival and not Project Suncatcher",
+      "claim_checks": [
+        "Blue Origin 19 November announcement confirms Google dedicated New Glenn launch services agreement targeted first quarter 2029; launch not completed",
+        "No disclosed contract value, recurring bookings, gross margins or space computing revenues",
+        "Hypothetical $150m launch x 10%/$20% margin yields $15m/$30m gross profit; $200m x 20% yields $40m; not company data",
+        "New Glenn 2025 launch photo is genuine US Space Force work, not depiction of future 2029 mission"
+      ],
+      "canonical_url": "https://compound.ie/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/",
+      "profile_url": "https://compound.ie/companies/blue-origin/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS: independent GitHub Pages mobile-audit job 136155895356, site run 44696053186 (merge commit 1972f494715f95f902db777ae9c9e1524e4bbf29), 2026-11-20T07:48:22Z; verified fetched live HTML, canonical, pinned cover JPEG, OG/Twitter WebP, exact profile backlink and AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-20T07:48:22Z"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "status": "verified_sourced_profile_and_article_backlinks_live"
+    },
+    {
+      "slug": "anthropic",
+      "status": "historical_private_profile_preserved_pending_listed_migration_PR198"
+    },
+    {
+      "slug": "blue-origin",
+      "status": "verified_sourced_profile_and_article_backlinks_live"
+    }
+  ],
+  "production_deployment": {
+    "status": "github_pages_deployed_independently_verified",
+    "merge_commit_sha": "1972f494715f95f902db777ae9c9e1524e4bbf29",
+    "site_workflow_run": 44696053186,
+    "site_workflow_url": "https://github.com/davidomarayt/compound/actions/runs/44696053186",
+    "mobile_audit_job": 136155895356,
+    "verified_at_utc": "2026-11-20T07:48:22Z",
+    "confirmed_live_urls": 3,
+    "confirmed_live_new_articles": 2,
+    "confirmed_updated_canonicals": 1,
+    "verified_checks": [
+      "canonical HTTP content",
+      "unique Anthropic $97.17 fingerprint",
+      "real pinned documentary cover JPEG",
+      "OG/Twitter WebP images fetched",
+      "company profile article backlink",
+      "article and profile AdSense loader"
+    ],
+    "branch_protection": "Production branch lacks native protection; premerge exact-head test and performance checks passed; recommend enabling native protection"
+  },
+  "updated_at_utc": "2026-11-20T07:48:22Z",
+  "anthropic_listing_note": "Verified Nasdaq public listing on 19 November; previous private-company category must be retired via separately validated PR #198, not silently treated as private.",
+  "confirmed_updated_canonicals": 1
+}

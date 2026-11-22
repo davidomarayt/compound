@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-19",
+  "snapshot_date": "2026-11-22",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -21,6 +21,26 @@
           "jobs",
           "quality-of-life",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers",
+        "url": "/news/irish-mortgage-rate-stress-central-bank-2026/",
+        "source": "content/wealth/irish-mortgage-rate-stress-central-bank-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-mortgage-rate-stress-central-bank-2026",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "mortgages",
+          "interest-rates",
+          "household-costs",
+          "central-bank",
+          "housing"
         ],
         "status": "published"
       },
@@ -107,6 +127,21 @@
         "status": "published"
       },
       {
+        "title": "Allopurinol in Ireland | Xanthine oxidase, urate and gout",
+        "url": "/health/medicines/allopurinol/",
+        "source": "content/health/allopurinol.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "allopurinol",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Alphabet Stock Guide: Google Search, Cloud, AI and Valuation",
         "url": "/wealth/alphabet-search-ai-economics-2026/",
         "source": "content/wealth/alphabet-search-ai-economics-2026.md",
@@ -140,6 +175,25 @@
           "company-research",
           "mag7-research",
           "googl"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Alphabet’s $48 Billion Data-Centre Backstops Grew as Their Book Value Fell",
+        "url": "/wealth/alphabet-data-centre-credit-backstops/",
+        "source": "content/wealth/alphabet-data-centre-credit-backstops.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "alphabet-data-centre-credit-backstops",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "googl",
+          "stock-googl",
+          "mag8-analysis"
         ],
         "status": "published"
       },
@@ -199,6 +253,25 @@
         "status": "published"
       },
       {
+        "title": "Amazon’s $578 Billion Backlog Leaves a Customer-Funding Question",
+        "url": "/wealth/amazon-aws-backlog-customer-funding/",
+        "source": "content/wealth/amazon-aws-backlog-customer-funding.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "amazon-aws-backlog-customer-funding",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "amzn",
+          "stock-amzn",
+          "mag8-analysis"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Amazon’s advertising growth slowed. How much can Prime Day explain?",
         "url": "/wealth/amazon-advertising-prime-day-timing/",
         "source": "content/wealth/amazon-advertising-prime-day-timing.md",
@@ -253,6 +326,67 @@
         "status": "published"
       },
       {
+        "title": "Amitriptyline for depression in Ireland | A tricyclic antidepressant and its different receptor effects",
+        "url": "/health/medicines/amitriptyline-for-depression/",
+        "source": "content/health/amitriptyline-for-depression.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "amitriptyline-for-depression",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Amitriptyline for pain and migraine in Ireland | Pain signalling and migraine prevention",
+        "url": "/health/medicines/amitriptyline-for-pain-and-migraine/",
+        "source": "content/health/amitriptyline-for-pain-and-migraine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "amitriptyline-for-pain-and-migraine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Amlodipine in Ireland | Calcium channels, blood vessels and ankle swelling",
+        "url": "/health/medicines/amlodipine/",
+        "source": "content/health/amlodipine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "amlodipine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy",
+        "url": "/health/medicines/amoxicillin/",
+        "source": "content/health/amoxicillin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "amoxicillin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "antibiotics",
+          "amoxicillin"
+        ],
+        "status": "published"
+      },
+      {
         "title": "An Post now lets you send small tracked parcels from 2,600 postboxes",
         "url": "/news/an-post-postbox-drop-off-small-parcels-2026/",
         "source": "content/wealth/an-post-postbox-drop-off-small-parcels-2026.md",
@@ -289,6 +423,21 @@
           "autonomous-vessels",
           "navy",
           "defence-tech"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Antacids in Ireland | Neutralising stomach acid and adding a reflux barrier",
+        "url": "/health/medicines/antacids/",
+        "source": "content/health/antacids.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "antacids",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -336,6 +485,27 @@
         "status": "published"
       },
       {
+        "title": "Anthropic IPO: $83 Offer, $111.50 Opening and $97.17 First Close",
+        "url": "/news/anthropic-ipo-pricing-nasdaq/",
+        "source": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-ipo-pricing-nasdaq",
+        "date": "2026-11-18",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "finance",
+          "anthropic",
+          "company-anthropic",
+          "stock-ant",
+          "ipo",
+          "nasdaq",
+          "investing"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?",
         "url": "/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/",
         "source": "content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md",
@@ -355,26 +525,6 @@
           "saas",
           "enterprise-ai",
           "developer-economics"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut",
-        "url": "/news/anthropic-ipo-pricing-nasdaq/",
-        "source": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "anthropic-ipo-pricing-nasdaq",
-        "date": "2026-11-18",
-        "reviewed": "",
-        "tags": [
-          "news",
-          "finance",
-          "anthropic",
-          "company-anthropic",
-          "ipo",
-          "nasdaq",
-          "investing"
         ],
         "status": "published"
       },
@@ -494,12 +644,73 @@
         "date": "2026-10-21",
         "reviewed": "2026-10-21",
         "tags": [
+          "stock-ant",
           "stocks",
           "company-research",
           "anthropic",
           "artificial-intelligence",
           "ipo",
           "editorial"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Antibiotics in Ireland | How bacterial targets and resistance shape treatment",
+        "url": "/health/medicines/antibiotics/",
+        "source": "content/health/antibiotics.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "antibiotics",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Antidepressants in Ireland | Transporters, receptors and the time course of treatment",
+        "url": "/health/medicines/antidepressants/",
+        "source": "content/health/antidepressants.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "antidepressants",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Antifungal medicines in Ireland | Fungal membranes, cell walls and treatment route",
+        "url": "/health/medicines/antifungal-medicines/",
+        "source": "content/health/antifungal-medicines.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "antifungal-medicines",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Antihistamines in Ireland | Histamine signalling and why some tablets cause drowsiness",
+        "url": "/health/medicines/antihistamines/",
+        "source": "content/health/antihistamines.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "antihistamines",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -537,6 +748,25 @@
           "company-research",
           "mag7-research",
           "aapl"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Apple’s $39.9 Billion Vendor Receivables: How Much Sits With Two Manufacturers?",
+        "url": "/wealth/apple-vendor-receivables-concentration/",
+        "source": "content/wealth/apple-vendor-receivables-concentration.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "apple-vendor-receivables-concentration",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "aapl",
+          "stock-aapl",
+          "mag8-analysis"
         ],
         "status": "published"
       },
@@ -669,6 +899,21 @@
         "status": "published"
       },
       {
+        "title": "Beta blockers in Ireland | Adrenaline signals, heart rate and differences between products",
+        "url": "/health/medicines/beta-blockers/",
+        "source": "content/health/beta-blockers.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "beta-blockers",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Binance Investigates Suspected Hack as Billions in Crypto Are Frozen",
         "url": "/news/binance-hack-october-2026/",
         "source": "content/wealth/binance-hack-october-2026.md",
@@ -683,6 +928,23 @@
           "cryptocurrency",
           "investing",
           "security"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "BJ’s Comps Rose 13.5%, but Merchandise Margin Fell. Can Membership Growth Carry the Build?",
+        "url": "/wealth/bj-membership-margin-capex/",
+        "source": "content/wealth/bj-membership-margin-capex.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "bj-membership-margin-capex",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "bj"
         ],
         "status": "published"
       },
@@ -757,6 +1019,21 @@
           "stocks",
           "company-research",
           "ba"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Bronchodilators in Ireland | Relaxing the airway by two different routes",
+        "url": "/health/medicines/bronchodilators/",
+        "source": "content/health/bronchodilators.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "bronchodilators",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -922,6 +1199,28 @@
         "status": "published"
       },
       {
+        "title": "Canva Now Lets Users Turn Off Generative AI. Could More Choice Be Good for Its Business?",
+        "url": "/wealth/canva-ai-controls-opt-out-creator-economics/",
+        "source": "content/wealth/canva-ai-controls-opt-out-creator-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "canva-ai-controls-opt-out-creator-economics",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-canva",
+          "canva",
+          "design-software",
+          "generative-ai",
+          "creator-economy",
+          "subscriptions"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Capital Gains Tax in Ireland: How Much CGT Do You Pay?",
         "url": "/wealth/capital-gains-tax-ireland/",
         "source": "content/wealth/capital-gains-tax-ireland.md",
@@ -982,6 +1281,22 @@
         "status": "published"
       },
       {
+        "title": "Cetirizine in Ireland: what it’s used for and can it make you drowsy?",
+        "url": "/health/medicines/cetirizine/",
+        "source": "content/health/cetirizine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "cetirizine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "allergies",
+          "cetirizine"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Changing Jobs and Pension Transfers in Ireland",
         "url": "/wealth/changing-jobs-transfer-pension-ireland/",
         "source": "content/wealth/changing-jobs-transfer-pension-ireland.md",
@@ -1017,6 +1332,28 @@
           "openai",
           "artificial-intelligence",
           "enterprise-software"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "ChatGPT Space Comes to Plus: Can Collaboration Turn OpenAI's Consumer Users Into Teams?",
+        "url": "/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics/",
+        "source": "content/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-chatgpt-space-plus-rollout-collaboration-economics",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "chatgpt",
+          "chatgpt-space",
+          "collaboration",
+          "software-economics"
         ],
         "status": "published"
       },
@@ -1096,6 +1433,21 @@
         "status": "published"
       },
       {
+        "title": "Clopidogrel in Ireland | P2Y12 signalling and how the liver activates the drug",
+        "url": "/health/medicines/clopidogrel/",
+        "source": "content/health/clopidogrel.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "clopidogrel",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Closing on a House in Ireland: Keys, First Payments and What Comes Next",
         "url": "/wealth/closing-buying-home-ireland/",
         "source": "content/wealth/closing-buying-home-ireland.md",
@@ -1115,6 +1467,21 @@
         "status": "published"
       },
       {
+        "title": "Codeine in Ireland | Opioid receptors, metabolism and why response varies",
+        "url": "/health/medicines/codeine/",
+        "source": "content/health/codeine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "codeine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "ConocoPhillips Returned 45% of Cash Flow. How Durable Is It When Price Does the Work?",
         "url": "/wealth/conocophillips-cash-flow-shareholder-returns/",
         "source": "content/wealth/conocophillips-cash-flow-shareholder-returns.md",
@@ -1128,6 +1495,21 @@
           "stocks",
           "company-research",
           "cop"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Continuous combined HRT in Ireland | Oestrogen and continuous protection of the womb lining",
+        "url": "/health/medicines/continuous-combined-hrt/",
+        "source": "content/health/continuous-combined-hrt.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "continuous-combined-hrt",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -1188,6 +1570,23 @@
         "status": "published"
       },
       {
+        "title": "D.R. Horton Returned $4.1 Billion as Home Demand Softened. Can It Continue?",
+        "url": "/wealth/dr-horton-cash-returns-land-control/",
+        "source": "content/wealth/dr-horton-cash-returns-land-control.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "dr-horton-cash-returns-land-control",
+        "date": "2026-11-20",
+        "reviewed": "2026-11-20",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "dhi"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?",
         "url": "/wealth/databricks-always-on-genie-enterprise-agent-economics/",
         "source": "content/wealth/databricks-always-on-genie-enterprise-agent-economics.md",
@@ -1227,6 +1626,40 @@
           "enterprise-software",
           "cloud",
           "investment"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Diazepam in Ireland | GABA signalling, sedation and persistence",
+        "url": "/health/medicines/diazepam/",
+        "source": "content/health/diazepam.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "diazepam",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Did Claude Solve the Riemann Hypothesis? What the Proof Claim Says",
+        "url": "/news/claude-riemann-hypothesis-proof/",
+        "source": "content/wealth/claude-riemann-hypothesis-proof.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "claude-riemann-hypothesis-proof",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "technology",
+          "artificial-intelligence",
+          "anthropic",
+          "company-anthropic",
+          "mathematics"
         ],
         "status": "published"
       },
@@ -1382,6 +1815,21 @@
         "status": "published"
       },
       {
+        "title": "Duloxetine in Ireland | Serotonin, noradrenaline and pain-modulating pathways",
+        "url": "/health/medicines/duloxetine/",
+        "source": "content/health/duloxetine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "duloxetine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "East- and West-Facing Solar Panels in Ireland: Are They Worth It?",
         "url": "/wealth/east-west-facing-solar-panels-ireland/",
         "source": "content/wealth/east-west-facing-solar-panels-ireland.md",
@@ -1508,6 +1956,57 @@
         "status": "published"
       },
       {
+        "title": "Employment Permits Portal Still Offline: What Applicants Can Do Now",
+        "url": "/news/ireland-employment-permits-portal-outage-2026/",
+        "source": "content/wealth/ireland-employment-permits-portal-outage-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-employment-permits-portal-outage-2026",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "employment",
+          "work-permits",
+          "jobs",
+          "immigration",
+          "public-services",
+          "consumer-guidance"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Escitalopram in Ireland | The serotonin transporter and the delay in symptom change",
+        "url": "/health/medicines/escitalopram/",
+        "source": "content/health/escitalopram.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "escitalopram",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Esomeprazole in Ireland | The stomach proton pump and time to acid suppression",
+        "url": "/health/medicines/esomeprazole/",
+        "source": "content/health/esomeprazole.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "esomeprazole",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?",
         "url": "/news/eu-rwanda-deportation-centre-cost-2026/",
         "source": "content/wealth/eu-rwanda-deportation-centre-cost-2026.md",
@@ -1601,6 +2100,36 @@
         "status": "published"
       },
       {
+        "title": "Ferrous fumarate in Ireland | Iron absorption, haemoglobin and the difference between two blood tests",
+        "url": "/health/medicines/ferrous-fumarate/",
+        "source": "content/health/ferrous-fumarate.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "ferrous-fumarate",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Finding your patient information leaflet in Ireland | Read the exact Irish leaflet and locate the pharmacology",
+        "url": "/health/medicines/how-to-find-your-patient-information-leaflet-online/",
+        "source": "content/health/how-to-find-your-patient-information-leaflet-online.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "how-to-find-your-patient-information-leaflet-online",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme",
         "url": "/wealth/first-time-buyer-supports-ireland/",
         "source": "content/wealth/first-time-buyer-supports-ireland.md",
@@ -1639,6 +2168,21 @@
         "status": "published"
       },
       {
+        "title": "Folic acid in Ireland | Folate metabolism, new cells and two distinct uses",
+        "url": "/health/medicines/folic-acid/",
+        "source": "content/health/folic-acid.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "folic-acid",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger",
         "url": "/news/fuel-protests-budget-2027-ireland/",
         "source": "content/wealth/fuel-protests-budget-2027-ireland.md",
@@ -1657,6 +2201,21 @@
           "cost-of-living",
           "motoring",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Furosemide in Ireland | Salt transport in the kidney and monitoring fluid balance",
+        "url": "/health/medicines/furosemide/",
+        "source": "content/health/furosemide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "furosemide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -1788,6 +2347,29 @@
           "saxenda",
           "medicine-safety",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Google Chose Blue Origin for Space-Based AI Computing. Who Captures the Economics?",
+        "url": "/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/",
+        "source": "content/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "blue-origin-google-suncatcher-new-glenn-launch-economics",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-blue-origin",
+          "blue-origin",
+          "google",
+          "new-glenn",
+          "launch-services",
+          "ai-compute",
+          "space"
         ],
         "status": "published"
       },
@@ -1970,6 +2552,21 @@
         "status": "published"
       },
       {
+        "title": "Hormone replacement therapy (HRT) in Ireland | Systemic and local hormone effects during menopause",
+        "url": "/health/medicines/hrt/",
+        "source": "content/health/hrt.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "hrt",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "House Extension Planning Permission Ireland: The 45 m² Rule Explained",
         "url": "/wealth/house-extension-planning-permission-ireland/",
         "source": "content/wealth/house-extension-planning-permission-ireland.md",
@@ -2022,6 +2619,38 @@
           "ultrasound",
           "gestational-age",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "How does Mounjaro work? Tirzepatide and the science of GIP and GLP-1",
+        "url": "/health/medicines/tirzepatide/",
+        "source": "content/health/tirzepatide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "tirzepatide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "tirzepatide"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "How does semaglutide work? Ozempic, Wegovy and Rybelsus explained",
+        "url": "/health/medicines/semaglutide/",
+        "source": "content/health/semaglutide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "semaglutide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "semaglutide"
         ],
         "status": "published"
       },
@@ -2566,6 +3195,23 @@
         "status": "published"
       },
       {
+        "title": "IES’ Data-Centre Backlog Doubled. Can It Fund a $691 Million Acquisition and Bigger Buyback?",
+        "url": "/wealth/ies-data-center-growth-acquisition-cash/",
+        "source": "content/wealth/ies-data-center-growth-acquisition-cash.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ies-data-center-growth-acquisition-cash",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "iesc"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Income Protection Insurance in Ireland: The Complete 2026 Guide",
         "url": "/wealth/income-protection-insurance-ireland/",
         "source": "content/wealth/income-protection-insurance-ireland.md",
@@ -2875,6 +3521,49 @@
         "status": "published"
       },
       {
+        "title": "Irish Employment Hits a Record, but 130,200 Part-Time Workers Want More Hours",
+        "url": "/news/ireland-employment-q3-2026-underemployment/",
+        "source": "content/wealth/ireland-employment-q3-2026-underemployment.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-employment-q3-2026-underemployment",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "employment",
+          "jobs",
+          "wages",
+          "underemployment",
+          "unemployment",
+          "labour-market",
+          "cso"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Irish EV Buyers Put Running Costs First — and Home Charging Matters More",
+        "url": "/news/irish-ev-running-costs-home-charging-2026/",
+        "source": "content/wealth/irish-ev-running-costs-home-charging-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-ev-running-costs-home-charging-2026",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "electric-vehicles",
+          "motoring",
+          "household-costs",
+          "energy",
+          "commuting",
+          "cso"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?",
         "url": "/news/irish-house-prices-overvalued-17-percent-2026/",
         "source": "content/wealth/irish-house-prices-overvalued-17-percent-2026.md",
@@ -2892,6 +3581,28 @@
           "first-time-buyers",
           "property",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Irish House Prices Rose 4.7%: What the New €400,000 Median Means",
+        "url": "/news/irish-house-prices-september-2026/",
+        "source": "content/wealth/irish-house-prices-september-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-house-prices-september-2026",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "housing",
+          "house-prices",
+          "property",
+          "mortgages",
+          "first-time-buyers",
+          "affordability",
+          "cso"
         ],
         "status": "published"
       },
@@ -3071,6 +3782,66 @@
         "status": "published"
       },
       {
+        "title": "Lansoprazole in Ireland | Acid pump blockade and why formulations matter",
+        "url": "/health/medicines/lansoprazole/",
+        "source": "content/health/lansoprazole.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "lansoprazole",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Laxatives in Ireland | Water, fibre, bowel movement and differences between types",
+        "url": "/health/medicines/laxatives/",
+        "source": "content/health/laxatives.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "laxatives",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Lercanidipine in Ireland | Calcium channel blockade and exposure-sensitive interactions",
+        "url": "/health/medicines/lercanidipine/",
+        "source": "content/health/lercanidipine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "lercanidipine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Levothyroxine in Ireland | Thyroid feedback, absorption and how to interpret TSH",
+        "url": "/health/medicines/levothyroxine/",
+        "source": "content/health/levothyroxine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "levothyroxine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Life for a 100-Year Life: Connection, Purpose and Ordinary Days",
         "url": "/life/happiness-for-a-100-year-life/",
         "source": "content/happiness/happiness-for-a-100-year-life.md",
@@ -3143,6 +3914,37 @@
           "stock-lly",
           "lly",
           "editorial"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Liraglutide (Saxenda): what it is and how it works",
+        "url": "/health/medicines/liraglutide/",
+        "source": "content/health/liraglutide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "liraglutide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "liraglutide"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Lithium in Ireland | Brain signalling and a narrow therapeutic range",
+        "url": "/health/medicines/lithium/",
+        "source": "content/health/lithium.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "lithium",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -3235,6 +4037,21 @@
           "attractiveness",
           "social-media",
           "health"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Low-dose aspirin in Ireland | Platelets, thromboxane and prevention decisions",
+        "url": "/health/medicines/low-dose-aspirin/",
+        "source": "content/health/low-dose-aspirin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "low-dose-aspirin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -3441,6 +4258,22 @@
         "status": "published"
       },
       {
+        "title": "Metformin in Ireland: how it works, slow-release tablets and side effects",
+        "url": "/health/medicines/metformin/",
+        "source": "content/health/metformin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "metformin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "diabetes",
+          "metformin"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Michael Carrick Sacked? Manchester United Exit Reports and the Financial Risk for $MANU",
         "url": "/news/michael-carrick-sacked-manchester-united-manu-stock/",
         "source": "content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md",
@@ -3562,6 +4395,21 @@
         "status": "published"
       },
       {
+        "title": "Mirtazapine in Ireland | Receptor signalling, wakefulness and appetite",
+        "url": "/health/medicines/mirtazapine/",
+        "source": "content/health/mirtazapine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "mirtazapine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins",
         "url": "/wealth/molina-healthcare-earnings-medicaid-margins/",
         "source": "content/wealth/molina-healthcare-earnings-medicaid-margins.md",
@@ -3593,6 +4441,24 @@
           "stocks",
           "company-research",
           "mnst"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Moog Set Records, but Its Financial Controls Failed. How Much Should Investors Discount?",
+        "url": "/wealth/moog-record-results-control-weakness/",
+        "source": "content/wealth/moog-record-results-control-weakness.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "moog-record-results-control-weakness",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mog.a",
+          "mog.b"
         ],
         "status": "published"
       },
@@ -3865,6 +4731,21 @@
         "status": "published"
       },
       {
+        "title": "NSAIDs in Ireland | Cyclo-oxygenase, inflammation and where risk comes from",
+        "url": "/health/medicines/nsaids/",
+        "source": "content/health/nsaids.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "nsaids",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Nvidia Creates National Security Committee: What It Means for NVDA Stock",
         "url": "/news/nvidia-national-security-export-control-committee-2026/",
         "source": "content/wealth/nvidia-national-security-export-control-committee-2026.md",
@@ -3981,6 +4862,44 @@
           "stock-nvda",
           "nvda",
           "editorial"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Oestrogen tablets, patches, gel and spray in Ireland | Route of delivery and how systemic oestrogen reaches the body",
+        "url": "/health/medicines/oestrogen-tablets-patches-gel-spray/",
+        "source": "content/health/oestrogen-tablets-patches-gel-spray.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "oestrogen-tablets-patches-gel-spray",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "One in Four Irish Pupils Used Back-to-School Support: What Families Can Check",
+        "url": "/news/irish-school-family-supports-cso-2026/",
+        "source": "content/wealth/irish-school-family-supports-cso-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-school-family-supports-cso-2026",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "families",
+          "schools",
+          "education",
+          "social-welfare",
+          "back-to-school",
+          "working-family-payment",
+          "household-costs",
+          "cso"
         ],
         "status": "published"
       },
@@ -4111,6 +5030,28 @@
         "status": "published"
       },
       {
+        "title": "OpenAI's Accounting Plugin: Can AI Reconcile the Books Without Creating New Errors?",
+        "url": "/wealth/openai-accounting-plugin-bookkeeping-controls-economics/",
+        "source": "content/wealth/openai-accounting-plugin-bookkeeping-controls-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-accounting-plugin-bookkeeping-controls-economics",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "accounting",
+          "bookkeeping",
+          "enterprise-ai",
+          "small-business"
+        ],
+        "status": "published"
+      },
+      {
         "title": "OpenAI's Astra for Law Leads a Legal AI Benchmark. Why Does It Still Miss Four in Five Tasks?",
         "url": "/wealth/openai-astra-law-legal-benchmark-reliability-economics/",
         "source": "content/wealth/openai-astra-law-legal-benchmark-reliability-economics.md",
@@ -4197,6 +5138,23 @@
         "status": "published"
       },
       {
+        "title": "Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus",
+        "url": "/health/oral-glp-1-medicines-ireland/",
+        "source": "content/health/oral-glp-1-medicines-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "oral-glp-1-medicines-ireland",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "semaglutide",
+          "orforglipron"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Ozempic, Wegovy & Mounjaro: medical card cover in Ireland",
         "url": "/health/glp1-hse-medical-card-ireland/",
         "source": "content/health/glp1-hse-medical-card-ireland.md",
@@ -4258,6 +5216,68 @@
           "valuation",
           "investing",
           "american-industry"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Palo Alto Networks Grew 39%, but Gross Margin Fell 6.2 Points. What Changed?",
+        "url": "/wealth/palo-alto-growth-margin-acquisitions/",
+        "source": "content/wealth/palo-alto-growth-margin-acquisitions.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "palo-alto-growth-margin-acquisitions",
+        "date": "2026-11-20",
+        "reviewed": "2026-11-20",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "panw"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Pantoprazole in Ireland | Proton pump inhibition and indication-specific review",
+        "url": "/health/medicines/pantoprazole/",
+        "source": "content/health/pantoprazole.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "pantoprazole",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Paracetamol for children in Ireland | Fever signalling, liquid strengths and safe measurement",
+        "url": "/health/medicines/paracetamol-for-children/",
+        "source": "content/health/paracetamol-for-children.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "paracetamol-for-children",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Paxlovid in Ireland | Blocking a viral protease and slowing drug breakdown",
+        "url": "/health/medicines/paxlovid/",
+        "source": "content/health/paxlovid.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "paxlovid",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -4416,6 +5436,21 @@
         "status": "published"
       },
       {
+        "title": "Perindopril in Ireland | The ACE pathway and blood test follow-up",
+        "url": "/health/medicines/perindopril/",
+        "source": "content/health/perindopril.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "perindopril",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Personal Investment Account Ireland (PIA): Complete 2027 Guide",
         "url": "/wealth/personal-investment-account-ireland/",
         "source": "content/wealth/personal-investment-account-ireland.md",
@@ -4454,6 +5489,27 @@
           "growth-investing",
           "investment-tax",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "PIAs for Couples in Ireland: Joint Accounts, €24,000 Limits and Tax Examples",
+        "url": "/wealth/pia-for-couples-ireland/",
+        "source": "content/wealth/pia-for-couples-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "pia-for-couples-ireland",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "pia-ireland",
+          "personal-investment-account",
+          "couples",
+          "marriage",
+          "investing",
+          "ireland",
+          "investment-tax",
+          "family-finances"
         ],
         "status": "published"
       },
@@ -4551,6 +5607,36 @@
           "retention",
           "planning-appeals",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Prednisolone in Ireland | Glucocorticoid receptors and why treatment length matters",
+        "url": "/health/medicines/prednisolone/",
+        "source": "content/health/prednisolone.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "prednisolone",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Pregabalin in Ireland | Calcium channel subunits and nerve signalling",
+        "url": "/health/medicines/pregabalin/",
+        "source": "content/health/pregabalin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "pregabalin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -4737,6 +5823,21 @@
         "status": "published"
       },
       {
+        "title": "Ramipril in Ireland | ACE, bradykinin and follow-up blood tests",
+        "url": "/health/medicines/ramipril/",
+        "source": "content/health/ramipril.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "ramipril",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Reddit’s Revenue Is Outrunning User Growth. Can It Last?",
         "url": "/wealth/reddit-revenue-user-growth/",
         "source": "content/wealth/reddit-revenue-user-growth.md",
@@ -4869,14 +5970,14 @@
         "status": "published"
       },
       {
-        "title": "Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?",
+        "title": "Retatrutide in Ireland: approval, Phase 3 results and side effects",
         "url": "/health/retatrutide-ireland/",
         "source": "content/health/retatrutide-ireland.md",
         "kind": "Editorial article / guide",
         "category": "Health",
         "slug": "retatrutide-ireland",
         "date": "2026-09-24",
-        "reviewed": "2026-09-24",
+        "reviewed": "",
         "tags": [
           "retatrutide",
           "glp-1",
@@ -5054,6 +6155,23 @@
         "status": "published"
       },
       {
+        "title": "Salbutamol inhalers in Ireland: how Ventolin works and when to get help",
+        "url": "/health/medicines/salbutamol/",
+        "source": "content/health/salbutamol.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "salbutamol",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "inhalers",
+          "salbutamol",
+          "asthma"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Sale Agreed in Ireland: Survey, Valuation and Property Checks",
         "url": "/wealth/sale-agreed-survey-valuation-ireland/",
         "source": "content/wealth/sale-agreed-survey-valuation-ireland.md",
@@ -5142,6 +6260,36 @@
           "prsi",
           "form-11",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Sequential combined HRT in Ireland | Cyclical progestogen and what bleeding can mean",
+        "url": "/health/medicines/sequential-combined-hormone-replacement-therapy/",
+        "source": "content/health/sequential-combined-hormone-replacement-therapy.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "sequential-combined-hormone-replacement-therapy",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Sertraline in Ireland | Serotonin reuptake and assessing change over time",
+        "url": "/health/medicines/sertraline/",
+        "source": "content/health/sertraline.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "sertraline",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -5432,6 +6580,96 @@
         "status": "published"
       },
       {
+        "title": "Statins in Ireland | The liver cholesterol pathway and reading risk reduction",
+        "url": "/health/medicines/statins/",
+        "source": "content/health/statins.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "statins",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Steroid inhalers in Ireland | Airway inflammation, deposition and controller use",
+        "url": "/health/medicines/steroid-inhalers/",
+        "source": "content/health/steroid-inhalers.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "steroid-inhalers",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Steroid injections in Ireland | Local anti-inflammatory action and short-term assessment",
+        "url": "/health/medicines/steroid-injections/",
+        "source": "content/health/steroid-injections.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "steroid-injections",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Steroid nasal sprays in Ireland | Inflammation at the nasal lining and technique",
+        "url": "/health/medicines/steroid-nasal-sprays/",
+        "source": "content/health/steroid-nasal-sprays.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "steroid-nasal-sprays",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Steroid tablets in Ireland | Whole-body exposure and the adrenal response",
+        "url": "/health/medicines/steroid-tablets/",
+        "source": "content/health/steroid-tablets.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "steroid-tablets",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Steroids (corticosteroids) in Ireland | Anti-inflammatory receptors and why the route changes exposure",
+        "url": "/health/medicines/steroids/",
+        "source": "content/health/steroids.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "steroids",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Stress symptoms: how to recognise stress and what actually helps",
         "url": "/life/stress-symptoms-what-helps-ireland/",
         "source": "content/happiness/stress-symptoms-what-helps-ireland.md",
@@ -5586,6 +6824,28 @@
         "status": "published"
       },
       {
+        "title": "Tesla’s $3.1 Billion Texas Polysilicon Plan: Can Solar Manufacturing Pay Off?",
+        "url": "/news/tesla-texas-polysilicon-plant-2026/",
+        "source": "content/wealth/tesla-texas-polysilicon-plant-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "tesla-texas-polysilicon-plant-2026",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "tesla",
+          "tsla",
+          "solar",
+          "manufacturing",
+          "investing",
+          "energy",
+          "united-states",
+          "company-research"
+        ],
+        "status": "published"
+      },
+      {
         "title": "The Fed has raised US interest rates: what could it mean for Ireland?",
         "url": "/news/fed-rate-hike-ireland-september-2026/",
         "source": "content/wealth/fed-rate-hike-ireland-september-2026.md",
@@ -5680,6 +6940,36 @@
         "status": "published"
       },
       {
+        "title": "Tibolone in Ireland | Active metabolites and tissue-specific effects",
+        "url": "/health/medicines/tibolone/",
+        "source": "content/health/tibolone.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "tibolone",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Topical corticosteroids in Ireland | Skin barrier, steroid strength and site of application",
+        "url": "/health/medicines/topical-corticosteroids/",
+        "source": "content/health/topical-corticosteroids.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "topical-corticosteroids",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?",
         "url": "/news/one-income-vs-two-incomes-ireland-2027/",
         "source": "content/wealth/one-income-vs-two-incomes-ireland-2027.md",
@@ -5754,6 +7044,51 @@
         "status": "published"
       },
       {
+        "title": "Utrogestan in Ireland | Micronised progesterone and protection of the womb lining",
+        "url": "/health/medicines/utrogestan/",
+        "source": "content/health/utrogestan.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "utrogestan",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Vaginal oestrogen in Ireland | Local tissue changes in the vagina and urinary tract",
+        "url": "/health/medicines/vaginal-oestrogen/",
+        "source": "content/health/vaginal-oestrogen.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "vaginal-oestrogen",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Venlafaxine in Ireland | Serotonin and noradrenaline transporters and formulation differences",
+        "url": "/health/medicines/venlafaxine/",
+        "source": "content/health/venlafaxine.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "venlafaxine",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Visa Earnings: Strong Payment Growth, but Watch the Incentives",
         "url": "/wealth/visa-payments-growth-incentives/",
         "source": "content/wealth/visa-payments-growth-incentives.md",
@@ -5786,6 +7121,38 @@
           "hse-advice",
           "bone-health",
           "older-adults"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Walmart Spent $22.6 Billion on Capex. Is Its New Profit Mix Paying for It?",
+        "url": "/wealth/walmart-profit-mix-capex-cash/",
+        "source": "content/wealth/walmart-profit-mix-capex-cash.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "walmart-profit-mix-capex-cash",
+        "date": "2026-11-20",
+        "reviewed": "2026-11-20",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "wmt"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Warfarin in Ireland | Vitamin K recycling, clotting factors and reading an INR",
+        "url": "/health/medicines/warfarin/",
+        "source": "content/health/warfarin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "warfarin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -5962,6 +7329,70 @@
         "status": "published"
       },
       {
+        "title": "What is ibuprofen? Uses, adult doses and safety in Ireland",
+        "url": "/health/medicines/ibuprofen/",
+        "source": "content/health/ibuprofen.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "ibuprofen",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "pain-relief",
+          "ibuprofen"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "What is omeprazole? Uses, side effects and how long it takes to work",
+        "url": "/health/medicines/omeprazole/",
+        "source": "content/health/omeprazole.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "omeprazole",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "digestive-health",
+          "omeprazole"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "What is orforglipron? How the Foundayo GLP-1 tablet works",
+        "url": "/health/medicines/orforglipron/",
+        "source": "content/health/orforglipron.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "orforglipron",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "orforglipron"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "What is paracetamol? Uses, adult doses and safety in Ireland",
+        "url": "/health/medicines/paracetamol/",
+        "source": "content/health/paracetamol.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "paracetamol",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "pain-relief",
+          "paracetamol"
+        ],
+        "status": "published"
+      },
+      {
         "title": "What lethal injection drugs actually do to the body: the science of pentobarbital",
         "url": "/news/lethal-injection-drugs-pentobarbital-science/",
         "source": "content/health/lethal-injection-drugs-pentobarbital-science.md",
@@ -6110,6 +7541,28 @@
         "status": "published"
       },
       {
+        "title": "Why SpaceX’s Lenders Reportedly Want Its AI Chips to Stay on Earth",
+        "url": "/news/spacex-gpu-financing-orbit-collateral/",
+        "source": "content/wealth/spacex-gpu-financing-orbit-collateral.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "spacex-gpu-financing-orbit-collateral",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "finance",
+          "spacex",
+          "spcx",
+          "nvidia",
+          "nvda",
+          "investing",
+          "ai-infrastructure",
+          "private-credit"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Why you feel more tired in autumn: what darker days do to sleep and mood",
         "url": "/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/",
         "source": "content/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland.md",
@@ -6145,6 +7598,28 @@
           "rest",
           "work-life",
           "everyday-happiness"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Will Irish Banks Accept a PIA for a Mortgage Deposit? Investing vs Trading Explained",
+        "url": "/wealth/pia-mortgage-deposit-ireland/",
+        "source": "content/wealth/pia-mortgage-deposit-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "pia-mortgage-deposit-ireland",
+        "date": "2026-11-21",
+        "reviewed": "",
+        "tags": [
+          "pia-ireland",
+          "personal-investment-account",
+          "mortgage",
+          "first-time-buyer",
+          "house-deposit",
+          "investing",
+          "trading",
+          "etfs",
+          "ireland"
         ],
         "status": "published"
       },
@@ -6264,6 +7739,36 @@
           "stocks",
           "company-research",
           "zbra"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function",
+        "url": "/health/medicines/zolpidem/",
+        "source": "content/health/zolpidem.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "zolpidem",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans",
+        "url": "/health/medicines/zopiclone/",
+        "source": "content/health/zopiclone.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "zopiclone",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "medicines-a-z"
         ],
         "status": "published"
       },
@@ -7570,6 +9075,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Caring for a Parent in Ireland: What Help Can You Get?",
+        "url": "/claim-caring-for-a-parent/",
+        "source": "content/pages/claim-caring-for-a-parent.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Contact",
         "url": "/contact/",
         "source": "content/pages/contact.md",
@@ -7654,6 +9165,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "PAYE Tax Refund Checklist for Ireland",
+        "url": "/claim-paye-refund/",
+        "source": "content/pages/claim-paye-refund.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "PIA vs ETF vs Shares Calculator Ireland: After-Tax Comparison",
         "url": "/pia-vs-ordinary-investing/",
         "source": "content/pages/pia-vs-ordinary-investing.md",
@@ -7729,6 +9246,18 @@
         "title": "Solar Quote Comparison Calculator Ireland",
         "url": "/solar-compare-quotes/",
         "source": "content/pages/solar-compare-quotes.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "What Can I Claim? Irish Supports & Tax Reliefs",
+        "url": "/what-can-i-claim/",
+        "source": "content/pages/what-can-i-claim.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "What Can You Claim After Having a Baby in Ireland?",
+        "url": "/claim-having-a-baby/",
+        "source": "content/pages/claim-having-a-baby.md",
         "kind": "Information / policy page"
       }
     ],
@@ -8072,6 +9601,14 @@
         "kind": "Public-company profile",
         "ticker": "ADI",
         "origin": "S&P reference list"
+      },
+      {
+        "title": "Anthropic (ANT) Stock Research",
+        "url": "/stocks/ant/",
+        "source": "content/company-watchlist.json",
+        "kind": "Public-company profile",
+        "ticker": "ANT",
+        "origin": "Additional listed company"
       },
       {
         "title": "Aon plc (AON) Stock",
@@ -11894,12 +13431,6 @@
       {
         "title": "Anduril Industries Private Company Research",
         "url": "/companies/anduril/",
-        "source": "content/company-watchlist.json",
-        "kind": "Private-company profile"
-      },
-      {
-        "title": "Anthropic Private Company Research",
-        "url": "/companies/anthropic/",
         "source": "content/company-watchlist.json",
         "kind": "Private-company profile"
       },

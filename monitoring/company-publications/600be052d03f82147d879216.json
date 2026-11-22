@@ -1,0 +1,75 @@
+{
+  "story_fingerprint": "600be052d03f82147d879216",
+  "company": "BJ",
+  "date": "2026-11-21",
+  "status": "published",
+  "publication_state": "live_verified",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "BJ's traffic, membership and digital growth must be assessed against gasoline-inflated comparable sales, promotion-driven merchandise-margin pressure, a one-time litigation benefit and approximately $800 million of annual capital spending.",
+  "article_path": "content/wealth/bj-membership-margin-capex.md",
+  "canonical_url": "https://compound.ie/wealth/bj-membership-margin-capex/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1531152/000153115226000083/bj-2026103126x8kex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1531152/000153115226000083/bj-20261120.htm",
+    "https://www.sec.gov/Archives/edgar/data/1531152/000110465926105906/tm2624998d1_8k.htm"
+  ],
+  "identity": {
+    "issuer": "BJ's Wholesale Club Holdings, Inc.",
+    "CIK": 1531152,
+    "release_accession": "0001531152-26-000083",
+    "settlement_accession": "0001104659-26-105906",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3 and first 39 weeks",
+    "period_end": "2026-10-31",
+    "filing_date": "2026-11-20",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, the prior 14 days of posts, public company-publication records and recent open/merged PRs. No BJ analysis or active publication attempt answers the membership, merchandise-margin and expansion-cash question. BJ has no maintained /stocks/bj/ profile, so none was invented.",
+  "claim_checks": [
+    {"claim": "Q3 net sales $6.145bn, +17.7%, and total revenue $6.283bn", "source_indexes": [0, 1], "location_or_arithmetic": "SEC-furnished results statement, amounts in thousands", "result": "verified in separate claim pass"},
+    {"claim": "Comparable club sales +13.5%; excluding gasoline +4.1%; digitally enabled comparable sales +38%", "source_indexes": [0], "location_or_arithmetic": "Results highlights and additional highlights; all are company-defined operating measures", "result": "verified in separate claim pass"},
+    {"claim": "Membership fee income $138.355m, +9.5%, and approximately 2.2% of total revenue", "source_indexes": [0], "location_or_arithmetic": "138.355 / 6,283.491 = 2.202%", "result": "verified in separate claim pass"},
+    {"claim": "Merchandise gross-margin rate fell about 170bp, primarily due to promotional activity", "source_indexes": [0], "location_or_arithmetic": "Company explanation; article distinguishes it from Compound interpretation", "result": "verified in separate claim pass"},
+    {"claim": "Q3 SG&A included a $240m interchange-settlement benefit and about $95m of related use-of-proceeds expense", "source_indexes": [0, 2], "location_or_arithmetic": "Current release and 4 September settlement 8-K; not treated as recurring", "result": "verified in separate claim pass"},
+    {"claim": "39-week operating cash flow $933.184m and additions to property/equipment $591.502m", "source_indexes": [0], "location_or_arithmetic": "Cash-flow statement and adjusted-free-cash-flow reconciliation; 591.502 / 933.184 = 63.4%", "result": "verified in separate claim pass"},
+    {"claim": "Fiscal-year capex outlook approximately $800m", "source_indexes": [0], "location_or_arithmetic": "Management outlook; presented as guidance, not Compound forecast", "result": "verified in separate claim pass"},
+    {"claim": "Treasury-stock acquisitions $385.502m and diluted shares down about 3.3% YTD/3.9% Q3", "source_indexes": [0], "location_or_arithmetic": "Cash-flow and weighted-share tables; 127.981/132.396-1=-3.33%; 126.822/131.922-1=-3.87%", "result": "verified in separate claim pass"}
+  ],
+  "fact_check_notes": [
+    "Gasoline-inclusive and ex-gas comparable sales are kept separate.",
+    "GAAP profit is not described as core because the release identifies settlement and property-transaction effects.",
+    "Adjusted free cash flow is labelled company-defined and its sale-leaseback/purchase-option bridge is described. No price, consensus estimate or unsupported forecast is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:BJ%27s_Wholesale_Club_(Waterford,_Connecticut)_(50339451876).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/c/c1/BJ%27s_Wholesale_Club_%28Waterford%2C_Connecticut%29_%2850339451876%29.jpg",
+    "photographer": "JJBers",
+    "license": "CC BY 2.0",
+    "capture_date": "2020-09-13",
+    "description": "BJ's Wholesale Club in Waterford, Connecticut; archival photograph cropped and resized with attribution",
+    "unique_asset": true,
+    "published_image_sha256": "dd4ba813a1e56aa0e661655c5177cfbfb366115b618faefb011bca57c02853b2"
+  },
+  "gates": {"offline_tests": "passed: 51 focused offline tests covering image processing, finance discovery, earnings review/SEO and advertising policy", "build": "passed: production-canonical build generated 407 articles, 894 tags, 35 pages and 62 tools", "render": "passed: canonical/indexable HTML, source links, credits, internal links, sitemap and finance catalogue entry verified; actual 1200x675 social image visually inspected", "ads": "passed: standard ca-pub-6115783809711785 loader rendered; article_top/article_bottom slot IDs are blank in the existing site configuration, so no fixed slot was invented and Auto Ads remains enabled through the standard loader and consent controls", "ci": "passed on exact PR head e5e77cd8370dbea8b06943dac1a43882a69e5949 in workflow run 44889403022", "deployment": "passed: build, deploy, verify-live and verify-finance-discovery succeeded for merge commit 4b063850cb53fff15193c8135d665f93e144508d in site workflow run 44890363664", "live_verification": "passed: HTTP 200 canonical and cover/social assets; expected title, thesis figures, primary-source links and licensed-image credit; indexable robots metadata; standard ad loader; sitemap and finance catalogue inclusion; Open Graph/Twitter image 1200x675"},
+  "article_sha256": "f8e6fece8ebc5417aa6c756757ff31eaea9aba39cf7e4d90dfd3319d498a8a2e",
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/229",
+    "validated_head_sha": "e5e77cd8370dbea8b06943dac1a43882a69e5949",
+    "merge_commit_sha": "4b063850cb53fff15193c8135d665f93e144508d",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/44889403022",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44890363664",
+    "live_verified_at": "2026-11-21T09:48:41Z",
+    "live_url": "https://compound.ie/wealth/bj-membership-margin-capex/",
+    "live_cover_url": "https://compound.ie/static/images/evergreen/bj-membership-margin-capex.jpg",
+    "live_cover_sha256": "291d54564b551072ceeb8959d1323e13feae40a31f0afdd630c553906d7422b2",
+    "live_cover_dimensions": [5152, 3864],
+    "live_social_image_url": "https://compound.ie/static/discover/bj-membership-margin-capex-16x9.webp",
+    "live_social_image_sha256": "14b1bb6e82f532fc9f80af7252624bca405d110eaa2ee8fef3cd13dea705309b",
+    "live_social_image_dimensions": [1200, 675],
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  },
+  "new_articles_published": 1
+}

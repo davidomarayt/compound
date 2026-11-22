@@ -100,7 +100,7 @@ Anthropic's new release supports a plausible business thesis: AI customers will 
 
 The more useful future measures are repeat production usage, customer-reported success rates, capacity efficiency, enterprise retention and any verified disclosure of model-serving economics. The headline release supplies product specifications and company evaluations, not a complete financial statement.
 
-For context, see the [Anthropic private-company hub](/companies/anthropic/) and [our separate analysis of headline accounting losses and prospective IPO valuation](/wealth/anthropic-loss-ipo-valuation/). That older article concerns capital structure; this one concerns the unit economics of the product itself. Readers can also compare [OpenAI's merchant-platform opportunity](/companies/openai/) without assuming the two businesses disclose equivalent financial data.
+For context, see the [Anthropic stock research profile](/stocks/ant/) and [our separate analysis of headline accounting losses and prospective IPO valuation](/wealth/anthropic-loss-ipo-valuation/). That older article concerns capital structure; this one concerns the unit economics of the product itself. Readers can also compare [OpenAI's merchant-platform opportunity](/companies/openai/) without assuming the two businesses disclose equivalent financial data.
 
 *Research checked 12 November 2026. Prices, performance claims and availability are attributed to Anthropic's 9 November announcement. Calculations are transparent illustrative arithmetic, not a price quote for a custom enterprise contract or a recommendation to invest.*
 

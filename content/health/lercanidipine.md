@@ -1,0 +1,78 @@
+---
+title: Lercanidipine in Ireland | Calcium channel blockade and exposure-sensitive interactions
+slug: lercanidipine
+pillar: health
+canonical_path: /health/medicines/lercanidipine/
+date: '2026-11-19'
+summary: Calcium channel blockade and exposure-sensitive interactions.
+meta_description: Lercanidipine explained for Irish readers. Calcium channel blockade and exposure-sensitive interactions.
+  See what to ask about safety and where to find the official leaflet.
+tags:
+- medicines
+- medicines-a-z
+draft: false
+sources:
+- title: HSE | Lercanidipine
+  url: https://www2.hse.ie/medicines/lercanidipine/
+- title: NHS SPS | Peripheral oedema and calcium channel blockers
+  url: https://sps.nhs.uk/articles/managing-peripheral-oedema-caused-by-calcium-channel-blockers/
+- title: HPRA | Find Irish-authorised medicines and their patient leaflets
+  url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Hypertension in adults
+  url: https://www.nice.org.uk/guidance/ng136/chapter/Recommendations
+image: /static/images/evergreen/az-lercanidipine.jpg
+image_alt: A pack of Kapidin lercanidipine
+image_credit: Tomino de WS · 2020 · CC BY-SA 4.0 · framed
+image_source: https://commons.wikimedia.org/wiki/File:Kapidin_20_mg_tbl.jpg
+require_pinned_hero: true
+research_checked: '2026-11-20'
+editorial_review_status: pending
+medicine_index_name: Lercanidipine
+medicine_search_aliases: []
+---
+
+## At a glance
+
+Lercanidipine is a dihydropyridine calcium channel blocker used for high blood pressure. It belongs to the same family as amlodipine, with its own food and interaction instructions. [HSE guide](https://www2.hse.ie/medicines/lercanidipine/)
+
+## The Science Behind the Drug
+
+### Calcium channel blockade and exposure-sensitive interactions
+
+L-type calcium channels provide calcium for contraction of arterial smooth muscle. Lercanidipine reduces calcium entry, so resistance vessels relax. It is metabolised by CYP3A4. Food and products that inhibit this enzyme can raise exposure, affecting the chances of dizziness, flushing or a marked fall in blood pressure. [NHS SPS source](https://sps.nhs.uk/articles/managing-peripheral-oedema-caused-by-calcium-channel-blockers/)
+
+## What the evidence measures
+
+Serial home blood pressure readings and a symptom record help separate treatment response from a single unusual reading. The same blood pressure change can feel different depending on posture, hydration and other medicines.
+
+## What to show a pharmacist
+
+| What to check | Why it matters |
+|---|---|
+| Medicine pack | name and strength |
+| Interaction list | new prescriptions and any grapefruit products |
+
+
+## Why do product instructions mention food?
+
+The circumstances in which the tablet is taken can change systemic exposure. Bring the pack to the pharmacist if your routine is difficult or another medicine has been prescribed.
+
+## When to ask for help or a medication review
+
+Use the pack-specific instructions and check for interactions before adding medicines. Contact the prescriber about persistent swelling, dizziness or faintness. [HSE patient guidance](https://www2.hse.ie/medicines/lercanidipine/)
+
+## Why food and drug interactions can make a difference
+
+Lercanidipine has to pass through the gut and liver before the full circulating exposure is established. It is handled by an enzyme called CYP3A4. Some medicines interfere with that system, and food can change the amount of drug that reaches the circulation. The product leaflet therefore matters when discussing meal timing or a new prescription. Tell your pharmacist about grapefruit products and check before following a timing routine copied from another blood pressure drug. [HSE lercanidipine guidance](https://www2.hse.ie/medicines/lercanidipine/)
+
+## Use consistent readings, and record symptoms separately
+
+Bring a series of home readings taken as instructed, rather than relying on the highest or lowest result. Note whether symptoms such as flushing, dizziness or ankle swelling began after a change in the dose, timing or another medicine. For dizziness, record whether it followed standing, exercise or a hot environment. Those details help a clinician assess the prescription alongside blood pressure readings. [Hypertension guideline](https://www.nice.org.uk/guidance/ng136/chapter/Recommendations)
+
+If moved between lercanidipine and [amlodipine](/health/medicines/amlodipine/), confirm the new instructions. Both target calcium channels, yet the products have their own metabolism, strengths and advice. A pharmacist can reconcile two boxes and tell you which one matches the current prescription. [HSE lercanidipine guidance](https://www2.hse.ie/medicines/lercanidipine/)
+
+## Related guides
+
+[Amlodipine](/health/medicines/amlodipine/) · [Ramipril](/health/medicines/ramipril/) · [Perindopril](/health/medicines/perindopril/) · [Beta blockers](/health/medicines/beta-blockers/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)
+
+*A pack of Kapidin lercanidipine. [Image licence](https://creativecommons.org/licenses/by-sa/4.0).*

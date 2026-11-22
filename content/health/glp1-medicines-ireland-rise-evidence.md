@@ -103,6 +103,10 @@ sources:
 
 ## More on GLP-1 medicines in Ireland
 
+See [oral GLP-1 medicines in Ireland](/health/oral-glp-1-medicines-ireland/) for a comparison of the tablets, or read [how orforglipron (Foundayo) works](/health/medicines/orforglipron/).
+
+Explore the individual medicine guides for [semaglutide](/health/medicines/semaglutide/), [tirzepatide](/health/medicines/tirzepatide/) and [liraglutide](/health/medicines/liraglutide/). Each explains how the drug works and which brands contain it.
+
 - [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — prescription access, eligibility and alternatives.
 - [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — current private prices and funding context.
 - [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — common adverse effects and urgent warning signs.

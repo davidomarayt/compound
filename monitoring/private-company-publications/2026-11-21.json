@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-21",
+  "target_new_articles_maximum": 3,
+  "new_article_count_prepared": 2,
+  "canonical_updates_prepared": 1,
+  "confirmed_live_new_articles": 2,
+  "confirmed_updated_canonicals": 1,
+  "status": "github_pages_deployed_all_three_canonicals_independently_verified_live",
+  "ads_policy": "Standard article/profile ads and existing consent/CMP remain enabled from publication, unrelated to human review; ad fill not guaranteed",
+  "prior_publication_recovery": {
+    "checked_dates": [
+      "2026-11-19",
+      "2026-11-20"
+    ],
+    "prior_ledgers_record_live_verification": true,
+    "recovery_needed": false,
+    "note": "2026-11-20 ledger records 20 November 07:48:22 UTC exact canonical cover social backlink and ad-loader checks (site run 44696053186); PR #198 later merged and live /stocks/ant/ checked 21 November; no duplicated recovery article created"
+  },
+  "duplication_checks": {
+    "index_snapshot": "2026-11-21 (402 editorial sources)",
+    "openai": "20 Nov Space Plus sharing launch differs from accounting plugin, legal AI, marketplace and older procurement stories",
+    "anthropic": "20 Nov underwriter full exercise and confirmed $26bn placement materially update existing 18 Nov /news/anthropic-ipo-pricing-nasdaq/; no near-duplicate IPO post",
+    "third_company": "19 Nov Canva AI Controls announcement independent of earlier Canva AI 2.0 launch, company profile and any existing listed editorial",
+    "concurrent_workflows": "Read current index, inventory and watchlist, recent commits and PR #198 merge, and 19/20 Nov publishing ledgers. Mag 8 assignment is not this story. No duplicate date ledger on base at run start"
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "action": "new_article",
+      "event_date": "2026-11-20",
+      "article_path": "content/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics.md",
+      "story_fingerprint": "2026-11-20-openai-chatgpt-space-plus-workspace-access-collaboration-retention",
+      "primary_source_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt"
+      ],
+      "claim_checks": [
+        "20 Nov release describes global gradual rollout to eligible Plus adults, not universal availability",
+        "Free users cannot view shared Space pages and public links not available under release conditions",
+        "Hypothetical four staff x 30m = 120m vs 4 x 10m =40m; 80m/week x €30/hr =€40/week, not OpenAI observed results",
+        "No undisclosed OpenAI revenue or Space-specific adoption invented"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:OpenAI_logo_with_magnifying_glass_(52916339167).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/OpenAI_logo_with_magnifying_glass_%2852916339167%29.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "Creative Commons Attribution 2.0",
+      "photo_provenance": "Jernej Furman, original real 22 May 2023 photo of OpenAI website under magnifying glass, CC BY 2.0; archival, not 2026 Space product",
+      "canonical_url": "https://compound.ie/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "status": "published_verified_live",
+      "verified_live_result": "PASS: independent GitHub Pages site/mobile-audit job 136774566741, run 44880039014 (deploy head a34a185311812911107a89ff41ccac3d4ea6a852), 2026-11-21T07:35:58Z; fetched exact public canonical HTML, pinned real JPEG cover, OG/Twitter WebP, company hub backlinks and article/profile AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "live_verified_at_utc": "2026-11-21T07:35:58Z"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "action": "substantive_canonical_update",
+      "event_date": "2026-11-19",
+      "article_path": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+      "story_fingerprint": "2026-11-20-anthropic-ipo-close-1127m-full-option-313253007-class-n-26000m-placement-issuer-primary-proceeds",
+      "primary_source_urls": [
+        "https://www.anthropic.com/news/ipo-close",
+        "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      ],
+      "claim_checks": [
+        "20 Nov issuer confirms 1,127,000,000 public shares at $83 = $93.541bn offering gross including 147m additional option shares",
+        "Anthropic-sold 1,103,351,354 shares at $83 gross $91.578bn; 23,648,646 seller shares not company capital",
+        "313,253,007 Class N shares at $83 approximately $26.0bn private placement separately confirmed closed",
+        "Existing article 18 Nov canonical preserved, new paragraphs and tags stock-ant and company-anthropic point to live /stocks/ant/; no duplicate IPO story"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+      "photo_focal_y": 0.45,
+      "image_license": "Creative Commons Attribution 2.0",
+      "photo_provenance": "Ajay Suresh, real Nasdaq MarketSite 19 September 2021; retained original licensed archival cover; no Dario Amodei image",
+      "canonical_url": "https://compound.ie/news/anthropic-ipo-pricing-nasdaq/",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "live_required_fingerprint": "1,127,000,000 shares",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "status": "updated_canonical_verified_live",
+      "update_event_date": "2026-11-20",
+      "event_date_explanation": "The established canonical's Nasdaq trading event occurred 19 Nov; the source-backed IPO closing and full option exercise covered by this update occurred 20 Nov. The update_event_date, not event_date, dates the new claims. Profile latest_development retains a separately sourced 19 Nov Nasdaq listing milestone and date.",
+      "verified_live_result": "PASS: independent GitHub Pages site/mobile-audit job 136774566741, run 44880039014 (deploy head a34a185311812911107a89ff41ccac3d4ea6a852), 2026-11-21T07:35:58Z; fetched exact public canonical HTML, pinned real JPEG cover, OG/Twitter WebP, company hub backlinks and article/profile AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "live_verified_at_utc": "2026-11-21T07:35:58Z"
+    },
+    {
+      "company": "Canva",
+      "slug": "canva",
+      "action": "new_article",
+      "event_date": "2026-11-19",
+      "article_path": "content/wealth/canva-ai-controls-opt-out-creator-economics.md",
+      "story_fingerprint": "2026-11-19-canva-ai-controls-toggle-content-filter-creator-marketing-retention-economics",
+      "primary_source_urls": [
+        "https://www.canva.com/newsroom/news/ai-controls-canva/",
+        "https://www.canva.com/newsroom/news/canva-create-2026-ai/"
+      ],
+      "claim_checks": [
+        "19 Nov Canva company statement confirms two controls Free and Pro at no extra charge",
+        "Generative AI toggle is separate from AI-generated-content discovery reduction; assistive Background Remover and Magic Grab remain usable",
+        "38bn AI-tool uses is Canva's cumulative claim, not paying customers nor annual revenues",
+        "Fictional 10,000 customers x (4%-3.5%) =50 retained; x €10 = €500 next-month gross only, not Canva pricing"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:2019_-_Creatiff_-_Day_1_EN1_3386_(49018365987).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/2019_-_Creatiff_-_Day_1_EN1_3386_%2849018365987%29.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "Creative Commons Attribution 2.0",
+      "photo_provenance": "Eóin Noonan/Web Summit via Sportsfile, real 5 Nov 2019 photo of Canva cofounder on stage, CC BY 2.0; explicitly archival not 2026 controls",
+      "canonical_url": "https://compound.ie/wealth/canva-ai-controls-opt-out-creator-economics/",
+      "profile_url": "https://compound.ie/companies/canva/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "status": "published_verified_live",
+      "verified_live_result": "PASS: independent GitHub Pages site/mobile-audit job 136774566741, run 44880039014 (deploy head a34a185311812911107a89ff41ccac3d4ea6a852), 2026-11-21T07:35:58Z; fetched exact public canonical HTML, pinned real JPEG cover, OG/Twitter WebP, company hub backlinks and article/profile AdSense loader",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "live_verified_at_utc": "2026-11-21T07:35:58Z"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "status": "verified_sourced_profile_and_article_backlinks_live"
+    },
+    {
+      "slug": "anthropic",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "status": "verified_sourced_profile_and_article_backlinks_live"
+    },
+    {
+      "slug": "canva",
+      "profile_url": "https://compound.ie/companies/canva/",
+      "status": "verified_sourced_profile_and_article_backlinks_live"
+    }
+  ],
+  "production_deployment": {
+    "status": "github_pages_deployed_independently_verified",
+    "merge_commit_sha": "a34a185311812911107a89ff41ccac3d4ea6a852",
+    "site_workflow_run": 44880039014,
+    "site_workflow_url": "https://github.com/davidomarayt/compound/actions/runs/44880039014",
+    "mobile_audit_job": 136774566741,
+    "verified_at_utc": "2026-11-21T07:35:58Z",
+    "confirmed_live_urls": 3,
+    "confirmed_live_new_articles": 2,
+    "confirmed_updated_canonicals": 1,
+    "verified_checks": [
+      "canonical HTTP HTML with canonical tags",
+      "Anthropic update fingerprint 1,127,000,000 shares",
+      "authentic pinned JPEG cover fetched",
+      "OG/Twitter image tags and linked WebP fetched",
+      "exact company profile backlink",
+      "article and profile AdSense loader"
+    ]
+  },
+  "branch_protection": "Native production protection previously absent; current direct protection API returned 403 to integration, enforce equivalent exact-commit CI and compare before merge; recommend native protection",
+  "updated_at_utc": "2026-11-21T07:35:58Z"
+}

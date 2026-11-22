@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% set hub_url = site_url ~ medicines_hub_url %}
+{% set description = "Irish guides to common medicines, including painkillers, antihistamines, inhalers, diabetes medicines, antibiotics and GLP-1 medicines. Learn how they work and what to look out for." %}
+{% block head_title %}Common Medicines in Ireland | Compound Health{% endblock %}
+{% block meta %}<meta name="description" content="{{ description }}">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ hub_url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ title }} | Compound Health">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ hub_url }}">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":{{ title|tojson }},"description":{{ description|tojson }},"url":{{ hub_url|tojson }},"inLanguage":"en-IE","hasPart":[{% for guide in guides %}{"@type":"Article","name":{{ guide.title|tojson }},"url":{{ (site_url ~ guide.url)|tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Health","item":{{ (site_url ~ '/health/')|tojson }}},{"@type":"ListItem","position":3,"name":"Common Medicines","item":{{ hub_url|tojson }}}]}</script>
+{% endblock %}
+{% block post_styles %}
+<link rel="stylesheet" href="/static/medicines.css?v=5">
+<script defer src="/static/medicines.js?v=2"></script>
+{% endblock %}
+{% block content %}
+{% set medicines = {
+  'amoxicillin': ('Amoxicillin', 'Clonamox'),
+  'cetirizine': ('Cetirizine', 'Zirtek'),
+  'ibuprofen': ('Ibuprofen', 'Nurofen'),
+  'liraglutide': ('Liraglutide', 'Saxenda'),
+  'metformin': ('Metformin', 'Glucophage'),
+  'omeprazole': ('Omeprazole', 'Losec'),
+  'orforglipron': ('Orforglipron', 'Foundayo'),
+  'paracetamol': ('Paracetamol', 'Panadol'),
+  'salbutamol': ('Salbutamol', 'Ventolin'),
+  'semaglutide': ('Semaglutide', 'Ozempic / Wegovy / Rybelsus'),
+  'tirzepatide': ('Tirzepatide', 'Mounjaro')
+} %}
+<div class="medicines-hub">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span aria-hidden="true">/</span>
+    <a href="/health/">Health</a><span aria-hidden="true">/</span>
+    <span aria-current="page">Common Medicines</span>
+  </nav>
+  <header class="medicines-intro">
+    <div>
+      <h1>Common medicines <span>in Ireland</span></h1>
+      <p>Find out what everyday medicines do, how they work, what to check on the pack and when to ask a pharmacist.</p>
+    </div>
+    <form class="medicines-search" aria-label="Medicine guide search" hidden>
+      <label for="medicine-query">Find a medicine</label>
+      <input id="medicine-query" type="search" placeholder="Try Panadol, Wegovy or ibuprofen" aria-controls="medicine-guides" autocomplete="off">
+    </form>
+  </header>
+
+  <div class="medicines-dashboard">
+    <section aria-labelledby="medicine-guides-heading">
+      <div class="medicines-section-heading">
+        <h2 id="medicine-guides-heading">Medicine guides</h2>
+        <p role="status" class="medicines-guide-count" data-medicine-count>{{ guides|length }} {{ 'guide' if guides|length == 1 else 'guides' }}</p>
+      </div>
+      <div id="medicine-guides">
+        {% if az_guides %}
+        <section class="medicines-group" id="medicines-a-z" aria-labelledby="medicines-a-z-heading" data-medicine-group>
+          <h3 id="medicines-a-z-heading">Medicines A–Z</h3>
+          <ul class="medicines-az-list">
+          {% for guide in az_guides %}
+            <li data-medicine-guide data-search="{{ guide.medicine_index_name }} {{ guide.medicine_search_aliases|join(' ') }}">
+              <a href="{{ guide.url }}"><strong>{{ guide.medicine_index_name }}</strong><span>{{ guide.summary }}</span></a>
+            </li>
+          {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+        {% set groups = namespace(glp=[], other=[], comparisons=[]) %}
+        {% for guide in guides if not guide.medicine_index_name %}
+          {% if 'medicine-comparison' in guide.tags %}
+            {% set groups.comparisons = groups.comparisons + [guide] %}
+          {% elif 'glp-1' in guide.tags %}
+            {% set groups.glp = groups.glp + [guide] %}
+          {% else %}
+            {% set groups.other = groups.other + [guide] %}
+          {% endif %}
+        {% endfor %}
+        {% for group_id, group_title, group_guides in [
+          ('glp-1-medicines', 'GLP-1 medicines', groups.glp),
+          ('other-medicines', 'Other medicines', groups.other),
+          ('medicine-comparisons', 'Medicine comparisons', groups.comparisons)
+        ] if group_guides %}
+        <section class="medicines-group" id="{{ group_id }}" aria-labelledby="{{ group_id }}-heading" data-medicine-group>
+          <h3 id="{{ group_id }}-heading">{{ group_title }}</h3>
+          {% if group_id == 'glp-1-medicines' and oral_glp_guide %}
+          <p class="medicines-group-link"><a href="{{ oral_glp_guide.url }}">Compare oral GLP-1 medicines</a></p>
+          {% endif %}
+          <div class="medicines-guides">
+          {% for guide in group_guides %}
+            {% set name, brand = medicines.get(guide.slug, (guide.title, '')) %}
+            <article class="medicines-guide" data-medicine-guide data-search="{{ name }} {{ brand }} {{ guide.title }}">
+              {% if guide.image %}
+              <img src="{{ guide.image }}" alt="{{ guide.image_alt }}" width="1200" height="675">
+              {% endif %}
+              <div class="medicines-guide-body">
+                <h4><a href="{{ guide.url }}">{{ name }}</a></h4>
+                {% if brand %}<p class="medicines-brand">{{ 'Brand names' if '/' in brand else 'Brand example' }} · {{ brand }}</p>{% endif %}
+                <p class="medicines-summary">{{ guide.summary }}</p>
+                <a class="medicines-guide-action" href="{{ guide.url }}" aria-label="Read the {{ name }} guide">Read guide</a>
+                {% if guide.image_credit %}<p class="medicines-photo-credit"><a href="{{ guide.image_source }}">{{ guide.image_credit }}</a></p>{% endif %}
+              </div>
+            </article>
+          {% endfor %}
+          </div>
+        </section>
+        {% endfor %}
+      </div>
+      <div class="medicines-empty" hidden>
+        <p>Try a medicine name such as paracetamol or a brand name such as Panadol.</p>
+        <button type="button">Clear search</button>
+      </div>
+    </section>
+
+    <aside class="medicines-resources" aria-labelledby="medicine-resources-heading">
+      <h2 id="medicine-resources-heading">Irish medicine resources</h2>
+      <ul>
+        <li><a href="https://www2.hse.ie/medicines/"><strong>HSE Medicines A–Z</strong><span>Browse medicines by name</span></a></li>
+        <li><a href="https://www.hpra.ie/find-a-medicine"><strong>HPRA Find a Medicine</strong><span>Find authorised products and patient leaflets</span></a></li>
+      </ul>
+      <div class="medicines-leaflet">
+        <h3>Check your product leaflet</h3>
+        <p>Use the leaflet for the exact medicine and strength on your pack. Ask a pharmacist if you take other medicines, have a health condition or are unsure which product you have.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+{% endblock %}

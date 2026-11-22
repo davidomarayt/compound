@@ -98,6 +98,6 @@ Track time to first usable plan, error rates, extra review time, follow-up compl
 
 The thesis is straightforward: **Claude Meetings might sell more dependable enterprise work, not simply more AI text**, but neither a beta launch nor a temporary free period proves productivity returns. Anthropic remains privately held as of this research check; a proposed flotation and its financial disclosures should not be confused with the economics of this specific feature.
 
-Follow the [Anthropic company hub](/companies/anthropic/), our [model-cost analysis](/wealth/anthropic-fable-mythos-52-pricing-routing-economics/) and the [service-continuity report](/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/) for distinct parts of the enterprise AI business.
+Follow the [Anthropic company hub](/stocks/ant/), our [model-cost analysis](/wealth/anthropic-fable-mythos-52-pricing-routing-economics/) and the [service-continuity report](/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/) for distinct parts of the enterprise AI business.
 
 *Research checked 15 November 2026. Claude Meetings' official product article is dated 12 November. The illustrative meeting calculations are editorial assumptions, not audited customer results. Cover: Simon Walker / UK Prime Minister, 24 May 2023, CC BY 2.0; archival cropped photograph, unrelated to the new product.*

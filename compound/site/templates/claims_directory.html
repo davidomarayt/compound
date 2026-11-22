@@ -1,0 +1,26 @@
+<div class="claims">
+  <nav class="claims-breadcrumb" aria-label="Breadcrumb">
+    <a href="/wheres-my-money/">Where’s My Money?</a>
+    {% if page.slug != 'what-can-i-claim' %}
+    <span aria-hidden="true">/</span> <a href="/wheres-my-money/what-can-i-claim/">What Can I Claim?</a>
+    {% endif %}
+  </nav>
+  <header class="claims-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.slug == 'what-can-i-claim' %}
+    <p>Find the Irish payments, grants and tax reliefs worth checking for your household.</p>
+    {% elif page.sources_checked %}
+    <p class="claims-date">Official sources checked <time datetime="{{ page.sources_checked.isoformat() }}">{{ page.sources_checked.strftime('%d %B %Y') }}</time></p>
+    {% endif %}
+  </header>
+  {% if page.hero_image_url %}
+  <figure class="claims-photo">
+    <img src="{{ page.hero_image_url }}" alt="{{ page.hero_image_alt }}" width="1200" height="675" fetchpriority="high">
+    <figcaption><a href="{{ page.hero_image_source }}">{{ page.hero_image_credit }}</a></figcaption>
+  </figure>
+  {% endif %}
+  <div class="{{ 'claims-copy article-prose' if page.hero_image_url else 'claims-directory' }}">{{ page.body_html|safe }}</div>
+  {% if not preview %}
+    {% with slot=adsense.slots.wmm_spending, name="claims-bottom" %}{% include "_ad.html" %}{% endwith %}
+  {% endif %}
+</div>

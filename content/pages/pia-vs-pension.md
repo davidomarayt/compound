@@ -7,6 +7,8 @@ meta_description: "PIA vs pension Ireland: should you invest in a PIA or PRSA? C
 
 ## Should I put money into a PIA or a pension in Ireland?
 
+**Planning as a couple?** The proposed PIA limits apply per eligible individual, not per jointly assessed household. Our [PIA guide for married, civil-partnered and unmarried couples](/wealth/pia-for-couples-ireland/) explains separate accounts, spouse-funded contributions and how to coordinate pension decisions.
+
 **Short answer (13 November 2026):** A pension often has an advantage for money earmarked for retirement, because qualifying personal contributions can receive Income Tax relief and some employers add contributions. The proposed **Personal Investment Account (PIA)** is designed for more flexible access before retirement but has **no announced upfront pension-style tax relief**. The right place for your next euro depends on your remaining relief allowance, any *additional* employer match, when you will need the money, fees, and the tax due when pension benefits are eventually drawn.
 
 For example, **€500 of take-home pay each month** could fund **€625/month into a pension at 20% relief** or **€833.33/month at 40% relief**, if the *entire* contribution qualifies. The same €500/month could go into a PIA under the announced €12,000 annual cap. **This is not a guaranteed winner:** pension money is normally subject to access restrictions and later tax; the PIA carries market risk, provider charges and a proposed annual account-value charge above €50,000.

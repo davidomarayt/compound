@@ -1,21 +1,22 @@
 ---
-title: 'Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut'
-seo_title: 'Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut'
+title: 'Anthropic IPO: $83 Offer, $111.50 Opening and $97.17 First Close'
+seo_title: 'Anthropic IPO: $83 Issue Price, $111.50 Open, $97.17 First Close'
 slug: anthropic-ipo-pricing-nasdaq
 canonical_path: /news/anthropic-ipo-pricing-nasdaq/
 pillar: wealth
 draft: false
 publication_status: published
 date: '2026-11-18'
-research_checked: '2026-11-19'
+research_checked: '2026-11-21'
 editorial_review_status: pending
-summary: Anthropic confirmed its $83 per-share IPO price and 980 million-share offering on 18 November, with Nasdaq trading expected to begin 19 November.
-meta_description: Anthropic confirms an $83 IPO price and 980 million shares. Compare $81.34bn gross offering value, primary and secondary proceeds, and Nasdaq trading risk.
+summary: Anthropic closed its $93.54bn IPO and separate $26bn placement on 20 November, after an $83 offer, $111.50 debut and $97.17 first close; proceeds to the issuer differ from total deal value.
+meta_description: Anthropic closed a $93.54bn IPO and $26bn private placement on 20 November. See issuer proceeds, selling holders and ANT first-day trading arithmetic.
 tags:
 - news
 - finance
 - anthropic
 - company-anthropic
+- stock-ant
 - ipo
 - nasdaq
 - investing
@@ -30,6 +31,15 @@ image_alt: Nasdaq MarketSite in Times Square, New York, with the Nasdaq logo vis
 image_credit: Ajay Suresh via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Archival photograph from 19 September 2021, resized with a crop for social previews.
 image_source: https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg
 sources:
+- title: "Anthropic — confirmed IPO close, full option exercise and separate placement, 20 November 2026"
+  url: https://www.anthropic.com/news/ipo-close
+- title: "Nasdaq — Anthropic began trading and opened at $111.50, 19 November 2026"
+  url: https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq
+- title: "Reuters — Anthropic's first-day $97.17 close and offer, 19 November 2026"
+  url: https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/
+- title: "AP — Anthropic first-day trading and $97.17 close, 19 November 2026"
+  url: https://apnews.com/article/b6a74b8949021207dc162fcc876c4649
+
 - title: Anthropic — official priced IPO announcement, 18 November 2026
   url: https://www.anthropic.com/news/anthropic-prices-initial-public-offering
 - title: The Wall Street Journal — $83 IPO price and increased share sale, 18 November 2026
@@ -46,47 +56,75 @@ sources:
   url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026073040/anthropicpbc-fwpxeeaprospea.htm
 ---
 
-**Update, 19 November 2026:** Anthropic has now [confirmed directly](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) its initial public offering price of **$83 per Class A share** and a **980 million-share base offering**. The company's 18 November statement supersedes earlier secondhand reports of a larger deal. Nasdaq trading is *expected* to begin on 19 November under **ANT**; this update was prepared before a verified first trade, so **$83 is an IPO allotment price, not a confirmed market quotation**.
+**Anthropic's first day as a Nasdaq-listed company turned an $83 IPO allotment into a $111.50 opening quotation and a $97.17 closing price.** All three are verified historical figures, but they describe three different transactions. Investors who overlook the distinction risk confusing money raised by Anthropic with the price a member of the public actually paid.
 
-The pricing is **$5 above** the top of the preceding $70–$78 indicative range, a **6.41%** increase relative to the $78 ceiling. More importantly, the final base offering has **155 million more shares** than the earlier 825 million-share plan, an **18.79% increase** in the share count offered. Those are straightforward comparisons, not an estimate of investor returns.
+Anthropic's [18 November 2026 pricing announcement](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) established an **$83 offering price** for a 980 million-share base sale. The [Nasdaq exchange confirmed on 19 November](https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq) that **ANT began trading at $111.50**. [Reuters reported](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) that the stock finished that first session at **$97.17**. These are dated first-day figures—not a quotation for 20 November or a prediction of the next trading session.
 
-## How big is the now-confirmed public offering?
+## The IPO has now closed: $93.5 billion is not all money to Anthropic
 
-| Published transaction figure | Calculation | Gross value |
-|---|---|---:|
-| Total base offering | 980,000,000 × $83 | **$81.340bn** |
-| Newly issued shares sold by Anthropic | 956,351,354 × $83 | **$79.377bn** |
-| Existing shareholder shares | 23,648,646 × $83 | **$1.963bn** |
-| Optional additional shares, if fully exercised | 147,000,000 × $83 | **$12.201bn** |
+**A material 20 November update supersedes the earlier expected-closing language.** [Anthropic confirmed the transaction closed](https://www.anthropic.com/news/ipo-close) on **20 November 2026**. Underwriters exercised the **entire 147 million-share option**, increasing the Class A offering from 980 million to **1,127,000,000 shares** at $83. That produces **$93.541 billion of gross IPO value**, before underwriting fees and other expenses. This is a transaction total, not annual sales, company profit or market capitalisation.
 
-*Source: [Anthropic's 18 November official pricing announcement](https://www.anthropic.com/news/anthropic-prices-initial-public-offering). Dollar amounts are rounded. The optional shares are not included in the 980 million base offering, and the offer is expected to close only on 20 November, subject to customary conditions.*
+The issuer sold **1,103,351,354 Class A shares**, raising about **$91.578 billion gross** for Anthropic before fees. Selling stockholders sold the remaining **23,648,646** shares, worth approximately **$1.963 billion gross**; those proceeds did **not** go to Anthropic. The additional underwriter option shares were issuer-sold, according to the closing release. That distinction makes the 20 November closing considerably more informative than merely announcing a larger total offering.
 
-The key distinction is **who receives the money**. Anthropic says it will receive **none** of the roughly $1.963 billion gross value from the secondary shares sold by existing holders. Its own approximately $79.377 billion of gross base public-offering proceeds will be lower on a net basis after underwriting discounts and expenses. These figures should not be confused with Anthropic's entire market capitalisation.
+The same issuer announcement separately confirms a concurrent **private placement of 313,253,007 Class N shares**, at **$83 each**, for approximately **$26.0 billion**. Anthropic identifies AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC Partners as purchasers. Those shares were **not registered as part of the public Class A offer**. The issuer's combined gross proceeds from **its own Class A share sales and the Class N placement** were roughly **$117.58 billion** before fees; the larger approximately **$119.5 billion combined transaction value** includes selling shareholders' cash. Do not count the selling holders' portion as corporate funding.
 
-Earlier preliminary filings also describe a separate proposed **$26 billion private Class N placement** to strategic investors. That is **not part of the $81.340 billion public base offering**. The placement's conditional terms and final net amount must be assessed in the effective prospectus; do not assume that all gross amounts are unrestricted operating cash available today.
+| Confirmed 20 November closing component | Shares | Gross amount at $83 | Who receives gross proceeds |
+|---|---:|---:|---|
+| Anthropic Class A shares | 1,103,351,354 | $91.578bn | Anthropic |
+| Existing holders' Class A shares | 23,648,646 | $1.963bn | Selling holders |
+| **Total public IPO including exercised option** | **1,127,000,000** | **$93.541bn** | Mixed recipients |
+| Separate Class N private placement | 313,253,007 | approximately $26.0bn | Anthropic |
 
-## Why an $83 IPO is not an $83 investment opportunity for everyone
+*Arithmetic uses the issuer's exact share counts and $83 price. Gross amounts exclude underwriting discounts, other expenses and future deployment of capital. Class N placement shares and public Class A shares are distinct.*
 
-The IPO price is the price for shares allocated in the offering. When the stock begins trading, its market price will be determined separately by buyers and sellers, potentially above or below $83. The opening trade has **not been independently verified** at this research check. A sharp change in the first session would not automatically change the cash Anthropic received from the original allocated shares.
+The business question now shifts from **whether funding closes** to **what return the new capital can earn**. Expansion into computing capacity may support revenue growth but may also require large future outlays. A gross fundraising headline cannot establish sustainable cash generation, economic dilution or a fair trading price without current share-class, expense and operating data. Investors should compare the final prospectus and subsequent issuer reports, rather than treating any figure here as a current ANT quote.
 
-The financial analysis is particularly important for Irish retail buyers. Access to an allocation is not the same as being able to buy the stock at the offer price through an ordinary brokerage account. An investor buying subsequently on Nasdaq may face the prevailing spread, broker charges, currency conversion and normal market risk. Because both the issue price and Nasdaq trading are quoted in US dollars, euro-based results also depend on EUR/USD changes.
+## The three prices answer different questions
 
-For illustration, a buyer who acquired 10 shares at **$90** would pay **$900** before broker and FX charges; that is **$70 more** than the same 10 shares at the $83 IPO price. If the market later fell to $75, their marked-to-market loss would be **$150**, or **16.7% of $900**, before fees and currency effects. This is arithmetic demonstrating price sensitivity, **not a forecast** of Anthropic's opening or later prices.
+The offer price is what participating investors were allocated at the IPO, subject to their individual terms. The opening quotation reflects the first public market trade. The closing price is the last regular-session trading reference reported for Thursday 19 November.
 
-## What the $81.34 billion total does not say
+| Verified historical marker | Price | Relative to the $83 issue price |
+|---|---:|---:|
+| IPO allocation on 18 November | **$83.00** | Baseline |
+| First Nasdaq trade on 19 November | **$111.50** | **+34.34%** |
+| First session close on 19 November | **$97.17** | **+17.07%** |
 
-A public share sale is a fundraising and liquidity transaction. It is **not** annual sales, profit or a new valuation independently supported by operating cash flow. It is also not proof that investment banks' earlier valuations correctly predict secondary-market demand.
+*Percentage calculations use simple price changes, before commissions, currency conversion or tax. Nasdaq verified the opening; Reuters and AP reported the closing price.*
 
-The underlying valuation debate depends on which share classes and potentially dilutive securities are included in the denominator, not solely the **980 million Class A shares sold**. Earlier press estimates put the full company valuation substantially above $1 trillion at $83, but readers should verify the final prospectus share reconciliation rather than simply multiplying 980 million by $83.
+The move from **$111.50 at the open to $97.17 at the close** was a decline of **$14.33 per share**, or approximately **12.85%**, measured against the opening price. That is not a contradiction of the positive 17.07% first-day return for investors who actually received shares at $83. It shows why the headline percentage can be misleading for retail buyers.
 
-Compound's [detailed Anthropic IPO prospectus analysis](/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) dissects revenue, cash generation, headline accounting losses, multi-year compute obligations, proposed private funding and shareholder control. The pre-pricing numerical examples in that guide use the indicative $70–$78 range and should be read as **historical scenarios**, not final priced terms.
+For an illustrative buyer of **100 shares at the first trade**, the initial gross cost would have been **$11,150** and the same shares' closing market value **$9,717**: a **$1,433** mark-to-market decline before fees and foreign exchange. Someone allocated the identical 100 shares at $83 would have paid **$8,300** and had a **$1,417** marked-to-market gain at the same close. These are arithmetic examples, not statements about real individuals' trades.
 
-## The next information that will matter
+## The $81.34 billion IPO was not the market capitalisation
 
-There are three different milestones to monitor: official prospectus and underwriting details, first verified Nasdaq trading, and the scheduled 20 November closing of the deal. A closing date is conditional until confirmed; a first-day quotation is not a company-reported valuation model; and the expected net proceeds depend on fees, expenses and any exercise of the underwriter option.
+The [official issuer release](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) confirms a **980 million-share base offering** at $83. The multiplication gives **$81.340 billion gross public offering value**. Of those shares, **956,351,354** were sold by Anthropic itself and **23,648,646** by existing stockholders.
 
-The company said on 18 November that the SEC registration statement had been declared effective. That is an official step in the offering, not a guarantee of an investment outcome. Anthropic is transitioning from a private company into a Nasdaq-listed issuer, and the [Anthropic company hub](/companies/anthropic/) should only be reclassified after verified trading/listing evidence, not based on expectation.
+The company's gross primary proceeds before fees were therefore about **$79.377 billion**. The roughly **$1.963 billion** gross secondary value went to selling holders, not the company. Underwriters were also granted an option for **147 million additional shares**, valued at **$12.201 billion** at the IPO price. Anthropic subsequently **confirmed full exercise and closing on 20 November**, as detailed in the new section above.
 
-**Bottom line:** the definitive new facts are **$83 per share, 980 million base shares, $81.34 billion gross public value and $79.377 billion gross primary proceeds**. Those amounts clarify who receives cash but do not predict first-day trading or subsequent investor returns.
+| Transaction component | Shares | Gross value at $83 |
+|---|---:|---:|
+| Anthropic-issued base shares | 956,351,354 | $79.377bn |
+| Selling-stockholder base shares | 23,648,646 | $1.963bn |
+| **Total base offering** | **980,000,000** | **$81.340bn** |
 
-*Research checked 19 November 2026, before independently confirmed Nasdaq trading. Original publication 18 November. All share and offering figures derive from Anthropic's official 18 November release; earlier prospectus and press estimates are distinguished above. Archival photo: Ajay Suresh, Nasdaq MarketSite, 19 September 2021, Wikimedia Commons CC BY 2.0; unrelated to Anthropic's actual listing event.*
+A company can raise this sum without having $81 billion in annual revenue or profit. Equally, multiplying only the **shares issued in the IPO** by a public trading price does not produce the equity value of the entire company: substantial pre-existing shares, multiple classes and potential dilution also matter.
+
+Anthropic's 20 November closing release **confirmed** the separate approximately **$26 billion Class N private placement**. This was not part of the stock's 19 November trading session, and does not set a current secondary-market share value.
+
+## What changed in the business case?
+
+A successful IPO raises funds and creates a quoted price, but it does not remove the cost of building advanced AI models or guarantee a profit margin. Anthropic must continue paying for computing capacity, development, security and distribution. Its customer growth and product revenue should be evaluated alongside those expenses.
+
+For investors, the first-day performance adds a new form of risk: **price paid for liquidity**. Private investors could negotiate ownership over years, whereas ordinary buyers can encounter volatile spreads and substantial intraday movements. An opening gain from the offer price is not necessarily an attainable return for someone buying in the public market.
+
+Irish investors also face USD-to-EUR currency movements, brokerage and custody charges, and potentially different tax treatment depending on how they hold securities. No single IPO percentage conveys those effects. Investors should inspect the actual execution price and broker fee schedule rather than assume the allocation price was available to everyone.
+
+## Which source should readers trust now?
+
+The issuer's **18 November** release is the primary source for allocation structure and the $83 price. The exchange's **19 November** announcement establishes that trading actually began at $111.50, superseding earlier phrasing that debut was merely expected. [Reuters' 19 November trading report](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) and [Associated Press](https://apnews.com/article/b6a74b8949021207dc162fcc876c4649) cross-check the $97.17 first close. Anthropic's **20 November closing announcement** now confirms that the IPO and concurrent private placement closed, including full underwriters' option exercise. That is the later and controlling primary disclosure.
+
+This is now a **publicly traded company on Nasdaq under ANT**. The [Anthropic stock profile](/stocks/ant/) brings together our IPO coverage and pre-listing research. See Compound's [Anthropic prospectus analysis](/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) for operating and financing risk and [IPO lock-up guide](/news/anthropic-ipo-lockup-release-schedule/) for the distinction between stock trading now and possible later insider sales.
+
+**Bottom line:** $83 describes initial allocated shares, $111.50 the first publicly traded price, and $97.17 the first close. The company raised money from the IPO allocation, not from every subsequent trade. An investor's result depends on their actual purchase price, not the best-performing percentage in a headline.
+
+*Updated and checked 21 November 2026 using the issuer's verified 20 November closing release as well as Nasdaq, Reuters and AP for events of 18–19 November; original article dated 18 November. First-session prices are historical, not live quotes. Licensed authentic archival cover: Nasdaq MarketSite photographed by Ajay Suresh in September 2021, CC BY 2.0; not a photograph of Anthropic's 2026 event.*
