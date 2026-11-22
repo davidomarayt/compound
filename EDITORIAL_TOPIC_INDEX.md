@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 419 published articles and guides, 69 tools,
+**Included:** 422 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -137,6 +137,7 @@ For the complete register (including 510+ company profiles), open
 - [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/) — **Wealth**
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/) — **Wealth**
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/) — **Wealth**
+- [Gift Voucher Problems: The Rights Irish Shoppers Can Actually Enforce](https://compound.ie/news/irish-gift-voucher-rights-ccpc-2026/) — **Wealth**
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/) — **Wealth**
 - [GLP-1 side effects: what is common, and when to get help](https://compound.ie/health/glp1-side-effects-when-to-seek-help/) — **Health**
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — **Health**
@@ -344,6 +345,7 @@ For the complete register (including 510+ company profiles), open
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/) — **Wealth**
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/) — **Wealth**
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/) — **Wealth**
+- [School Transport Fees Are Rising in 2027: What Families Will Actually Pay](https://compound.ie/news/ireland-school-transport-fees-2027/) — **Wealth**
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/) — **Wealth**
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/) — **Wealth**
 - [Sequential combined HRT in Ireland | Cyclical progestogen and what bleeding can mean](https://compound.ie/health/medicines/sequential-combined-hormone-replacement-therapy/) — **Health**
@@ -422,6 +424,7 @@ For the complete register (including 510+ company profiles), open
 - [Will Irish Banks Accept a PIA for a Mortgage Deposit? Investing vs Trading Explained](https://compound.ie/wealth/pia-mortgage-deposit-ireland/) — **Wealth**
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/) — **Wealth**
 - [Workplace stress in Ireland: new study finds job design matters for wellbeing](https://compound.ie/news/workplace-stress-ireland-job-design-wellbeing-2026/) — **Life**
+- [Young Irish Adults Are Saving More — but the Investment-Knowledge Gap Is Wide](https://compound.ie/news/irish-young-savers-investing-survey-2026/) — **Wealth**
 - [Your Commute Could Be Costing You 10 Days a Year](https://compound.ie/life/commute-time-ireland-hidden-cost/) — **Life**
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/) — **Wealth**
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/) — **Wealth**

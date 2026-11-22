@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 419
+- Published editorial articles and guides: 422
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 298
+## Wealth articles and guides — 301
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -209,6 +209,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/)
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/)
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
+- [Gift Voucher Problems: The Rights Irish Shoppers Can Actually Enforce](https://compound.ie/news/irish-gift-voucher-rights-ccpc-2026/)
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)
 - [Google Chose Blue Origin for Space-Based AI Computing. Who Captures the Economics?](https://compound.ie/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
@@ -360,6 +361,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/)
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/)
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/)
+- [School Transport Fees Are Rising in 2027: What Families Will Actually Pay](https://compound.ie/news/ireland-school-transport-fees-2027/)
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/)
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/)
 - [Shares, ETFs and Funds in Ireland: What Is the Difference?](https://compound.ie/wealth/shares-etfs-funds-ireland/)
@@ -409,6 +411,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Why SpaceX’s Lenders Reportedly Want Its AI Chips to Stay on Earth](https://compound.ie/news/spacex-gpu-financing-orbit-collateral/)
 - [Will Irish Banks Accept a PIA for a Mortgage Deposit? Investing vs Trading Explained](https://compound.ie/wealth/pia-mortgage-deposit-ireland/)
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
+- [Young Irish Adults Are Saving More — but the Investment-Knowledge Gap Is Wide](https://compound.ie/news/irish-young-savers-investing-survey-2026/)
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/)
 - [Zebra’s Sales Jumped 22%, but Gross Margin Fell. Can Automation Growth Absorb Memory Costs?](https://compound.ie/wealth/zebra-automation-growth-memory-margin/)
