@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21",
+  "checked": "2026-11-22",
   "listed": [
     {
       "slug": "spcx",
@@ -135,12 +135,12 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "Developer and enterprise AI, specialist workflows and collaborative ChatGPT Space pages; Plus rollout announced 20 November 2026.",
+      "summary": "Developer and enterprise AI platforms, specialist workflows, collaborative ChatGPT Space and the November 2026 model-access intermediary policy.",
       "website": "https://openai.com/",
       "latest_development": {
         "date": "2026-11-20",
-        "text": "OpenAI's 20 November ChatGPT notes say Space is rolling out to eligible Plus adults, with interactive pages, presentations and collaborator access. Availability is gradual; Free accounts cannot view shared pages, public links are unavailable, and no Space-specific revenue was disclosed.",
-        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        "text": "OpenAI's usage policies took effect 20 November 2026 following an October 21 announcement. Businesses operating services that give third parties direct model access require prior review/approval; ordinary apps integrating the API to power features do not require approval solely for that reason. High-stakes automation without review and certain substitute-model training uses are also restricted. These are OpenAI service rules, not new government legislation or a published revenue figure.",
+        "source": "https://openai.com/policies/usage-policies/"
       }
     },
     {
@@ -159,11 +159,11 @@
       "slug": "databricks",
       "name": "Databricks",
       "sector": "Data & AI software",
-      "summary": "Enterprise data, analytics and AI platforms; announced an approximately $3 billion three-year EMEA expansion and 16 November beta for governed sharing of agent skills.",
+      "summary": "Private enterprise data and AI platform; Nov 19 cross-regulatory-domain OpenSharing generally available for supported commercial/government cloud pairs, subject to customer governance and phased workspace access.",
       "website": "https://www.databricks.com/",
       "latest_development": {
-        "date": "2026-11-16",
-        "text": "Databricks' 16 November product release notes describe beta sharing of Unity Catalog agent skills through OpenSharing and Marketplace. This follows its 11 November planned approximately $3bn EMEA investment and 10 November Netherlands expansion; no new revenue from these developments was reported.",
+        "date": "2026-11-19",
+        "text": "Databricks' November product notes announced generally available cross-regulatory-domain Databricks-to-Databricks Delta Sharing on 19 November 2026 for supported pairs including commercial workspaces and AWS GovCloud, AWS GovCloud DoD and Azure China. Some combinations remain unsupported. Technical access does not confer legal permission or disclose revenue attributable to this feature.",
         "source": "https://docs.databricks.com/aws/en/release-notes/product/2026/november"
       }
     },
