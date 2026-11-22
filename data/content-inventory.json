@@ -1587,6 +1587,28 @@
         "status": "published"
       },
       {
+        "title": "Databricks Can Now Share Data Across Regulated Clouds. Who Bears the Compliance Risk?",
+        "url": "/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics/",
+        "source": "content/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "databricks-cross-regulatory-cloud-sharing-governance-economics",
+        "date": "2026-11-22",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-databricks",
+          "databricks",
+          "data-governance",
+          "enterprise-ai",
+          "cloud-security",
+          "cloud-economics"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?",
         "url": "/wealth/databricks-always-on-genie-enterprise-agent-economics/",
         "source": "content/wealth/databricks-always-on-genie-enterprise-agent-economics.md",
@@ -5134,6 +5156,28 @@
           "media-business",
           "enterprise-ai",
           "distribution"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?",
+        "url": "/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/",
+        "source": "content/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-usage-policy-intermediaries-approval-ai-business-risk",
+        "date": "2026-11-22",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "api-platforms",
+          "ai-governance",
+          "developer-economics",
+          "compliance"
         ],
         "status": "published"
       },

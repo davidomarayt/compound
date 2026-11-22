@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 414
+- Published editorial articles and guides: 416
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 293
+## Wealth articles and guides — 295
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -180,6 +180,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/)
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/)
 - [D.R. Horton Returned $4.1 Billion as Home Demand Softened. Can It Continue?](https://compound.ie/wealth/dr-horton-cash-returns-land-control/)
+- [Databricks Can Now Share Data Across Regulated Clouds. Who Bears the Compliance Risk?](https://compound.ie/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics/)
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/)
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/)
 - [Did Claude Solve the Riemann Hypothesis? What the Proof Claim Says](https://compound.ie/news/claude-riemann-hypothesis-proof/)
@@ -314,6 +315,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/)
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/)
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/)
+- [OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?](https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/)
 - [Palmer Luckey's SLAB Project: $1B Valuation, Costs and Floating City Economics](https://compound.ie/news/palmer-luckey-slab-project-cost-valuation-floating-city/)
 - [Palo Alto Networks Grew 39%, but Gross Margin Fell 6.2 Points. What Changed?](https://compound.ie/wealth/palo-alto-growth-margin-acquisitions/)
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/)

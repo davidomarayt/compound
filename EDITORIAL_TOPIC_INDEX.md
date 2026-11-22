@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 414 published articles and guides, 69 tools,
+**Included:** 416 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -98,6 +98,7 @@ For the complete register (including 510+ company profiles), open
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/) — **Health**
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/) — **Wealth**
 - [D.R. Horton Returned $4.1 Billion as Home Demand Softened. Can It Continue?](https://compound.ie/wealth/dr-horton-cash-returns-land-control/) — **Wealth**
+- [Databricks Can Now Share Data Across Regulated Clouds. Who Bears the Compliance Risk?](https://compound.ie/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics/) — **Wealth**
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/) — **Wealth**
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/) — **Wealth**
 - [Diazepam in Ireland | GABA signalling, sedation and persistence](https://compound.ie/health/medicines/diazepam/) — **Health**
@@ -282,6 +283,7 @@ For the complete register (including 510+ company profiles), open
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/) — **Wealth**
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/) — **Wealth**
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/) — **Wealth**
+- [OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?](https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/) — **Wealth**
 - [Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus](https://compound.ie/health/oral-glp-1-medicines-ireland/) — **Health**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
