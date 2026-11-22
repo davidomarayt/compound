@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 422
+- Published editorial articles and guides: 423
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 301
+## Wealth articles and guides — 302
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -336,6 +336,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/)
 - [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/)
 - [Planning Permission in Ireland: The Complete Guide](https://compound.ie/wealth/planning-permission-ireland/)
+- [Plug-in solar in Ireland: when it could arrive and what it could save](https://compound.ie/news/plug-in-solar-ireland/)
 - [PrepayPower Freezes Winter Energy Prices — But Are Customers Getting a Good Deal?](https://compound.ie/news/prepaypower-price-freeze-winter-2026-2027/)
 - [Probate Costs & Fees in Ireland: What Does It Actually Cost?](https://compound.ie/wealth/probate-costs-fees-ireland/)
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/)

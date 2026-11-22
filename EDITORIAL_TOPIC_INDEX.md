@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 422 published articles and guides, 69 tools,
+**Included:** 423 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -312,6 +312,7 @@ For the complete register (including 510+ company profiles), open
 - [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/) — **Wealth**
 - [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/) — **Wealth**
 - [Planning Permission in Ireland: The Complete Guide](https://compound.ie/wealth/planning-permission-ireland/) — **Wealth**
+- [Plug-in solar in Ireland: when it could arrive and what it could save](https://compound.ie/news/plug-in-solar-ireland/) — **Wealth**
 - [Prednisolone in Ireland | Glucocorticoid receptors and why treatment length matters](https://compound.ie/health/medicines/prednisolone/) — **Health**
 - [Pregabalin in Ireland | Calcium channel subunits and nerve signalling](https://compound.ie/health/medicines/pregabalin/) — **Health**
 - [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/) — **Health**
