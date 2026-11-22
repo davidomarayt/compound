@@ -36,6 +36,6 @@ A pharmacist can check whether a medicine suits your symptoms and medical histor
 
 The [HSE advises adults to take separate ibuprofen and paracetamol products at the same time only if their GP advises it](https://www2.hse.ie/medicines/paracetamol/). The HPRA separately authorises [a pharmacy-only product containing both ingredients](https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/41271). That product has its own patient leaflet and directions. Ask a pharmacist or GP about suitability and check the active ingredients on every pack so you can spot overlap.
 
-[Find the Irish patient leaflet for your exact product](/health/medicines/how-to-find-your-patient-information-leaflet/) or [browse the medicines directory](/health/medicines/).
+[Find the Irish patient leaflet for your exact product](/health/medicines/how-to-find-your-patient-information-leaflet-online/) or [browse the medicines directory](/health/medicines/).
 
 *Draft for independent clinical review.*
