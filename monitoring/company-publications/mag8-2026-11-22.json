@@ -5,7 +5,7 @@
   "ticker": "MSFT",
   "company": "Microsoft Corporation",
   "status": "held-for-review",
-  "publication_state": "prepublication_checks",
+  "publication_state": "blocked_by_transient_image_rate_limit",
   "new_articles_published": 0,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/microsoft-buybacks-eps-share-count.md",
@@ -47,9 +47,33 @@
     "validation": [
       "10 focused tests passed",
       "Image processor and article render passed; neutral Compound Research and standard ads loader present",
-      "Second editorial pass corrected headline to attribute effect to share count, not causally to buybacks; period/units/calculations, source/internal links, disclosures and metadata checked"
+      "Second editorial pass corrected headline to attribute effect to share count, not causally to buybacks; period/units/calculations, source/internal links, disclosures and metadata checked",
+      "Exact-head test job passed in both CI attempts; performance/build gate not passed."
     ]
   },
-  "outcome_notes": "No paid LLM API or social posting. Schedule unchanged. Zero counted until fetched live.",
-  "article_sha256": "99622a2277ca69a232d4df5d6f1ed3c7bed184e85ca313eb03ba3bf586841359"
+  "outcome_notes": "Zero published. MSFT draft preserved in PR253 for recovery; no other company substituted because blocker affects shared image build. Temporary Wikimedia rate limiting: recurring task remains enabled. Do not merge until exact-current-head CI and live checks pass. No paid LLM API, social posting or schedule changes.",
+  "article_sha256": "99622a2277ca69a232d4df5d6f1ed3c7bed184e85ca313eb03ba3bf586841359",
+  "publication_attempt_status": "failed",
+  "pull_requests": [
+    {
+      "number": 253,
+      "url": "https://github.com/davidomarayt/compound/pull/253",
+      "head": "2b913f4a502fdea4c1502e2f2194dc426f5203c4",
+      "merged": false
+    }
+  ],
+  "failed_checks": [
+    {
+      "run": 45052830127,
+      "attempt": 1,
+      "job": 137302102293,
+      "result": "HTTP 429 fetching existing BJ image; image preparation failed; full build and performance skipped"
+    },
+    {
+      "run": 45052830127,
+      "attempt": 2,
+      "job": 137302770894,
+      "result": "HTTP 429 fetching existing Tesla_Model_Y_2025_at_Santana_Row_dllu_01.jpg; image preparation failed; full build and performance skipped"
+    }
+  ]
 }
