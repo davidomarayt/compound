@@ -3,8 +3,8 @@
   "company": "Frontline plc",
   "ticker": "FRO",
   "date": "2026-11-22",
-  "status": "ready_for_pr",
-  "publication_state": "local_gates_passed",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to the 11 November factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
   "story_thesis": "Frontline's exceptional spot-tanker rates and profit-linked payout must be assessed after ballast days, vessel-sale proceeds, fleet commitments, debt and shipping cyclicality.",
@@ -58,8 +58,10 @@
     "capture_date": "2017-05-07",
     "description": "VLCC Aktaia at a terminal; representative tanker photograph explicitly not identified as a Frontline vessel",
     "unique_asset": true,
-    "published_image_sha256": "b70517f24d5bfd6ef09a18418143066765e3ba81e4d56d94785f5c088bee67d7",
+    "repository_image_sha256": "b70517f24d5bfd6ef09a18418143066765e3ba81e4d56d94785f5c088bee67d7",
     "dimensions": [1920, 1080],
+    "live_cover_sha256": "d604e0ca0e2cbbe097e74ba384c441edbbd962bb2a983b39ab1b055e6af14f84",
+    "live_cover_dimensions": [4608, 2592],
     "visual_inspection": "passed: authentic topic-specific tanker photograph; vessel identity and representative use stated"
   },
   "gates": {
@@ -70,11 +72,25 @@
     "build": "passed: production-canonical audit build generated 419 articles, 910 tags, 39 pages and 62 tools",
     "render": "passed: canonical, indexability, body, source and internal links, truthful image credit, 1200x675 social image (sha256 18687a6ab3b7564005dc3239cdcc3d7ca63108f9e03cd1b47c2ba6b41c210187), sitemap and finance catalogue inspected",
     "ads": "passed locally: pending-review advertising test passed; committed production config retains client ca-pub-6115783809711785, and the current live article template renders that loader. Exact-page live check remains required after deployment",
-    "ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "ci": "passed on exact final head 6c8667ae9ce4eeed5b8eee1e23a9472763341864 in run 45008093335: test and performance succeeded",
+    "deployment": "passed for merge c2ed91ed48dd79a16c3c9b43fc1179d464a3f5af in site run 45008664920: build, deploy, verify-live, finance discovery and mobile audit succeeded",
+    "live_verification": "passed: article, cover and social image HTTP 200; title, canonical, indexability, SEC links, credit, AdSense loader, sitemap and finance catalogue verified; social image 1200x675"
   },
   "article_sha256": "69535b32168424e5b88f9b4eee9e52aff8f3879207a6e64427ebb162880894b2",
-  "publication": {},
-  "new_articles_published": 0
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/249",
+    "validated_head_sha": "6c8667ae9ce4eeed5b8eee1e23a9472763341864",
+    "merge_commit_sha": "c2ed91ed48dd79a16c3c9b43fc1179d464a3f5af",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/45008093335",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/45008664920",
+    "live_verified_at": "2026-11-22T09:45:46Z",
+    "live_url": "https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/",
+    "live_social_image_url": "https://compound.ie/static/discover/frontline-tanker-rates-dividends-fleet-16x9.webp",
+    "live_social_image_sha256": "18687a6ab3b7564005dc3239cdcc3d7ca63108f9e03cd1b47c2ba6b41c210187",
+    "live_social_image_dimensions": [1200, 675],
+    "standard_ads_loader_verified": true,
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  },
+  "new_articles_published": 1
 }

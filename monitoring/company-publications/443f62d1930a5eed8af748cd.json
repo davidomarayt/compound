@@ -3,8 +3,8 @@
   "company": "Magnera Corporation",
   "ticker": "MAGN",
   "date": "2026-11-22",
-  "status": "ready_for_pr",
-  "publication_state": "local_gates_passed",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to the 11 November factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
   "story_thesis": "Magnera's fiscal 2026 cash generation and debt repayment must be assessed against organic volume decline, merger-adjusted profit, floating-rate exposure and $1.848 billion of debt.",
@@ -55,8 +55,10 @@
     "capture_date": "2017-12-18",
     "description": "Representative non-woven material rolls, explicitly not identified as Magnera product",
     "unique_asset": true,
-    "published_image_sha256": "d37c09da3b21cdab15f4ec3cfd0f76714a56abce6017f8c4c51370502fb33e6b",
+    "repository_image_sha256": "d37c09da3b21cdab15f4ec3cfd0f76714a56abce6017f8c4c51370502fb33e6b",
     "dimensions": [1920, 1309],
+    "live_cover_sha256": "51f4d01f3c4dd1738320c2cfe486224922696569952a5f550d8515b5aca1b634",
+    "live_cover_dimensions": [1920, 1309],
     "visual_inspection": "passed: authentic product-category photograph; no misleading company identification"
   },
   "gates": {
@@ -67,11 +69,25 @@
     "build": "passed: production-canonical audit build generated 419 articles, 910 tags, 39 pages and 62 tools",
     "render": "passed: canonical, indexability, body, source and internal links, truthful image credit, 1200x675 social image (sha256 8bf85c97e2f40fc6a1c08e2738e3132f2a95dc988b03f58d5b4382c720c8ec0e), sitemap and finance catalogue inspected",
     "ads": "passed locally: pending-review advertising test passed; committed production config retains client ca-pub-6115783809711785, and the current live article template renders that loader. Exact-page live check remains required after deployment",
-    "ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "ci": "passed on exact final head 6c8667ae9ce4eeed5b8eee1e23a9472763341864 in run 45008093335: test and performance succeeded",
+    "deployment": "passed for merge c2ed91ed48dd79a16c3c9b43fc1179d464a3f5af in site run 45008664920: build, deploy, verify-live, finance discovery and mobile audit succeeded",
+    "live_verification": "passed: article, cover and social image HTTP 200; title, canonical, indexability, SEC links, credit, AdSense loader, sitemap and finance catalogue verified; social image 1200x675"
   },
   "article_sha256": "d9f8cdd14abe4d4b846a542e923149e9b0b200fe2ef00aeb9289515e690476b6",
-  "publication": {},
-  "new_articles_published": 0
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/249",
+    "validated_head_sha": "6c8667ae9ce4eeed5b8eee1e23a9472763341864",
+    "merge_commit_sha": "c2ed91ed48dd79a16c3c9b43fc1179d464a3f5af",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/45008093335",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/45008664920",
+    "live_verified_at": "2026-11-22T09:45:46Z",
+    "live_url": "https://compound.ie/wealth/magnera-cash-flow-debt-volume/",
+    "live_social_image_url": "https://compound.ie/static/discover/magnera-cash-flow-debt-volume-16x9.webp",
+    "live_social_image_sha256": "8bf85c97e2f40fc6a1c08e2738e3132f2a95dc988b03f58d5b4382c720c8ec0e",
+    "live_social_image_dimensions": [1200, 675],
+    "standard_ads_loader_verified": true,
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  },
+  "new_articles_published": 1
 }
