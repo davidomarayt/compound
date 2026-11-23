@@ -22,7 +22,6 @@ social_image: /static/images/evergreen/weride-robotaxi-unit-economics.jpg
 image_alt: A WeRide GXR robotaxi operating near Ferrari World in Abu Dhabi, photographed in May 2025.
 image_credit: Kk0521 / Wikimedia Commons, CC BY-SA 4.0. WeRide GXR robotaxi photographed 23 May 2025; cropped and resized for publication.
 image_source: https://commons.wikimedia.org/wiki/File:WeRide_Robotaxi_GXR.jpg
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/6/6c/WeRide_Robotaxi_GXR.jpg
 hero_image_alt: A WeRide GXR robotaxi operating near Ferrari World in Abu Dhabi, photographed in May 2025.
 hero_image_credit: Kk0521 / Wikimedia Commons, CC BY-SA 4.0. WeRide GXR robotaxi photographed 23 May 2025; cropped and resized for publication.
 hero_image_source: https://commons.wikimedia.org/wiki/File:WeRide_Robotaxi_GXR.jpg
