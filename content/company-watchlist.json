@@ -20,13 +20,18 @@
       "sector": "Artificial intelligence",
       "market": "United States",
       "tv_symbol": "NASDAQ:ANT",
-      "summary": "Claude AI models, enterprise software and developer APIs. Nasdaq-listed since 19 November 2026.",
+      "summary": "Claude AI models and enterprise APIs; Nasdaq-listed as ANT since 19 November 2026. The 20 November IPO close confirmed a $93.5bn gross Class A share sale and separate $26bn Class N strategic placement; sale proceeds are not revenue.",
       "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
       "website": "https://www.anthropic.com/",
       "historical_private_slug": "anthropic",
       "latest_development": {
+        "date": "2026-11-19",
+        "text": "Nasdaq confirmed on 19 November that Anthropic began public trading under ANT and opened at $111.50 per share. Reuters reported the first session close was $97.17. The $83 issuer offering price on 18 November is a separate allocation price.",
+        "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      },
+      "ipo_closing": {
         "date": "2026-11-20",
-        "text": "Anthropic confirmed on 20 November that its Nasdaq ANT IPO closed at $83 for 1,127,000,000 Class A shares, including the full 147m-share option. Gross public offering proceeds were ~$93.5bn, of which ~$91.6bn went to the issuer; selling stockholders received the remainder. A separate $26bn Class N placement also closed. Gross proceeds are not revenue or profit.",
+        "text": "Actual 20 November IPO closing: 1,127,000,000 Class A shares at $83, including 1,103,351,354 newly issued shares; approximately $93.5bn public gross including the selling holders' portion. Concurrent separate $26bn Class N placement.",
         "source": "https://www.anthropic.com/news/ipo-close"
       }
     },
