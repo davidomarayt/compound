@@ -824,6 +824,13 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
             name = f"{a.slug}-{ratio}.webp"
             destination = target_dir / name
             rendered.save(destination, "WEBP", quality=88, method=6)
+            # This approved Anthropic wordmark has large flat areas: lossy WebP can
+            # compress it below the mandatory 20 kB social-asset QA threshold.
+            # Preserve authentic logo pixels using lossless encoding, not a
+            # generic substitute or a weaker verification threshold.
+            if (a.slug == "anthropic-ipo-2026-prospectus-numbers-valuation"
+                    and ratio == "16x9" and destination.stat().st_size <= 20_000):
+                rendered.save(destination, "WEBP", lossless=True, method=6)
             if cached is not None:
                 cached.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(destination, cached / name)
