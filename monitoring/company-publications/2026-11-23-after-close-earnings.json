@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "status": "merged_pending_deployment",
+  "status": "deployed_verified_live",
   "scan_since_inclusive": "2026-11-20",
   "branch": "claude/clever-babbage-uibieq",
   "initial_head": "51f1362dcda9b2459cb2c958621a2ffefc7268f6",
@@ -41,7 +41,7 @@
           }
         }
       },
-      "status": "prepared"
+      "status": "published_verified_live"
     },
     "CRWD": {
       "url": "https://compound.ie/stocks/crwd/",
@@ -74,7 +74,7 @@
         "period_end": "2026-10-31",
         "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm"
       },
-      "status": "prepared"
+      "status": "published_verified_live"
     },
     "HD": {
       "url": "https://compound.ie/stocks/hd/",
@@ -181,7 +181,34 @@
     "targeted_offline_tests": "27 passed",
     "prior_deployment_44839385963": "all jobs including mobile audit passed",
     "current_deployment_45282479018": "all jobs passed",
-    "full_ci": "Both test and build/performance runs passed on final head 4faf20a4068f588ef1f5f77babec50c08ed6baa9; runs 45290103867,45290095950"
+    "full_ci": "Both test and build/performance runs passed on final head 4faf20a4068f588ef1f5f77babec50c08ed6baa9; runs 45290103867,45290095950",
+    "production_jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-audit",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-live",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-finance-discovery",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
   },
   "new_articles": 0,
   "nvidia_one_off": "Already completed in earlier verified ledger; no duplicate",
@@ -424,5 +451,36 @@
   },
   "hpe_live_accession_present": false,
   "merge_commit": "1a54a622696e5fa657311e039a41807d40cb3857",
-  "deployment_run": 45291333805
+  "deployment_run": 45291333805,
+  "deployment_status": "success",
+  "live_verification": [
+    {
+      "ticker": "a",
+      "url": "https://compound.ie/stocks/a/",
+      "status": 200,
+      "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000082/exhibit991-q426pressrelease.htm",
+      "period": "FY",
+      "fy": 2026,
+      "ad_loader": true,
+      "slots": [],
+      "verified_at": "2026-11-23T23:47:53.316559+00:00"
+    },
+    {
+      "ticker": "crwd",
+      "url": "https://compound.ie/stocks/crwd/",
+      "status": 200,
+      "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm",
+      "period": "Q3",
+      "fy": 2027,
+      "ad_loader": true,
+      "slots": [],
+      "verified_at": "2026-11-23T23:47:58.237006+00:00"
+    }
+  ],
+  "counts": {
+    "manual_stock_updates": 2,
+    "already_current_source_verified": 3,
+    "new_articles": 0
+  },
+  "completed_at": "2026-11-23 23:49:01 UTC"
 }
