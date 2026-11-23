@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-22
+Checked: 2026-11-23
 
 - 499 saved profiles checked against structural and issuer rules.
-- 135 existing company articles; 105 mapped to monitored issuers.
-- 128 pending review items; 15 recorded decisions.
+- 141 existing company articles; 107 mapped to monitored issuers.
+- 134 pending review items; 15 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -109,6 +109,14 @@ Files: `content/wealth/openai-accounting-plugin-bookkeeping-controls-economics.m
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `60065a276b7bd9fb996b4d69`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-perplexity-ai-safety-thresholds-business-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `60365dff6ba25ee3226c33ee`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -165,6 +173,14 @@ Files: `content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `7b4e816108f85d595be72d7e`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/weride-robotaxi-unit-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `8bb520030ff066c827c2d062`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -178,6 +194,14 @@ ID: `917d8a920f4985a8f7625a86`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `9279acb6fc744ac1eacf9814`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/sanmina-zt-cash-conversion.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -202,6 +226,14 @@ ID: `af2dd9fcb66df6b5b3722222`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/openai-astra-law-legal-benchmark-reliability-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `cad5db656a51b4dd498b947a`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -661,7 +693,7 @@ Files: `content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-e
 
 ### ANT · article_review · low
 
-ID: `7ff381933457af85987f0ef5`
+ID: `66bd40d44a2911f3a00e05f0`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
@@ -826,6 +858,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/duke-energy-capital-spending-load-growth.md`, `content/earnings-profiles/duk.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1326160/000132616026000051/duk-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-05
+
+### FE · article_review · low
+
+ID: `4354dfe6e56315607a83f5ae`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/firstenergy-capex-equity-funding.md`, `content/earnings-profiles/fe.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1031296/000103129626000144/fe-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-28
 
 ### GEV · article_review · low
 
@@ -994,6 +1036,16 @@ ID: `48104abec897073954b6b863`
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/microsoft-ai-capex-cash-flow.md`, `content/earnings-profiles/msft.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm · Q1 FY2027 · period end 2026-09-30 · filed 2026-10-28
+
+### MSFT · article_review · low
+
+ID: `731126de4ca5b95b39a3d6ff`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/microsoft-buybacks-eps-share-count.md`, `content/earnings-profiles/msft.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm · Q1 FY2027 · period end 2026-09-30 · filed 2026-10-28
 
