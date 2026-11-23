@@ -68,7 +68,7 @@
       "company": "Anthropic",
       "slug": "anthropic",
       "action": "substantive_canonical_update",
-      "event_date": "2026-11-20",
+      "event_date": "2026-11-19",
       "article_path": "content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md",
       "story_fingerprint": "2026-11-20-anthropic-closed-ipo-83-1127m-class-a-issuer-vs-selling-and-26bn-class-n-correct-older-prospectus",
       "primary_source_urls": [
@@ -85,7 +85,8 @@
         "313,253,007 Class N at $83 ≈ $26bn, placement not registered public Class A and included in $119.5bn total transaction",
         "~$117.58bn issuer gross combining its Class A and Class N; note before costs and no interpretation as profits/revenue",
         "Preserved 10–16 Nov indicative terms only explicitly as dated historical forecast sensitivity, not current",
-        "Linked to listed ANT stock hub; added stock-ant tag; original date 16 Nov retained"
+        "Linked to listed ANT stock hub; added stock-ant tag; original date 16 Nov retained",
+        "Ledger event_date is 19 Nov Nasdaq listing; update_event_date 20 Nov official IPO closing; preserves existing tested public-listing hub milestone and separates actual financial event."
       ],
       "canonical_url": "https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
       "profile_url": "https://compound.ie/stocks/ant/",
@@ -98,7 +99,8 @@
       "social_image_verified": false,
       "ads_presence_verified": false,
       "editorial_review_status": "pending",
-      "human_reviewed": false
+      "human_reviewed": false,
+      "update_event_date": "2026-11-20"
     },
     {
       "company": "LEGO Group",
