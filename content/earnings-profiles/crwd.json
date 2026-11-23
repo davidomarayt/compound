@@ -1,34 +1,34 @@
 {
   "cik": 1535527,
-  "company": "CrowdStrike",
+  "company": "CrowdStrike Holdings, Inc.",
   "latest": {
-    "accession": "0001535527-26-000031",
-    "filed": "2026-08-27",
+    "accession": "0001535527-26-000038",
+    "filed": "2026-11-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 0.01,
-        "prior_year": -0.07,
+        "current": 0.02,
+        "prior_year": -0.03,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 5306000,
-        "prior_year": -70153000,
+        "current": 24856000,
+        "prior_year": -26776000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1470897000,
-        "prior_year": 1168952000,
+        "current": 1583419000,
+        "prior_year": 1234244000,
         "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000031/crwd-20260731.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000031/crwd-20260731.htm"
+    },
+    {
+      "accession": "0001535527-26-000038",
+      "filed": "2026-11-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.02,
+          "prior_year": -0.03,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 24856000,
+          "prior_year": -26776000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1583419000,
+          "prior_year": 1234244000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CRWD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-23"
 }
