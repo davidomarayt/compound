@@ -58,18 +58,16 @@ Competition matters too. A laboratory has an incentive to disclose enough to inf
 
 ## A transparent worked example of the cost, not a forecast
 
-Consider a hypothetical laboratory evaluating two launch approaches:
+Consider a hypothetical company adding a dedicated evaluation team before a large-model release. The following assumptions are **not OpenAI costs**:
 
-| Illustrative assumption | Faster release | Extra safety gate |
-|---|---:|---:|
-| Evaluation staff | 12 people | 18 people |
-| Fully loaded monthly cost per person | €15,000 | €15,000 |
-| Extra work before deployment | None | 2 months |
-| **Incremental staffing cost** | **€0** | **€540,000** |
+| Illustrative assumption | Value |
+|---|---:|
+| Additional evaluation specialists | 6 |
+| Fully loaded monthly cost per specialist | €15,000 |
+| Additional evaluation period | 2 months |
+| **Incremental staffing cost** | **€180,000** |
 
-The extra €540,000 is **6 additional people × €15,000 × 2 months, plus the original 12-person team's two months of additional work?** No: only comparing the staffing uplift would be €180,000. A complete two-month postponement with all 18 people costs €540,000 gross, but it is not necessarily all *incremental* to an existing budget. This distinction is central to evaluating any proposed pause.
-
-For a more directly comparable scenario, **six incremental evaluation specialists employed for two months at €15,000 monthly cost create €180,000 in additional staffing expense**. That excludes compute, external audits, delayed revenue, avoided failures and the work those specialists might otherwise perform. It is a hypothetical sensitivity calculation, not OpenAI spending guidance.
+The arithmetic is **6 × €15,000 × 2 = €180,000**. It excludes extra compute, external audits, delayed revenue, avoided failures and the work those specialists might otherwise perform. An existing employee's normal salary need not represent incremental cash cost, and a two-month evaluation period does not necessarily mean delaying the whole product launch.
 
 A real economic assessment would also ask whether a later launch improves reliability enough to reduce refund costs, operational interruptions or the number of human reviewers customers need. Without those numbers, there is no defensible single “cost of AI safety” estimate.
 
