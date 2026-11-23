@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 428 published articles and guides, 69 tools,
+**Included:** 431 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -81,6 +81,7 @@ For the complete register (including 510+ company profiles), open
 - [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/) — **Wealth**
 - [Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline](https://compound.ie/wealth/caterpillar-margin-growth/) — **Wealth**
 - [CEG vs SRESS in Ireland: which solar export route fits your project?](https://compound.ie/wealth/ceg-vs-sress-ireland/) — **Wealth**
+- [Census 2027 Jobs Open: What the €3,000 Eight-Week Role Involves](https://compound.ie/news/census-2027-field-support-officer-jobs/) — **Wealth**
 - [Cetirizine in Ireland: what it’s used for and can it make you drowsy?](https://compound.ie/health/medicines/cetirizine/) — **Health**
 - [Changing Jobs and Pension Transfers in Ireland](https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/) — **Wealth**
 - [ChatGPT Enterprise Is on AWS Marketplace. Will Easier Buying Make OpenAI Stickier?](https://compound.ie/wealth/openai-aws-marketplace-enterprise-procurement-economics/) — **Wealth**
@@ -201,6 +202,7 @@ For the complete register (including 510+ company profiles), open
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/) — **Wealth**
 - [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/) — **Wealth**
 - [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/) — **Wealth**
+- [Ireland’s Poultry Housing Order Is Now in Force: What Backyard Hen Owners Must Do](https://compound.ie/news/ireland-poultry-housing-order-bird-flu-2026/) — **Wealth**
 - [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/) — **Life**
 - [Irish Employment Hits a Record, but 130,200 Part-Time Workers Want More Hours](https://compound.ie/news/ireland-employment-q3-2026-underemployment/) — **Wealth**
 - [Irish EV Buyers Put Running Costs First — and Home Charging Matters More](https://compound.ie/news/irish-ev-running-costs-home-charging-2026/) — **Wealth**
@@ -262,6 +264,7 @@ For the complete register (including 510+ company profiles), open
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/) — **Wealth**
 - [Netflix Earnings: Profit Rises, but the Growth Story Gets Harder](https://compound.ie/wealth/netflix-earnings-growth-advertising-outlook/) — **Wealth**
 - [New Irish Credit Rules Start 20 November: What Changes for BNPL and Loans](https://compound.ie/news/ireland-consumer-credit-bnpl-rules-november-2026/) — **Wealth**
+- [New Irish Family-Law Forms Apply Today: What Changes for Financial Disclosure](https://compound.ie/news/ireland-family-law-forms-affidavit-means-2026/) — **Wealth**
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) — **Wealth**
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/) — **Wealth**
 - [Nike's Margin Is Improving. The Demand Turnaround Hasn't Arrived](https://compound.ie/wealth/nike-margin-demand-turnaround/) — **Wealth**
