@@ -17,8 +17,8 @@ tags:
 - stocks
 - company-research
 - fe
-image: /static/images/evergreen/firstenergy-capex-equity-funding.jpg
-social_image: /static/images/evergreen/firstenergy-capex-equity-funding.jpg
+image: /static/images/evergreen/firstenergy-capex-equity.jpg
+social_image: /static/images/evergreen/firstenergy-capex-equity.jpg
 image_alt: High-voltage electricity transmission towers and lines photographed in May 2023; a representative grid image, not identified as a FirstEnergy asset.
 image_credit: Foto3821 / Wikimedia Commons, CC0 1.0. Representative electricity-grid photograph captured 16 May 2023; cropped and resized for publication.
 image_source: https://commons.wikimedia.org/wiki/File:Electric_transmission_power_tower.jpg
