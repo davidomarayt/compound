@@ -7,9 +7,9 @@
   "target_new_articles": 3,
   "new_article_count_prepared": 2,
   "canonical_updates_prepared": 1,
-  "confirmed_live_new_articles": 0,
-  "confirmed_updated_canonicals": 0,
-  "status": "prepublication_scoped_branch_pending_test_performance_and_deployment",
+  "confirmed_live_new_articles": 2,
+  "confirmed_updated_canonicals": 1,
+  "status": "production_live_verified_2026-11-23",
   "ads_policy": "Normal advertising from publication independent of human review; consent/CMP unchanged; verify actual markup, not fill",
   "prior_publication_recovery": {
     "checked_dates": [
@@ -55,14 +55,17 @@
       "canonical_url": "https://compound.ie/wealth/openai-perplexity-ai-safety-thresholds-business-economics/",
       "profile_url": "https://compound.ie/companies/openai/",
       "profile_update": "2026-11-22 company research proposal with no false adopted threshold",
-      "status": "prepared_pending_ci",
-      "deployment_status": "not_deployed",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
+      "status": "new_article_published_live_verified",
+      "deployment_status": "deployed_github_pages_verified",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
       "editorial_review_status": "pending",
-      "human_reviewed": false
+      "human_reviewed": false,
+      "company_profile_backlink_verified": true,
+      "production_live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+      "verified_at": "2026-11-23T07:49:59Z"
     },
     {
       "company": "Anthropic",
@@ -94,15 +97,18 @@
       "profile_url": "https://compound.ie/stocks/ant/",
       "profile_update": "Updated listed ANT record to Nov 20 verified issuer closing results",
       "live_required_fingerprint": "The 20 November close confirmed an $83 offering price and 1.127 billion Class A shares.",
-      "status": "prepared_pending_ci",
-      "deployment_status": "not_deployed",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
+      "status": "updated_existing_canonical_live_verified",
+      "deployment_status": "deployed_github_pages_verified",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "update_event_date": "2026-11-20"
+      "update_event_date": "2026-11-20",
+      "company_profile_backlink_verified": true,
+      "production_live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+      "verified_at": "2026-11-23T07:49:59Z"
     },
     {
       "company": "LEGO Group",
@@ -130,14 +136,38 @@
       "canonical_url": "https://compound.ie/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/",
       "profile_url": "https://compound.ie/companies/lego/",
       "profile_update": "Date verified 21 Nov F1 race and 18 Nov F1 2027 announced product dates; no fabricated ROI",
-      "status": "prepared_pending_ci",
-      "deployment_status": "not_deployed",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
+      "status": "new_article_published_live_verified",
+      "deployment_status": "deployed_github_pages_verified",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
       "editorial_review_status": "pending",
-      "human_reviewed": false
+      "human_reviewed": false,
+      "company_profile_backlink_verified": true,
+      "production_live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+      "verified_at": "2026-11-23T07:49:59Z"
     }
-  ]
+  ],
+  "production_deployment": {
+    "commit_sha": "5a8a0ebb0e74d3e915f03f0722695f953ed3ff13",
+    "workflow_run_id": 45133222073,
+    "workflow_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+    "status": "success",
+    "deploy_completed_at": "2026-11-23T07:48:14Z",
+    "live_audit_completed_at": "2026-11-23T07:49:59Z",
+    "live_audit_job_id": 137555004896,
+    "source": "GitHub Pages site > mobile-audit > scripts/verify_private_company_live.py; actual HTTP production HTML, cover, OG/Twitter assets, ad loader and company profile backlinks"
+  },
+  "release_gate": {
+    "pull_request_url": "https://github.com/davidomarayt/compound/pull/257",
+    "head_sha": "99ae1957b984b1ea7eb3d9065fdd344adde5066e",
+    "ci_run_url": "https://github.com/davidomarayt/compound/actions/runs/45132238761",
+    "test": "success",
+    "performance": "success",
+    "merged_at": "2026-11-23T07:43:48Z",
+    "base_reconciled": true,
+    "protected_branch": false
+  },
+  "production_verification_note": "Direct independent GitHub Pages runner fetched 3 unique production canonicals, actual documentary covers and Open Graph/Twitter WebP images, profile backlinks and AdSense loader. Separate external web reader returned stale or inaccessible results; runner evidence is positive and recorded. No ad-fill claim. Exactly 2 new articles and 1 existing canonical update; no new Anthropic duplicate."
 }
