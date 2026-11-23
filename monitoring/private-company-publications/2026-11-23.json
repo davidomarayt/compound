@@ -87,7 +87,7 @@
         "Preserved 10–16 Nov indicative terms only explicitly as dated historical forecast sensitivity, not current",
         "Linked to listed ANT stock hub; added stock-ant tag; original date 16 Nov retained",
         "Ledger event_date is 19 Nov Nasdaq listing; update_event_date 20 Nov official IPO closing; preserves existing tested public-listing hub milestone and separates actual financial event.",
-        "Replaced old nonphotographic logo cover with distinct genuine licensed Nasdaq tower photograph after CI performance detected missing existing OG image; no required test weakened.",
+        "Preserved the existing authentic Claude wordmark cover; a missing OG/Twitter WebP is derived from the same approved logo raster during the required render step, not from a Nasdaq photograph or synthetic image. No required test was weakened.",
         "Mandatory existing test pins authentic Claude logo without new hero_image_url; missing social asset addressed by derived local WebP from existing approved raster, no test bypass."
       ],
       "canonical_url": "https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
