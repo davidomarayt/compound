@@ -86,7 +86,7 @@ LEGO is **privately held**, and the race announcement offers no new public share
 
 This is a more tangible consumer-company story than a generic claim about a rising F1 audience. LEGO has a defined 2027 product portfolio and a live 2026 activation. Those decisions expose a business model built around licensed intellectual property, merchandising and retail execution.
 
-The [LEGO company research hub](/companies/lego/) offers related context. Unlike the [OpenAI model-safety economics analysis](/wealth/openai-perplexity-ai-safety-thresholds-business-economics/), this story is about consumer conversion rather than technology standards.
+The [LEGO company research hub](/companies/lego/) keeps this launch, its supporting evidence and later financial disclosures connected to a single company profile. Related coverage of [Stripe's distribution through a bank's app](/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/) illustrates a useful contrast: both businesses seek lower-friction customer acquisition, but neither partnership has disclosed a reliable campaign-specific profit figure.
 
 ## The next figures worth checking
 
