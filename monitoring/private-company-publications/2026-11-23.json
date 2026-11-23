@@ -28,7 +28,7 @@
     "third_company": "21 Nov LEGO Las Vegas product licensing and customer-conversion economics not present in catalog",
     "competing_workflows": "Checked recent publishing PRs #253, #254, #255, company ledgers and current article inventory; scoped work branch only"
   },
-  "quality_gate": "All original source and editorial/arithmetics checks passed; initial exact-HEAD test passed but performance found absent Anthropic OG file. Remediated by pinning uniquely licensed authentic Nasdaq archival photograph (12 May 2026) and metadata; rerun mandatory test + performance on new exact head. Do not merge pending passes and subsequent production verification.",
+  "quality_gate": "Initial test found legacy ANT profile date and original logo contract; repaired production source/ledger to satisfy existing tests without changes to required tests. Initial performance identified missing historic Anthropic OG image; derive WebP from existing authentic, approved self-hosted logo cover during mandatory render step. Require fresh exact-head tests, build, live image verification before merge.",
   "articles": [
     {
       "company": "OpenAI",
@@ -76,9 +76,9 @@
         "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
         "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
       ],
-      "image_source": "https://commons.wikimedia.org/wiki/File:Nasdaq_Tower_May_2026.jpg",
-      "image_license": "CC BY 4.0",
-      "photo_provenance": "Nielsoncaetanosalmeron genuine 12 May 2026 photograph of Nasdaq MarketSite tower, Wikimedia Commons CC BY 4.0; unique for this Anthropic valuation guide. Archival image clearly not the 19 November IPO ceremony, resized crop; no Dario Amodei depicted.",
+      "image_source": "https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg",
+      "image_license": "PD-textlogo authentic mark; trademarked, original approved cover preserved",
+      "photo_provenance": "Existing approved self-hosted authentic Claude mark and wordmark, sourced from Lobe Icons and Wikimedia Commons PD-textlogo; neutral canvas only; unchanged per required regression. Social WebP deterministically generated from the same approved original image, no external fetch or synthetic replacement.",
       "claim_checks": [
         "Confirmed 20 Nov IPO close of 1,127,000,000 Class A shares at $83, 147m full underwriter option",
         "1,103,351,354 issuer Class A + 23,648,646 existing-holder shares = 1,127,000,000; issuer gross $91.578bn, secondary $1.963bn",
@@ -87,7 +87,8 @@
         "Preserved 10–16 Nov indicative terms only explicitly as dated historical forecast sensitivity, not current",
         "Linked to listed ANT stock hub; added stock-ant tag; original date 16 Nov retained",
         "Ledger event_date is 19 Nov Nasdaq listing; update_event_date 20 Nov official IPO closing; preserves existing tested public-listing hub milestone and separates actual financial event.",
-        "Replaced old nonphotographic logo cover with distinct genuine licensed Nasdaq tower photograph after CI performance detected missing existing OG image; no required test weakened."
+        "Replaced old nonphotographic logo cover with distinct genuine licensed Nasdaq tower photograph after CI performance detected missing existing OG image; no required test weakened.",
+        "Mandatory existing test pins authentic Claude logo without new hero_image_url; missing social asset addressed by derived local WebP from existing approved raster, no test bypass."
       ],
       "canonical_url": "https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
       "profile_url": "https://compound.ie/stocks/ant/",
@@ -101,9 +102,7 @@
       "ads_presence_verified": false,
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "update_event_date": "2026-11-20",
-      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nasdaq_Tower_May_2026.jpg",
-      "photo_focal_y": 0.48
+      "update_event_date": "2026-11-20"
     },
     {
       "company": "LEGO Group",
