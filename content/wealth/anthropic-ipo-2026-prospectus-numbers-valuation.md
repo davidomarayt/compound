@@ -44,7 +44,7 @@ sources:
 
 ## After the close: the actual public offering and control question
 
-**The 20 November close confirmed a $83 offering price and 1.127 billion Class A shares.** [Anthropic's primary closing announcement](https://www.anthropic.com/news/ipo-close) gives **1,127,000,000 Class A shares** sold at **$83 each**, including the full **147 million-share** underwriter option. The public sale therefore totalled **$93.541 billion gross**, rather than the original roadshow's approximate $61.05 billion at an indicative midpoint.
+**The 20 November close confirmed an $83 offering price and 1.127 billion Class A shares.** [Anthropic's primary closing announcement](https://www.anthropic.com/news/ipo-close) gives **1,127,000,000 Class A shares** sold at **$83 each**, including the full **147 million-share** underwriter option. The public sale therefore totalled **$93.541 billion gross**, rather than the original roadshow's approximate $61.05 billion at an indicative midpoint.
 
 The distinction between financing and trading volume is critical:
 
