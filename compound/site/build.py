@@ -808,7 +808,12 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
     raw_cache = os.environ.get("COMPOUND_ARTICLE_CACHE_DIR", "").strip()
     cached = None
     if raw_cache:
-        digest = hashlib.sha256(source.read_bytes() + b"discover-webp-v1-88-6").hexdigest()
+        # Only invalidate the cached derivative for the approved Claude logo;
+        # all other documentary photographs retain their verified image cache.
+        recipe = (b"discover-webp-v2-claude-logo-lossless"
+                  if a.slug == "anthropic-ipo-2026-prospectus-numbers-valuation"
+                  else b"discover-webp-v1-88-6")
+        digest = hashlib.sha256(source.read_bytes() + recipe).hexdigest()
         cached = Path(raw_cache).resolve() / "discover" / digest[:2] / digest
         names = [f"{a.slug}-{ratio}.webp" for ratio in DISCOVER_IMAGE_SIZES]
         if all((cached / name).is_file() and (cached / name).stat().st_size > 0
