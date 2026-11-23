@@ -28,7 +28,7 @@
     "third_company": "21 Nov LEGO Las Vegas product licensing and customer-conversion economics not present in catalog",
     "competing_workflows": "Checked recent publishing PRs #253, #254, #255, company ledgers and current article inventory; scoped work branch only"
   },
-  "quality_gate": "Source dates, original research, arithmetic, photo provenance and canonical duplication independently checked. Exact-head CI, rendered social/cover/ad/backlink QA and Pages production verification pending. Never merge before test and performance success.",
+  "quality_gate": "Source dates, original research, arithmetic, photo provenance and canonical duplication independently checked. Exact-head CI, rendered social/cover/ad/backlink QA and Pages production verification pending. Never merge before test and performance success. Source photo focal point checked against 3,000x4,000 archival portrait to retain head and subject in 16:9 crop.",
   "articles": [
     {
       "company": "OpenAI",
@@ -43,7 +43,7 @@
       ],
       "image_source": "https://commons.wikimedia.org/wiki/File:Jakub_Pachocki_in_2012.jpg",
       "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Jakub_Pachocki_in_2012.jpg",
-      "photo_focal_y": 0.4,
+      "photo_focal_y": 0.15,
       "image_license": "CC BY 2.0",
       "photo_provenance": "Izabela Majewska / ICPCNews; genuine 16 May 2012 Warsaw ICPC portrait of November 2026 essay author Jakub Pachocki. Clearly labelled archival; source verified CC BY 2.0; resized crop.",
       "claim_checks": [
