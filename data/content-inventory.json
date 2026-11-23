@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-22",
+  "snapshot_date": "2026-11-23",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -442,7 +442,7 @@
         "status": "published"
       },
       {
-        "title": "Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test",
+        "title": "Anthropic IPO Economics: $83 Final Price, $93.5 Billion Public Sale and Compute Commitments",
         "url": "/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
         "source": "content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md",
         "kind": "Editorial article / guide",
@@ -454,6 +454,7 @@
           "wealth",
           "company-research",
           "company-anthropic",
+          "stock-ant",
           "anthropic",
           "ipo",
           "ai",
@@ -3872,6 +3873,29 @@
         "status": "published"
       },
       {
+        "title": "LEGO's Las Vegas F1 Race Was a Marketing Spectacle. Can the 2027 Sets Convert It Into Sales?",
+        "url": "/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/",
+        "source": "content/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "lego-formula-one-las-vegas-race-2027-product-licensing-economics",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-lego",
+          "lego",
+          "formula-one",
+          "licensing",
+          "marketing",
+          "toys",
+          "retail"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Lercanidipine in Ireland | Calcium channel blockade and exposure-sensitive interactions",
         "url": "/health/medicines/lercanidipine/",
         "source": "content/health/lercanidipine.md",
@@ -5103,6 +5127,29 @@
           "lab-ai",
           "ai-benchmarks",
           "science"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI Wants a Shared AI Capability Meter. Could It Change the Economics of the Model Race?",
+        "url": "/wealth/openai-perplexity-ai-safety-thresholds-business-economics/",
+        "source": "content/wealth/openai-perplexity-ai-safety-thresholds-business-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-perplexity-ai-safety-thresholds-business-economics",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "ai-safety",
+          "model-evaluation",
+          "compute",
+          "enterprise-ai",
+          "regulation"
         ],
         "status": "published"
       },
