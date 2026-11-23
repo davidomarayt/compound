@@ -11,9 +11,10 @@ editorial_review_status: pending
 summary: "Updated 23 November: Anthropic completed its $83-priced IPO of 1.127 billion public Class A shares, plus a separate $26bn Class N placement. The original SEC prospectus-era valuation and compute analysis remains dated and transparently labelled."
 meta_description: "Anthropic completed its $83 IPO of 1.127bn Class A shares on 20 November 2026. Review issuer versus secondary proceeds, investor risks and historical compute commitments."
 tags: [wealth, company-research, company-anthropic, stock-ant, anthropic, ipo, ai, valuation, investing, stock-market, prospectus]
-hero_image_alt: "Official Claude AI wordmark with coral-orange starburst symbol and black Claude lettering, shown on a neutral background"
-hero_image_credit: "Claude logo by Anthropic; authentic symbol and wordmark assets distributed through Lobe Icons; PD-textlogo and trademarked. Independent editorial use; no endorsement implied."
-hero_image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
+hero_image_url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Nasdaq_Tower_May_2026.jpg
+hero_image_alt: "Nasdaq MarketSite tower in Times Square photographed on 12 May 2026; documentary archival photograph, not the 19 November 2026 Anthropic listing ceremony"
+hero_image_credit: "Nielsoncaetanosalmeron / Wikimedia Commons, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); photographed 12 May 2026 during network upfronts; archival resized crop"
+hero_image_source: https://commons.wikimedia.org/wiki/File:Nasdaq_Tower_May_2026.jpg
 require_pinned_hero: true
 image: /static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg
 social_image: /static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg
@@ -21,6 +22,8 @@ image_alt: "Official Claude AI logo: coral-orange starburst and black Claude wor
 image_credit: "Claude brand logo by Anthropic; self-hosted original-shape artwork via Lobe Icons, also documented on Wikimedia Commons (PD-textlogo; trademarked)"
 image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
 sources:
+- title: "Wikimedia Commons — real May 2026 Nasdaq MarketSite documentary photograph, Nielsoncaetanosalmeron, CC BY 4.0"
+  url: https://commons.wikimedia.org/wiki/File:Nasdaq_Tower_May_2026.jpg
 - title: "Anthropic official IPO closing announcement, 20 November 2026, actual share counts and placement"
   url: https://www.anthropic.com/news/ipo-close
 - title: "SEC — Anthropic amended prospectus filed 17 November 2026"
@@ -253,4 +256,4 @@ Continue with the [Anthropic stock research profile](/stocks/ant/), our [earlier
 
 *Original prospectus-era research checked 16 November 2026; factual closing update checked 23 November 2026 (Europe/Dublin). Older indicated $70–$78 pricing and 825m-share figures are retained explicitly as historical proposal assumptions, not live terms. SEC interim data include unaudited 2026 results. Scenario tables are illustrative, not Anthropic guidance or present ANT share prices.*
 
-*Cover: authentic Claude symbol and wordmark by Anthropic, with artwork sourced from [Lobe Icons](https://github.com/lobehub/lobe-icons/tree/master/packages/static-png/light) and independently documented on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg) (PD-textlogo; trademark rights remain with Anthropic). Artwork colours and proportions are unchanged; the neutral background is editorial layout. Compound.ie is not affiliated with or endorsed by Anthropic.*
+*Cover and social preview: real photograph of the Nasdaq MarketSite tower, taken by Nielsoncaetanosalmeron on 12 May 2026 and published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nasdaq_Tower_May_2026.jpg). Adapted archival crop. It does not depict the 19 November 2026 Anthropic listing ceremony; Compound.ie is not affiliated with or endorsed by Anthropic or Nasdaq.*
