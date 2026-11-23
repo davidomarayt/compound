@@ -1,0 +1,35 @@
+{
+  "story_fingerprint": "fce0645bd5042b40dc22f2df",
+  "company": "FirstEnergy Corp.",
+  "ticker": "FE",
+  "date": "2026-11-23",
+  "status": "prepared",
+  "publication_state": "pre_merge_verified",
+  "publication_kind": "new_analysis",
+  "story_thesis": "FirstEnergy's larger regulated capital plan must be assessed against construction-cost recovery, incremental equity financing and per-share earnings delivery.",
+  "article_path": "content/wealth/firstenergy-capex-equity-funding.md",
+  "canonical_url": "https://compound.ie/wealth/firstenergy-capex-equity-funding/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000148/fe-20261120.htm",
+    "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000148/ex991-investorpresentati.htm",
+    "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000144/fe-20260930.htm"
+  ],
+  "identity": {"issuer": "FirstEnergy Corp.", "CIK": 1031296, "event_accession": "0001031296-26-000148", "quarterly_accession": "0001031296-26-000144", "fiscal_period": "Q3 2026 and 2026-2030 plan", "period_end": "2026-09-30", "event_date": "2026-11-20", "currency": "USD", "units": "millions or billions except percentages"},
+  "candidate_review": {"screened_companies": ["FirstEnergy Corp.", "Sanmina Corporation", "WeRide Inc.", "Matthews International Corporation", "BitFuFu Inc.", "GreenTree Hospitality Group Ltd.", "The Buckle, Inc.", "Fluence Energy, Inc."], "selection_reason": "Fresh regulated-utility capital allocation question with a filed commission order response and independently testable funding bridge; distinct from recent company coverage."},
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, actual content, the past 14 days, company-publication records, open and merged PRs, live-site intent and concurrent Compound/FairPath records. The FE profile is maintained, but no article answers this capex-equity question and no active attempt overlaps it.",
+  "claim_checks": [
+    {"claim": "$38bn 2026-2030 investment plan, up from $36bn; $2.8bn equity/equity-like need, up from $2bn", "source_indexes": [0,1], "location_or_arithmetic": "8-K Item 7.01/8.01 and presentation key updates", "result": "verified in separate claim pass"},
+    {"claim": "Maidsville and solar total $2.7bn; about $2bn falls in plan; 1,200MW CCGT and 70MW solar", "source_indexes": [1], "location_or_arithmetic": "Presentation order summary and investment slides", "result": "verified as management plan"},
+    {"claim": "Incremental $0.8bn equity equals 40% of incremental $2bn plan; total equity equals 7.4% of $38bn", "source_indexes": [0,1], "location_or_arithmetic": "0.8 / 2.0 = 40%; 2.8 / 38 = 7.37%", "result": "verified Compound calculation"},
+    {"claim": "Nine-month operating cash $2.058bn, investing outflow $4.579bn and financing inflow $2.554bn", "source_indexes": [2], "location_or_arithmetic": "10-Q cash-flow summary; investing includes more than project capex", "result": "verified in separate claim pass"},
+    {"claim": "$48m cash, about $7.6bn external holding-company debt and $5.5bn working-capital deficit", "source_indexes": [2], "location_or_arithmetic": "10-Q liquidity section", "result": "verified in separate claim pass"},
+    {"claim": "11.1% rate-base CAGR and upper half of 7%-9% Core EPS CAGR", "source_indexes": [0,1], "location_or_arithmetic": "Management non-GAAP target, explicitly not a Compound forecast", "result": "verified as guidance"}
+  ],
+  "fact_check_notes": ["Construction surcharge recovery is distinguished from final in-service base-rate recovery.", "Potential DOE financing is described as sought, not approved.", "Core EPS is labelled non-GAAP and unreconciled forward guidance."],
+  "unresolved_material_claims": [],
+  "image": {"source": "https://commons.wikimedia.org/wiki/File:Electric_transmission_power_tower.jpg", "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Electric_transmission_power_tower.jpg", "photographer": "Foto3821", "license": "CC0 1.0", "capture_date": "2023-05-16", "description": "Representative electricity transmission towers, not identified as FirstEnergy assets", "unique_asset": true, "repository_image_sha256": "496893da8e1bd3c5aeb04f8aad9b01b11be61b5646bcb80b68909805d80c30ae", "dimensions": [1920,1280], "visual_inspection": "passed"},
+  "gates": {"source_verification": "passed", "duplicate_originality": "passed", "editorial_qa": "passed: accuracy, relevance, originality, readability, metadata, links, disclosures and ad placement independently rechecked", "offline_tests": "passed: 415 tests and 2 subtests; focused publication suite 47 tests", "build": "passed with production canonical base; 428 articles rendered", "render": "passed: canonical, indexable HTML, licensed cover, 1200x675 social image, sitemap and finance catalogue verified", "ads": "passed: standard ca-pub-6115783809711785 loader present", "ci": "pending", "deployment": "pending", "live_verification": "pending"},
+  "local_validation": {"article_sha256": "bcacab9f52241beecb36c9543d450de2087074a2956bdc401852336b8a22ced7", "social_image_sha256": "8b9f008967f6fd68798403d14f378f176b9dbd857239ecdd478258576953f4b9", "social_image_dimensions": [1200,675], "validated_at": "2026-11-23T10:04:00Z"},
+  "publication": {"pull_request": null, "validated_head_sha": null, "merge_commit_sha": null, "ci_run": null, "deployment_run": null, "live_verified_at": null, "live_url": null, "live_social_image_url": null, "standard_ads_loader_verified": false},
+  "new_articles_published": 0
+}

@@ -1,0 +1,32 @@
+{
+  "story_fingerprint": "f29f8cdaa84fbedf5639d3e0",
+  "company": "WeRide Inc.",
+  "ticker": "WRD",
+  "date": "2026-11-23",
+  "status": "prepared",
+  "publication_state": "pre_merge_verified",
+  "publication_kind": "new_analysis",
+  "story_thesis": "WeRide's overseas and Robotaxi growth must be tested against the limited disclosure behind local unit economics, consolidated R&D costs, losses and cash runway.",
+  "article_path": "content/wealth/weride-robotaxi-unit-economics.md",
+  "canonical_url": "https://compound.ie/wealth/weride-robotaxi-unit-economics/",
+  "sources": ["https://www.sec.gov/Archives/edgar/data/1867729/000110465926130438/tm2630019d1_ex99-1.htm", "https://www.sec.gov/Archives/edgar/data/1867729/000110465926047323/wrd-20251231x20f.htm", "https://www.sec.gov/Archives/edgar/data/1867729/000110465926107261/wrd-20260914xex99d1.htm"],
+  "identity": {"issuer": "WeRide Inc.", "CIK": 1867729, "results_accession": "0001104659-26-130438", "annual_accession": "0001104659-26-047323", "fiscal_year": 2026, "fiscal_period": "Q3", "period_end": "2026-09-30", "release_date": "2026-11-20", "currency": "CNY/RMB with company-provided USD translations", "accounting": "IFRS"},
+  "candidate_review": {"screened_companies": ["FirstEnergy Corp.", "Sanmina Corporation", "WeRide Inc.", "Matthews International Corporation", "BitFuFu Inc.", "GreenTree Hospitality Group Ltd.", "The Buckle, Inc.", "Fluence Energy, Inc."], "selection_reason": "Fresh autonomous-mobility monetisation question with company-specific licensed product photography and a quantifiable gap between local unit claims and consolidated economics."},
+  "duplicate_check": "Checked topic/index inventories, actual content, past 14 days, company-publication records, live-site intent, open and merged PRs and concurrent workflows. No WeRide article/profile or active unit-economics attempt exists; no /stocks/wrd/ URL was invented.",
+  "claim_checks": [
+    {"claim": "Q3 revenue RMB321.5m +88%, gross profit RMB138.1m and margin 43.0% vs 32.9%", "source_indexes": [0], "location_or_arithmetic": "Q3 release unaudited IFRS statements", "result": "verified in separate claim pass"},
+    {"claim": "Overseas revenue RMB146.9m, 45.7% of total, +171.5%; more than 90% of Robotaxi revenue overseas", "source_indexes": [0], "location_or_arithmetic": "Operational highlights and business update", "result": "verified in separate claim pass"},
+    {"claim": "Robotaxi revenue above RMB100m is at least 31% of total", "source_indexes": [0], "location_or_arithmetic": "100 / 321.5 = 31.1%; deliberately stated as threshold, not exact share", "result": "verified Compound calculation"},
+    {"claim": "Guangzhou positive unit economics, 21 average daily orders and 33 one-day peak", "source_indexes": [0], "location_or_arithmetic": "Company operational claim; release gives no contribution definition", "result": "verified and qualified as management claim"},
+    {"claim": "Q3 R&D RMB465.3m equals about 3.4x gross profit and 145% of revenue", "source_indexes": [0], "location_or_arithmetic": "465.262 / 138.103 = 3.37; 465.262 / 321.499 = 144.7%", "result": "verified Compound calculation"},
+    {"claim": "IFRS loss RMB310.0m vs RMB307.3m; adjusted loss RMB336.5m vs RMB275.6m; EBITDA -RMB246.4m", "source_indexes": [0], "location_or_arithmetic": "Q3 statements and reconciliations", "result": "verified with IFRS/non-IFRS separation"},
+    {"claim": "Liquidity bundle RMB4.663bn; rough 3.5-year stress test using 2025 RMB1.322bn operating cash outflow", "source_indexes": [0,1], "location_or_arithmetic": "4.663 / 1.322 = 3.53; explicitly not a forecast or unrestricted-cash runway", "result": "verified calculation and caveat"}
+  ],
+  "fact_check_notes": ["Positive unit economics is not equated with audited consolidated profit.", "Foreign-private-issuer and IFRS basis retained; ADS equals three Class A ordinary shares but no EPS comparison is required.", "Management's four-year runway claim is separated from Compound's rough historical stress test."],
+  "unresolved_material_claims": [],
+  "image": {"source": "https://commons.wikimedia.org/wiki/File:WeRide_Robotaxi_GXR.jpg", "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/6/6c/WeRide_Robotaxi_GXR.jpg", "photographer": "Kk0521", "license": "CC BY-SA 4.0", "capture_date": "2025-05-23", "description": "Authentic WeRide GXR robotaxi in Abu Dhabi", "unique_asset": true, "repository_image_sha256": "2653517abcb56b986d2f8347ce7137a9a0b2e70075dbd3f24dd5242ccee9230f", "dimensions": [1920,1439], "visual_inspection": "passed"},
+  "gates": {"source_verification": "passed", "duplicate_originality": "passed", "editorial_qa": "passed: accuracy, relevance, originality, readability, metadata, links, disclosures and ad placement independently rechecked", "offline_tests": "passed: 415 tests and 2 subtests; focused publication suite 47 tests", "build": "passed with production canonical base; 428 articles rendered", "render": "passed: canonical, indexable HTML, licensed cover, 1200x675 social image, sitemap and finance catalogue verified", "ads": "passed: standard ca-pub-6115783809711785 loader present", "ci": "pending", "deployment": "pending", "live_verification": "pending"},
+  "local_validation": {"article_sha256": "4241b26ffb0468d049e481585d9446ded210977616ade05a58c1b22e8eafe413", "social_image_sha256": "cb02b23283d754e57367bd673bf7120dffc9fc0cfaa2768c97b6a2dd2f572a1f", "social_image_dimensions": [1200,675], "validated_at": "2026-11-23T10:04:00Z"},
+  "publication": {"pull_request": null, "validated_head_sha": null, "merge_commit_sha": null, "ci_run": null, "deployment_run": null, "live_verified_at": null, "live_url": null, "live_social_image_url": null, "standard_ads_loader_verified": false},
+  "new_articles_published": 0
+}
