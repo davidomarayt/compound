@@ -2,33 +2,36 @@
   "cik": 1090872,
   "company": "Agilent Technologies",
   "latest": {
-    "accession": "0001090872-26-000064",
-    "filed": "2026-09-01",
-    "form": "10-Q",
-    "fp": "Q3",
     "fy": 2026,
+    "fp": "FY",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-23",
+    "form": "8-K",
+    "accession": "0001090872-26-000082",
+    "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000082/exhibit991-q426pressrelease.htm",
+    "notes": [
+      "Agilent describes these reported GAAP annual results as preliminary and unaudited. They are from the 23 November earnings release, rather than an audited annual filing."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 1.28,
-        "prior_year": 1.18,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 7551000000,
+        "prior_year": 6948000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported preliminary GAAP revenue"
       },
       "net_income": {
-        "current": 362000000,
-        "prior_year": 336000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 1457000000,
+        "prior_year": 1303000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported preliminary GAAP net_income"
       },
-      "revenue": {
-        "current": 1878000000,
-        "prior_year": 1738000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 5.15,
+        "prior_year": 4.57,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported preliminary GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000064/a-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -117,9 +120,41 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000064/a-20260731.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "FY",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-23",
+      "form": "8-K",
+      "accession": "0001090872-26-000082",
+      "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000082/exhibit991-q426pressrelease.htm",
+      "notes": [
+        "Agilent describes these reported GAAP annual results as preliminary and unaudited. They are from the 23 November earnings release, rather than an audited annual filing."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 7551000000,
+          "prior_year": 6948000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported preliminary GAAP revenue"
+        },
+        "net_income": {
+          "current": 1457000000,
+          "prior_year": 1303000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported preliminary GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 5.15,
+          "prior_year": 4.57,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported preliminary GAAP diluted_eps"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "SEC XBRL for earlier quarters; original earnings exhibit preliminary GAAP annual results",
   "ticker": "A",
-  "updated": "2026-10-15"
+  "updated": "2026-11-23"
 }
