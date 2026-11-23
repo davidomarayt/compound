@@ -8,8 +8,8 @@
   "slots_already_filled_at_start": 0,
   "publishing_branch": "claude/clever-babbage-uibieq",
   "verified_base_commit": "cf4a525b6482a40f878a9229bbbf599dad6c3048",
-  "programme_status": "validated_ready_for_pr",
-  "confirmed_publications": 0,
+  "programme_status": "published_verified",
+  "confirmed_publications": 3,
   "new_articles": 3,
   "canonical_updates": 0,
   "held_for_review": 0,
@@ -21,7 +21,7 @@
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "validated_ready_for_pr",
+      "status": "published_verified",
       "source_path": "content/wealth/census-2027-field-support-officer-jobs.md",
       "canonical_url": "https://compound.ie/news/census-2027-field-support-officer-jobs/",
       "primary_sources": [
@@ -55,15 +55,15 @@
         "source": "https://commons.wikimedia.org/wiki/File:Census_record_of_Ireland,_1911.pdf",
         "processing": "Rendered and cropped to 1600 × 900; historical nature and modification disclosed"
       },
-      "publication_commit": null,
-      "deployment_status": "not_yet_deployed"
+      "publication_commit": "f771f210bab991a57c481322e727682e3640cbf5",
+      "deployment_status": "verified_live_200"
     },
     {
       "topic": "Circuit Court family-law forms and financial disclosure effective 23 November 2026",
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "validated_ready_for_pr",
+      "status": "published_verified",
       "source_path": "content/wealth/ireland-family-law-forms-affidavit-means-2026.md",
       "canonical_url": "https://compound.ie/news/ireland-family-law-forms-affidavit-means-2026/",
       "primary_sources": [
@@ -99,15 +99,15 @@
         "source": "https://commons.wikimedia.org/wiki/File:Four_Courts,_Dublin,_Ireland.jpg",
         "processing": "Cropped to 1600 × 900; illustrative venue limitation and modification disclosed"
       },
-      "publication_commit": null,
-      "deployment_status": "not_yet_deployed"
+      "publication_commit": "f771f210bab991a57c481322e727682e3640cbf5",
+      "deployment_status": "verified_live_200"
     },
     {
       "topic": "Compulsory poultry housing order effective 23 November 2026",
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "validated_ready_for_pr",
+      "status": "published_verified",
       "source_path": "content/wealth/ireland-poultry-housing-order-bird-flu-2026.md",
       "canonical_url": "https://compound.ie/news/ireland-poultry-housing-order-bird-flu-2026/",
       "primary_sources": [
@@ -141,8 +141,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:Foraging_Backyard_Poultry.jpg",
         "processing": "Cropped to 1600 × 900; illustrative status and modification disclosed"
       },
-      "publication_commit": null,
-      "deployment_status": "not_yet_deployed"
+      "publication_commit": "f771f210bab991a57c481322e727682e3640cbf5",
+      "deployment_status": "verified_live_200"
     }
   ],
   "deduplication": {
@@ -153,10 +153,10 @@
   },
   "checks": {
     "editorial": "passed source, calculation, date, jurisdiction, relevance, originality, redundancy, disclosure, metadata and internal-link review; human editorial approval is not claimed",
-    "advertising": "rendered HTML contains the standard AdSense loader and publisher ID; live verification pending",
+    "advertising": "passed live: each article contains the standard AdSense loader and publisher ID plus consent controls; ad-fill is not claimed",
     "images": "passed: three distinct topic-specific licensed 1600 × 900 images visually inspected; generated 1200 × 675, 1200 × 900 and 1200 × 1200 social crops verified",
     "tests": "passed: 13 tests and 2 subtests across news images, standard advertising, SEO discovery and news freshness; full static build passed in an isolated fixture after exact live/original recovery of unrelated historical cover assets",
-    "deployment": "not yet deployed"
+    "deployment": "passed: PR #263 merged as f771f210bab991a57c481322e727682e3640cbf5; site workflow run 45159897576 build, deploy, finance discovery and live verification jobs succeeded; each exact article, cover and 16:9 social image returned HTTP 200 with canonical, one H1, standard ads and consent, no noindex, and sitemap/news-sitemap inclusion"
   },
   "weekly_reporting": {
     "status": "not_due",
