@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 431 published articles and guides, 69 tools,
+**Included:** 432 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -252,6 +252,7 @@ For the complete register (including 510+ company profiles), open
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/) — **Wealth**
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/) — **Wealth**
 - [Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means](https://compound.ie/news/microsoft-layoffs-voluntary-exit-offer-2026/) — **Wealth**
+- [Microsoft’s EPS Growth Got Little Help From a Smaller Share Count](https://compound.ie/wealth/microsoft-buybacks-eps-share-count/) — **Wealth**
 - [Microsoft’s Essex exit exposes the power constraint on AI](https://compound.ie/wealth/microsoft-nscale-power-grid-delay/) — **Wealth**
 - [Mirtazapine in Ireland | Receptor signalling, wakefulness and appetite](https://compound.ie/health/medicines/mirtazapine/) — **Health**
 - [Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins](https://compound.ie/wealth/molina-healthcare-earnings-medicaid-margins/) — **Wealth**
