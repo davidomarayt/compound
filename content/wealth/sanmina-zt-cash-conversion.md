@@ -22,7 +22,6 @@ social_image: /static/images/evergreen/sanmina-zt-cash-conversion.jpg
 image_alt: Automated equipment placing components on a printed circuit board in May 2026; a representative electronics-manufacturing photograph, not a Sanmina facility.
 image_credit: Shixart1985 / Wikimedia Commons, CC BY 2.0. Representative electronics-manufacturing photograph captured 20 May 2026; cropped and resized for publication.
 image_source: https://commons.wikimedia.org/wiki/File:Machine_places_components_on_a_circuit_board_during_manufacturing_in_a_factory_environment.jpg
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/7/7b/Machine_places_components_on_a_circuit_board_during_manufacturing_in_a_factory_environment.jpg
 hero_image_alt: Automated equipment placing components on a printed circuit board in May 2026; a representative electronics-manufacturing photograph, not a Sanmina facility.
 hero_image_credit: Shixart1985 / Wikimedia Commons, CC BY 2.0. Representative electronics-manufacturing photograph captured 20 May 2026; cropped and resized for publication.
 hero_image_source: https://commons.wikimedia.org/wiki/File:Machine_places_components_on_a_circuit_board_during_manufacturing_in_a_factory_environment.jpg
