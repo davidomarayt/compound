@@ -52,14 +52,14 @@
   <p class="sr-directory-lede">Browse stocks by company or ticker. Search by company or ticker, then narrow results by sector. The full register remains accessible below; profiles without substantive original coverage are excluded from search indexing.</p>
   {% if companies %}
   <div class="earnings-directory-controls sr-directory-controls">
-    <div><label for="earnings-search">Find a company or ticker</label><input id="earnings-search" type="search" placeholder="e.g. Apple, AAPL, Nvidia" data-earnings-search autocomplete="off"></div>
+    <div><label for="earnings-search">Find a company or ticker</label><input id="earnings-search" type="search" placeholder="e.g. Apple, AAPL, Nvidia" data-earnings-search aria-describedby="stocks-search-count" autocomplete="off"></div>
     <div><label for="earnings-sector">Explore by sector</label><select id="earnings-sector" data-earnings-sector><option value="">All sectors</option>{% for sector in sectors %}<option value="{{ sector }}">{{ sector }}</option>{% endfor %}</select></div>
   </div>
   <div class="sr-sector-shortcuts" aria-label="Quick sector filters">
     {% for sector in sectors[:8] %}<button type="button" class="sr-sector-chip" data-stock-sector="{{ sector }}" aria-pressed="false">{{ sector }}</button>{% endfor %}
     <button type="button" class="sr-sector-chip sr-sector-clear" data-stock-sector="" aria-pressed="true">All companies</button>
   </div>
-  <p class="earnings-directory-count" data-earnings-count aria-live="polite">Showing {{ companies|length }} of {{ companies|length }} companies</p>
+  <p id="stocks-search-count" class="earnings-directory-count" data-earnings-count role="status" aria-live="polite" aria-atomic="true">Showing {{ companies|length }} of {{ companies|length }} companies</p>
   <div class="earnings-directory-scroll sr-directory-table" tabindex="0" role="region" aria-label="Public company stock directory">
     <table class="earnings-directory"><thead><tr><th scope="col">Company</th><th scope="col">Ticker(s)</th><th scope="col">Sector</th><th scope="col">Reports</th></tr></thead>
     <tbody>
@@ -71,5 +71,5 @@
 </section>
 <section class="sr-method" id="sr-method" aria-labelledby="sr-method-heading"><div><p class="sr-kicker">RESEARCH NOTES</p><h2 id="sr-method-heading">Price is not <em>performance.</em></h2></div><div><p>Share-price charts use TradingView data and may be delayed. Earnings numbers come from dated primary reports and company filings. Fiscal periods, reporting standards and accounting estimates vary, so comparisons require context.</p><p>Compound provides information and research, not personalised investment advice. Read the <a href="/editorial-policy/">editorial policy</a> and explore <a href="/wealth/earnings/">earnings reports</a> or <a href="/pia/">Irish investment accounts</a>.</p></div></section>
 </div>
-<script src="/static/earnings-directory.js?v=2" defer></script>
+<script src="/static/earnings-directory.js?v=20261123-ticker-aliases" defer></script>
 {% endblock %}

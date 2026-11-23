@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "listed": [
     {
       "slug": "spcx",
@@ -20,7 +20,7 @@
       "sector": "Artificial intelligence",
       "market": "United States",
       "tv_symbol": "NASDAQ:ANT",
-      "summary": "Claude AI models, enterprise software and developer APIs. Nasdaq-listed since 19 November 2026.",
+      "summary": "Claude AI models and enterprise APIs; Nasdaq-listed as ANT since 19 November 2026. The 20 November IPO close confirmed a $93.5bn gross Class A share sale and separate $26bn Class N strategic placement; sale proceeds are not revenue.",
       "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
       "website": "https://www.anthropic.com/",
       "historical_private_slug": "anthropic",
@@ -28,6 +28,11 @@
         "date": "2026-11-19",
         "text": "Nasdaq confirmed on 19 November that Anthropic began public trading under ANT and opened at $111.50 per share. Reuters reported the first session close was $97.17. The $83 issuer offering price on 18 November is a separate allocation price.",
         "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      },
+      "ipo_closing": {
+        "date": "2026-11-20",
+        "text": "Actual 20 November IPO closing: 1,127,000,000 Class A shares at $83, including 1,103,351,354 newly issued shares; approximately $93.5bn public gross including the selling holders' portion. Concurrent separate $26bn Class N placement.",
+        "source": "https://www.anthropic.com/news/ipo-close"
       }
     },
     {
@@ -135,12 +140,12 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "Developer and enterprise AI platforms, specialist workflows, collaborative ChatGPT Space and the November 2026 model-access intermediary policy.",
+      "summary": "Privately held AI model and enterprise platform provider; on 22 November its chief scientist proposed shared cross-lab pretraining-loss measurements to inform future safety thresholds, without an agreed development cap.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-20",
-        "text": "OpenAI's usage policies took effect 20 November 2026 following an October 21 announcement. Businesses operating services that give third parties direct model access require prior review/approval; ordinary apps integrating the API to power features do not require approval solely for that reason. High-stakes automation without review and certain substitute-model training uses are also restricted. These are OpenAI service rules, not new government legislation or a published revenue figure.",
-        "source": "https://openai.com/policies/usage-policies/"
+        "date": "2026-11-22",
+        "text": "OpenAI chief scientist Jakub Pachocki on 22 November proposed common evaluation of held-out pretraining prediction loss (log-perplexity) to inform cross-industry AI safety pacing. The internally reported benchmark is dataset-dependent; the proposal is not a binding pact, law, or company-wide training pause.",
+        "source": "https://openai.com/index/perplexity-and-intelligence/"
       }
     },
     {
@@ -252,8 +257,13 @@
       "slug": "lego",
       "name": "LEGO Group",
       "sector": "Consumer products",
-      "summary": "LEGO toys, entertainment and branded experiences.",
-      "website": "https://www.lego.com/en-us/aboutus"
+      "summary": "Privately held Danish toy maker; 21 November 2026 Las Vegas Formula 1 LEGO Race promotion accompanied an announced 2027 Speed Champions portfolio covering 11 teams and 22 drivers.",
+      "website": "https://www.lego.com/en-us/aboutus",
+      "latest_development": {
+        "date": "2026-11-21",
+        "text": "LEGO reported an F1-themed Las Vegas celebrity event with 11 custom-built minicars and 6,400 development hours; an 18 November announcement described LEGO Speed Champions sets for 11 F1 teams and 22 drivers scheduled for sale from 1 March 2027. Campaign returns, royalties and sales impact were not disclosed.",
+        "source": "https://www.lego.com/en-us/aboutus/news/2026/november/lego-f1-las-vegas-grand-prix-lego-race"
+      }
     }
   ],
   "notes": "Editorial watchlist only. Listed securities and private businesses are distinct. No valuation or quoted price is inferred. Company status must be rechecked before a new report."

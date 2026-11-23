@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-22",
+  "snapshot_date": "2026-11-23",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -442,7 +442,7 @@
         "status": "published"
       },
       {
-        "title": "Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test",
+        "title": "Anthropic IPO Economics: $83 Final Price, $93.5 Billion Public Sale and Compute Commitments",
         "url": "/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
         "source": "content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md",
         "kind": "Editorial article / guide",
@@ -454,6 +454,7 @@
           "wealth",
           "company-research",
           "company-anthropic",
+          "stock-ant",
           "anthropic",
           "ipo",
           "ai",
@@ -1277,6 +1278,27 @@
           "farm-solar",
           "electricity",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Census 2027 Jobs Open: What the €3,000 Eight-Week Role Involves",
+        "url": "/news/census-2027-field-support-officer-jobs/",
+        "source": "content/wealth/census-2027-field-support-officer-jobs.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "census-2027-field-support-officer-jobs",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "jobs",
+          "pay",
+          "census-2027",
+          "part-time-work",
+          "cso",
+          "public-service"
         ],
         "status": "published"
       },
@@ -2167,6 +2189,23 @@
           "ireland",
           "mortgage",
           "shared equity"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "FirstEnergy Lifted Its Capital Plan to $38 Billion. Who Funds the Extra Growth?",
+        "url": "/wealth/firstenergy-capex-equity-funding/",
+        "source": "content/wealth/firstenergy-capex-equity-funding.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "firstenergy-capex-equity-funding",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "fe"
         ],
         "status": "published"
       },
@@ -3560,6 +3599,27 @@
         "status": "published"
       },
       {
+        "title": "Ireland’s Poultry Housing Order Is Now in Force: What Backyard Hen Owners Must Do",
+        "url": "/news/ireland-poultry-housing-order-bird-flu-2026/",
+        "source": "content/wealth/ireland-poultry-housing-order-bird-flu-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-poultry-housing-order-bird-flu-2026",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "bird-flu",
+          "poultry",
+          "backyard-hens",
+          "rural-ireland",
+          "household-costs",
+          "agriculture"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Ireland’s TV Licence Is Dying. The Numbers Show Why.",
         "url": "/news/ireland-tv-licence-decline-2026/",
         "source": "content/happiness/ireland-tv-licence-decline-2026.md",
@@ -3868,6 +3928,29 @@
         "tags": [
           "medicines",
           "medicines-a-z"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "LEGO's Las Vegas F1 Race Was a Marketing Spectacle. Can the 2027 Sets Convert It Into Sales?",
+        "url": "/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/",
+        "source": "content/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "lego-formula-one-las-vegas-race-2027-product-licensing-economics",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-lego",
+          "lego",
+          "formula-one",
+          "licensing",
+          "marketing",
+          "toys",
+          "retail"
         ],
         "status": "published"
       },
@@ -4684,6 +4767,27 @@
         "status": "published"
       },
       {
+        "title": "New Irish Family-Law Forms Apply Today: What Changes for Financial Disclosure",
+        "url": "/news/ireland-family-law-forms-affidavit-means-2026/",
+        "source": "content/wealth/ireland-family-law-forms-affidavit-means-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-family-law-forms-affidavit-means-2026",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "ireland",
+          "family-law",
+          "divorce",
+          "financial-disclosure",
+          "pensions",
+          "courts-service",
+          "household-finances"
+        ],
+        "status": "published"
+      },
+      {
         "title": "New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?",
         "url": "/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/",
         "source": "content/wealth/heat-pump-grant-14500-oil-vs-heat-pump-ireland.md",
@@ -5103,6 +5207,29 @@
           "lab-ai",
           "ai-benchmarks",
           "science"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI Wants a Shared AI Capability Meter. Could It Change the Economics of the Model Race?",
+        "url": "/wealth/openai-perplexity-ai-safety-thresholds-business-economics/",
+        "source": "content/wealth/openai-perplexity-ai-safety-thresholds-business-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-perplexity-ai-safety-thresholds-business-economics",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "ai-safety",
+          "model-evaluation",
+          "compute",
+          "enterprise-ai",
+          "regulation"
         ],
         "status": "published"
       },
@@ -5705,6 +5832,26 @@
           "exempted-development",
           "retention",
           "planning-appeals",
+          "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Plug-in solar in Ireland: when it could arrive and what it could save",
+        "url": "/news/plug-in-solar-ireland/",
+        "source": "content/wealth/plug-in-solar-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "plug-in-solar-ireland",
+        "date": "2026-11-22",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "solar",
+          "plug-in-solar",
+          "balcony-solar",
+          "electricity",
+          "home-energy",
           "ireland"
         ],
         "status": "published"
@@ -6321,6 +6468,23 @@
           "stocks",
           "company-research",
           "sndk"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?",
+        "url": "/wealth/sanmina-zt-cash-conversion/",
+        "source": "content/wealth/sanmina-zt-cash-conversion.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "sanmina-zt-cash-conversion",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "sanm"
         ],
         "status": "published"
       },
@@ -7328,6 +7492,23 @@
           "pensions",
           "financial-planning",
           "retirement"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "WeRide Says One Robotaxi Market Has Positive Unit Economics. Can the Whole Business Follow?",
+        "url": "/wealth/weride-robotaxi-unit-economics/",
+        "source": "content/wealth/weride-robotaxi-unit-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "weride-robotaxi-unit-economics",
+        "date": "2026-11-23",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "wrd"
         ],
         "status": "published"
       },

@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-23",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-11-23-pia-legal-provider-source-check-and-2026-11-22-pia-vs-pension-estate-public-recovery",
+  "action": "no_new_editorial_topic_prior_22_nov_canonical_fingerprint_recovery_verified",
+  "status": "no_qualifying_distinct_topic_prior_public_text_recovered_page_specific_ads_and_social_assets_unverified",
+  "new_articles": 0,
+  "existing_canonical_page_updates": 0,
+  "canonical_urls": [
+    "https://compound.ie/pia/",
+    "https://compound.ie/pia-calculator/",
+    "https://compound.ie/pia/vs-pension/",
+    "https://compound.ie/pia/providers/",
+    "https://compound.ie/wealth/personal-investment-account-ireland/"
+  ],
+  "source_urls": [
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+    "https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/",
+    "https://www.newireland.ie/investments/individual-investment-account-faqs/",
+    "https://www.revenue.ie/ga/tax-professionals/ebrief/2026/no-1422026.aspx"
+  ],
+  "source_checks": {
+    "checked_dublin_date": "2026-11-23",
+    "legislative_terminology": "Official committee-amended Finance (No. 2) Bill 2026 No. 98a, section 27, uses Individual Investment Account (IIA); PIA remains site/provider shorthand. This is draft Bill text, not enacted/commenced law.",
+    "legislative_stage": "Official Dail Business Committee report dated 20 November proposes Report and Final Stages for 24 November, resumed 25 November. These dates are FUTURE as of 23 November; no final vote, enacted Act, commencement order or new law confirmed. Canonical Oireachtas Bill 98 page returned HTTP 403, preventing independent live status verification.",
+    "conditional_launch": "Revenue 7 October 2026 notice explicitly conditions the announced 1 July 2027 date on enactment; provider readiness has not been established. No confirmed firm-specific opening.",
+    "provider_check": "Reviewed original current pages of AIB, Bank of Ireland, Irish Life, PTSB, Zurich and Bank of Ireland Group-related New Ireland Assurance. No new complete PIA/IIA-specific numeric fee schedule or open account application was verified. New Ireland remains a related first-party announcement, not a sixth priced provider card.",
+    "tax_cross_check": "Revenue eBrief 142/26 dated 6 October supports 31% standard CGT for most disposals from 7 October 2026; existing Compound /pia/vs-ordinary-investing/ and investment-tax canonicals already show the dated figure. Do not repackage as fresh PIA news.",
+    "blocked_sources": [
+      "https://www.oireachtas.ie/en/bills/bill/2026/98/ returned 403; no definitive current bill-stage lookup through that canonical page",
+      "Container HTTPS request to compound.ie failed DNS resolution; web text reader confirms passages but does not expose raw ad/CMP scripts or allow social-image HTTP asset response verification"
+    ]
+  },
+  "deduplication": "Read 23 November AGENTS.md, EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, relevant PIA calculator and comparison source references, 16–22 November PIA ledgers, recent PRs and parallel 23 Nov Compound work. The estate/death question was added to the established /pia/vs-pension/ on 22 November; 24–25 November parliamentary programme was already added on 21 November; provider New Ireland nuance was added on 20 November. No new official law or provider fee event and no distinct uncovered question warrants another article or a cosmetic canonical update today. Revisit parliamentary outcome after the scheduled sittings, not in advance.",
+  "recovery": {
+    "prior_date": "2026-11-22",
+    "canonical_url": "https://compound.ie/pia/vs-pension/",
+    "expected_fingerprint": "What happens if the account holder dies? PIA versus pension inheritance",
+    "verified_result": "Public web reader on 23 November now returns the unique 22 November estate section in rendered canonical text, including proposal section 747Y, personal representatives, no post-death contributions and qualified PRSA comparison; source-backed update is visible publicly. It was unverified in 22 November ledger after Pages deploy.",
+    "other_prior_pages": "Public /pia/ now shows 24–25 November proposed stages and 12 November committee-amended milestone; /pia/providers/ displays New Ireland related group notice; earlier updates visibly recovered.",
+    "raw_html_ads_cmp_slots": "not independently verified for exact recovered canonical; text reader strips raw scripts; no source-code ad changes were made",
+    "cover_og_twitter_http": "not independently verified for exact recovered canonical from this runtime; existing images not modified",
+    "status": "updated_public_text_verified_full_asset_and_ad_gate_outstanding",
+    "web_fetch_date": "2026-11-23",
+    "pages_release_evidence": "Original 22 November editorial PR #247 and Pages deployment run 45006543332 passed, as recorded in 22 November ledger; today's observation is a recovery verification, not a new deployment."
+  },
+  "launch_tracker": {
+    "path": "content/pia-launch-tracker.yml",
+    "changed": false,
+    "global_checked_date_retained": "2026-11-15",
+    "reason": "No newly verified material milestone; official Bill page blocked. Existing 20 November proposed agenda already reflected, and future proceedings have not occurred as of this check."
+  },
+  "provider_records": {
+    "path": "content/pia-providers.yml",
+    "changed": false,
+    "csv_changed": false,
+    "reason": "No newly verified opening process, fee schedule, or material provider announcement; a CSV regeneration would be cosmetic."
+  },
+  "quality_and_release": {
+    "editorial": "No new source-backed topic distinct from established PIA vs pension, proposed rules, ordinary-investing comparison, provider fees, inheritance and launch tracker canonicals. No filler article created.",
+    "arithmetic": "No calculations or source files changed; 31% CGT effective date checked against Revenue and existing canonical independently confirms it.",
+    "photography_and_metadata": "No image assets or metadata changed. Prior canonical page remains the public original URL.",
+    "advertising": "No changes to default AdSense placements or consent. Raw exact-page loader, slots, CMP and social image HTTP not verified in this runtime; avoid claiming full page-specific production QA.",
+    "tests_and_static_build": "No editorial/source/build files modified. Ledger-only PR must still pass exact-head test and performance CI before merge; production content is unchanged.",
+    "public_release": "Zero new articles; zero existing canonical changes today; prior 22 November estate content visible as of 23 November. Ledger-only PR is not a new article deployment.",
+    "human_review": "No additional human editorial approval claimed."
+  },
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/pia-2026-11-23-recovery-research-ledger",
+  "live_http_verified": false,
+  "verified_live_result": {
+    "canonical_url": "https://compound.ie/pia/vs-pension/",
+    "content_fingerprint_verified": true,
+    "raw_http_source_script_check": false,
+    "ad_loader_cmp": "unverified",
+    "og_twitter_image_http": "unverified",
+    "status": "prior_update_visible_not_new_publication"
+  },
+  "follow_up": [
+    "Verify the 24–25 November Dail Report/Final Stages after they actually occur, including amendments, potential Seanad stages and any later enactment/commencement, without predetermining outcomes.",
+    "On a future permitted production fetch or site workflow, independently validate raw /pia/vs-pension/ ad loader, consent and OG/Twitter image URLs with HTTP responses; do not label them verified until fetched.",
+    "Retain dated source-check and five-provider neutral comparison until material evidence exists."
+  ],
+  "communication": "No email, social posts or unrelated actions"
+}

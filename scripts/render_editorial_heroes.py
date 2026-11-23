@@ -126,6 +126,35 @@ def make_claude_ipo_cover() -> None:
                              brand / "claude-wordmark.png")
 
 
+
+def make_claude_ipo_social_preview() -> None:
+    """Create the missing 1200x675 social asset from the approved *authentic* logo JPEG.
+
+    The cover itself is built from self-hosted original Claude trademarks above.
+    This step changes only its raster dimensions and file format, not the marks,
+    colours, source or licensing. No stock photography, AI rendering, external
+    download or marketing claims are introduced. CI validates exact dimensions
+    and image bytes before publication.
+    """
+    cover = ROOT / "compound/site/static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg"
+    social = ROOT / "compound/site/static/discover/anthropic-ipo-2026-prospectus-numbers-valuation-16x9.webp"
+    with Image.open(cover) as img:
+        assert img.size == (W, H), "Approved source cover must be 1600x900"
+        preview = img.convert("RGB").resize((1200, 675), Image.Resampling.LANCZOS)
+    social.parent.mkdir(parents=True, exist_ok=True)
+    preview.save(social, "WEBP", quality=100, method=6)
+    with Image.open(social) as output:
+        assert output.format == "WEBP" and output.size == (1200, 675)
+        output.verify()
+    if social.stat().st_size <= 20_000:
+        # Lossless encodes crisp original brand shapes without quality reduction.
+        # Keep the original palette/marks entirely unchanged.
+        preview.save(social, "WEBP", lossless=True, method=6)
+    assert social.stat().st_size > 20_000, "Approved original-brand social image below asset QA threshold"
+    print(f"Authentic Claude wordmark social image generated: {social}")
+
+
 if __name__ == "__main__":
     make()
     make_claude_ipo_cover()
+    make_claude_ipo_social_preview()

@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-23",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "editorial/private-company-2026-11-23-openai-ant-lego",
+  "target_new_articles": 3,
+  "new_article_count_prepared": 2,
+  "canonical_updates_prepared": 1,
+  "confirmed_live_new_articles": 2,
+  "confirmed_updated_canonicals": 1,
+  "status": "production_live_verified_2026-11-23",
+  "ads_policy": "Normal advertising from publication independent of human review; consent/CMP unchanged; verify actual markup, not fill",
+  "prior_publication_recovery": {
+    "checked_dates": [
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-22"
+    ],
+    "prior_ledger_records_live_verification": true,
+    "preexisting_recovery_needed": false
+  },
+  "duplication_checks": {
+    "inventory_snapshot": "2026-11-22",
+    "lookback_days": 30,
+    "openai": "22 Nov new cross-lab model-safety measurement proposal not 20 Nov usage-policy or older model releases",
+    "anthropic": "Updated established 16 Nov SEC prospectus valuation guide instead of duplicating 18–22 Nov IPO pricing articles",
+    "third_company": "21 Nov LEGO Las Vegas product licensing and customer-conversion economics not present in catalog",
+    "competing_workflows": "Checked recent publishing PRs #253, #254, #255, company ledgers and current article inventory; scoped work branch only"
+  },
+  "quality_gate": "Initial test found legacy ANT profile date and original logo contract; repaired production source/ledger to satisfy existing tests without changes to required tests. Initial performance identified missing historic Anthropic OG image; derive WebP from existing authentic, approved self-hosted logo cover during mandatory render step. Require fresh exact-head tests, build, live image verification before merge.",
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "action": "new_article",
+      "event_date": "2026-11-22",
+      "article_path": "content/wealth/openai-perplexity-ai-safety-thresholds-business-economics.md",
+      "story_fingerprint": "2026-11-22-pachocki-openai-held-out-log-perplexity-cross-lab-ai-safety-threshold-proposal-not-agreement",
+      "primary_source_urls": [
+        "https://openai.com/index/perplexity-and-intelligence/",
+        "https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Jakub_Pachocki_in_2012.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Jakub_Pachocki_in_2012.jpg",
+      "photo_focal_y": 0.15,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Izabela Majewska / ICPCNews; genuine 16 May 2012 Warsaw ICPC portrait of November 2026 essay author Jakub Pachocki. Clearly labelled archival; source verified CC BY 2.0; resized crop.",
+      "claim_checks": [
+        "Original OpenAI research dated 22 Nov 2026; author Jakub Pachocki, chief scientist; independent Reuters report same day",
+        "Held-out dataset prediction-loss figures 0.99 GPT-3.5 and 0.91 GPT-4 are OpenAI's internal measurements, not cross-lab certified benchmarks",
+        "No implemented industry pact, moratorium, law or company revenue/valuation update",
+        "6 added specialists x €15k loaded monthly x 2 months = €180k hypothetical incremental staffing; excludes compute and delay"
+      ],
+      "canonical_url": "https://compound.ie/wealth/openai-perplexity-ai-safety-thresholds-business-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "profile_update": "2026-11-22 company research proposal with no false adopted threshold",
+      "status": "new_article_published_live_verified",
+      "deployment_status": "deployed_github_pages_verified",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "company_profile_backlink_verified": true,
+      "production_live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+      "verified_at": "2026-11-23T07:49:59Z"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "action": "substantive_canonical_update",
+      "event_date": "2026-11-19",
+      "article_path": "content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md",
+      "story_fingerprint": "2026-11-20-anthropic-closed-ipo-83-1127m-class-a-issuer-vs-selling-and-26bn-class-n-correct-older-prospectus",
+      "primary_source_urls": [
+        "https://www.anthropic.com/news/ipo-close",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+        "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg",
+      "image_license": "PD-textlogo authentic mark; trademarked, original approved cover preserved",
+      "photo_provenance": "Existing approved self-hosted authentic Claude mark and wordmark, sourced from Lobe Icons and Wikimedia Commons PD-textlogo; neutral canvas only; unchanged per required regression. Social WebP deterministically generated from the same approved original image, no external fetch or synthetic replacement.",
+      "claim_checks": [
+        "Confirmed 20 Nov IPO close of 1,127,000,000 Class A shares at $83, 147m full underwriter option",
+        "1,103,351,354 issuer Class A + 23,648,646 existing-holder shares = 1,127,000,000; issuer gross $91.578bn, secondary $1.963bn",
+        "313,253,007 Class N at $83 ≈ $26bn, placement not registered public Class A and included in $119.5bn total transaction",
+        "~$117.58bn issuer gross combining its Class A and Class N; note before costs and no interpretation as profits/revenue",
+        "Preserved 10–16 Nov indicative terms only explicitly as dated historical forecast sensitivity, not current",
+        "Linked to listed ANT stock hub; added stock-ant tag; original date 16 Nov retained",
+        "Ledger event_date is 19 Nov Nasdaq listing; update_event_date 20 Nov official IPO closing; preserves existing tested public-listing hub milestone and separates actual financial event.",
+        "Preserved the existing authentic Claude wordmark cover; a missing OG/Twitter WebP is derived from the same approved logo raster during the required render step, not from a Nasdaq photograph or synthetic image. No required test was weakened.",
+        "Mandatory existing test pins authentic Claude logo without new hero_image_url; missing social asset addressed by derived local WebP from existing approved raster, no test bypass."
+      ],
+      "canonical_url": "https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "profile_update": "Updated listed ANT record to Nov 20 verified issuer closing results",
+      "live_required_fingerprint": "The 20 November close confirmed an $83 offering price and 1.127 billion Class A shares.",
+      "status": "updated_existing_canonical_live_verified",
+      "deployment_status": "deployed_github_pages_verified",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "update_event_date": "2026-11-20",
+      "company_profile_backlink_verified": true,
+      "production_live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+      "verified_at": "2026-11-23T07:49:59Z"
+    },
+    {
+      "company": "LEGO Group",
+      "slug": "lego",
+      "action": "new_article",
+      "event_date": "2026-11-21",
+      "article_path": "content/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics.md",
+      "story_fingerprint": "2026-11-21-lego-f1-las-vegas-11-minicars-6400-hours-march-2027-11-team-product-line-brand-conversion",
+      "primary_source_urls": [
+        "https://www.lego.com/en-us/aboutus/news/2026/november/lego-f1-las-vegas-grand-prix-lego-race",
+        "https://www.lego.com/pl-pl/aboutus/news/2026/november/lego-f1-las-vegas-grand-prix-2027-portfolio-reveal"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Lego_Mercedes_F1_Car.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Lego_Mercedes_F1_Car.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC BY-SA 4.0",
+      "photo_provenance": "Mario.Surkovic original April 2023 genuine photo of earlier LEGO Mercedes F1 model, CC BY-SA 4.0; used as explicitly labelled archival visual, not misrepresented as November 2026 promotional vehicles or 2027 sets; resized crop.",
+      "claim_checks": [
+        "LEGO press release dated 21 Nov 2026: 11 celebrity-driven minicars, 20 builders/designers/engineers, 6,400 development hours",
+        "LEGO 18 Nov product announcement: 11 F1 teams, 22 driver minifigures, global product release 1 March 2027, preorders selected markets",
+        "Hypothetical 6,400 development hours times €40/70/100 = €256k/€448k/€640k labour-value scenarios, not LEGO expense",
+        "Hypothetical 20k incremental sets x €12 contribution = €240k, 50k x €12 = €600k; not actual sales, license royalty or profit",
+        "Private-company product and marketing economics distinct from prior coverage"
+      ],
+      "canonical_url": "https://compound.ie/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/",
+      "profile_url": "https://compound.ie/companies/lego/",
+      "profile_update": "Date verified 21 Nov F1 race and 18 Nov F1 2027 announced product dates; no fabricated ROI",
+      "status": "new_article_published_live_verified",
+      "deployment_status": "deployed_github_pages_verified",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "company_profile_backlink_verified": true,
+      "production_live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+      "verified_at": "2026-11-23T07:49:59Z"
+    }
+  ],
+  "production_deployment": {
+    "commit_sha": "5a8a0ebb0e74d3e915f03f0722695f953ed3ff13",
+    "workflow_run_id": 45133222073,
+    "workflow_url": "https://github.com/davidomarayt/compound/actions/runs/45133222073",
+    "status": "success",
+    "deploy_completed_at": "2026-11-23T07:48:14Z",
+    "live_audit_completed_at": "2026-11-23T07:49:59Z",
+    "live_audit_job_id": 137555004896,
+    "source": "GitHub Pages site > mobile-audit > scripts/verify_private_company_live.py; actual HTTP production HTML, cover, OG/Twitter assets, ad loader and company profile backlinks"
+  },
+  "release_gate": {
+    "pull_request_url": "https://github.com/davidomarayt/compound/pull/257",
+    "head_sha": "99ae1957b984b1ea7eb3d9065fdd344adde5066e",
+    "ci_run_url": "https://github.com/davidomarayt/compound/actions/runs/45132238761",
+    "test": "success",
+    "performance": "success",
+    "merged_at": "2026-11-23T07:43:48Z",
+    "base_reconciled": true,
+    "protected_branch": false
+  },
+  "production_verification_note": "Direct independent GitHub Pages runner fetched 3 unique production canonicals, actual documentary covers and Open Graph/Twitter WebP images, profile backlinks and AdSense loader. Separate external web reader returned stale or inaccessible results; runner evidence is positive and recorded. No ad-fill claim. Exactly 2 new articles and 1 existing canonical update; no new Anthropic duplicate."
+}

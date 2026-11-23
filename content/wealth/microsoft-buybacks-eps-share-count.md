@@ -4,8 +4,8 @@ seo_title: Microsoft Buybacks and the Small Share-Count Effect on EPS
 slug: microsoft-buybacks-eps-share-count
 pillar: wealth
 canonical_path: /wealth/microsoft-buybacks-eps-share-count/
-date: '2026-11-22'
-research_checked: '2026-11-22'
+date: '2026-11-23'
+research_checked: '2026-11-23'
 draft: false
 publication_status: published
 editorial_review_status: pending
@@ -21,7 +21,6 @@ tags:
 - mag8-analysis
 social:
   enabled: false
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg
 hero_image_alt: Microsoft Building 92 in Redmond, photographed on 18 June 2015.
 hero_image_credit: Jiaqian AirplaneFan / Wikimedia Commons, CC BY 3.0. Archival photograph, 18 June 2015. Resized and cropped.
 hero_image_source: https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg
@@ -78,6 +77,7 @@ For the next filing, compare programme spending with basic and diluted shares se
 
 Read the [Microsoft stock profile](/stocks/msft/) for company data and our [AI investment and cash-flow analysis](/wealth/microsoft-ai-capex-cash-flow/) for the separate question of infrastructure spending.
 
-*Analysis and calculations by Compound Research, checked 22 November 2026. Not personalised investment advice. Historical results and illustrative arithmetic are not guidance.*
+*Analysis and calculations by Compound Research, checked 23 November 2026. Not personalised investment advice. Historical results and illustrative arithmetic are not guidance.*
 
 *Archival cover: Microsoft Building 92, 18 June 2015, by Jiaqian AirplaneFan via Wikimedia Commons. Resized and cropped under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/); not a photograph of a financial transaction.*
+

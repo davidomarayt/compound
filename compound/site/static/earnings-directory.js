@@ -6,7 +6,7 @@
   const count=document.querySelector('[data-earnings-count]');
   const empty=document.querySelector('[data-earnings-empty]');
   const chips=Array.from(document.querySelectorAll('[data-stock-sector]'));
-  const normalise=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('en-IE').trim();
+  const normalise=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('en-IE').replace(/[\s./_\-\u2010-\u2015]+/g,'').trim();
   function update(){
     const q=normalise(search.value);let visible=0;
     for(const row of rows){

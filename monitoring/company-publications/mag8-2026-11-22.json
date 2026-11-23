@@ -51,7 +51,7 @@
       "Exact-head test job passed in both CI attempts; performance/build gate not passed."
     ]
   },
-  "outcome_notes": "Zero published. MSFT draft preserved in PR253 for recovery; no other company substituted because blocker affects shared image build. Temporary Wikimedia rate limiting: recurring task remains enabled. Do not merge until exact-current-head CI and live checks pass. No paid LLM API, social posting or schedule changes.",
+  "outcome_notes": "Zero published. MSFT draft preserved in PR253 for recovery; no other company substituted because blocker affects shared image build. Temporary Wikimedia rate limiting: recurring task remains enabled. Do not merge until exact-current-head CI and live checks pass. No paid LLM API, social posting or schedule changes. Resumed in same PR253 on 23 November; any successful publication counts only against 23 November.",
   "article_sha256": "99622a2277ca69a232d4df5d6f1ed3c7bed184e85ca313eb03ba3bf586841359",
   "publication_attempt_status": "failed",
   "pull_requests": [
@@ -75,5 +75,6 @@
       "job": 137302770894,
       "result": "HTTP 429 fetching existing Tesla_Model_Y_2025_at_Santana_Row_dllu_01.jpg; image preparation failed; full build and performance skipped"
     }
-  ]
+  ],
+  "resumed_on": "2026-11-23"
 }

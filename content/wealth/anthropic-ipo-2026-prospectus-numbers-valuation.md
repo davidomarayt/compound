@@ -1,16 +1,16 @@
 ---
-title: "Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test"
-seo_title: "Anthropic IPO 2026: Revenue, Valuation, Share Price and Risks"
+title: "Anthropic IPO Economics: $83 Final Price, $93.5 Billion Public Sale and Compute Commitments"
+seo_title: "Anthropic ANT IPO Economics: Final Offering, Revenue and Compute Risks"
 slug: anthropic-ipo-2026-prospectus-numbers-valuation
 pillar: wealth
 canonical_path: /wealth/anthropic-ipo-2026-prospectus-numbers-valuation/
 publication_status: published
 date: '2026-11-16'
-research_checked: '2026-11-16'
+research_checked: '2026-11-23'
 editorial_review_status: pending
-summary: "Anthropic's IPO prospectus reveals a $70–$78 price range, a $61bn public share sale at the midpoint, $33.2bn in nine-month sales, almost $901bn in compute commitments, and a difficult valuation equation."
-meta_description: "Anthropic IPO explained with November 2026 S-1 figures: $70–$78 IPO price, 825m shares, $33.2bn revenue, $104bn net loss, compute commitments and valuation scenarios."
-tags: [wealth, company-research, company-anthropic, anthropic, ipo, ai, valuation, investing, stock-market, prospectus]
+summary: "Updated 23 November: Anthropic completed its $83-priced IPO of 1.127 billion public Class A shares, plus a separate $26bn Class N placement. The original SEC prospectus-era valuation and compute analysis remains dated and transparently labelled."
+meta_description: "Anthropic completed its $83 IPO of 1.127bn Class A shares on 20 November 2026. Review issuer versus secondary proceeds, investor risks and historical compute commitments."
+tags: [wealth, company-research, company-anthropic, stock-ant, anthropic, ipo, ai, valuation, investing, stock-market, prospectus]
 hero_image_alt: "Official Claude AI wordmark with coral-orange starburst symbol and black Claude lettering, shown on a neutral background"
 hero_image_credit: "Claude logo by Anthropic; authentic symbol and wordmark assets distributed through Lobe Icons; PD-textlogo and trademarked. Independent editorial use; no endorsement implied."
 hero_image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
@@ -21,6 +21,12 @@ image_alt: "Official Claude AI logo: coral-orange starburst and black Claude wor
 image_credit: "Claude brand logo by Anthropic; self-hosted original-shape artwork via Lobe Icons, also documented on Wikimedia Commons (PD-textlogo; trademarked)"
 image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
 sources:
+- title: "Anthropic official IPO closing announcement, 20 November 2026, actual share counts and placement"
+  url: https://www.anthropic.com/news/ipo-close
+- title: "SEC — Anthropic amended prospectus filed 17 November 2026"
+  url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm
+- title: "Nasdaq — Anthropic started trading as ANT, 19 November 2026"
+  url: https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq
 - title: "SEC — Anthropic Form S-1/A Amendment No. 2, filed 10 November 2026"
   url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
 - title: "Anthropic — roadshow launch and proposed IPO terms, 10 November 2026"
@@ -34,6 +40,35 @@ sources:
 - title: "Anthropic — Series H financing at $965bn, 28 May 2026"
   url: https://www.anthropic.com/news/series-h
 ---
+**Updated 23 November 2026 — Anthropic has listed and its final IPO terms are known.** The earlier research below is retained as a **dated 10–16 November prospectus-era sensitivity analysis**, not as a current proposed offering, share price or prediction. The live public-company reference is [Anthropic (NASDAQ: ANT)](/stocks/ant/); it is **not a private company**.
+
+## After the close: the actual public offering and control question
+
+**The 20 November close confirmed an $83 offering price and 1.127 billion Class A shares.** [Anthropic's primary closing announcement](https://www.anthropic.com/news/ipo-close) gives **1,127,000,000 Class A shares** sold at **$83 each**, including the full **147 million-share** underwriter option. The public sale therefore totalled **$93.541 billion gross**, rather than the original roadshow's approximate $61.05 billion at an indicative midpoint.
+
+The distinction between financing and trading volume is critical:
+
+| Confirmed 20 November transaction | Shares | Gross dollars at $83 | Recipient |
+|---|---:|---:|---|
+| Class A sold by Anthropic | 1,103,351,354 | $91.578bn | Anthropic |
+| Class A sold by existing holders | 23,648,646 | $1.963bn | Selling shareholders |
+| **Public offering total** | **1,127,000,000** | **$93.541bn** | Both groups |
+| Separate Class N private placement | 313,253,007 | ~$26.0bn | Anthropic |
+
+*The $83 arithmetic uses the issuer's announced counts and excludes issuance costs. Class N private shares are a separate transaction, not public IPO allocation shares. The approximately $119.5 billion **combined gross transaction value** includes the ~$1.963 billion received by existing selling holders; it is not all cash paid to Anthropic.*
+
+Anthropic received approximately **$117.58 billion gross** from its own newly issued Class A shares and the separate Class N placement before commissions and expenses. The final dollar net proceeds, near-term deployment of cash, future dilution and investment returns must be examined against the final prospectus and subsequent company filings—not inferred from this gross sum. On **19 November** it began public trading as **ANT**, according to [Nasdaq](https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq).
+
+The updated business question is **whether that equity capital can earn attractive returns after the company's long-dated infrastructure commitments**. The older 16 November sections below offer a scenario framework using publicly disclosed operating data, but their 825-million-share and $70–$78 terms were *superseded* by the close and should not be reused as current facts. A current ANT market quote is a further, separate price; no price in this article should be read as live market data.
+
+This is also a corporate-governance question. The [SEC amended registration statement](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm) describes differentiated share classes and voting arrangements. Class A public ownership and the strategic Class N placement do not imply identical voting rights, and the company's founder-control provisions require careful reading of the final charter. Cash raised, ownership percentages and voting control are **three different measurements**. Investors need to examine the actual final prospectus rather than assume a large share sale necessarily distributes control broadly.
+
+As a simple sensitivity, if a hypothetical business earned an incremental **5% after-tax annual return** on **$10 billion** of productively deployed new capital, the annual profit contribution would be **$500 million**. At **1%**, it would be **$100 million**. Neither percentage is an Anthropic forecast, a disclosure or a target: they demonstrate why headline gross proceeds cannot establish future returns, especially when operating costs and capital expenditure continue.
+
+Readers looking for day-by-day share-trading context should use our [existing IPO pricing and first-two-sessions report](/news/anthropic-ipo-pricing-nasdaq/). Those verified historical trading markers are distinct from the prospective valuation scenarios below.
+
+---
+
 **Compound's IPO analysis, 16 November 2026. The headline number is not Anthropic's net loss. It is how much future revenue and profit are already implied by the price investors are being asked to pay.**
 
 Anthropic, the maker of Claude, has entered the public-market roadshow with an indicative price range of **$70–$78 per share** and **825 million Class A shares** for sale. At the $74 midpoint, that is a **$61.05 billion public offering** before fees. But that figure is *not* its equity valuation, not the amount all shareholders receive and not even the entire funding package.
@@ -216,6 +251,6 @@ A terrific company can still be an unattractive investment if the IPO already pr
 
 Continue with the [Anthropic stock research profile](/stocks/ant/), our [earlier accounting-loss explainer](/wealth/anthropic-loss-ipo-valuation/), or the [Compound company research directory](/stocks/) for comparisons with listed infrastructure providers. The financial analysis above is not a personalised recommendation to subscribe for shares.
 
-*Research checked 16 November 2026, Europe/Dublin. US-dollar amounts, period definitions, source dates and proposed share terms are preserved. SEC figures include unaudited 2026 interim data. Market-sensitive terms can change before pricing. Forecast tables are explicitly illustrative and are not statements of Anthropic management guidance.*
+*Original prospectus-era research checked 16 November 2026; factual closing update checked 23 November 2026 (Europe/Dublin). Older indicated $70–$78 pricing and 825m-share figures are retained explicitly as historical proposal assumptions, not live terms. SEC interim data include unaudited 2026 results. Scenario tables are illustrative, not Anthropic guidance or present ANT share prices.*
 
 *Cover: authentic Claude symbol and wordmark by Anthropic, with artwork sourced from [Lobe Icons](https://github.com/lobehub/lobe-icons/tree/master/packages/static-png/light) and independently documented on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg) (PD-textlogo; trademark rights remain with Anthropic). Artwork colours and proportions are unchanged; the neutral background is editorial layout. Compound.ie is not affiliated with or endorsed by Anthropic.*

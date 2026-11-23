@@ -1,0 +1,73 @@
+{
+  "series": "mag8",
+  "date": "2026-11-23",
+  "timezone": "Europe/Dublin",
+  "ticker": "MSFT",
+  "company": "Microsoft Corporation",
+  "status": "held-for-review",
+  "publication_state": "prepublication_checks",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/microsoft-buybacks-eps-share-count.md",
+  "canonical_url": "https://compound.ie/wealth/microsoft-buybacks-eps-share-count/",
+  "selection": "Least recently featured company, 7 November; expired 18 November Lilly exception does not apply.",
+  "story_fingerprint": "MSFT-FY2027Q1-share-count-EPS-bridge-buyback-withholding",
+  "story_thesis": "Buyback dollars are not net share retirement; a fixed-profit EPS bridge shows only a small denominator contribution.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+    "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS, topic index, source Microsoft coverage and inventories; existing AI capex, Xbox, outage and layoffs questions distinct. Live AI capex and stock guide inspected.",
+    "No 22 November Mag8 or legacy Mag7 publication; yesterday Amazon verified. Morning batch MAGN/FRO/RLX distinct. Past 14 days and recent PRs inspected including private OpenAI/ANT/Databricks and Irish-news ledgers. FairPath PR27 audit and PR28/29 report infrastructure distinct.",
+    "23 November recheck: current index/inventory, source Microsoft articles, current morning FE/SANM/WRD; private OpenAI/ANT/LEGO and Irish news; Compound recent PRs and FairPath PR28-30 show no overlap. No same-day Mag8/legacy Mag7 record or published matching source.",
+    "23 November source-date scan of past 14 days and JSON inventory search: no existing Microsoft net-share-count/EPS bridge; source article is the sole matching draft."
+  ],
+  "claim_checks": [
+    "Both primary documents directly inspected; period September2026 is FY2027Q1, comparison September2025.",
+    "Profit36629/27747 million; basic7426/7433; diluted7446/7466; EPS4.92/3.72 independently matched between release and SEC.",
+    "36629/7446-36629/7466=0.013177834; counterfactual4.9061, actual ratio4.9193. Mechanical denominator effect, not causal buyback attribution.",
+    "Diluted decline20m; basic decline7m; incremental adjustment falls13m. Point-in-time June/September outstanding7427m both rounded.",
+    "2925/3955-1=-26.042984%; tax withholding1.5bn excluded from programme. Remaining authorisation37.7bn, no expiry, terminable, not commitment.",
+    "No GAAP improvement presented as wholly recurring: investment effects explicitly acknowledged. No stock-price forecast or guidance invented.",
+    "23 November directly re-opened SEC 10-Q and issuer release; programme spending, withholding, EPS and weighted shares reconfirmed. Same published historical fiscal period; no fabricated freshness."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg",
+    "credit": "Jiaqian AirplaneFan",
+    "license": "CC BY 3.0",
+    "capture_date": "2015-06-18",
+    "archival": true,
+    "qa": "Unique approved original. Wide1200x675 and square1200x1200 crops visually inspected; building and Microsoft sign retained. Archival date and licence linked.",
+    "asset_path": "compound/site/static/images/evergreen/microsoft-buybacks-eps-share-count.jpg",
+    "asset_sha256": "d192e7da956025c0ee804509313f9c1caa58a92573b51bb530d591241d9d7bf5",
+    "delivery": "Approved licensed photo fetched with descriptive User-Agent; pinned local asset committed, avoiding external download at build time. Complete attribution and source retained."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "second_pass": "Source-led independent calculation and definition check performed after research. No human review claimed.",
+    "release_gates_pending": [
+      "exact-head CI/build",
+      "deployment and live verification"
+    ],
+    "validation": [
+      "23 November: 10 focused publishing/company-name tests passed.",
+      "23 November: image processor and article template passed; Compound Research attribution and standard ads loader present.",
+      "23 November: independent second editorial pass checked primary-source figures, fiscal periods, arithmetic, causal caveats, meaningful reader use, metadata, internal links and disclosures. No human review claimed.",
+      "23 November: generated 1200x675 and 1200x1200 crops visually inspected; recognisable Microsoft sign and building retained."
+    ]
+  },
+  "outcome_notes": "Recovery of PR253, counts at most one publication on 23 November and zero on 22 November. No paid LLM API or social posting; schedule unchanged.",
+  "article_sha256": "6fabfffba16f4a68cfaabfff63e40d9d85c8412580f5053cffb71d85592e9820",
+  "publication_attempt_status": "in_progress",
+  "pull_requests": [
+    {
+      "number": 253,
+      "url": "https://github.com/davidomarayt/compound/pull/253",
+      "head": "27a3d54565c1f9cd68433217ad32d2286cf962ec",
+      "merged": false
+    }
+  ],
+  "failed_checks": [],
+  "resumes_date": "2026-11-22"
+}
