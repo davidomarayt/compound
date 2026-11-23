@@ -808,7 +808,12 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
     raw_cache = os.environ.get("COMPOUND_ARTICLE_CACHE_DIR", "").strip()
     cached = None
     if raw_cache:
-        digest = hashlib.sha256(source.read_bytes() + b"discover-webp-v1-88-6").hexdigest()
+        # Only invalidate the cached derivative for the approved Claude logo;
+        # all other documentary photographs retain their verified image cache.
+        recipe = (b"discover-webp-v2-claude-logo-lossless"
+                  if a.slug == "anthropic-ipo-2026-prospectus-numbers-valuation"
+                  else b"discover-webp-v1-88-6")
+        digest = hashlib.sha256(source.read_bytes() + recipe).hexdigest()
         cached = Path(raw_cache).resolve() / "discover" / digest[:2] / digest
         names = [f"{a.slug}-{ratio}.webp" for ratio in DISCOVER_IMAGE_SIZES]
         if all((cached / name).is_file() and (cached / name).stat().st_size > 0
@@ -824,6 +829,13 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
             name = f"{a.slug}-{ratio}.webp"
             destination = target_dir / name
             rendered.save(destination, "WEBP", quality=88, method=6)
+            # This approved Anthropic wordmark has large flat areas: lossy WebP can
+            # compress it below the mandatory 20 kB social-asset QA threshold.
+            # Preserve authentic logo pixels using lossless encoding, not a
+            # generic substitute or a weaker verification threshold.
+            if (a.slug == "anthropic-ipo-2026-prospectus-numbers-valuation"
+                    and ratio == "16x9" and destination.stat().st_size <= 20_000):
+                rendered.save(destination, "WEBP", lossless=True, method=6)
             if cached is not None:
                 cached.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(destination, cached / name)
