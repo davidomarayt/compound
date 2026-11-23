@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 425 published articles and guides, 69 tools,
+**Included:** 428 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -128,6 +128,7 @@ For the complete register (including 510+ company profiles), open
 - [Ferrous fumarate in Ireland | Iron absorption, haemoglobin and the difference between two blood tests](https://compound.ie/health/medicines/ferrous-fumarate/) — **Health**
 - [Finding your patient information leaflet in Ireland | Read the exact Irish leaflet and locate the pharmacology](https://compound.ie/health/medicines/how-to-find-your-patient-information-leaflet-online/) — **Health**
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/) — **Wealth**
+- [FirstEnergy Lifted Its Capital Plan to $38 Billion. Who Funds the Extra Growth?](https://compound.ie/wealth/firstenergy-capex-equity-funding/) — **Wealth**
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/) — **Wealth**
 - [Folic acid in Ireland | Folate metabolism, new cells and two distinct uses](https://compound.ie/health/medicines/folic-acid/) — **Health**
 - [Frontline’s Tanker Rates Surged, but How Much of the Windfall Is Durable?](https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/) — **Wealth**
@@ -347,6 +348,7 @@ For the complete register (including 510+ company profiles), open
 - [Salbutamol inhalers in Ireland: how Ventolin works and when to get help](https://compound.ie/health/medicines/salbutamol/) — **Health**
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/) — **Wealth**
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/) — **Wealth**
+- [Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?](https://compound.ie/wealth/sanmina-zt-cash-conversion/) — **Wealth**
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/) — **Wealth**
 - [School Transport Fees Are Rising in 2027: What Families Will Actually Pay](https://compound.ie/news/ireland-school-transport-fees-2027/) — **Wealth**
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/) — **Wealth**
@@ -402,6 +404,7 @@ For the complete register (including 510+ company profiles), open
 - [Warfarin in Ireland | Vitamin K recycling, clotting factors and reading an INR](https://compound.ie/health/medicines/warfarin/) — **Health**
 - [Was Tesla's Cybertruck a Failure? The Numbers Behind the Wind-Down](https://compound.ie/news/tesla-cybertruck-success-failure-numbers/) — **Wealth**
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/) — **Wealth**
+- [WeRide Says One Robotaxi Market Has Positive Unit Economics. Can the Whole Business Follow?](https://compound.ie/wealth/weride-robotaxi-unit-economics/) — **Wealth**
 - [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/) — **Wealth**
 - [What did Lilly gain by accepting a lower Mounjaro price in China?](https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/) — **Wealth**
 - [What does Nvidia’s $2.94 billion warranty reserve tell investors?](https://compound.ie/wealth/nvidia-warranty-reserve/) — **Wealth**

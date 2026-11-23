@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 425
+- Published editorial articles and guides: 428
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 304
+## Wealth articles and guides — 307
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -202,6 +202,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/)
 - [Extension of farmer fuel supports being considered ahead of Budget 2027](https://compound.ie/news/farmer-fuel-supports-budget-2027/)
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/)
+- [FirstEnergy Lifted Its Capital Plan to $38 Billion. Who Funds the Extra Growth?](https://compound.ie/wealth/firstenergy-capex-equity-funding/)
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/)
 - [Frontline’s Tanker Rates Surged, but How Much of the Windfall Is Durable?](https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/)
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/)
@@ -363,6 +364,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/)
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/)
+- [Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?](https://compound.ie/wealth/sanmina-zt-cash-conversion/)
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/)
 - [School Transport Fees Are Rising in 2027: What Families Will Actually Pay](https://compound.ie/news/ireland-school-transport-fees-2027/)
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/)
@@ -399,6 +401,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Walmart Spent $22.6 Billion on Capex. Is Its New Profit Mix Paying for It?](https://compound.ie/wealth/walmart-profit-mix-capex-cash/)
 - [Was Tesla's Cybertruck a Failure? The Numbers Behind the Wind-Down](https://compound.ie/news/tesla-cybertruck-success-failure-numbers/)
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/)
+- [WeRide Says One Robotaxi Market Has Positive Unit Economics. Can the Whole Business Follow?](https://compound.ie/wealth/weride-robotaxi-unit-economics/)
 - [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/)
 - [What did Lilly gain by accepting a lower Mounjaro price in China?](https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/)
 - [What does Nvidia’s $2.94 billion warranty reserve tell investors?](https://compound.ie/wealth/nvidia-warranty-reserve/)
