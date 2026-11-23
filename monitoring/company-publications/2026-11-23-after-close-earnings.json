@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "status": "prepared_pending_ci",
+  "status": "merged_pending_deployment",
   "scan_since_inclusive": "2026-11-20",
   "branch": "claude/clever-babbage-uibieq",
   "initial_head": "51f1362dcda9b2459cb2c958621a2ffefc7268f6",
@@ -180,7 +180,8 @@
   "checks": {
     "targeted_offline_tests": "27 passed",
     "prior_deployment_44839385963": "all jobs including mobile audit passed",
-    "current_deployment_45282479018": "all jobs passed"
+    "current_deployment_45282479018": "all jobs passed",
+    "full_ci": "Both test and build/performance runs passed on final head 4faf20a4068f588ef1f5f77babec50c08ed6baa9; runs 45290103867,45290095950"
   },
   "new_articles": 0,
   "nvidia_one_off": "Already completed in earlier verified ledger; no duplicate",
@@ -421,5 +422,7 @@
     "international_companies_checked_by_monitor": 11,
     "international_pending": 36
   },
-  "hpe_live_accession_present": false
+  "hpe_live_accession_present": false,
+  "merge_commit": "1a54a622696e5fa657311e039a41807d40cb3857",
+  "deployment_run": 45291333805
 }
