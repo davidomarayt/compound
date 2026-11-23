@@ -1,0 +1,425 @@
+{
+  "date": "2026-11-23",
+  "status": "prepared_pending_ci",
+  "scan_since_inclusive": "2026-11-20",
+  "branch": "claude/clever-babbage-uibieq",
+  "initial_head": "51f1362dcda9b2459cb2c958621a2ffefc7268f6",
+  "pull_request": 266,
+  "head": "4faf20a4068f588ef1f5f77babec50c08ed6baa9",
+  "companies": {
+    "A": {
+      "url": "https://compound.ie/stocks/a/",
+      "latest": {
+        "fy": 2026,
+        "fp": "FY",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-23",
+        "form": "8-K",
+        "accession": "0001090872-26-000082",
+        "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000082/exhibit991-q426pressrelease.htm",
+        "notes": [
+          "Agilent describes these reported GAAP annual results as preliminary and unaudited. They are from the 23 November earnings release, rather than an audited annual filing."
+        ],
+        "metrics": {
+          "revenue": {
+            "current": 7551000000,
+            "prior_year": 6948000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported preliminary GAAP revenue"
+          },
+          "net_income": {
+            "current": 1457000000,
+            "prior_year": 1303000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported preliminary GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 5.15,
+            "prior_year": 4.57,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported preliminary GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "prepared"
+    },
+    "CRWD": {
+      "url": "https://compound.ie/stocks/crwd/",
+      "latest": {
+        "accession": "0001535527-26-000038",
+        "filed": "2026-11-23",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2027,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.02,
+            "prior_year": -0.03,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 24856000,
+            "prior_year": -26776000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1583419000,
+            "prior_year": 1234244000,
+            "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-10-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000038/crwd-20261031.htm"
+      },
+      "status": "prepared"
+    },
+    "HD": {
+      "url": "https://compound.ie/stocks/hd/",
+      "latest": {
+        "accession": "0001628280-26-075287",
+        "filed": "2026-11-20",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 3.72,
+            "prior_year": 3.62,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 3713000000,
+            "prior_year": 3601000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 43398000000,
+            "prior_year": 41352000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-11-01",
+        "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026075287/hd-20261101.htm"
+      },
+      "status": "verified_already_current"
+    },
+    "PTC": {
+      "url": "https://compound.ie/stocks/ptc/",
+      "latest": {
+        "accession": "0001193125-26-470217",
+        "filed": "2026-11-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 8.93,
+            "prior_year": 6.08,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1033284000,
+            "prior_year": 733997000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 2733431000,
+            "prior_year": 2739226000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-09-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526470217/ptc-20260930.htm"
+      },
+      "status": "verified_already_current"
+    },
+    "J": {
+      "url": "https://compound.ie/stocks/j/",
+      "latest": {
+        "accession": "0001628280-26-075495",
+        "filed": "2026-11-23",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 3.34,
+            "prior_year": 2.38,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 381661000,
+            "prior_year": 289336000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 15776851000,
+            "prior_year": 12029783000,
+            "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-10-02",
+        "source": "https://www.sec.gov/Archives/edgar/data/52988/000162828026075495/jec-20261002.htm"
+      },
+      "status": "verified_already_current"
+    }
+  },
+  "review_limit": 5,
+  "checks": {
+    "targeted_offline_tests": "27 passed",
+    "prior_deployment_44839385963": "all jobs including mobile audit passed",
+    "current_deployment_45282479018": "all jobs passed"
+  },
+  "new_articles": 0,
+  "nvidia_one_off": "Already completed in earlier verified ledger; no duplicate",
+  "pending": [
+    "Agilent and KEYS standalone Q4 outside supported quarterly table",
+    "EXPD supplemental disclosure",
+    "BRK-B comparable EPS",
+    "VMRK comparable revenue",
+    "36 international pending items",
+    "HPE 23 November 8-K accession 0001645590-26-000097: detailed reconciliation pending five-company limit"
+  ],
+  "source_checks": "Original SEC filing identities, statements, fiscal periods, units, GAAP/current-prior figures checked. Agilent visibly labelled preliminary/unaudited. Jacobs and CrowdStrike profit attributable to parent, not consolidated group profit. Historical periods preserved.",
+  "already_live_verification": [
+    {
+      "ticker": "hd",
+      "status": "verified_already_current",
+      "url": "https://compound.ie/stocks/hd/",
+      "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026075287/hd-20261101.htm",
+      "period": {
+        "accession": "0001628280-26-075287",
+        "filed": "2026-11-20",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 3.72,
+            "prior_year": 3.62,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 3713000000,
+            "prior_year": 3601000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 43398000000,
+            "prior_year": 41352000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-11-01",
+        "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026075287/hd-20261101.htm"
+      },
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "ticker": "ptc",
+      "status": "verified_already_current",
+      "url": "https://compound.ie/stocks/ptc/",
+      "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526470217/ptc-20260930.htm",
+      "period": {
+        "accession": "0001193125-26-470217",
+        "filed": "2026-11-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 8.93,
+            "prior_year": 6.08,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1033284000,
+            "prior_year": 733997000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 2733431000,
+            "prior_year": 2739226000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-09-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526470217/ptc-20260930.htm"
+      },
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "ticker": "j",
+      "status": "verified_already_current",
+      "url": "https://compound.ie/stocks/j/",
+      "source": "https://www.sec.gov/Archives/edgar/data/52988/000162828026075495/jec-20261002.htm",
+      "period": {
+        "accession": "0001628280-26-075495",
+        "filed": "2026-11-23",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 3.34,
+            "prior_year": 2.38,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 381661000,
+            "prior_year": 289336000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 15776851000,
+            "prior_year": 12029783000,
+            "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-10-02",
+        "source": "https://www.sec.gov/Archives/edgar/data/52988/000162828026075495/jec-20261002.htm"
+      },
+      "ad_loader": true,
+      "slots": []
+    }
+  ],
+  "coverage": {
+    "records_checked": 502,
+    "window": "2026-11-20 through 2026-11-23 inclusive, including weekend",
+    "fetch_errors": [],
+    "candidates": [
+      {
+        "ticker": "A",
+        "cik": 1090872,
+        "filings": [
+          {
+            "form": "8-K",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001090872-26-000082",
+            "primaryDocument": "a-20261123.htm",
+            "items": "2.02,9.01"
+          },
+          {
+            "form": "8-K",
+            "filingDate": "2026-11-20",
+            "accessionNumber": "0001193125-26-470278",
+            "primaryDocument": "a-20261116.htm",
+            "items": "5.02"
+          }
+        ]
+      },
+      {
+        "ticker": "CRWD",
+        "cik": 1535527,
+        "filings": [
+          {
+            "form": "10-Q",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001535527-26-000038",
+            "primaryDocument": "crwd-20261031.htm",
+            "items": ""
+          },
+          {
+            "form": "8-K",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001104659-26-130785",
+            "primaryDocument": "tm2630454d1_8k.htm",
+            "items": "1.01,7.01,9.01"
+          },
+          {
+            "form": "8-K",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001535527-26-000035",
+            "primaryDocument": "crwd-20261123.htm",
+            "items": "2.02,9.01"
+          }
+        ]
+      },
+      {
+        "ticker": "HD",
+        "cik": 354950,
+        "filings": [
+          {
+            "form": "10-Q",
+            "filingDate": "2026-11-20",
+            "accessionNumber": "0001628280-26-075287",
+            "primaryDocument": "hd-20261101.htm",
+            "items": ""
+          }
+        ]
+      },
+      {
+        "ticker": "HPE",
+        "cik": 1645590,
+        "filings": [
+          {
+            "form": "8-K",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001645590-26-000097",
+            "primaryDocument": "hpe-20261123.htm",
+            "items": "2.02,7.01,9.01"
+          }
+        ]
+      },
+      {
+        "ticker": "J",
+        "cik": 52988,
+        "filings": [
+          {
+            "form": "10-K",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001628280-26-075495",
+            "primaryDocument": "jec-20261002.htm",
+            "items": ""
+          },
+          {
+            "form": "8-K",
+            "filingDate": "2026-11-23",
+            "accessionNumber": "0001628280-26-075492",
+            "primaryDocument": "j-20261123.htm",
+            "items": "2.02,9.01"
+          }
+        ]
+      },
+      {
+        "ticker": "PTC",
+        "cik": 857005,
+        "filings": [
+          {
+            "form": "10-K",
+            "filingDate": "2026-11-20",
+            "accessionNumber": "0001193125-26-470217",
+            "primaryDocument": "ptc-20260930.htm",
+            "items": ""
+          }
+        ]
+      }
+    ],
+    "international_companies_checked_by_monitor": 11,
+    "international_pending": 36
+  },
+  "hpe_live_accession_present": false
+}
