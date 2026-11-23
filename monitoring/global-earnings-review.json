@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "companies_checked": 11,
   "companies": {
     "spcx": {
@@ -249,8 +249,18 @@
       "https://www.asml.com/static-files/f1e1b6be-fdcf-478b-99f7-24d416548ff5"
     ]
   },
-  "new_review_candidates": 0,
+  "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:353278:0001171843-26-007637",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-11-23",
+      "filed": "2026-11-23",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:353278:0001171843-26-007470",
       "company": "Novo Nordisk",
