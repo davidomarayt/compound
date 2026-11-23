@@ -1,0 +1,80 @@
+{
+  "series": "mag8",
+  "date": "2026-11-22",
+  "timezone": "Europe/Dublin",
+  "ticker": "MSFT",
+  "company": "Microsoft Corporation",
+  "status": "held-for-review",
+  "publication_state": "blocked_by_transient_image_rate_limit",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/microsoft-buybacks-eps-share-count.md",
+  "canonical_url": "https://compound.ie/wealth/microsoft-buybacks-eps-share-count/",
+  "selection": "Least recently featured company, 7 November; expired 18 November Lilly exception does not apply.",
+  "story_fingerprint": "MSFT-FY2027Q1-share-count-EPS-bridge-buyback-withholding",
+  "story_thesis": "Buyback dollars are not net share retirement; a fixed-profit EPS bridge shows only a small denominator contribution.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+    "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS, topic index, source Microsoft coverage and inventories; existing AI capex, Xbox, outage and layoffs questions distinct. Live AI capex and stock guide inspected.",
+    "No 22 November Mag8 or legacy Mag7 publication; yesterday Amazon verified. Morning batch MAGN/FRO/RLX distinct. Past 14 days and recent PRs inspected including private OpenAI/ANT/Databricks and Irish-news ledgers. FairPath PR27 audit and PR28/29 report infrastructure distinct."
+  ],
+  "claim_checks": [
+    "Both primary documents directly inspected; period September2026 is FY2027Q1, comparison September2025.",
+    "Profit36629/27747 million; basic7426/7433; diluted7446/7466; EPS4.92/3.72 independently matched between release and SEC.",
+    "36629/7446-36629/7466=0.013177834; counterfactual4.9061, actual ratio4.9193. Mechanical denominator effect, not causal buyback attribution.",
+    "Diluted decline20m; basic decline7m; incremental adjustment falls13m. Point-in-time June/September outstanding7427m both rounded.",
+    "2925/3955-1=-26.042984%; tax withholding1.5bn excluded from programme. Remaining authorisation37.7bn, no expiry, terminable, not commitment.",
+    "No GAAP improvement presented as wholly recurring: investment effects explicitly acknowledged. No stock-price forecast or guidance invented."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg",
+    "credit": "Jiaqian AirplaneFan",
+    "license": "CC BY 3.0",
+    "capture_date": "2015-06-18",
+    "archival": true,
+    "qa": "Unique approved original. Wide1200x675 and square1200x1200 crops visually inspected; building and Microsoft sign retained. Archival date and licence linked."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "second_pass": "Source-led independent calculation and definition check performed after research. No human review claimed.",
+    "release_gates_pending": [
+      "exact-head CI/build",
+      "deployment and live verification"
+    ],
+    "validation": [
+      "10 focused tests passed",
+      "Image processor and article render passed; neutral Compound Research and standard ads loader present",
+      "Second editorial pass corrected headline to attribute effect to share count, not causally to buybacks; period/units/calculations, source/internal links, disclosures and metadata checked",
+      "Exact-head test job passed in both CI attempts; performance/build gate not passed."
+    ]
+  },
+  "outcome_notes": "Zero published. MSFT draft preserved in PR253 for recovery; no other company substituted because blocker affects shared image build. Temporary Wikimedia rate limiting: recurring task remains enabled. Do not merge until exact-current-head CI and live checks pass. No paid LLM API, social posting or schedule changes. Resumed in same PR253 on 23 November; any successful publication counts only against 23 November.",
+  "article_sha256": "99622a2277ca69a232d4df5d6f1ed3c7bed184e85ca313eb03ba3bf586841359",
+  "publication_attempt_status": "failed",
+  "pull_requests": [
+    {
+      "number": 253,
+      "url": "https://github.com/davidomarayt/compound/pull/253",
+      "head": "2b913f4a502fdea4c1502e2f2194dc426f5203c4",
+      "merged": false
+    }
+  ],
+  "failed_checks": [
+    {
+      "run": 45052830127,
+      "attempt": 1,
+      "job": 137302102293,
+      "result": "HTTP 429 fetching existing BJ image; image preparation failed; full build and performance skipped"
+    },
+    {
+      "run": 45052830127,
+      "attempt": 2,
+      "job": 137302770894,
+      "result": "HTTP 429 fetching existing Tesla_Model_Y_2025_at_Santana_Row_dllu_01.jpg; image preparation failed; full build and performance skipped"
+    }
+  ],
+  "resumed_on": "2026-11-23"
+}
