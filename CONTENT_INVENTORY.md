@@ -262,7 +262,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
 - [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/)
-- [Jensen Huang Says He Would Return as Nvidia CEO: What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/)
+- [Jensen Huang Returns as Nvidia CEO as NVDA Shares Surge](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/)
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/)
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/)
 - [LEGO's Las Vegas F1 Race Was a Marketing Spectacle. Can the 2027 Sets Convert It Into Sales?](https://compound.ie/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/)

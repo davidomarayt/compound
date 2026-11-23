@@ -214,7 +214,7 @@ For the complete register (including 510+ company profiles), open
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/) — **Wealth**
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
 - [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/) — **Wealth**
-- [Jensen Huang Says He Would Return as Nvidia CEO: What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/) — **Wealth**
+- [Jensen Huang Returns as Nvidia CEO as NVDA Shares Surge](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/) — **Wealth**
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/) — **Wealth**
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/) — **Wealth**
 - [Lansoprazole in Ireland | Acid pump blockade and why formulations matter](https://compound.ie/health/medicines/lansoprazole/) — **Health**
