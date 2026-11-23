@@ -4,9 +4,9 @@
   "timezone": "Europe/Dublin",
   "ticker": "MSFT",
   "company": "Microsoft Corporation",
-  "status": "held-for-review",
-  "publication_state": "prepublication_checks",
-  "new_articles_published": 0,
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/microsoft-buybacks-eps-share-count.md",
   "canonical_url": "https://compound.ie/wealth/microsoft-buybacks-eps-share-count/",
@@ -46,28 +46,160 @@
   "editorial_qa": {
     "human_reviewed_by": null,
     "second_pass": "Source-led independent calculation and definition check performed after research. No human review claimed.",
-    "release_gates_pending": [
-      "exact-head CI/build",
-      "deployment and live verification"
-    ],
+    "release_gates_pending": [],
     "validation": [
       "23 November: 10 focused publishing/company-name tests passed.",
       "23 November: image processor and article template passed; Compound Research attribution and standard ads loader present.",
       "23 November: independent second editorial pass checked primary-source figures, fiscal periods, arithmetic, causal caveats, meaningful reader use, metadata, internal links and disclosures. No human review claimed.",
-      "23 November: generated 1200x675 and 1200x1200 crops visually inspected; recognisable Microsoft sign and building retained."
+      "23 November: generated 1200x675 and 1200x1200 crops visually inspected; recognisable Microsoft sign and building retained.",
+      "Exact PR head: full pytest 415 passed plus 2 subtests; test and performance jobs succeeded in both push and PR CI.",
+      "Production attempt 2: image/build, deploy, verify-live, verify-finance-discovery and mobile-audit all successful.",
+      "Live browser review confirmed title/date/byline, cover credit, readable financial table, calculations and source/disclosure links. Actual OG/Twitter image fetched and visually inspected; live hero hash equals committed licensed photo."
     ]
   },
-  "outcome_notes": "Recovery of PR253, counts at most one publication on 23 November and zero on 22 November. No paid LLM API or social posting; schedule unchanged.",
+  "outcome_notes": "One new Microsoft article fetched live on 23 November. Recovered existing PR253 and preserved zero publications for 22 November. First production attempt failed on an older Visa image HTTP 429; failed-job retry after a pause succeeded without weakening gates. No substitute or duplicate article, paid LLM API, social posting or schedule change. Existing daily 18:00 Europe/Dublin automation remains enabled.",
   "article_sha256": "6fabfffba16f4a68cfaabfff63e40d9d85c8412580f5053cffb71d85592e9820",
-  "publication_attempt_status": "in_progress",
+  "publication_attempt_status": "success",
   "pull_requests": [
     {
       "number": 253,
       "url": "https://github.com/davidomarayt/compound/pull/253",
-      "head": "27a3d54565c1f9cd68433217ad32d2286cf962ec",
-      "merged": false
+      "head": "b441e9b0a25780208e444c3435cff192ff460607",
+      "merged": true,
+      "merge_commit": "089692258a8111c5826ef9c8894acdde310b8918"
     }
   ],
-  "failed_checks": [],
-  "resumes_date": "2026-11-22"
+  "failed_checks": [
+    {
+      "run_id": 45236212036,
+      "attempt": 1,
+      "job_id": 137908512272,
+      "error": "HTTP 429 from Wikimedia Contactless-payment.jpg while preparing existing visa-payments-growth-incentives photo; deployment skipped. Microsoft asset is pinned locally.",
+      "retry": "Failed jobs rerun after 45-second pause"
+    }
+  ],
+  "resumes_date": "2026-11-22",
+  "verified_at": "2026-11-23 18:22:42 UTC",
+  "ci": [
+    {
+      "id": 45234804976,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "b441e9b0a25780208e444c3435cff192ff460607",
+      "html_url": "https://github.com/davidomarayt/compound/actions/runs/45234804976"
+    },
+    {
+      "id": 45234796237,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "push",
+      "head_sha": "b441e9b0a25780208e444c3435cff192ff460607",
+      "html_url": "https://github.com/davidomarayt/compound/actions/runs/45234796237"
+    }
+  ],
+  "deployment": {
+    "id": 45236212036,
+    "status": "completed",
+    "conclusion": "success",
+    "attempt": 2,
+    "head_sha": "089692258a8111c5826ef9c8894acdde310b8918",
+    "html_url": "https://github.com/davidomarayt/compound/actions/runs/45236212036",
+    "jobs": [
+      {
+        "id": 137909981122,
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "id": 137911367251,
+        "name": "deploy",
+        "conclusion": "success"
+      },
+      {
+        "id": 137912280614,
+        "name": "verify-finance-discovery",
+        "conclusion": "success"
+      },
+      {
+        "id": 137912280625,
+        "name": "verify-live",
+        "conclusion": "success"
+      },
+      {
+        "id": 137912280735,
+        "name": "mobile-audit",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "live_verification": {
+    "urls": {
+      "https://compound.ie/wealth/microsoft-buybacks-eps-share-count/": {
+        "status": 200,
+        "final_url": "https://compound.ie/wealth/microsoft-buybacks-eps-share-count/",
+        "bytes": 21122
+      },
+      "https://compound.ie/stocks/msft/": {
+        "status": 200,
+        "final_url": "https://compound.ie/stocks/msft/",
+        "bytes": 30542
+      },
+      "https://compound.ie/sitemap.xml": {
+        "status": 200,
+        "final_url": "https://compound.ie/sitemap.xml",
+        "bytes": 173331
+      },
+      "https://compound.ie/finance/index.json": {
+        "status": 200,
+        "final_url": "https://compound.ie/finance/index.json",
+        "bytes": 118896
+      },
+      "https://compound.ie/finance/": {
+        "status": 200,
+        "final_url": "https://compound.ie/finance/",
+        "bytes": 193564
+      }
+    },
+    "images": {
+      "social": {
+        "url": "https://compound.ie/static/discover/microsoft-buybacks-eps-share-count-16x9.webp",
+        "status": 200,
+        "sha256": "825f9aedbc0083ac863f0e3b3be92d1bb5506efc8677930b6038127b873044c6",
+        "bytes": 170048
+      },
+      "hero": {
+        "url": "https://compound.ie/static/images/evergreen/microsoft-buybacks-eps-share-count.jpg",
+        "status": 200,
+        "sha256": "d192e7da956025c0ee804509313f9c1caa58a92573b51bb530d591241d9d7bf5",
+        "bytes": 448100
+      }
+    },
+    "article_slots": [],
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "checks": [
+      "canonical, single H1, indexability, date and checked arithmetic",
+      "neutral attribution; no fabricated human approval",
+      "profile, related and licence links",
+      "actual hero and OG/Twitter bytes",
+      "sitemap, finance JSON and finance HTML discovery",
+      "profile backlink",
+      "article and profile ad loaders plus configured profile slots"
+    ]
+  },
+  "advertising": {
+    "article_loader": true,
+    "article_fixed_slots": "None configured in content/site.yml; standard Auto Ads loader rendered immediately",
+    "profile_loader": true,
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "review_gate": false,
+    "consent_controls": "Existing controls retained; Privacy settings rendered",
+    "impression_fill_claimed": false
+  }
 }
