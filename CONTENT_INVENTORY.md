@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 432
+- Published editorial articles and guides: 435
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 311
+## Wealth articles and guides — 314
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -152,6 +152,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [AT&T Earnings: Fibre Growth Strengthens the Case, but Cash Still Matters](https://compound.ie/wealth/att-earnings-fiber-growth-dividend-cash-flow/)
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
 - [Axon’s Software Is Accelerating. Is Hardware and Drone Investment Changing the Risk?](https://compound.ie/wealth/axon-software-growth-skydio-capital-risk/)
+- [Bath & Body Works Approved a $500 Million Buyback. Is the Core Business Ready?](https://compound.ie/wealth/bath-body-works-buyback-store-sales/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/)
 - [BJ’s Comps Rose 13.5%, but Merchandise Margin Fell. Can Membership Growth Carry the Build?](https://compound.ie/wealth/bj-membership-margin-capex/)
@@ -264,6 +265,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/)
 - [Jensen Huang Returns as Nvidia CEO as NVDA Shares Surge](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/)
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/)
+- [Keysight’s AI Orders Are Surging. How Much Growth Is Truly Organic?](https://compound.ie/wealth/keysight-ai-orders-capacity/)
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/)
 - [LEGO's Las Vegas F1 Race Was a Marketing Spectacle. Can the 2027 Sets Convert It Into Sales?](https://compound.ie/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/)
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/)
@@ -425,6 +427,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/)
 - [Zebra’s Sales Jumped 22%, but Gross Margin Fell. Can Automation Growth Absorb Memory Costs?](https://compound.ie/wealth/zebra-automation-growth-memory-margin/)
+- [Zoom’s Enterprise Business Is Growing. Are Its Cash Returns Getting Ahead of It?](https://compound.ie/wealth/zoom-enterprise-growth-capital-returns/)
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/)
 - [€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/)
 - [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/)

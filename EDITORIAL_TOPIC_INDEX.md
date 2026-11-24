@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 432 published articles and guides, 69 tools,
+**Included:** 435 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -60,6 +60,7 @@ For the complete register (including 510+ company profiles), open
 - [AT&T Earnings: Fibre Growth Strengthens the Case, but Cash Still Matters](https://compound.ie/wealth/att-earnings-fiber-growth-dividend-cash-flow/) — **Wealth**
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/) — **Wealth**
 - [Axon’s Software Is Accelerating. Is Hardware and Drone Investment Changing the Risk?](https://compound.ie/wealth/axon-software-growth-skydio-capital-risk/) — **Wealth**
+- [Bath & Body Works Approved a $500 Million Buyback. Is the Core Business Ready?](https://compound.ie/wealth/bath-body-works-buyback-store-sales/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Beta blockers in Ireland | Adrenaline signals, heart rate and differences between products](https://compound.ie/health/medicines/beta-blockers/) — **Health**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
@@ -216,6 +217,7 @@ For the complete register (including 510+ company profiles), open
 - [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/) — **Wealth**
 - [Jensen Huang Returns as Nvidia CEO as NVDA Shares Surge](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/) — **Wealth**
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/) — **Wealth**
+- [Keysight’s AI Orders Are Surging. How Much Growth Is Truly Organic?](https://compound.ie/wealth/keysight-ai-orders-capacity/) — **Wealth**
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/) — **Wealth**
 - [Lansoprazole in Ireland | Acid pump blockade and why formulations matter](https://compound.ie/health/medicines/lansoprazole/) — **Health**
 - [Laxatives in Ireland | Water, fibre, bowel movement and differences between types](https://compound.ie/health/medicines/laxatives/) — **Health**
@@ -440,6 +442,7 @@ For the complete register (including 510+ company profiles), open
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/) — **Wealth**
 - [Zebra’s Sales Jumped 22%, but Gross Margin Fell. Can Automation Growth Absorb Memory Costs?](https://compound.ie/wealth/zebra-automation-growth-memory-margin/) — **Wealth**
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/) — **Health**
+- [Zoom’s Enterprise Business Is Growing. Are Its Cash Returns Getting Ahead of It?](https://compound.ie/wealth/zoom-enterprise-growth-capital-returns/) — **Wealth**
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/) — **Health**
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/) — **Wealth**
 - [€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/) — **Wealth**
