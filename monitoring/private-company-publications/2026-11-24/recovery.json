@@ -8,11 +8,12 @@
   "merged_article_count": 3,
   "confirmed_live_new_articles": 0,
   "confirmed_updated_canonicals": 0,
-  "status": "merged_pending_live_verification",
+  "status": "deployed_partial_public_verification",
   "production_deployment": {
-    "status": "unverified",
+    "status": "deployed_github_pages_verified",
     "latest_article_merge_sha": "03b3857d2bc7eac241997f47cf88634a03f26c0b",
-    "details": "All exact-head CI jobs passed. Public article reader returned inaccessible; direct local HTTP unavailable (DNS). Production site run and per-article raw HTML/assets/ads not yet verified."
+    "run_url": "https://github.com/davidomarayt/compound/actions/runs/45493067914",
+    "details": "Pages deployment success 21:41:28Z; build, deploy, verify-live, verify-finance-discovery and mobile-audit all success. Build artifact contains all three article HTML, pinned covers and social images. Finance discovery public HTTP 200 and canonical confirmed Valve at 21:41:38Z. Mobile live private-company check covers November 23 only. Direct web reader unavailable for three new routes; local DNS unavailable. Remaining per-article live image, ad and backlink evidence not yet established."
   },
   "quality_gate": "All three separately source-checked and merged on successful exact-head test/performance. Reconciled intervening merges and inventory-only refreshes; no changes to required tests, policy, or profile milestones. Use nested date ledger to retain true 23 November Anthropic event date without conflict with existing historical ANT listing milestone check and without displacing earlier required daily verification. No quota duplication. Before claiming live, obtain production deployment evidence and verify actual canonical HTML, cover and social bytes, reciprocal profile links and ad markup.",
   "articles": [
@@ -50,7 +51,7 @@
       "human_reviewed": false,
       "editorial_review_status": "pending",
       "profile_update": "Existing verified profile milestone retained; article linked with company tag and appropriate canonical profile path. Reciprocal live links not yet verified.",
-      "status": "merged_pending_live_verification",
+      "status": "deployed_pending_full_live_verification",
       "live_http_verified": false,
       "cover_image_verified": false,
       "social_image_verified": false,
@@ -94,7 +95,7 @@
       "human_reviewed": false,
       "editorial_review_status": "pending",
       "profile_update": "Existing verified profile milestone retained; article linked with company tag and appropriate canonical profile path. Reciprocal live links not yet verified.",
-      "status": "merged_pending_live_verification",
+      "status": "deployed_pending_full_live_verification",
       "live_http_verified": false,
       "cover_image_verified": false,
       "social_image_verified": false,
@@ -136,12 +137,13 @@
       "human_reviewed": false,
       "editorial_review_status": "pending",
       "profile_update": "Existing verified profile milestone retained; article linked with company tag and appropriate canonical profile path. Reciprocal live links not yet verified.",
-      "status": "merged_pending_live_verification",
-      "live_http_verified": false,
+      "status": "deployed_pending_full_live_verification",
+      "live_http_verified": true,
       "cover_image_verified": false,
       "social_image_verified": false,
       "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "live_http_evidence": "Finance discovery job 138798209226, HTTP 200, canonical and sitemap confirmed 21:41:38Z"
     }
   ]
 }
