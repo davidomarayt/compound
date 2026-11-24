@@ -4167,15 +4167,15 @@ tools:
       - {id: fund, label: Pension fund value, type: number, prefix: "€", default: 500000, min: 0, step: 1000, section_start: Retirement lump sum}
       - {id: previous_lump_sums, label: Previous retirement lump sums since 7 December 2005, type: number, prefix: "€", default: 0, min: 0, step: 1000, help: "The €200,000 tax-free limit is a lifetime limit across retirement lump sums, not a fresh allowance for each pension."}
       - {id: custom_lump_sum, label: Override current lump sum, type: number, prefix: "€", default: 0, min: 0, step: 1000, advanced: true, section_start: Advanced scheme estimate, help: "Leave at €0 to use 25% of the fund. Enter your scheme's quoted lump sum here if an occupational-scheme salary/service calculation gives a different amount."}
-      - {id: marginal_rate, label: Assumed PAYE rate on cumulative lump sums above €500,000, type: number, suffix: "%", default: 40, min: 0, max: 60, step: 1, advanced: true, help: "Revenue taxes the portion above the €500,000 cumulative threshold under PAYE at the individual's marginal rate. 40% is a common higher-rate assumption, not a guarantee."}
+      - {id: marginal_rate, label: "Assumed PAYE rate on cumulative lump sums above €500,000", type: number, suffix: "%", default: 40, min: 0, max: 60, step: 1, advanced: true, help: "Revenue taxes the portion above the €500,000 cumulative threshold under PAYE at the individual's marginal rate. 40% is a common higher-rate assumption, not a guarantee."}
     results:
       - {id: gross_lump, label: Estimated current retirement lump sum}
       - {id: remaining_tax_free, label: Tax-free lifetime allowance remaining before this lump sum}
       - {id: tax_free_current, label: Current lump sum estimated tax-free}
       - {id: at_20, label: Current lump sum portion taxed at 20%}
       - {id: tax_20, label: Tax on 20% band}
-      - {id: above_500, label: Current portion above cumulative €500,000 threshold}
-      - {id: marginal_tax, label: Estimated PAYE on amount above €500,000, advanced: true}
+      - {id: above_500, label: "Current portion above cumulative €500,000 threshold"}
+      - {id: marginal_tax, label: "Estimated PAYE on amount above €500,000", advanced: true}
       - {id: total_tax, label: Estimated tax on current lump sum}
       - {id: net_lump, label: Estimated current lump sum after tax}
       - {id: lifetime_after, label: Cumulative retirement lump sums after this payment}
