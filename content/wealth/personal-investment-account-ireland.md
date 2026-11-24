@@ -258,11 +258,11 @@ If you contribute €12,000 and the investments grow, the account can be worth m
 
 ### Do unused PIA allowances carry forward?
 
-Section 747H of the [Finance (No. 2) Bill 2026 as introduced](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf) defines a **€12,000 contribution limit for each year of assessment**. It does not set out a carry-forward allowance for unused room. **Do not assume unused contribution capacity can be carried into a later year.** Check the enacted legislation and Revenue guidance before relying on an allowance.
+Proposed section 747H of the [committee-amended Finance (No. 2) Bill 2026, section 27](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf) defines a **€12,000 contribution limit for each year of assessment**. It does not set out a carry-forward allowance for unused room. **Do not assume unused contribution capacity can be carried into a later year.** Check the enacted legislation and Revenue guidance before relying on an allowance.
 
 ### Do withdrawals restore your contribution allowance?
 
-**No, under the Bill as introduced.** Section 747L(2)(d) counts annual contributions **without reducing them for withdrawals**. For example, if you contribute €12,000 and withdraw €5,000 in the same tax year, the withdrawal does not create another €5,000 of normal contribution room that year.
+**No, under the committee-amended Bill.** Proposed section 747L(2)(d) counts annual contributions **without reducing them for withdrawals**. For example, if you contribute €12,000 and withdraw €5,000 in the same tax year, the withdrawal does not create another €5,000 of normal contribution room that year.
 
 These are proposed rules, not currently available account terms. The final enacted legislation may differ.
 
@@ -468,7 +468,7 @@ You are expected to be able to access or withdraw your funds when you choose.
 However, two separate questions should not be confused:
 
 1. **Can I withdraw the money?** The published design says yes.
-2. **Does a withdrawal restore contribution room in that same year?** The detailed rule still needs to be confirmed.
+2. **Does a withdrawal restore contribution room in that same year?** No under [proposed section 747L(2)(d) of the committee-amended Bill](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf). If you pay in €8,000 and then withdraw €3,000, only €4,000 of the proposed annual €12,000 contribution limit remains, not €7,000. This is different from reducing an outstanding excess contribution under proposed section 747R(6). Final enactment is still required.
 
 There may also be normal market and provider mechanics involved in selling investments before cash can be withdrawn.
 
@@ -791,8 +791,7 @@ Budget 2027 filled in the biggest missing numbers, but several practical details
 Following the 19 November 2026 targeted check of the committee-amended text, practical matters still requiring final law or provider confirmation include:
 
 * final regulations on valuation, including foreign-currency holdings;
-* how contribution limits operate when money is withdrawn;
-* whether any unused annual contribution allowance can carry forward;
+* whether the final enacted rules retain the draft's gross annual contribution limit (withdrawals do not restore normal room) and absence of carry-forward;
 * the detailed treatment of existing investments moved into a PIA;
 * the final process for provider-to-provider transfers;
 * how providers will implement the proposed death/estate and non-residence procedures;
