@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 436 published articles and guides, 69 tools,
+**Included:** 437 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -404,6 +404,7 @@ For the complete register (including 510+ company profiles), open
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/) — **Wealth**
 - [Utrogestan in Ireland | Micronised progesterone and protection of the womb lining](https://compound.ie/health/medicines/utrogestan/) — **Health**
 - [Vaginal oestrogen in Ireland | Local tissue changes in the vagina and urinary tract](https://compound.ie/health/medicines/vaginal-oestrogen/) — **Health**
+- [Valve's Steam Machine Supply Problem: When Should a Gaming Platform Absorb Rising Hardware Costs?](https://compound.ie/wealth/valve-steam-machine-memory-cost-platform-economics/) — **Wealth**
 - [Venlafaxine in Ireland | Serotonin and noradrenaline transporters and formulation differences](https://compound.ie/health/medicines/venlafaxine/) — **Health**
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/) — **Wealth**
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/) — **Health**

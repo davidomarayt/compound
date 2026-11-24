@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 436
+- Published editorial articles and guides: 437
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 315
+## Wealth articles and guides — 316
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -404,6 +404,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Tyson’s Chicken Earned $1.75 Billion. Can It Carry Beef’s $1.22 Billion Loss?](https://compound.ie/wealth/tyson-chicken-beef-segment-profit/)
 - [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/)
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/)
+- [Valve's Steam Machine Supply Problem: When Should a Gaming Platform Absorb Rising Hardware Costs?](https://compound.ie/wealth/valve-steam-machine-memory-cost-platform-economics/)
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/)
 - [Walmart Spent $22.6 Billion on Capex. Is Its New Profit Mix Paying for It?](https://compound.ie/wealth/walmart-profit-mix-capex-cash/)
 - [Was Tesla's Cybertruck a Failure? The Numbers Behind the Wind-Down](https://compound.ie/news/tesla-cybertruck-success-failure-numbers/)
