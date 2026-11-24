@@ -47,6 +47,15 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      # Persist validated, source-fingerprinted image bytes after a successful pass.
+      # Restore-only previously reused an old snapshot indefinitely; each clean
+      # article edit could redownload all approved pinned photos from Wikimedia.
+      # Never save after a failed image pass or bypass its existing checks.
+      - name: Save verified editorial image cache
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/news-images
+          key: editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Normalise approved private-company archival photos
         run: python scripts/normalise_private_company_images.py
       - name: Validate all processed article metadata before building
@@ -404,6 +413,15 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      # Persist validated, source-fingerprinted image bytes after a successful pass.
+      # Restore-only previously reused an old snapshot indefinitely; each clean
+      # article edit could redownload all approved pinned photos from Wikimedia.
+      # Never save after a failed image pass or bypass its existing checks.
+      - name: Save verified editorial image cache
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/news-images
+          key: editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Normalise approved private-company archival photos
         run: python scripts/normalise_private_company_images.py
       - run: compound build
