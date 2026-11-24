@@ -50,6 +50,9 @@
 .condition-toc { margin-top: 20px; font-size: .9rem; }
 .condition-copy h2 { margin-bottom: 10px; line-height: 1.2; }
 .condition-copy p { max-width: 72ch; }
+.condition-pharmacy { margin-top: 20px; padding: clamp(16px, 3vw, 24px); border: 1px solid #cbded3; border-radius: 12px; background: #eff6f2; }
+.condition-pharmacy h2 { margin-top: 0; }
+.condition-pharmacy p:last-child { margin-bottom: 0; }
 @media (max-width: 810px) {
   .condition-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .conditions-hero { grid-template-columns: 1fr; }
