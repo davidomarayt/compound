@@ -605,6 +605,73 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     return f"photo-fallback:{query}"
 
 
+
+def restore_pinned_photo_from_cache(path: Path, cache_dir: Path) -> bool:
+    """Recover exact approved image bytes across article-text edits, never search for a substitute.
+
+    The ordinary content hash includes the article body, so a copy edit must not
+    discard a photo previously verified with the same exact URL and provenance.
+    A cache entry is trusted only when its processed metadata and image digest
+    both match; missing, corrupt or different assets still fail closed.
+    """
+    meta, raw, match = parse(path)
+    slug = str(meta.get("slug") or path.stem)
+    url = str(meta.get("hero_image_url") or "").strip()
+    if not url:
+        return False
+    expected = f"images/evergreen/{slug}.jpg"
+    for record in cache_dir.glob("*.json"):
+        try:
+            saved = json.loads(record.read_text(encoding="utf-8"))
+            processed_match = FRONT.match(saved["processed"])
+            if not processed_match:
+                continue
+            previous = yaml.safe_load(processed_match.group(1)) or {}
+            if (str(previous.get("slug") or slug) != slug
+                    or previous.get("hero_image_url") != url
+                    or previous.get("image") != f"/static/{expected}"):
+                continue
+            if any(
+                str(meta.get(source_key) or "") != str(previous.get(source_key) or "")
+                for source_key in ("hero_image_credit", "hero_image_source", "hero_image_alt")
+            ):
+                continue
+            if previous.get("image_source") != (meta.get("hero_image_source") or url):
+                continue
+            if previous.get("image_credit") != (meta.get("hero_image_credit") or ""):
+                continue
+            if previous.get("image_alt") != (
+                meta.get("hero_image_alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"
+            ):
+                continue
+            asset = next((item for item in saved["assets"] if item.get("path") == expected), None)
+            if not asset or not re.fullmatch(r"[0-9a-f]{64}", str(asset.get("sha") or "")):
+                continue
+            blob = cache_dir / asset["sha"]
+            data = blob.read_bytes()
+            if hashlib.sha256(data).hexdigest() != asset["sha"]:
+                continue
+            with Image.open(blob) as photo:
+                photo.verify()
+            destination = (STATIC / expected).resolve()
+            if not destination.is_relative_to((STATIC / "images").resolve()):
+                continue
+            if destination.exists() and destination.read_bytes() != data:
+                continue
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            if not destination.exists():
+                shutil.copyfile(blob, destination)
+            inject_fields(path, raw, match, {
+                key: str(previous[key])
+                for key in ("image", "image_alt", "image_credit", "image_source", "social_image")
+                if previous.get(key)
+            })
+            return True
+        except (KeyError, OSError, ValueError, TypeError, yaml.YAMLError):
+            continue
+    return False
+
+
 def process_cached(path: Path, api_key: str, cache_dir: Path, force: bool = False) -> str:
     """Reuse output only for identical source and processor, with verified assets.
 
@@ -647,7 +714,10 @@ def process_cached(path: Path, api_key: str, cache_dir: Path, force: bool = Fals
             pass
     # Refresh pinned URLs on misses: an existing slug may reference a new photo.
     # Preserve approved local covers and existing non-pinned selections.
-    result = process(path, api_key, force=force or bool(parse(path)[0].get("hero_image_url")))
+    restored = not force and restore_pinned_photo_from_cache(path, cache_dir)
+    result = "skip:restored-approved-pinned-image" if restored else process(
+        path, api_key, force=force or bool(parse(path)[0].get("hero_image_url"))
+    )
     meta, processed, _ = parse(path)
     assets = []
     for url in set(str(meta.get(k) or "") for k in ("image", "social_image")):

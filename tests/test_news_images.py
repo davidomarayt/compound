@@ -256,3 +256,83 @@ def test_cache_restores_assets_without_network_and_invalidates_source(tmp_path, 
     p.write_text(original)
     assert news_images.process_cached(p, '', cache) == 'pinned-url'
     assert len(calls) == 3
+
+
+def test_pinned_photo_cache_survives_article_copy_edit_without_network(tmp_path, monkeypatch):
+    from PIL import Image
+    static = tmp_path / "static"
+    cache = tmp_path / "verified-cache"
+    monkeypatch.setattr(news_images, "STATIC", static)
+    doc = tmp_path / "company.md"
+    front = (
+        "---\\ntitle: Company research\\nslug: company\\n"
+        "hero_image_url: https://example.org/approved-photo.jpg\\n"
+        "hero_image_alt: Approved archival company photograph\\n"
+        "hero_image_credit: Named photographer / CC BY 2.0\\n"
+        "hero_image_source: https://example.org/licence-record\\n"
+        "---\\n"
+    ).replace("\\n", "\n")
+    doc.write_text(front + "Original body.", encoding="utf-8")
+
+    def first_fetch(path, api_key, force=False):
+        asset = static / "images/evergreen/company.jpg"
+        asset.parent.mkdir(parents=True, exist_ok=True)
+        Image.new("RGB", (1200, 700)).save(asset)
+        _, raw, match = news_images.parse(path)
+        news_images.inject_fields(path, raw, match, {
+            "image": "/static/images/evergreen/company.jpg",
+            "social_image": "/static/images/evergreen/company.jpg",
+            "image_alt": "Approved archival company photograph",
+            "image_credit": "Named photographer / CC BY 2.0",
+            "image_source": "https://example.org/licence-record",
+        })
+        return "pinned-url"
+
+    monkeypatch.setattr(news_images, "process", first_fetch)
+    assert news_images.process_cached(doc, "", cache) == "pinned-url"
+    (static / "images/evergreen/company.jpg").unlink()
+    doc.write_text(front + "Updated article body.", encoding="utf-8")
+
+    def network_must_not_run(*args, **kwargs):
+        raise AssertionError("Source-perfect approved photo should be restored without downloading")
+
+    monkeypatch.setattr(news_images, "process", network_must_not_run)
+    assert news_images.process_cached(doc, "", cache) == "skip:restored-approved-pinned-image"
+    updated = doc.read_text(encoding="utf-8")
+    assert "Updated article body." in updated
+    assert "Original body." not in updated
+    assert "Named photographer / CC BY 2.0" in updated
+    with Image.open(static / "images/evergreen/company.jpg") as photo:
+        assert photo.size == (1200, 700)
+
+
+def test_pinned_photo_cache_rejects_changed_licence_provenance(tmp_path, monkeypatch):
+    from PIL import Image
+    static = tmp_path / "static"
+    cache = tmp_path / "cache"
+    monkeypatch.setattr(news_images, "STATIC", static)
+    cache.mkdir()
+    asset = static / "images/evergreen/company.jpg"
+    asset.parent.mkdir(parents=True)
+    Image.new("RGB", (1000, 600)).save(asset)
+    import hashlib
+    import json
+    data = asset.read_bytes()
+    sha = hashlib.sha256(data).hexdigest()
+    (cache / sha).write_bytes(data)
+    saved = ("---\\nslug: company\\nhero_image_url: https://example.org/photo.jpg\\n"
+             "hero_image_alt: Accurate\\nhero_image_credit: Alice / CC BY\\n"
+             "hero_image_source: https://example.org/record\\n"
+             "image: /static/images/evergreen/company.jpg\\n"
+             "social_image: /static/images/evergreen/company.jpg\\n"
+             "image_alt: Accurate\\nimage_credit: Alice / CC BY\\n"
+             "image_source: https://example.org/record\\n---\\nBody.").replace("\\n", "\n")
+    (cache / "prior.json").write_text(json.dumps({
+        "processed": saved,
+        "assets": [{"path": "images/evergreen/company.jpg", "sha": sha}],
+    }))
+    asset.unlink()
+    doc = tmp_path / "company.md"
+    doc.write_text(saved.replace("Alice / CC BY", "Bob / CC BY", 1))
+    assert not news_images.restore_pinned_photo_from_cache(doc, cache)
+    assert not asset.exists()
