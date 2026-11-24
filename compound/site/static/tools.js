@@ -1198,8 +1198,9 @@
       const annualDistance=Boolean(v.__advanced)?Math.max(0,v.annual_distance):0;
       const annualLitres=annualDistance*consumption/100, annualCost=annualLitres*price;
       return {
-        litres:num(litres)+' L',cost:money(cost),per100:money(per100),cost_per_km:money(distance>0?cost/distance:0),
-        annual_litres:num(annualLitres)+' L',annual_cost:money(annualCost)
+        litres:num(litres)+' L',cost:money(cost),per100:money(per100),cost_per_km:money(per100/100),
+        total_distance:num(distance)+' km',per_person:money(cost/Math.max(1,Math.round(Number(v.people)||1))),
+        annual_litres:num(annualLitres)+' L',annual_cost:money(annualCost),monthly_cost:money(annualCost/12),weekly_cost:money(annualCost/52)
       };
     },
     ev(v){
