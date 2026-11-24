@@ -56,6 +56,23 @@ For UK/imperial MPG, divide 282.481 by MPG. For US MPG, divide 235.215 by MPG; t
 
 For miles, multiply by 1.609344 to convert to kilometres. To measure real-world consumption, divide the litres used over several full-tank fills by the kilometres covered and multiply by 100. Traffic, speed, weather and vehicle load can all affect the result.
 
+## Worked example: sharing the fuel bill
+
+For a 120 km return trip at 7 L/100 km and an illustrative €1.80/L, fuel used is 8.4 litres and the total is €15.12. If three people share equally, each pays €5.04. Enter 60 km, two one-way trips and three people. If parking costs €6, add €2 per person separately; parking is not part of the calculator's fuel result.
+
+## The replacement-car trap
+
+Lower fuel use does not automatically justify changing cars.
+
+Suppose a newer car saves €500 a year in fuel but costs €12,000 more after selling your current car. Ignoring finance, depreciation and maintenance differences, fuel savings alone would take 24 years to recover that price gap.
+
+That does not mean the newer car is a bad purchase. It means fuel economy should be separated from the broader ownership decision.
+
+If you are comparing petrol, diesel, hybrid and EV options, calculate fuel/charging first, then add finance, insurance, motor tax, servicing, expected depreciation and how long you actually plan to own the vehicle.
+
+The biggest cost in motoring is often not the one shown at the pump.
+
+
 ## Frequently asked questions
 
 ### How much does it cost to drive 100 km in Ireland?

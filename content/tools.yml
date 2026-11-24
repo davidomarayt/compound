@@ -1340,7 +1340,7 @@ tools:
     category: EV & Motoring
     formula: fuel
     summary: How much will your drive cost? Calculate petrol or diesel for a one-way trip, return journey or commute in Ireland. See total fuel cost, cost per kilometre and your share of the bill; switch to Advanced for monthly and annual budgets.
-    meta_description: "Free Irish petrol and diesel calculator. Enter distance, L/100 km and pump price to see journey cost, cost per km, fuel split and monthly or annual spend."
+    meta_description: "Free fuel cost calculator for Ireland. Enter distance, L/100 km and pump price to calculate petrol or diesel trip costs, shared bills and annual budgets."
     quick_answer: "At 6.5 L/100 km and €1.75 per litre, a 100 km journey costs €11.38 in petrol or diesel. Enter your own distance, consumption and pump price below. Example price, not a live quote."
     quick_link_label: "Compare electric-car charging costs"
     quick_link_url: /ev-charging-cost-calculator/
