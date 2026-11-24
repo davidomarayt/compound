@@ -2,33 +2,33 @@
   "cik": 935703,
   "company": "Dollar Tree",
   "latest": {
-    "accession": "0000935703-26-000109",
-    "filed": "2026-08-27",
+    "accession": "0000935703-26-000137",
+    "filed": "2026-11-24",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.7,
-        "prior_year": 0.91,
+        "current": 1.24,
+        "prior_year": 1.2,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 514500000,
-        "prior_year": 188400000,
+        "current": 232000000,
+        "prior_year": 244600000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4886500000,
-        "prior_year": 4566800000,
+        "current": 5073700000,
+        "prior_year": 4746300000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-08-01",
-    "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000109/dltr-20260801.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000137/dltr-20261031.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-08-01",
       "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000109/dltr-20260801.htm"
+    },
+    {
+      "accession": "0000935703-26-000137",
+      "filed": "2026-11-24",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.24,
+          "prior_year": 1.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 232000000,
+          "prior_year": 244600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5073700000,
+          "prior_year": 4746300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000137/dltr-20261031.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DLTR",
-  "updated": "2026-10-15"
+  "updated": "2026-11-24"
 }
