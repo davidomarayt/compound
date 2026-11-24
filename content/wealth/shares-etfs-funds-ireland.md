@@ -19,6 +19,8 @@ sources:
   url: https://www.ccpc.ie/manage-your-money/saving-and-investments/investments/taxes-and-charges
 - title: 'Revenue eBrief 016/26: Investment Undertaking Tax Rate Change'
   url: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0162026.aspx
+- title: 'Revenue eBrief 142/26 (6 October 2026): standard CGT rate for disposals from 7 October 2026'
+  url: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx
 - title: 'Revenue eBrief 038/22: Exchange Traded Funds'
   url: https://www.revenue.ie/en/tax-professionals/ebrief/2022/no-0382022.aspx
 ---
@@ -120,7 +122,7 @@ The important questions are:
 | Trading | Exchange | Exchange | Usually provider/fund dealing process |
 | Ongoing fund fee | None at company level | Usually yes | Usually yes |
 | Company-specific risk | High if concentrated | Lower in broad funds | Lower in broad funds |
-| Irish tax | Often CGT + dividend rules for ordinary shares | Depends on structure/domicile; fund regime may apply | Fund regime may apply |
+| Irish tax | Ordinary share gains commonly subject to CGT on disposal; dividends taxed separately | Depends on structure/domicile; fund regime may apply | Fund regime may apply |
 
 The tax row is deliberately cautious because product classification matters.
 
@@ -150,7 +152,9 @@ Revenue confirmed that from **1 January 2026** the tax rate for individuals on I
 
 Where the investment-fund regime applies, the eight-year deemed-disposal rule can also apply.
 
-Direct shares, by contrast, are commonly taxed under Capital Gains Tax rules on disposal, with dividend income taxed separately.
+Direct shares, by contrast, are commonly taxed under Capital Gains Tax (CGT) rules on disposal, with dividend income taxed separately. Revenue's **standard CGT rate is 31% for most disposals on or after 7 October 2026**; it was **33% for standard disposals up to and including 6 October 2026**. Development land has its own 33% rate. Individuals also have a €1,270 annual personal CGT exemption, subject to available losses and reliefs. The share-sale **disposal date** determines which standard rate applies, not the date the shares were bought.
+
+Use the existing [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) to choose the appropriate rate basis and read the [Capital Gains Tax guide](/wealth/capital-gains-tax-ireland/) before treating a headline rate as your tax bill. These **CGT rate and exemption details were checked against Revenue on 23 November 2026** using its [6 October 2026 eBrief](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx) and [calculation guidance](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx). This targeted CGT check is not a full review of the fund-tax or 2027 investment-account proposals.
 
 That means two investments with similar market exposure can have different after-tax outcomes.
 
