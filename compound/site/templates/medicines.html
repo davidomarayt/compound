@@ -66,9 +66,11 @@
           </ul>
         </section>
         {% endif %}
-        {% set groups = namespace(glp=[], other=[]) %}
+        {% set groups = namespace(glp=[], other=[], comparisons=[]) %}
         {% for guide in guides if not guide.medicine_index_name %}
-          {% if 'glp-1' in guide.tags %}
+          {% if 'medicine-comparison' in guide.tags %}
+            {% set groups.comparisons = groups.comparisons + [guide] %}
+          {% elif 'glp-1' in guide.tags %}
             {% set groups.glp = groups.glp + [guide] %}
           {% else %}
             {% set groups.other = groups.other + [guide] %}
@@ -76,7 +78,8 @@
         {% endfor %}
         {% for group_id, group_title, group_guides in [
           ('glp-1-medicines', 'GLP-1 medicines', groups.glp),
-          ('other-medicines', 'Other medicines', groups.other)
+          ('other-medicines', 'Other medicines', groups.other),
+          ('medicine-comparisons', 'Medicine comparisons', groups.comparisons)
         ] if group_guides %}
         <section class="medicines-group" id="{{ group_id }}" aria-labelledby="{{ group_id }}-heading" data-medicine-group>
           <h3 id="{{ group_id }}-heading">{{ group_title }}</h3>
