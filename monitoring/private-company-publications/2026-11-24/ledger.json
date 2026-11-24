@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-24",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "editorial/private-company-2026-11-24-held",
+  "target_new_articles": 3,
+  "confirmed_live_new_articles": 0,
+  "confirmed_updated_canonicals": 0,
+  "status": "held_for_review",
+  "branch_protection": false,
+  "production_deployment": {
+    "status": "blocked_before_release",
+    "latest_successful_site_run": "https://github.com/davidomarayt/compound/actions/runs/45341074346",
+    "latest_failed_site_run": "https://github.com/davidomarayt/compound/actions/runs/45344512692",
+    "failure": "Wikimedia HTTP 429, pinned Crystal Bar image for rlx-acquisition-revenue-margin-cash.md; build job 138275752176 at 06:59:46Z; deploy and live checks skipped. Direct own-site image fetch DNS failed. Issue #256 open; do not aggressively retry throttled provider."
+  },
+  "prior_recovery": {
+    "latest": "24 November 06:35:53Z mobile-audit job 138265692792 fetched all three 23 November pages, covers, WebP, ads and reciprocal profiles.",
+    "legacy_12_nov": "All three older article bodies visible in web reader; historical ledger still prepared_not_live and PR #120 open, raw assets/ads not independently verified. Old Anthropic article shows Dario cover in reader; must replace with licensed compliant photo in separate scoped correction, no duplicate."
+  },
+  "duplication_checks": "Read AGENTS.md, three inventories, watchlist, recent commits and open PRs, date ledgers and latest overnight QA; exact terms Shirudo, Claude Ship, PR Steward, Steam Machine absent from all three inventories. No overlapping open Compound PR titles; full cross-workflow final check remains pending. Live OpenAI and ANT profile readable; Valve reader inaccessible.",
+  "quality_gate": "Three independent research drafts only. No publication-ready image validation, no independent final editorial QA, no exact-head CI or live verification yet. Store this hold ledger in the date subdirectory, outside the top-level exact-date glob because scripts/verify_private_company_publications.py unconditionally requires three actual article routes even for blocked items. Do not change or bypass tests. Resume these fingerprints only if still timely; set correct publication date upon release; never count held work as published.",
+  "articles": [
+    {
+      "slug": "openai",
+      "title": "OpenAI and Cisco's Shirudo: Can Live Security Protection Reduce the Cost of Waiting for a Patch?",
+      "meta": "OpenAI and Cisco introduced Shirudo on 23 November. Examine the economics of temporary Linux runtime protection, testing, outage costs and the limits of the demonstration.",
+      "fingerprint": "2026-11-23-openai-cisco-shirudo-live-runtime-patch-window-economics",
+      "date": "2026-11-23",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "sources": [
+        "https://openai.com/index/introducing-shirudo/",
+        "https://isovalent.com/blog/post/cisco-openai-shirudo/"
+      ],
+      "photo": {
+        "candidate": "https://commons.wikimedia.org/wiki/File:Disrupt_SF_TechCrunch_Disrupt_San_Francisco_2019_-_Day_2_(48838200316).jpg",
+        "credit": "Steve Jennings/Getty Images for TechCrunch; TechCrunch Flickr CC BY 2.0, licence confirmed by Commons 3 November 2019",
+        "alt": "OpenAI co-founder Greg Brockman speaking at TechCrunch Disrupt in San Francisco on 3 October 2019; archival photograph, not the Shirudo launch",
+        "status": "Candidate only; confirm originality/non-reuse, suitability and actual bytes; do not fetch aggressively while Wikimedia is throttling."
+      },
+      "profile_change": "23 November: Cisco and OpenAI announced the open-source Shirudo runtime; controlled Elasticsearch demonstration; not proof of fleet-wide protection or disclosed contract revenue.",
+      "checks": [
+        "23 November dated announcement on both project partners' original pages.",
+        "Controlled demonstration only; no claim all vulnerabilities can be mitigated.",
+        "BSD 2-Clause runtime; BPF programs dual BSD/GPL according to OpenAI.",
+        "8 × 25 × €200 = €40,000; 2 × 25 × €200 = €10,000; subtract €12,000 = €18,000 illustrative net difference."
+      ],
+      "company": "OpenAI",
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "article_path": "monitoring/private-company-publications/2026-11-24/openai.md",
+      "canonical_url": null,
+      "profile_update": "23 November: Cisco and OpenAI announced the open-source Shirudo runtime; controlled Elasticsearch demonstration; not proof of fleet-wide protection or disclosed contract revenue.",
+      "profile_update_applied": false,
+      "live_http_verified": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "editorial_review_status": "pending"
+    },
+    {
+      "slug": "anthropic",
+      "title": "Anthropic's Claude Ship: Does Automating Pull-Request Review Make Software Delivery Cheaper?",
+      "meta": "Anthropic introduced Claude Ship on 23 November. Explore token-based costs, policy-controlled approval, engineering throughput and when human review remains essential.",
+      "fingerprint": "2026-11-23-anthropic-claude-ship-pr-steward-approvals-token-cost-governance",
+      "date": "2026-11-23",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "sources": [
+        "https://claude.com/resources/articles/introducing-claude-ship",
+        "https://claude.com/product/claude-ship",
+        "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+        "https://www.reuters.com/business/anthropic-launches-claude-ship-help-developers-ship-code-faster-2026-11-23/"
+      ],
+      "photo": {
+        "status": "No fully verified topic-specific real photo yet. Code with Claude conference press images are not licensed for unrestricted reuse merely because they are online. No Dario Amodei, generic coding stock, logo-only or synthetic fallback."
+      },
+      "profile_change": "23 November: Claude Ship beta combines existing Code Review with beta PR Steward and Claude Approvals, for eligible Team/Enterprise GitHub repositories; token-billed, exclusions apply. Add stock-ant and company-anthropic tags; retain ANT profile.",
+      "checks": [
+        "23 November official launch; Code Review already GA, PR Steward and Claude Approvals beta.",
+        "Team and Enterprise GitHub repositories; excluded ZDR, HIPAA configuration and CMEK organisations.",
+        "Approvals policy works with existing protection and required checks; approval is not unrestricted merge authority.",
+        "Anthropic internal comparison is not controlled external evidence; no revenue forecast.",
+        "300 × 12/60 × €75 = €4,500; 300 × €6 = €1,800; less €1,200 oversight = €1,500; break-even €11 per PR with assumed time and oversight."
+      ],
+      "company": "Anthropic",
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "article_path": "monitoring/private-company-publications/2026-11-24/anthropic.md",
+      "canonical_url": null,
+      "profile_update": "23 November: Claude Ship beta combines existing Code Review with beta PR Steward and Claude Approvals, for eligible Team/Enterprise GitHub repositories; token-billed, exclusions apply. Add stock-ant and company-anthropic tags; retain ANT profile.",
+      "profile_update_applied": false,
+      "live_http_verified": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "editorial_review_status": "pending"
+    },
+    {
+      "slug": "valve",
+      "title": "Valve's Steam Machine Supply Problem: When Should a Gaming Platform Absorb Rising Hardware Costs?",
+      "meta": "Valve's November Steam Machine availability update highlights memory and storage costs. Assess hardware contribution, platform economics and the trade-off between raising prices and preserving adoption.",
+      "fingerprint": "2026-11-19-valve-steam-machine-reservation-512gb-2tb-memory-storage-cost-platform-economics",
+      "date": "2026-11-19",
+      "profile_url": "https://compound.ie/companies/valve/",
+      "sources": [
+        "https://store.steampowered.com/news/group/45479024/view/687522235410285038",
+        "https://arstechnica.com/gaming/2026/11/valve-says-it-might-have-to-raise-the-price-of-supply-limited-steam-machines/",
+        "https://www.theverge.com/games/1038010/valve-steam-machine-waitlist-supply"
+      ],
+      "photo": {
+        "candidate": "https://commons.wikimedia.org/wiki/File:Steam_machine_front.jpg",
+        "credit": "Masem; own work, 7 July 2026; CC BY-SA 4.0. Adapted crop must retain attribution and share-alike.",
+        "alt": "Front of a 2026 Valve Steam Machine photographed on 7 July 2026; archival product photo",
+        "status": "Original source, date and licence inspected; actual image bytes and crop not fetched/verified due active upstream throttling and no direct network."
+      },
+      "profile_change": "19 November reported Valve reservation changes: 512GB queue cleared while 2TB supply remains constrained; no confirmed future price, quantity or profitability. Link only after public profile verification.",
+      "checks": [
+        "Event 19 November; independent Verge and Ars reports 19–20 November; not a 24 November launch.",
+        "Primary Steam page identified but body inaccessible; claims attributed to reporting, not directly verified primary text.",
+        "Reported $1,049 / $1,349 US launch prices, not Irish prices or future quotes.",
+        "Hypothetical 10,000 × €60 = €600,000; unchanged price leaves €40 per unit from €100; break-even volume factor 100/40 = 2.5."
+      ],
+      "company": "Valve",
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "article_path": "monitoring/private-company-publications/2026-11-24/valve.md",
+      "canonical_url": null,
+      "profile_update": "19 November reported Valve reservation changes: 512GB queue cleared while 2TB supply remains constrained; no confirmed future price, quantity or profitability. Link only after public profile verification.",
+      "profile_update_applied": false,
+      "live_http_verified": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "editorial_review_status": "pending"
+    }
+  ]
+}
