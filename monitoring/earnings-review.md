@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-23
+Checked: 2026-11-24
 
 - 499 saved profiles checked against structural and issuer rules.
-- 141 existing company articles; 107 mapped to monitored issuers.
-- 134 pending review items; 15 recorded decisions.
+- 144 existing company articles; 108 mapped to monitored issuers.
+- 137 pending review items; 15 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -45,14 +45,6 @@ Files: `content/wealth/mattel-tariff-refund-margin.md`
 
 ### UNMAPPED · article_mapping · medium
 
-ID: `1a4d46030633de5eff9079ec`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/rlx-acquisition-revenue-margin-cash.md`
-
-### UNMAPPED · article_mapping · medium
-
 ID: `1f1daebf430dd70026388e47`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -82,6 +74,14 @@ ID: `3b7738537cea9953bd513d1b`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `4918cf382a466e5e7b738dad`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/zoom-enterprise-growth-capital-returns.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -261,6 +261,14 @@ Files: `content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `ec72c94ba3486cfae5f94f39`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/rlx-acquisition-revenue-margin-cash.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `eea192b526f7a5b5acaadd4c`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -274,6 +282,14 @@ ID: `ef0eea7b0dda3c7b7e4b2082`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `ef7791a84ddaf91c8220b3ac`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/bath-body-works-buyback-store-sales.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -948,6 +964,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/gartner-contract-value-buybacks.md`, `content/earnings-profiles/it.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/749251/000074925126000307/it-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-03
+
+### KEYS · article_review · low
+
+ID: `c42e14d38537e2636c4cf82a`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/keysight-ai-orders-capacity.md`, `content/earnings-profiles/keys.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm · FY FY2026 · period end 2026-10-31 · filed 2026-11-19
 
 ### LLY · article_review · low
 
