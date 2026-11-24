@@ -6,14 +6,16 @@
   "source_hold_pr": 269,
   "target_new_articles": 3,
   "merged_article_count": 3,
-  "confirmed_live_new_articles": 0,
+  "confirmed_live_new_articles": 3,
   "confirmed_updated_canonicals": 0,
-  "status": "deployed_partial_public_verification",
+  "status": "verified_live",
   "production_deployment": {
-    "status": "deployed_github_pages_verified",
+    "status": "deployed_and_all_recovery_canonicals_verified",
     "latest_article_merge_sha": "03b3857d2bc7eac241997f47cf88634a03f26c0b",
     "run_url": "https://github.com/davidomarayt/compound/actions/runs/45493067914",
-    "details": "Pages deployment success 21:41:28Z; build, deploy, verify-live, verify-finance-discovery and mobile-audit all success. Build artifact contains all three article HTML, pinned covers and social images. Finance discovery public HTTP 200 and canonical confirmed Valve at 21:41:38Z. Mobile live private-company check covers November 23 only. Direct web reader unavailable for three new routes; local DNS unavailable. Remaining per-article live image, ad and backlink evidence not yet established."
+    "details": "Pages deployment succeeded at 21:41:28Z; all five jobs passed. Dedicated read-only verification run 45502640038 reused existing public HTTP checks against nested recovery ledger and confirmed all three exact canonical pages, ad loader on articles and company profiles, reciprocal links, JPEG covers and matching valid OG/Twitter WebP bytes. Prior profile milestones preserved; no human review or guaranteed ad fill claimed.",
+    "live_verification_run_url": "https://github.com/davidomarayt/compound/actions/runs/45502640038",
+    "live_verified_at": "2026-11-24T22:37:28Z"
   },
   "quality_gate": "All three separately source-checked and merged on successful exact-head test/performance. Reconciled intervening merges and inventory-only refreshes; no changes to required tests, policy, or profile milestones. Use nested date ledger to retain true 23 November Anthropic event date without conflict with existing historical ANT listing milestone check and without displacing earlier required daily verification. No quota duplication. Before claiming live, obtain production deployment evidence and verify actual canonical HTML, cover and social bytes, reciprocal profile links and ad markup.",
   "articles": [
@@ -50,13 +52,14 @@
       "editorial_qa": "AI rechecked primary or attributed sources, independent calculations, distinct topic, photo provenance and article copy; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "profile_update": "Existing verified profile milestone retained; article linked with company tag and appropriate canonical profile path. Reciprocal live links not yet verified.",
-      "status": "deployed_pending_full_live_verification",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "profile_update": "Existing verified profile milestone retained; reciprocal article/profile link and profile ad loader verified on production.",
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "live_http_evidence": "Production verification job 138829605040, PASS at 22:37:28Z; canonical HTML, article/profile ad loader, reciprocal company links, JPEG cover and OG/Twitter WebP."
     },
     {
       "company": "Anthropic",
@@ -94,13 +97,14 @@
       "editorial_qa": "AI rechecked primary or attributed sources, independent calculations, distinct topic, photo provenance and article copy; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "profile_update": "Existing verified profile milestone retained; article linked with company tag and appropriate canonical profile path. Reciprocal live links not yet verified.",
-      "status": "deployed_pending_full_live_verification",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "profile_update": "Existing verified profile milestone retained; reciprocal article/profile link and profile ad loader verified on production.",
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "live_http_evidence": "Production verification job 138829605040, PASS at 22:37:28Z; canonical HTML, article/profile ad loader, reciprocal company links, JPEG cover and OG/Twitter WebP."
     },
     {
       "company": "Valve",
@@ -136,14 +140,14 @@
       "editorial_qa": "AI rechecked primary or attributed sources, independent calculations, distinct topic, photo provenance and article copy; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "profile_update": "Existing verified profile milestone retained; article linked with company tag and appropriate canonical profile path. Reciprocal live links not yet verified.",
-      "status": "deployed_pending_full_live_verification",
+      "profile_update": "Existing verified profile milestone retained; reciprocal article/profile link and profile ad loader verified on production.",
+      "status": "verified_live",
       "live_http_verified": true,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false,
-      "live_http_evidence": "Finance discovery job 138798209226, HTTP 200, canonical and sitemap confirmed 21:41:38Z"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "live_http_evidence": "Production verification job 138829605040, PASS at 22:37:28Z; canonical HTML, article/profile ad loader, reciprocal company links, JPEG cover and OG/Twitter WebP."
     }
   ]
 }
