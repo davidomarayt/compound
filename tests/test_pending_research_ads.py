@@ -15,6 +15,10 @@ def test_pending_research_keeps_ads_and_truthful_attribution(settings):
         "image_source: https://unsplash.com/photos/tkkOCi1Wgx0\n"
         "tags: [stocks, company-research, meta]\n---\nResearch awaiting editor review."
     )
+    (wealth / "ordinary.md").write_text(
+        "---\ntitle: Ordinary article\nslug: ordinary\npillar: wealth\n"
+        "date: '2026-10-21'\n---\nAn article without a pending-review flag."
+    )
     registry = json.loads(Path("content/earnings-sp500.json").read_text())
     registry["members"] = [c for c in registry["members"] if c["symbol"] == "META"]
     (settings.content_dir / "earnings-sp500.json").write_text(json.dumps(registry))
@@ -43,3 +47,22 @@ def test_pending_research_keeps_ads_and_truthful_attribution(settings):
     assert '"name": "David"' not in article
     assert "Every article is reviewed and approved" not in article
     assert "/wealth/pending/" in company
+
+    ordinary = (settings.public_dir / "wealth/ordinary/index.html").read_text()
+    assert "Compound applies source and editorial checks" in ordinary
+    assert "automated checks are not individual human approval" in ordinary
+    assert "Every article is reviewed and approved" not in ordinary
+    assert 'data-ad-slot="1"' in ordinary
+    assert 'data-ad-slot="2"' in ordinary
+    assert "pagead2.googlesyndication.com" in ordinary
+
+
+def test_editorial_information_does_not_promise_unverified_human_approval():
+    policy = Path("content/pages/editorial-policy.md").read_text()
+    about = Path("content/pages/about.md").read_text()
+    assert "individual human review is not assumed" in policy
+    assert "passing automated checks does not establish individual human approval" in policy
+    assert "individual human review may be pending" in about
+    assert "Automated checks do not constitute individual human review" in about
+    assert "Our ordinary editorial articles receive human review before publication" not in policy
+    assert "Ordinary editorial articles are reviewed and approved by David" not in about

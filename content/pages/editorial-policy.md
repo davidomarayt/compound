@@ -5,7 +5,7 @@ Compound publishes practical, evidence-led articles about health, wealth and lif
 
 ## Editorial responsibility
 
-Compound was founded and is edited by **David**, who has a BSc in Biotechnology and professional experience in biopharmaceutical manufacturing. He sets the editorial standards and personally approves our manually written articles. A separate, clearly labelled Compound Earnings feed is produced automatically from SEC financial filings under documented numerical checks; those briefs are not individually approved before publication.
+Compound was founded and is edited by **David**, who has a BSc in Biotechnology and professional experience in biopharmaceutical manufacturing. He sets the editorial standards and is responsible for the publication. Some articles are prepared and published through automated research and editorial-check workflows; individual human review may be pending. A separate, clearly labelled Compound Earnings feed is produced automatically from SEC financial filings under documented numerical checks; those briefs are not individually approved before publication.
 
 Compound does not present David as a doctor, dietitian, psychologist, financial adviser, tax adviser or solicitor. Our work explains evidence and official guidance for a general audience. It is not a diagnosis, treatment plan or recommendation tailored to an individual. The [Disclaimer](/disclaimer/) explains these limits in more detail.
 
@@ -21,9 +21,9 @@ For health and wellbeing articles, we prefer systematic reviews, meta-analyses, 
 
 We link to the sources used, distinguish measured results from estimates and include limitations that could materially change how a reader understands a claim. Commercial press releases and secondary reporting may provide context, but they are not treated as substitutes for the underlying evidence where that evidence is available.
 
-## Review before publication
+## Checks before publication
 
-Our ordinary editorial articles receive human review before publication. The review considers whether:
+Our editorial workflow requires source, accuracy and quality checks before publication. These may be automated or human-led; passing automated checks does not establish individual human approval. The checks consider whether:
 
 - factual claims are supported by the cited sources;
 - figures, dates, eligibility rules and monetary amounts match the source;
@@ -33,11 +33,11 @@ Our ordinary editorial articles receive human review before publication. The rev
 - the writing answers the reader’s question clearly; and
 - photographs, graphics and tables are appropriately credited or created by Compound.
 
-An article is revised, delayed or not published when it does not meet those standards. **Exception:** automated [Compound Earnings](/wealth/earnings/) briefs are generated from SEC 10-Q/10-K standardised figures only when required line items and year-earlier comparisons pass deterministic checks. They are clearly labelled as automated and are not individually human-reviewed before publication. Reports with missing, inconsistent or ambiguous figures are withheld.
+An article is revised, delayed or not published when it does not meet those standards. Separately, automated [Compound Earnings](/wealth/earnings/) briefs are generated from SEC 10-Q/10-K standardised figures only when required line items and year-earlier comparisons pass deterministic checks. They are clearly labelled as automated and are not individually human-reviewed before publication. Reports with missing, inconsistent or ambiguous figures are withheld.
 
 ## Use of AI tools
 
-AI tools may help organise research, compare source material, check draft claims against supplied sources and produce an early draft. They do not independently select or publish ordinary editorial articles. David reviews the source material, edits the finished piece and makes the publication decision. Our SEC-based earnings briefs are a separate deterministic data-to-text automation, not AI-generated investment analysis.
+AI tools may help select topics, organise research, compare source material, check claims and prepare articles. Approved automated workflows may publish articles after the required checks; individual human review is not assumed and may take place later. Our SEC-based earnings briefs are a separate deterministic data-to-text automation, not AI-generated investment analysis.
 
 AI output is not treated as a source. A factual claim must be supported by the source cited in the article.
 
