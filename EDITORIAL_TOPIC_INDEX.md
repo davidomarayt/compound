@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 435 published articles and guides, 69 tools,
+**Included:** 436 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -285,6 +285,7 @@ For the complete register (including 510+ company profiles), open
 - [One in Four Irish Pupils Used Back-to-School Support: What Families Can Check](https://compound.ie/news/irish-school-family-supports-cso-2026/) — **Wealth**
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
 - [onsemi's Margins Are Recovering. How Much Is AI Doing?](https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/) — **Wealth**
+- [OpenAI and Cisco's Shirudo: Can Live Security Protection Reduce the Cost of Waiting for a Patch?](https://compound.ie/wealth/openai-cisco-shirudo-runtime-patch-cost/) — **Wealth**
 - [OpenAI Is Building a Business Channel Inside ChatGPT. Who Captures the Value?](https://compound.ie/wealth/openai-business-agents-chatgpt-merchant-economics-2026/) — **Wealth**
 - [OpenAI Launches GPT-6.2 Astra and Sol: The Cost of the New AI Race](https://compound.ie/news/openai-gpt-6-2-astra-sol-pricing-performance-2026/) — **Wealth**
 - [OpenAI Says NATO Used Up to 300 Billion Tokens a Month. What Does That Prove?](https://compound.ie/wealth/openai-nato-cybersecurity-300-billion-tokens-economics/) — **Wealth**
