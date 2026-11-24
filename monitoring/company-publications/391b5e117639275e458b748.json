@@ -1,0 +1,35 @@
+{
+  "story_fingerprint": "391b5e117639275e458b748",
+  "company": "Bath & Body Works, Inc.",
+  "ticker": "BBWI",
+  "date": "2026-11-24",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "story_thesis": "Bath & Body Works' new $500m repurchase authorisation must be tested against shrinking core-store sales, margin pressure, seasonal cash conversion, debt and inventory risk.",
+  "article_path": "content/wealth/bath-body-works-buyback-store-sales.md",
+  "canonical_url": "https://compound.ie/wealth/bath-body-works-buyback-store-sales/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/701985/000070198526000031/ex991bbwi-20263qearningsre.htm",
+    "https://www.sec.gov/Archives/edgar/data/701985/000070198526000033/bbwi-20261031.htm",
+    "https://investors.bbwinc.com/static-files/931530e7-e71b-43ed-a88a-e2eba9e06905"
+  ],
+  "identity": {"issuer": "Bath & Body Works, Inc.", "CIK": 701985, "results_accession": "0000701985-26-000031", "quarterly_accession": "0000701985-26-000033", "fiscal_year": 2026, "fiscal_period": "Q3", "period_end": "2026-10-31", "release_date": "2026-11-19", "currency": "USD", "accounting": "US GAAP with company-defined adjusted measures"},
+  "candidate_review": {"screened_companies": ["Zoom Communications, Inc.", "Keysight Technologies, Inc.", "Bath & Body Works, Inc.", "Woodward, Inc.", "Gap Inc.", "Ross Stores, Inc.", "Trip.com Group Limited"], "selection_reason": "Fresh results create a distinct retail capital-allocation question: a new $500m buyback authorisation arrives before core-store sales, margin and year-to-date cash conversion have recovered."},
+  "duplicate_check": "Checked the editorial topic index, content inventories, actual related content, past 14 days, live finance catalogue, publication records, open and merged PRs and concurrent Compound/FairPath records. No Bath & Body Works analysis, profile or active attempt answers this question; no /stocks/bbwi/ URL was invented.",
+  "claim_checks": [
+    {"claim": "Q3 net sales $1.577bn, down 1.0%; US/Canada stores $1.169bn, down 4.3%; direct up 2.6%; international/other up 39.3%", "source_indexes": [0, 2], "location_or_arithmetic": "Results release and channel table", "result": "verified in separate claim pass"},
+    {"claim": "GAAP operating income $108m vs $161m and gross margin about 40.5% vs 41.3%", "source_indexes": [0, 1], "location_or_arithmetic": "638 / 1,577 = 40.46%; 658 / 1,594 = 41.28%", "result": "verified Compound calculation"},
+    {"claim": "Nine-month OCF $251m and capex $155m imply $96m simple free cash flow", "source_indexes": [1], "location_or_arithmetic": "251 - 155 = 96", "result": "verified Compound calculation"},
+    {"claim": "FY outlook approximately $815m OCF less $215m capex equals $600m company-defined free cash flow", "source_indexes": [0, 2], "location_or_arithmetic": "Guidance reconciliation", "result": "verified and labelled as guidance"},
+    {"claim": "$500m authorisation equals about 83% of FY FCF outlook, 1.6x cash and more than 5x nine-month simple FCF", "source_indexes": [0, 1], "location_or_arithmetic": "500 / 600 = 83%; 500 / 318 = 1.57x; 500 / 96 = 5.21x", "result": "verified Compound comparisons; authorisation not treated as completed spend"},
+    {"claim": "Nine-month debt repayment $542m, dividends $120m and buybacks $59m; quarter-end cash $318m", "source_indexes": [1], "location_or_arithmetic": "Cash-flow statement and balance sheet", "result": "verified"},
+    {"claim": "Inventory $1.281bn vs $1.251bn, up 2.4%, while quarterly sales declined", "source_indexes": [1], "location_or_arithmetic": "Balance-sheet comparison; seasonality caveat retained", "result": "verified"}
+  ],
+  "fact_check_notes": ["Buyback authorisation is permission, not an obligation or completed purchase.", "Shareholders' deficit is not represented as insolvency.", "Full-year cash generation is guidance and holiday-dependent, not cash already received."],
+  "unresolved_material_claims": [],
+  "image": {"source": "https://commons.wikimedia.org/wiki/File:HK_YLD_Yuen_Long_Yoho_Mall_2_shop_Bath_%26_Body_Works_April_2026_N13P_01.jpg", "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/e/e2/HK_YLD_Yuen_Long_Yoho_Mall_2_shop_Bath_%26_Body_Works_April_2026_N13P_01.jpg", "photographer": "MAIDNWOMWN BANKWO", "license": "CC0 1.0", "capture_date": "2026-03-26", "description": "Authentic Bath & Body Works shop and product display at Yoho Mall, Hong Kong", "unique_asset": true, "repository_image_sha256": "6fdeae3568a6c93d4d279b1ad975a895d0b5e5c77ed66232e6d7feb07c3a8276", "dimensions": [1920, 1440], "visual_inspection": "passed; metadata capture date used rather than filename month"},
+  "gates": {"source_verification": "passed", "duplicate_originality": "passed", "editorial_qa": "passed pre-publication: accuracy, relevance, originality, readability, metadata, links and disclosures independently checked", "image_license": "passed", "offline_tests": "passed: 25 focused tests; full suite had 416 passes and one environment-only SOCKS dependency failure, then the complete four-test recovery module passed after installing the missing transport (417 unique tests and 2 subtests passed)", "build": "passed with production canonical base; 435 articles rendered", "render": "passed: exact canonical, indexable HTML, licensed cover, 1200x675 social image, internal links, sitemap and finance catalogue", "ads": "passed locally: standard ca-pub-6115783809711785 loader and configured ad slots rendered", "ci": "pending exact PR head", "deployment": "pending", "live_verification": "pending"},
+  "local_validation": {"article_sha256": "ef710b3f1d39ac6543a27ef42692671394f7ce4e19bd34beec362bf39d21be1c", "social_image_sha256": "f0c778b9b5ed1a67ff6f3650e22b91136db825ab3eda0895d64cfb92eab04029", "social_image_dimensions": [1200, 675], "validated_at": "2026-11-24T09:08:00Z"},
+  "publication": {"pull_request": null, "validated_head_sha": null, "merge_commit_sha": null, "ci_run": null, "deployment_run": null, "live_verified_at": null, "live_url": null, "live_social_image_url": null}
+}
