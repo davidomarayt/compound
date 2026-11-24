@@ -140,12 +140,12 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "Privately held AI model and enterprise platform provider; on 22 November its chief scientist proposed shared cross-lab pretraining-loss measurements to inform future safety thresholds, without an agreed development cap.",
+      "summary": "Privately held AI model and enterprise platform provider; on 23 November OpenAI and Cisco announced the open-source Shirudo runtime for temporary Linux protection during patch rollout.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-22",
-        "text": "OpenAI chief scientist Jakub Pachocki on 22 November proposed common evaluation of held-out pretraining prediction loss (log-perplexity) to inform cross-industry AI safety pacing. The internally reported benchmark is dataset-dependent; the proposal is not a binding pact, law, or company-wide training pause.",
-        "source": "https://openai.com/index/perplexity-and-intelligence/"
+        "date": "2026-11-23",
+        "text": "OpenAI and Cisco introduced Shirudo, an open-source runtime for temporary protection of Linux systems while patches are rolled out. A controlled Elasticsearch demonstration is not proof of fleet-wide effectiveness or disclosed contract revenue.",
+        "source": "https://openai.com/index/introducing-shirudo/"
       }
     },
     {
