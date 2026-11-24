@@ -22,7 +22,6 @@ social_image: /static/images/evergreen/rlx-acquisition-revenue-margin-cash.jpg
 image_alt: A Crystal Bar vaping device photographed in Rotterdam in June 2023; representative category image, not an RLX product.
 image_credit: Donald Trung Quoc Don / Wikimedia Commons, CC BY-SA 4.0. Representative vaping-device photograph captured 16 June 2023; cropped and resized for publication.
 image_source: https://commons.wikimedia.org/wiki/File:Crystal_Bar_vaping_device,_Hillegersberg,_Rotterdam_(2023)_01.jpg
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/c/cc/Crystal_Bar_vaping_device%2C_Hillegersberg%2C_Rotterdam_%282023%29_01.jpg
 hero_image_alt: A Crystal Bar vaping device photographed in Rotterdam in June 2023; representative category image, not an RLX product.
 hero_image_credit: Donald Trung Quoc Don / Wikimedia Commons, CC BY-SA 4.0. Representative vaping-device photograph captured 16 June 2023; cropped and resized for publication.
 hero_image_source: https://commons.wikimedia.org/wiki/File:Crystal_Bar_vaping_device,_Hillegersberg,_Rotterdam_(2023)_01.jpg

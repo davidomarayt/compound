@@ -1,0 +1,35 @@
+{
+  "story_fingerprint": "08a0a30b7a676db406c280b5",
+  "company": "Keysight Technologies, Inc.",
+  "ticker": "KEYS",
+  "date": "2026-11-24",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "story_thesis": "Keysight's AI-infrastructure order surge must be separated into core demand, acquisition integration, a non-recurring tariff benefit and the return on nearly doubled capacity spending.",
+  "article_path": "content/wealth/keysight-ai-orders-capacity.md",
+  "canonical_url": "https://compound.ie/wealth/keysight-ai-orders-capacity/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
+    "https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q4/transcript/Q4-FY2026-Prepared-Remarks.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm"
+  ],
+  "identity": {"issuer": "Keysight Technologies, Inc.", "CIK": 1601046, "results_accession": "0001601046-26-000040", "prior_quarter_accession": "0001601046-26-000036", "fiscal_year": 2026, "fiscal_period": "Q4 and full year", "period_end": "2026-10-31", "release_date": "2026-11-19", "currency": "USD", "accounting": "US GAAP with company-defined core and non-GAAP measures"},
+  "candidate_review": {"screened_companies": ["Zoom Communications, Inc.", "Keysight Technologies, Inc.", "Bath & Body Works, Inc.", "Woodward, Inc.", "Gap Inc.", "Ross Stores, Inc.", "Trip.com Group Limited"], "selection_reason": "Fresh results support a distinct AI-infrastructure economics question with independently derived order coverage, cash-conversion and capacity-spending tests."},
+  "duplicate_check": "Checked the editorial topic index, content inventories, actual related content, past 14 days, live finance catalogue, publication records, open and merged PRs and concurrent Compound/FairPath records. The maintained /stocks/keys/ profile exists, but no Keysight analysis or active attempt answers this question.",
+  "claim_checks": [
+    {"claim": "Q4 orders $2.339bn, up 53%, and revenue $1.994bn, up 41%; core orders up 49% and core revenue up 36%", "source_indexes": [0, 1], "location_or_arithmetic": "Q4 release and prepared remarks", "result": "verified with reported/core distinction"},
+    {"claim": "Q4 order-to-revenue ratio 1.17 and FY ratio 1.14", "source_indexes": [0], "location_or_arithmetic": "2.339 / 1.994 = 1.17; 8.126 / 7.157 = 1.14", "result": "verified Compound calculation"},
+    {"claim": "Commercial communications revenue $1.145bn, up 73%, led by triple-digit wireline growth tied to AI infrastructure", "source_indexes": [0, 1], "location_or_arithmetic": "Segment results and prepared remarks", "result": "verified as company-reported driver"},
+    {"claim": "Acquisitions contributed about $370m FY revenue; $100m run-rate synergies achieved; acquired operating margin rose from 11% to 32%", "source_indexes": [1], "location_or_arithmetic": "Prepared remarks integration discussion", "result": "verified as management measures"},
+    {"claim": "One-time tariff refunds added 110bp gross margin, 100bp operating margin and $0.31 EPS", "source_indexes": [1], "location_or_arithmetic": "Prepared remarks FY bridge", "result": "verified and excluded from durable baseline"},
+    {"claim": "FY simple free cash flow $1.747bn and margin 24.4%", "source_indexes": [0], "location_or_arithmetic": "$1.886bn OCF less $139m capex; 1.747 / 7.157 = 24.4%", "result": "verified Compound calculation"},
+    {"claim": "FY2027 capex plan of about $275m is nearly double FY2026 $139m", "source_indexes": [0, 1], "location_or_arithmetic": "275 / 139 - 1 = 97.8%", "result": "verified Compound calculation and labelled as plan"}
+  ],
+  "fact_check_notes": ["Reported growth, company-defined core growth and acquisition contribution are not conflated.", "Tariff refunds are identified as non-recurring.", "Orders are not represented as guaranteed revenue."],
+  "unresolved_material_claims": [],
+  "image": {"source": "https://commons.wikimedia.org/wiki/File:Keysight_InfiniiVision_DSOX_4024A_in_laboratory_use.jpg", "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/6/69/Keysight_InfiniiVision_DSOX_4024A_in_laboratory_use.jpg", "photographer": "Radarvector", "license": "CC BY-SA 4.0", "capture_date": "2021-04-05", "description": "Authentic Keysight InfiniiVision oscilloscope in laboratory use", "unique_asset": true, "repository_image_sha256": "dc46e6526f8e4f9041982c22b12f6649dda2d2f6b5e8437c19d747334832bdee", "dimensions": [1430, 950], "visual_inspection": "passed"},
+  "gates": {"source_verification": "passed", "duplicate_originality": "passed", "editorial_qa": "passed pre-publication: accuracy, relevance, originality, readability, metadata, links and disclosures independently checked", "image_license": "passed", "offline_tests": "passed: 25 focused tests; full suite had 416 passes and one environment-only SOCKS dependency failure, then the complete four-test recovery module passed after installing the missing transport (417 unique tests and 2 subtests passed)", "build": "passed with production canonical base; 435 articles rendered", "render": "passed: exact canonical, indexable HTML, licensed cover, 1200x675 social image, internal links, sitemap and finance catalogue", "ads": "passed locally: standard ca-pub-6115783809711785 loader and configured ad slots rendered", "ci": "pending exact PR head", "deployment": "pending", "live_verification": "pending"},
+  "local_validation": {"article_sha256": "95915f2e3d88f01a080860e700b873f907e6960c4ba7d9128988b3514fc4cfad", "social_image_sha256": "b907e6f111af21d8d701b848e45a77c2181fa2c3cb11d22ebb1b1866858613b9", "social_image_dimensions": [1200, 675], "validated_at": "2026-11-24T09:08:00Z"},
+  "publication": {"pull_request": null, "validated_head_sha": null, "merge_commit_sha": null, "ci_run": null, "deployment_run": null, "live_verified_at": null, "live_url": null, "live_social_image_url": null}
+}

@@ -1,0 +1,35 @@
+{
+  "story_fingerprint": "a40471c8fb66cffb746e53bc",
+  "company": "Zoom Communications, Inc.",
+  "ticker": "ZM",
+  "date": "2026-11-24",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "story_thesis": "Zoom's enterprise growth and contracted backlog must be tested against a mature online segment, easing free-cash-flow margins and an expanding commitment to buybacks and dividends.",
+  "article_path": "content/wealth/zoom-enterprise-growth-capital-returns.md",
+  "canonical_url": "https://compound.ie/wealth/zoom-enterprise-growth-capital-returns/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1585521/000158552126000170/zm-20261031ex991.htm",
+    "https://investors.zoom.us/static-files/25034053-7033-48b4-bf62-74457016ee3d",
+    "https://www.sec.gov/Archives/edgar/data/1585521/000158552126000121/zm-20260731.htm"
+  ],
+  "identity": {"issuer": "Zoom Communications, Inc.", "CIK": 1585521, "results_accession": "0001585521-26-000170", "prior_quarter_accession": "0001585521-26-000121", "fiscal_year": 2027, "fiscal_period": "Q3", "period_end": "2026-10-31", "release_date": "2026-11-23", "currency": "USD", "accounting": "US GAAP with company-defined non-GAAP measures"},
+  "candidate_review": {"screened_companies": ["Zoom Communications, Inc.", "Keysight Technologies, Inc.", "Bath & Body Works, Inc.", "Woodward, Inc.", "Gap Inc.", "Ross Stores, Inc.", "Trip.com Group Limited"], "selection_reason": "Fresh results provide a distinct monetisation and capital-allocation question: enterprise revenue and backlog are growing while the online segment is mature and cash returns are expanding."},
+  "duplicate_check": "Checked the editorial topic index, content inventories, actual related content, past 14 days, live finance catalogue, publication records, open and merged PRs and concurrent Compound/FairPath records. No Zoom company-analysis article, profile or active attempt answers this question; no /stocks/zm/ URL was invented.",
+  "claim_checks": [
+    {"claim": "Q3 revenue $1,290.6m, up 4.9%; enterprise $805.4m, up 8.6%; online $485.3m, down 0.6%", "source_indexes": [0, 1], "location_or_arithmetic": "Results tables and investor deck", "result": "verified in separate claim pass"},
+    {"claim": "Enterprise supplied 62.4% of revenue", "source_indexes": [0], "location_or_arithmetic": "805.4 / 1,290.6 = 62.4%", "result": "verified Compound calculation"},
+    {"claim": "4,732 customers above $100k TTM revenue, up 8.5%; enterprise net-dollar expansion 100%", "source_indexes": [0, 1], "location_or_arithmetic": "Operating metrics", "result": "verified and metric limits explained"},
+    {"claim": "RPO $4.534bn, up 13%; current RPO up 6% and non-current up 23%", "source_indexes": [0, 1], "location_or_arithmetic": "Results release and deck", "result": "verified without equating backlog to cash"},
+    {"claim": "GAAP operating margin 24.6% and non-GAAP margin 41.6%", "source_indexes": [0], "location_or_arithmetic": "GAAP statements and non-GAAP reconciliation", "result": "verified with accounting distinction"},
+    {"claim": "Q3 free cash flow $558.1m and 43.2% margin; nine-month free cash flow $1.531bn vs $1.586bn", "source_indexes": [0], "location_or_arithmetic": "558.1 / 1,290.6 = 43.2%; release cash-flow tables", "result": "verified"},
+    {"claim": "Indicative annual dividend cost approximately $298m", "source_indexes": [0], "location_or_arithmetic": "$0.25 x 4 x projected 298m diluted shares; expressly not guidance", "result": "verified Compound estimate and qualified"}
+  ],
+  "fact_check_notes": ["GAAP net-income comparison is not used because prior-period investment gains distort operating interpretation.", "Buyback authorisation and dividend declarations are separated from completed distributions.", "Management guidance is labelled as guidance, not fact already achieved."],
+  "unresolved_material_claims": [],
+  "image": {"source": "https://commons.wikimedia.org/wiki/File:Video_Conference_Using_Laptop.jpg", "remote_asset": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Video%20Conference%20Using%20Laptop.jpg", "photographer": "Project Kei", "license": "CC BY-SA 4.0", "capture_date": "2020-06-02", "description": "Authentic Zoom video conference on a laptop with participant faces obscured", "unique_asset": true, "repository_image_sha256": "96e0727665535e149c082a8c69e4656dd5771cf2ef6fbd7bc18cd10e4723f056", "dimensions": [1440, 1080], "visual_inspection": "passed; first candidate rejected because participant names were visible"},
+  "gates": {"source_verification": "passed", "duplicate_originality": "passed", "editorial_qa": "passed pre-publication: accuracy, relevance, originality, readability, metadata, links and disclosures independently checked", "image_license": "passed", "offline_tests": "passed: 25 focused tests; full suite had 416 passes and one environment-only SOCKS dependency failure, then the complete four-test recovery module passed after installing the missing transport (417 unique tests and 2 subtests passed)", "build": "passed with production canonical base; 435 articles rendered", "render": "passed: exact canonical, indexable HTML, licensed cover, 1200x675 social image, internal links, sitemap and finance catalogue", "ads": "passed locally: standard ca-pub-6115783809711785 loader and configured ad slots rendered", "ci": "pending exact PR head", "deployment": "pending", "live_verification": "pending"},
+  "local_validation": {"article_sha256": "648fd131821cb6f4f557321c33146660196a7fb89452490fa7681fb3e89d327f", "social_image_sha256": "1b91541be7c61b6d0cc6d5453e23c9ef78422d81762af1af2b3b01f505d9b640", "social_image_dimensions": [1200, 675], "validated_at": "2026-11-24T09:08:00Z"},
+  "publication": {"pull_request": null, "validated_head_sha": null, "merge_commit_sha": null, "ci_run": null, "deployment_run": null, "live_verified_at": null, "live_url": null, "live_social_image_url": null}
+}
