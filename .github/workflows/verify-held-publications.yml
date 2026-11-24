@@ -1,0 +1,30 @@
+name: Verify held publications on production
+on:
+  push:
+    branches: ["claude/clever-babbage-uibieq"]
+    paths: [".github/workflows/verify-held-publications.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify each November 24 recovery canonical with existing live checker
+        run: |
+          python - <<'PY'
+          import json
+          import tempfile
+          from pathlib import Path
+          from scripts import verify_private_company_live as checker
+          from concurrent.futures import ThreadPoolExecutor
+          ledger = json.loads(Path("monitoring/private-company-publications/2026-11-24/recovery.json").read_text())
+          # Reuse the existing production HTTP checks without changing the historical
+          # flat daily ledger or its strict profile-milestone requirements.
+          with tempfile.TemporaryDirectory() as tmp:
+              checker.LEDGER_DIR = Path(tmp)
+              (checker.LEDGER_DIR / "2026-11-24.json").write_text(json.dumps(ledger))
+              checker.verify()
+          PY
