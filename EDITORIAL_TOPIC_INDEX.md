@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 438 published articles and guides, 69 tools,
+**Included:** 439 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -66,6 +66,7 @@ For the complete register (including 510+ company profiles), open
 - [Beta blockers in Ireland | Adrenaline signals, heart rate and differences between products](https://compound.ie/health/medicines/beta-blockers/) — **Health**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
 - [BJ’s Comps Rose 13.5%, but Merchandise Margin Fell. Can Membership Growth Carry the Build?](https://compound.ie/wealth/bj-membership-margin-capex/) — **Wealth**
+- [Black Friday in Ireland: Your Rights on Refunds, Returns and "Was" Prices](https://compound.ie/news/black-friday-ireland-consumer-rights-2026/) — **Wealth**
 - [Block’s Lending Engine Is Growing Fast. Are Credit Costs Keeping Up?](https://compound.ie/wealth/block-cash-app-lending-credit-losses/) — **Wealth**
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/) — **Wealth**
 - [Blue Origin Has Qualified a New Glenn Valve Fix. The Hard Part Is Returning to Flight.](https://compound.ie/wealth/blue-origin-new-glenn-valve-fix-launch-economics/) — **Wealth**
