@@ -1,0 +1,30 @@
+# Compound Overnight Engineering — 24 November 2026 (Europe/Dublin)
+
+Publishing branch `claude/clever-babbage-uibieq` verified in repository default and .github/workflows/site.yml. Proposal base `bd4ff6fb4029e616e75c9f29fe74d27c269973a8`. Read AGENTS.md, runbook, 23 Nov title index and Markdown/JSON inventory, relevant prior records, 24 Nov discovery/content, 23 Nov publisher ledger, existing CI/site workflows and 15 open PR file lists. One substantive [draft PR #268](https://github.com/davidomarayt/compound/pull/268). No overlaps with inspected open PR paths, including #267 pension labels. No merge, deployment, production changes or automation changes by worker.
+
+## 7. Technical SEO — CHANGED/STAGED; wider audit review-only
+
+Public text of [CGT guide](https://compound.ie/wealth/capital-gains-tax-ireland/) contains blanket author-note claim “Every article is reviewed and approved before publication.” [Editorial policy](https://compound.ie/editorial-policy/) and [About](https://compound.ie/about/) public reader results also claim ordinary articles are individually human-approved. About reader snapshot is older than current source, so do not treat it as exact current HTML. Current source confirms conflicting assurances. The [23 Nov publisher ledger](../../private-company-publications/2026-11-23.json) explicitly records pending editorial review and human_reviewed=false; AGENTS.md prohibits invented human approval. Existing source uses distinct pending-research attribution and automated earnings wording. No evidence of individual review for all remaining ordinary articles. Correct the blanket claims, not the underlying checks or dates.
+
+Public CGT and [Stocks](https://compound.ie/stocks/) text returned distinct titles, headings and useful links. Source article template retains canonical, preview robots, article/breadcrumb JSON-LD and existing metadata. Direct public reader requests for sitemap.xml and robots.txt failed; cannot certify raw live metadata, full link crawl, index inclusion or rendered ad code from text. No mass canonical/index changes. 23 Nov discovery already flagged review wording; today's proposal is disjoint from that group's #267.
+
+PR #268 changes exactly four paths:
+- compound/site/templates/article.html: replace blanket author-note claim with neutral accurate source/editorial checks and distinction from individual human approval. Preserve byline branches, dates, existing ad slots, links and preview logic.
+- content/pages/editorial-policy.md and content/pages/about.md: describe approved automated editorial workflows, checks, and possibly pending human review; retain source standards, corrections, professional caveats, earnings disclosures and URLs.
+- tests/test_pending_research_ads.py: retain existing assertions; add ordinary article fixture verifying no blanket human approval, standard loader and article slots; add source-policy regressions. No test weakening.
+
+Preflight verified unique exact replacement anchors, GitHub compare 4 commits ahead/0 behind, exactly 4 intended paths. Exact PR head `21293dfe85b6fb4fe20f045a0cf37a2e7693b0b2`. Re-read PR: OPEN / DRAFT / UNMERGED, mergeable true at checkpoint. [Exact-head CI #45316621367](https://github.com/davidomarayt/compound/actions/runs/45316621367) test job 138184901385 started full pytest; not complete at observed checkpoint. No full test/build success claimed. Must require full exact-head CI, static build and performance before independent QA considers merge.
+
+## 8. UX & Conversion — CHANGED/STAGED, same PR
+
+Reader trust and clarity: distinguish publisher standards from verification that an individual human actually approved an article. The neutral author note is in the existing accessible aside, and About/policy remain linked via same destinations. No new tracking, conversions, layout, or manipulation. No measured conversion uplift. Mobile/rendered verification remains required in QA; scope is broad shared template copy but no layout change.
+
+## 9. Revenue Optimisation — BLOCKED_DATA_ACCESS
+
+Last actual authorised connector checks 21 November, documented in [engineering record](../2026-11-21/engineering.md): GA4 NOT_AUTHENTICATED; AdSense report TRIAL_EXPIRED. No fresh metric call in this run, routine retry not before 28 Nov absent restored access. No revenue, fill, engagement, RPM or CTR estimates; no hypothetical ad experiments. Source base.html retains existing conditional standard loader and privacy/CMP controls; article template still renders existing slots independently of pending editorial review, existing preview and automated earnings distinctions preserved. 23 Nov ledger reports its prior live ad verification, not fresh markup verification here. No ad config, placements, consent, privacy, tracking, account or production settings changes. Source test additions cover both ordinary/pending article slots; independent QA must verify actual rendered standard loader and slots without generating ad traffic. No claim of human approval or AdSense compliance.
+
+## Independent QA handoff
+
+Re-fetch exact PR state/head and newest production ref, confirm four paths only and no new overlap; verify completed full pytest/supplementary jobs and static-build/performance run on same head, including pending and ordinary ad tests. Review rendered representative article, existing pending article, About and Editorial Policy text, preserve original metadata, attribution, source links, earnings distinction and consent. Validate no misleading blanket claims; consider broader unrelated byline or series issues separately if independently evidenced. Verify public URLs only after QA-authorised merge and real deployment. Prior QA recorded Wikimedia 429 failure; today's discovery records a later successful site workflow, but neither guarantees this proposal's build. Rollback via scoped four-file revert. Zero merges, zero deployments, zero changed pages verified live by worker.
+
+See [research.md](research.md) for distinct research and private-company results.
