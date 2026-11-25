@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 441 published articles and guides, 69 tools,
+**Included:** 442 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -285,6 +285,7 @@ For the complete register (including 510+ company profiles), open
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/) — **Wealth**
+- [Nvidia’s Private Investment Portfolio Grew Despite a $1 Billion Valuation Setback](https://compound.ie/wealth/nvidia-private-investment-valuation/) — **Wealth**
 - [Oestrogen tablets, patches, gel and spray in Ireland | Route of delivery and how systemic oestrogen reaches the body](https://compound.ie/health/medicines/oestrogen-tablets-patches-gel-spray/) — **Health**
 - [One in Four Irish Pupils Used Back-to-School Support: What Families Can Check](https://compound.ie/news/irish-school-family-supports-cso-2026/) — **Wealth**
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
