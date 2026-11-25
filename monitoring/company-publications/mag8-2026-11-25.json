@@ -1,0 +1,54 @@
+{
+  "series": "mag8",
+  "date": "2026-11-25",
+  "timezone": "Europe/Dublin",
+  "ticker": "NVDA",
+  "status": "held-for-review",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/nvidia-private-investment-valuation.md",
+  "canonical_url": "https://compound.ie/wealth/nvidia-private-investment-valuation/",
+  "article_sha256": "cb0535bd44878183eb146fdd420ccac28aa0f2685af038c88497dd1dbfba726a",
+  "selection": "Least recently featured eligible series company: Nvidia 8 November. Expired 18 November Lilly exception not applied.",
+  "story_fingerprint": "NVDA-FY27Q3-private-equity-additions-versus-valuation-bridge",
+  "duplicate_checks": [
+    "AGENTS, topic index, inventories and source articles read; no same-day Mag8 or legacy Mag7 publication record.",
+    "Existing Q3 earnings story discusses total equity gains and gross margins, not private-equity roll-forward. Distinct valuation and capital-allocation question.",
+    "Current Compound open PRs 281/269 held private-company work and recent workflow/25 November watchdog inspected; no morning company publication recorded. Private OpenWorks/Frontier Safeguards/Deel Card distinct.",
+    "FairPath open PR4 unrelated. Past 14 days of Nvidia coverage, source keyword search and live Q3/profile checked."
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/supplementalfinancialinfor.htm",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+  ],
+  "claim_checks": [
+    "SEC submissions directly retrieved: latest 10-Q July; November17 earnings 8-K supplemental is unaudited; November23 8-K is later leadership event, not new quarterly statements.",
+    "Q3: 47898+15431+804-637-1846=61650 million; increase13752m/47898m=28.7110%; net valuation804-1846=-1042m.",
+    "Q2 Note6: net additions13106, gains4900, losses121, reclassifications12323, closing47898 million matches Q3 opening. Q2 marks4779; deterioration5821 million.",
+    "Private-equity table61650m is not broader non-marketable balance65528m. No mixing those measures. Net additions not equated to cash or profit; no IRR inferred.",
+    "Release revenue115.8bn and GAAP gross margin74.8% actual FY27Q3; no forecast substituted for result."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Nvidia_HQ.jpg",
+    "credit": "Kevin McCarthy",
+    "license": "CC BY 2.0",
+    "capture_date": "2005-05-26",
+    "archival": true,
+    "unique_in_repository": true,
+    "qa": "Wide and square generated crops visually inspected; campus and Nvidia sign retained; source/licence and resizing disclosed."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "independent_second_pass": "Recomputed both period bridges; checked scope, accounting labels, periods, source wording, original synthesis and uncertainty. No allegation about investees or unsupported causal claim.",
+    "local_checks": [
+      "10 focused tests passed",
+      "Image pipeline and article render passed; neutral byline and ads loader present"
+    ],
+    "pending": [
+      "exact-head CI/build",
+      "deployment/live/canonical/social/sitemap/discovery/ads verification"
+    ]
+  },
+  "outcome_notes": "No paid LLM API, no social posting. Count zero until fetched live."
+}
