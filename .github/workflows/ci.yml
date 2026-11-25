@@ -38,6 +38,9 @@ jobs:
     needs: test
     timeout-minutes: 15
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -93,12 +96,47 @@ jobs:
           test -s public/news/social-democrats-400-energy-credit-budget-2027/index.html
           grep -Fq 'https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
           grep -Fq 'was NOT included in Budget 2027' public/news/social-democrats-400-energy-credit-budget-2027/index.html
+      # Lighthouse takes ~4 minutes, so it runs once per Dublin day: on the first
+      # CI run of the day, and again later only if no run today has passed it yet.
+      # The build and content checks above still run on every publish.
+      # If the GitHub API can't be read, Lighthouse runs (fail safe).
+      - name: Decide whether Lighthouse already passed today (Dublin time)
+        id: lighthouse_gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          LIGHTHOUSE_STEP: Run Lighthouse CI against representative mobile pages
+        run: |
+          set -u
+          today=$(TZ=Europe/Dublin date +%F)
+          since=$(date -u -d "TZ=\"Europe/Dublin\" $today 00:00" +%Y-%m-%dT%H:%M:%SZ)
+          echo "Looking for a passing Lighthouse run since $since (Dublin midnight)"
+          found=""
+          run_ids=$(gh api -X GET "repos/$REPO/actions/workflows/ci.yml/runs" \
+            -f created=">=$since" -f status=success -f per_page=100 \
+            --jq '.workflow_runs[].id' 2>/dev/null || true)
+          for id in $run_ids; do
+            [ "$id" = "${{ github.run_id }}" ] && continue
+            hit=$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq \
+              '.jobs[] | select(.name == "performance" and .conclusion == "success")
+                | .steps[] | select(.name == env.LIGHTHOUSE_STEP and .conclusion == "success")
+                | .name' 2>/dev/null || true)
+            if [ -n "$hit" ]; then found="$id"; break; fi
+          done
+          if [ -n "$found" ]; then
+            echo "Lighthouse already passed today in run $found; skipping it for this publish."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "No passing Lighthouse run yet today; running it now."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Run Lighthouse CI against representative mobile pages
         id: lighthouse
+        if: steps.lighthouse_gate.outputs.run != 'false'
         continue-on-error: true
         run: npx --yes @lhci/cli@0.14.0 autorun --config=.lighthouserc.json
       - name: Print Lighthouse diagnostics
-        if: always()
+        if: always() && steps.lighthouse_gate.outputs.run != 'false'
         run: python scripts/lighthouse_diagnostics.py .lighthouseci
       - name: Enforce Lighthouse thresholds
         if: steps.lighthouse.outcome == 'failure'
