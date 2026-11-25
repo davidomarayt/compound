@@ -20,7 +20,7 @@ tools:
       - {id: balance_5y, label: Balance after 5 years}
       - {id: stress_1pp, label: Monthly repayment if rate were 1 percentage point higher}
       - {id: stress_2pp, label: Monthly repayment if rate were 2 percentage points higher}
-      - {id: payment_per_100k, label: Monthly repayment per €100,000 borrowed}
+      - {id: payment_per_100k, label: "Monthly repayment per €100,000 borrowed"}
     guide: |
       ## What this mortgage calculator tells you
 
