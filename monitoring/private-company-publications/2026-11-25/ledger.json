@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "editorial/private-company-2026-11-25-held",
+  "target_new_articles": 3,
+  "confirmed_live_new_articles": 0,
+  "confirmed_updated_canonicals": 0,
+  "status": "held_for_review",
+  "branch_protection": false,
+  "prior_recovery": {
+    "date": "2026-11-24",
+    "release_prs": [
+      275,
+      276,
+      277
+    ],
+    "confirmed_live_new_articles": 3,
+    "verification_run": "https://github.com/davidomarayt/compound/actions/runs/45502640038",
+    "job_id": 138829605040,
+    "verified_at": "2026-11-24T22:37:28Z",
+    "details": "Re-read recovery.json and raw production audit log confirming 3 canonical pages, licensed covers/social assets, profile backlinks and ads. Latest site run 45561396636 succeeded; no current site-wide image outage. Separate reader denied direct article fetch; OpenAI and ANT live profiles readable. Do not re-release these articles."
+  },
+  "production_deployment": {
+    "status": "held_before_release",
+    "latest_successful_site_run": "https://github.com/davidomarayt/compound/actions/runs/45561396636"
+  },
+  "duplication_checks": "Read AGENTS.md, current watchlist, 25 November editorial and inventory snapshots, recent PRs including recovery, and recent articles. No exact OpenWorks, EFS or Deel Card article found. Existing merchant discovery, Managed Agents and HSBC Tap to Pay content considered and linked; distinct user questions. Full concurrent cross-workflow and independent QA remain outstanding.",
+  "quality_gate": "Research-only, non-publishing files; do not merge as publication or count as live. No required photo fully verified. Preserve date and fingerprints; recheck timing, eligibility, source and current canonical profiles, distinct images and final QA before each independent release. No test changes or bypass. Need exact-head test/performance and direct production verification.",
+  "articles": [
+    {
+      "slug": "openai",
+      "company": "OpenAI",
+      "title": "OpenAI's OpenWorks: Can Subsidised AI Training Turn Small Businesses Into Lasting Customers?",
+      "meta": "OpenAI's US OpenWorks pilot funds local AI experts and offers three free months of ChatGPT Business. We examine adoption economics, retention and the limits of the subsidy.",
+      "fingerprint": "2026-11-23-openai-openworks-local-partner-subsidy-small-business-retention",
+      "event_date": "2026-11-23",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "sources": [
+        "https://openai.com/openworks/",
+        "https://help.openai.com/en/articles/20001724-how-to-apply-to-openworks-and-follow-up-on-your-application",
+        "https://theindependentai.com/news/2026-11-24"
+      ],
+      "profile_change": "US OpenWorks pilot page lists 20 communities, partner stipend up to $8,000/month and three free months of ChatGPT Business; no Irish availability or conversion metrics disclosed.",
+      "photo": "Official OpenWorks case-study images have no established reuse permission; OpenAI Academy event pages and City of Renton AI Jam event listing found, but no verified licensed documentary photo of the programme or directly relevant workshop. Reject generic AI training stock and unlicensed promotional graphics.",
+      "checks": [
+        "Primary pilot page lists 20 communities, counting 7 Midwest, 8 South, 4 West, 1 Northeast.",
+        "Stipend cap $8,000/month, not actual payment or number of partners.",
+        "Three months Business free; independently owned US SMEs; exclusions stated.",
+        "Hypothetical $8,000/20=$400; 20 x 25%=5 conversions; $8,000/5=$1,600; $1,600/$40=40 months; 10 conversions gives $800 and 20 months. No company CAC or margins inferred."
+      ],
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "article_path": "monitoring/private-company-publications/2026-11-25/openai.md",
+      "canonical_url": null,
+      "profile_update": "US OpenWorks pilot page lists 20 communities, partner stipend up to $8,000/month and three free months of ChatGPT Business; no Irish availability or conversion metrics disclosed.",
+      "profile_update_applied": false,
+      "live_http_verified": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "editorial_review_status": "pending"
+    },
+    {
+      "slug": "anthropic",
+      "company": "Anthropic",
+      "title": "Anthropic's Enterprise Frontier Safeguards: Who Pays for Private AI Monitoring?",
+      "meta": "Anthropic's 23 November Enterprise Frontier Safeguards beta moves encrypted safety records into customer-owned cloud storage. Examine privacy boundaries, review obligations and costs.",
+      "fingerprint": "2026-11-23-anthropic-enterprise-frontier-safeguards-zdr-customer-storage-monitoring-economics",
+      "event_date": "2026-11-23",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "sources": [
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/customer-owned-storage",
+        "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/setup-console",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.html"
+      ],
+      "profile_change": "23 November: Enterprise Frontier Safeguards beta for eligible organisations using supported API platforms, customer-owned encrypted safety storage and customer safety-case review; not unrestricted model access or a compliance certification.",
+      "photo": "CC0 photo of Anthropic co-founder Jack Clark speaking at Oxford 20 May 2026 identified (https://commons.wikimedia.org/wiki/File:Jack_Clark,_co-founder_of_Anthropic,_giving_a_talk_on_AI_at_the_Schwarzman_Centre_in_Oxford.jpg), but no verified link to the actual safeguards topic or non-reuse/crop/bytes. No Dario, generic server or synthetic fallback.",
+      "checks": [
+        "23 November dated API release notes; beta and eligible organisations only.",
+        "EFS does not charge a separate Anthropic fee or alter API pricing; storage billed by cloud provider.",
+        "Sealed Safety Data is unreadable by customer; human review shifts to customer; feature-specific stored data excluded.",
+        "Illustrative review: 200,000 requests x 0.2%=400 cases x 9/60h x €70=€4,200; 0.05%=100 cases and €1,050; difference €3,150. No observed flag rate."
+      ],
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "article_path": "monitoring/private-company-publications/2026-11-25/anthropic.md",
+      "canonical_url": null,
+      "profile_update": "23 November: Enterprise Frontier Safeguards beta for eligible organisations using supported API platforms, customer-owned encrypted safety storage and customer safety-case review; not unrestricted model access or a compliance certification.",
+      "profile_update_applied": false,
+      "live_http_verified": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "editorial_review_status": "pending"
+    },
+    {
+      "slug": "stripe",
+      "company": "Stripe",
+      "title": "Stripe and Deel's Stablecoin Card: Can Keeping Contractor Pay in One App Create More Payment Revenue?",
+      "meta": "Stripe and Deel announced a stablecoin-funded Visa card on 24 November. Explore contractor spending, reward economics, payment volume and risks without assuming undisclosed Stripe fees.",
+      "fingerprint": "2026-11-24-stripe-deel-card-dlusd-contractor-spend-retention-economics",
+      "event_date": "2026-11-24",
+      "profile_url": "https://compound.ie/companies/stripe/",
+      "sources": [
+        "https://stripe.com/newsroom/news/stripe-powers-new-deel-card-that-lets-contractors-spend-their-earnings-in-stablecoins-globally",
+        "https://www.deel.com/blog/introducing-new-deel-card/"
+      ],
+      "profile_change": "24 November: Stripe Issuing powers new Deel stablecoin-funded prepaid Visa card in 26 launch markets, using Bridge and Privy; no partnership revenue, fees or adoption disclosed.",
+      "photo": "Official Stripe/Deel press images not established as licensed real photographs; Commons Stripe co-founder EC visit (CC BY 4.0) and debit-card photos considered but do not specifically document this product or payment rail. Need compliant relevant real photo with actual bytes and no reuse.",
+      "checks": [
+        "Both company announcements dated 24 November; English pages specify 26 markets; translated pages conflict and are not used.",
+        "$45m is company-reported amount held since June, not verified current outstanding balances or annual processing volume.",
+        "Cashback up to 1.5%, promotional and conditional; DLUSD not bank account or FDIC insured; no Irish launch inferred.",
+        "Hypothetical 1,000 x $300=$300,000/month volume; 1.5%=$4,500 maximum illustration; 0.8%=$2,400 hypothetical revenue; difference -$2,100 before expense if same party bears reward. No actual rates or commercial terms assumed."
+      ],
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "article_path": "monitoring/private-company-publications/2026-11-25/stripe.md",
+      "canonical_url": null,
+      "profile_update": "24 November: Stripe Issuing powers new Deel stablecoin-funded prepaid Visa card in 26 launch markets, using Bridge and Privy; no partnership revenue, fees or adoption disclosed.",
+      "profile_update_applied": false,
+      "live_http_verified": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "editorial_review_status": "pending"
+    }
+  ]
+}
