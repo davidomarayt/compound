@@ -3,10 +3,10 @@
 # State "confirmed" = this HISTORICAL EVENT occurred; does not imply final law.
 # State "unverified" = no final supporting evidence at this checkpoint.
 # State "target" = stated future objective, not a guaranteed product release.
-checked: '2026-11-15'
+checked: '2026-11-25'
 target_date: '2027-07-01'
-headline: 'Dáil Report and Final Stages proposed for 24–25 November; enactment and provider opening unverified'
-next_checkpoint: 'Check whether the Dáil actually takes the proposed 24–25 November Report and Final Stages; then verify resulting amendments, any Seanad stages, final enacted text, commencement and provider readiness.'
+headline: 'Dáil Report Stage began on 24 November and investment account amendments were agreed; the Bill has not yet passed the Dáil, and enactment and provider opening remain unverified'
+next_checkpoint: 'Check the official record for the resumed Dáil Report Stage (scheduled for 25 November), the remaining investment account amendments and Fifth Stage; then any Seanad stages and the Minister’s signalled Seanad recommendation, final enacted text, commencement and provider readiness.'
 milestones:
   - id: budget-2027
     title: 'Investment account design announced'
@@ -40,11 +40,19 @@ milestones:
     summary: 'An official Oireachtas Bill version (No. 98a) is labelled as amended in Select Committee. It contains draft Individual Investment Account provisions in section 27. This is not enactment, commencement or a provider opening.'
     source_label: 'Oireachtas: Finance (No. 2) Bill 2026, as amended'
     source_url: 'https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf'
+  - id: dail-report-stage
+    title: 'Dáil Report Stage begins; account amendments agreed'
+    state: confirmed
+    date: '2026-11-24'
+    date_label: '24 November 2026'
+    summary: 'The Dáil began Report Stage on 24 November. Government amendments 18 to 27 and 29 to the draft investment account were agreed, including letting contributions pay account fees, a rule on closing an account, and tax-residence wording. The debate was adjourned before all amendments were taken. This is not passage of the Bill, enactment or commencement.'
+    source_label: 'Dáil debate record, 24 November'
+    source_url: 'https://www.oireachtas.ie/en/debates/debate/dail/2026-11-24/21/'
   - id: enacted-law
     title: 'Final law and commencement'
     state: unverified
-    date_label: 'Final law not independently confirmed; Dáil business proposed for 24–25 November'
-    summary: 'The Dáil Business Committee report dated 20 November proposes taking Finance (No. 2) Bill 2026 Report and Final Stages on 24 November and resuming on 25 November. These are proposed future sittings, NOT completed readings, passed amendments, enactment or commencement. Official final law and provider opening remain unverified.'
+    date_label: 'Not yet: Report Stage resumes after 24 November; Seanad and signing still to come'
+    summary: 'Report Stage started on 24 November and was adjourned with further investment account amendments still to be taken. The Dáil Business Committee scheduled the resumed debate for 25 November. The Bill must still complete its Dáil stages, go through the Seanad and be signed into law, and any commencement steps for the account rules would follow. None of these is confirmed yet.'
     source_label: 'Dáil Business Committee proposed agenda, 20 November'
     source_url: 'https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf'
   - id: provider-terms

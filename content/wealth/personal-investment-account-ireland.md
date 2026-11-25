@@ -35,6 +35,10 @@ sources:
     url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/3/amendment/numberedList/eng/b9826d-dcnl.pdf
   - title: "Houses of the Oireachtas: Dáil Business Committee report dated 20 November 2026, proposed Report and Final Stages for 24–25 November; this is a proposed timetable, not a legislative outcome. Checked 21 November 2026."
     url: https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf
+  - title: "Houses of the Oireachtas: Dáil debate record, Finance (No. 2) Bill 2026 Report Stage, 24 November 2026. Investment account amendments agreed; debate adjourned. Checked 25 November 2026; not passage or enactment."
+    url: https://www.oireachtas.ie/en/debates/debate/dail/2026-11-24/21/
+  - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026 Report Stage numbered list of amendments, dated 23 November 2026. Checked 25 November 2026."
+    url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/4/amendment/numberedList/eng/b98a26d-drnl.pdf
   - title: "RTÉ: Irish Investment Account to open on 1 July 2027 — Budget 2027 announcement. 6 October 2026."
     url: https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/
   - title: "RTÉ: At a glance — key points from Budget 2027. 6 October 2026."
@@ -98,11 +102,21 @@ But there is an important caveat: **this is a proposed account, not an account y
 
 <p class="pia-status"><strong>Committee-amended text verified: 19 November 2026.</strong> The official <a href="https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf">Finance (No. 2) Bill 2026, No. 98a, as amended in Select Committee</a> contains proposed <em>Individual Investment Account (IIA)</em> provisions in section 27. The earlier introduced version used section 26. This verifies an amended draft, <strong>not</strong> final enactment, commencement or the latest completed parliamentary stage. The 1 July 2027 target remains conditional. Provider references retain their original source-check dates; this is not a whole-article editorial re-review.</p>
 
-<h2 id="pia-next-dail-stages">What happens next to the Irish investment account Bill?</h2>
+<h2 id="pia-next-dail-stages">What changed for the investment account at Dáil Report Stage?</h2>
 
-**New parliamentary timetable evidence checked 21 November 2026.** The <a href="https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf">Dáil Business Committee report dated 20 November</a> proposes taking **Report and Final Stages of Finance (No. 2) Bill 2026 on Tuesday 24 November**, with proceedings scheduled to resume **Wednesday 25 November**. The report places the Tuesday debate in the 3.49–6.49 p.m. slot and Wednesday’s resumed proceedings no earlier than 3.30 p.m. These are **proposed parliamentary business arrangements**, not proof that either debate has taken place or that a vote has passed.
+**Update, 25 November 2026.** The Dáil began Report Stage of Finance (No. 2) Bill 2026 on Tuesday 24 November. The <a href="https://www.oireachtas.ie/en/debates/debate/dail/2026-11-24/21/">official debate record</a> shows the Minister for Finance moved Government amendments to the draft Individual Investment Account (IIA) rules, and the Dáil agreed amendments 18 to 27 and 29. The debate was then adjourned, with further amendments on the <a href="https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/4/amendment/numberedList/eng/b98a26d-drnl.pdf">Report Stage list</a> still to be taken. The Business Committee had scheduled the resumed debate for Wednesday 25 November.
 
-For prospective PIA investors, the next useful question is whether the Dáil advances the Bill, what amendments survive, and whether subsequent legislative and commencement steps change any IIA terms. A committee-approved draft or a date in a parliamentary calendar does **not** create an account that can be opened or lock in the proposed €12,000 contribution cap, €50,000 threshold, 1% charge or 1 July 2027 Government opening target. The latest final stage still needs verification against the official legislative record, which was not accessible during this source check. Use the <a href="/pia/#pia-launch-tracker">dated PIA launch tracker</a> for milestone evidence and <a href="/pia/providers/">provider announcements</a> for separately confirmed product readiness.
+The Minister described the changes as clarifications that "do not make significant changes to the overall operation of the account". The headline terms did not change: the €12,000 yearly contribution limit, the €50,000 threshold and the proposed 1% charge above it. What the amendments agreed on 24 November do, in plain terms:
+
+- **Fees can come out of your contributions.** "Contribution" now covers money paid in for running the account as well as for buying investments. The Minister said this lets account fees be deducted from contributions "if required". Our reading, not confirmed by any provider yet: a fee taken this way would still use part of your €12,000 yearly allowance. Check each provider's terms when they publish them.
+- **Sale proceeds can wait in cash.** The full proceeds of selling an eligible investment can stay in the account until you reinvest or withdraw them.
+- **No transfers in, cash out only.** Only assets bought with contributions, or with income and gains made inside the account, can be held. You cannot move existing shares or ETFs in, and withdrawals are in cash.
+- **Closing an account.** If you ask to close it, the provider must sell the investments without undue delay and pay you the proceeds and any cash, less reasonable selling costs and any amount applied for the account's 1% charge.
+- **Tax residence, spelled out.** The residency test now refers expressly to being resident in the State *for tax purposes*.
+
+The Minister also described other amendments in the same group that had **not yet been voted on** when the debate adjourned. They would require a provider to remove an over-limit contribution still in the account at the end of a month within 30 days and tell you, and to tell you if it finds and removes an ineligible investment. Treat these as proposals until the official record shows them agreed. He also said he intends to bring a further change in the Seanad on information sharing between Revenue and providers when an account is opened.
+
+**What has not happened yet.** As of this check the Bill has not passed the Dáil. It still needs to finish Report Stage and Fifth Stage, go through the Seanad and be signed into law. None of the terms above can be relied on until then, and no provider is taking applications. The 1 July 2027 opening target remains conditional on enactment and provider readiness. Use the <a href="/pia/#pia-launch-tracker">dated PIA launch tracker</a> for milestone evidence and <a href="/pia/providers/">provider announcements</a> for product readiness. To see how fees and the 1% charge affect a long-term balance, try the <a href="/pia-calculator/">PIA calculator</a>.
 
 <h2 id="pia-at-a-glance">Personal Investment Account Ireland: the rules at a glance</h2>
 
@@ -125,7 +139,7 @@ For prospective PIA investors, the next useful question is whether the Dáil adv
 <tr><th scope="row">Eligible investments</th><td>Listed shares, listed bonds, regulated-market instruments, retail funds including ETFs, and eligible insurance-based investment products</td></tr>
 <tr><th scope="row">Crypto and derivatives</th><td><strong>Excluded</strong></td></tr>
 <tr><th scope="row">Tax administration</th><td>Provider calculates, reports and pays PIA tax to Revenue</td></tr>
-<tr><th scope="row">Legislative status</th><td><strong>Bill introduced 19 October 2026; committee-amended version No. 98a verified 19 November; final law and commencement not confirmed</strong>. Draft statutory name: Individual Investment Account (IIA).</td></tr>
+<tr><th scope="row">Legislative status</th><td><strong>Bill introduced 19 October 2026; committee-amended version No. 98a verified 19 November; Dáil Report Stage began 24 November with account amendments agreed; final law and commencement not confirmed</strong>. Draft statutory name: Individual Investment Account (IIA).</td></tr>
 </tbody>
 </table>
 </div>

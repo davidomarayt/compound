@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-25",
+ "timezone": "Europe/Dublin",
+ "run_type": "pia_content_growth",
+ "topic_fingerprint": "2026-11-24-dail-report-stage-finance-no2-bill-2026-iia-amendments-18-27-29-agreed-debate-adjourned",
+ "action": "update_existing_pia_launch_tracker_and_canonical_guide_not_new_article",
+ "new_articles": 0,
+ "existing_canonical_page_updates": 2,
+ "canonical_urls": [
+  "https://compound.ie/pia/#pia-launch-tracker",
+  "https://compound.ie/wealth/personal-investment-account-ireland/"
+ ],
+ "source_urls": [
+  "https://api.oireachtas.ie/v1/legislation?bill_year=2026&bill_no=98",
+  "https://www.oireachtas.ie/en/debates/debate/dail/2026-11-24/21/",
+  "https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-11-24/debate/mul@/main.xml",
+  "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/4/amendment/numberedList/eng/b98a26d-drnl.pdf",
+  "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+  "https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf",
+  "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+  "https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/"
+ ],
+ "source_checks": {
+  "legislative_stage": "Oireachtas API (checked ~10:20 Dublin, 25 Nov) lists a Dáil Report Stage debate on 24 Nov and a Report Stage numbered amendment list dated 23 Nov; completed stages in the API are still First, Second and Committee. Official debate record 24 Nov: IIA amendments 18-27 and 29 agreed, 28 not moved, debate adjourned while group 28/46/60/63/94 was under discussion. Amendments 30+ (including excess-contribution removal and ineligible-investment notification, tax exclusion wording) not yet taken. Bill has not passed the Dáil; no Seanad stage, enactment or commencement.",
+  "minister_statements": "Minister said amendments do not significantly change account operation; signalled a Seanad recommendation on Revenue-provider information flows at account opening. Reported as stated intent only.",
+  "all_tracker_sources_reachable": "Revenue notice, RTÉ, ver_a PDF and Business Committee PDF returned HTTP 200; no new Revenue IIA release in the press index. Human debate URL returned 405 to automated curl; content verified through the official data.oireachtas.ie AKN record.",
+  "providers": "No new verified provider fees or opening process; content/pia-providers.yml and CSV unchanged."
+ },
+ "change": "Tracker: checked advanced to 2026-11-25 after checking every tracker source; new confirmed milestone dail-report-stage (24 Nov); enacted-law milestone stays unverified with updated wording; headline and next checkpoint updated. Guide: replaced proposed-timetable section with labelled 25 Nov update explaining agreed amendments in plain English, separating agreed amendments from those not yet voted; legislative-status table row and sources updated. Test fixture updated for the new milestone order.",
+ "deduplication": "Read AGENTS.md, EDITORIAL_TOPIC_INDEX.md, inventory, 21-23 Nov ledgers and open PRs. 21 Nov added the proposed 24-25 Nov timetable; today's verified outcome updates that same canonical section rather than a new article.",
+ "recovery": "No 24 Nov ledger. 21 and 22 Nov public fingerprints were recovered by the 23 Nov run. No unverified merged PIA content outstanding.",
+ "launch_tracker": {"path": "content/pia-launch-tracker.yml", "changed": true},
+ "provider_records": {"path": "content/pia-providers.yml", "changed": false, "csv_changed": false},
+ "quality": "No new calculations or images. Claims cross-checked against amendment text (747S = investment account tax deduction). Our reading that fees paid from contributions use the yearly allowance is labelled as our reading. Ads/consent templates untouched.",
+ "production_branch": "claude/clever-babbage-uibieq",
+ "work_branch": "claude/project-thread-jdwfd1",
+ "status": "pr_opened",
+ "live_verification": "pending"
+}
