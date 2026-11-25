@@ -50,7 +50,7 @@ The headline assumptions are:
 - eligible investments are expected to include listed shares, listed bonds, suitable retail funds and ETFs;
 - crypto-assets and derivatives are excluded under the proposed framework.
 
-The account is not yet available. The Finance (No. 2) Bill 2026, as introduced, proposes averaging the daily closing values over the days the account is open. The legislation may change before enactment, and the calculator does not have real historical daily account records.
+The account is not yet available. The [committee-amended Finance (No. 2) Bill 2026, section 27](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf) proposes averaging the daily closing values over the days the account is open. The legislation may change before enactment, and the calculator does not have real historical daily account records.
 
 When the final legislation and Revenue guidance are published, Compound will update this tool where necessary.
 
@@ -78,7 +78,7 @@ For broader long-term growth modelling outside the PIA-specific tax system, use 
 
 ## How the calculator estimates average account value
 
-The Finance (No. 2) Bill 2026, as introduced, specifies a **daily closing-value average** over the relevant days the account was open. Cash and investments held inside the PIA count towards the valuation. See [how daily valuation changes the charge](/pia/daily-valuation/) and the [Bill as introduced, section 26](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=53).
+The committee-amended Finance (No. 2) Bill 2026 specifies a **daily closing-value average** over the relevant days the account was open. Cash and investments held inside the PIA count towards the valuation. See [how daily valuation changes the charge](/pia/daily-valuation/) and the [committee-amended Bill, section 27](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf).
 
 For a future projection, real daily balances do not exist. Compound therefore models a **365-day full year**, smooth daily investment returns and provider fees, and equal contributions at 12 modelled month ends. It averages all 365 modelled daily closing balances rather than just 12 snapshots. The displayed tax is 1% of the excess of this average over €50,000.
 
@@ -309,11 +309,13 @@ Budget 2027 announced a maximum contribution of **€12,000 per year** and no mi
 
 ### Does unused PIA contribution room carry forward?
 
-That has not yet been settled clearly in the published high-level rules. The calculator therefore does not model carry-forward of unused allowance.
+The [committee-amended Finance (No. 2) Bill 2026, section 27, proposed section 747H](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf) defines the €12,000 limit for each tax year and does not provide for carrying unused allowance into another year. The calculator therefore assumes a fresh annual limit, not accumulated contribution room. This is draft legislation, not an account rule already in force.
 
 ### Do withdrawals give me more contribution room?
 
-The published design provides for flexible withdrawals, but the exact interaction between withdrawals and the annual contribution cap still requires final legislative detail. The calculator does not assume that withdrawn money can automatically be recontributed.
+**No, under the committee-amended draft.** [Proposed section 747L(2)(d)](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf) counts contributions before deducting any withdrawals. For example, after paying in €8,000 and withdrawing €3,000 in the same tax year, normal remaining contribution room would be €4,000, not €7,000. This is why a PIA is not equivalent to a flexible savings account, even if money can be withdrawn. Final law and provider terms still need confirmation.
+
+A separate proposed charge in section 747R would apply to outstanding excess contributions at 1% per month, measured at month end, even if the account is below the €50,000 annual account-value threshold. For example, a €1,000 excess remaining outstanding at the end of each of three months would incur €30 in total under the draft (assuming no earlier excess or other adjustments). A withdrawal can reduce an outstanding excess under section 747R(6), but it does not restore ordinary contribution room. This calculator models neither excess contributions nor their monthly charge. See the [full PIA rules guide](/wealth/personal-investment-account-ireland/) and [PIA versus pension comparison](/pia/vs-pension/) before deciding how much accessible savings to invest.
 
 ### Can I use this calculator before PIAs launch?
 
@@ -354,7 +356,7 @@ It does not model irregular market returns, intra-year withdrawals, contribution
 
 The most important limitation is the **average account valuation method**.
 
-The Finance (No. 2) Bill 2026, as introduced, sets out daily closing values. Compound projects 365 illustrative daily balances per full year; real daily market movements and the applicable statutory period can produce a different result.
+The committee-amended Finance (No. 2) Bill 2026 sets out daily closing values. Compound projects 365 illustrative daily balances per full year; real daily market movements and the applicable statutory period can produce a different result.
 
 Once enacted, the legislation and Revenue guidance should take precedence over this calculator.
 
