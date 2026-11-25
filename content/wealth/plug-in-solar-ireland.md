@@ -7,9 +7,9 @@ canonical_path: /news/plug-in-solar-ireland/
 draft: false
 publication_status: published
 date: 2026-11-22
-research_checked: 2026-11-22
-summary: "Ireland is targeting June 2027 for plug-in solar. We explain the current connection rules and calculate what a €550 kit could save on your electricity bill."
-meta_description: "Ireland is targeting June 2027 for plug-in solar. See the current Irish connection rules, what renters should check and how much a €550 kit could save."
+research_checked: 2026-11-25
+summary: "Cabinet agreed on 24 November to allow plug-and-play solar in 2027, but kits are not legal to connect yet. We explain the rules and what a €550 kit could save."
+meta_description: "Cabinet agreed in November to allow plug-in solar in 2027. See the current Irish rules, what renters should check and how much a €550 kit could save."
 tags: [news, solar, plug-in-solar, balcony-solar, electricity, home-energy, ireland]
 require_pinned_hero: true
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Balkonkraftwerk.jpg
@@ -20,6 +20,10 @@ related_tools:
   - solar-payback-calculator
   - electricity-cost-calculator
 sources:
+  - title: "RTÉ: Cabinet to discuss roll out of plug-in solar panels, 24 November 2026"
+    url: https://www.rte.ie/news/politics/2026/1124/1600386-cabinet-climate-politics/
+  - title: "Irish Times: New energy action plan launched, 24 November 2026"
+    url: https://www.irishtimes.com/ireland/2026/11/24/smart-meters-switching-suppliers-and-shift-to-renewables-new-energy-action-plan-launched/
   - title: "Dáil Éireann: question on approval of plug-in solar, 5 November 2026"
     url: https://www.oireachtas.ie/en/debates/question/2026-11-05/4/
   - title: "Selfbuild: June 2027 target and proposed connection rules"
@@ -34,7 +38,9 @@ sources:
     url: https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant
 ---
 
-Ireland is aiming to allow households to use plug-in solar by **the end of June 2027**, provided the necessary electrical safety and regulatory measures are in place. The *Irish Independent* reported on 22 November that the rollout is expected next summer and that kits are already being marketed to Irish households. [Selfbuild’s coverage of Energy Minister Darragh O’Brien’s timeline](https://selfbuild.ie/news/plug-in-solar-panels-could-be-available-in-ireland-by-next-summer/) gives the end of June as the target.
+**Update, 25 November 2026:** Cabinet agreed on 24 November to a "plug and play" approach. Households would be able to plug compliant kits into a suitable existing socket without a certified electrician. The date has not been fixed. [RTÉ](https://www.rte.ie/news/politics/2026/1124/1600386-cabinet-climate-politics/) reported that devices could be on sale as early as the second quarter of 2027. The [Irish Times](https://www.irishtimes.com/ireland/2026/11/24/smart-meters-switching-suppliers-and-shift-to-renewables-new-energy-action-plan-launched/) reported the second half of 2027, subject to a safety assessment and a legislative review. Plug-in kits still cannot legally be connected in Ireland today. Read [what else is in the Government's energy affordability plan](/news/ireland-energy-affordability-action-plan-2026/).
+
+Before that decision, the Government had been aiming for **the end of June 2027**, provided the necessary electrical safety and regulatory measures were in place. [Selfbuild’s coverage of Energy Minister Darragh O’Brien’s timeline](https://selfbuild.ie/news/plug-in-solar-panels-could-be-available-in-ireland-by-next-summer/) gave the end of June as the target.
 
 The appeal is the lower upfront cost and the possibility of using solar in a flat or rented home with a suitable outdoor space. In Compound’s worked example, a **€550 kit saves €63 to €126 a year** depending on how much electricity the household uses as it is generated. At those savings, simple payback ranges from about **4.4 to 8.7 years**.
 

@@ -1,0 +1,107 @@
+{
+  "run_date": "2026-11-25",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "edition_key": "2026-11-25/morning",
+  "publisher": "Claude (manual publish requested by David in project thread, 25 Nov 2026 06:58 Dublin)",
+  "target_maximum": 3,
+  "slots_already_filled_at_start": 0,
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "programme_status": "published_pending_live_verification",
+  "confirmed_publications": 0,
+  "new_articles": 2,
+  "canonical_updates": 1,
+  "held_for_review": 0,
+  "skipped": 0,
+  "failed": 0,
+  "articles": [
+    {
+      "topic": "National Energy Affordability Report and Action Plan (Cabinet, 24 November 2026): household measures, plug-in solar, switching and targeted supports",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "published_pending_live_verification",
+      "source_path": "content/wealth/ireland-energy-affordability-action-plan-2026.md",
+      "canonical_url": "https://compound.ie/news/ireland-energy-affordability-action-plan-2026/",
+      "primary_sources": [
+        "https://www.rte.ie/news/politics/2026/1124/1600386-cabinet-climate-politics/",
+        "https://www.irishtimes.com/ireland/2026/11/24/smart-meters-switching-suppliers-and-shift-to-renewables-new-energy-action-plan-launched/"
+      ],
+      "distinct_thesis": "Separates what the 116-measure plan decided (plug-and-play plug-in solar in 2027, 9% energy VAT to 2030) from what is only being examined (targeted credits by H2 2027, switching push), with euro sums for plug-in payback and supplier switching.",
+      "claim_checks": [
+        {
+          "claim": "Plug-in solar date: RTÉ says as early as Q2 2027; Irish Times says H2 2027 subject to safety assessment and legislative review.",
+          "basis": "Both reports fetched 25 Nov 2026; conflict disclosed in article.",
+          "status": "verified_secondary_conflict_disclosed"
+        },
+        {
+          "claim": "gov.ie press release",
+          "basis": "gov.ie returned client errors to the fetcher on 25 Nov 2026; article says so.",
+          "status": "primary_source_unreachable"
+        },
+        {
+          "claim": "Bord Gáis typical dual fuel +€26.42/month from 9 Oct 2026",
+          "basis": "bordgaisenergy.ie price change page fetched 25 Nov 2026",
+          "status": "verified_primary_source"
+        }
+      ],
+      "photo": {
+        "subject": "Household electricity meter (Indianapolis, US), labelled illustrative",
+        "credit": "Jon Moore / Unsplash",
+        "licence": "Unsplash Licence",
+        "source": "https://unsplash.com/photos/black-and-white-electric-meter-0MKzwPmehRE"
+      }
+    },
+    {
+      "topic": "CSO Ireland's Tax Statistics 2025 (23 November 2026): €137bn collected; USC fell after Budget 2025 cut",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "published_pending_live_verification",
+      "source_path": "content/wealth/ireland-tax-statistics-2025-usc-fell.md",
+      "canonical_url": "https://compound.ie/news/ireland-tax-statistics-2025-usc-fell/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/ep/p-itxs/irelandstaxstatistics2025/keyfindings/",
+        "https://www.cso.ie/en/releasesandpublications/ep/p-itxs/irelandstaxstatistics2025/taxesonincomeandwealth/",
+        "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"
+      ],
+      "distinct_thesis": "Explains why USC receipts fell 1.8% while income tax rose 5.7%, with a worked €50,000 2025 vs 2024 USC comparison (€1,046 vs €1,305).",
+      "claim_checks": [
+        {
+          "claim": "Totals and per-tax figures",
+          "basis": "CSO tables 2.1 and 5.1 fetched 25 Nov 2026",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "2025 and 2024 USC bands; €44,000 band; €2,000 credits",
+          "basis": "Revenue rates pages fetched 25 Nov 2026",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "€137,039m / 5.46m ≈ €25,100 per person",
+          "basis": "CSO April 2025 population estimate 5.46 million",
+          "status": "calculation_verified_with_scope"
+        }
+      ],
+      "photo": {
+        "subject": "Grounds of Dublin Castle (Revenue offices), archival 3 Aug 2018",
+        "credit": "N Chadwick / Geograph Ireland",
+        "licence": "CC BY-SA 2.0",
+        "source": "https://www.geograph.org.uk/photo/6025591"
+      }
+    },
+    {
+      "topic": "Plug-in solar canonical update after 24 November Cabinet decision",
+      "edition": "morning",
+      "content_type": "canonical_update",
+      "action": "canonical_update",
+      "status": "published_pending_live_verification",
+      "source_path": "content/wealth/plug-in-solar-ireland.md",
+      "canonical_url": "https://compound.ie/news/plug-in-solar-ireland/",
+      "distinct_thesis": "Replaces the unsupported 'end of June 2027' lead with the Cabinet plug-and-play decision and the reported Q2/H2 2027 timing."
+    }
+  ],
+  "deduplication": {
+    "note": "Checked EDITORIAL_TOPIC_INDEX.md and irish-finance-publications ledgers 7-23 Nov. No existing page on the action plan or CSO tax statistics; plug-in solar intent handled as canonical update."
+  }
+}
