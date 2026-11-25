@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-24
+Checked: 2026-11-25
 
 - 499 saved profiles checked against structural and issuer rules.
-- 144 existing company articles; 108 mapped to monitored issuers.
-- 137 pending review items; 15 recorded decisions.
+- 147 existing company articles; 109 mapped to monitored issuers.
+- 140 pending review items; 15 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -66,6 +66,14 @@ ID: `22f61eb2c07d128d93b56315`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `24fe70882e088bb991edfee8`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-cisco-shirudo-runtime-patch-cost.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -266,6 +274,14 @@ ID: `ec72c94ba3486cfae5f94f39`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/rlx-acquisition-revenue-margin-cash.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `ee04fa03a37998eb4499a4ff`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/valve-steam-machine-memory-cost-platform-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -682,6 +698,14 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md`, `content/earnings-profiles/amzn.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
+
+### ANT · article_review · low
+
+ID: `033d1277ebb865b0946fa88f`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-claude-ship-code-review-cost-economics.md`, `content/earnings-profiles/ant.json`
 
 ### ANT · article_review · low
 
