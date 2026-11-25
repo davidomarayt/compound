@@ -1104,7 +1104,7 @@ tools:
     fields:
       - {id: sale, label: Sale proceeds, type: number, prefix: "€", default: 30000, min: 0, step: 100, section_start: Disposal}
       - {id: purchase, label: Original purchase cost, type: number, prefix: "€", default: 15000, min: 0, step: 100}
-      - {id: costs, label: Allowable acquisition, disposal and enhancement costs, type: number, prefix: "€", default: 500, min: 0, step: 10, help: "Use only costs Revenue allows in computing the chargeable gain."}
+      - {id: costs, label: "Allowable acquisition, disposal and enhancement costs", type: number, prefix: "€", default: 500, min: 0, step: 10, help: "Use only costs Revenue allows in computing the chargeable gain."}
       - {id: losses, label: Allowable capital losses available to use, type: number, prefix: "€", default: 0, min: 0, step: 10}
       - id: rate_basis
         label: CGT rate basis
@@ -1115,7 +1115,7 @@ tools:
           - {value: standard_new, label: "Standard disposal on/after 7 Oct 2026 — 31%"}
           - {value: standard_old, label: "Standard disposal before 7 Oct 2026 — 33%"}
           - {value: development_land, label: "Development land — 33%"}
-      - {id: exemption_used, label: Annual €1,270 exemption already used this tax year, type: number, prefix: "€", default: 0, min: 0, max: 1270, step: 10, advanced: true, section_start: Advanced annual position}
+      - {id: exemption_used, label: "Annual €1,270 exemption already used this tax year", type: number, prefix: "€", default: 0, min: 0, max: 1270, step: 10, advanced: true, section_start: Advanced annual position}
     results:
       - {id: gain, label: Gain before losses and exemption}
       - {id: taxable, label: Taxable gain after losses and remaining exemption}
@@ -1585,7 +1585,7 @@ tools:
       - {id: pension, label: Employee pension contribution}
       - {id: deductions, label: Total deductions modelled, advanced: true}
       - {id: effective_deductions, label: Effective deduction rate, advanced: true}
-      - {id: next_1000_net, label: Change in take-home from next €1,000 gross, advanced: true}
+      - {id: next_1000_net, label: "Change in take-home from next €1,000 gross", advanced: true}
     guide: |
       ## What this calculator is doing
 
@@ -1821,7 +1821,7 @@ tools:
         options:
           - {value: inheritance, label: Inheritance}
           - {value: gift, label: Gift — Small Gift Exemption may apply}
-      - {id: small_gift_used, label: €3,000 Small Gift Exemption already used from this giver this year, type: number, prefix: "€", default: 0, min: 0, max: 3000, step: 100, advanced: true, section_start: Advanced gift detail, help: "Used only when Benefit type is Gift. Revenue's €3,000 exemption is per disponer to beneficiary per calendar year."}
+      - {id: small_gift_used, label: "€3,000 Small Gift Exemption already used from this giver this year", type: number, prefix: "€", default: 0, min: 0, max: 3000, step: 100, advanced: true, section_start: Advanced gift detail, help: "Used only when Benefit type is Gift. Revenue's €3,000 exemption is per disponer to beneficiary per calendar year."}
     results:
       - {id: threshold, label: Group threshold}
       - {id: current_taxable_value, label: Current benefit after Small Gift Exemption}
