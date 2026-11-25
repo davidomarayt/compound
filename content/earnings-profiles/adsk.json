@@ -2,33 +2,33 @@
   "cik": 769397,
   "company": "Autodesk",
   "latest": {
-    "accession": "0000769397-26-000061",
-    "filed": "2026-08-28",
+    "accession": "0000769397-26-000071",
+    "filed": "2026-11-25",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 2.33,
-        "prior_year": 1.46,
+        "current": 2.68,
+        "prior_year": 1.6,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 492000000,
-        "prior_year": 313000000,
+        "current": 563000000,
+        "prior_year": 343000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2046000000,
-        "prior_year": 1763000000,
+        "current": 2160000000,
+        "prior_year": 1853000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000061/adsk-20260731.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000071/adsk-20261031.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000061/adsk-20260731.htm"
+    },
+    {
+      "accession": "0000769397-26-000071",
+      "filed": "2026-11-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.68,
+          "prior_year": 1.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 563000000,
+          "prior_year": 343000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2160000000,
+          "prior_year": 1853000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000071/adsk-20261031.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ADSK",
-  "updated": "2026-10-15"
+  "updated": "2026-11-25"
 }

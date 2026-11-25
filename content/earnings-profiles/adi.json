@@ -2,33 +2,33 @@
   "cik": 6281,
   "company": "Analog Devices",
   "latest": {
-    "accession": "0000006281-26-000073",
-    "filed": "2026-08-19",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000006281-26-000089",
+    "filed": "2026-11-24",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.74,
-        "prior_year": 1.04,
+        "current": 10.21,
+        "prior_year": 4.56,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1340090000,
-        "prior_year": 518518000,
+        "current": 4997425000,
+        "prior_year": 2267342000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4021899000,
-        "prior_year": 2880348000,
+        "current": 15179047000,
+        "prior_year": 11019707000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-08-01",
-    "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000089/adi-20261031.htm"
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-08-01",
       "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm"
+    },
+    {
+      "accession": "0000006281-26-000089",
+      "filed": "2026-11-24",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 10.21,
+          "prior_year": 4.56,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4997425000,
+          "prior_year": 2267342000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15179047000,
+          "prior_year": 11019707000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000089/adi-20261031.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ADI",
-  "updated": "2026-10-15"
+  "updated": "2026-11-25"
 }

@@ -1,34 +1,34 @@
 {
   "cik": 91419,
-  "company": "J.M. Smucker Company (The)",
+  "company": "The J.M. Smucker Company",
   "latest": {
-    "accession": "0000091419-26-000080",
-    "filed": "2026-08-26",
+    "accession": "0000091419-26-000111",
+    "filed": "2026-11-24",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q2",
     "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 3.03,
-        "prior_year": -0.41,
+        "current": 2.32,
+        "prior_year": 2.26,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 324300000,
-        "prior_year": -43900000,
+        "current": 248700000,
+        "prior_year": 241300000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2219300000,
-        "prior_year": 2113300000,
+        "current": 2283200000,
+        "prior_year": 2330100000,
         "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000080/sjm-20260731.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000111/sjm-20261031.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000080/sjm-20260731.htm"
+    },
+    {
+      "accession": "0000091419-26-000111",
+      "filed": "2026-11-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.32,
+          "prior_year": 2.26,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 248700000,
+          "prior_year": 241300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2283200000,
+          "prior_year": 2330100000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000111/sjm-20261031.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SJM",
-  "updated": "2026-10-15"
+  "updated": "2026-11-25"
 }
