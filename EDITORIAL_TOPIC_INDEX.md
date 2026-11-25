@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 439 published articles and guides, 69 tools,
+**Included:** 441 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -123,6 +123,7 @@ For the complete register (including 510+ company profiles), open
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/) — **Wealth**
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/) — **Wealth**
 - [Employment Permits Portal Still Offline: What Applicants Can Do Now](https://compound.ie/news/ireland-employment-permits-portal-outage-2026/) — **Wealth**
+- [Energy Affordability Plan: What Households Get Now and What Is Still a Promise](https://compound.ie/news/ireland-energy-affordability-action-plan-2026/) — **Wealth**
 - [Escitalopram in Ireland | The serotonin transporter and the delay in symptom change](https://compound.ie/health/medicines/escitalopram/) — **Health**
 - [Esomeprazole in Ireland | The stomach proton pump and time to acid suppression](https://compound.ie/health/medicines/esomeprazole/) — **Health**
 - [EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?](https://compound.ie/news/eu-rwanda-deportation-centre-cost-2026/) — **Wealth**
@@ -198,6 +199,7 @@ For the complete register (including 510+ company profiles), open
 - [Intuitive Surgical Earnings: Robot Growth Meets a $450m Legal Charge](https://compound.ie/wealth/intuitive-surgical-earnings-growth-legal-charge/) — **Wealth**
 - [Investment Fees in Ireland: The Cost That Compounds Against You](https://compound.ie/wealth/investment-fees-ireland/) — **Wealth**
 - [Investment Tax in Ireland: CGT, ETFs, Dividends and Deemed Disposal](https://compound.ie/wealth/investment-tax-ireland/) — **Wealth**
+- [Ireland Collected €137bn in Tax in 2025, and USC Was the Big Tax That Fell](https://compound.ie/news/ireland-tax-statistics-2025-usc-fell/) — **Wealth**
 - [Ireland has a new five-year sepsis strategy — here are the warning signs the HSE wants people to know](https://compound.ie/news/ireland-sepsis-strategy-warning-signs-2026/) — **Health**
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/) — **Wealth**
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/) — **Wealth**
