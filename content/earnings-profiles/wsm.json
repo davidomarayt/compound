@@ -2,33 +2,33 @@
   "cik": 719955,
   "company": "Williams-Sonoma, Inc.",
   "latest": {
-    "fy": 2026,
+    "accession": "0000719955-26-000248",
+    "filed": "2026-11-24",
+    "form": "10-Q",
     "fp": "Q3",
-    "period_end": "2026-11-01",
-    "filed": "2026-11-19",
-    "form": "8-K",
-    "accession": "0000719955-26-000244",
-    "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+    "fy": 2026,
     "metrics": {
-      "revenue": {
-        "current": 1991175000,
-        "prior_year": 1882814000,
-        "unit": "USD",
-        "tag": "SEC Exhibit reported GAAP revenue"
+      "diluted_eps": {
+        "current": 2.38,
+        "prior_year": 1.96,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
       },
       "net_income": {
         "current": 283146000,
         "prior_year": 241592000,
-        "unit": "USD",
-        "tag": "SEC Exhibit reported GAAP net_income"
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
       },
-      "diluted_eps": {
-        "current": 2.38,
-        "prior_year": 1.96,
-        "unit": "USD/shares",
-        "tag": "SEC Exhibit reported GAAP diluted_eps"
+      "revenue": {
+        "current": 1991175000,
+        "prior_year": 1882814000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-11-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000248/wsm-20261101.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000208/wsm-20260802.htm"
     },
     {
-      "fy": 2026,
+      "accession": "0000719955-26-000248",
+      "filed": "2026-11-24",
+      "form": "10-Q",
       "fp": "Q3",
-      "period_end": "2026-11-01",
-      "filed": "2026-11-19",
-      "form": "8-K",
-      "accession": "0000719955-26-000244",
-      "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+      "fy": 2026,
       "metrics": {
-        "revenue": {
-          "current": 1991175000,
-          "prior_year": 1882814000,
-          "unit": "USD",
-          "tag": "SEC Exhibit reported GAAP revenue"
+        "diluted_eps": {
+          "current": 2.38,
+          "prior_year": 1.96,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
         },
         "net_income": {
           "current": 283146000,
           "prior_year": 241592000,
-          "unit": "USD",
-          "tag": "SEC Exhibit reported GAAP net_income"
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
         },
-        "diluted_eps": {
-          "current": 2.38,
-          "prior_year": 1.96,
-          "unit": "USD/shares",
-          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        "revenue": {
+          "current": 1991175000,
+          "prior_year": 1882814000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-11-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000248/wsm-20261101.htm"
     }
   ],
-  "source_type": "SEC XBRL for prior periods; original SEC 8-K earnings exhibit for latest quarter; GAAP, no estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "WSM",
-  "updated": "2026-11-20"
+  "updated": "2026-11-25"
 }

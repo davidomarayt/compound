@@ -2,33 +2,33 @@
   "cik": 10795,
   "company": "Becton Dickinson",
   "latest": {
-    "accession": "0000010795-26-000035",
-    "filed": "2026-08-06",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000010795-26-000039",
+    "filed": "2026-11-24",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.37,
-        "prior_year": 2,
+        "current": 4.09,
+        "prior_year": 5.82,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 377000000,
-        "prior_year": 574000000,
+        "current": 1145000000,
+        "prior_year": 1678000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4983000000,
-        "prior_year": 4726000000,
+        "current": 19457000000,
+        "prior_year": 18544000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000035/bdx-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000039/bdx-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000035/bdx-20260630.htm"
+    },
+    {
+      "accession": "0000010795-26-000039",
+      "filed": "2026-11-24",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.09,
+          "prior_year": 5.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1145000000,
+          "prior_year": 1678000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 19457000000,
+          "prior_year": 18544000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000039/bdx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BDX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-25"
 }
