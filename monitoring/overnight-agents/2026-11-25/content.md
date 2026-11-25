@@ -1,0 +1,19 @@
+# Compound overnight content — 2026-11-25 (Europe/Dublin)
+
+Production branch confirmed `claude/clever-babbage-uibieq`; one substantive draft [PR #279](https://github.com/davidomarayt/compound/pull/279), exact head f9d8999bef79c9cd3d0273564e857b361d7535d7, creation base ec1f083c2ed1a941724194efea07ce6616be9961.
+
+## 3. Internal Linking — review-only
+
+Existing [CGT guide](https://compound.ie/wealth/capital-gains-tax-ireland/) links to [calculator](https://compound.ie/capital-gains-tax-calculator/), and calculator related guides include the CGT guide and investment-tax guide. [Gift tax guide](https://compound.ie/wealth/gift-tax-ireland/) and [inheritance guide](https://compound.ie/wealth/inheritance-tax-ireland/) link to [CAT calculator](https://compound.ie/inheritance-tax-calculator/); calculator links to gift guide and CGT calculator. Public text snapshots returned relevant destinations. No forced extra links; no newly rendered links claimed.
+
+## 4. Content Freshness — measurable change staged
+
+[Revenue CGT calculation guidance](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx), published 7 Oct 2026, confirms €1,270 annual individual exemption and qualifying acquisition/disposal and enhancement expenses; [eBrief 142/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx), 6 Oct 2026, confirms 31% standard from 7 Oct, 33% earlier/development land. [Revenue small gift exemption](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx), published 12 Jun 2025, confirms €3,000 per giver/recipient/calendar year for gifts not inheritances. Checked 25 Nov. Existing public explanations already give correct figures; input labels truncate. Take-home formula in compound/site/static/tools.js computes salaryPlus=salary+1000 and netPlus.net-net.net; output label truncates €1,000 to €1. No tax arithmetic change.
+
+PR #279 quotes exactly four labels in content/tools.yml and adds tests/test_tax_calculator_labels.py (real load_tools assertions for all four labels, maxima, defaults, formula IDs). Prior pension labels already quoted in base; Revenue pension source dated 15 Oct 2026 checked; no duplicate. Investment tax/CGT sources agree with current rate; PIA centre warns proposed status and PR #270 owns draft amendment. Latest company publisher records and open PRs reviewed; no issuer-level factual change independently qualified in this limited pass. No new issuer financial data or legislative enactment claimed.
+
+## Validation and handoff
+
+Four replacement anchors matched once each; exact source comparison confirmed only four changed YAML lines with quote insertion, preserving numerical settings and all other lines. GitHub compare before report writes: 2 ahead/0 behind, exactly two files (4 additions/4 deletions in YAML, 28-line test). PR independently re-read OPEN/DRAFT/UNMERGED, mergeable=true at check (not approval), exact head above. [PR CI 45516862365](https://github.com/davidomarayt/compound/actions/runs/45516862365) and [push CI 45516840167](https://github.com/davidomarayt/compound/actions/runs/45516840167) both in progress; no test or build success claimed. Low-risk label-only correction; rollback by reverting two-file patch. Independent QA must check exact-head CI, latest base/diff, rendered controls, formula/defaults, canonical and normal ad/consent markup as applicable. Raw canonical/sitemap/robots and fresh HTML verification remain unavailable; public text snapshots can lag. No production changes, merge, settings, secrets, ads, consent or other automation changes by worker. Standard ads remain independent of review; no fill/compliance claim.
+
+Totals: one draft PR, four label corrections staged, three existing calculators affected, zero new pages, zero worker merges/deployments/newly verified-live pages.
