@@ -1,0 +1,184 @@
+{
+  "story_fingerprint": "a7c960dc94b54dcb31c1d0b2",
+  "company": "Medtronic plc",
+  "ticker": "MDT",
+  "date": "2026-11-26",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Medtronic's post-MiniMed growth is concentrated in cardiac ablation, adjusted EPS slipped on tax, and a 55m-share exchange-offer reduction will flatter second-half per-share comparisons against reiterated guidance.",
+  "article_path": "content/wealth/medtronic-after-minimed-ablation-eps.md",
+  "canonical_url": "https://compound.ie/wealth/medtronic-after-minimed-ablation-eps/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1613103/000162828026075604/exhibit991-fy27q2earningsr.htm",
+    "https://www.sec.gov/Archives/edgar/data/1613103/000162828026065819/a425-finalresultsofexchang.htm"
+  ],
+  "identity": {
+    "issuer": "Medtronic plc",
+    "CIK": 1613103,
+    "results_accession": "0001628280-26-075604",
+    "exchange_offer_filing": "0001628280-26-065819",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q2",
+    "period_end": "2026-10-30",
+    "release_date": "2026-11-24",
+    "currency": "USD",
+    "accounting": "US GAAP with company-defined organic and non-GAAP measures"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Deere & Company",
+      "Medtronic plc",
+      "Jacobs Solutions Inc.",
+      "Workday, Inc.",
+      "Analog Devices, Inc.",
+      "Dell Technologies Inc.",
+      "HP Inc.",
+      "Agilent Technologies, Inc.",
+      "Lowe's Companies, Inc.",
+      "Target Corporation"
+    ],
+    "selection_reason": "Three different sectors (agricultural/construction machinery, medical devices, engineering services) from filings dated 23-25 Nov 2026, none covered in the previous 14 days by any Compound company task, each with a distinct testable thesis."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth, all monitoring ledgers for 12-26 Nov, open PRs (incl. #291 private-company run) and the earnings-review queue. A maintained /stocks/mdt/ profile exists; no existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "Q2 revenue $9.364bn +4.5% reported, +6.5% organic",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Highlights and revenue schedule",
+      "result": "verified"
+    },
+    {
+      "claim": "FY27 guidance reiterated: organic growth 7.25-7.75%, non-GAAP EPS $5.94-6.00",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Guidance section",
+      "result": "verified as company guidance"
+    },
+    {
+      "claim": "Organic segment revenue $8.164bn -> $8.698bn (+$534m); EP $1.825bn -> $2.163bn (+$338m) = ~63% of organic growth; EP ~25% of segment revenue; ex-EP organic ~3.1%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "338/534=63.3%; 2157/8736=24.7%; 196/6339=3.1%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Cardiac Ablation Solutions +58%, US +80%, 7 points share gain",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Q2 revenue bullet",
+      "result": "verified as company claim"
+    },
+    {
+      "claim": "Organic: Interventional cardiology -0.1% (flat), Neuromodulation -2.2%, Surgical & Endoscopy +3.2%, Cranial & Spinal +6.1%, Acute Care & Monitoring +8.5%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Worldwide revenue schedule",
+      "result": "verified"
+    },
+    {
+      "claim": "GAAP EPS $2.20 incl. $1.983bn MiniMed separation gain",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Income statement",
+      "result": "verified"
+    },
+    {
+      "claim": "Non-GAAP op margin 23.4% vs 24.1%; non-GAAP EPS $1.34 vs $1.36; non-GAAP pre-tax $2.133bn vs $2.097bn (+1.7%); non-GAAP tax 19.9% vs 16.4%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "GAAP to non-GAAP reconciliation; 2133/2097-1=1.7%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Amortisation $626m incl. $206m accelerated in Neuroscience; $236m certain tax adjustments (valuation allowance on DTAs transferred)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Reconciliation and footnotes",
+      "result": "verified"
+    },
+    {
+      "claim": "Exchange offer: 55,032,401 MDT shares accepted for 252,813,348 MiniMed shares; proration 18.289133%; ~4.3% of Q2 diluted weighted shares 1,271.3m",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "55.03/1271.3=4.33%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "H1 non-GAAP EPS $2.79; H2 needed $3.15-3.21, ~13-15% above H1; 53-week year with extra week in Q1",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "5.94-2.79=3.15; 6.00-2.79=3.21; 3.15/2.79=1.129; 3.21/2.79=1.151",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "H1 FCF $2.621bn vs $1.041bn; dividends $1.842bn; buybacks $446m; acquisitions $1.234bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "FCF reconciliation and cash flow statement",
+      "result": "verified"
+    },
+    {
+      "claim": "Intent to acquire Contego Medical announced in November",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Highlights",
+      "result": "verified as announced intent"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined adjusted/organic/non-GAAP measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Medtronic_Headquarters_Office_Building_-_Mounds_View,_Minnesota_(43381897454).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/7/70/Medtronic_Headquarters_Office_Building_-_Mounds_View%2C_Minnesota_%2843381897454%29.jpg",
+    "photographer": "Tony Webster",
+    "license": "CC BY 2.0",
+    "capture_date": "2017-05-30",
+    "description": "Medtronic sign on US headquarters building, Mounds View, Minnesota",
+    "unique_asset": true,
+    "repository_image_sha256": "060361b3e71a5d1a9b89b28b6b6cd7d6b7acbf24be284f838db3f7aa483ad3ee",
+    "dimensions": [
+      1920,
+      1299
+    ],
+    "visual_inspection": "passed"
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "pending",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {
+    "pull_request": null,
+    "validated_head_sha": null,
+    "merge_commit_sha": null,
+    "ci_run": null,
+    "deployment_run": null,
+    "live_verified_at": null,
+    "live_url": null
+  }
+}

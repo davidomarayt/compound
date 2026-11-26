@@ -1,0 +1,170 @@
+{
+  "story_fingerprint": "6befcdb6cf7b6affab9e90fb",
+  "company": "Jacobs Solutions Inc.",
+  "ticker": "J",
+  "date": "2026-11-26",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Jacobs' record backlog and adjusted EPS growth must be tested against falling reported free cash flow, receivables growth, pass-through revenue mix and debt-funded PA Consulting buyout and buybacks, ahead of an 8.5-9.5% FCF-margin target.",
+  "article_path": "content/wealth/jacobs-backlog-cash-conversion-debt.md",
+  "canonical_url": "https://compound.ie/wealth/jacobs-backlog-cash-conversion-debt/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/52988/000162828026075492/jfy2026q4earningsrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/52988/000162828026075495/jec-20261002.htm"
+  ],
+  "identity": {
+    "issuer": "Jacobs Solutions Inc.",
+    "CIK": 52988,
+    "results_accession": "0001628280-26-075492",
+    "annual_report_accession": "0001628280-26-075495",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q4 and full year",
+    "period_end": "2026-10-02",
+    "release_date": "2026-11-23",
+    "currency": "USD",
+    "accounting": "US GAAP continuing operations with company-defined adjusted measures"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Deere & Company",
+      "Medtronic plc",
+      "Jacobs Solutions Inc.",
+      "Workday, Inc.",
+      "Analog Devices, Inc.",
+      "Dell Technologies Inc.",
+      "HP Inc.",
+      "Agilent Technologies, Inc.",
+      "Lowe's Companies, Inc.",
+      "Target Corporation"
+    ],
+    "selection_reason": "Three different sectors (agricultural/construction machinery, medical devices, engineering services) from filings dated 23-25 Nov 2026, none covered in the previous 14 days by any Compound company task, each with a distinct testable thesis."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth, all monitoring ledgers for 12-26 Nov, open PRs (incl. #291 private-company run) and the earnings-review queue. A maintained /stocks/j/ profile exists; no existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "FY26 gross revenue $15.777bn +31.1%; adjusted net revenue $9.592bn +10.3%; adjusted EPS $7.32 +19.6%; GAAP EPS cont. ops $3.37",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Highlights and FY review table",
+      "result": "verified"
+    },
+    {
+      "claim": "Backlog $28.652bn +24.2%; ~$12.7bn (44.3%) expected as revenue in next fiscal year",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Backlog table; 10-K MD&A backlog section",
+      "result": "verified"
+    },
+    {
+      "claim": "Pass-through revenue $6.185bn vs $3.335bn (+85%); ~39% vs ~28% of gross revenue",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment information; 6185/15777=39.2%; 3335/12030=27.7%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "GAAP-to-adjusted EPS bridge: transaction $1.20, restructuring $0.42, amortisation $0.80, other $1.54 (mostly $215.3m pre-tax final vesting of PA agreements)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "EPS reconciliation and footnote (3)",
+      "result": "verified"
+    },
+    {
+      "claim": "OCF $622.6m vs $686.7m (-9%); capex $94.1m; reported FCF $528.5m vs $607.5m; 5.5% of ANR",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Cash flow statement; 622.6-94.1=528.5; 528.5/9592=5.5%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Adjusted FCF $870.9m (adds $342.4m PA Consulting payouts); ~9.1% of ANR",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Adjusted FCF reconciliation; 870.9/9592=9.1%",
+      "result": "verified"
+    },
+    {
+      "claim": "Receivables and contract assets $3.906bn vs $2.989bn (+31%); payables $1.980bn vs $1.261bn (+57%); Q4 OCF $269.9m vs $383.1m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet and cash flow",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Long-term debt $3.580bn vs $2.236bn incl. $1.20bn 2026 term loans (2029/2031); PA redeemable NCI repurchase $924.9m; buybacks $721.1m; dividends $165.6m; shares 116.45m vs 119.08m (-2.2%)",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Balance sheet, cash flow, 10-K borrowings note",
+      "result": "verified"
+    },
+    {
+      "claim": "Long-term debt minus cash ~$2.32bn = ~1.6x adj. EBITDA $1.417bn vs ~0.8x prior year; $1.5bn undrawn revolver; interest expense $183.4m vs $145.8m",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "(3580-1258)/1417=1.64; (2236-1235)/1207=0.83",
+      "result": "verified Compound calculation; company leverage definition may differ"
+    },
+    {
+      "claim": "FY27 guide: ANR $10.0-10.35bn (+4-8%), adj EBITDA margin 15.4-15.7% vs 14.8%, adj EPS $8.05-8.45 (+10-15%), FCF margin 8.5-9.5% of ANR (~$850-983m)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Outlook; 10.0/9.592=1.043; 10.35/9.592=1.079; 10.0*0.085=850; 10.35*0.095=983",
+      "result": "verified Compound calculation"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined adjusted/organic/non-GAAP measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://www.geograph.org.uk/photo/3371685",
+    "remote_asset": "https://s1.geograph.org.uk/geophotos/03/37/16/3371685_63a113a1_1024x1024.jpg",
+    "photographer": "Darrin Antrobus",
+    "license": "CC BY-SA 2.0",
+    "capture_date": "2013-03-15",
+    "description": "Jacobs Engineers and Constructors signage on office building, Merrion Road, Dublin",
+    "unique_asset": true,
+    "repository_image_sha256": "6c916f597b26627fe40a0c8212d89402a54a8f57cea078029fd34a9cb06ed5f1",
+    "dimensions": [
+      1024,
+      765
+    ],
+    "visual_inspection": "passed"
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "pending",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {
+    "pull_request": null,
+    "validated_head_sha": null,
+    "merge_commit_sha": null,
+    "ci_run": null,
+    "deployment_run": null,
+    "live_verified_at": null,
+    "live_url": null
+  }
+}
