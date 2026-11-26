@@ -3,10 +3,10 @@
 # State "confirmed" = this HISTORICAL EVENT occurred; does not imply final law.
 # State "unverified" = no final supporting evidence at this checkpoint.
 # State "target" = stated future objective, not a guaranteed product release.
-checked: '2026-11-25'
+checked: '2026-11-26'
 target_date: '2027-07-01'
-headline: 'Dáil Report Stage began on 24 November and investment account amendments were agreed; the Bill has not yet passed the Dáil, and enactment and provider opening remain unverified'
-next_checkpoint: 'Check the official record for the resumed Dáil Report Stage (scheduled for 25 November), the remaining investment account amendments and Fifth Stage; then any Seanad stages and the Minister’s signalled Seanad recommendation, final enacted text, commencement and provider readiness.'
+headline: 'The Dáil passed Finance (No. 2) Bill 2026 on 25 November with the investment account amendments agreed; Seanad stages, signing into law and provider opening remain unverified'
+next_checkpoint: 'Check the official record for Seanad stages of the Bill, including the Minister’s signalled recommendation on Revenue-provider information at account opening; then the signed Act, any commencement order and provider readiness.'
 milestones:
   - id: budget-2027
     title: 'Investment account design announced'
@@ -45,16 +45,24 @@ milestones:
     state: confirmed
     date: '2026-11-24'
     date_label: '24 November 2026'
-    summary: 'The Dáil began Report Stage on 24 November. Government amendments 18 to 27 and 29 to the draft investment account were agreed, including letting contributions pay account fees, a rule on closing an account, and tax-residence wording. The debate was adjourned before all amendments were taken. This is not passage of the Bill, enactment or commencement.'
+    summary: 'The Dáil began Report Stage on 24 November. Government amendments 18 to 27 to the draft investment account were agreed that day, including letting contributions pay account fees and tax-residence wording. The debate was adjourned before all amendments were taken. This is not passage of the Bill, enactment or commencement.'
     source_label: 'Dáil debate record, 24 November'
     source_url: 'https://www.oireachtas.ie/en/debates/debate/dail/2026-11-24/21/'
+  - id: dail-passed
+    title: 'Dáil passes the Finance Bill'
+    state: confirmed
+    date: '2026-11-25'
+    date_label: '25 November 2026'
+    summary: 'Report Stage resumed and the Dáil passed the Bill by 86 votes to 67. Further Government investment account amendments were agreed, including the rule for closing an account and requiring providers to remove over-limit contributions and ineligible investments and tell the account holder. Opposition amendments on yearly fee disclosure and a fees report were defeated. This is not enactment: the Seanad and signing into law still follow.'
+    source_label: 'Dáil debate record, 25 November'
+    source_url: 'https://www.oireachtas.ie/en/debates/debate/dail/2026-11-25/17/'
   - id: enacted-law
     title: 'Final law and commencement'
     state: unverified
-    date_label: 'Not yet: Report Stage resumes after 24 November; Seanad and signing still to come'
-    summary: 'Report Stage started on 24 November and was adjourned with further investment account amendments still to be taken. The Dáil Business Committee scheduled the resumed debate for 25 November. The Bill must still complete its Dáil stages, go through the Seanad and be signed into law, and any commencement steps for the account rules would follow. None of these is confirmed yet.'
-    source_label: 'Dáil Business Committee proposed agenda, 20 November'
-    source_url: 'https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/business_committee_dail_eireann/reports/2026/2026-11-20_report-of-the-business-committee-for-24-26-november-2026_en.pdf'
+    date_label: 'Not yet: Seanad stages and signing still to come'
+    summary: 'The Bill passed the Dáil on 25 November. It must still go through the Seanad and be signed into law, and any commencement steps for the account rules would follow. The Minister has signalled a further change in the Seanad on information sharing between Revenue and providers. None of these later steps is confirmed yet.'
+    source_label: 'Oireachtas Bill 98/2026'
+    source_url: 'https://www.oireachtas.ie/en/bills/bill/2026/98/'
   - id: provider-terms
     title: 'Provider fees and account opening'
     state: unverified
