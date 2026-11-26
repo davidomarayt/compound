@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-25
+Checked: 2026-11-26
 
 - 499 saved profiles checked against structural and issuer rules.
-- 147 existing company articles; 109 mapped to monitored issuers.
-- 140 pending review items; 15 recorded decisions.
+- 154 existing company articles; 114 mapped to monitored issuers.
+- 148 pending review items; 14 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -221,11 +221,27 @@ Files: `content/wealth/openai-usage-policy-intermediaries-approval-ai-business-r
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `a24b94a18dcb36d6f54409a7`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-openworks-small-business-ai-subsidy-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `ab7973030276f5a820000905`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/revolut-italy-judicial-supervision-aml-growth-costs.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `ad2db6fb5c5aab5140228e77`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/stripe-deel-card-stablecoin-contractor-spending-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -374,6 +390,16 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/ibm-earnings-software-growth-cash-flow.md`, `content/earnings-profiles/ibm.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/51143/000005114326000095/ibm-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### LLY · article_review · medium
+
+ID: `caf8f988b9b0880351fccfd3`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/eli-lilly-foundayo-europe-approval-glp1-2026.md`, `content/earnings-profiles/lly.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### MCD · article_review · medium
 
@@ -701,6 +727,14 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/0001018724260000
 
 ### ANT · article_review · low
 
+ID: `010d92595f36b0f4d913a1c3`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-enterprise-frontier-safeguards-monitoring-costs.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
 ID: `033d1277ebb865b0946fa88f`
 
 Baseline consistency review of this article against the saved company results and its original sources.
@@ -869,6 +903,16 @@ Files: `content/wealth/cvs-separation-segment-economics.md`, `content/earnings-p
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
 
+### DE · article_review · low
+
+ID: `41b31f5a5c30ca74aca4534b`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/deere-2027-outlook-large-ag-recovery.md`, `content/earnings-profiles/de.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/315189/000110465926102213/de-20260802x10q.htm · Q3 FY2026 · period end 2026-08-02 · filed 2026-08-27
+
 ### DHI · article_review · low
 
 ID: `4d15dec186f45f2e4809bfae`
@@ -989,6 +1033,16 @@ Files: `content/wealth/gartner-contract-value-buybacks.md`, `content/earnings-pr
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/749251/000074925126000307/it-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-03
 
+### J · article_review · low
+
+ID: `4e8a7b344cc1e999b3650b1e`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/jacobs-backlog-cash-conversion-debt.md`, `content/earnings-profiles/j.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/52988/000162828026075495/jec-20261002.htm · FY FY2026 · period end 2026-10-02 · filed 2026-11-23
+
 ### KEYS · article_review · low
 
 ID: `c42e14d38537e2636c4cf82a`
@@ -1048,6 +1102,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/marriott-fees-growth-buybacks-debt.md`, `content/earnings-profiles/mar.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1048286/000104828626000043/mar-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-02
+
+### MDT · article_review · low
+
+ID: `71dac945071ffb74f0f8c943`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/medtronic-after-minimed-ablation-eps.md`, `content/earnings-profiles/mdt.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1613103/000162828026060473/mdt-20260731.htm · Q1 FY2027 · period end 2026-07-31 · filed 2026-09-03
 
 ### META · article_review · low
 
@@ -1128,6 +1192,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/nike-margin-demand-turnaround.md`, `content/earnings-profiles/nke.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm · Q1 FY2027 · period end 2026-08-31 · filed 2026-10-02
+
+### NVDA · article_review · low
+
+ID: `87c3c3fe6b34d46af8086f70`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/nvidia-private-investment-valuation.md`, `content/earnings-profiles/nvda.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm · Q3 FY2027 · period end 2026-10-25 · filed 2026-11-17
 
 ### NVDA · article_review · low
 
