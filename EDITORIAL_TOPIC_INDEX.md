@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 446 published articles and guides, 69 tools,
+**Included:** 449 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -107,6 +107,7 @@ For the complete register (including 510+ company profiles), open
 - [Databricks Can Now Share Data Across Regulated Clouds. Who Bears the Compliance Risk?](https://compound.ie/wealth/databricks-cross-regulatory-cloud-sharing-governance-economics/) — **Wealth**
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/) — **Wealth**
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/) — **Wealth**
+- [Deere Expects a Large-Ag Upturn in 2027. Why Does Its Profit Guide Barely Move?](https://compound.ie/wealth/deere-2027-outlook-large-ag-recovery/) — **Wealth**
 - [Diazepam in Ireland | GABA signalling, sedation and persistence](https://compound.ie/health/medicines/diazepam/) — **Health**
 - [Did Claude Solve the Riemann Hypothesis? What the Proof Claim Says](https://compound.ie/news/claude-riemann-hypothesis-proof/) — **Wealth**
 - [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/) — **Wealth**
@@ -220,6 +221,7 @@ For the complete register (including 510+ company profiles), open
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/) — **Wealth**
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/) — **Wealth**
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
+- [Jacobs Has a Record Backlog. Is Cash Keeping Up With It?](https://compound.ie/wealth/jacobs-backlog-cash-conversion-debt/) — **Wealth**
 - [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/) — **Wealth**
 - [Jensen Huang Returns as Nvidia CEO as NVDA Shares Surge](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/) — **Wealth**
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/) — **Wealth**
@@ -250,6 +252,7 @@ For the complete register (including 510+ company profiles), open
 - [Maternity and paternity benefits would rise to €309 a week under new Bill](https://compound.ie/news/social-welfare-bill-maternity-paternity-benefit-january-2027/) — **Wealth**
 - [Mattel’s Gross Margin Jumped 4.8 Points. How Much Survives the Tariff Refund?](https://compound.ie/wealth/mattel-tariff-refund-margin/) — **Wealth**
 - [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/) — **Wealth**
+- [Medtronic After MiniMed: Is One Heart Franchise Carrying the Growth Story?](https://compound.ie/wealth/medtronic-after-minimed-ablation-eps/) — **Wealth**
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/) — **Wealth**
