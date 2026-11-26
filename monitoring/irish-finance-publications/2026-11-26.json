@@ -8,19 +8,43 @@
   "slots_already_filled_at_start": 2,
   "slots_already_filled_note": "PR #294 (branch chatgpt/irish-finance-2026-11-26, merged 09:15 Dublin) published two new articles and two canonical updates before this run. No ledger was written for it, so this file records it.",
   "publishing_branch": "claude/clever-babbage-uibieq",
-  "programme_status": "published_pending_live_verification",
+  "programme_status": "published_verified_live",
   "prior_publications_today": [
-    {"action": "new_article", "source_path": "content/wealth/funeral-cost-financial-stress-ireland-2026.md", "canonical_url": "https://compound.ie/news/funeral-cost-financial-stress-ireland-2026/", "pr": 294, "publisher": "ChatGPT task"},
-    {"action": "new_article", "source_path": "content/wealth/retire-at-61-ireland-five-year-pension-gap.md", "pr": 294, "publisher": "ChatGPT task"},
-    {"action": "canonical_update", "source_path": "content/wealth/ireland-school-transport-fees-2027.md", "pr": 294, "publisher": "ChatGPT task"},
-    {"action": "canonical_update", "source_path": "content/wealth/rent-a-room-relief-20000-budget-2027.md", "pr": 294, "publisher": "ChatGPT task"}
+    {
+      "action": "new_article",
+      "source_path": "content/wealth/funeral-cost-financial-stress-ireland-2026.md",
+      "canonical_url": "https://compound.ie/news/funeral-cost-financial-stress-ireland-2026/",
+      "pr": 294,
+      "publisher": "ChatGPT task",
+      "live_check": "HTTP 200 on 26 Nov 2026 ~12:52 Dublin"
+    },
+    {
+      "action": "new_article",
+      "source_path": "content/wealth/retire-at-61-ireland-five-year-pension-gap.md",
+      "pr": 294,
+      "publisher": "ChatGPT task",
+      "live_check": "HTTP 200 on 26 Nov 2026 ~12:52 Dublin",
+      "canonical_url": "https://compound.ie/news/retire-at-61-ireland-five-year-pension-gap/"
+    },
+    {
+      "action": "canonical_update",
+      "source_path": "content/wealth/ireland-school-transport-fees-2027.md",
+      "pr": 294,
+      "publisher": "ChatGPT task"
+    },
+    {
+      "action": "canonical_update",
+      "source_path": "content/wealth/rent-a-room-relief-20000-budget-2027.md",
+      "pr": 294,
+      "publisher": "ChatGPT task"
+    }
   ],
   "articles": [
     {
       "topic": "Temu commitments accepted by the EU CPC network (26 November 2026), action led by CCPC with Belgian and German authorities",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "published_pending_live_verification",
+      "status": "published_verified_live",
       "source_path": "content/wealth/temu-eu-consumer-commitments-ireland-2026.md",
       "canonical_url": "https://compound.ie/news/temu-eu-consumer-commitments-ireland-2026/",
       "primary_sources": [
@@ -28,15 +52,37 @@
         "https://www.ccpc.ie/consumer-advice/consumer-rights/buying-goods/buying-online",
         "https://www.ccpc.ie/information-for-businesses/selling-goods-and-services/pricing-and-price-reductions/price-reductions"
       ],
-      "secondary_sources": ["https://www.rte.ie/news/business/2026/1126/1600757-temu-commits-to-changing-some-commercial-practices-in-eu/"],
+      "secondary_sources": [
+        "https://www.rte.ie/news/business/2026/1126/1600757-temu-commits-to-changing-some-commercial-practices-in-eu/"
+      ],
       "distinct_thesis": "Separates Temu's new commitments from rights Irish shoppers already had (14-day refund, 30-day lowest prior price), what is accepted vs already done vs still open (DSA preliminary finding), with euro refund-deadline and reference-price examples. Distinct from the 24 Nov Black Friday rights guide, which it links to.",
       "duplicate_check": "No existing Temu article; Black Friday rights guide and EU parcel fee article cover adjacent intents and are linked, not duplicated.",
       "claim_checks": [
-        {"claim": "Full list of commitments, CPC acceptance on 26 Nov, lead authorities BE/DE/IE, fines up to 4% or more of turnover, DSA preliminary finding 17 Nov, Nov 2024 notification", "basis": "Commission press release IP/26/2594 text fetched via presscorner API 26 Nov 2026", "status": "verified_primary_source"},
-        {"claim": "Clara Thornton (CCPC) said platform already made changes", "basis": "RTÉ 26 Nov 2026", "status": "verified_secondary_source"},
-        {"claim": "Trader must refund within 14 days of withdrawal; may wait for goods or proof of return", "basis": "CCPC buying online guidance; consistent with site's 24 Nov Black Friday article", "status": "verified_primary_source"},
-        {"claim": "€3 customs duty on low-value non-EU parcels since 1 July 2026, per product type", "basis": "Existing site article new-eu-parcel-fee-ireland-2026 citing Revenue", "status": "verified_existing_site_source"},
-        {"claim": "CCPC helpline 01 402 5555", "basis": "ccpc.ie homepage fetched 26 Nov 2026", "status": "verified_primary_source"}
+        {
+          "claim": "Full list of commitments, CPC acceptance on 26 Nov, lead authorities BE/DE/IE, fines up to 4% or more of turnover, DSA preliminary finding 17 Nov, Nov 2024 notification",
+          "basis": "Commission press release IP/26/2594 text fetched via presscorner API 26 Nov 2026",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Clara Thornton (CCPC) said platform already made changes",
+          "basis": "RTÉ 26 Nov 2026",
+          "status": "verified_secondary_source"
+        },
+        {
+          "claim": "Trader must refund within 14 days of withdrawal; may wait for goods or proof of return",
+          "basis": "CCPC buying online guidance; consistent with site's 24 Nov Black Friday article",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "€3 customs duty on low-value non-EU parcels since 1 July 2026, per product type",
+          "basis": "Existing site article new-eu-parcel-fee-ireland-2026 citing Revenue",
+          "status": "verified_existing_site_source"
+        },
+        {
+          "claim": "CCPC helpline 01 402 5555",
+          "basis": "ccpc.ie homepage fetched 26 Nov 2026",
+          "status": "verified_primary_source"
+        }
       ],
       "photo": {
         "subject": "Hand holding phone with Temu app in front of orange Temu box",
@@ -45,11 +91,22 @@
         "source": "https://unsplash.com/photos/person-holding-phone-with-temu-logo-box-BmkZWm6iCfk",
         "visually_checked": true
       },
-      "editorial_review_status": "pending (no human review claimed)"
+      "editorial_review_status": "pending (no human review claimed)",
+      "pr": 298,
+      "merge_commit": "5e48b1355cee2b82b9b4c2bc301a92eab4ce7932",
+      "site_run": 45822938445,
+      "live_check": "HTTP 200 at canonical URL, 26 Nov 2026 ~12:52 Dublin; canonical tag, title, ad loader, Unsplash credit present; rendered og:image is the Temu photo (checked visually)"
     }
   ],
   "skipped": [
-    {"topic": "CRU urges households to shop around (25 Nov)", "reason": "Advice reminder, not a new rule or figure; covered by 25 Nov energy affordability article and existing switching guides."},
-    {"topic": "CSO household savings 2025", "reason": "Published 4 Nov; outside 48-hour window with no new material update."}
-  ]
+    {
+      "topic": "CRU urges households to shop around (25 Nov)",
+      "reason": "Advice reminder, not a new rule or figure; covered by 25 Nov energy affordability article and existing switching guides."
+    },
+    {
+      "topic": "CSO household savings 2025",
+      "reason": "Published 4 Nov; outside 48-hour window with no new material update."
+    }
+  ],
+  "confirmed_publications": 1
 }
