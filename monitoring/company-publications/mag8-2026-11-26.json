@@ -4,8 +4,8 @@
   "timezone": "Europe/Dublin",
   "ticker": "TSLA",
   "company": "Tesla, Inc.",
-  "status": "pending-verification",
-  "new_articles_published": 0,
+  "status": "published",
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/tesla-30-billion-credit-facilities.md",
   "canonical_url": "https://compound.ie/wealth/tesla-30-billion-credit-facilities/",
@@ -37,6 +37,66 @@
     "qa": "1920px Commons rendition centre-cropped to 1440x1080 and visually inspected; real photograph of Giga Texas Building 1."
   },
   "editorial_qa": {
-    "human_reviewed_by": null
-  }
+    "human_reviewed_by": null,
+    "independent_second_pass": "All arithmetic recomputed from 10-Q statements; outlook wording quoted from Q2 and Q3 10-Q; inferences on draw timing labelled as Compound reading of contract terms."
+  },
+  "article_sha256": "63fc332e2fb16ea3f862705bb32ff6a2ba4472d7d062465afd1329fb3a05560a",
+  "pr": "https://github.com/davidomarayt/compound/pull/300",
+  "merge_commit": "50eb410c4578a59890a2f9ed3969c3ec020a5939",
+  "ci": {
+    "head": "08d824e8422acf5d878b04d4717ba62f8366a2b4",
+    "runs": [
+      45871846416,
+      45871818637
+    ],
+    "result": "success (test, performance)",
+    "local_tests": "427 passed, 2 subtests passed"
+  },
+  "deployment": {
+    "run": 45872508046,
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-live",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-audit",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-finance-discovery",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "verification": {
+    "verified_at": "2026-11-26T18:10:00+00:00",
+    "url": "https://compound.ie/wealth/tesla-30-billion-credit-facilities/",
+    "status": 200,
+    "canonical": "https://compound.ie/wealth/tesla-30-billion-credit-facilities/",
+    "og_image": "https://compound.ie/static/discover/tesla-30-billion-credit-facilities-16x9.webp",
+    "og_dimensions": [
+      1200,
+      675
+    ],
+    "twitter_image_same": true,
+    "og_image_inspected": true,
+    "image_credit_rendered": true,
+    "sitemap": true,
+    "stock_backlink": true,
+    "stock_profile_links_article": true,
+    "article_ads_loader": true,
+    "stock_ads_loader": true,
+    "consent_present": true,
+    "method": "Direct HTTPS fetch of live HTML, sitemap.xml, /stocks/tsla/ and social image from this environment."
+  },
+  "outcome_notes": "One new article counted for 26 November after HTTP 200 live verification. No paid LLM API, no social posting."
 }
