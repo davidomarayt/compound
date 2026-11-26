@@ -614,6 +614,25 @@
         "status": "published"
       },
       {
+        "title": "Anthropic's Enterprise Frontier Safeguards: Who Pays for Private AI Monitoring?",
+        "url": "/wealth/anthropic-enterprise-frontier-safeguards-monitoring-costs/",
+        "source": "content/wealth/anthropic-enterprise-frontier-safeguards-monitoring-costs.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-enterprise-frontier-safeguards-monitoring-costs",
+        "date": "2026-11-26",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "company-research",
+          "company-anthropic",
+          "stock-ant",
+          "anthropic",
+          "artificial-intelligence"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal",
         "url": "/wealth/anthropic-fable-mythos-52-pricing-routing-economics/",
         "source": "content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md",
@@ -5552,6 +5571,26 @@
         "status": "published"
       },
       {
+        "title": "OpenAI's OpenWorks: Can Subsidised AI Training Turn Small Businesses Into Lasting Customers?",
+        "url": "/wealth/openai-openworks-small-business-ai-subsidy-economics/",
+        "source": "content/wealth/openai-openworks-small-business-ai-subsidy-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-openworks-small-business-ai-subsidy-economics",
+        "date": "2026-11-26",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "artificial-intelligence",
+          "small-business"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus",
         "url": "/health/oral-glp-1-medicines-ireland/",
         "source": "content/health/oral-glp-1-medicines-ireland.md",
@@ -7174,6 +7213,26 @@
           "wellbeing",
           "work-life",
           "hse"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Stripe and Deel's Stablecoin Card: Can Keeping Contractor Pay in One App Create More Payment Revenue?",
+        "url": "/wealth/stripe-deel-card-stablecoin-contractor-spending-economics/",
+        "source": "content/wealth/stripe-deel-card-stablecoin-contractor-spending-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "stripe-deel-card-stablecoin-contractor-spending-economics",
+        "date": "2026-11-26",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-stripe",
+          "stripe",
+          "payments",
+          "stablecoins"
         ],
         "status": "published"
       },

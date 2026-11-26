@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 443
+- Published editorial articles and guides: 446
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 322
+## Wealth articles and guides — 325
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -141,6 +141,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/)
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/)
 - [Anthropic's Claude Ship: Does Automating Pull-Request Review Make Software Delivery Cheaper?](https://compound.ie/wealth/anthropic-claude-ship-code-review-cost-economics/)
+- [Anthropic's Enterprise Frontier Safeguards: Who Pays for Private AI Monitoring?](https://compound.ie/wealth/anthropic-enterprise-frontier-safeguards-monitoring-costs/)
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/)
 - [Anthropic's Self-Hosted Agents Shift the Security Boundary—and the Operating Bill](https://compound.ie/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
@@ -335,6 +336,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/)
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/)
 - [OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?](https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/)
+- [OpenAI's OpenWorks: Can Subsidised AI Training Turn Small Businesses Into Lasting Customers?](https://compound.ie/wealth/openai-openworks-small-business-ai-subsidy-economics/)
 - [Palmer Luckey's SLAB Project: $1B Valuation, Costs and Floating City Economics](https://compound.ie/news/palmer-luckey-slab-project-cost-valuation-floating-city/)
 - [Palo Alto Networks Grew 39%, but Gross Margin Fell 6.2 Points. What Changed?](https://compound.ie/wealth/palo-alto-growth-margin-acquisitions/)
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/)
@@ -395,6 +397,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Starlink Mini 2: Price, Battery and What It Means for SpaceX and Tesla](https://compound.ie/news/starlink-mini-2-spacex-tesla-cost-stock-2026/)
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/)
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/)
+- [Stripe and Deel's Stablecoin Card: Can Keeping Contractor Pay in One App Create More Payment Revenue?](https://compound.ie/wealth/stripe-deel-card-stablecoin-contractor-spending-economics/)
 - [Stripe Is Going Through HSBC's Banking App. Can That Change Small-Business Payments?](https://compound.ie/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/)
 - [Tapestry Is Returning $2 Billion While Kate Spade Loses Money. Can Coach Carry Both?](https://compound.ie/wealth/tapestry-coach-kate-spade-capital-returns/)
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/)

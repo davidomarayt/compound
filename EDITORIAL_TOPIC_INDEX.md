@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 443 published articles and guides, 69 tools,
+**Included:** 446 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -45,6 +45,7 @@ For the complete register (including 510+ company profiles), open
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/) — **Wealth**
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/) — **Wealth**
 - [Anthropic's Claude Ship: Does Automating Pull-Request Review Make Software Delivery Cheaper?](https://compound.ie/wealth/anthropic-claude-ship-code-review-cost-economics/) — **Wealth**
+- [Anthropic's Enterprise Frontier Safeguards: Who Pays for Private AI Monitoring?](https://compound.ie/wealth/anthropic-enterprise-frontier-safeguards-monitoring-costs/) — **Wealth**
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/) — **Wealth**
 - [Anthropic's Self-Hosted Agents Shift the Security Boundary—and the Operating Bill](https://compound.ie/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
@@ -303,6 +304,7 @@ For the complete register (including 510+ company profiles), open
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/) — **Wealth**
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/) — **Wealth**
 - [OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?](https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/) — **Wealth**
+- [OpenAI's OpenWorks: Can Subsidised AI Training Turn Small Businesses Into Lasting Customers?](https://compound.ie/wealth/openai-openworks-small-business-ai-subsidy-economics/) — **Wealth**
 - [Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus](https://compound.ie/health/oral-glp-1-medicines-ireland/) — **Health**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
@@ -389,6 +391,7 @@ For the complete register (including 510+ company profiles), open
 - [Steroid tablets in Ireland | Whole-body exposure and the adrenal response](https://compound.ie/health/medicines/steroid-tablets/) — **Health**
 - [Steroids (corticosteroids) in Ireland | Anti-inflammatory receptors and why the route changes exposure](https://compound.ie/health/medicines/steroids/) — **Health**
 - [Stress symptoms: how to recognise stress and what actually helps](https://compound.ie/life/stress-symptoms-what-helps-ireland/) — **Life**
+- [Stripe and Deel's Stablecoin Card: Can Keeping Contractor Pay in One App Create More Payment Revenue?](https://compound.ie/wealth/stripe-deel-card-stablecoin-contractor-spending-economics/) — **Wealth**
 - [Stripe Is Going Through HSBC's Banking App. Can That Change Small-Business Payments?](https://compound.ie/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/) — **Wealth**
 - [Tapestry Is Returning $2 Billion While Kate Spade Loses Money. Can Coach Carry Both?](https://compound.ie/wealth/tapestry-coach-kate-spade-capital-returns/) — **Wealth**
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/) — **Wealth**
