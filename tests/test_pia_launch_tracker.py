@@ -14,11 +14,11 @@ SOURCE = Path(__file__).resolve().parents[1] / "content" / "pia-launch-tracker.y
 def test_pia_launch_dataset_has_cited_and_nonmisleading_milestones():
     data = load_pia_launch_tracker(SOURCE)
     assert data is not None
-    assert data["checked"] == "2026-11-25"
+    assert data["checked"] == "2026-11-26"
     assert data["target_date"] == "2027-07-01"
-    assert len(data["milestones"]) == 8
+    assert len(data["milestones"]) == 9
     assert [m["state"] for m in data["milestones"]] == [
-        "confirmed", "confirmed", "confirmed", "confirmed", "confirmed", "unverified", "unverified", "target"
+        "confirmed", "confirmed", "confirmed", "confirmed", "confirmed", "confirmed", "unverified", "unverified", "target"
     ]
     assert all(m["source_url"].startswith("https://") for m in data["milestones"])
     amended = data["milestones"][3]
@@ -31,7 +31,12 @@ def test_pia_launch_dataset_has_cited_and_nonmisleading_milestones():
     assert report["date"] == "2026-11-24"
     assert "not passage of the bill" in report["summary"].lower()
     assert "oireachtas.ie/en/debates/debate/dail/2026-11-24/" in report["source_url"]
-    assert data["milestones"][5]["id"] == "enacted-law"
+    passed = data["milestones"][5]
+    assert passed["id"] == "dail-passed"
+    assert passed["date"] == "2026-11-25"
+    assert "not enactment" in passed["summary"].lower()
+    assert "oireachtas.ie/en/debates/debate/dail/2026-11-25/" in passed["source_url"]
+    assert data["milestones"][6]["id"] == "enacted-law"
     assert "subject to" in data["milestones"][-1]["summary"].lower()
 
 
@@ -45,7 +50,8 @@ def test_pia_launch_tracker_visible_on_original_canonical(settings):
     assert 'id="pia-launch-tracker"' in hub
     assert 'href="#pia-launch-tracker"' in hub
     assert "PIA Ireland launch tracker" in hub
-    assert "2026-11-25" in hub
+    assert "2026-11-26" in hub
+    assert "Dáil passes the Finance Bill" in hub
     assert "Dáil Report Stage begins; account amendments agreed" in hub
     assert '<time datetime="2027-07-01">1 July 2027</time>' in hub
     assert "Event verified" in hub and "Not yet verified" in hub and "Target only" in hub
@@ -67,11 +73,11 @@ def test_pia_launch_tracker_missing_fixture_does_not_break_site(settings):
 
 
 @pytest.mark.parametrize("mutation", [
-    lambda data: data["milestones"][5].update({"state": "confirmed"}),
+    lambda data: data["milestones"][6].update({"state": "confirmed"}),
     lambda data: data["milestones"][0].update({"date": "2027-08-01"}),
-    lambda data: data["milestones"][7].update({"date": "2027-08-01"}),
+    lambda data: data["milestones"][8].update({"date": "2027-08-01"}),
     lambda data: data["milestones"][1].update({"source_url": "http://example.org"}),
-    lambda data: data["milestones"][7].update({"state": "confirmed"}),
+    lambda data: data["milestones"][8].update({"state": "confirmed"}),
 ])
 def test_pia_launch_tracker_rejects_unverified_or_unsupported_claims(tmp_path, mutation):
     data = yaml.safe_load(SOURCE.read_text(encoding="utf-8"))
