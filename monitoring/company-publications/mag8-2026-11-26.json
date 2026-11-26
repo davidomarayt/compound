@@ -1,0 +1,42 @@
+{
+  "series": "mag8",
+  "date": "2026-11-26",
+  "timezone": "Europe/Dublin",
+  "ticker": "TSLA",
+  "company": "Tesla, Inc.",
+  "status": "pending-verification",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/tesla-30-billion-credit-facilities.md",
+  "canonical_url": "https://compound.ie/wealth/tesla-30-billion-credit-facilities/",
+  "selection": "Least recently featured series company: Tesla 9 November (Meta 11 November next). No Tesla coverage by any company task in the last 14 days; 26 Nov morning batch DE, MDT, J; no same-day Mag8 or legacy Mag7 record.",
+  "story_fingerprint": "TSLA-2026Q3-credit-facilities-30bn-term-loan-stepdown-capex-funding",
+  "duplicate_checks": [
+    "AGENTS.md, topic index and all Tesla articles checked. Q3 earnings article covers quarterly FCF and margins; no existing page covers the September 2026 credit agreements, the term-loan step-down or the capex outlook wording change.",
+    "Open PRs 295, 274, 270, 269, 254, 237, 235, 212, 188, 176 inspected: none Tesla. 2026 annual meeting proxy (3 Dec) routine items only, not used."
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+  ],
+  "claim_checks": [
+    "8-K 29 Sep 2026: $20bn DDTL (3yr, matures 29 Sep 2029, max 10 draws, undrawn cut to $10bn at 12m, $5bn at 15m, terminate 18m), $8bn 5yr RCF (Sep 2031), $2bn 364-day (28 Sep 2027); +$4bn accordion; $5bn min liquidity covenant; replaced undrawn $5bn Jan 2023 RCF; no plan to draw in 2026.",
+    "10-Q Note 8: undrawn fees 0.10% DDTL and 5yr, 0.08% 364-day. 20000*0.001+8000*0.001+2000*0.0008=29.6m/yr.",
+    "Balance sheet 30 Sep 2026: cash 17,853 + STI 27,594 = 45,447m. Debt principal 9,284m (recourse 2m; China WC 5,966; auto ABS 2,665 + energy ABS 651 = 3,316). 45,447-9,284=36,163m, excludes finance leases 256m.",
+    "Cash flow 9M: OCF 14,897 vs 10,934; capex 13,014 vs 6,134 (+112.2%); SpaceX 2,002. 14,897-13,014-2,002=-119m; 10,934-6,134=4,800m. AP/accrued change +7,332m. Capex in liabilities 3,667 vs 1,631m.",
+    "Capex outlook: Q2 10-Q 'in excess of $25 billion in 2026'; Q3 10-Q 'in excess of $20 billion'. H1 capex 8,282 so Q3 4,732; Q4 floor 20,000-13,014=6,986m. Quote 'will necessitate additional funding beyond our operating cash flow' verified in Q3 10-Q MD&A."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Gigafactory_Texas_Building_1_June_2022.jpg",
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "capture_date": "2022-06-17",
+    "archival": true,
+    "unique_in_repository": true,
+    "qa": "1920px Commons rendition centre-cropped to 1440x1080 and visually inspected; real photograph of Giga Texas Building 1."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null
+  }
+}
