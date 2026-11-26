@@ -3,8 +3,8 @@
   "company": "Jacobs Solutions Inc.",
   "ticker": "J",
   "date": "2026-11-26",
-  "status": "prepared",
-  "publication_state": "prepared_not_published",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
   "story_thesis": "Jacobs' record backlog and adjusted EPS growth must be tested against falling reported free cash flow, receivables growth, pass-through revenue mix and debt-funded PA Consulting buyout and buybacks, ahead of an 8.5-9.5% FCF-margin target.",
@@ -153,18 +153,31 @@
     "duplicate_originality": "passed",
     "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
     "image_license": "passed",
-    "offline_tests": "pending",
-    "ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "offline_tests": "passed: pytest -q 427 passed, 2 subtests",
+    "ci": "passed on exact PR head 8ebcbc094a74b6757b0029b993601ba67da3f3e4 (test and performance, runs 45782655617 and 45782688643)",
+    "deployment": "passed in site run 45783716845; build, deploy, verify-live, verify-finance-discovery and mobile-audit succeeded",
+    "live_verification": "passed: HTTP 200, canonical, photo credit, cover, social image, ads loader, profile link and sitemap entry",
+    "build": "passed in site run 45783716845",
+    "ads": "passed live: standard ca-pub-6115783809711785 loader present",
+    "render": "passed live: canonical, indexable robots, licensed cover, 1200x675 social image visually checked, stock-profile backlink, sitemap"
   },
   "publication": {
-    "pull_request": null,
-    "validated_head_sha": null,
-    "merge_commit_sha": null,
-    "ci_run": null,
-    "deployment_run": null,
-    "live_verified_at": null,
-    "live_url": null
+    "pull_request": "https://github.com/davidomarayt/compound/pull/293",
+    "validated_head_sha": "8ebcbc094a74b6757b0029b993601ba67da3f3e4",
+    "merge_commit_sha": "51f7b02e79eae3a9188df1bf4e47ffb746b1b6e7",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/45782688643",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/45783716845",
+    "live_verified_at": "2026-11-26T12:40:00Z",
+    "live_url": "https://compound.ie/wealth/jacobs-backlog-cash-conversion-debt/",
+    "live_social_image_url": "https://compound.ie/static/discover/jacobs-backlog-cash-conversion-debt-16x9.webp",
+    "live_social_image_sha256": "84b9e240a647742182e1de16fc5e491d18f3fd13b0f59a7d489a0ba65fce3a1e",
+    "live_social_image_dimensions": [
+      1200,
+      675
+    ],
+    "sitemap_verified": true,
+    "ads_verified": true,
+    "profile_backlink_verified": true,
+    "daily_new_article_count_after_publication": 3
   }
 }
