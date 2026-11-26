@@ -2,33 +2,37 @@
   "cik": 315189,
   "company": "Deere & Company",
   "latest": {
-    "accession": "0001104659-26-102213",
-    "filed": "2026-08-27",
-    "form": "10-Q",
-    "fp": "Q3",
     "fy": 2026,
+    "fp": "FY",
+    "period_end": "2026-11-01",
+    "filed": "2026-11-25",
+    "form": "8-K",
+    "accession": "0001104659-26-131741",
+    "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/de-ex99d1.htm",
+    "notes": [
+      "Fiscal 2026 (year ended 1 November 2026) figures are from Deere's 25 November 2026 earnings release (Exhibit 99.1 to Form 8-K), which labels the statements unaudited; the audited annual report on Form 10-K has not yet been filed.",
+      "Revenue is total net sales and revenues; net income is net income attributable to Deere & Company. Fourth-quarter net sales and revenues were $12,115 million (prior year $12,394 million) and fourth-quarter net income attributable to Deere was $1,051 million (prior year $1,065 million)."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 5.1,
-        "prior_year": 4.75,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 47704000000,
+        "prior_year": 45684000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 1379000000,
-        "prior_year": 1289000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 4860000000,
+        "prior_year": 5027000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 12608000000,
-        "prior_year": 12018000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 17.95,
+        "prior_year": 18.5,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-08-02",
-    "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926102213/de-20260802x10q.htm"
+    }
   },
   "periods": [
     {
@@ -117,9 +121,42 @@
       },
       "period_end": "2026-08-02",
       "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926102213/de-20260802x10q.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "FY",
+      "period_end": "2026-11-01",
+      "filed": "2026-11-25",
+      "form": "8-K",
+      "accession": "0001104659-26-131741",
+      "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/de-ex99d1.htm",
+      "notes": [
+        "Fiscal 2026 (year ended 1 November 2026) figures are from Deere's 25 November 2026 earnings release (Exhibit 99.1 to Form 8-K), which labels the statements unaudited; the audited annual report on Form 10-K has not yet been filed.",
+        "Revenue is total net sales and revenues; net income is net income attributable to Deere & Company. Fourth-quarter net sales and revenues were $12,115 million (prior year $12,394 million) and fourth-quarter net income attributable to Deere was $1,051 million (prior year $1,065 million)."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 47704000000,
+          "prior_year": 45684000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 4860000000,
+          "prior_year": 5027000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 17.95,
+          "prior_year": 18.5,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DE",
-  "updated": "2026-10-15"
+  "updated": "2026-11-26"
 }

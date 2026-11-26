@@ -2,33 +2,36 @@
   "cik": 764478,
   "company": "Best Buy",
   "latest": {
-    "accession": "0000764478-26-000042",
-    "filed": "2026-09-04",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2027,
+    "fp": "Q3",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-24",
+    "form": "8-K",
+    "accession": "0000764478-26-000045",
+    "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm",
+    "notes": [
+      "Q3 fiscal 2027 (13 weeks ended 31 October 2026) GAAP figures are from Best Buy's 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the Form 10-Q has not yet been filed."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 1.48,
-        "prior_year": 0.87,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 10236000000,
+        "prior_year": 9672000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 315000000,
-        "prior_year": 186000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 353000000,
+        "prior_year": 140000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 9779000000,
-        "prior_year": 9438000000,
-        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.66,
+        "prior_year": 0.66,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-08-01",
-    "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000042/bby-20260801.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +91,41 @@
       },
       "period_end": "2026-08-01",
       "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000042/bby-20260801.htm"
+    },
+    {
+      "fy": 2027,
+      "fp": "Q3",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-24",
+      "form": "8-K",
+      "accession": "0000764478-26-000045",
+      "source": "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm",
+      "notes": [
+        "Q3 fiscal 2027 (13 weeks ended 31 October 2026) GAAP figures are from Best Buy's 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the Form 10-Q has not yet been filed."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 10236000000,
+          "prior_year": 9672000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 353000000,
+          "prior_year": 140000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 1.66,
+          "prior_year": 0.66,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BBY",
-  "updated": "2026-10-15"
+  "updated": "2026-11-26"
 }

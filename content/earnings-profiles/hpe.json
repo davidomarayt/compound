@@ -2,33 +2,37 @@
   "cik": 1645590,
   "company": "Hewlett Packard Enterprise",
   "latest": {
-    "accession": "0001645590-26-000080",
-    "filed": "2026-09-03",
-    "form": "10-Q",
-    "fp": "Q3",
     "fy": 2026,
+    "fp": "FY",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-23",
+    "form": "8-K",
+    "accession": "0001645590-26-000097",
+    "source": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm",
+    "notes": [
+      "Fiscal 2026 (year ended 31 October 2026) figures are from HPE's 23 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the audited Form 10-K has not yet been filed.",
+      "Net income is net earnings attributable to HPE; diluted EPS is GAAP net earnings per share attributable to common stockholders. Fourth-quarter net revenue was $14,547 million (prior year $9,679 million) and fourth-quarter GAAP diluted EPS was $1.26 (prior year $0.11)."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 1.06,
-        "prior_year": 0.21,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 46739000000,
+        "prior_year": 34296000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 1540000000,
-        "prior_year": 305000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 4433000000,
+        "prior_year": 57000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 12213000000,
-        "prior_year": 9136000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 3.07,
+        "prior_year": -0.04,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000080/hpe-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -117,9 +121,42 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000080/hpe-20260731.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "FY",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-23",
+      "form": "8-K",
+      "accession": "0001645590-26-000097",
+      "source": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000097/ex-991x11232026x8k.htm",
+      "notes": [
+        "Fiscal 2026 (year ended 31 October 2026) figures are from HPE's 23 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the audited Form 10-K has not yet been filed.",
+        "Net income is net earnings attributable to HPE; diluted EPS is GAAP net earnings per share attributable to common stockholders. Fourth-quarter net revenue was $14,547 million (prior year $9,679 million) and fourth-quarter GAAP diluted EPS was $1.26 (prior year $0.11)."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 46739000000,
+          "prior_year": 34296000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 4433000000,
+          "prior_year": 57000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 3.07,
+          "prior_year": -0.04,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HPE",
-  "updated": "2026-10-15"
+  "updated": "2026-11-26"
 }
