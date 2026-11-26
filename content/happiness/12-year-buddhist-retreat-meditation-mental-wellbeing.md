@@ -216,7 +216,7 @@ You may discover that the difficult part is not sitting still.
 
 It is **choosing what your own mind pays attention to**.
 
-For people dealing with persistent rumination rather than ordinary distraction, our guide to [how to stop worrying and overthinking](/happiness/how-to-stop-worrying-and-overthinking/) goes further into practical evidence-based approaches.
+For people dealing with persistent rumination rather than ordinary distraction, our guide to [how to stop worrying and overthinking](/life/how-to-stop-worrying-and-overthinking/) goes further into practical evidence-based approaches.
 
 ## Solitude is not the same thing as loneliness
 
@@ -246,7 +246,7 @@ You can be alone without feeling disconnected.
 
 You can also feel profoundly lonely in a room full of people.
 
-If the issue is unwanted isolation rather than a desire for deliberate quiet, see our guide to [loneliness in Ireland: how common it is and what helps](/happiness/loneliness-ireland-how-common-what-helps/).
+If the issue is unwanted isolation rather than a desire for deliberate quiet, see our guide to [loneliness in Ireland: how common it is and what helps](/life/loneliness-ireland-how-common-what-helps/).
 
 ## Purpose changes the meaning of repetition
 
@@ -292,7 +292,7 @@ One stressful day is normal.
 
 Chronic stress is different.
 
-If stress rather than distraction is the main problem, see [stress symptoms: what helps and when to get support](/happiness/stress-symptoms-what-helps-ireland/).
+If stress rather than distraction is the main problem, see [stress symptoms: what helps and when to get support](/life/stress-symptoms-what-helps-ireland/).
 
 ## There may be value in reducing decisions
 
@@ -330,7 +330,7 @@ It might mean deciding in advance that:
 
 Good routines can reduce the number of times you have to persuade yourself to do something useful.
 
-This is one reason a break does not always feel restorative when the mind remains constantly stimulated. We explored that more directly in [why time off doesn't always feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/).
+This is one reason a break does not always feel restorative when the mind remains constantly stimulated. We explored that more directly in [why time off doesn't always feel like a break](/life/why-time-off-doesnt-feel-like-a-break/).
 
 ## The lesson is not "disconnect from everything"
 

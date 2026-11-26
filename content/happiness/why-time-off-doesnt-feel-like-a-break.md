@@ -111,6 +111,6 @@ The aim is modest: some time in which you are allowed to be somewhere other than
 
 ## Related Compound guides
 
-If work itself is driving the exhaustion, read [Burnout symptoms: how to recognise burnout and what actually helps](/happiness/burnout-symptoms-recovery-ireland/).
+If work itself is driving the exhaustion, read [Burnout symptoms: how to recognise burnout and what actually helps](/life/burnout-symptoms-recovery-ireland/).
 
-For the broader pattern of sustained pressure, see [Stress symptoms: how to recognise stress and what actually helps](/happiness/stress-symptoms-what-helps-ireland/).
+For the broader pattern of sustained pressure, see [Stress symptoms: how to recognise stress and what actually helps](/life/stress-symptoms-what-helps-ireland/).
