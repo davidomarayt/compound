@@ -2,33 +2,37 @@
   "cik": 47217,
   "company": "HP Inc.",
   "latest": {
-    "accession": "0000047217-26-000051",
-    "filed": "2026-08-27",
-    "form": "10-Q",
-    "fp": "Q3",
     "fy": 2026,
+    "fp": "FY",
+    "period_end": "2026-10-31",
+    "filed": "2026-11-24",
+    "form": "8-K",
+    "accession": "0000047217-26-000054",
+    "source": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000054/hp103126exhibit991q426.htm",
+    "notes": [
+      "Fiscal 2026 (year ended 31 October 2026) figures are from HP Inc.'s 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the audited Form 10-K has not yet been filed.",
+      "GAAP figures. HP says fiscal 2026 diluted EPS includes a $0.26 favourable impact from tariff refunds. Fourth-quarter net revenue was $16,004 million (prior year $14,639 million) and fourth-quarter GAAP diluted EPS was $0.84 (prior year $0.84)."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 0.71,
-        "prior_year": 0.8,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 60527000000,
+        "prior_year": 55295000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 661000000,
-        "prior_year": 763000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 2425000000,
+        "prior_year": 2529000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 15677000000,
-        "prior_year": 13932000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 2.62,
+        "prior_year": 2.65,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000051/hpq-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -117,9 +121,42 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000051/hpq-20260731.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "FY",
+      "period_end": "2026-10-31",
+      "filed": "2026-11-24",
+      "form": "8-K",
+      "accession": "0000047217-26-000054",
+      "source": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000054/hp103126exhibit991q426.htm",
+      "notes": [
+        "Fiscal 2026 (year ended 31 October 2026) figures are from HP Inc.'s 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the audited Form 10-K has not yet been filed.",
+        "GAAP figures. HP says fiscal 2026 diluted EPS includes a $0.26 favourable impact from tariff refunds. Fourth-quarter net revenue was $16,004 million (prior year $14,639 million) and fourth-quarter GAAP diluted EPS was $0.84 (prior year $0.84)."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 60527000000,
+          "prior_year": 55295000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 2425000000,
+          "prior_year": 2529000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 2.62,
+          "prior_year": 2.65,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HPQ",
-  "updated": "2026-10-15"
+  "updated": "2026-11-26"
 }

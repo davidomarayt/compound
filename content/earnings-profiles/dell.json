@@ -2,33 +2,36 @@
   "cik": 1571996,
   "company": "Dell Technologies",
   "latest": {
-    "accession": "0001571996-26-000046",
-    "filed": "2026-09-08",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2027,
+    "fp": "Q3",
+    "period_end": "2026-10-30",
+    "filed": "2026-11-24",
+    "form": "8-K",
+    "accession": "0001571996-26-000050",
+    "source": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+    "notes": [
+      "Q3 fiscal 2027 (three months ended 30 October 2026) GAAP figures are from Dell Technologies' 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the Form 10-Q has not yet been filed."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 6.34,
-        "prior_year": 1.7,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 54937000000,
+        "prior_year": 27005000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 4133000000,
-        "prior_year": 1164000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 5673000000,
+        "prior_year": 1548000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 46971000000,
-        "prior_year": 29776000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 8.82,
+        "prior_year": 2.28,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +91,41 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm"
+    },
+    {
+      "fy": 2027,
+      "fp": "Q3",
+      "period_end": "2026-10-30",
+      "filed": "2026-11-24",
+      "form": "8-K",
+      "accession": "0001571996-26-000050",
+      "source": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+      "notes": [
+        "Q3 fiscal 2027 (three months ended 30 October 2026) GAAP figures are from Dell Technologies' 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the Form 10-Q has not yet been filed."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 54937000000,
+          "prior_year": 27005000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 5673000000,
+          "prior_year": 1548000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 8.82,
+          "prior_year": 2.28,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DELL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-26"
 }

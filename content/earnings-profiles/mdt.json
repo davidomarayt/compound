@@ -2,33 +2,37 @@
   "cik": 1613103,
   "company": "Medtronic",
   "latest": {
-    "accession": "0001628280-26-060473",
-    "filed": "2026-09-03",
-    "form": "10-Q",
-    "fp": "Q1",
     "fy": 2027,
+    "fp": "Q2",
+    "period_end": "2026-10-30",
+    "filed": "2026-11-24",
+    "form": "8-K",
+    "accession": "0001628280-26-075604",
+    "source": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026075604/exhibit991-fy27q2earningsr.htm",
+    "notes": [
+      "Q2 fiscal 2027 (three months ended 30 October 2026) GAAP figures are from Medtronic's 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the Form 10-Q has not yet been filed.",
+      "Net income is net income attributable to Medtronic. Medtronic says the quarter includes a $2.0 billion gain from completing the separation of its Diabetes business (MiniMed) on 15 October 2026, so the year-on-year profit increase is not all from ongoing operations."
+    ],
     "metrics": {
-      "diluted_eps": {
-        "current": 1.14,
-        "prior_year": 0.81,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 9364000000,
+        "prior_year": 8961000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 1470000000,
-        "prior_year": 1040000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 2802000000,
+        "prior_year": 1374000000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 9756000000,
-        "prior_year": 8578000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 2.2,
+        "prior_year": 1.07,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026060473/mdt-20260731.htm"
+    }
   },
   "periods": [
     {
@@ -59,9 +63,42 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026060473/mdt-20260731.htm"
+    },
+    {
+      "fy": 2027,
+      "fp": "Q2",
+      "period_end": "2026-10-30",
+      "filed": "2026-11-24",
+      "form": "8-K",
+      "accession": "0001628280-26-075604",
+      "source": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026075604/exhibit991-fy27q2earningsr.htm",
+      "notes": [
+        "Q2 fiscal 2027 (three months ended 30 October 2026) GAAP figures are from Medtronic's 24 November 2026 earnings release (Exhibit 99.1 to Form 8-K), presented as unaudited; the Form 10-Q has not yet been filed.",
+        "Net income is net income attributable to Medtronic. Medtronic says the quarter includes a $2.0 billion gain from completing the separation of its Diabetes business (MiniMed) on 15 October 2026, so the year-on-year profit increase is not all from ongoing operations."
+      ],
+      "metrics": {
+        "revenue": {
+          "current": 9364000000,
+          "prior_year": 8961000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 2802000000,
+          "prior_year": 1374000000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 2.2,
+          "prior_year": 1.07,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MDT",
-  "updated": "2026-10-15"
+  "updated": "2026-11-26"
 }
