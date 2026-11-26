@@ -179,9 +179,9 @@
       "summary": "Payments infrastructure, bank-embedded merchant acceptance, financial services and software tooling.",
       "website": "https://stripe.com/",
       "latest_development": {
-        "date": "2026-11-10",
-        "text": "Stripe announced that eligible HSBC UK small-business customers can activate smartphone Tap to Pay in the HSBC Business Banking app. The partnership offers contactless acceptance without an extra card reader but discloses no merchant adoption, contract economics or separate revenue figures.",
-        "source": "https://stripe.com/newsroom/news/stripehsbc-power-tap-to-pay-for-uk-small-businesses"
+        "date": "2026-11-24",
+        "text": "Stripe said on 24 November that Stripe Issuing powers Deel's new stablecoin-funded prepaid Visa card for contractors in 26 markets across Latin America, the Caribbean and Africa, with Bridge issuing the DLUSD stablecoin and Privy powering the wallet. No partnership revenue, fee split, card adoption or Irish availability was disclosed.",
+        "source": "https://stripe.com/newsroom/news/stripe-powers-new-deel-card-that-lets-contractors-spend-their-earnings-in-stablecoins-globally"
       }
     },
     {
