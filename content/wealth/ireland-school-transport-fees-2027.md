@@ -1,16 +1,16 @@
 ---
-title: 'School Transport Fees Are Rising in 2027: What Families Will Actually Pay'
-seo_title: 'School Bus Fees Ireland 2027: Secondary Ticket Hits €350'
+title: 'School Transport Fees 2027: Government Reviews €350 School Bus Charge'
+seo_title: 'School Bus Fees Ireland 2027: €350 Increase Under Review'
 slug: ireland-school-transport-fees-2027
 canonical_path: /news/ireland-school-transport-fees-2027/
 pillar: wealth
 date: '2026-11-22'
-research_checked: '2026-11-22'
+research_checked: '2026-11-26'
 publication_status: published
 editorial_review_status: pending
 draft: false
-summary: Post-primary school transport is set to rise from €100 to €350 per pupil for 2027/28, with an overall family cap of €650. Here are the household examples, exemptions and details still to be published.
-meta_description: Irish post-primary school transport will cost €350 per pupil in 2027/28, with a €650 family cap. Compare current fees, exemptions and examples.
+summary: The proposed €350 post-primary school transport fee and €650 family cap for 2027/28 are under review. Compare the announced charges and budget for possible changes.
+meta_description: Ireland's proposed €350 school bus fee and €650 family cap for 2027/28 are under review. See household examples, current fees and exemptions.
 tags:
 - news
 - ireland
@@ -27,6 +27,10 @@ hero_image_credit: JoachimKohler-HB / Wikimedia Commons, CC BY-SA 4.0. Photograp
 hero_image_source: https://commons.wikimedia.org/wiki/File:Bus_%C3%89ireann.jpg
 require_pinned_hero: true
 sources:
+- title: RTÉ — Government review of school transport fees, 25 November 2026
+  url: https://www.rte.ie/news/politics/2026/1125/1600687-school-transport-fees/
+- title: RTÉ — Independent TDs oppose planned fee increases, 24 November 2026
+  url: https://www.rte.ie/news/politics/2026/1124/1600519-independents-oppose-planned-rise-in-school-transport-fees/
 - title: Department of Education and Youth — School transport
   url: https://www.gov.ie/en/department-of-education/services/school-transport/
 - title: Bus Éireann — Apply and pay for school transport
@@ -43,9 +47,11 @@ image_credit: JoachimKohler-HB / Wikimedia Commons, CC BY-SA 4.0. Photograph tak
 image_source: https://commons.wikimedia.org/wiki/File:Bus_%C3%89ireann.jpg
 social_image: /static/images/evergreen/ireland-school-transport-fees-2027.jpg
 ---
+**Update, 26 November 2026:** The Taoiseach indicated on 25 November that the Government would reconsider the proposed increases after concerns within the coalition. RTÉ reports that smaller or more gradual increases may replace the original plan. No revised amount has been confirmed in the reporting reviewed. The figures below describe the original announced plan, not a final bill. The current school-year fees are unaffected.
+
 **The annual school-transport charge for a post-primary pupil is set to rise from €100 to €350 for the 2027/28 school year. An overall family cap of €650 will replace the current €220 cap, although eligible medical-card holders and children using specialised transport will continue to travel free.**
 
-The figures were confirmed in a written parliamentary response reported on 20 November and subsequently defended by the Tánaiste. The important date is **September 2027**, not the remainder of the current school year.
+The original figures were reported on 20 November and defended by the Tánaiste; the subsequent review means the amounts could change. The important date is **September 2027**, not the remainder of the current school year.
 
 The Department's live information page still displays the 2026/27 charges. Application dates, payment windows and the complete 2027/28 operating terms have not yet been published there, so families should not reuse this year's deadline for next year's application.
 
@@ -88,7 +94,7 @@ For 2027/28, families will need to check the Department and Bus Éireann terms w
 
 The reported parliamentary response says 181,000 children and young people use the scheme each day and that charges are being restored to 2021 levels for financial sustainability. It estimates the underlying transport cost at €1,400 to €1,500 per pupil and says the State would still fund more than 75% of the post-primary cost after a €350 contribution.
 
-Those cost estimates explain the policy position but do not reduce the cash impact on a family. A household with two secondary-school pupils would need to find an additional **€450** compared with the current two-pupil cost.
+Those cost estimates explain the policy position but do not reduce the cash impact on a family. A household with two secondary-school pupils would need to find an additional **€450 if the original plan proceeds** compared with the current two-pupil cost.
 
 Setting aside that increase over 12 months would require:
 
@@ -106,5 +112,5 @@ That is a budgeting illustration, not a payment plan offered by the scheme.
 
 Compound's recent analysis of [school pupils and household supports](/news/irish-school-family-supports-cso-2026/) explains the Back to School Clothing and Footwear Allowance and Working Family Payment checks. Those supports do not automatically create a school-transport entitlement, but they are worth reviewing as part of the wider education budget.
 
-The key point for families is now clear enough to plan around: primary fees are broadly unchanged, while secondary-school transport becomes a materially larger annual bill from September 2027. The remaining operational details should be checked against the official application notice rather than political summaries.
+The proposed amounts are a useful upper planning scenario, not a confirmed final charge. For example, a household saving €37.50 a month for the possible €450 increase can keep the excess in its education budget if the eventual fee is lower. Check the official application notice for final charges and deadlines.
 
