@@ -155,7 +155,7 @@ The HSE highlights libraries, local noticeboards and community groups as ways to
 
 A practical first step is to invite one person to one specific thing. If you would prefer to go alone, ask the organiser how newcomers join in. Give yourself permission to stay for a short visit. If it goes well, arrange the next contact while the idea is still fresh.
 
-For more on finding enjoyable activities, see [When did you last do something just for fun?](/happiness/when-did-you-last-do-something-for-fun/). Our [guide to loneliness in Ireland](/happiness/loneliness-ireland-how-common-what-helps/) explores the wider issue of feeling disconnected.
+For more on finding enjoyable activities, see [When did you last do something just for fun?](/life/when-did-you-last-do-something-for-fun/). Our [guide to loneliness in Ireland](/life/loneliness-ireland-how-common-what-helps/) explores the wider issue of feeling disconnected.
 
 If low mood, anxiety or loneliness is persistent or affecting daily life, seek support from your GP or a mental health professional. An enjoyable outing and professional care can have a place in the same life.
 

@@ -111,8 +111,8 @@ On an ordinary Tuesday, half an hour spent happily absorbed in something can be 
 
 ## Related Compound guides
 
-If life feels broader than a missing hobby and you are struggling to create momentum, start with [How to get out of a rut](/happiness/how-to-get-out-of-a-rut/).
+If life feels broader than a missing hobby and you are struggling to create momentum, start with [How to get out of a rut](/life/how-to-get-out-of-a-rut/).
 
-For the wider evidence on hobbies, relationships, exercise, gratitude and life satisfaction, read [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
+For the wider evidence on hobbies, relationships, exercise, gratitude and life satisfaction, read [How to be happier: what the evidence actually says](/life/how-to-be-happier-evidence-ireland/).
 
-If you want to make a hobby more social, see [How to make friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/).
+If you want to make a hobby more social, see [How to make friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/).

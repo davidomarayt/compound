@@ -56,7 +56,7 @@ After the autumn change, sunrise and sunset occur roughly an hour earlier by the
 
 For someone who finishes work at the same time every day, that distinction has a practical consequence: an outdoor activity that still fits into daylight this week may need an earlier slot next week.
 
-If a walk, run or trip to the park matters to your routine, consider making space for it at lunchtime or earlier in the day. For the broader seasonal picture, read our guide to [why darker autumn days can affect energy, sleep and mood](/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland/).
+If a walk, run or trip to the park matters to your routine, consider making space for it at lunchtime or earlier in the day. For the broader seasonal picture, read our guide to [why darker autumn days can affect energy, sleep and mood](/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/).
 
 ## A few checks before Sunday
 

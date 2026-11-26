@@ -116,7 +116,7 @@ A demanding job can be stimulating and satisfying when the pressure is manageabl
 
 The problem arises when demands consistently exceed the person's capacity or the resources available to do the job.
 
-The ability to recover outside work matters too. Our evidence-based guide to [why time off does not always feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/) looks at the difference between simply being off the clock and actually getting restorative downtime.
+The ability to recover outside work matters too. Our evidence-based guide to [why time off does not always feel like a break](/life/why-time-off-doesnt-feel-like-a-break/) looks at the difference between simply being off the clock and actually getting restorative downtime.
 
 ## Stress is not just an individual coping problem
 
@@ -400,4 +400,4 @@ They may also matter more.
 
 ## Related Compound guides
 
-For the individual side of the same problem, see [Stress symptoms: what helps in Ireland](/happiness/stress-symptoms-what-helps-ireland/) and [Burnout symptoms and recovery](/happiness/burnout-symptoms-recovery-ireland/). If time away from work is not actually restoring you, read [Why time off doesn't feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/).
+For the individual side of the same problem, see [Stress symptoms: what helps in Ireland](/life/stress-symptoms-what-helps-ireland/) and [Burnout symptoms and recovery](/life/burnout-symptoms-recovery-ireland/). If time away from work is not actually restoring you, read [Why time off doesn't feel like a break](/life/why-time-off-doesnt-feel-like-a-break/).

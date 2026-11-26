@@ -242,7 +242,7 @@ And more than a quarter cited the social element.
 
 That last number is worth noticing because exercise can do more than fill an activity target. Walking groups, clubs, classes and team sports can create repeated contact with other people — something that becomes harder to manufacture in adult life.
 
-Compound's guide to [making friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/) looks at why repeated, low-pressure contact matters when building new friendships.
+Compound's guide to [making friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/) looks at why repeated, low-pressure contact matters when building new friendships.
 
 ## What stops people exercising?
 

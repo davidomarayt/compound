@@ -352,6 +352,6 @@ The practical order for most people: try worry postponement and the bedtime list
 
 ## Related Compound guides
 
-If worry is part of a broader period of sustained pressure, start with [Stress symptoms: how to recognise stress and what actually helps](/happiness/stress-symptoms-what-helps-ireland/).
+If worry is part of a broader period of sustained pressure, start with [Stress symptoms: how to recognise stress and what actually helps](/life/stress-symptoms-what-helps-ireland/).
 
-If the loop is driven by harsh self-judgement or fear of not being good enough, read [How to improve self-esteem and confidence](/happiness/how-to-improve-self-esteem-confidence/).
+If the loop is driven by harsh self-judgement or fear of not being good enough, read [How to improve self-esteem and confidence](/life/how-to-improve-self-esteem-confidence/).

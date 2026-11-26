@@ -282,7 +282,7 @@ Someone else's confidence becomes evidence that you do not belong.
 
 That can drive withdrawal, which then reduces opportunities to have positive social experiences.
 
-If your confidence difficulty is especially social, our guide on [making friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/) focuses on repeated, low-pressure ways to build connection.
+If your confidence difficulty is especially social, our guide on [making friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/) focuses on repeated, low-pressure ways to build connection.
 
 ## Self-esteem and overthinking
 
@@ -296,7 +296,7 @@ People with low confidence often replay interactions after they happen.
 
 That kind of repetitive thinking feels like problem-solving but often produces no useful action.
 
-Our guide to [worry and overthinking](/happiness/how-to-stop-worrying-and-overthinking/) looks at techniques such as worry postponement and CBT-style approaches in more detail.
+Our guide to [worry and overthinking](/life/how-to-stop-worrying-and-overthinking/) looks at techniques such as worry postponement and CBT-style approaches in more detail.
 
 ## A 30-day self-confidence experiment
 

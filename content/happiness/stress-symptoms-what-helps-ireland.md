@@ -28,7 +28,7 @@ sources:
 
 Stress is not always obvious.
 
-If the change seems strongly seasonal, especially as daylight shortens, see [why autumn can affect energy, sleep and mood](/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland/) before assuming every symptom is simply stress.
+If the change seems strongly seasonal, especially as daylight shortens, see [why autumn can affect energy, sleep and mood](/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/) before assuming every symptom is simply stress.
 
 Sometimes it feels like anxiety.
 
@@ -239,7 +239,7 @@ The important part is whether the activity genuinely changes your mental state.
 
 If your "time off" is spent thinking about work, checking work messages and anticipating tomorrow, the clock may say you are resting while your brain is still working.
 
-That is why [time off can fail to feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/).
+That is why [time off can fail to feel like a break](/life/why-time-off-doesnt-feel-like-a-break/).
 
 ## Does exercise help with stress?
 
@@ -289,7 +289,7 @@ That person does not have to solve the problem.
 
 Sometimes the value is simply moving the stress from an internal loop into a conversation.
 
-If you are prone to repetitive worry, our guide to [worry and overthinking](/happiness/how-to-stop-worrying-and-overthinking/) looks at specific techniques tested in trials.
+If you are prone to repetitive worry, our guide to [worry and overthinking](/life/how-to-stop-worrying-and-overthinking/) looks at specific techniques tested in trials.
 
 ## Alcohol can make the cycle worse
 
@@ -313,7 +313,7 @@ The HSE notes that a lot of stress over a long period can lead to physical, ment
 
 Burnout is more specifically tied to chronic workplace stress in the WHO definition.
 
-If work is the main driver and you are seeing exhaustion, growing cynicism or detachment and reduced professional efficacy, read our [guide to burnout symptoms and recovery](/happiness/burnout-symptoms-recovery-ireland/).
+If work is the main driver and you are seeing exhaustion, growing cynicism or detachment and reduced professional efficacy, read our [guide to burnout symptoms and recovery](/life/burnout-symptoms-recovery-ireland/).
 
 The distinction matters because the solution may need to involve the work itself.
 
