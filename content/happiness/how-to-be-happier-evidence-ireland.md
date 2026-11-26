@@ -36,7 +36,7 @@ sources:
 
 There is an awkward truth about happiness advice:
 
-Season can matter too. If your energy or mood reliably dips as the Irish days shorten, our [guide to autumn tiredness, daylight and seasonal mood](/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland/) explains what the evidence can — and cannot — support.
+Season can matter too. If your energy or mood reliably dips as the Irish days shorten, our [guide to autumn tiredness, daylight and seasonal mood](/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/) explains what the evidence can — and cannot — support.
 
 **most of it sounds more certain than the evidence is.**
 
@@ -179,7 +179,7 @@ In Ireland, 15% of adults reported feeling lonely at least sometimes in 2025.
 
 If your social world is thin, improving it may matter more than adding another wellness habit.
 
-Read our guides to [loneliness in Ireland](/happiness/loneliness-ireland-how-common-what-helps/) and [making friends as an adult](/happiness/how-to-make-friends-as-an-adult-ireland/) for the practical side.
+Read our guides to [loneliness in Ireland](/life/loneliness-ireland-how-common-what-helps/) and [making friends as an adult](/life/how-to-make-friends-as-an-adult-ireland/) for the practical side.
 
 ## Exercise is one of the better bets
 
@@ -247,7 +247,7 @@ But hobbies can combine several ingredients associated with wellbeing:
 
 The HSE explicitly encourages creative activities and learning new things as ways to support mood and confidence.
 
-Our article [When did you last do something just for fun?](/happiness/when-did-you-last-do-something-for-fun/) explores this more deeply.
+Our article [When did you last do something just for fun?](/life/when-did-you-last-do-something-for-fun/) explores this more deeply.
 
 Not every activity needs to improve your CV, fitness or finances.
 
@@ -325,9 +325,9 @@ If your demands consistently exceed your resources, a wellness routine can becom
 
 The HSE recommends practical stress-management techniques, but it also recognises that stress comes from real circumstances such as work, money, housing, health and relationships.
 
-Read our [guide to stress symptoms](/happiness/stress-symptoms-what-helps-ireland/) if your main problem is not lack of happiness but sustained pressure.
+Read our [guide to stress symptoms](/life/stress-symptoms-what-helps-ireland/) if your main problem is not lack of happiness but sustained pressure.
 
-And if chronic workplace stress has progressed into exhaustion, cynicism and reduced professional efficacy, our [burnout guide](/happiness/burnout-symptoms-recovery-ireland/) is more relevant than this page.
+And if chronic workplace stress has progressed into exhaustion, cynicism and reduced professional efficacy, our [burnout guide](/life/burnout-symptoms-recovery-ireland/) is more relevant than this page.
 
 ## Mental health treatment is not a happiness hack
 
@@ -392,7 +392,7 @@ It can be family, craft, community, work, learning, volunteering or creating som
 
 ### 6. Then experiment with small interventions
 
-If the problem is less about happiness and more about feeling stagnant, our practical guide to [getting out of a rut](/happiness/how-to-get-out-of-a-rut/) gives you a structured reset without requiring a complete life overhaul.
+If the problem is less about happiness and more about feeling stagnant, our practical guide to [getting out of a rut](/life/how-to-get-out-of-a-rut/) gives you a structured reset without requiring a complete life overhaul.
 
 
 Try gratitude.

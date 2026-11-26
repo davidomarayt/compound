@@ -198,7 +198,7 @@ Those changes can matter for wellbeing.
 
 The HSE recommends keeping active, particularly outdoors in daylight, as one of the self-help measures for seasonal affective disorder.
 
-Our [evidence-based guide to being happier](/happiness/how-to-be-happier-evidence-ireland/) reaches a similar conclusion from a broader evidence base: relationships, activity and meaningful engagement matter more than chasing a permanently positive mood.
+Our [evidence-based guide to being happier](/life/how-to-be-happier-evidence-ireland/) reaches a similar conclusion from a broader evidence base: relationships, activity and meaningful engagement matter more than chasing a permanently positive mood.
 
 ## Is this seasonal affective disorder?
 
@@ -423,7 +423,7 @@ You can therefore have a seasonal pattern without daylight being the only cause.
 
 The environment and the calendar change together.
 
-If your exhaustion comes with constant worry, irritability, difficulty concentrating or an inability to switch off, our [guide to stress symptoms and what actually helps](/happiness/stress-symptoms-what-helps-ireland/) may be more relevant.
+If your exhaustion comes with constant worry, irritability, difficulty concentrating or an inability to switch off, our [guide to stress symptoms and what actually helps](/life/stress-symptoms-what-helps-ireland/) may be more relevant.
 
 ## A useful question: what changed since August?
 

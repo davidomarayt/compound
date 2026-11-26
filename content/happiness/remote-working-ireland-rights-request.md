@@ -283,9 +283,9 @@ But the first statutory review suggests that when employees actually use the fra
 
 ## Related reading
 
-For the wider work-life-balance picture, see [Burnout: symptoms, causes and what actually helps](/happiness/burnout-symptoms-recovery-ireland/) and [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
+For the wider work-life-balance picture, see [Burnout: symptoms, causes and what actually helps](/life/burnout-symptoms-recovery-ireland/) and [How to be happier: what the evidence actually says](/life/how-to-be-happier-evidence-ireland/).
 
-Remote working can also reduce spontaneous contact with colleagues. See [How to make friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/).
+Remote working can also reduce spontaneous contact with colleagues. See [How to make friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/).
 
 ## Sources
 

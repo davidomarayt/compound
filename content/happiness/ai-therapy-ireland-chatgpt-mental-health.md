@@ -358,7 +358,7 @@ AI can help you prepare:
 
 That may be one of AI's most useful roles: not replacing care, but making care easier to access and use.
 
-If worry and rumination are the main problem, our evidence-based guide to [how to stop worrying and overthinking](/happiness/how-to-stop-worrying-and-overthinking/) covers practical approaches in more depth.
+If worry and rumination are the main problem, our evidence-based guide to [how to stop worrying and overthinking](/life/how-to-stop-worrying-and-overthinking/) covers practical approaches in more depth.
 
 ## A simple rule: use AI for thinking support, not clinical authority
 
@@ -472,7 +472,7 @@ AI may provide temporary conversational support.
 
 It should not quietly become a substitute for rebuilding human contact.
 
-If this is the issue underneath the AI use, see our guides to [loneliness in Ireland](/happiness/loneliness-ireland-how-common-what-helps/) and [making friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/).
+If this is the issue underneath the AI use, see our guides to [loneliness in Ireland](/life/loneliness-ireland-how-common-what-helps/) and [making friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/).
 
 ## A safer way to use AI for mental-health support
 

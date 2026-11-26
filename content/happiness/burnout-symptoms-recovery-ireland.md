@@ -138,7 +138,7 @@ But recovery and prevention are not necessarily the same thing.
 
 If the underlying workload, role conflict, staffing problem or lack of control remains unchanged, returning to exactly the same conditions may recreate the same pattern.
 
-This is one reason [time off does not always feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/).
+This is one reason [time off does not always feel like a break](/life/why-time-off-doesnt-feel-like-a-break/).
 
 A useful question is not only:
 

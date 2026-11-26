@@ -95,7 +95,7 @@ Compound's [emergency-fund calculator](/emergency-fund-calculator/) can replace 
 
 Eligible deposits at an authorised institution may be protected by the [Deposit Guarantee Scheme](https://www.centralbank.ie/consumer-hub/deposit-guarantee-scheme), generally up to €100,000 per person per institution. Investments do not receive the same protection against market losses.
 
-People looking at long-term investing can start with Compound's [Investing in Ireland guide](/wealth/investing-in-ireland/) and [investment-fee guide](/wealth/investment-fees-ireland/). The proposed Personal Investment Account is also covered in the [PIA guide](/wealth/personal-investment-account-ireland/), which distinguishes the planned rules from an account that is already open.
+People looking at long-term investing can start with Compound's [Investing in Ireland guide](/wealth/how-to-start-investing-in-ireland/) and [investment-fee guide](/wealth/investment-fees-ireland/). The proposed Personal Investment Account is also covered in the [PIA guide](/wealth/personal-investment-account-ireland/), which distinguishes the planned rules from an account that is already open.
 
 The new survey is encouraging about the habit of saving. Its warning is equally important: high interest in investing alongside low confidence creates fertile ground for unsuitable products, exaggerated returns and online advice that is not tailored to the person taking the risk.
 

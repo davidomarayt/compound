@@ -91,7 +91,7 @@ In those results, focus on the balance between incretin volume growth and realis
 
 The central investor question is straightforward: **can Lilly turn its lead in obesity treatments into durable free cash flow even as competition and payer pressure increase?**
 
-For more company coverage, visit the [Eli Lilly stock page](/stocks/lly/) and Compound's [earnings hub](/wealth/earnings/). Readers exploring treatment economics can also review Compound's [GLP-1 cost calculator](/tools/glp-1-cost/).
+For more company coverage, visit the [Eli Lilly stock page](/stocks/lly/) and Compound's [earnings hub](/wealth/earnings/). Readers exploring treatment economics can also review Compound's [GLP-1 cost calculator](/glp1-cost-calculator-ireland/).
 
 ## Sources and methodology
 

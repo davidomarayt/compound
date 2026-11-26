@@ -250,7 +250,7 @@ A project creates something you can point to and say:
 
 **that moved.**
 
-If you have forgotten what you enjoy doing simply for the sake of it, see [When did you last do something just for fun?](/happiness/when-did-you-last-do-something-for-fun/).
+If you have forgotten what you enjoy doing simply for the sake of it, see [When did you last do something just for fun?](/life/when-did-you-last-do-something-for-fun/).
 
 ## 4. Use movement as a lever, not a punishment
 
@@ -320,7 +320,7 @@ Instead:
 
 Specificity turns good intentions into actual life.
 
-If your social circle has become smaller, our guide to [making friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/) goes deeper into this.
+If your social circle has become smaller, our guide to [making friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/) goes deeper into this.
 
 ## 6. Use an if-then plan instead of relying on willpower
 
@@ -568,9 +568,9 @@ You may be emotionally exhausted, increasingly cynical about work, unable to rec
 
 If that sounds closer to the problem, adding a new challenge, training plan and social schedule may be exactly the wrong response.
 
-Start with our guide to [burnout symptoms and recovery](/happiness/burnout-symptoms-recovery-ireland/) instead.
+Start with our guide to [burnout symptoms and recovery](/life/burnout-symptoms-recovery-ireland/) instead.
 
-Likewise, if your brain is constantly circling the same problems rather than feeling bored or stagnant, [How to stop worrying and overthinking](/happiness/how-to-stop-worrying-and-overthinking/) may be a better starting point.
+Likewise, if your brain is constantly circling the same problems rather than feeling bored or stagnant, [How to stop worrying and overthinking](/life/how-to-stop-worrying-and-overthinking/) may be a better starting point.
 
 ## The goal is not to become a new person
 

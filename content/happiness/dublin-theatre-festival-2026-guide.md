@@ -221,4 +221,4 @@ With 26 productions across 18 days, there is enough variety that you do not need
 
 ## More on getting out and doing things
 
-If the festival is the nudge to do something different, see [When did you last do something for fun?](/happiness/when-did-you-last-do-something-for-fun/) for the evidence on leisure and wellbeing. For the broader picture, read [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
+If the festival is the nudge to do something different, see [When did you last do something for fun?](/life/when-did-you-last-do-something-for-fun/) for the evidence on leisure and wellbeing. For the broader picture, read [How to be happier: what the evidence actually says](/life/how-to-be-happier-evidence-ireland/).
