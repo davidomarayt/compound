@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 449 published articles and guides, 69 tools,
+**Included:** 451 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -141,6 +141,7 @@ For the complete register (including 510+ company profiles), open
 - [Folic acid in Ireland | Folate metabolism, new cells and two distinct uses](https://compound.ie/health/medicines/folic-acid/) — **Health**
 - [Frontline’s Tanker Rates Surged, but How Much of the Windfall Is Durable?](https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/) — **Wealth**
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/) — **Wealth**
+- [Funeral Costs in Ireland: How to Prepare for an Unexpected Bill](https://compound.ie/news/funeral-cost-financial-stress-ireland-2026/) — **Wealth**
 - [Furosemide in Ireland | Salt transport in the kidney and monitoring fluid balance](https://compound.ie/health/medicines/furosemide/) — **Health**
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/) — **Wealth**
 - [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/) — **Wealth**
@@ -352,9 +353,10 @@ For the complete register (including 510+ company profiles), open
 - [Rent Tax Credit Budget 2027: New €1,150 Credit Explained](https://compound.ie/wealth/rent-tax-credit-budget-2027-ireland/) — **Wealth**
 - [Rent Tax Credit in Ireland: Who Can Claim It and How](https://compound.ie/wealth/rent-tax-credit-ireland-who-can-claim/) — **Wealth**
 - [Rent took 28.5% of disposable income in Fingal on the CSO’s 2024 measure](https://compound.ie/news/irish-rent-burden-cso-fingal-2024/) — **Wealth**
-- [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/) — **Wealth**
+- [Rent-a-Room Relief 2027: Will the €16,000 Limit Require Two Rooms?](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/) — **Wealth**
 - [Retatrutide in Ireland: approval, Phase 3 results and side effects](https://compound.ie/health/retatrutide-ireland/) — **Health**
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/) — **Wealth**
+- [Retire at 61 or Work Until 66? The Five-Year Pension Gap in Ireland](https://compound.ie/news/retire-at-61-ireland-five-year-pension-gap/) — **Wealth**
 - [Revolut Faces a Year of Italian Supervision. What Does That Mean for Its Growth?](https://compound.ie/wealth/revolut-italy-judicial-supervision-aml-growth-costs/) — **Wealth**
 - [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/) — **Wealth**
 - [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/) — **Wealth**
@@ -368,7 +370,7 @@ For the complete register (including 510+ company profiles), open
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/) — **Wealth**
 - [Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?](https://compound.ie/wealth/sanmina-zt-cash-conversion/) — **Wealth**
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/) — **Wealth**
-- [School Transport Fees Are Rising in 2027: What Families Will Actually Pay](https://compound.ie/news/ireland-school-transport-fees-2027/) — **Wealth**
+- [School Transport Fees 2027: Government Reviews €350 School Bus Charge](https://compound.ie/news/ireland-school-transport-fees-2027/) — **Wealth**
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/) — **Wealth**
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/) — **Wealth**
 - [Sequential combined HRT in Ireland | Cyclical progestogen and what bleeding can mean](https://compound.ie/health/medicines/sequential-combined-hormone-replacement-therapy/) — **Health**

@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 449
+- Published editorial articles and guides: 451
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 328
+## Wealth articles and guides — 330
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -214,6 +214,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/)
 - [Frontline’s Tanker Rates Surged, but How Much of the Windfall Is Durable?](https://compound.ie/wealth/frontline-tanker-rates-dividends-fleet/)
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/)
+- [Funeral Costs in Ireland: How to Prepare for an Unexpected Bill](https://compound.ie/news/funeral-cost-financial-stress-ireland-2026/)
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/)
 - [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/)
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/)
@@ -370,8 +371,9 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Rent Tax Credit Budget 2027: New €1,150 Credit Explained](https://compound.ie/wealth/rent-tax-credit-budget-2027-ireland/)
 - [Rent Tax Credit in Ireland: Who Can Claim It and How](https://compound.ie/wealth/rent-tax-credit-ireland-who-can-claim/)
 - [Rent took 28.5% of disposable income in Fingal on the CSO’s 2024 measure](https://compound.ie/news/irish-rent-burden-cso-fingal-2024/)
-- [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/)
+- [Rent-a-Room Relief 2027: Will the €16,000 Limit Require Two Rooms?](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/)
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/)
+- [Retire at 61 or Work Until 66? The Five-Year Pension Gap in Ireland](https://compound.ie/news/retire-at-61-ireland-five-year-pension-gap/)
 - [Revolut Faces a Year of Italian Supervision. What Does That Mean for Its Growth?](https://compound.ie/wealth/revolut-italy-judicial-supervision-aml-growth-costs/)
 - [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/)
 - [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/)
@@ -384,7 +386,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/)
 - [Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?](https://compound.ie/wealth/sanmina-zt-cash-conversion/)
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/)
-- [School Transport Fees Are Rising in 2027: What Families Will Actually Pay](https://compound.ie/news/ireland-school-transport-fees-2027/)
+- [School Transport Fees 2027: Government Reviews €350 School Bus Charge](https://compound.ie/news/ireland-school-transport-fees-2027/)
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/)
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/)
 - [Shares, ETFs and Funds in Ireland: What Is the Difference?](https://compound.ie/wealth/shares-etfs-funds-ireland/)
