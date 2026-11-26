@@ -1,137 +1,64 @@
-## How much will a return journey cost?
+## How to calculate petrol or diesel cost in Ireland
 
-Enter the **one-way distance** and set **Number of trips to 2**. For a 65 km outward journey, the return distance is 130 km. At an illustrative 6.5 L/100 km and €1.80 per litre, that uses 8.45 litres and costs **€15.21** in fuel.
+Enter the one-way distance in kilometres, your car's fuel consumption in litres per 100 km (L/100 km), and the actual price per litre at your filling station. Choose 1 one-way trip for a single journey, 2 for a return journey or 10 for five return commutes. If sharing the bill, enter the number of people paying.
 
-For five return commutes, use 10 one-way trips: **€76.05** on those same assumptions. Do not enter 130 km and also set two trips unless you intend to model 260 km. Fuel prices here are examples, not live quotes.
+The calculator gives total distance, fuel used, journey cost, cost per person, cost per kilometre and cost per 100 km. Advanced mode also estimates average weekly, monthly and annual fuel costs using your annual mileage. The pump prices on this page are illustrative, not live prices.
 
-## Fuel cost per kilometre: quick examples
+## Petrol and diesel journey cost table
 
-To estimate petrol or diesel running cost, multiply **distance (km) × litres per 100 km ÷ 100 × pump price per litre**. These illustrative examples use €1.80 per litre; enter today's actual fuel price in the calculator above.
+At an illustrative €1.75 per litre, these are fuel-only costs for the **total distance**, before tolls or parking.
 
-| Annual distance | Average consumption | Annual fuel cost |
-| --- | --- | ---: |
-| 10,000 km | 6 L/100 km | €1,080 |
-| 15,000 km | 6.5 L/100 km | €1,755 |
-| 20,000 km | 7 L/100 km | €2,520 |
-| 28,000 km | 7.5 L/100 km | €3,780 |
+| Total distance | 5 L/100 km | 6.5 L/100 km | 8 L/100 km |
+| --- | ---: | ---: | ---: |
+| 10 km | €0.88 | €1.14 | €1.40 |
+| 50 km | €4.38 | €5.69 | €7.00 |
+| 100 km | €8.75 | €11.38 | €14.00 |
+| 200 km | €17.50 | €22.75 | €28.00 |
+| 300 km | €26.25 | €34.13 | €42.00 |
 
-At 6.5 L/100 km and €1.80/L, petrol alone costs about **11.7 cent per kilometre**, excluding tax, tyres, depreciation, repairs and insurance. If comparing a petrol or diesel car with an electric car, calculate the other side using the [EV Charging Cost Calculator](/ev-charging-cost-calculator/); for home charging with planned solar panels, explore the [Compound Solar Hub](/solar/).
+The same formula works for petrol, diesel and conventional hybrids. Change the pump price and consumption to compare your own vehicles; a diesel is not automatically cheaper.
 
-## What this calculator is for
+## Return journey and commuting fuel costs
 
-This calculator converts distance, vehicle fuel consumption and fuel price into trip or annual fuel cost. It is useful for commuting comparisons, mileage budgeting and comparing conventional vehicles.
+A 65 km one-way commute is 130 km return. At 6.5 L/100 km and €1.80/L, that uses 8.45 litres and costs **€15.21**. Five return commutes cost €76.05. Enter 65 km and 10 one-way trips for that weekly pattern, not 130 km and 10 trips.
 
-## How to read the result
+For annual commuting distance, multiply one-way kilometres by two, then by days actually commuting. For example, 65 km each way for 200 working days equals 26,000 km, before other driving. Use Advanced mode for total annual kilometres rather than assuming every week is a working week.
 
-Fuel economy and price are equally important. A car that uses 20% less fuel reduces consumption cost by roughly 20% at the same fuel price, but real-world efficiency can vary with speed, temperature, traffic and driving style.
+## Cost per kilometre and annual fuel budget
 
-## Worked example
+Fuel cost per km = consumption (L/100 km) × price per litre ÷ 100. At 6.5 L/100 km and €1.80/L, that is 11.7 cent per km.
 
-A petrol car using 6.5 L/100 km over 15,000 km consumes about 975 litres. At €1.80 per litre, that is about €1,755 a year before tax, servicing, tyres, insurance or depreciation.
+| Annual distance | Consumption | Annual fuel | Monthly average |
+| --- | --- | ---: | ---: |
+| 10,000 km | 6 L/100 km | €1,080 | €90 |
+| 15,000 km | 6.5 L/100 km | €1,755 | €146.25 |
+| 20,000 km | 7 L/100 km | €2,520 | €210 |
+| 28,000 km | 7.5 L/100 km | €3,780 | €315 |
 
-## Irish context
+All examples use €1.80/L. Monthly and weekly budgets divide yearly cost by 12 and 52 respectively, so actual spending will vary.
 
-SEAI publishes fuel-cost comparisons using periodically updated Irish fuel prices and notes that actual results vary with driving cycles, behaviour, weather and vehicle condition. Fuel is only one part of total motoring cost.
+## Petrol versus diesel: compare two cars
 
-## What can change the answer
+Suppose two cars travel 15,000 km annually. A petrol car using 6.5 L/100 km at €1.80/L costs €1,755 per year. A diesel using 5 L/100 km at €1.75/L costs €1,312.50, a fuel-only difference of €442.50. These are assumptions, not current market prices.
 
-Mileage, urban/motorway mix, load, tyre pressure, weather and fuel price can move the result. Hybrid vehicles can perform very differently depending on the journey type.
+Use Save for comparison to store one scenario, then change consumption and fuel price to compare a second car. Include depreciation, motor tax, insurance, servicing and finance before deciding whether to change cars. See [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/) for the broader decision.
 
-## Common mistakes to avoid
+## Convert MPG to litres per 100 km
 
-Do not compare two cars on fuel alone. Depreciation, finance, insurance, tax and servicing can outweigh fuel differences. And use your own real consumption where possible rather than brochure figures.
+For UK/imperial MPG, divide 282.481 by MPG. For US MPG, divide 235.215 by MPG; the gallons differ.
 
-## Related Compound tools
+| Imperial MPG | L/100 km (approx.) |
+| --- | ---: |
+| 30 | 9.42 |
+| 40 | 7.06 |
+| 50 | 5.65 |
+| 60 | 4.71 |
 
-Use the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) for electric driving and the [Car Finance Calculator](/car-finance-calculator/) for acquisition financing. If you are deciding which drivetrain to buy rather than calculating fuel alone, use [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/) to compare total ownership factors.
+For miles, multiply by 1.609344 to convert to kilometres. To measure real-world consumption, divide the litres used over several full-tank fills by the kilometres covered and multiply by 100. Traffic, speed, weather and vehicle load can all affect the result.
 
-## Frequently asked questions
+## Worked example: sharing the fuel bill
 
-### Is L/100 km better when lower?
-Yes.
-
-### Does this include motor tax?
-No.
-
-### Can I use miles per gallon (mpg)?
-The calculator takes **litres per 100 km**. If your dashboard shows UK/imperial mpg, convert it using **282.481 ÷ mpg**. For example, 40 imperial mpg is about **7.06 L/100 km**.
-
-US mpg uses a smaller gallon: use **235.215 ÷ mpg** instead. Check which gallon your source uses before comparing vehicles. For distances in miles, multiply by **1.609344** to get kilometres.
-
-### How do I calculate petrol or diesel cost per kilometre?
-Multiply L/100 km by the price per litre, then divide by 100. At 6.5 L/100 km and €1.80/L, the result is **€0.117 per km**, or **11.7 cent per km**. A 100 km trip costs €11.70 on those illustrative assumptions.
-
-### Can I split fuel cost between passengers?
-Divide the total journey fuel cost by the number of people sharing it, including the driver if they are paying a share. A €24 fuel bill shared equally by three people is €8 each. Add tolls or parking separately if you also intend to split those costs.
-
-### Why does my real cost differ from the rated consumption?
-Driving conditions and behaviour vary from test cycles.
-
-## Fuel is only one part of the cost of driving
-
-Fuel is highly visible because you pay for it repeatedly, but it is often not the largest ownership cost. Depreciation, finance interest, insurance, servicing, tyres, motor tax and repairs can materially exceed the difference between two cars' fuel bills.
-
-That matters when deciding whether to replace a car with a more efficient one. Saving €400 a year in fuel does not automatically justify spending €15,000 more on the replacement vehicle.
-
-A better comparison is **total cost of ownership** over the period you expect to keep the car. Use this calculator to isolate fuel, then add the other costs separately.
-
-Driving style also has a real effect. Repeated short cold journeys, heavy acceleration, roof boxes, low tyre pressure and high motorway speeds can all push real consumption above the figure used in the calculator. If you already own the car, use fuel receipts and distance travelled over several tanks to estimate your own L/100 km rather than relying only on the manufacturer's test figure.
-
-## Advanced mode: turn trip economics into an annual fuel budget
-
-Advanced mode adds annual distance while keeping the same L/100 km and pump-price assumptions used for the trip calculation. That produces an annual fuel-volume and fuel-cost estimate without requiring you to guess how many identical trips you make.
-
-For example, 15,000 km a year at 6.5 L/100 km requires about 975 litres. The euro result then changes directly with the fuel price entered.
-
-This is deliberately a **fuel-only annual budget**. It is not total cost of ownership. A cheaper-to-fuel vehicle can still be more expensive overall once depreciation, finance, insurance, tax, servicing and the purchase-price difference are included.
-
-## Use real consumption, not brochure consumption, where possible
-
-Official or advertised fuel-consumption figures are useful for comparing cars on a consistent basis, but your personal fuel budget is driven by what the vehicle actually achieves in your driving.
-
-Short trips, cold starts, motorway speed, heavy traffic, roof boxes, towing, tyre pressure and driving style can all move real-world litres per 100 km away from a rated figure.
-
-If you already own the car, a strong input is the average consumption shown over several full tanks rather than the best single journey displayed on the dashboard.
-
-### Convert fuel economy into a decision metric
-
-Fuel cost becomes more useful when expressed in three ways:
-
-- cost per 100 km,
-- annual fuel spend,
-- and the difference between two vehicles.
-
-For example, a car saving 1.5 L/100 km can sound significant, but whether it matters financially depends on annual distance and fuel price. At low mileage the euro saving may be modest; at high mileage it can become material.
-
-Advanced mode turns that efficiency difference into an annual budget so you can compare it with the extra purchase price of the more efficient vehicle.
-
-### Stress-test fuel price
-
-Do not build a five-year ownership decision around today's pump price as though it were fixed.
-
-Run a low, central and high fuel-price scenario. If one car only justifies its higher purchase price when fuel prices are unusually high, the economics are fragile. If it remains attractive across a wide range, the decision is more robust.
-
-### Diesel, petrol and hybrid comparisons need more than L/100 km
-
-A lower fuel bill does not automatically mean lower total ownership cost. A diesel or hybrid may differ in purchase price, depreciation, maintenance, motor tax, insurance or financing.
-
-Use this calculator to isolate the **fuel** component, then move the result into the [Lifetime Cost Calculator](/lifetime-cost-calculator/) for the ownership decision.
-
-If the alternative is an EV, use the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) so both options are compared on annual driving distance rather than on incompatible units such as litres and kWh.
-
-### Separate sunk cost from future cost
-
-If you already own a reliable car, the relevant question is usually not “which car is cheapest from new?” but “does the future fuel saving justify the cost of changing from the car I already have?”
-
-That means comparing the additional capital cost of changing vehicle with the annual fuel saving and other ownership differences. A more efficient replacement can be a good car and still be a poor financial swap if the fuel saving is too small relative to the cash required to change.
-
-## Method and limitations
-
-The tool converts distance and fuel consumption into litres used, then multiplies by the entered fuel price. It does not model depreciation, maintenance, insurance or tax.
-
-### Useful sources
-
-- [SEAI — Journey cost calculator](https://www.seai.ie/about/tools/journey-calculator/results)
+For a 120 km return trip at 7 L/100 km and an illustrative €1.80/L, fuel used is 8.4 litres and the total is €15.12. If three people share equally, each pays €5.04. Enter 60 km, two one-way trips and three people. If parking costs €6, add €2 per person separately; parking is not part of the calculator's fuel result.
 
 ## The replacement-car trap
 
@@ -146,6 +73,32 @@ If you are comparing petrol, diesel, hybrid and EV options, calculate fuel/charg
 The biggest cost in motoring is often not the one shown at the pump.
 
 
-Explore the [Ireland rent map](/ireland-rent-map/) to compare standardised monthly rents across local electoral areas.
+## Frequently asked questions
 
-Compare [local rents within driving distance of work or college](/rent-commute-map/).
+### How much does it cost to drive 100 km in Ireland?
+At 6.5 L/100 km and an illustrative €1.75/L, fuel costs about €11.38. Enter your real pump price and consumption for a personal estimate.
+
+### How do I calculate petrol cost for a return trip?
+Enter the one-way distance and set the number of one-way trips to two. The tool doubles the distance before calculating fuel used and the total cost.
+
+### Can I split fuel cost with passengers?
+Yes. Enter the number of people paying, including the driver if applicable. The calculator divides total fuel cost equally. Tolls and parking are not included.
+
+### What does a 10 cent increase in fuel price cost me?
+At 15,000 km annually and 6.5 L/100 km, you use 975 litres. An extra €0.10 per litre adds €97.50 per year. Change the price in the calculator to test your own scenario.
+
+### Is lower L/100 km better?
+Yes, for fuel consumption: a lower figure means less fuel used over the same distance. It does not necessarily mean lower total ownership cost.
+
+### Does this include electric vehicles or motor tax?
+No. For electric driving use the [EV Charging Cost Calculator](/ev-charging-cost-calculator/). Motor tax, insurance, repairs, tolls and other ownership costs are excluded.
+
+## Method and limitations
+
+Total distance = distance per trip × number of one-way trips. Litres used = total distance × L/100 km ÷ 100. Fuel cost = litres used × price per litre. Cost per person is total fuel cost divided by the number of people sharing. Calculations use unrounded inputs; displayed amounts are rounded.
+
+Use measured consumption and the current price at your filling station. No live price or route feed is used. If buying a replacement car, use the [Car Finance Calculator](/car-finance-calculator/) and [Lifetime Cost Calculator](/lifetime-cost-calculator/) to test the broader cost. Explore the [Solar Hub](/solar/) for home charging, or compare [rents within commuting distance](/rent-commute-map/) when considering where to live.
+
+### Useful sources
+
+- [SEAI — Journey Cost Calculator](https://www.seai.ie/about/tools/journey-calculator/results)

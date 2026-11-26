@@ -1336,30 +1336,35 @@ tools:
 
   - slug: fuel-cost-calculator
     title: Fuel Cost Calculator Ireland
-    seo_title: Fuel Cost Calculator Ireland | Petrol & Diesel Journey Cost
+    seo_title: Fuel Cost Calculator Ireland – Petrol, Diesel & Trip Costs
     category: EV & Motoring
     formula: fuel
-    summary: Calculate petrol or diesel cost for a trip, return journey or commute. Enter kilometres, fuel consumption and your pump price; use Advanced mode for yearly spending.
-    meta_description: "Calculate petrol or diesel fuel costs in Ireland. Enter km, L/100km and price per litre to estimate a trip, return commute, cost per km and annual spending."
-    quick_answer: "Fuel cost = distance (km) × consumption (L/100km) ÷ 100 × price per litre. At 6.5 L/100km and €1.75/L, a 100 km trip costs about €11.38 in fuel alone."
+    summary: How much will your drive cost? Calculate petrol or diesel for a one-way trip, return journey or commute in Ireland. See total fuel cost, cost per kilometre and your share of the bill; switch to Advanced for monthly and annual budgets.
+    meta_description: "Free fuel cost calculator for Ireland. Enter distance, L/100 km and pump price to calculate petrol or diesel trip costs, shared bills and annual budgets."
+    quick_answer: "At 6.5 L/100 km and €1.75 per litre, a 100 km journey costs €11.38 in petrol or diesel. Enter your own distance, consumption and pump price below. Example price, not a live quote."
     quick_link_label: "Compare electric-car charging costs"
     quick_link_url: /ev-charging-cost-calculator/
-    updated: 2026-11-17
+    updated: 2026-11-24
     basic_note: "Basic mode prices the trip pattern entered using one fuel-consumption figure and one pump price."
-    advanced_note: "Advanced mode adds annual distance so the same consumption and pump-price assumptions can be translated into yearly litres and fuel spend."
+    advanced_note: "Advanced mode uses annual distance to estimate yearly litres, annual spend and average monthly and weekly fuel budgets."
     fields:
-      - {id: distance, label: Distance per trip, type: number, suffix: km, default: 100, min: 0, step: 1, section_start: Journey, help: "For a return journey, enter the one-way distance and set Number of trips to 2. Do not double both inputs."}
+      - {id: distance, label: One-way distance, type: number, suffix: km, default: 100, min: 0, step: 1, section_start: Journey, help: "For a return journey, enter the one-way distance and set Number of trips to 2. Do not double both inputs."}
       - {id: consumption, label: Real-world vehicle consumption, type: number, suffix: "L/100km", default: 6.5, min: 0, max: 100, step: 0.1, help: "Use your own measured consumption where possible; speed, weather, traffic and driving style can move this materially."}
       - {id: price, label: Fuel price per litre, type: number, prefix: "€", default: 1.75, min: 0, step: 0.01}
-      - {id: trips, label: Number of trips, type: number, default: 1, min: 1, step: 1}
+      - {id: trips, label: Number of one-way trips, type: number, default: 1, min: 1, step: 1, help: "Use 1 for one way, 2 for a return journey, or 10 for five return commutes."}
+      - {id: people, label: People sharing fuel cost, type: number, default: 1, min: 1, step: 1, help: "Include the driver if they pay a share. Costs are split equally."}
       - {id: annual_distance, label: Annual driving distance, type: number, suffix: "km/year", default: 15000, min: 0, step: 500, advanced: true, section_start: Advanced annual view}
     results:
       - {id: litres, label: Estimated fuel used}
-      - {id: cost, label: Estimated fuel cost}
+      - {id: cost, label: Total journey fuel cost}
+      - {id: total_distance, label: Total journey distance}
+      - {id: per_person, label: Fuel cost per person}
       - {id: per100, label: Fuel cost per 100 km}
       - {id: cost_per_km, label: Fuel cost per km}
       - {id: annual_litres, label: Annual fuel volume, advanced: true}
       - {id: annual_cost, label: Annual fuel cost, advanced: true}
+      - {id: monthly_cost, label: Average monthly fuel cost, advanced: true}
+      - {id: weekly_cost, label: Average weekly fuel cost, advanced: true}
     guide: |
       ## Plan a commute, journey or annual fuel budget
       Fuel consumption is normally quoted in litres per 100 km in Ireland. The calculator converts the entered journey into litres and euro cost, while Advanced mode annualises the same consumption and pump-price assumptions.
