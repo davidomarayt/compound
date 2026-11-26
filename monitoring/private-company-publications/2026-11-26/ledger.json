@@ -5,8 +5,8 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "claude/project-thread-tbsduk",
   "target_new_articles": 3,
-  "confirmed_live_new_articles": 0,
-  "status": "prepared_pending_ci",
+  "confirmed_live_new_articles": 3,
+  "status": "verified_live",
   "ledger_location_note": "Nested date ledger (as 24 Nov recovery) because a flat 20??-??-??.json would make the existing 12 Nov regression test compare the ANT listing milestone (19 Nov) against a 23 Nov Anthropic event date. Live checks are run directly against compound.ie for these three URLs.",
   "held_draft_resolution": "Completes PR #281 (25 Nov held OpenWorks, EFS and Deel Card research); #281 to be closed as superseded once these are live. PR #269 (24 Nov) was already released via #275-277 and verified live on 24 Nov.",
   "duplication_checks": "No OpenWorks, EFS or Deel Card article in content/; no OpenAI, Anthropic or Stripe pieces from Daily Company Analysis or Mag8 since 24 Nov (Mag8 25 Nov = NVDA). Stripe last covered 15 Nov (HSBC Tap to Pay), distinct.",
@@ -40,12 +40,13 @@
       "editorial_qa": "AI rechecked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "prepared_pending_ci",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 291
     },
     {
       "company": "Anthropic",
@@ -79,12 +80,13 @@
       "editorial_qa": "AI rechecked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "prepared_pending_ci",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 291
     },
     {
       "company": "Stripe",
@@ -114,12 +116,23 @@
       "editorial_qa": "AI rechecked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "prepared_pending_ci",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 291
     }
-  ]
+  ],
+  "release_pr": 291,
+  "merge_sha": "eb0fbb7cbf115b71a3b3fa84e278fc6a4fe451c9",
+  "production_deployment": {
+    "status": "deployed_and_verified",
+    "site_run": "https://github.com/davidomarayt/compound/actions/runs/45779171882",
+    "build": "success",
+    "deploy": "success",
+    "deploy_completed_at": "2026-11-26T08:01:18Z",
+    "live_check": "Direct HTTPS fetch of compound.ie from the publishing session at ~08:05 Europe/Dublin: canonical link, Compound Research attribution, ad loader, profile link and photo credit on each article; JPEG cover and 1200x675 OG/Twitter WebP served; exact article backlink and ad loader on /companies/openai/, /stocks/ant/ and /companies/stripe/."
+  }
 }
