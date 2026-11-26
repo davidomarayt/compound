@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-25",
+  "checked": "2026-11-26",
   "companies_checked": 11,
   "companies": {
     "spcx": {
@@ -249,7 +249,7 @@
       "https://www.asml.com/static-files/f1e1b6be-fdcf-478b-99f7-24d416548ff5"
     ]
   },
-  "new_review_candidates": 2,
+  "new_review_candidates": 0,
   "pending_review": [
     {
       "id": "sec:1046179:0001046179-26-000807",
