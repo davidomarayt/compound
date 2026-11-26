@@ -1,0 +1,179 @@
+{
+  "story_fingerprint": "d5cc8dd35b77c820d47aaa3e",
+  "company": "Deere & Company",
+  "ticker": "DE",
+  "date": "2026-11-26",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Deere's guided fiscal 2027 large-ag recovery must be tested against weaker Small Ag & Turf margins, a pension settlement charge, fading tariff recoveries, higher capex and elevated high-horsepower dealer inventory.",
+  "article_path": "content/wealth/deere-2027-outlook-large-ag-recovery.md",
+  "canonical_url": "https://compound.ie/wealth/deere-2027-outlook-large-ag-recovery/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/de-ex99d1.htm",
+    "https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/de-ex99d2.htm"
+  ],
+  "identity": {
+    "issuer": "Deere & Company",
+    "CIK": 315189,
+    "results_accession": "0001104659-26-131741",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q4 and full year",
+    "period_end": "2026-11-01",
+    "release_date": "2026-11-25",
+    "currency": "USD",
+    "accounting": "US GAAP"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Deere & Company",
+      "Medtronic plc",
+      "Jacobs Solutions Inc.",
+      "Workday, Inc.",
+      "Analog Devices, Inc.",
+      "Dell Technologies Inc.",
+      "HP Inc.",
+      "Agilent Technologies, Inc.",
+      "Lowe's Companies, Inc.",
+      "Target Corporation"
+    ],
+    "selection_reason": "Three different sectors (agricultural/construction machinery, medical devices, engineering services) from filings dated 23-25 Nov 2026, none covered in the previous 14 days by any Compound company task, each with a distinct testable thesis."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth, all monitoring ledgers for 12-26 Nov, open PRs (incl. #291 private-company run) and the earnings-review queue. A maintained /stocks/de/ profile exists; no existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "FY2026 net income $4.860bn ($17.95 diluted EPS) vs $5.027bn; revenue $47.704bn +4%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Release headline and income statement",
+      "result": "verified"
+    },
+    {
+      "claim": "FY2027 net income guide $4.50-5.25bn incl. $0.25-0.40bn pension settlement charge; midpoint $4.875bn ~+0.3%; ex-charge midpoint ~$5.20bn ~+7%",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "(4.50+5.25)/2=4.875; 4.875/4.860-1=0.3%; 4.875+0.325=5.20; 5.20/4.86-1=7.0%",
+      "result": "verified Compound calculation, labelled"
+    },
+    {
+      "claim": "PPA FY26 sales $15.682bn -9%, OP $1.778bn, margin 11.3%; Q4 sales -15%, margin 10.1% vs 12.7%",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Segment table; 1778/15682=11.3%",
+      "result": "verified"
+    },
+    {
+      "claim": "PPA FY27 guide sales +5-15%, margin 12.5-14.5%; implied OP ~$2.06-2.61bn",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "15682*1.05*0.125=2058; 15682*1.15*0.145=2615",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "SAT FY26 sales $11.739bn +15%, OP $1.771bn, 15.1%; FY27 ~flat, 12.5-13.5%; implied ~$1.47-1.58bn",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "11739*0.125=1467; *0.135=1585",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "C&F FY26 $13.871bn sales, $1.473bn OP (10.6%); FY27 flat to +10%, margin 9.5-11.5%",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "1473/13871=10.6%",
+      "result": "verified"
+    },
+    {
+      "claim": "Financial Services FY26 net income $885m, FY27 ~$900m; Q4 $231m vs $293m on spreads, smaller portfolio, higher provision",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Release FS section and slide 13",
+      "result": "verified"
+    },
+    {
+      "claim": "$383m tariff recoveries recorded in 2026",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Release note under summary table",
+      "result": "verified"
+    },
+    {
+      "claim": "Equipment ops OCF $4.944bn incl. $874m FS dividends; capex $1.141bn; FCF ~$3.80bn; dividends $1.753bn; buybacks $0.796bn; acquisitions $455m (Tenna $439m); equipment cash $5.180bn vs $6.340bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Supplemental consolidating cash flow and balance sheet; 4944-1141=3803",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "FY27 equipment OCF guide $4.5-5.5bn, capex ~$1.5bn; midpoint FCF ~$3.5bn ~8% below 2026",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "5.0-1.5=3.5; 3.5/3.803-1=-8%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "US/Canada dealer inventory 100+hp 2WD tractors 31% vs 23% of trailing 12m retail; combines 4% vs 8%; Deere 100+hp retail flat",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "Slide 16 appendix",
+      "result": "verified"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined adjusted/organic/non-GAAP measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:John_Deere_8R_410_Agritechnica_2025_(DSC06100).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/e/e7/John_Deere_8R_410_Agritechnica_2025_%28DSC06100%29.jpg",
+    "photographer": "MarcelX42",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2025-11-11",
+    "description": "John Deere 8R 410 tractor on display at Agritechnica 2025",
+    "unique_asset": true,
+    "repository_image_sha256": "d49f3b4bcededb116fcd43746e0b5c9e0a90f969d15bcc8e3e008d4c8ee78159",
+    "dimensions": [
+      1920,
+      1280
+    ],
+    "visual_inspection": "passed"
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "pending",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {
+    "pull_request": null,
+    "validated_head_sha": null,
+    "merge_commit_sha": null,
+    "ci_run": null,
+    "deployment_run": null,
+    "live_verified_at": null,
+    "live_url": null
+  }
+}
