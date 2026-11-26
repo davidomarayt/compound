@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 453 published articles and guides, 69 tools,
+**Included:** 454 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -93,6 +93,7 @@ For the complete register (including 510+ company profiles), open
 - [ChatGPT Space Comes to Plus: Can Collaboration Turn OpenAI's Consumer Users Into Teams?](https://compound.ie/wealth/openai-chatgpt-space-plus-rollout-collaboration-economics/) — **Wealth**
 - [Cigna’s Pharmacy Revenue Rose 9% While Profit Fell 22%. Can $3 Billion Fix the Margin?](https://compound.ie/wealth/cigna-pharmacy-margin-modernization/) — **Wealth**
 - [Cisco’s AI Growth Comes With a $21.9 Billion Supply Commitment. Is the Risk Worth It?](https://compound.ie/wealth/cisco-ai-network-supply-commitments/) — **Wealth**
+- [Claude Apps: How to Install Claude Artifacts on Mac and Windows](https://compound.ie/wealth/claude-apps-install-artifacts-mac-windows/) — **Wealth**
 - [Claude's November Outages Exposed a Hidden Cost of AI Agents: Missed Work](https://compound.ie/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/) — **Wealth**
 - [Clocks go back in Ireland next Sunday: what changes, and what to check](https://compound.ie/news/clocks-go-back-ireland-october-2026/) — **Life**
 - [Clopidogrel in Ireland | P2Y12 signalling and how the liver activates the drug](https://compound.ie/health/medicines/clopidogrel/) — **Health**
