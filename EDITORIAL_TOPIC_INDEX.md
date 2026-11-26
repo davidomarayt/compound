@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 452 published articles and guides, 69 tools,
+**Included:** 453 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -402,6 +402,7 @@ For the complete register (including 510+ company profiles), open
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/) — **Wealth**
 - [Temu's EU Promises: What Changes for Irish Shoppers, and What Was Already the Law](https://compound.ie/news/temu-eu-consumer-commitments-ireland-2026/) — **Wealth**
 - [Tesla Earnings: Cash Flow Recovers, but Profit Remains Under Pressure](https://compound.ie/wealth/tesla-earnings-cash-flow-profit-investment/) — **Wealth**
+- [Tesla Has $45 Billion in Cash. Why Did It Line Up $30 Billion of Bank Credit?](https://compound.ie/wealth/tesla-30-billion-credit-facilities/) — **Wealth**
 - [Tesla Stock Guide: Cars, Energy, Autonomy and Valuation](https://compound.ie/wealth/tesla-q3-2026-autonomy-investment-case/) — **Wealth**
 - [Tesla's energy business: why more battery deployments do not guarantee more profit](https://compound.ie/wealth/tesla-energy-storage-margins/) — **Wealth**
 - [Tesla's Roadster Flew. Can It Actually Move the Business?](https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/) — **Wealth**
