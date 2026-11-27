@@ -224,8 +224,13 @@
       "slug": "neuralink",
       "name": "Neuralink",
       "sector": "Neurotechnology",
-      "summary": "Brain-computer interface research and devices.",
-      "website": "https://neuralink.com/"
+      "summary": "Privately held brain-computer interface developer; on 25 November 2026 it said the FDA approved its LINK pivotal study of the N1 implant in people with severe paralysis due to ALS.",
+      "website": "https://neuralink.com/",
+      "latest_development": {
+        "date": "2026-11-25",
+        "text": "Neuralink said the FDA approved the launch of its LINK Pivotal Study, which it calls the first US pivotal trial for an implantable brain-computer interface, evaluating safety and effectiveness in people with severe paralysis due to ALS. Enrolment is open. This is approval to run a trial, not marketing authorisation.",
+        "source": "https://neuralink.com/updates/neuralink-receives-fda-approval-to-launch-link-pivotal-study/"
+      }
     },
     {
       "slug": "epic-games",
