@@ -4,9 +4,9 @@
   "timezone": "Europe/Dublin",
   "ticker": "META",
   "company": "Meta Platforms, Inc.",
-  "status": "in_progress",
+  "status": "published",
   "trigger": "Run early at 09:47 UTC at David's request; this record prevents the 17:47 scheduled run publishing a second Mag 8 article today.",
-  "new_articles_published": 0,
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/meta-class-c-pause-funding.md",
   "canonical_url": "https://compound.ie/wealth/meta-class-c-pause-funding/",
@@ -46,5 +46,62 @@
     "human_reviewed_by": null,
     "independent_second_pass": "All arithmetic recomputed from filings; ATM size not stated in reviewed filings so not given; timing of ATM labelled as Compound reading."
   },
-  "article_sha256": "a22092873969fe2fb9d3c148cb02fdb69cf8fa6bf0641a8f1fdc0a486a0fd0cc"
+  "article_sha256": "a22092873969fe2fb9d3c148cb02fdb69cf8fa6bf0641a8f1fdc0a486a0fd0cc",
+  "pr": "https://github.com/davidomarayt/compound/pull/314",
+  "merge_commit": "49d25008d22c5dbd7d843776e13cb8d92145bac2",
+  "ci": {
+    "head": "169777d0d0b6375c7e34f4e7b1553b45ec0f2325",
+    "runs": [
+      45977777137,
+      45977749540
+    ],
+    "result": "success (test, performance)",
+    "local_tests": "431 passed, 2 subtests passed"
+  },
+  "deployment": {
+    "run": 45978842103,
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-audit",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-live",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-finance-discovery",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "verification": {
+    "verified_at": "2026-11-27T10:15:00+00:00",
+    "url": "https://compound.ie/wealth/meta-class-c-pause-funding/",
+    "status": 200,
+    "canonical": "https://compound.ie/wealth/meta-class-c-pause-funding/",
+    "og_image": "https://compound.ie/static/discover/meta-class-c-pause-funding-16x9.webp",
+    "og_dimensions": [
+      1200,
+      675
+    ],
+    "twitter_image_same": true,
+    "og_image_inspected": true,
+    "image_credit_rendered": true,
+    "sitemap": true,
+    "stock_backlink": true,
+    "stock_profile_links_article": true,
+    "article_ads_loader": true,
+    "consent_present": true,
+    "method": "Direct HTTPS fetch of live HTML, sitemap.xml, /stocks/meta/ and social image from this environment."
+  },
+  "outcome_notes": "One new article counted for 27 November after HTTP 200 live verification. Run early at David's request; the 17:47 scheduled run should find this record and skip. No paid LLM API, no social posting."
 }
