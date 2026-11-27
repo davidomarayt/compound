@@ -5,8 +5,8 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "claude/project-thread-j7uq8d",
   "target_new_articles": 3,
-  "confirmed_live_new_articles": 0,
-  "status": "prepared_not_live",
+  "confirmed_live_new_articles": 3,
+  "status": "verified_live",
   "ledger_location_note": "Nested date ledger, as 24 and 26 Nov, to avoid the 12 Nov flat-ledger profile regression test.",
   "held_draft_resolution": "PR #269 (24 Nov held drafts) was released via PRs #275-277 and verified live on 24 Nov (per 26 Nov ledger); closed as superseded in this run.",
   "duplication_checks": "No prior Compound article on ChatGPT shared usage limits, Anthropic Rust API migration, or any Neuralink article. Rotation: Neuralink never covered; last 14 days of private rotation were Blue Origin, Databricks, Stripe, ByteDance, Revolut, Anduril, Canva, LEGO, Valve. Daily Company Analysis and Mag 8 have not run yet today (07:43, 17:47).",
@@ -45,12 +45,13 @@
       "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "prepared_not_live",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 306
     },
     {
       "company": "Anthropic",
@@ -79,12 +80,13 @@
       "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "prepared_not_live",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 306
     },
     {
       "company": "Neuralink",
@@ -114,12 +116,22 @@
       "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "prepared_not_live",
-      "live_http_verified": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "company_profile_backlink_verified": false,
-      "ads_presence_verified": false
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 306
     }
-  ]
+  ],
+  "release_pr": 306,
+  "merge_sha": "bea98be7cc50fbc27c21ae68706a034d40879725",
+  "production_deployment": {
+    "status": "deployed_and_verified",
+    "site_run": "https://github.com/davidomarayt/compound/actions/runs/45955598492",
+    "conclusion": "success",
+    "live_check": "Direct HTTPS fetch of compound.ie at ~07:10 Europe/Dublin: HTTP 200, canonical link, ad loader, profile link and photo credit on each article; JPEG cover and 1200x675 OG WebP served and visually checked; exact article backlink and ad loader on /companies/openai/, /stocks/ant/ and /companies/neuralink/.",
+    "followup": "Anthropic image alt text corrected (photo shows a standing pose, not a handshake) in a follow-up PR."
+  }
 }

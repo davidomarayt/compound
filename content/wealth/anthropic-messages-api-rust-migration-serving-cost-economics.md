@@ -14,13 +14,13 @@ summary: "Anthropic says moving its Messages API from Python to Rust cut CPU per
 meta_description: "Anthropic moved its Messages API from Python to Rust with Claude agents, citing 70% less CPU per request. We compare the claim with ANT's prospectus cost of revenue."
 tags: ["wealth", "company-research", "company-anthropic", "stock-ant", "anthropic", "artificial-intelligence", "ai-infrastructure"]
 hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854098999333%29.jpg/1280px-Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854098999333%29.jpg"
-hero_image_alt: "UK Secretary of State Peter Kyle shaking hands with a host inside Anthropic's San Francisco office during a visit on 25 October 2024; archival photograph, not the API migration."
+hero_image_alt: "UK Secretary of State Peter Kyle (right) standing with a host inside Anthropic's San Francisco office during a visit on 25 October 2024; archival photograph, not the API migration."
 hero_image_credit: "Alecsandra Dragoi / Department for Science, Innovation and Technology via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/), 25 October 2024; resized/cropped."
 hero_image_source: "https://commons.wikimedia.org/wiki/File:Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._(54098999333).jpg"
 require_pinned_hero: true
 image: "/static/images/evergreen/anthropic-messages-api-rust-migration-serving-cost-economics.jpg"
 social_image: "/static/images/evergreen/anthropic-messages-api-rust-migration-serving-cost-economics.jpg"
-image_alt: "UK Secretary of State Peter Kyle shaking hands with a host inside Anthropic's San Francisco office during a visit on 25 October 2024; archival photograph, not the API migration."
+image_alt: "UK Secretary of State Peter Kyle (right) standing with a host inside Anthropic's San Francisco office during a visit on 25 October 2024; archival photograph, not the API migration."
 image_credit: "Alecsandra Dragoi / Department for Science, Innovation and Technology via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/), 25 October 2024; resized/cropped."
 image_source: "https://commons.wikimedia.org/wiki/File:Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._(54098999333).jpg"
 sources: [{"title": "Anthropic — Migrating our Messages API to Rust, 25 November 2026", "url": "https://www.anthropic.com/research/migrating-api-to-rust"}, {"title": "Anthropic final prospectus (424B4), SEC EDGAR", "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"}, {"title": "Wikimedia Commons — archival photo, CC BY 2.0", "url": "https://commons.wikimedia.org/wiki/File:Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._(54098999333).jpg"}]
