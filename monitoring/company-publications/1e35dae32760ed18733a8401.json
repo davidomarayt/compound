@@ -1,0 +1,177 @@
+{
+  "story_fingerprint": "1e35dae32760ed18733a8401",
+  "company": "Workday, Inc.",
+  "ticker": "WDAY",
+  "date": "2026-11-27",
+  "status": "prepared",
+  "publication_state": "pending_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Workday's adjusted EPS growth (+22%) runs well ahead of adjusted net income (+12%) because of an 8% lower share count, funded by buybacks that exceed free cash flow and partly by $2.5bn of new debt, while subscription growth is guided to slow to 10%.",
+  "article_path": "content/wealth/workday-buybacks-debt-subscription-growth.md",
+  "canonical_url": "https://compound.ie/wealth/workday-buybacks-debt-subscription-growth/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000057/wday-10312026x991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000058/wday-20261031.htm"
+  ],
+  "identity": {
+    "issuer": "Workday, Inc.",
+    "CIK": 1327811,
+    "results_accession": "0001327811-26-000057",
+    "10q_accession": "0001327811-26-000058",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q3",
+    "period_end": "2026-10-31",
+    "release_date": "2026-11-24",
+    "currency": "USD",
+    "accounting": "US GAAP (unaudited) with company-defined non-GAAP and free cash flow"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Dell Technologies Inc.",
+      "Workday, Inc.",
+      "The J.M. Smucker Company",
+      "Analog Devices, Inc.",
+      "HP Inc.",
+      "Autodesk, Inc.",
+      "Best Buy Co., Inc.",
+      "Burlington Stores, Inc.",
+      "Li Auto Inc.",
+      "PDD Holdings Inc."
+    ],
+    "selection_reason": "Three different sectors (AI/IT hardware, enterprise software, packaged food) from results filed 24 November 2026, none covered in the previous 14 days by any Compound company task (daily, private-company, Mag 8) and none in progress today, each with a distinct testable thesis. Analog Devices, HP, Autodesk, Best Buy, Burlington, Li Auto and PDD were reviewed but not chosen today to keep sector rotation (HP overlaps Dell's PC exposure) or because the 6-K exhibit was not a results release (PDD)."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth and content/news, all company, private-company and Mag 8 ledgers for 13-27 Nov, open PRs and the earnings-review queue. Maintained /stocks/wday/ profile exists (updated from the 24 Nov 8-K in PR #303); no existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "Revenue $2.705bn +11.2%; subscription $2.532bn +12.8%; Q4 subscription guide $2.600bn +10%; FY guide $9.958bn +13%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Release highlights and outlook",
+      "result": "verified"
+    },
+    {
+      "claim": "Non-GAAP op margin 31.4% vs 28.5%; GAAP 12.1%; restructuring $51m; costs +9.3% (2376/2173)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Reconciliation and income statement",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Non-GAAP NI $695m vs $622m (+11.7%); non-GAAP EPS $2.82 vs $2.32 (+21.6%); diluted shares 245.958m vs 268.629m (-8.4%); share effect ~9-10 pts",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "695/622; 2.82/2.32; 245958/268629; 1.1174*1.0922=1.2204",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "GAAP NI $237m vs $252m; other income $1m vs $79m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Income statement",
+      "result": "verified"
+    },
+    {
+      "claim": "9M buybacks 25.634m shares, $3.657bn, avg $142.66; taxes on net share settlement $423m; FCF $1.767bn; total ~$4.08bn",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "10-Q Note 13 table; cash flow",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Debt $2.987bn -> $5.462bn (0.999+4.463); cash+securities $5.443bn -> $5.643bn; net cash $2.456bn -> $0.181bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet arithmetic",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "$2.5bn senior notes Oct 2026: $750m 5.700% 2029, $500m 6.000% 2031, $750m 6.300% 2033, $500m 6.500% 2036; ~$152.5m annual coupon",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q liquidity section; 42.75+30+47.25+32.5",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Remaining buyback authorisation $3.3bn; C1.ai acquisition completed Nov 2026 for ~$850m consideration",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q Note 13 and subsequent event",
+      "result": "verified"
+    },
+    {
+      "claim": "9M SBC $1.300bn = ~74% of FCF",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "1300/1767=73.6%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "12-month backlog $9.216bn +12.3%; total $27.548bn +6.1%; beyond-12-month $18.332bn vs $17.757bn (+3.2%)",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "27.548-9.216; 25.963-8.206 (10-Q table)",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "AI new ACV nearly $150m, >3x; >2,200 core customers bought an AI product",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "CEO quote and highlights",
+      "result": "verified as company claim"
+    },
+    {
+      "claim": "$1.9bn five-year non-cancellable hosted infrastructure commitment (Oct 2026); Sept 2026 restructuring ~2% of workforce, ~$65m charges",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q MD&A",
+      "result": "verified"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined non-GAAP/adjusted measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact; management claims are attributed.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "pending",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Workday_Headquarters.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/0/06/Workday_Headquarters.jpg",
+    "photographer": "Coolcaesar",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2019-08-24",
+    "description": "Workday headquarters, Pleasanton, California",
+    "archival": true,
+    "unique_asset": true,
+    "repository_image_sha256": "023ba31bdc363d4623bbd9088c92d704545668316517f6a2f545439026ea176a",
+    "dimensions": [
+      1920,
+      1288
+    ],
+    "visual_inspection": "passed"
+  }
+}
