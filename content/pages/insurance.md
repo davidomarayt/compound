@@ -190,7 +190,7 @@ canonical_path: /insurance/
       <a href="/wealth/how-to-make-a-will-ireland/">Making a Will in Ireland ↗</a>
       <a href="/wealth/inheritance-tax-ireland/">Inheritance Tax Ireland ↗</a>
       <a href="/inheritance-tax-calculator/">Inheritance Tax Calculator ↗</a>
-      <a href="/wealth/health-insurance-price-rises-benefit-cuts-ireland/">Health insurance price changes ↗</a>
+      <a href="/news/health-insurance-price-rises-benefit-cuts-ireland/">Health insurance price changes ↗</a>
     </nav>
   </section>
 

@@ -10,7 +10,7 @@ draft: false
 summary: "Bank of Ireland's new KickstartSaver pays 5% variable AER on savings up to €5,000. Here is how the deposit limits, DIRT and first-year returns work."
 meta_description: "Bank of Ireland's new 5% KickstartSaver account explained: monthly savings limits, interest after DIRT, access to your money and comparison with SuperSaver."
 tags: [news, savings, bank-of-ireland, ireland, personal-finance]
-related_tools: [compound-interest-calculator]
+related_tools: [compound-interest-calculator, regular-savings-calculator, dirt-calculator, emergency-fund-calculator]
 sources:
   - title: "Bank of Ireland: KickstartSaver launch announcement, 24 November 2026"
     url: https://www.bankofireland.com/about-bank-of-ireland/press-releases/2026/bank-of-ireland-launches-kickstartsaver-account-to-help-customers-build-their-first-savings-habit/
@@ -54,13 +54,13 @@ Saving €250 every month produces €3,000 in contributions after 12 months. Yo
 | €150 | €1,800 | €49 | €33 |
 | €250 | €3,000 | €81 | €54 |
 
-Illustrations use a constant 5% annual rate and a simple monthly balance approximation with contributions at the start of each month. Actual interest depends on payment dates, interest calculation conventions, withdrawals and rate changes. Figures are rounded and exclude any applicable PRSI.
+Illustrations use a constant 5% annual rate and a simple monthly balance approximation with contributions at the start of each month. Actual interest depends on payment dates, interest calculation conventions, withdrawals and rate changes. Figures are rounded and exclude any applicable PRSI. Bank of Ireland's own example, which calculates interest daily, gives about €76.85 gross and €51.49 after DIRT for €250 a month over 12 months with no withdrawals, so treat the table as a close approximation rather than a quote.
 
 At €250 per month, it takes 20 contributions to reach €5,000 in principal, excluding interest. Once a balance of €5,000 has been accumulated, a full year at an unchanged 5% would generate €250 gross interest, or €167.50 after 33% DIRT. That is an illustration of the return on an existing balance, not an achievable opening deposit.
 
 ## How does DIRT affect the 5% rate?
 
-Revenue states that the standard Deposit Interest Retention Tax rate is 33%. For every €100 of taxable interest, €33 is deducted, leaving €67. On a balance held for a full year, this makes a 5% gross rate equivalent to 3.35% after DIRT alone. Exemptions and additional PRSI liabilities can affect individual outcomes. USC does not apply to deposit interest.
+Revenue states that the standard Deposit Interest Retention Tax rate is 33%. For every €100 of taxable interest, €33 is deducted, leaving €67. On a balance held for a full year, this makes a 5% gross rate equivalent to 3.35% after DIRT alone. Exemptions and additional PRSI liabilities can affect individual outcomes. USC does not apply to deposit interest. The [DIRT calculator](/dirt-calculator/) shows the after-tax interest for your own balance and rate.
 
 ## KickstartSaver versus SuperSaver
 
@@ -77,11 +77,11 @@ For someone saving a small portion of every payday, KickstartSaver offers a high
 
 ## Is the account worth considering?
 
-The combination of accessible savings and regular automatic contributions may suit an emergency fund, a holiday budget or other near-term goals. The main drawbacks are the contribution cap and the possibility of future rate reductions. A high headline rate is less useful if it applies to only a small share of your total cash.
+The combination of accessible savings and regular automatic contributions may suit an emergency fund, a holiday budget or other near-term goals. The main drawbacks are the contribution cap and the possibility of future rate reductions. A high headline rate is less useful if it applies to only a small share of your total cash. If the account is for a rainy-day reserve, the [emergency fund calculator](/emergency-fund-calculator/) can help you decide how much to aim for.
 
 Compare other providers' current rates, access restrictions, deposit limits and applicable deposit protection before choosing an account. Cash savings and long-term investments serve different purposes; money needed soon should not be exposed to unnecessary market risk.
 
-Use Compound's [compound interest calculator](/compound-interest-calculator/) to explore how regular contributions accumulate over time.
+Use Compound's [regular savings calculator](/regular-savings-calculator/) to project monthly deposits like these, or the [compound interest calculator](/compound-interest-calculator/) to explore how savings accumulate over longer periods.
 
 ## Frequently asked questions
 
