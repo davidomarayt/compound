@@ -4,7 +4,7 @@ seo_title: 'Redundancy Tax Ireland 2026: Ex-Gratia & SCSB'
 slug: redundancy-ireland-statutory-ex-gratia-tax
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-10-09
+reviewed: 2026-11-27
 summary: 'How statutory redundancy works in Ireland, how the €600 weekly ceiling affects the calculation, and how Revenue treats qualifying ex-gratia termination payments.'
 meta_description: 'Redundancy tax Ireland 2026 explained: statutory pay, ex-gratia termination payments, Revenue exemptions, SCSB and which payments are taxable.'
 tags: [redundancy, statutory-redundancy, ex-gratia, tax, employment, ireland]
@@ -21,6 +21,8 @@ sources:
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx
 - title: 'Revenue: Increased exemption'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/increased-exemption.aspx
+- title: 'Houses of the Oireachtas: Finance (No. 2) Bill 2026 (No. 98 of 2026)'
+  url: https://www.oireachtas.ie/en/bills/bill/2026/98/
 - title: 'Revenue: Standard Capital Superannuation Benefit'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/standard-capital-superannuation-benefit.aspx
 ---
@@ -146,6 +148,12 @@ In simplified form:
 Revenue's detailed rules determine which remuneration and pension values are included.
 
 The [Redundancy Calculator Ireland](/redundancy-calculator-ireland/) lets you enter average annual pay and pension lump-sum rights to compare the estimated SCSB result with the basic and increased exemption.
+
+### Waiving a pension lump sum, then moving to a PRSA (Finance Bill change, November 2026)
+
+To get the full SCSB or increased exemption, some people give up (waive) their right to a tax-free lump sum from the employer's pension scheme. The Finance (No. 2) Bill 2026, which completed its Dáil stages on 25 November 2026, adds a new section 790AB to the Taxes Consolidation Act. If you waive that lump sum to get termination-payment relief and later move the pension into a PRSA or another modern pension product, the amount you waived will be deducted from the tax-free lump sum you can take from that product at retirement.
+
+A wider change, which would have counted PRSAs and similar products when working out the "relevant capital sum", was put on hold at Report Stage. It now needs a ministerial order before it starts. The Bill still has to pass the Seanad and be signed into law. Our news report on [the Finance Bill's late pension changes](/news/finance-bill-2026-redundancy-lump-sum-sft-pension-changes/) has a worked example and the sources.
 
 ## Why contractual pay in lieu of notice matters
 

@@ -1,0 +1,191 @@
+{
+  "run_date": "2026-11-27",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "edition_key": "2026-11-27/morning",
+  "publisher": "Claude scheduled task 'Compound Irish money news'",
+  "target_maximum": 3,
+  "slots_already_filled_at_start": 0,
+  "slots_already_filled_note": "No Irish finance ledger and no chatgpt/* Irish news PR merged on claude/clever-babbage-uibieq for 27 Nov at 08:49 Dublin.",
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "programme_status": "pending_merge",
+  "editorial_review_status_note": "Automated editorial gate only; no human review recorded (editorial_review_status: pending on each article).",
+  "articles": [
+    {
+      "topic": "Finance (No. 2) Bill 2026 completed Dáil stages 25 Nov 2026: section 10 relevant-capital-sum change deferred to ministerial order (amendment 5), new s.790AB for waived lump sums transferred to PRSAs (amendment 4), new SFT age-related valuation factors from 1 Jan 2027 (amendment 6, carried 81-61)",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "pending_merge",
+      "source_path": "content/wealth/finance-bill-2026-redundancy-lump-sum-sft-pension-changes.md",
+      "canonical_url": "https://compound.ie/news/finance-bill-2026-redundancy-lump-sum-sft-pension-changes/",
+      "primary_sources": [
+        "https://api.oireachtas.ie/v1/legislation?bill_no=98&bill_year=2026",
+        "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+        "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/4/amendment/numberedList/eng/b98a26d-drnl.pdf",
+        "https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-11-24/debate/mul@/main.xml",
+        "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf"
+      ],
+      "secondary_sources": [
+        "https://www.irishtimes.com/your-money/2026/11/24/tax-free-lump-sum-loophole-set-to-close-in-finance-act/"
+      ],
+      "distinct_thesis": "The Irish Times (24 Nov) reported the lump-sum loophole as 'set to close'. The Dáil record shows the wide fix was instead deferred to a ministerial order and replaced by a narrower s.790AB; plus the SFT valuation-factor cut from 2027 with euro examples. Not covered by the Budget 2027 guide or any existing page.",
+      "duplicate_check": "No existing Finance Bill article; budget-2027-what-to-watch covers headline Budget measures only. Canonical redundancy guide updated to link, not duplicated.",
+      "claim_checks": [
+        {
+          "claim": "Dáil Report and Fifth Stage completed 25 Nov 2026",
+          "basis": "Oireachtas API bill record, mostRecentStage Fifth Stage 2026-11-25 stageCompleted true",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Amendments 4 and 5 agreed; quotes on unintended consequences for PRSAs and Revenue-identified scenario",
+          "basis": "Dáil debate record 24 Nov 2026 XML",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Amendment 6 SFT factors table and 81-61 vote; SFT currently €2.2m rising to €2.8m by 2029; old factors to 31 Dec 2026; factor 20 pre-2014",
+          "basis": "Dáil debate record 24 Nov 2026 and Report amendments list",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Part 1 commences 1 Jan 2027 unless otherwise provided",
+          "basis": "Bill as amended s.82(8)",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Worked examples (€60k waiver; €60k and €100k DB pensions)",
+          "basis": "Own arithmetic, labelled illustrative",
+          "status": "calculated"
+        },
+        {
+          "claim": "Seanad stage pending; text of Bill as passed by Dáil not yet published",
+          "basis": "Oireachtas versions list shows only Initiated and Committee versions",
+          "status": "limitation_disclosed"
+        }
+      ],
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Leinster_House_and_National_Museum.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Leinster_House_and_National_Museum.jpg",
+        "licence": "CC0 1.0",
+        "credit": "Sheila1988",
+        "archival": "Taken 30 December 2023"
+      }
+    },
+    {
+      "topic": "BPFI Mortgage Approvals Report October 2026 (published 27 Nov 2026): 5,265 approvals €1.704bn, record Jan-Oct 49,213, switching +28.6% y/y",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "pending_merge",
+      "source_path": "content/wealth/mortgage-approvals-october-2026-first-time-buyers-switching.md",
+      "canonical_url": "https://compound.ie/news/mortgage-approvals-october-2026-first-time-buyers-switching/",
+      "primary_sources": [
+        "https://bpfi.ie/wp-content/uploads/2026/11/Mortgage-Approvals-Report-October-2026.pdf",
+        "https://bpfi.ie/publications/bpfi-mortgage-approvals-october-2026/",
+        "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"
+      ],
+      "secondary_sources": [
+        "https://www.rte.ie/news/business/2026/1127/1600840-banking-payments-federation-ireland-mortgages/"
+      ],
+      "distinct_thesis": "Average loan per borrower type computed from BPFI table (FTB ~€329,900), what that implies under 4x LTI / 90% LTV, and a costed switching illustration given +28.6% switching approvals. Links to (does not repeat) the 19 Nov CSO FTB income article.",
+      "duplicate_check": "No prior BPFI approvals article on the site; first-time-buyers-ireland-income-age (CSO 2024 data) and irish-house-prices-september-2026 are adjacent and linked.",
+      "claim_checks": [
+        {
+          "claim": "All October and Oct-2025/Sep-2026 volumes and values, y/y and m/m changes",
+          "basis": "BPFI October 2026 report PDF table",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Jan-Oct 49,213 approvals, FTB 29,314 worth over €9.7bn, series highs since 2011, Brian Hayes quotes",
+          "basis": "RTÉ 27 Nov 2026 reporting BPFI statement",
+          "status": "verified_secondary_source"
+        },
+        {
+          "claim": "Average loans and switching repayment illustration",
+          "basis": "Own arithmetic; rates labelled illustrative",
+          "status": "calculated"
+        },
+        {
+          "claim": "FTB 4x LTI and 90% LTV",
+          "basis": "Central Bank mortgage measures; consistent with site guide",
+          "status": "verified_primary_source"
+        }
+      ],
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Hollystown_Housing_Estate%2C_Co_Dublin_-_geograph.org.uk_-_1731913.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Hollystown_Housing_Estate,_Co_Dublin_-_geograph.org.uk_-_1731913.jpg",
+        "licence": "CC BY-SA 2.0",
+        "credit": "C O'Flanagan / Geograph Ireland",
+        "archival": "Taken 2 March 2010"
+      }
+    },
+    {
+      "topic": "ECB SPACE 2026 (published 25 Nov 2026) Irish country data: cash/card level at 42.5% of POS payments, 45% fraud attempts (highest in euro area), 7.5% lost money, cash access difficulty 16%, ATM fees",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "pending_merge",
+      "source_path": "content/wealth/ecb-space-2026-ireland-cash-cards-fraud.md",
+      "canonical_url": "https://compound.ie/news/ecb-space-2026-ireland-cash-cards-fraud/",
+      "primary_sources": [
+        "https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2026.en.html",
+        "https://www.ecb.europa.eu/stats/ecb_surveys/space/shared/pdf/ecb.space2026_countryspecificdata.en.xlsx",
+        "https://www.ecb.europa.eu/stats/ecb_surveys/space/shared/pdf/ecb.space2026_charts.en.xlsx"
+      ],
+      "secondary_sources": [
+        "https://www.rte.ie/news/business/2026/1125/1600625-card-payments-overtake-cash-in-euro-zone-shops/",
+        "https://www.rte.ie/news/business/2026/1126/1600696-online-scams/"
+      ],
+      "distinct_thesis": "Irish-specific figures from the ECB country tables (not in the AFP/RTÉ euro-area story): fraud attempts, cash access, ATM fee behaviour, digital wallets, with practical steps. Distinct from the Black Friday rights guide (refund/cancellation law) which it links to.",
+      "duplicate_check": "No existing payments-survey, ATM or fraud-rate article; Black Friday, Temu and gift-voucher pieces are adjacent and linked.",
+      "claim_checks": [
+        {
+          "claim": "All Ireland and euro-area percentages, sample size 2,071, fieldwork rounds, median cash €80/€64",
+          "basis": "ECB SPACE 2026 country-specific and chart xlsx (charts 7, 8, 23, 18, 31, 32, 36, 37, 40, 49, 50, 51) and report text",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Ireland highest fraud-attempt rate and highest digital-wallet share; ECB caution on interpretation",
+          "basis": "ECB report text",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "FraudSMART research figures",
+          "basis": "RTÉ 26 Nov 2026 reporting BPFI FraudSMART/Amárach survey",
+          "status": "verified_secondary_source"
+        },
+        {
+          "claim": "ATM fee annual cost example",
+          "basis": "Own arithmetic with illustrative €2.50 fee",
+          "status": "calculated"
+        }
+      ],
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Dublin_Pearse_Station%2C_ornate_brickwork_above_ATM_in_Westland_Row_foyer%2C_July_2022_%281507%29.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Dublin_Pearse_Station,_ornate_brickwork_above_ATM_in_Westland_Row_foyer,_July_2022_(1507).jpg",
+        "licence": "CC BY-SA 4.0",
+        "credit": "Djm-leighpark",
+        "archival": "Taken 19 July 2022"
+      }
+    }
+  ],
+  "canonical_updates": [
+    {
+      "source_path": "content/wealth/redundancy-ireland-statutory-ex-gratia-tax.md",
+      "canonical_url": "https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/",
+      "change": "Added dated section on Finance (No. 2) Bill 2026 s.790AB and deferred section 10; reviewed date and source added",
+      "counts_toward_three": false
+    }
+  ],
+  "skipped": [
+    {
+      "topic": "BPFI FraudSMART online-scam survey (26 Nov)",
+      "reason": "Folded into the ECB payments article as supporting evidence; a standalone piece would near-duplicate the 24 Nov Black Friday rights guide."
+    },
+    {
+      "topic": "Finance Bill: other measures (third-level fee disregard, pharmacist Common Conditions health expenses, microgeneration exemption €400 to €600, Help to Buy €35,000)",
+      "reason": "Kept out of today's article to keep one thesis; candidates for canonical updates once the Finance Act is signed (solar export article still shows €400)."
+    }
+  ],
+  "deduplication": "Checked EDITORIAL_TOPIC_INDEX.md, content/wealth for last 14 days, ledgers 21-26 Nov, open PRs (none on these topics) and today's merged PRs (no chatgpt/* Irish news)."
+}
