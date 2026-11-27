@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-26
+Checked: 2026-11-27
 
 - 499 saved profiles checked against structural and issuer rules.
-- 154 existing company articles; 114 mapped to monitored issuers.
-- 148 pending review items; 14 recorded decisions.
+- 163 existing company articles; 121 mapped to monitored issuers.
+- 157 pending review items; 14 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -93,11 +93,27 @@ Files: `content/wealth/zoom-enterprise-growth-capital-returns.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `56253cc2bcf7e804d854993d`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-chatgpt-shared-usage-allowance-codex-metering-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `599619534c0f5ef04be07509`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `5a4c81a96fb90a8d7ad15f77`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/neuralink-link-pivotal-trial-fda-approval-commercial-path.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -767,11 +783,27 @@ Files: `content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-e
 
 ### ANT · article_review · low
 
+ID: `342b53f3b403a5506097ee22`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/claude-apps-install-artifacts-mac-windows.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
 ID: `66bd40d44a2911f3a00e05f0`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md`, `content/earnings-profiles/ant.json`
+
+### ANT · article_review · low
+
+ID: `6a51de78fb2749bca81a5ff2`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-messages-api-rust-migration-serving-cost-economics.md`, `content/earnings-profiles/ant.json`
 
 ### ANT · article_review · low
 
@@ -905,13 +937,23 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/64803/000006480326000108
 
 ### DE · article_review · low
 
-ID: `41b31f5a5c30ca74aca4534b`
+ID: `bfba8c6a354ddd739d3d4cca`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/deere-2027-outlook-large-ag-recovery.md`, `content/earnings-profiles/de.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/315189/000110465926102213/de-20260802x10q.htm · Q3 FY2026 · period end 2026-08-02 · filed 2026-08-27
+Saved evidence: https://www.sec.gov/Archives/edgar/data/315189/000110465926131741/de-ex99d1.htm · FY FY2026 · period end 2026-11-01 · filed 2026-11-25
+
+### DELL · article_review · low
+
+ID: `c7502283f43807ffa36c54dd`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/dell-ai-backlog-working-capital-cash.md`, `content/earnings-profiles/dell.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm · Q3 FY2027 · period end 2026-10-30 · filed 2026-11-24
 
 ### DHI · article_review · low
 
@@ -1105,13 +1147,13 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/1048286/0001048286260000
 
 ### MDT · article_review · low
 
-ID: `71dac945071ffb74f0f8c943`
+ID: `b48f0022040d3f35c7184e6e`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/medtronic-after-minimed-ablation-eps.md`, `content/earnings-profiles/mdt.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1613103/000162828026060473/mdt-20260731.htm · Q1 FY2027 · period end 2026-07-31 · filed 2026-09-03
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1613103/000162828026075604/exhibit991-fy27q2earningsr.htm · Q2 FY2027 · period end 2026-10-30 · filed 2026-11-24
 
 ### META · article_review · low
 
@@ -1120,6 +1162,16 @@ ID: `4be0728fb31a1a0fd93916c6`
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/meta-reality-labs-loss-bridge.md`, `content/earnings-profiles/meta.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### META · article_review · low
+
+ID: `8f6f7c647f548a9d5f30d542`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/meta-class-c-pause-funding.md`, `content/earnings-profiles/meta.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
@@ -1253,6 +1305,16 @@ Files: `content/wealth/ralph-lauren-full-price-margin.md`, `content/earnings-pro
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1037038/000162828026070697/rl-20260926.htm · Q2 FY2027 · period end 2026-09-26 · filed 2026-11-05
 
+### SJM · article_review · low
+
+ID: `e6d5a1827056e44e6842c7b3`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/smucker-coffee-profit-tariff-refunds.md`, `content/earnings-profiles/sjm.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/91419/000009141926000111/sjm-20261031.htm · Q2 FY2027 · period end 2026-10-31 · filed 2026-11-24
+
 ### T · article_review · low
 
 ID: `1756912285ce69e0038e5db8`
@@ -1290,6 +1352,16 @@ ID: `1f3f08a56c742076304e3561`
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/tesla-cybertruck-success-failure-numbers.md`, `content/earnings-profiles/tsla.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### TSLA · article_review · low
+
+ID: `5200c78f412ac4d6be60c052`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/tesla-30-billion-credit-facilities.md`, `content/earnings-profiles/tsla.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
@@ -1342,6 +1414,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/uber-audience-growth-operating-leverage.md`, `content/earnings-profiles/uber.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
+
+### WDAY · article_review · low
+
+ID: `a0e020e0cdc6a1b62d243e31`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/workday-buybacks-debt-subscription-growth.md`, `content/earnings-profiles/wday.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1327811/000132781126000058/wday-20261031.htm · Q3 FY2027 · period end 2026-10-31 · filed 2026-11-24
 
 ### WDC · article_review · low
 
