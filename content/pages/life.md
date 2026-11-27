@@ -48,7 +48,7 @@ title: Life
     <a class="life-resource" href="/redundancy-calculator-ireland/"><small>Calculator</small><h3>Redundancy Calculator Ireland</h3><p>Estimate statutory redundancy and understand the key assumptions.</p><strong>Open calculator →</strong></a>
   </div>
   <div class="life-reading">
-    <a href="/life/workplace-stress-ireland-job-design-wellbeing-2026/"><span>Working life</span><strong>Workplace stress in Ireland: what job design changes</strong></a>
+    <a href="/news/workplace-stress-ireland-job-design-wellbeing-2026/"><span>Working life</span><strong>Workplace stress in Ireland: what job design changes</strong></a>
     <a href="/life/why-time-off-doesnt-feel-like-a-break/"><span>Time off</span><strong>Why time off does not always feel like a break</strong></a>
     <a href="/life/burnout-symptoms-recovery-ireland/"><span>Burnout</span><strong>Burnout symptoms and recovery</strong></a>
   </div>
