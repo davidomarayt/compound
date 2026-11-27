@@ -1,0 +1,11 @@
+{
+ "date": "2026-11-27",
+ "timezone": "Europe/Dublin",
+ "run_type": "pia_content_growth",
+ "trigger": "manual_early_run_requested_by_david_0947_dublin",
+ "status": "in_progress",
+ "note": "Today's PIA run started early at 09:47 Dublin at David's request. The scheduled 10:17 run should not start a second PIA change today; this entry is replaced with the final result.",
+ "production_branch": "claude/clever-babbage-uibieq",
+ "work_branch": "claude/project-thread-13junn",
+ "live_verification": "pending"
+}
