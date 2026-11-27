@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-26",
+  "checked": "2026-11-27",
   "companies_checked": 11,
   "companies": {
     "spcx": {
@@ -48,7 +48,7 @@
       "company": "BYD Company",
       "official_source": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=2696",
       "regulatory": "Local-market / non-SEC disclosures",
-      "official_source_status": "Checked 9 relevant investor links"
+      "official_source_status": "Checked 8 relevant investor links"
     },
     "7974-t": {
       "company": "Nintendo",
@@ -81,7 +81,6 @@
       "https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf"
     ],
     "1211-hk": [
-      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702644.pdf",
       "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032703008.pdf",
       "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200412.pdf",
       "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200434.pdf",
@@ -249,8 +248,18 @@
       "https://www.asml.com/static-files/f1e1b6be-fdcf-478b-99f7-24d416548ff5"
     ]
   },
-  "new_review_candidates": 0,
+  "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:1094517:0001193125-26-479077",
+      "company": "Toyota Motor Corporation",
+      "slug": "tm",
+      "title": "Toyota Motor Corporation SEC 6-K filed 2026-11-27",
+      "filed": "2026-11-27",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1094517",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:1046179:0001046179-26-000807",
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
