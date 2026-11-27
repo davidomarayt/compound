@@ -1,0 +1,50 @@
+{
+  "series": "mag8",
+  "date": "2026-11-27",
+  "timezone": "Europe/Dublin",
+  "ticker": "META",
+  "company": "Meta Platforms, Inc.",
+  "status": "in_progress",
+  "trigger": "Run early at 09:47 UTC at David's request; this record prevents the 17:47 scheduled run publishing a second Mag 8 article today.",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/meta-class-c-pause-funding.md",
+  "canonical_url": "https://compound.ie/wealth/meta-class-c-pause-funding/",
+  "selection": "Least recently featured series company: Meta (last Mag8 11 November). Material news: 8-K filed 23 Nov 2026 pausing the Class C stock dividend and delaying the ATM programme. No Meta coverage by other company tasks in 14 days; 27 Nov company batch (OpenAI usage meter, Anthropic Rust API, Neuralink trial, Dell, Workday, J.M. Smucker) does not overlap; no same-day Mag8 or legacy Mag7 record.",
+  "story_fingerprint": "META-2026Q4-classC-pause-ATM-delay-funding-stack",
+  "duplicate_checks": [
+    "All four Meta wealth articles read. Earnings article has one paragraph on the Class C announcement (Jan 2027 plan) and none on the forward sale, mandatory convertible preferred, Nov bond deals, Delaware litigation or ATM delay. No content mentions at-the-market, mandatory convertible or forward sale for Meta."
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000119312526436410/d94886d424b5.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000119312526436405/d133631d424b5.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026068935/meta-20261102.htm"
+  ],
+  "claim_checks": [
+    "8-K 23 Nov (event 18 Nov): In Re Meta Platforms Class C Reclassification Litigation, Del. Ch., trial 19 Apr 2027; no Class C issuance during pre-trial/trial; Zuckerberg waiver of 5-business-day payment deadline, expires earliest of failure to pay after favourable resolution, final ruling blocking, or 30 Jun 2027; ATM not launched until Class C trades.",
+    "Forward: 40m + 6m option (exercised 4 Nov) at 25, forward price 22.91875; 46m x 625 = 28,750m gross; 46m x 622.91875 = 28,654.3m; settle by 19 Nov 2027; splits into Class A and Class C transactions on Class C Effective Date. Class A outstanding pre-offering 2,214,455,318; 46m = 2.077%.",
+    "Preferred: 250m depositary shares x 0 = 2.5bn, net ~2.5bn (~4.3bn with 37.5m option); 6.50% -> 812.5m/yr; converts 1.3620-1.6000 per ,000 share: 12.5m x 1.362 = 17.03m, x1.6 = 20.0m; (63.03..66.0)/2214.46 = 2.85%-2.98%; mandatory conversion expected 15 Aug 2029; Class C trigger by 15 Apr 2029.",
+    "USD notes 5 Nov: 3.25@5.85, 3.25@6.25, 4.00@6.55, 1.75@7.35, 2.75@7.50 = 15.0bn; coupons 990.1m = 6.60%. EUR notes 12 Nov: 1.75@4.30, 1.25@4.65, 1.00@4.90, 1.75@5.40, 1.75@6.05, 1.50@6.40 = 9.0bn; coupons 478.75m = 5.32%. Dollar total 12.5+28.65+15.0 = 56.15bn.",
+    "Q3 10-Q: cash+securities 82.45bn; notes face 84.0bn, stated rates 3.50-6.45%; 9M OCF 96,873m, PP&E purchases 83,055m; Q3 capex incl finance leases 34.91bn; AG agreement 52 AGs, ~12.7bn over 10 years; NM 5bn penalty 21 Oct, 15% post-judgment interest, accrued unspecified, may post bond. Press release: 2026 capex 135-145bn; Class C rationale quote. 14C: 94.25 close 20 Oct; 625/694.25 = -9.97%."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Meta_Headquarters_Sign.jpg",
+    "credit": "Nokia621",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2022-05-12",
+    "archival": true,
+    "unique_in_repository": true,
+    "qa": "Original 1080x810 Commons file, visually inspected: real photograph of Meta entrance sign at 1 Hacker Way."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "independent_second_pass": "All arithmetic recomputed from filings; ATM size not stated in reviewed filings so not given; timing of ATM labelled as Compound reading."
+  },
+  "article_sha256": "a22092873969fe2fb9d3c148cb02fdb69cf8fa6bf0641a8f1fdc0a486a0fd0cc"
+}
