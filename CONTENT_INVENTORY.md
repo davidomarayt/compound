@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 457
+- Published editorial articles and guides: 460
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 336
+## Wealth articles and guides — 339
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -193,6 +193,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/)
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/)
 - [Deere Expects a Large-Ag Upturn in 2027. Why Does Its Profit Guide Barely Move?](https://compound.ie/wealth/deere-2027-outlook-large-ag-recovery/)
+- [Dell's $132 Billion AI Backlog: Who Is Paying for the Build?](https://compound.ie/wealth/dell-ai-backlog-working-capital-cash/)
 - [Did Claude Solve the Riemann Hypothesis? What the Proof Claim Says](https://compound.ie/news/claude-riemann-hypothesis-proof/)
 - [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/)
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/)
@@ -396,6 +397,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Shares, ETFs and Funds in Ireland: What Is the Difference?](https://compound.ie/wealth/shares-etfs-funds-ireland/)
 - [Sheds, Garden Rooms & Home Offices: Planning Permission in Ireland](https://compound.ie/wealth/sheds-garden-rooms-home-offices-planning-ireland/)
 - [Shopify merchants sold $119 billion. How much cash reached Shopify?](https://compound.ie/wealth/shopify-merchant-sales-cash-flow/)
+- [Smucker's Coffee Profit Doubled. How Much of It Will Last?](https://compound.ie/wealth/smucker-coffee-profit-tariff-refunds/)
 - [Solar export payments are not being scrapped: what ESB's clarification means](https://compound.ie/news/solar-export-payments-ireland-clean-export-guarantee/)
 - [Solar panel 'dawn raids' in Ireland: what the CCPC investigation means for homeowners](https://compound.ie/news/solar-panel-ccpc-dawn-raids-bid-rigging-ireland/)
 - [Solar Panels for New Builds in Ireland: Costs, Timing, Sizing and Grants](https://compound.ie/wealth/solar-panels-new-builds-ireland/)
@@ -445,6 +447,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Why SpaceX’s Lenders Reportedly Want Its AI Chips to Stay on Earth](https://compound.ie/news/spacex-gpu-financing-orbit-collateral/)
 - [Will Irish Banks Accept a PIA for a Mortgage Deposit? Investing vs Trading Explained](https://compound.ie/wealth/pia-mortgage-deposit-ireland/)
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
+- [Workday Is Borrowing to Shrink Its Share Count. Is the Business Keeping Up?](https://compound.ie/wealth/workday-buybacks-debt-subscription-growth/)
 - [Young Irish Adults Are Saving More — but the Investment-Knowledge Gap Is Wide](https://compound.ie/news/irish-young-savers-investing-survey-2026/)
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/)
