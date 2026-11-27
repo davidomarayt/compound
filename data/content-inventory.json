@@ -530,6 +530,26 @@
         "status": "published"
       },
       {
+        "title": "Anthropic Rebuilt Its Messages API in Rust: What a 70% CPU Cut Does, and Does Not, Mean for ANT",
+        "url": "/wealth/anthropic-messages-api-rust-migration-serving-cost-economics/",
+        "source": "content/wealth/anthropic-messages-api-rust-migration-serving-cost-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-messages-api-rust-migration-serving-cost-economics",
+        "date": "2026-11-27",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "company-research",
+          "company-anthropic",
+          "stock-ant",
+          "anthropic",
+          "artificial-intelligence",
+          "ai-infrastructure"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?",
         "url": "/wealth/anthropic-claude-meetings-live-work-enterprise-economics/",
         "source": "content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md",
@@ -1469,6 +1489,28 @@
           "chatgpt-space",
           "collaboration",
           "software-economics"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "ChatGPT's Shared Usage Meter: Why OpenAI Is Turning Subscriptions Into Compute Budgets",
+        "url": "/wealth/openai-chatgpt-shared-usage-allowance-codex-metering-economics/",
+        "source": "content/wealth/openai-chatgpt-shared-usage-allowance-codex-metering-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-chatgpt-shared-usage-allowance-codex-metering-economics",
+        "date": "2026-11-27",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "chatgpt",
+          "codex",
+          "artificial-intelligence",
+          "ai-pricing"
         ],
         "status": "published"
       },
@@ -4998,6 +5040,26 @@
           "netflix",
           "earnings-analysis",
           "streaming"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Neuralink's LINK Pivotal Trial: FDA Approval Opens the Road to Market, Not the Market Itself",
+        "url": "/wealth/neuralink-link-pivotal-trial-fda-approval-commercial-path/",
+        "source": "content/wealth/neuralink-link-pivotal-trial-fda-approval-commercial-path.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "neuralink-link-pivotal-trial-fda-approval-commercial-path",
+        "date": "2026-11-27",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-neuralink",
+          "neuralink",
+          "medical-devices",
+          "brain-computer-interface"
         ],
         "status": "published"
       },
