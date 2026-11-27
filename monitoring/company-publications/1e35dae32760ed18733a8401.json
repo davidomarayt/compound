@@ -3,8 +3,8 @@
   "company": "Workday, Inc.",
   "ticker": "WDAY",
   "date": "2026-11-27",
-  "status": "prepared",
-  "publication_state": "pending_ci",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
   "story_thesis": "Workday's adjusted EPS growth (+22%) runs well ahead of adjusted net income (+12%) because of an 8% lower share count, funded by buybacks that exceed free cash flow and partly by $2.5bn of new debt, while subscription growth is guided to slow to 10%.",
@@ -153,10 +153,12 @@
     "duplicate_originality": "passed",
     "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
     "image_license": "passed",
-    "offline_tests": "pending",
-    "ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "offline_tests": "passed: pytest -q 431 passed, 2 subtests",
+    "ci": "passed on exact PR head 67c5e7b4b341078056a25fdf25e08873651eb841 (test and performance, runs 45962278646 and 45962303388)",
+    "deployment": "passed in site run 45963306935; build, deploy, verify-live, verify-finance-discovery and mobile-audit succeeded",
+    "live_verification": "passed: HTTP 200, canonical, photo credit, cover, social image, ads loader, profile link and sitemap entry",
+    "ads": "passed live: standard ca-pub-6115783809711785 loader present",
+    "render": "passed live: canonical, licensed cover, 1200x675 social image visually checked, stock-profile backlink, sitemap"
   },
   "image": {
     "source": "https://commons.wikimedia.org/wiki/File:Workday_Headquarters.jpg",
@@ -173,5 +175,23 @@
       1288
     ],
     "visual_inspection": "passed"
+  },
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/308",
+    "validated_head_sha": "67c5e7b4b341078056a25fdf25e08873651eb841",
+    "merge_commit_sha": "404f5f9a2a527b41ace4d2fbd8d160388f590d41",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/45963306935",
+    "live_verified_at": "2026-11-27T08:13:00Z",
+    "live_url": "https://compound.ie/wealth/workday-buybacks-debt-subscription-growth/",
+    "live_social_image_url": "https://compound.ie/static/discover/workday-buybacks-debt-subscription-growth-16x9.webp",
+    "live_social_image_sha256": "1b3783afba1a35eca2abe38f581b0387e5b7b62389dc53a4b82ed498f1bb964b",
+    "live_social_image_dimensions": [
+      1200,
+      675
+    ],
+    "sitemap_verified": true,
+    "ads_verified": true,
+    "profile_backlink_verified": true,
+    "daily_new_article_count_after_publication": 3
   }
 }
