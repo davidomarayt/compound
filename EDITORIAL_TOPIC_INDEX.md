@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 460 published articles and guides, 69 tools,
+**Included:** 463 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -138,6 +138,7 @@ For the complete register (including 510+ company profiles), open
 - [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/) — **Wealth**
 - [Extension of farmer fuel supports being considered ahead of Budget 2027](https://compound.ie/news/farmer-fuel-supports-budget-2027/) — **Wealth**
 - [Ferrous fumarate in Ireland | Iron absorption, haemoglobin and the difference between two blood tests](https://compound.ie/health/medicines/ferrous-fumarate/) — **Health**
+- [Finance Bill: The Redundancy Lump-Sum Fix Was Paused, and Big Pensions Got a New Valuation](https://compound.ie/news/finance-bill-2026-redundancy-lump-sum-sft-pension-changes/) — **Wealth**
 - [Finding your patient information leaflet in Ireland | Read the exact Irish leaflet and locate the pharmacology](https://compound.ie/health/medicines/how-to-find-your-patient-information-leaflet-online/) — **Health**
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/) — **Wealth**
 - [FirstEnergy Lifted Its Capital Plan to $38 Billion. Who Funds the Extra Growth?](https://compound.ie/wealth/firstenergy-capex-equity-funding/) — **Wealth**
@@ -211,6 +212,7 @@ For the complete register (including 510+ company profiles), open
 - [Ireland has a new five-year sepsis strategy — here are the warning signs the HSE wants people to know](https://compound.ie/news/ireland-sepsis-strategy-warning-signs-2026/) — **Health**
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/) — **Wealth**
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/) — **Wealth**
+- [Ireland Reports the Most Payment Fraud Attempts in the Euro Area, and Cash Is Getting Harder to Reach](https://compound.ie/news/ecb-space-2026-ireland-cash-cards-fraud/) — **Wealth**
 - [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/) — **Health**
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/) — **Wealth**
 - [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/) — **Wealth**
@@ -276,6 +278,7 @@ For the complete register (including 510+ company profiles), open
 - [Moog Set Records, but Its Financial Controls Failed. How Much Should Investors Discount?](https://compound.ie/wealth/moog-record-results-control-weakness/) — **Wealth**
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/) — **Wealth**
 - [Mortgage Approval in Ireland: How Much Can You Borrow?](https://compound.ie/wealth/mortgage-approval-affordability-ireland/) — **Wealth**
+- [Mortgage Approvals Hit a 10-Month Record: First-Time Buyers Borrow €330,000 on Average, and Switching Is Up 29%](https://compound.ie/news/mortgage-approvals-october-2026-first-time-buyers-switching/) — **Wealth**
 - [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/) — **Wealth**
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/) — **Wealth**
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/) — **Wealth**

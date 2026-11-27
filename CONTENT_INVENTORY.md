@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 460
+- Published editorial articles and guides: 463
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 339
+## Wealth articles and guides — 342
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -213,6 +213,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [EV vs Petrol vs Diesel in Ireland: Which Is Cheapest to Own?](https://compound.ie/wealth/ev-vs-petrol-vs-diesel-ireland/)
 - [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/)
 - [Extension of farmer fuel supports being considered ahead of Budget 2027](https://compound.ie/news/farmer-fuel-supports-budget-2027/)
+- [Finance Bill: The Redundancy Lump-Sum Fix Was Paused, and Big Pensions Got a New Valuation](https://compound.ie/news/finance-bill-2026-redundancy-lump-sum-sft-pension-changes/)
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/)
 - [FirstEnergy Lifted Its Capital Plan to $38 Billion. Who Funds the Extra Growth?](https://compound.ie/wealth/firstenergy-capex-equity-funding/)
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/)
@@ -261,6 +262,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Ireland Collected €137bn in Tax in 2025, and USC Was the Big Tax That Fell](https://compound.ie/news/ireland-tax-statistics-2025-usc-fell/)
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/)
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/)
+- [Ireland Reports the Most Payment Fraud Attempts in the Euro Area, and Cash Is Getting Harder to Reach](https://compound.ie/news/ecb-space-2026-ireland-cash-cards-fraud/)
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/)
 - [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/)
 - [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/)
@@ -310,6 +312,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Moog Set Records, but Its Financial Controls Failed. How Much Should Investors Discount?](https://compound.ie/wealth/moog-record-results-control-weakness/)
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/)
 - [Mortgage Approval in Ireland: How Much Can You Borrow?](https://compound.ie/wealth/mortgage-approval-affordability-ireland/)
+- [Mortgage Approvals Hit a 10-Month Record: First-Time Buyers Borrow €330,000 on Average, and Switching Is Up 29%](https://compound.ie/news/mortgage-approvals-october-2026-first-time-buyers-switching/)
 - [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/)
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/)
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/)
