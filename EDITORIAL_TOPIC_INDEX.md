@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 464 published articles and guides, 69 tools,
+**Included:** 465 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -261,6 +261,7 @@ For the complete register (including 510+ company profiles), open
 - [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/) — **Wealth**
 - [Medtronic After MiniMed: Is One Heart Franchise Carrying the Growth Story?](https://compound.ie/wealth/medtronic-after-minimed-ablation-eps/) — **Wealth**
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
+- [Meta Has Raised Billions Since October. What Does the Class C Pause Hold Back?](https://compound.ie/wealth/meta-class-c-pause-funding/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/) — **Wealth**
 - [Meta's Reality Labs lost less. What did the Quest business contribute?](https://compound.ie/wealth/meta-reality-labs-loss-bridge/) — **Wealth**

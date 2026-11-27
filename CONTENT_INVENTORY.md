@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 464
+- Published editorial articles and guides: 465
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 343
+## Wealth articles and guides — 344
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -297,6 +297,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/)
 - [Medtronic After MiniMed: Is One Heart Franchise Carrying the Growth Story?](https://compound.ie/wealth/medtronic-after-minimed-ablation-eps/)
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/)
+- [Meta Has Raised Billions Since October. What Does the Class C Pause Hold Back?](https://compound.ie/wealth/meta-class-c-pause-funding/)
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/)
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/)
 - [Meta's Reality Labs lost less. What did the Quest business contribute?](https://compound.ie/wealth/meta-reality-labs-loss-bridge/)
