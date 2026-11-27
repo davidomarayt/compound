@@ -31,12 +31,21 @@
  "deduplication": "Read the ledgers for 16-26 Nov and searched content: the canonical guide covered the removal rule in one bullet but no page explained the 747R 1% monthly excess charge. Distinct reader question from the couples, fees, daily valuation and withdrawal-allowance pages.",
  "recovery": "26 Nov ledger had live_verification pending: verified 27 Nov ~09:50 Dublin that /pia/ shows 'Dáil passes the Finance Bill'. No unverified merged PIA work outstanding.",
  "image": "Department of Finance, Merrion Row, Dublin (the department that drafted the account rules). Conoronmaps via Wikimedia Commons, CC BY-SA 4.0, 27 Aug 2023. Container gets 429 from Wikimedia, so the image is checked on the live page after deploy.",
- "launch_tracker": {"path": "content/pia-launch-tracker.yml", "changed": false},
- "provider_records": {"path": "content/pia-providers.yml", "changed": false, "csv_changed": false},
+ "launch_tracker": {
+  "path": "content/pia-launch-tracker.yml",
+  "changed": false
+ },
+ "provider_records": {
+  "path": "content/pia-providers.yml",
+  "changed": false,
+  "csv_changed": false
+ },
  "quality": "Full pytest passed locally (434 tests). Static build relies on CI because of Wikimedia rate limits. Ads/consent templates untouched. Article marked research_review_pending; no human review implied.",
  "production_branch": "claude/clever-babbage-uibieq",
  "work_branch": "claude/project-thread-13junn",
  "pr": "https://github.com/davidomarayt/compound/pull/313",
- "status": "pr_opened",
- "live_verification": "pending"
+ "status": "published",
+ "live_verification": "verified 2026-11-27 10:07 Dublin: /wealth/pia-over-12000-limit/ returns 200 with correct title, canonical, hero photo and credit, og:image, AdSense loader and body text; /pia/ and the canonical guide link to it; /pia-calculator/ 200.",
+ "merged": "PR #313 merged 10:02 Dublin (head 5440206; test and performance passed)",
+ "follow_up": "Hero was served as the 7.3 MB 4032px original; follow-up PR switches hero_image_url to the 1280px Commons thumbnail."
 }

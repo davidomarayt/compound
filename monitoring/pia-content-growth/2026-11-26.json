@@ -29,11 +29,18 @@
  "change": "Tracker: checked advanced to 2026-11-26 after checking every tracker source; new confirmed milestone dail-passed (25 Nov); dail-report-stage summary corrected (18-27 only); enacted-law stays unverified, now 'Seanad stages and signing still to come'; headline and next checkpoint updated. Guide: Report Stage section replaced with labelled 26 Nov update (Dáil passage, agreed over-limit removal and ineligible-investment removal rules, defeated fee-disclosure amendments, correction note); legislative-status row and sources updated. Tests updated for new milestone order.",
  "deduplication": "Read 25 Nov ledger and live pages; this is the follow-through on the same canonical section, not a new article. No other open PIA PR.",
  "recovery": "25 Nov ledger had live_verification pending: verified 26 Nov ~12:35 Dublin that /pia/ shows 'Report Stage begins; account amendments agreed' and the guide shows the 25 Nov update text. No unverified merged PIA content outstanding.",
- "launch_tracker": {"path": "content/pia-launch-tracker.yml", "changed": true},
- "provider_records": {"path": "content/pia-providers.yml", "changed": false, "csv_changed": false},
+ "launch_tracker": {
+  "path": "content/pia-launch-tracker.yml",
+  "changed": true
+ },
+ "provider_records": {
+  "path": "content/pia-providers.yml",
+  "changed": false,
+  "csv_changed": false
+ },
  "quality": "No new calculations or images. Every amendment claim cross-checked against amendment text in the official record (29, 31, 35, 45, 46, 60). Full pytest passed locally; full static build needs CI image cache. Ads/consent templates untouched.",
  "production_branch": "claude/clever-babbage-uibieq",
  "work_branch": "automation/pia-2026-11-26-dail-passed",
  "status": "pr_opened",
- "live_verification": "pending"
+ "live_verification": "verified 2026-11-27 ~09:50 Dublin by the 27 Nov run: /pia/ shows the Dáil-passed milestone."
 }
