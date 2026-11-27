@@ -1,6 +1,6 @@
 # Compound overnight engineering — 27 November 2026 (Europe/Dublin)
 
-Base 1f4c70048a8dc2c83451e8b381e3b402c944d346 on `claude/clever-babbage-uibieq`. One substantive PR for this group (search `Overnight-Agents: 2026-11-27`, branch `claude/project-thread-6cyji5`). It picks up the duplicate-H1 backlog item that tonight's discovery run found in its sitemap crawl and did not stage (discovery.md on #304). Overlap check: none of the 7 content files is in #304. Draft #175 touches `how-much-pension-contribute-ireland.md`, but in other hunks (sources list and a new section near line 65); this PR only removes line 32 of that file, so the two should merge cleanly. Confirmed by comparing that file's blob on every open PR head.
+Base 1f4c70048a8dc2c83451e8b381e3b402c944d346 on `claude/clever-babbage-uibieq`. One substantive PR for this group: [draft PR #305](https://github.com/davidomarayt/compound/pull/305), branch `claude/project-thread-6cyji5`. It picks up the duplicate-H1 backlog item that tonight's discovery run found in its sitemap crawl and did not stage (discovery.md on #304). Overlap check: none of the 7 content files is in #304. Draft #175 touches `how-much-pension-contribute-ireland.md`, but in other hunks (sources list and a new section near line 65); this PR only removes line 32 of that file, so the two should merge cleanly. Confirmed by comparing that file's blob on every open PR head.
 
 ## 7. Technical SEO — CHANGED/STAGED
 
