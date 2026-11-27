@@ -12,7 +12,7 @@ summary: "Under the investment account rules passed by the Dáil, money paid int
 meta_description: "Paid more than €12,000 into a PIA? The Dáil-passed rules charge 1% a month on the excess and make providers remove it within 30 days. Examples and caveats."
 tags: [pia-ireland, personal-investment-account, individual-investment-account, contribution-limit, investment-tax, finance-bill-2026, ireland]
 related_tools: [pia-calculator, investment-fee-calculator, regular-savings-calculator]
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Department_of_Finance%2C_Merrion_Row.jpg
+hero_image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Department_of_Finance%2C_Merrion_Row.jpg/1280px-Department_of_Finance%2C_Merrion_Row.jpg
 hero_image_alt: "Department of Finance office building on Merrion Row, Dublin, photographed in August 2023"
 hero_image_credit: "Conoronmaps via Wikimedia Commons. CC BY-SA 4.0. Photograph from 27 August 2023; cropped for display."
 hero_image_source: https://commons.wikimedia.org/wiki/File:Department_of_Finance,_Merrion_Row.jpg
