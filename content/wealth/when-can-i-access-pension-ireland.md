@@ -35,8 +35,6 @@ sources:
 <a href="/wealth/pension-lump-sum-tax-ireland/">Next →</a>
 </div>
 
-# When can you access your pension in Ireland?
-
 A pension is not an ordinary investment account.
 
 The favourable tax treatment comes with access rules.

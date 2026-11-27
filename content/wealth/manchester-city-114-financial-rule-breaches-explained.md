@@ -206,7 +206,7 @@ Cooperation rules exist because financial regulation is extremely difficult if t
 
 ---
 
-# The deeper issue: what counts as real revenue?
+## The deeper issue: what counts as real revenue?
 
 To understand the case, it helps to strip football finance back to first principles.
 
@@ -242,7 +242,7 @@ This is why **related-party transactions and fair market value rules** have beco
 
 ---
 
-# What did Manchester City say?
+## What did Manchester City say?
 
 Manchester City have consistently denied wrongdoing.
 
@@ -258,7 +258,7 @@ That means the legal and regulatory battle is not necessarily finished.
 
 ---
 
-# Why 114 guilty findings would be extraordinary
+## Why 114 guilty findings would be extraordinary
 
 A finding against a club on one accounting or disclosure issue can sometimes be framed as a technical regulatory failure.
 
@@ -283,7 +283,7 @@ According to the reporting published today, the answer is overwhelmingly yes —
 
 ---
 
-# Does this mean Manchester City's titles will be stripped?
+## Does this mean Manchester City's titles will be stripped?
 
 Not at this stage.
 
@@ -305,7 +305,7 @@ A verdict on liability and a decision on sanction are separate stages.
 
 ---
 
-# Could Manchester City be relegated?
+## Could Manchester City be relegated?
 
 Again: no sanction has yet been announced.
 
@@ -317,7 +317,7 @@ Even after a sanction is imposed, the expected appeal could affect the final out
 
 ---
 
-# Could they appeal?
+## Could they appeal?
 
 Yes.
 
@@ -335,7 +335,7 @@ The exact timetable is unknown.
 
 ---
 
-# Why this matters beyond Manchester City
+## Why this matters beyond Manchester City
 
 This case is bigger than one club.
 
@@ -365,7 +365,7 @@ That is why the final written judgment and sanction matter so much.
 
 ---
 
-# The economic value of competitive success
+## The economic value of competitive success
 
 There is another reason this case is financially significant.
 
@@ -394,7 +394,7 @@ Even a very large fine today cannot literally recreate an alternative sporting h
 
 ---
 
-# Why the case took so long
+## Why the case took so long
 
 The charges were announced in February 2023 following a multi-year Premier League investigation.
 
@@ -417,7 +417,7 @@ That combination made this fundamentally different from a simple one-season PSR 
 
 ---
 
-# What we still do not know
+## What we still do not know
 
 Despite today’s major development, several crucial pieces remain unresolved.
 
@@ -445,7 +445,7 @@ There is currently no confirmed decision to strip titles or retrospectively real
 
 ---
 
-# A note on the word "guilty"
+## A note on the word "guilty"
 
 “Guilty” is being widely used in reporting because the independent commission has reportedly found breaches proven.
 
@@ -463,7 +463,7 @@ That is an extraordinary finding in its own right. It does not need to be exagge
 
 ---
 
-# The bottom line
+## The bottom line
 
 The Manchester City case was never simply about whether a wealthy football club spent a lot of money.
 

@@ -29,8 +29,6 @@ sources:
 <a href="/wealth/pension-funds-fees-ireland/">Next →</a>
 </div>
 
-# How much should you contribute to a pension?
-
 There is no universal Irish pension percentage.
 
 The useful answer comes from four layers:
