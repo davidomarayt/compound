@@ -35,8 +35,6 @@ sources:
 <a href="/wealth/pension-options-ireland/">Next →</a>
 </div>
 
-# How pensions work in Ireland
-
 A pension is not one product.
 
 It is a set of rules around saving, investing and eventually turning money into retirement income.

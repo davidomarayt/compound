@@ -29,8 +29,6 @@ sources:
 <a href="/wealth/changing-jobs-transfer-pension-ireland/">Next →</a>
 </div>
 
-# Pension funds and fees in Ireland
-
 A pension wrapper can be excellent and the investment inside it can still be poor.
 
 The reverse is also true: a good diversified fund can be undermined by an expensive pension contract.

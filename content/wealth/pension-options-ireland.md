@@ -34,8 +34,6 @@ sources:
 <a href="/wealth/pension-tax-relief-ireland-how-to-claim/">Next →</a>
 </div>
 
-# Pension options in Ireland
-
 The right pension comparison starts with **free or subsidised money**.
 
 Before comparing funds, apps or providers, ask:
