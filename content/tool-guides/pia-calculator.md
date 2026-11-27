@@ -8,6 +8,7 @@
 | Which providers have announced information? | Check the [PIA provider comparison](/pia/providers/), where confirmed information and unpublished terms are distinguished. |
 | Should I use a PIA or add to my pension? | Use the [PIA vs pension calculator](/pia/vs-pension/#pia-pension-comparison) to compare both on the same take-home budget, with pension tax relief and any employer match. |
 | Can my partner and I each have a PIA? | See [PIAs for couples](/wealth/pia-for-couples-ireland/) for separate accounts, gifts, two contribution limits and worked household tax examples. |
+| What if I pay in more than €12,000 in a year? | See [over the €12,000 PIA limit](/wealth/pia-over-12000-limit/) for the proposed 1% monthly charge on the excess, the 30-day removal rule and worked examples. |
 | Could I use investments in a PIA for my home deposit? | Read [PIAs and Irish mortgage deposits](/wealth/pia-mortgage-deposit-ireland/) on lenders’ savings and source-of-funds checks, ETF risk and frequent trading. |
 
 To compare scenarios, select **Save for comparison** before changing one input. Keep the contribution amount and time horizon the same when comparing return or fee assumptions, so you can see what caused the difference. A projection illustrates your assumptions; it does not establish which investment is suitable for you.

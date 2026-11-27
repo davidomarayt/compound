@@ -3,9 +3,40 @@
  "timezone": "Europe/Dublin",
  "run_type": "pia_content_growth",
  "trigger": "manual_early_run_requested_by_david_0947_dublin",
- "status": "in_progress",
- "note": "Today's PIA run started early at 09:47 Dublin at David's request. The scheduled 10:17 run should not start a second PIA change today; this entry is replaced with the final result.",
+ "note": "Today's PIA run started early at 09:47 Dublin at David's request. The scheduled 10:17 run should not publish a second PIA change today.",
+ "topic_fingerprint": "2026-11-27-iia-section-747r-excess-contribution-1pct-monthly-charge-and-dail-amendment-45-30-day-removal",
+ "action": "new_article",
+ "new_articles": 1,
+ "existing_canonical_page_updates": 1,
+ "new_article_url": "https://compound.ie/wealth/pia-over-12000-limit/",
+ "canonical_urls": [
+  "https://compound.ie/wealth/pia-over-12000-limit/",
+  "https://compound.ie/wealth/personal-investment-account-ireland/",
+  "https://compound.ie/pia/"
+ ],
+ "source_urls": [
+  "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+  "https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-11-25/debate/mul@/main.xml",
+  "https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-11-24/debate/mul@/main.xml",
+  "https://api.oireachtas.ie/v1/legislation?bill_year=2026&bill_no=98",
+  "https://data.oireachtas.ie/akn/ie/debateRecord/seanad/2026-11-26/debate/mul@/main.xml"
+ ],
+ "source_checks": {
+  "legislative_stage": "Oireachtas API (lastUpdated 26 Nov 15:08 UTC): most recent stage Dáil Fifth Stage 25 Nov, completed; versions still only 'As Initiated' and 'As amended in Select Committee' (no 'as passed by Dáil' print yet). Seanad records 24-26 Nov contain no Finance (No. 2) Bill item. No material change, so the launch tracker is unchanged and its checked date stays 2026-11-26 (not every tracker source re-checked).",
+  "article_claims": "747H contribution limit €12,000 per year of assessment; 747L(2)(d) contributions counted without regard to withdrawals; 747L(3) reasonable steps; 747L(4) no reopening in same year; 747R(1)-(8) excess month, 1% of outstanding excess per relevant month, charge regardless of 747Q, withdrawals reduce excess from month-end, €3,000 provider penalty; 747S provider collection; 747X(2) contributions and outstanding excess carry over on transfer: all read in Bill 98a text. Amendment 18 (contribution includes money paid for operation of the account) and amendment 45 (new 747R(9)-(12): removal within 30 days of month-end, net of reasonable selling costs, written notice, paused during transfer, removal treated as withdrawal) read verbatim in the official Dáil XML records.",
+  "revenue": "No new Revenue investment account release found.",
+  "providers": "No new verified provider fees or opening process; content/pia-providers.yml and CSV unchanged."
+ },
+ "change": "New article /wealth/pia-over-12000-limit/ (~1,100 words of prose plus a table) with three worked hypothetical examples (€10 one-month charge; €120/yr if left vs €100/yr ordinary charge on €60,000; €0.60 on a €60 fee top-up). Linked from the PIA centre, the canonical guide's over-limit bullet and the PIA calculator guide. New test tests/test_pia_over_limit_editorial.py.",
+ "deduplication": "Read the ledgers for 16-26 Nov and searched content: the canonical guide covered the removal rule in one bullet but no page explained the 747R 1% monthly excess charge. Distinct reader question from the couples, fees, daily valuation and withdrawal-allowance pages.",
+ "recovery": "26 Nov ledger had live_verification pending: verified 27 Nov ~09:50 Dublin that /pia/ shows 'Dáil passes the Finance Bill'. No unverified merged PIA work outstanding.",
+ "image": "Department of Finance, Merrion Row, Dublin (the department that drafted the account rules). Conoronmaps via Wikimedia Commons, CC BY-SA 4.0, 27 Aug 2023. Container gets 429 from Wikimedia, so the image is checked on the live page after deploy.",
+ "launch_tracker": {"path": "content/pia-launch-tracker.yml", "changed": false},
+ "provider_records": {"path": "content/pia-providers.yml", "changed": false, "csv_changed": false},
+ "quality": "Full pytest passed locally (434 tests). Static build relies on CI because of Wikimedia rate limits. Ads/consent templates untouched. Article marked research_review_pending; no human review implied.",
  "production_branch": "claude/clever-babbage-uibieq",
  "work_branch": "claude/project-thread-13junn",
+ "pr": "https://github.com/davidomarayt/compound/pull/313",
+ "status": "pr_opened",
  "live_verification": "pending"
 }
