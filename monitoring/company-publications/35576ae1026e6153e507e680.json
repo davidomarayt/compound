@@ -1,0 +1,160 @@
+{
+  "story_fingerprint": "35576ae1026e6153e507e680",
+  "company": "The J.M. Smucker Company",
+  "ticker": "SJM",
+  "date": "2026-11-27",
+  "status": "prepared",
+  "publication_state": "pending_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Smucker's 52% adjusted EPS jump rests almost entirely on U.S. Retail Coffee margins and one-off IEEPA tariff refunds that are now essentially finished; its own guidance implies second-half adjusted EPS 26-32% below the first half.",
+  "article_path": "content/wealth/smucker-coffee-profit-tariff-refunds.md",
+  "canonical_url": "https://compound.ie/wealth/smucker-coffee-profit-tariff-refunds/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/91419/000009141926000110/sjm20261124exhibit991.htm",
+    "https://www.sec.gov/Archives/edgar/data/91419/000009141926000111/sjm-20261031.htm"
+  ],
+  "identity": {
+    "issuer": "The J.M. Smucker Company",
+    "CIK": 91419,
+    "results_accession": "0000091419-26-000110",
+    "10q_accession": "0000091419-26-000111",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q2",
+    "period_end": "2026-10-31",
+    "release_date": "2026-11-24",
+    "currency": "USD",
+    "accounting": "US GAAP (unaudited) with company-defined adjusted measures and free cash flow"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Dell Technologies Inc.",
+      "Workday, Inc.",
+      "The J.M. Smucker Company",
+      "Analog Devices, Inc.",
+      "HP Inc.",
+      "Autodesk, Inc.",
+      "Best Buy Co., Inc.",
+      "Burlington Stores, Inc.",
+      "Li Auto Inc.",
+      "PDD Holdings Inc."
+    ],
+    "selection_reason": "Three different sectors (AI/IT hardware, enterprise software, packaged food) from results filed 24 November 2026, none covered in the previous 14 days by any Compound company task (daily, private-company, Mag 8) and none in progress today, each with a distinct testable thesis. Analog Devices, HP, Autodesk, Best Buy, Burlington, Li Auto and PDD were reviewed but not chosen today to keep sector rotation (HP overlaps Dell's PC exposure) or because the 6-K exhibit was not a results release (PDD)."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth and content/news, all company, private-company and Mag 8 ledgers for 13-27 Nov, open PRs and the earnings-review queue. Maintained /stocks/sjm/ profile exists (updated from the 24 Nov 8-K in PR #303); no existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "Net sales $2.283bn -2%; adjusted EPS $3.20 vs $2.10 (+52%) incl $0.22 tariff refunds; GAAP diluted EPS $2.32 vs $2.26 (+3%); FY adjusted EPS guide $10.80-11.20 (from $10.50-11.00)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Executive summary and outlook table",
+      "result": "verified"
+    },
+    {
+      "claim": "Segment profit $479.0m -> $630.9m (+$151.9m); coffee $154.3m -> $302.9m (+$148.6m) = 97.8%; coffee margin 37.5% vs 18.2%; coffee sales -5% (price -3, vol/mix -2)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment table; 148.6/151.9",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Ex-coffee segment profit $328.0m vs $324.7m (~flat)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "630.9-302.9; 479.0-154.3",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Frozen handheld & spreads sales +7%, profit +12% to $113.9m; pet profit -17% to $103.2m; sweet baked snacks vol/mix -11pts, profit +54% to $33.5m; Away From Home profit -18%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment results",
+      "result": "verified"
+    },
+    {
+      "claim": "IEEPA tariff refunds $30.5m Q2, $146.8m H1 in cost of products sold; substantially all received, no further material refunds expected",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q tariff refunds note",
+      "result": "verified"
+    },
+    {
+      "claim": "H1 refund EPS effect ~$1.04 at 24.2% adjusted tax rate on 107.2m diluted shares (~9% of guidance midpoint)",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "146.8*0.758/107.2=1.038",
+      "result": "verified Compound estimate"
+    },
+    {
+      "claim": "Unallocated derivative loss $58.7m excluded from adjusted vs $103.0m gain prior year",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Non-GAAP reconciliation",
+      "result": "verified"
+    },
+    {
+      "claim": "H1 adjusted EPS $6.43; implied H2 $4.37-4.77, 26-32% below H1; H1 ex-refunds ~$5.39",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "10.80-6.43; 11.20-6.43; 4.37/6.43=0.680; 4.77/6.43=0.742",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Guidance assumptions: net sales -1% to -2%, adjusted gross margin ~39%, SD&A +~8%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Outlook paragraph",
+      "result": "verified as company guidance"
+    },
+    {
+      "claim": "H1 FCF $541.1m; FY FCF guide $1.1bn; borrowings $6.964bn -> $6.705bn (-$259m); net interest $83.1m vs $98.6m (-16%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Cash flow, balance sheet, income statement",
+      "result": "verified Compound calculation"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined non-GAAP/adjusted measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact; management claims are attributed.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "pending",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Folgers_New_Orleans_Manufacturing_Center,_Roasting_Plant_Tower_(5500_Chef_Menteur_Hwy).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Folgers_New_Orleans_Manufacturing_Center%2C_Roasting_Plant_Tower_%285500_Chef_Menteur_Hwy%29.jpg/1280px-Folgers_New_Orleans_Manufacturing_Center%2C_Roasting_Plant_Tower_%285500_Chef_Menteur_Hwy%29.jpg",
+    "photographer": "Jo Naylor",
+    "license": "CC BY 2.0",
+    "capture_date": "2018-04-13",
+    "description": "Folgers (Smucker) New Orleans manufacturing centre roasting plant tower",
+    "archival": true,
+    "unique_asset": true,
+    "repository_image_sha256": "019c590452d855ab2b8d8460e6d21349cf295e1c7854f4473243edce3cafba6a",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "visual_inspection": "passed"
+  }
+}

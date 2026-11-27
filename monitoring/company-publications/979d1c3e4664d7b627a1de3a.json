@@ -1,0 +1,186 @@
+{
+  "story_fingerprint": "979d1c3e4664d7b627a1de3a",
+  "company": "Dell Technologies Inc.",
+  "ticker": "DELL",
+  "date": "2026-11-27",
+  "status": "prepared",
+  "publication_state": "pending_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Dell's AI server boom is profitable, but supplier credit, customer financing and new debt carry a growing share of the build; buybacks and dividends exceeded free cash flow by about $4.1bn in nine months.",
+  "article_path": "content/wealth/dell-ai-backlog-working-capital-cash.md",
+  "canonical_url": "https://compound.ie/wealth/dell-ai-backlog-working-capital-cash/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+    "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000039/exhibit991earnings8kq2fy27.htm",
+    "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm"
+  ],
+  "identity": {
+    "issuer": "Dell Technologies Inc.",
+    "CIK": 1571996,
+    "results_accession": "0001571996-26-000050",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q3",
+    "period_end": "2026-10-30",
+    "release_date": "2026-11-24",
+    "currency": "USD",
+    "accounting": "US GAAP (unaudited) with company-defined non-GAAP, free cash flow and adjusted free cash flow"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Dell Technologies Inc.",
+      "Workday, Inc.",
+      "The J.M. Smucker Company",
+      "Analog Devices, Inc.",
+      "HP Inc.",
+      "Autodesk, Inc.",
+      "Best Buy Co., Inc.",
+      "Burlington Stores, Inc.",
+      "Li Auto Inc.",
+      "PDD Holdings Inc."
+    ],
+    "selection_reason": "Three different sectors (AI/IT hardware, enterprise software, packaged food) from results filed 24 November 2026, none covered in the previous 14 days by any Compound company task (daily, private-company, Mag 8) and none in progress today, each with a distinct testable thesis. Analog Devices, HP, Autodesk, Best Buy, Burlington, Li Auto and PDD were reviewed but not chosen today to keep sector rotation (HP overlaps Dell's PC exposure) or because the 6-K exhibit was not a results release (PDD)."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth and content/news, all company, private-company and Mag 8 ledgers for 13-27 Nov, open PRs and the earnings-review queue. Maintained /stocks/dell/ profile exists (updated from the 24 Nov 8-K in PR #303); no existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "Q3 revenue $54.937bn +103%; GAAP diluted EPS $8.82 +287%; AI-optimised server revenue $22.031bn +291%; FY27 revenue guidance raised to $202.0bn from $192.0bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Summary, income statement, segment table, guidance table",
+      "result": "verified"
+    },
+    {
+      "claim": "ISG operating income $7.118bn, 17.0% of ISG revenue vs 12.4%; 91% of segment operating income",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment table",
+      "result": "verified"
+    },
+    {
+      "claim": "Gross margin 21.0% vs 20.7%; opex 7.5% vs 12.9% of revenue; AI servers ~40% of revenue",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Income statement %; 22031/54937=40.1%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "AI backlog $95bn end Q2; Q3 AI orders $60.2bn; end Q3 backlog $132.3bn; orders 'rigorously vetted' (management claim)",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "Q2 and Q3 quotes",
+      "result": "verified as company statements"
+    },
+    {
+      "claim": "Inventories $10.437bn -> $29.444bn; AP $33.630bn -> $57.799bn (+$24.169bn); AR $17.585bn -> $28.948bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet Jan 30 vs Oct 30 2026",
+      "result": "verified"
+    },
+    {
+      "claim": "Q3 inventory +$8.154bn (21.290->29.444); AP +$8.076bn (49.723->57.799)",
+      "source_indexes": [
+        2,
+        0
+      ],
+      "location_or_arithmetic": "Q2 10-Q balance sheet vs Q3 balance sheet",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Purchase obligations $34.8bn at 31 Jul 2026, $24.6bn within 12 months; component purchases expected to increase",
+      "source_indexes": [
+        2
+      ],
+      "location_or_arithmetic": "10-Q MD&A purchase obligations",
+      "result": "verified"
+    },
+    {
+      "claim": "Financing receivables net $14.280bn -> $20.940bn (13.182+7.758); Q2 principal charge-off 0.5% vs 0.1%",
+      "source_indexes": [
+        0,
+        2
+      ],
+      "location_or_arithmetic": "Balance sheet; 10-Q DFS section",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "9M FCF $7.578bn; adjusted FCF $15.602bn adding back $7.065bn financing receivables and $0.959bn operating-lease equipment",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "FCF reconciliation",
+      "result": "verified"
+    },
+    {
+      "claim": "9M buybacks $9.803bn + $0.567bn tax withholding + $1.267bn dividends = $11.637bn; gap to FCF $4.059bn; debt proceeds $14.702bn less repayments $8.333bn = $6.369bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Cash flow statement arithmetic",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Total debt $31.503bn -> $37.697bn (6.492+31.205); equity -$456m; diluted shares 643m vs 680m (~5%); $25bn added to buyback authorisation",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet, income statement, capital return",
+      "result": "verified"
+    },
+    {
+      "claim": "FY AI server guidance $78.0bn less 9M $54.564bn = ~$23.4bn implied Q4",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "78.0-54.564=23.436",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "CSG revenue +3%, consumer -15%, CSG operating income -6%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment table",
+      "result": "verified"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined non-GAAP/adjusted measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact; management claims are attributed.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "pending",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Dell_headquarters.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Dell_headquarters.jpg",
+    "photographer": "Tim Patterson",
+    "license": "CC BY 2.0",
+    "capture_date": "2004-04-27",
+    "description": "Dell-branded office building, headquarters campus, Round Rock, Texas",
+    "archival": true,
+    "unique_asset": true,
+    "repository_image_sha256": "97cd69238b1b394bc5c85b87a0cc719d17153d398c53d2c919220d05a1145205",
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "visual_inspection": "passed"
+  }
+}
