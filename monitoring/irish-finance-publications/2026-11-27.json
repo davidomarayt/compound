@@ -8,7 +8,7 @@
   "slots_already_filled_at_start": 0,
   "slots_already_filled_note": "No Irish finance ledger and no chatgpt/* Irish news PR merged on claude/clever-babbage-uibieq for 27 Nov at 08:49 Dublin.",
   "publishing_branch": "claude/clever-babbage-uibieq",
-  "programme_status": "pending_merge",
+  "programme_status": "published_verified_live",
   "editorial_review_status_note": "Automated editorial gate only; no human review recorded (editorial_review_status: pending on each article).",
   "articles": [
     {
@@ -16,7 +16,7 @@
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "pending_merge",
+      "status": "published_verified_live",
       "source_path": "content/wealth/finance-bill-2026-redundancy-lump-sum-sft-pension-changes.md",
       "canonical_url": "https://compound.ie/news/finance-bill-2026-redundancy-lump-sum-sft-pension-changes/",
       "primary_sources": [
@@ -69,14 +69,16 @@
         "licence": "CC0 1.0",
         "credit": "Sheila1988",
         "archival": "Taken 30 December 2023"
-      }
+      },
+      "pr": 311,
+      "live_check": "27 Nov 2026 09:12 Dublin: HTTP 200, canonical matches, one H1, og:image 200 (real photo checked), in sitemap, ad loader present"
     },
     {
       "topic": "BPFI Mortgage Approvals Report October 2026 (published 27 Nov 2026): 5,265 approvals €1.704bn, record Jan-Oct 49,213, switching +28.6% y/y",
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "pending_merge",
+      "status": "published_verified_live",
       "source_path": "content/wealth/mortgage-approvals-october-2026-first-time-buyers-switching.md",
       "canonical_url": "https://compound.ie/news/mortgage-approvals-october-2026-first-time-buyers-switching/",
       "primary_sources": [
@@ -117,14 +119,16 @@
         "licence": "CC BY-SA 2.0",
         "credit": "C O'Flanagan / Geograph Ireland",
         "archival": "Taken 2 March 2010"
-      }
+      },
+      "pr": 311,
+      "live_check": "27 Nov 2026 09:12 Dublin: HTTP 200, canonical matches, one H1, og:image 200 (real photo checked), in sitemap, ad loader present"
     },
     {
       "topic": "ECB SPACE 2026 (published 25 Nov 2026) Irish country data: cash/card level at 42.5% of POS payments, 45% fraud attempts (highest in euro area), 7.5% lost money, cash access difficulty 16%, ATM fees",
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "pending_merge",
+      "status": "published_verified_live",
       "source_path": "content/wealth/ecb-space-2026-ireland-cash-cards-fraud.md",
       "canonical_url": "https://compound.ie/news/ecb-space-2026-ireland-cash-cards-fraud/",
       "primary_sources": [
@@ -166,7 +170,9 @@
         "licence": "CC BY-SA 4.0",
         "credit": "Djm-leighpark",
         "archival": "Taken 19 July 2022"
-      }
+      },
+      "pr": 311,
+      "live_check": "27 Nov 2026 09:12 Dublin: HTTP 200, canonical matches, one H1, og:image 200 (real photo checked), in sitemap, ad loader present"
     }
   ],
   "canonical_updates": [
@@ -174,7 +180,9 @@
       "source_path": "content/wealth/redundancy-ireland-statutory-ex-gratia-tax.md",
       "canonical_url": "https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/",
       "change": "Added dated section on Finance (No. 2) Bill 2026 s.790AB and deferred section 10; reviewed date and source added",
-      "counts_toward_three": false
+      "counts_toward_three": false,
+      "pr": 311,
+      "status": "merged"
     }
   ],
   "skipped": [
@@ -187,5 +195,11 @@
       "reason": "Kept out of today's article to keep one thesis; candidates for canonical updates once the Finance Act is signed (solar export article still shows €400)."
     }
   ],
-  "deduplication": "Checked EDITORIAL_TOPIC_INDEX.md, content/wealth for last 14 days, ledgers 21-26 Nov, open PRs (none on these topics) and today's merged PRs (no chatgpt/* Irish news)."
+  "deduplication": "Checked EDITORIAL_TOPIC_INDEX.md, content/wealth for last 14 days, ledgers 21-26 Nov, open PRs (none on these topics) and today's merged PRs (no chatgpt/* Irish news).",
+  "merge": {
+    "pr": 311,
+    "merge_commit": "790533276ea844e171ba0d613da3ed0bae268c31",
+    "merged_at": "2026-11-27T09:09Z",
+    "ci": "test and performance passed on head 3bdbdba"
+  }
 }
