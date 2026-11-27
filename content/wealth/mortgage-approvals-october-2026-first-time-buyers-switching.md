@@ -23,7 +23,7 @@ tags:
 social:
   enabled: false
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Hollystown_Housing_Estate%2C_Co_Dublin_-_geograph.org.uk_-_1731913.jpg
-hero_image_alt: "Rows of semi-detached houses in the Hollystown housing estate in north County Dublin"
+hero_image_alt: "Rows of houses in the Hollystown housing estate in north County Dublin, seen across an open field"
 hero_image_credit: "C O'Flanagan / Geograph Ireland via Wikimedia Commons, CC BY-SA 2.0. Archival photograph taken on 2 March 2010."
 hero_image_source: https://commons.wikimedia.org/wiki/File:Hollystown_Housing_Estate,_Co_Dublin_-_geograph.org.uk_-_1731913.jpg
 require_pinned_hero: true
