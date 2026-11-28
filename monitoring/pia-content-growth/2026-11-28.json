@@ -39,10 +39,11 @@
   "changed": false,
   "csv_changed": false
  },
- "quality": "Full pytest passed locally (442 tests, 156s). Article loads and renders via load_articles. Static build and Wikimedia hero fetch rely on CI (container rate-limited by upload.wikimedia.org). Arithmetic checked in test. Ads/consent templates untouched. Article marked research_review_pending; no human review implied.",
+ "quality": "Full pytest passed locally (442 tests, 156s). Article loads and renders via load_articles. Static build and Wikimedia hero fetch rely on CI (container rate-limited by upload.wikimedia.org). Arithmetic checked in test. Ads/consent templates untouched. Article marked research_review_pending; no human review implied. CI test and performance passed on exact head.",
  "production_branch": "claude/clever-babbage-uibieq",
  "work_branch": "claude/project-thread-6t8orm",
- "pr": "pending",
- "status": "pending",
- "live_verification": "pending"
+ "pr": "https://github.com/davidomarayt/compound/pull/329",
+ "status": "published",
+ "live_verification": "verified 2026-11-28 12:40 Dublin: /wealth/pia-moving-abroad-ireland/ returns 200 with correct title, canonical, hero photo (200, image/jpeg) and credit, og/twitter image (200, webp), AdSense loader and unique body text ('1 January of the next tax year'); /pia/ and the canonical guide link to it; /pia-calculator/ 200.",
+ "merged": "PR #329 merged 12:37 Dublin (head 6bdb806; test and performance passed)"
 }
