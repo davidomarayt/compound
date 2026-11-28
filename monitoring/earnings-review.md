@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-27
+Checked: 2026-11-28
 
 - 499 saved profiles checked against structural and issuer rules.
-- 163 existing company articles; 121 mapped to monitored issuers.
-- 157 pending review items; 14 recorded decisions.
+- 169 existing company articles; 124 mapped to monitored issuers.
+- 163 pending review items; 14 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -34,14 +34,6 @@ ID: `157a7bc43afea04ffeedb0da`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/ies-data-center-growth-acquisition-cash.md`
-
-### UNMAPPED · article_mapping · medium
-
-ID: `15bd78b122116bf855e5118c`
-
-Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
-
-Files: `content/wealth/mattel-tariff-refund-margin.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -189,6 +181,14 @@ Files: `content/wealth/blue-origin-new-glenn-valve-fix-launch-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `77335c42715f2f1d0aa7328b`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/mattel-tariff-refund-margin.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `7931946505c67c66d039478e`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -202,6 +202,14 @@ ID: `7b4e816108f85d595be72d7e`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/weride-robotaxi-unit-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `83169172dac4b9f71196d900`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-private-inference-confidential-computing-enterprise-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -242,6 +250,14 @@ ID: `a24b94a18dcb36d6f54409a7`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/openai-openworks-small-business-ai-subsidy-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `a43e76f67d7941fc6a904ed4`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -338,6 +354,14 @@ ID: `ef7791a84ddaf91c8220b3ac`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/bath-body-works-buyback-store-sales.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `f3e2945ee93c4eb8f6e8d274`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/li-auto-pricing-mix-deliveries-cash-flow.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -711,6 +735,16 @@ Files: `content/wealth/airbnb-bookings-free-cash-flow.md`, `content/earnings-pro
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-05
 
+### ADI · article_review · low
+
+ID: `026add349fd5332997909358`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/analog-devices-capex-cash-returns.md`, `content/earnings-profiles/adi.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/6281/000000628126000089/adi-20261031.htm · FY FY2026 · period end 2026-10-31 · filed 2026-11-24
+
 ### AMZN · article_review · low
 
 ID: `15b1d68c95807c6bff73d570`
@@ -740,6 +774,14 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md`, `content/earnings-profiles/amzn.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
+
+### ANT · article_review · low
+
+ID: `004deb193c22e0332a27ae6e`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust.md`, `content/earnings-profiles/ant.json`
 
 ### ANT · article_review · low
 
@@ -884,6 +926,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/boeing-cash-flow-commercial-airplanes-losses.md`, `content/earnings-profiles/ba.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-27
+
+### BBY · article_review · low
+
+ID: `d6737568fea33e15c8174124`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/best-buy-sales-growth-margin-tariff-refunds.md`, `content/earnings-profiles/bby.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm · Q3 FY2027 · period end 2026-10-31 · filed 2026-11-24
 
 ### BE · article_review · low
 
