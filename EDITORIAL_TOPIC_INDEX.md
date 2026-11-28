@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 473 published articles and guides, 69 tools,
+**Included:** 474 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -452,6 +452,7 @@ For the complete register (including 510+ company profiles), open
 - [What does Nvidia’s $2.94 billion warranty reserve tell investors?](https://compound.ie/wealth/nvidia-warranty-reserve/) — **Wealth**
 - [What Happens If You Die Without a Will in Ireland?](https://compound.ie/wealth/what-happens-if-you-die-without-a-will-ireland/) — **Wealth**
 - [What Happens If You Put More Than €12,000 Into a PIA?](https://compound.ie/wealth/pia-over-12000-limit/) — **Wealth**
+- [What Happens to Your PIA If You Move Abroad?](https://compound.ie/wealth/pia-moving-abroad-ireland/) — **Wealth**
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/) — **Health**
 - [What if GTA 6 sells 100 million copies? A Take-Two stock valuation](https://compound.ie/wealth/gta-6-100-million-ttwo-valuation/) — **Wealth**
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/) — **Wealth**
