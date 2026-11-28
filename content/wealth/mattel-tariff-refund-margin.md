@@ -38,7 +38,7 @@ Third-quarter net sales rose 4% to **$1.81 billion**, while reported gross margi
 
 That means the refund was slightly larger than the entire reported improvement. Other positives—including Mattel163, currency and cost savings—were offset by inflation, higher royalties and other pressures. The investment question is therefore not whether the reported quarter was profitable. It is whether brand growth and operating discipline can sustain a better margin after the one-off refund disappears.
 
-For Mattel’s maintained results, see the [Mattel stock profile](/stocks/mat/). This article separates the temporary accounting benefit from the business signals underneath it.
+The figures here come from Mattel’s third-quarter results release and Form 10-Q, both listed in the sources at the end. This article separates the temporary accounting benefit from the business signals underneath it.
 
 ## A useful margin bridge, not a clean turnaround
 
