@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 468 published articles and guides, 69 tools,
+**Included:** 471 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -35,6 +35,7 @@ For the complete register (including 510+ company profiles), open
 - [Amlodipine in Ireland | Calcium channels, blood vessels and ankle swelling](https://compound.ie/health/medicines/amlodipine/) — **Health**
 - [Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy](https://compound.ie/health/medicines/amoxicillin/) — **Health**
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
+- [Analog Devices Plans to More Than Double Capital Spending. Can Cash Returns Keep Pace?](https://compound.ie/wealth/analog-devices-capex-cash-returns/) — **Wealth**
 - [Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?](https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/) — **Wealth**
 - [Antacids in Ireland | Neutralising stomach acid and adding a reflux barrier](https://compound.ie/health/medicines/antacids/) — **Health**
 - [Anthropic IPO Economics: $83 Final Price, $93.5 Billion Public Sale and Compute Commitments](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) — **Wealth**
@@ -66,6 +67,7 @@ For the complete register (including 510+ company profiles), open
 - [Bank of Ireland Launches 5% Savings Account: Is KickstartSaver Worth It?](https://compound.ie/news/bank-of-ireland-5-percent-savings-account/) — **Wealth**
 - [Bath & Body Works Approved a $500 Million Buyback. Is the Core Business Ready?](https://compound.ie/wealth/bath-body-works-buyback-store-sales/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
+- [Best Buy's Strongest Sales in Five Years Barely Moved Its Margin. What Is Doing the Work?](https://compound.ie/wealth/best-buy-sales-growth-margin-tariff-refunds/) — **Wealth**
 - [Beta blockers in Ireland | Adrenaline signals, heart rate and differences between products](https://compound.ie/health/medicines/beta-blockers/) — **Health**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
 - [BJ’s Comps Rose 13.5%, but Merchandise Margin Fell. Can Membership Growth Carry the Build?](https://compound.ie/wealth/bj-membership-margin-capex/) — **Wealth**
@@ -241,6 +243,7 @@ For the complete register (including 510+ company profiles), open
 - [LEGO's Las Vegas F1 Race Was a Marketing Spectacle. Can the 2027 Sets Convert It Into Sales?](https://compound.ie/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/) — **Wealth**
 - [Lercanidipine in Ireland | Calcium channel blockade and exposure-sensitive interactions](https://compound.ie/health/medicines/lercanidipine/) — **Health**
 - [Levothyroxine in Ireland | Thyroid feedback, absorption and how to interpret TSH](https://compound.ie/health/medicines/levothyroxine/) — **Health**
+- [Li Auto Is Earning More per Car Again. Can It Sell Enough of Them?](https://compound.ie/wealth/li-auto-pricing-mix-deliveries-cash-flow/) — **Wealth**
 - [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/) — **Life**
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/) — **Wealth**
 - [Lilly Has Earned Its Last Jardiance Sales Milestone. What Growth Remains?](https://compound.ie/wealth/lilly-jardiance-milestone-revenue/) — **Wealth**

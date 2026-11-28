@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 468
+- Published editorial articles and guides: 471
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 347
+## Wealth articles and guides — 350
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -132,6 +132,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/)
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/)
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/)
+- [Analog Devices Plans to More Than Double Capital Spending. Can Cash Returns Keep Pace?](https://compound.ie/wealth/analog-devices-capex-cash-returns/)
 - [Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?](https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/)
 - [Anthropic IPO Economics: $83 Final Price, $93.5 Billion Public Sale and Compute Commitments](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/)
 - [Anthropic IPO Opens at $111.50. Here’s the ANT Lock-Up Release Schedule](https://compound.ie/news/anthropic-ipo-lockup-release-schedule/)
@@ -158,6 +159,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Bank of Ireland Launches 5% Savings Account: Is KickstartSaver Worth It?](https://compound.ie/news/bank-of-ireland-5-percent-savings-account/)
 - [Bath & Body Works Approved a $500 Million Buyback. Is the Core Business Ready?](https://compound.ie/wealth/bath-body-works-buyback-store-sales/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
+- [Best Buy's Strongest Sales in Five Years Barely Moved Its Margin. What Is Doing the Work?](https://compound.ie/wealth/best-buy-sales-growth-margin-tariff-refunds/)
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/)
 - [BJ’s Comps Rose 13.5%, but Merchandise Margin Fell. Can Membership Growth Carry the Build?](https://compound.ie/wealth/bj-membership-margin-capex/)
 - [Black Friday in Ireland: Your Rights on Refunds, Returns and "Was" Prices](https://compound.ie/news/black-friday-ireland-consumer-rights-2026/)
@@ -285,6 +287,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Keysight’s AI Orders Are Surging. How Much Growth Is Truly Organic?](https://compound.ie/wealth/keysight-ai-orders-capacity/)
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/)
 - [LEGO's Las Vegas F1 Race Was a Marketing Spectacle. Can the 2027 Sets Convert It Into Sales?](https://compound.ie/wealth/lego-formula-one-las-vegas-race-2027-product-licensing-economics/)
+- [Li Auto Is Earning More per Car Again. Can It Sell Enough of Them?](https://compound.ie/wealth/li-auto-pricing-mix-deliveries-cash-flow/)
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/)
 - [Lilly Has Earned Its Last Jardiance Sales Milestone. What Growth Remains?](https://compound.ie/wealth/lilly-jardiance-milestone-revenue/)
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/)
