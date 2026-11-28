@@ -1,0 +1,137 @@
+{
+  "run_date": "2026-11-28",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "edition_key": "2026-11-28/morning",
+  "publisher": "Claude scheduled task 'Compound Irish money news'",
+  "target_maximum": 3,
+  "slots_already_filled_at_start": 0,
+  "slots_already_filled_note": "No Irish finance ledger and no chatgpt/* Irish news PR merged on claude/clever-babbage-uibieq for 28 Nov at 08:48 Dublin.",
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "programme_status": "published_verified_live",
+  "editorial_review_status_note": "Automated editorial gate only; no human review recorded (editorial_review_status: pending on each article).",
+  "articles": [
+    {
+      "topic": "Central Bank Household Wealth Report Q2 2026 (published 26 Nov 2026) with ECB Distributional Wealth Accounts for Ireland: median household net wealth €438,000 vs ~€724k average; owners €1.05m vs tenants €85,400; decile thresholds",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "published_verified_live",
+      "source_path": "content/wealth/irish-household-wealth-median-q2-2026.md",
+      "canonical_url": "https://compound.ie/news/irish-household-wealth-median-q2-2026/",
+      "primary_sources": [
+        "https://www.centralbank.ie/statistics/data-and-analysis/household-wealth",
+        "https://www.centralbank.ie/docs/default-source/statistics/data-and-analysis/financial-accounts/household-wealth-data/household-releases/household-wealth-report---2026-q2f68e17144644629bacc1ff0000269695.pdf?sfvrsn=4fca751a_2",
+        "https://data-api.ecb.europa.eu/service/data/DWA"
+      ],
+      "secondary_sources": [
+        "https://www.irishtimes.com/business/2026/11/26/irish-housing-wealth-now-close-to-1-trillion/",
+        "https://www.rte.ie/news/business/2026/1111/1598813-cso-inflation-figures/"
+      ],
+      "distinct_thesis": "Press coverage used the total and mean (~€724k per household). The article uses ECB DWA median, thresholds, owner/renter and working-status splits to show where a typical household stands; links to the net worth calculator.",
+      "duplicate_check": "No existing household wealth article; only the Net Worth Calculator, which is linked.",
+      "claim_checks": [
+        {
+          "claim": "€1,429.5bn net wealth, +€42.8bn; housing 66.9%; deposits €225.2bn; pensions €295.7bn; liabilities €162.5bn; loans €157.1bn; DTI 81.0%; debt-to-assets 9.9%; top 10% 47.0% vs 53.9% in 2016; bottom-half deposits 18.5% and leverage 28.1%; top-10% other financial assets 19.4% and leverage 3.9%",
+          "basis": "Central Bank Q2 2026 report PDF",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Median €437,994; mean €740,881; thresholds 20/40/50/60/80/90th pct; owner €1,050,070 and tenant €85,390 per household; decile and working-status means; median 2025-Q2 €395,159 and 2016-Q2 €164,905; tenant 2025-Q2 €78,240",
+          "basis": "ECB DWA API series DWA.Q.IE.S14.N.LE.NWA.* (EUR_MD, EUR_R_NH, EUR_T)",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "~€724,000 per household",
+          "basis": "Irish Times 26 Nov 2026",
+          "status": "verified_secondary_source"
+        },
+        {
+          "claim": "Growth rates +10.8%, ×2.7, +9.1%",
+          "basis": "Own arithmetic from ECB series",
+          "status": "calculated"
+        }
+      ],
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Terraced_housing_in_Stoney_Road,_East_Wall_-_geograph.org.uk_-_2222082.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Terraced_housing_in_Stoney_Road,_East_Wall_-_geograph.org.uk_-_2222082.jpg",
+        "licence": "CC BY-SA 2.0",
+        "credit": "Eric Jones / Geograph Ireland",
+        "archival": "Taken 31 December 2010"
+      },
+      "pr": 326,
+      "live_check": "28 Nov 2026 09:11 Dublin: HTTP 200, canonical matches, one H1, og:image 200 (real photo checked visually), in sitemap, ad loader present"
+    },
+    {
+      "topic": "CSO Retail Sales Index October 2026 (published 27 Nov 2026): value +6.2% vs volume +3.9% y/y; sector value-vs-volume implied price effects (fuel +5.9%, bars +7.3%, supermarkets +1.1%; supermarkets +24% vs 2021 for same volume)",
+      "edition": "morning",
+      "content_type": "news_analysis",
+      "action": "new_article",
+      "status": "published_verified_live",
+      "source_path": "content/wealth/irish-retail-sales-october-2026-value-vs-volume.md",
+      "canonical_url": "https://compound.ie/news/irish-retail-sales-october-2026-value-vs-volume/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/ep/p-rsi/retailsalesindexoctober2026provisionalandseptember2026final/"
+      ],
+      "secondary_sources": [
+        "https://www.irishtimes.com/business/2026/11/27/retail-sales-fall-as-higher-fuel-costs-keep-pressure-on-consumers/",
+        "https://www.rte.ie/news/business/2026/1111/1598813-cso-inflation-figures/"
+      ],
+      "distinct_thesis": "Coverage led on the -0.1% monthly volume. The article divides value by volume per sector to show where households pay more for the same goods, with a €60/week fuel example; caveated as approximate, not CPI.",
+      "duplicate_check": "No retail sales article on the site; inflation, personal inflation and fuel price articles are adjacent and linked.",
+      "claim_checks": [
+        {
+          "claim": "All headline and Table 2 sector value/volume index levels and changes; period 4-31 Oct; upcoming volume revisions",
+          "basis": "CSO release 27 Nov 2026",
+          "status": "verified_primary_source"
+        },
+        {
+          "claim": "Implied price effects and since-2021 ratios; €3.54/week and ~€184/year fuel example",
+          "basis": "Own arithmetic, labelled approximate",
+          "status": "calculated"
+        },
+        {
+          "claim": "CPI 4.3% October",
+          "basis": "RTÉ 11 Nov 2026 reporting CSO",
+          "status": "verified_secondary_source"
+        },
+        {
+          "claim": "Pump prices eased about 1% in November",
+          "basis": "Existing site article citing AA Ireland November survey",
+          "status": "verified_secondary_source"
+        }
+      ],
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Christmas_Shoppers_in_Henry_Street_-_geograph.org.uk_-_2199344.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Christmas_Shoppers_in_Henry_Street_-_geograph.org.uk_-_2199344.jpg",
+        "licence": "CC BY-SA 2.0",
+        "credit": "Eric Jones / Geograph Ireland",
+        "archival": "Taken 13 December 2010"
+      },
+      "pr": 326,
+      "live_check": "28 Nov 2026 09:11 Dublin: HTTP 200, canonical matches, one H1, og:image 200 (real photo checked visually), in sitemap, ad loader present"
+    }
+  ],
+  "canonical_updates": [],
+  "skipped": [
+    {
+      "topic": "High Court refuses to sanction BAWAG's PTSB takeover (26 Nov)",
+      "reason": "Shareholder/corporate story; nothing changes for PTSB mortgage or savings customers, so no household-money angle without padding."
+    },
+    {
+      "topic": "CSO labour market churn Q3, Housing Hub update, homeless figures, wind/battery storage feature",
+      "reason": "No direct, verifiable household-money change, or already covered (house prices, first-time buyers)."
+    },
+    {
+      "topic": "Finance Bill 2026 follow-ups (microgeneration €600, Help to Buy €35,000)",
+      "reason": "Bill still awaiting Seanad stages and signing as of 28 Nov (Oireachtas API); hold canonical updates until enacted."
+    }
+  ],
+  "deduplication": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, content/wealth for the last 14 days, 27 Nov ledger, open PRs and today's merged PRs (no chatgpt/* Irish news).",
+  "merge": {
+    "pr": 326,
+    "merge_commit": "2995efde464c3e5b340b1324afa2d293c7667584",
+    "merged_at": "2026-11-28T09:07Z",
+    "ci": "test and performance passed on head 8e4172a"
+  }
+}
