@@ -1987,7 +1987,7 @@ def build_site(settings: Settings) -> dict:
         _write(out / "compound-interest-calculator" / "index.html", env.get_template("calculator.html").render(
             title="Compound Interest Calculator Ireland", pillar="wealth", tools_page=True,
             related_articles=linked_articles("compound-interest-calculator", articles),
-            calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll"><table>').replace("</table>", "</table></div>")))
+            calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll" tabindex="0" role="region" aria-label="Scrollable table"><table>').replace("</table>", "</table></div>")))
 
     bmi_path = "/bmi-calculator/"
     has_bmi = (settings.content_dir / "bmi-guide.md").is_file()

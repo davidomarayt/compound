@@ -1,6 +1,6 @@
 /* Compound stock research experience; scoped to directory and company templates. */
 .stocks-research-hub,.stocks-company{--sr-forest:#263c38;--sr-warm:#eae1d5;--sr-line:#ddd7d0;--sr-muted:#665c5e}
-.stocks-research-hub .sr-kicker,.stocks-company .sr-kicker,.stocks-research-hub .sr-eyebrow{font:700 10px/1.5 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:#a07659}
+.stocks-research-hub .sr-kicker,.stocks-company .sr-kicker,.stocks-research-hub .sr-eyebrow{font:700 10px/1.5 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:#7d5a43}
 .stocks-research-hub .sr-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(310px,.92fr);gap:clamp(26px,4vw,75px);background:var(--sr-forest);color:#f7f5f0;border-radius:12px;padding:clamp(29px,5vw,66px);align-items:center;position:relative;overflow:hidden}
 .stocks-research-hub .sr-hero:before{content:"";position:absolute;width:540px;height:540px;border:1px solid #ffffff19;border-radius:50%;left:18%;bottom:-460px;box-shadow:0 0 0 100px #ffffff07}
 .sr-hero-copy,.sr-hero-aside{position:relative;z-index:1}
@@ -18,14 +18,14 @@
 .sr-hero-aside{background:#fcf9f4;color:#352e30;border-radius:9px;padding:27px 26px}
 .sr-aside-head{display:flex;align-items:center;justify-content:space-between;font-size:9px;letter-spacing:.1em;font-weight:700;color:#866b59;gap:12px;margin-bottom:12px}
 .sr-hero-aside>a{display:grid;grid-template-columns:24px minmax(0,1fr) 14px;gap:12px;align-items:start;border-top:1px solid #e3dbd2;padding:19px 0}
-.sr-aside-no{font-size:11px;color:#a3775d}
+.sr-aside-no{font-size:11px;color:#7d5a43}
 .sr-hero-aside>a strong{display:block;font-size:15px;line-height:1.25}
 .sr-hero-aside>a small{display:block;font-size:11px;color:#786e6d;line-height:1.6;margin-top:6px}
 .sr-hero-aside>a>span:last-child{font-size:18px}
 .sr-hero-aside>a:hover strong{text-decoration:underline;text-underline-offset:3px}
 .sr-aside-footer{padding-top:12px;border-top:1px solid #e3dbd2;font:12px/1.5 var(--serif);font-style:italic;color:#745a4d}
 .sr-jump{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--sr-line)}
-.sr-jump>span{font:700 10px/1.5 var(--sans);letter-spacing:.12em;color:#88756c;margin-right:auto}
+.sr-jump>span{font:700 10px/1.5 var(--sans);letter-spacing:.12em;color:#6b5e57;margin-right:auto}
 .sr-jump>a{border:1px solid var(--sr-line);padding:9px 13px;border-radius:30px;font-size:12px}
 .sr-jump>a:hover{background:#eee7dd}
 .sr-section{padding:clamp(55px,6vw,85px) 0 0;scroll-margin-top:20px}
@@ -66,7 +66,7 @@
 .sr-method a{text-decoration:underline;text-underline-offset:3px}
 .stocks-company .sr-company-header{background:#ecede6;border-radius:9px;padding:33px 36px;margin-top:14px}
 .sr-company-overline{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:17px}
-.sr-company-symbol{font-size:11px;color:#6d6d63;font-weight:700}
+.sr-company-symbol{font-size:11px;color:#5f5f56;font-weight:700}
 .stocks-company .sr-company-header h1{max-width:1000px}
 .sr-company-header-intro{font-size:13px;color:#5b625c;max-width:710px;line-height:1.8;margin-top:17px}
 .sr-company-tabs{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}
@@ -81,7 +81,7 @@
 .sr-company-metrics>div{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;background:#f4f1eb;border-radius:7px;padding:18px 16px;min-width:0}
 .sr-company-metrics span{font-size:10px;color:#72645d;font-weight:700;line-height:1.3}
 .sr-company-metrics strong{font:400 clamp(21px,2vw,32px)/1.15 var(--serif);margin:11px 0;letter-spacing:-.025em;overflow-wrap:anywhere}
-.sr-company-metrics small{font-size:10px;color:#7c756d}
+.sr-company-metrics small{font-size:10px;color:#6b5e57}
 .sr-company-research-note{background:#f4f1eb;border-radius:7px;padding:22px 25px;display:flex;flex-direction:column;justify-content:center}
 .sr-company-research-note strong{font-size:14px}
 .sr-company-research-note p{font-size:12px;color:#716966;margin-top:9px}
