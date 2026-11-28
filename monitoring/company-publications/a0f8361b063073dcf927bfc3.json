@@ -3,8 +3,8 @@
   "company": "Li Auto Inc.",
   "ticker": "LI",
   "date": "2026-11-28",
-  "status": "in_progress",
-  "publication_state": "pr_open",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
   "story_thesis": "Li Auto's Q3 2026 margin and free-cash-flow recovery came from pricier product mix rather than volume; deliveries remain ~100k a quarter versus 158.7k in Q4 2024, and Q4 guidance needs ~40.5-43k deliveries a month in Nov-Dec, 40-48% above October.",
@@ -158,9 +158,10 @@
     "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
     "image_license": "passed",
     "offline_tests": "passed: pytest -q 439 passed, 2 subtests",
-    "ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "ci": "passed on exact PR head 1eac224b4afa46a239c97cf08f415c7803d42a35 (test and performance, runs 46123658224 and 46123672222)",
+    "deployment": "passed in site run 46124376370; build, deploy, verify-live, verify-finance-discovery and mobile-audit succeeded",
+    "live_verification": "passed: HTTP 200, canonical, photo credit, cover, social image, ads loader (no stock profile exists for LI) and sitemap entry",
+    "ads": "passed live: standard ca-pub-6115783809711785 loader present"
   },
   "image": {
     "source": "https://commons.wikimedia.org/wiki/File:Li_Mega_in_Shanghai_June_2025.jpg",
@@ -177,5 +178,23 @@
     "unique_asset": true,
     "repository_image_sha256": "3a0628ec25077c15fd1180eaa4250df5969b852fa210a4ff17b3c98922676f13",
     "visual_inspection": "passed"
+  },
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/324",
+    "validated_head_sha": "1eac224b4afa46a239c97cf08f415c7803d42a35",
+    "merge_commit_sha": "fb3dd23e38d410e9bc752aa232fec68556d68cbd",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/46124376370",
+    "live_verified_at": "2026-11-28T08:20:00Z",
+    "live_url": "https://compound.ie/wealth/li-auto-pricing-mix-deliveries-cash-flow/",
+    "live_social_image_url": "https://compound.ie/static/discover/li-auto-pricing-mix-deliveries-cash-flow-16x9.webp",
+    "live_social_image_sha256": "a6f60a1c4bef37ff785f1eafd46940a5b3f2a98061a7e4b42c8dd3b98ba26361",
+    "live_social_image_dimensions": [
+      1200,
+      675
+    ],
+    "sitemap_verified": true,
+    "ads_verified": true,
+    "profile_backlink_verified": false,
+    "daily_new_article_count_after_publication": 3
   }
 }
