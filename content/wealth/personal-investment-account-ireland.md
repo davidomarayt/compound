@@ -813,7 +813,7 @@ Following the 19 November 2026 targeted check of the committee-amended text, pra
 * whether any unused annual contribution allowance can carry forward;
 * the detailed treatment of existing investments moved into a PIA;
 * the final process for provider-to-provider transfers;
-* how providers will implement the proposed death/estate and non-residence procedures;
+* how providers will implement the proposed death/estate and non-residence procedures (see [what happens to your PIA if you move abroad](/wealth/pia-moving-abroad-ireland/));
 * the full provider market;
 * each provider's investment menu;
 * and the fees charged by providers and underlying investments.
@@ -901,6 +901,10 @@ A tax-neutral route for moving pre-existing investments from an ordinary account
 ### What happens to my PIA if I die?
 
 The [committee-amended Bill's proposed estate provisions](#pia-on-death) envisage personal representatives managing the account temporarily, no new contributions after death and eventual closure or liquidation. That does not establish inheritance-tax exemption, spouse rollover or final operational rules; the Bill is not enacted.
+
+### What happens to my PIA if I move abroad?
+
+**Under the Bill as passed by the Dáil, the account stays open.** You cannot pay in new money or switch provider while you live abroad, and the Irish 1% charge on average value above €50,000 continues. Contributions can restart once you return and tell your provider. See [what happens to your PIA if you move abroad](/wealth/pia-moving-abroad-ireland/) for the 30-day rule and worked examples.
 
 ### Is a PIA better than a pension?
 
