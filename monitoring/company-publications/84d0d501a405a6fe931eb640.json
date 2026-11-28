@@ -3,8 +3,8 @@
   "company": "Analog Devices, Inc.",
   "ticker": "ADI",
   "date": "2026-11-28",
-  "status": "in_progress",
-  "publication_state": "pr_open",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
   "story_thesis": "Analog Devices returned about 99% of fiscal 2026 free cash flow while net debt rose; fiscal 2027 capex guided to $1.6-1.9bn (2.2-2.6x) plus the $1.35bn Alif deal leaves far less room for buybacks unless operating cash flow keeps growing.",
@@ -178,9 +178,10 @@
     "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
     "image_license": "passed",
     "offline_tests": "passed: pytest -q 439 passed, 2 subtests",
-    "ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "ci": "passed on exact PR head 1eac224b4afa46a239c97cf08f415c7803d42a35 (test and performance, runs 46123658224 and 46123672222)",
+    "deployment": "passed in site run 46124376370; build, deploy, verify-live, verify-finance-discovery and mobile-audit succeeded",
+    "live_verification": "passed: HTTP 200, canonical, photo credit, cover, social image, ads loader, profile link and sitemap entry",
+    "ads": "passed live: standard ca-pub-6115783809711785 loader present"
   },
   "image": {
     "source": "https://commons.wikimedia.org/wiki/File:Maura_Healey_Analog_Devices_(FnRKOAUXkAAyW2t).jpg",
@@ -197,5 +198,23 @@
     "unique_asset": true,
     "repository_image_sha256": "fc4b6a00197eec86d334cbc160e80034b895ba0a7ea0dbb7e8bdc53bc994ed18",
     "visual_inspection": "passed"
+  },
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/324",
+    "validated_head_sha": "1eac224b4afa46a239c97cf08f415c7803d42a35",
+    "merge_commit_sha": "fb3dd23e38d410e9bc752aa232fec68556d68cbd",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/46124376370",
+    "live_verified_at": "2026-11-28T08:13:00Z",
+    "live_url": "https://compound.ie/wealth/analog-devices-capex-cash-returns/",
+    "live_social_image_url": "https://compound.ie/static/discover/analog-devices-capex-cash-returns-16x9.webp",
+    "live_social_image_sha256": "a81163f3aa9fa9a065905c87474a5f8c1c2f31727f7f2763d741b45dc3a3d5cc",
+    "live_social_image_dimensions": [
+      1200,
+      675
+    ],
+    "sitemap_verified": true,
+    "ads_verified": true,
+    "profile_backlink_verified": true,
+    "daily_new_article_count_after_publication": 3
   }
 }
