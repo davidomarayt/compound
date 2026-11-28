@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 471
+- Published editorial articles and guides: 473
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 350
+## Wealth articles and guides — 352
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -398,6 +398,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/)
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/)
+- [Same Fuel, 5.9% More Money: What October's Retail Figures Show About Irish Shopping Bills](https://compound.ie/news/irish-retail-sales-october-2026-value-vs-volume/)
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/)
 - [Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?](https://compound.ie/wealth/sanmina-zt-cash-conversion/)
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/)
@@ -430,6 +431,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Tesla's Roadster Flew. Can It Actually Move the Business?](https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/)
 - [Tesla’s $3.1 Billion Texas Polysilicon Plan: Can Solar Manufacturing Pay Off?](https://compound.ie/news/tesla-texas-polysilicon-plant-2026/)
 - [The Fed has raised US interest rates: what could it mean for Ireland?](https://compound.ie/news/fed-rate-hike-ireland-september-2026/)
+- [The Typical Irish Household Is Worth €438,000, Not €724,000. Renters Average €85,000](https://compound.ie/news/irish-household-wealth-median-q2-2026/)
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/)
 - [Thousands may be due PAYE refunds — but 2022 claims expire this December](https://compound.ie/news/paye-tax-refunds-2025-unclaimed-november-2026/)
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/)

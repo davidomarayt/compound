@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 471 published articles and guides, 69 tools,
+**Included:** 473 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -382,6 +382,7 @@ For the complete register (including 510+ company profiles), open
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/) — **Wealth**
 - [Salbutamol inhalers in Ireland: how Ventolin works and when to get help](https://compound.ie/health/medicines/salbutamol/) — **Health**
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/) — **Wealth**
+- [Same Fuel, 5.9% More Money: What October's Retail Figures Show About Irish Shopping Bills](https://compound.ie/news/irish-retail-sales-october-2026-value-vs-volume/) — **Wealth**
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/) — **Wealth**
 - [Sanmina’s Revenue Jumped 79% After ZT. How Much of the Cash Conversion Is Durable?](https://compound.ie/wealth/sanmina-zt-cash-conversion/) — **Wealth**
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/) — **Wealth**
@@ -426,6 +427,7 @@ For the complete register (including 510+ company profiles), open
 - [The Fed has raised US interest rates: what could it mean for Ireland?](https://compound.ie/news/fed-rate-hike-ireland-september-2026/) — **Wealth**
 - [The Ploughing: a history of gathering, and why it matters for wellbeing](https://compound.ie/life/ploughing-championships-history-community-mental-health/) — **Life**
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
+- [The Typical Irish Household Is Worth €438,000, Not €724,000. Renters Average €85,000](https://compound.ie/news/irish-household-wealth-median-q2-2026/) — **Wealth**
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/) — **Wealth**
 - [Thousands may be due PAYE refunds — but 2022 claims expire this December](https://compound.ie/news/paye-tax-refunds-2025-unclaimed-november-2026/) — **Wealth**
 - [Tibolone in Ireland | Active metabolites and tissue-specific effects](https://compound.ie/health/medicines/tibolone/) — **Health**
