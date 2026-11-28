@@ -78,3 +78,24 @@ def test_kickstartsaver_article_links_savings_calculators():
         assert f"]({tools[slug]})" in text
         assert slug in text.split("---", 2)[1]  # listed in related_tools front matter
     assert "date: 2026-11-25" in text  # original publication date preserved
+
+
+def _stock_routes():
+    """Stock profiles the build generates: S&P reference list + listed watchlist."""
+    import json
+    sp500 = json.loads((CONTENT / "earnings-sp500.json").read_text(encoding="utf-8"))
+    watch = json.loads((CONTENT / "company-watchlist.json").read_text(encoding="utf-8"))
+    routes = {"/stocks/" + c["symbol"].lower() + "/" for c in sp500.get("members", []) if c.get("symbol")}
+    routes |= {"/stocks/" + c["slug"] + "/" for c in watch.get("listed", [])}
+    return routes
+
+
+def test_stock_profile_links_point_at_generated_profiles():
+    # 28 Nov 2026: /wealth/mattel-tariff-refund-margin/ linked /stocks/mat/, a
+    # profile the site never builds (Mattel is not on the reference list).
+    known = _stock_routes()
+    broken = sorted(
+        (str(f), t) for f, t in _links()
+        if t.startswith("/stocks/") and t != "/stocks/" and t not in known
+    )
+    assert broken == []

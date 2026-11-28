@@ -13,7 +13,7 @@ author: Compound Research
 summary: 'Irish workers report a gap between desired and expected retirement ages. Calculate the savings needed to bridge the years before State Pension eligibility.'
 meta_description: 'Irish workers report a gap between desired and expected retirement ages. Calculate the savings needed to bridge the years before State Pension eligibility.'
 tags: [news, ireland, pensions, retirement, personal-finance]
-related_tools: [retirement-income-calculator]
+related_tools: [retirement-income-calculator, savings-goal-calculator]
 social:
   enabled: false
 sources:
@@ -51,7 +51,7 @@ For someone requiring €30,000 a year, an illustrative €12,000 annual after-t
 
 ## Saving for the bridge
 
-Starting from zero, accumulating €90,000 in 15 years with no investment growth requires €500 a month. A €150,000 target over the same period requires about €833 a month. Investment returns might reduce contributions required, but they are uncertain and losses shortly before retirement could delay a planned exit.
+Starting from zero, accumulating €90,000 in 15 years with no investment growth requires €500 a month. A €150,000 target over the same period requires about €833 a month. The [savings goal calculator](/savings-goal-calculator/) lets you test your own target, timeframe and return assumption. Investment returns might reduce contributions required, but they are uncertain and losses shortly before retirement could delay a planned exit.
 
 These targets are separate from the resources needed for later life. Early retirement may also mean fewer years of pension contributions and a longer period of withdrawals.
 
@@ -59,7 +59,7 @@ These targets are separate from the resources needed for later life. Early retir
 
 The State Pension start date is not the same as the access date for a private or occupational pension. Scheme rules and individual circumstances govern access. See [Compound's pension access guide](/wealth/when-can-i-access-pension-ireland/) and ask the relevant provider for a retirement benefit estimate.
 
-The contributory State Pension amount depends on the social insurance record. Request a Contribution Statement through MyWelfare and check how stopping employment early could affect the eventual payment. Eligible people may choose a claim date between 66 and 70 under the applicable rules.
+The contributory State Pension amount depends on the social insurance record; [Compound's State Pension guide](/wealth/state-pension-ireland/) explains the current rates and PRSI rules. Request a Contribution Statement through MyWelfare and check how stopping employment early could affect the eventual payment. Eligible people may choose a claim date between 66 and 70 under the applicable rules.
 
 ## A practical retirement plan
 
