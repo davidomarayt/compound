@@ -236,8 +236,13 @@
       "slug": "epic-games",
       "name": "Epic Games",
       "sector": "Gaming software",
-      "summary": "Fortnite, Unreal Engine and gaming distribution.",
-      "website": "https://www.epicgames.com/"
+      "summary": "Privately held maker of Fortnite and Unreal Engine; in November 2026 it said Unreal Engine 6 will ship without Blueprints or the Actor Gameplay Framework, relying on AI to convert UE5 projects to Verse.",
+      "website": "https://www.epicgames.com/",
+      "latest_development": {
+        "date": "2026-11-23",
+        "source": "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6",
+        "text": "Epic said UE6, including Early Access, will not include Blueprints or the Actor Gameplay Framework; gameplay moves to Verse and Scene Graph. It expects AI to make converting UE5 projects largely automatic and cites a Fortnite prototype of about 3 million lines of Verse ported from more than 20,000 Blueprints. No UE6 release date or UE5 support window was given."
+      }
     },
     {
       "slug": "valve",
