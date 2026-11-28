@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-28",
+ "timezone": "Europe/Dublin",
+ "run_type": "pia_content_growth",
+ "trigger": "scheduled_10_17_run_resumed_after_api_error_12_20_utc",
+ "topic_fingerprint": "2026-11-28-iia-section-747m-change-of-residence-emigration-contributions-stop-30-day-window-747q-charge-continues",
+ "action": "new_article",
+ "new_articles": 1,
+ "existing_canonical_page_updates": 1,
+ "new_article_url": "https://compound.ie/wealth/pia-moving-abroad-ireland/",
+ "canonical_urls": [
+  "https://compound.ie/wealth/pia-moving-abroad-ireland/",
+  "https://compound.ie/wealth/personal-investment-account-ireland/",
+  "https://compound.ie/pia/"
+ ],
+ "source_urls": [
+  "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_b/b98b26d.pdf",
+  "https://api.oireachtas.ie/v1/legislation?bill_year=2026&bill_no=98",
+  "https://data.oireachtas.ie/akn/ie/debateRecord/seanad/2026-11-26/debate/mul@/main.xml",
+  "https://www.revenue.ie/en/corporate/press-office/press-releases/index.aspx"
+ ],
+ "source_checks": {
+  "legislative_stage": "Oireachtas API (lastUpdated 26 Nov 15:08 UTC, checked ~12:25 Dublin 28 Nov): most recent stage Dáil Fifth Stage 25 Nov. New since 27 Nov ledger: official version 'As passed by Dáil Éireann' (ver_b, dated 25 Nov) is listed. Seanad record 26 Nov has no Finance (No. 2) Bill item; API lists no Seanad debates 27 Nov to 5 Dec yet. No enactment.",
+  "article_claims": "Read in ver_b text: 747H qualifying individual tested at opening (18+, resident for tax purposes, PPS number); 747O(1)(c)(ii) and (d) declaration and undertaking to notify; 747M(1) period of non-residence start (departure date or 1 January of following year) and end; 747M(2)-(4) notifications; 747M(5) no contributions or transfers (except provider exit under 747J(8)(c)); 747M(6) provider stops within 30 days of relevant date; 747M(7) contributions from notification date on return; 747M(8) 30-day window contributions valid; 747M(9) later contributions treated as not made and repaid at market value less reasonable costs; 747M(10) €3,000 provider penalty; 747Q(3)-(7) 1% of average value above €50,000 charged on qualifying individual holding account on 31 Dec, no residence condition; 747T notification includes non-residence dates. 747M wording compared with committee text 98a: no substantive change.",
+  "revenue": "Revenue press index: no new investment account release beyond the technical forum notice.",
+  "providers": "No new verified provider fees or opening process; content/pia-providers.yml and CSV unchanged."
+ },
+ "change": "New article /wealth/pia-moving-abroad-ireland/ (~1,150 words incl. table) with three hypothetical examples (30-day window for a standing order; €300 charge on €80,000 average; late-year departure starting 1 January) and the return rule. Linked from the PIA centre, a new FAQ and the unfinished-details bullet in the canonical guide, and the PIA calculator guide. New test tests/test_pia_moving_abroad_editorial.py.",
+ "deduplication": "Read ledgers 16-27 Nov and searched content and inventory: the canonical guide mentioned non-residence only as an unfinished detail; no page explained 747M. Distinct from the couples, over-limit, fees, daily valuation, withdrawal allowance, mortgage and estate pages. No open PIA PR.",
+ "recovery": "27 Nov ledger status published and verified live; /wealth/pia-over-12000-limit/ returns 200 on 28 Nov. No unverified merged PIA work outstanding.",
+ "image": "Bilingual 'Geataí Imeachta / Departure Gates' sign, Dublin Airport. Leimanbhradain via Wikimedia Commons, CC BY-SA 4.0, taken 17 Sep 2026. Metadata read from the Commons API; image viewed.",
+ "launch_tracker": {
+  "path": "content/pia-launch-tracker.yml",
+  "changed": false,
+  "reason": "Only new item is the published as-passed print of an event already recorded; no Seanad, enactment, commencement or provider change. Checked date not bumped because not every tracker source was re-checked."
+ },
+ "provider_records": {
+  "path": "content/pia-providers.yml",
+  "changed": false,
+  "csv_changed": false
+ },
+ "quality": "Full pytest passed locally (442 tests, 156s). Article loads and renders via load_articles. Static build and Wikimedia hero fetch rely on CI (container rate-limited by upload.wikimedia.org). Arithmetic checked in test. Ads/consent templates untouched. Article marked research_review_pending; no human review implied.",
+ "production_branch": "claude/clever-babbage-uibieq",
+ "work_branch": "claude/project-thread-6t8orm",
+ "pr": "pending",
+ "status": "pending",
+ "live_verification": "pending"
+}
