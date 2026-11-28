@@ -1,0 +1,43 @@
+{
+  "series": "mag8",
+  "date": "2026-11-28",
+  "timezone": "Europe/Dublin",
+  "ticker": "LLY",
+  "company": "Eli Lilly and Company",
+  "status": "in_progress",
+  "publication_kind": "new_analysis",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/lilly-deal-charges-earnings.md",
+  "canonical_url": "https://compound.ie/wealth/lilly-deal-charges-earnings/",
+  "selection": "Least recently featured series company: Eli Lilly (last Mag8 18 November). Rotation since: Apple 19, Alphabet 20, Amazon 21, Microsoft 23, Nvidia 25, Tesla 26, Meta 27. No new Lilly 8-K since Q3 results; quiet-day filing question from the Q3 10-Q. 28 Nov company batch (ADI, BBY, LI) does not overlap; no Lilly coverage by other company tasks in 14 days; no same-day Mag8 or legacy Mag7 record. Open PR #235 (weight-loss pills comparison) is a health pipeline piece, not an accounting/earnings thesis.",
+  "story_fingerprint": "LLY-2026Q3-acquired-IPRD-vs-capitalised-business-combinations-adjusted-EPS",
+  "duplicate_checks": [
+    "All five Lilly wealth articles checked (Foundayo x2, METiS, Mounjaro China, Jardiance milestones). No content mentions acquired IPR&D, Centessa, Kelonia, Ventyx, Orna, AtaiBeckley or Merida."
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "claim_checks": [
+    "10-Q Note 4 business combinations: IPR&D Kelonia 4,695, Centessa 6,058, Ventyx 977 = 11,730; goodwill 1,052+1,655+232 = 2,939; net cash 3,086+5,958+1,058 = 10,102; contingent max 3,750+1,542 = 5,292; dates 25 Jun, 24 Jun, 4 Mar 2026.",
+    "10-Q asset acquisitions: acquired IPR&D 4.2bn Q3, 7.5bn 9M; AtaiBeckley 2,610 (Sep, Ph2), Curevo 954 (Jul, Ph2), Ajax 909 (Jun, Ph1), Orna 1,233 (May, Ph1) = 5,706. Merida Oct 2026 up to 2.9bn, accounting treatment pending.",
+    "Release: Q3 revenue 24,397 (+39%); EPS reported 7.22, non-GAAP 7.48 vs 7.02; IPR&D 4.57 vs 0.71 in both; ex-IPR&D 12.05 vs 7.73 = +55.9% (Compound). Non-GAAP tax 24.0% vs 17.7%. Q3 impairment 303 excluded from non-GAAP. Guidance EPS 35.50-36.50 -> 35.00-36.00; +4.07 underlying offset by 4.57; revenue 91-92bn; guidance excludes IPR&D after 30 Sep 2026.",
+    "10-Q cash flow 9M: IPR&D purchases 7,548 + acquisitions 10,692 = 18,240 = 66.5% of OCF 27,420; + capex 8,437 = 26,677 = 97.3%. Dividends 4,635, buybacks 4,334, LTD proceeds 8,941, repayments 1,623; cash 7,268 -> 4,885; LTD incl current carrying 42,503 -> 49,503; contingent consideration liabilities 34+217=251 -> 818+2,070=2,888."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Organic_Chemical_Development_-_Eli_Lilly.jpg",
+    "original": "https://www.flickr.com/photos/pasa/5472529087/",
+    "credit": "Paul Sableman",
+    "license": "CC BY 2.0",
+    "capture_date": "2011-02-16",
+    "archival": true,
+    "unique_in_repository": true,
+    "qa": "960x720 Commons file (Flickr-sourced, licence confirmed on Flickr page), visually inspected: real photograph of the Organic Chemical Development building entrance on the Lilly campus, Indianapolis."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "independent_second_pass": "All arithmetic recomputed from filings; peer comparison claims avoided; ex-IPR&D EPS labelled as Compound calculation; preliminary fair values caveated."
+  },
+  "article_sha256": "7750445e6d8406c9717e47849c0c36bca7548a22492c8f4bfffde1fd94e53e71"
+}
