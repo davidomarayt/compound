@@ -5,8 +5,8 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "claude/project-thread-0gl39a",
   "target_new_articles": 3,
-  "confirmed_live_new_articles": 0,
-  "status": "pending_merge",
+  "confirmed_live_new_articles": 3,
+  "status": "verified_live",
   "ledger_location_note": "Nested date ledger, as 24, 26 and 27 Nov, to avoid the 12 Nov flat-ledger profile regression test.",
   "run_note": "First attempt at 06:43 was cut off by an API error before any work; resumed at ~07:20 Europe/Dublin.",
   "held_draft_resolution": "No held or unmerged private-company drafts: 27 Nov ledger shows all three verified live via PR #306; PRs #269/#275-#277 resolved earlier.",
@@ -40,7 +40,13 @@
       "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "pending_merge"
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 321
     },
     {
       "company": "Anthropic",
@@ -71,7 +77,13 @@
       "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "pending_merge"
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 321
     },
     {
       "company": "Epic Games",
@@ -101,7 +113,20 @@
       "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
       "human_reviewed": false,
       "editorial_review_status": "pending",
-      "status": "pending_merge"
+      "status": "verified_live",
+      "live_http_verified": true,
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "company_profile_backlink_verified": true,
+      "ads_presence_verified": true,
+      "release_pr": 321
     }
-  ]
+  ],
+  "release_pr": 321,
+  "merge_sha": "7dc39273f928aff6dbb1ab8c6ba75837bea44fa6",
+  "production_deployment": {
+    "status": "deployed_and_verified",
+    "site_run": "https://github.com/davidomarayt/compound/actions/runs/46122255003",
+    "live_check": "Direct HTTPS fetch of compound.ie at ~07:47 Europe/Dublin: HTTP 200, canonical link, ad loader, profile link and Wikimedia photo credit on each article; JPEG cover and 1200x675 OG WebP served and visually checked; exact article backlink and ad loader on /companies/openai/, /stocks/ant/ and /companies/epic-games/."
+  }
 }
