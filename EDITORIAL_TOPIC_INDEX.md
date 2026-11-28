@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 474 published articles and guides, 69 tools,
+**Included:** 475 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -468,6 +468,7 @@ For the complete register (including 510+ company profiles), open
 - [Who carries the risk on Waymo’s $5 billion loan?](https://compound.ie/wealth/alphabet-waymo-term-loan/) — **Wealth**
 - [Who keeps the profit on an AI rack? AMD, Arista and Supermicro report](https://compound.ie/wealth/ai-infrastructure-earnings/) — **Wealth**
 - [Who Would Pay for Palmer Luckey’s SLAB? The First Customer Could Decide](https://compound.ie/news/palmer-luckey-slab-first-customer-financing/) — **Wealth**
+- [Why Some of Lilly's 2026 Deals Hit Its Adjusted EPS and Bigger Ones Did Not](https://compound.ie/wealth/lilly-deal-charges-earnings/) — **Wealth**
 - [Why SpaceX’s Lenders Reportedly Want Its AI Chips to Stay on Earth](https://compound.ie/news/spacex-gpu-financing-orbit-collateral/) — **Wealth**
 - [Why you feel more tired in autumn: what darker days do to sleep and mood](https://compound.ie/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/) — **Life**
 - [Why your time off doesn’t always feel like a break](https://compound.ie/life/why-time-off-doesnt-feel-like-a-break/) — **Life**
