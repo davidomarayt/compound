@@ -1,0 +1,201 @@
+{
+  "story_fingerprint": "84d0d501a405a6fe931eb640",
+  "company": "Analog Devices, Inc.",
+  "ticker": "ADI",
+  "date": "2026-11-28",
+  "status": "in_progress",
+  "publication_state": "pr_open",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Analog Devices returned about 99% of fiscal 2026 free cash flow while net debt rose; fiscal 2027 capex guided to $1.6-1.9bn (2.2-2.6x) plus the $1.35bn Alif deal leaves far less room for buybacks unless operating cash flow keeps growing.",
+  "article_path": "content/wealth/analog-devices-capex-cash-returns.md",
+  "canonical_url": "https://compound.ie/wealth/analog-devices-capex-cash-returns/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/6281/000000628126000087/adiq426exhibit991.htm",
+    "https://www.sec.gov/Archives/edgar/data/6281/000000628126000089/adi-20261031.htm"
+  ],
+  "identity": {
+    "issuer": "Analog Devices, Inc.",
+    "CIK": 6281,
+    "results_accession": "0000006281-26-000087",
+    "10k_accession": "0000006281-26-000089",
+    "fiscal_year": 2026,
+    "fiscal_period": "FY and Q4",
+    "period_end": "2026-10-31",
+    "release_date": "2026-11-24",
+    "currency": "USD",
+    "accounting": "US GAAP (FY audited 10-K; Q4 unaudited release) with company-defined non-GAAP and free cash flow"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Analog Devices, Inc.",
+      "Best Buy Co., Inc.",
+      "Li Auto Inc.",
+      "Autodesk, Inc.",
+      "Burlington Stores, Inc.",
+      "HP Inc.",
+      "PDD Holdings Inc."
+    ],
+    "selection_reason": "Three different sectors (analog semiconductors, consumer-electronics retail, Chinese EV maker) from results filed 24-25 November 2026, none covered in the previous 14 days by any Compound company task (daily, private-company, Mag 8) and none in progress today. Autodesk was set aside because enterprise software (Workday) ran on 27 November; Burlington because Best Buy already covers US retail today; HP overlaps Dell's PC exposure (27 November); PDD's 6-K was not a results release when screened on 27 November."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth and content/news, company, private-company and Mag 8 ledgers for 14-28 Nov, open PRs (#323, #322 and older) and monitoring/earnings-review-queue.json (no job for this issuer). No existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "FY26 revenue $15.179bn +38%; Q4 $4.373bn +42%; GAAP EPS $10.21 vs $4.56; adjusted EPS $13.05 vs $7.79",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Results summary table",
+      "result": "verified"
+    },
+    {
+      "claim": "OCF $6.186bn; capex $733m; FCF $5.453bn (36%); dividends $2.088bn; buybacks $3.324bn; returns $5.413bn = 99% of FCF",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Cash generation/return tables; 5413/5453=99.3%",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Empower acquired 7 Jul 2026 for ~$1.5bn; payments for acquisitions $1.536bn",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "10-K acquisitions note; cash flow",
+      "result": "verified"
+    },
+    {
+      "claim": "Sept 2026 $3.0bn notes: $500m 5.100% 2029, $500m 5.350% 2031, $1.0bn 5.600% 2033, $1.0bn 5.750% 2036",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-K Note 13 Debt",
+      "result": "verified"
+    },
+    {
+      "claim": "Borrowings 0+447+8,145=$8.59bn -> 1,343+340+9,744=$11.43bn; cash+ST inv 3,652 -> 5,198; net debt 4.94 -> 6.23bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet arithmetic",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "FY27 capex expected ~$1.6-1.9bn = 2.2-2.6x FY26 $733m; funding mix and confidence quote",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-K Capital Expenditures; 1600/733=2.18, 1900/733=2.59",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Quarterly capex $109m, $138m, $146m, $340m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "FCF reconciliation table",
+      "result": "verified"
+    },
+    {
+      "claim": "Alif acquired 3 Nov 2026 for ~$1.35bn plus up to $200m contingent",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-K Note 14 Subsequent Events",
+      "result": "verified"
+    },
+    {
+      "claim": "Dividend $1.10/qtr, ~$530.9m for Dec payment; annualised ~$2.12bn",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "10-K subsequent events; 530.9*4",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Illustration: OCF 6.19 - capex 1.6-1.9 = FCF 4.3-4.6; minus 2.12 dividend and 1.35 Alif = 0.8-1.1bn vs 3.32bn buybacks; $6.5bn authorisation remaining",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "6.186-1.9=4.286; 6.186-1.6=4.586; minus 3.474",
+      "result": "verified Compound calculation (labelled illustration)"
+    },
+    {
+      "claim": "Shares outstanding 489.65m -> 482.68m (-1.4%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet equity caption",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Receivables +81% to $2.599bn; inventory +26% to $2.084bn; WC uses 1.161+0.424; payables/accrued +$1.295bn",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-K working capital table; cash flow statement",
+      "result": "verified"
+    },
+    {
+      "claim": "Q4 end markets: industrial +55%, comms +81%, auto +21%, consumer +7%; CEO two-thirds non-AI claim",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "End-market table; CEO quote",
+      "result": "verified; management claim attributed"
+    },
+    {
+      "claim": "Q1 FY27 guide revenue $4.4bn +/-150m, adj op margin 50.5% vs Q4 52.3%; 'sustained above-seasonal growth' quote",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Outlook; 10-K capex section",
+      "result": "verified"
+    },
+    {
+      "claim": "Distributors ~57% of revenue; two distributors ~25% and ~17%; overcapacity risk quote",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-K risk factors",
+      "result": "verified"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined non-GAAP/adjusted measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact; management claims are attributed.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "passed: pytest -q 439 passed, 2 subtests",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Maura_Healey_Analog_Devices_(FnRKOAUXkAAyW2t).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/thumb (1280px rendition)",
+    "photographer": "Office of Governor Maura Healey of Massachusetts",
+    "license": "Public domain (Commonwealth of Massachusetts public record)",
+    "capture_date": "2023-01-24",
+    "description": "Analog Devices employees in a company atrium under an Analog Devices sign during the governor's visit",
+    "dimensions": [
+      1280,
+      854
+    ],
+    "archival": true,
+    "unique_asset": true,
+    "repository_image_sha256": "fc4b6a00197eec86d334cbc160e80034b895ba0a7ea0dbb7e8bdc53bc994ed18",
+    "visual_inspection": "passed"
+  }
+}
