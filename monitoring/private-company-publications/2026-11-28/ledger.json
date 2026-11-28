@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-28",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "claude/project-thread-0gl39a",
+  "target_new_articles": 3,
+  "confirmed_live_new_articles": 0,
+  "status": "pending_merge",
+  "ledger_location_note": "Nested date ledger, as 24, 26 and 27 Nov, to avoid the 12 Nov flat-ledger profile regression test.",
+  "run_note": "First attempt at 06:43 was cut off by an API error before any work; resumed at ~07:20 Europe/Dublin.",
+  "held_draft_resolution": "No held or unmerged private-company drafts: 27 Nov ledger shows all three verified live via PR #306; PRs #269/#275-#277 resolved earlier.",
+  "duplication_checks": "No prior Compound article on OpenAI Private Inference, the Claude ML-research sabotage claims/frontier_llm refusals, or Epic Games/UE6. Related: Anthropic EFS (26 Nov), Fable/Mythos 5.2 pricing (12 Nov), OpenAI usage meter (27 Nov). Rotation: Epic Games not covered in last 14 days (recent: Neuralink, Stripe, Valve, LEGO, Canva, Anduril, Revolut, ByteDance, Databricks, Blue Origin). Overnight agents 28 Nov touched only Mattel/retirement links and templates; Daily Company Analysis (07:43) and Mag 8 (17:47) cover listed companies.",
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "action": "new_article",
+      "story_fingerprint": "2026-11-25-openai-private-inference-alpha-confidential-computing-capacity-scope",
+      "event_date": "2026-11-25",
+      "article_path": "content/wealth/openai-private-inference-confidential-computing-enterprise-economics.md",
+      "canonical_url": "https://compound.ie/wealth/openai-private-inference-confidential-computing-enterprise-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "primary_source_urls": [
+        "https://openai.com/business/private-intelligence/",
+        "https://openaiassets.blob.core.windows.net/%24web/pdf/c7284810-2252-462f-803e-075b0c95bccb/psp-whitepaper.pdf"
+      ],
+      "claim_checks": [
+        "Private Intelligence page (fetched 28 Nov): Private Inference (Alpha) 'combines confidential computing with strict controls designed to protect your prompts and responses while the model processes them'; diagram label 'API Preview'; ZDR for eligible API workflows.",
+        "PSP white paper published 26 Oct 2026: Private Inference 'optional protection that extends operator access protections and attestation to eligible safety-inference workloads', does not automatically cover initial API request or every OpenAI system; first-party traffic only, Bedrock out of scope; customers retain encrypted records >=30 days; OpenAI index entry deleted after 30 days and decrypt ability expires at 30 days; no limit on cumulative disclosure across repeated reviews yet; extension 'when necessary technology, capacity, and product commitments are met'.",
+        "Altman X post 25 Nov and Shekar capacity remark as reported by Computing.net and i10X (26 Nov); not independently verified.",
+        "Anthropic Enterprise Frontier Safeguards beta 23 Nov per Compound 26 Nov article."
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_004.png",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_004.png/1280px-NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_004.png",
+      "image_license": "极客湾Geekerwan via Wikimedia Commons, CC BY 3.0, 14 Jun 2023 (licence confirmed via Commons API 28 Nov); resized/cropped. Visually checked: four H100 cards, small source watermark, no price overlay.",
+      "profile_update": "OpenAI profile latest_development (22 Nov) retained because the 12 Nov regression test requires profile sources from flat ledgers (as 26/27 Nov runs). Backlink automatic via company-openai tag.",
+      "publication_date": "2026-11-28",
+      "origin": "New 28 Nov research",
+      "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
+      "human_reviewed": false,
+      "editorial_review_status": "pending",
+      "status": "pending_merge"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "action": "new_article",
+      "story_fingerprint": "2026-11-28-anthropic-claude-ml-research-sabotage-claims-disclosed-capability-limits-frontier-llm-refusals",
+      "event_date": "2026-11-28",
+      "article_path": "content/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust/",
+      "profile_url": "https://compound.ie/stocks/ant/",
+      "primary_source_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+        "https://x.com/edwinarbus/status/2126507795642187855"
+      ],
+      "claim_checks": [
+        "Fable/Mythos 5.2 post (9 Nov 2026): training limited research capabilities that could most directly accelerate AI development; accelerator kernel optimization and improving LLM architectures at about Opus 5.5 level; agentic coding, hardware development, traditional AI/ML incl. interpretability unaffected; not altered at inference time; transparent fallbacks to Opus 5 for small set of topics incl. kernel development on certain nonstandard accelerators.",
+        "Refusals docs (fetched 28 Nov): frontier_llm = could help development of competing AI models, restricted under commercial terms; benign ML work can trigger; pre-output refusals billed for bio/frontier_llm/reasoning_extraction (low false positives as of Sept 2026); all refusals count against rate limits.",
+        "Arbus X post (fxtwitter API created_at 2026-11-28 02:45 UTC): not trained to sabotage; non-visible safeguards on some LLM research for first two days of Fable 5 launch in June, reversed 10 June; Fable 5.2 LLM research at about Opus 5.5 level; overcaution explanation. Employee post, not formal statement.",
+        "Developer claims (24 and 27 Nov) as reported by Pillitteri, unverified."
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._(54099081629).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854099081629%29.jpg/1280px-Secretary_of_State_Peter_Kyle_visits_Anthropic_in_San_Francisco._%2854099081629%29.jpg",
+      "image_license": "Alecsandra Dragoi / DSIT via Wikimedia Commons, CC BY 2.0, 25 Oct 2024; resized/cropped. Different frame from 27 Nov cover. Visually checked: handshake between Peter Kyle and a host; no Dario Amodei.",
+      "profile_update": "ANT profile latest_development pinned to 19 Nov listing by regression test; unchanged. Backlink automatic via company-anthropic/stock-ant tags.",
+      "publication_date": "2026-11-28",
+      "origin": "New 28 Nov research",
+      "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
+      "human_reviewed": false,
+      "editorial_review_status": "pending",
+      "status": "pending_merge"
+    },
+    {
+      "company": "Epic Games",
+      "slug": "epic-games",
+      "action": "new_article",
+      "story_fingerprint": "2026-11-23-epic-games-ue6-drops-blueprints-actor-framework-ai-conversion-verse-royalty",
+      "event_date": "2026-11-23",
+      "article_path": "content/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics.md",
+      "canonical_url": "https://compound.ie/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics/",
+      "profile_url": "https://compound.ie/companies/epic-games/",
+      "primary_source_urls": [
+        "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6",
+        "https://www.unrealengine.com/en-US/license"
+      ],
+      "claim_checks": [
+        "Wassmer post (fetched 28 Nov; no date on page, reported 23 Nov by Game Developer): UE6 incl. Early Access won't include Blueprints or Actor Gameplay Framework; Verse + Scene Graph; June plan withdrawn; AI to massively help convert, if not fully automatic; on time or sooner; AI task cost down 13x YoY; Fortnite BR prototype ~3m lines Verse from >20,000 Blueprints, still validating; continued targeted UE5 development; UE6 AI tooling to UE5 from 5.9 preview; no UE6 date or UE5 support window.",
+        "Licence page (fetched 28 Nov): 5% royalty on lifetime gross revenue above $1M directly attributable to the UE product; Epic Games Store sales royalty-free; $1,850 per seat per year for non-game commercial use above $1M in past 12 months.",
+        "Game Developer 23 Nov: Sandfall '95 percent built' with Blueprints; Faliszek staying on UE5; Epic AI-first business model (as reported).",
+        "Arithmetic: ($10M - $1M) x 5% = $450,000 (hypothetical)."
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Unreal_Engine_booth.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Unreal_Engine_booth.jpg/1280px-Unreal_Engine_booth.jpg",
+      "image_license": "Official GDC via Wikimedia Commons, CC BY 2.0, 1 Mar 2017 (licence confirmed via Commons API 28 Nov); resized/cropped. Visually checked: Epic Games / Unreal Engine booth at GDC 2017.",
+      "profile_update": "Epic Games profile summary and latest_development added (UE6 drops Blueprints). Backlink automatic via company-epic-games tag.",
+      "publication_date": "2026-11-28",
+      "origin": "New 28 Nov research",
+      "editorial_qa": "AI checked primary sources, arithmetic, distinctness and photo licence/content; no human approval claimed",
+      "human_reviewed": false,
+      "editorial_review_status": "pending",
+      "status": "pending_merge"
+    }
+  ]
+}
