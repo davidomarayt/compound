@@ -2230,6 +2230,27 @@
         "status": "published"
       },
       {
+        "title": "Epic Drops Blueprints From Unreal Engine 6: Who Pays for the AI Migration?",
+        "url": "/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics/",
+        "source": "content/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "epic-games-unreal-engine-6-blueprints-ai-conversion-economics",
+        "date": "2026-11-28",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-epic-games",
+          "epic-games",
+          "video-games",
+          "game-engines",
+          "artificial-intelligence"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Escitalopram in Ireland | The serotonin transporter and the delay in symptom change",
         "url": "/health/medicines/escitalopram/",
         "source": "content/health/escitalopram.md",
@@ -4075,6 +4096,26 @@
         "status": "published"
       },
       {
+        "title": "Is Claude Sabotaging ML Research? What Anthropic Actually Limits, and Why It Matters for ANT",
+        "url": "/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust/",
+        "source": "content/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-claude-ml-research-limits-sabotage-claims-customer-trust",
+        "date": "2026-11-28",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "company-research",
+          "company-anthropic",
+          "stock-ant",
+          "anthropic",
+          "artificial-intelligence",
+          "ai-safety"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Is it financially worth returning to work after having children in Ireland?",
         "url": "/wealth/returning-to-work-childcare-costs-ireland/",
         "source": "content/wealth/returning-to-work-childcare-costs-ireland.md",
@@ -5836,6 +5877,27 @@
           "openai",
           "artificial-intelligence",
           "small-business"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI's Private Inference Test: Why Business Privacy Is Becoming a Hardware-Capacity Product",
+        "url": "/wealth/openai-private-inference-confidential-computing-enterprise-economics/",
+        "source": "content/wealth/openai-private-inference-confidential-computing-enterprise-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-private-inference-confidential-computing-enterprise-economics",
+        "date": "2026-11-28",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "artificial-intelligence",
+          "enterprise-software",
+          "data-privacy"
         ],
         "status": "published"
       },

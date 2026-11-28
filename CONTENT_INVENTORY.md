@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 465
+- Published editorial articles and guides: 468
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 344
+## Wealth articles and guides — 347
 
 - [A 2-Point Rate Shock Could Add Over €200 for One in Five Exposed Mortgage Borrowers](https://compound.ie/news/irish-mortgage-rate-stress-central-bank-2026/)
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
@@ -209,6 +209,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/)
 - [Employment Permits Portal Still Offline: What Applicants Can Do Now](https://compound.ie/news/ireland-employment-permits-portal-outage-2026/)
 - [Energy Affordability Plan: What Households Get Now and What Is Still a Promise](https://compound.ie/news/ireland-energy-affordability-action-plan-2026/)
+- [Epic Drops Blueprints From Unreal Engine 6: Who Pays for the AI Migration?](https://compound.ie/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics/)
 - [EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?](https://compound.ie/news/eu-rwanda-deportation-centre-cost-2026/)
 - [EV vs Petrol vs Diesel in Ireland: Which Is Cheapest to Own?](https://compound.ie/wealth/ev-vs-petrol-vs-diesel-ireland/)
 - [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/)
@@ -274,6 +275,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
 - [Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates](https://compound.ie/news/irish-farm-prices-2026-milk-fertiliser-cso/)
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/)
+- [Is Claude Sabotaging ML Research? What Anthropic Actually Limits, and Why It Matters for ANT](https://compound.ie/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust/)
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
 - [Jacobs Has a Record Backlog. Is Cash Keeping Up With It?](https://compound.ie/wealth/jacobs-backlog-cash-conversion-debt/)
@@ -350,6 +352,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/)
 - [OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?](https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/)
 - [OpenAI's OpenWorks: Can Subsidised AI Training Turn Small Businesses Into Lasting Customers?](https://compound.ie/wealth/openai-openworks-small-business-ai-subsidy-economics/)
+- [OpenAI's Private Inference Test: Why Business Privacy Is Becoming a Hardware-Capacity Product](https://compound.ie/wealth/openai-private-inference-confidential-computing-enterprise-economics/)
 - [Palmer Luckey's SLAB Project: $1B Valuation, Costs and Floating City Economics](https://compound.ie/news/palmer-luckey-slab-project-cost-valuation-floating-city/)
 - [Palo Alto Networks Grew 39%, but Gross Margin Fell 6.2 Points. What Changed?](https://compound.ie/wealth/palo-alto-growth-margin-acquisitions/)
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/)

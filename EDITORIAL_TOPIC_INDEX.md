@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 465 published articles and guides, 69 tools,
+**Included:** 468 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -131,6 +131,7 @@ For the complete register (including 510+ company profiles), open
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/) — **Wealth**
 - [Employment Permits Portal Still Offline: What Applicants Can Do Now](https://compound.ie/news/ireland-employment-permits-portal-outage-2026/) — **Wealth**
 - [Energy Affordability Plan: What Households Get Now and What Is Still a Promise](https://compound.ie/news/ireland-energy-affordability-action-plan-2026/) — **Wealth**
+- [Epic Drops Blueprints From Unreal Engine 6: Who Pays for the AI Migration?](https://compound.ie/wealth/epic-games-unreal-engine-6-blueprints-ai-conversion-economics/) — **Wealth**
 - [Escitalopram in Ireland | The serotonin transporter and the delay in symptom change](https://compound.ie/health/medicines/escitalopram/) — **Health**
 - [Esomeprazole in Ireland | The stomach proton pump and time to acid suppression](https://compound.ie/health/medicines/esomeprazole/) — **Health**
 - [EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?](https://compound.ie/news/eu-rwanda-deportation-centre-cost-2026/) — **Wealth**
@@ -226,6 +227,7 @@ For the complete register (including 510+ company profiles), open
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**
 - [Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates](https://compound.ie/news/irish-farm-prices-2026-milk-fertiliser-cso/) — **Wealth**
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/) — **Wealth**
+- [Is Claude Sabotaging ML Research? What Anthropic Actually Limits, and Why It Matters for ANT](https://compound.ie/wealth/anthropic-claude-ml-research-limits-sabotage-claims-customer-trust/) — **Wealth**
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/) — **Wealth**
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
 - [Jacobs Has a Record Backlog. Is Cash Keeping Up With It?](https://compound.ie/wealth/jacobs-backlog-cash-conversion-debt/) — **Wealth**
@@ -318,6 +320,7 @@ For the complete register (including 510+ company profiles), open
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/) — **Wealth**
 - [OpenAI's New Model-Access Approval Rule: Which AI Businesses Need Permission?](https://compound.ie/wealth/openai-usage-policy-intermediaries-approval-ai-business-risk/) — **Wealth**
 - [OpenAI's OpenWorks: Can Subsidised AI Training Turn Small Businesses Into Lasting Customers?](https://compound.ie/wealth/openai-openworks-small-business-ai-subsidy-economics/) — **Wealth**
+- [OpenAI's Private Inference Test: Why Business Privacy Is Becoming a Hardware-Capacity Product](https://compound.ie/wealth/openai-private-inference-confidential-computing-enterprise-economics/) — **Wealth**
 - [Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus](https://compound.ie/health/oral-glp-1-medicines-ireland/) — **Health**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
