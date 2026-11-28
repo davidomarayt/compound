@@ -28,7 +28,7 @@ def test_stocks_directory_keeps_complete_accessible_register(settings):
     assert "Price is not" in html
     assert 'rel="canonical"' in html
     assert '/static/earnings-directory.js?v=2' in html
-    assert '/static/stocks-research.css?v=1' in html
+    assert '/static/stocks-research.css?v=2' in html
     assert (out / "static/stocks-research.css").is_file()
     assert (out / "static/earnings-directory.js").is_file()
 
@@ -48,7 +48,7 @@ def test_company_template_keeps_filing_provenance_and_single_chart():
     assert 'id="stocks-company-coverage"' in page
     assert 'include "_company_quarters.html"' in page
     assert 'rel="canonical"' in page
-    assert '/static/stocks-research.css?v=1' in page
+    assert '/static/stocks-research.css?v=2' in page
 
 
 def test_directory_search_keeps_existing_controls_and_sector_chips():

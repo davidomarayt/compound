@@ -10,6 +10,7 @@
 
 {% elif is_solar or page.is_claims_page or page.url.startswith('/pia/') %}<meta name="description" content="{{ page.meta_description|e }}">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
+{% elif page.meta_description %}<meta name="description" content="{{ page.meta_description|e }}">
 {% else %}{{ super() }}{% endif %}
 {% endblock %}
 {% block head %}
