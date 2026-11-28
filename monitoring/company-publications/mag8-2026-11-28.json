@@ -4,9 +4,9 @@
   "timezone": "Europe/Dublin",
   "ticker": "LLY",
   "company": "Eli Lilly and Company",
-  "status": "in_progress",
+  "status": "published",
   "publication_kind": "new_analysis",
-  "new_articles_published": 0,
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/lilly-deal-charges-earnings.md",
   "canonical_url": "https://compound.ie/wealth/lilly-deal-charges-earnings/",
@@ -39,5 +39,59 @@
     "human_reviewed_by": null,
     "independent_second_pass": "All arithmetic recomputed from filings; peer comparison claims avoided; ex-IPR&D EPS labelled as Compound calculation; preliminary fair values caveated."
   },
-  "article_sha256": "7750445e6d8406c9717e47849c0c36bca7548a22492c8f4bfffde1fd94e53e71"
+  "article_sha256": "7750445e6d8406c9717e47849c0c36bca7548a22492c8f4bfffde1fd94e53e71",
+  "publication_state": "live_verified",
+  "pr": "https://github.com/davidomarayt/compound/pull/331",
+  "merge_commit": "3d9b6ccfd6d2ca819167010b872995c41a807890",
+  "ci": {
+    "head": "7288cfe7e646709ff8f77a3295d425fc50eb205c",
+    "result": "success (test, performance)",
+    "local_tests": "442 passed, 2 subtests passed"
+  },
+  "deployment": {
+    "run": 46173697555,
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-live",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-audit",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-finance-discovery",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "verification": {
+    "verified_at": "2026-11-28T18:10:00+00:00",
+    "url": "https://compound.ie/wealth/lilly-deal-charges-earnings/",
+    "status": 200,
+    "canonical": "https://compound.ie/wealth/lilly-deal-charges-earnings/",
+    "og_image": "https://compound.ie/static/discover/lilly-deal-charges-earnings-16x9.webp",
+    "og_dimensions": [
+      1200,
+      675
+    ],
+    "twitter_image_same": true,
+    "og_image_inspected": true,
+    "image_credit_rendered": true,
+    "sitemap": true,
+    "stock_backlink": true,
+    "stock_profile_links_article": true,
+    "article_ads_loader": true,
+    "consent_present": true,
+    "method": "Direct HTTPS fetch of live HTML, sitemap.xml, /stocks/lly/ and social image from this environment."
+  },
+  "outcome_notes": "One new article counted for 28 November after HTTP 200 live verification. No paid LLM API, no social posting."
 }
