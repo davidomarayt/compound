@@ -1,0 +1,173 @@
+{
+  "story_fingerprint": "ccdc70aecab5c9b9b6ea3e9b",
+  "company": "Best Buy Co., Inc.",
+  "ticker": "BBY",
+  "date": "2026-11-28",
+  "status": "in_progress",
+  "publication_state": "pr_open",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Best Buy's 6.1% comparable-sales growth (best in five years) produced almost no adjusted operating-margin expansion once $41m of IEEPA tariff refunds included in adjusted results are excluded; Marketplace and Ads gains were absorbed by SG&A and lower product margins.",
+  "article_path": "content/wealth/best-buy-sales-growth-margin-tariff-refunds.md",
+  "canonical_url": "https://compound.ie/wealth/best-buy-sales-growth-margin-tariff-refunds/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/764478/000076447826000045/bby-fy27q3xexx99.htm",
+    "https://www.sec.gov/Archives/edgar/data/764478/000076447826000037/bby-fy27q2xexx99.htm"
+  ],
+  "identity": {
+    "issuer": "Best Buy Co., Inc.",
+    "CIK": 764478,
+    "results_accession": "0000764478-26-000045",
+    "prior_quarter_accession": "0000764478-26-000037",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q3",
+    "period_end": "2026-10-31",
+    "release_date": "2026-11-24",
+    "currency": "USD",
+    "accounting": "US GAAP (unaudited, 10-Q not yet filed) with company-defined adjusted measures"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Analog Devices, Inc.",
+      "Best Buy Co., Inc.",
+      "Li Auto Inc.",
+      "Autodesk, Inc.",
+      "Burlington Stores, Inc.",
+      "HP Inc.",
+      "PDD Holdings Inc."
+    ],
+    "selection_reason": "Three different sectors (analog semiconductors, consumer-electronics retail, Chinese EV maker) from results filed 24-25 November 2026, none covered in the previous 14 days by any Compound company task (daily, private-company, Mag 8) and none in progress today. Autodesk was set aside because enterprise software (Workday) ran on 27 November; Burlington because Best Buy already covers US retail today; HP overlaps Dell's PC exposure (27 November); PDD's 6-K was not a results release when screened on 27 November."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth and content/news, company, private-company and Mag 8 ledgers for 14-28 Nov, open PRs (#323, #322 and older) and monitoring/earnings-review-queue.json (no job for this issuer). No existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "Revenue $10.236bn vs $9.672bn (+5.8%); enterprise comps +6.1% (highest in five years, company claim)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Highlights; 10236/9672",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Adjusted op income $446m vs $388m (+14.9%), 4.4% vs 4.0%; adjusted EPS $1.62 vs $1.40 (+16%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Non-GAAP reconciliation",
+      "result": "verified"
+    },
+    {
+      "claim": "Domestic gross rate 24.1% vs 23.3%, driven by $41m IEEPA refunds and Marketplace/Ads, offset by lower product margin rates; refunds not excluded from adjusted",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Domestic segment text; reconciliation has no refund adjustment",
+      "result": "verified"
+    },
+    {
+      "claim": "Ex-refund adj op income 405 (+4.4%); margin 3.96% vs 4.01%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "446-41; 405/388; 405/10236; 388/9672",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Domestic adj op income 422 vs 360 (+17%); ex-refund 381 (+5.8%); margin 4.05% vs 4.05%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment table",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Refund EPS effect ~$0.14 (41*(1-0.253)/212.5); ex-refund EPS ~$1.48 (+6%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Adjusted tax rate 25.3%; diluted shares 212.5m",
+      "result": "verified Compound estimate"
+    },
+    {
+      "claim": "Q2 refunds ~$34m; two-quarter total ~$75m",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "Q2 domestic gross profit text",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Ex-refund domestic gross rate +~0.4pt (41/9416=0.44pt)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "24.1-0.44 vs 23.3",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Domestic adj SG&A 19.6% vs 19.2%; intl adj op income $24m vs $28m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Segment table and text",
+      "result": "verified"
+    },
+    {
+      "claim": "Category comps: computing & mobile 49% +7.1%; CE +1.3%; appliances +2.9%; services +8.7%; entertainment 7% +27.5%; online +10.8%",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Revenue category table",
+      "result": "verified"
+    },
+    {
+      "claim": "FY27 guide comps 3.4-4.0%, adj op rate ~4.5%, adj EPS $6.90-7.05 (prior $6.70-6.90); Q4 comps 2-4%, op rate 4.9-5.1%; capex ~$750m; buybacks ~$300m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Guidance section",
+      "result": "verified"
+    },
+    {
+      "claim": "Cash $1.990bn vs $923m; inventory $8.904bn (+11.4%); payables $8.557bn (+16.9%, 96% of inventory); 9M OCF 1,563 - capex 536 = FCF 1,027 vs 155; dividends $606m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet and cash flow",
+      "result": "verified Compound calculation"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined non-GAAP/adjusted measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact; management claims are attributed.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "passed: pytest -q 439 passed, 2 subtests",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Best_Buy_Store_(13919887146).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Best_Buy_Store_%2813919887146%29.jpg/1920px-Best_Buy_Store_%2813919887146%29.jpg",
+    "photographer": "Mike Mozart (JeepersMedia), via Flickr; FlickreviewR verified",
+    "license": "CC BY 2.0",
+    "capture_date": "2014-04-19",
+    "description": "Best Buy store front, 1501 New Britain Ave, West Hartford, CT",
+    "dimensions": [
+      1920,
+      1434
+    ],
+    "archival": true,
+    "unique_asset": true,
+    "repository_image_sha256": "a15facc8d59fd62bc853c2273b234d879f424fb79104e8263e362a52c889a378",
+    "visual_inspection": "passed"
+  }
+}

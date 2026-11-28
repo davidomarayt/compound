@@ -1,0 +1,181 @@
+{
+  "story_fingerprint": "a0f8361b063073dcf927bfc3",
+  "company": "Li Auto Inc.",
+  "ticker": "LI",
+  "date": "2026-11-28",
+  "status": "in_progress",
+  "publication_state": "pr_open",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses (routine go-live 26 November 2026), subject to the factual, originality, image, editorial, advertising, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Li Auto's Q3 2026 margin and free-cash-flow recovery came from pricier product mix rather than volume; deliveries remain ~100k a quarter versus 158.7k in Q4 2024, and Q4 guidance needs ~40.5-43k deliveries a month in Nov-Dec, 40-48% above October.",
+  "article_path": "content/wealth/li-auto-pricing-mix-deliveries-cash-flow.md",
+  "canonical_url": "https://compound.ie/wealth/li-auto-pricing-mix-deliveries-cash-flow/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1791706/000110465926131768/tm2630657d1_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1791706/000110465926120858/tm2628723d1_ex99-1.htm"
+  ],
+  "identity": {
+    "issuer": "Li Auto Inc.",
+    "CIK": 1791706,
+    "results_accession": "0001104659-26-131768",
+    "delivery_update_accession": "0001104659-26-120858",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "release_date": "2026-11-25",
+    "currency": "RMB (US$ at RMB6.7045)",
+    "accounting": "US GAAP (unaudited) with company-defined non-GAAP (ex-SBC) and free cash flow"
+  },
+  "candidate_review": {
+    "screened_companies": [
+      "Analog Devices, Inc.",
+      "Best Buy Co., Inc.",
+      "Li Auto Inc.",
+      "Autodesk, Inc.",
+      "Burlington Stores, Inc.",
+      "HP Inc.",
+      "PDD Holdings Inc."
+    ],
+    "selection_reason": "Three different sectors (analog semiconductors, consumer-electronics retail, Chinese EV maker) from results filed 24-25 November 2026, none covered in the previous 14 days by any Compound company task (daily, private-company, Mag 8) and none in progress today. Autodesk was set aside because enterprise software (Workday) ran on 27 November; Burlington because Best Buy already covers US retail today; HP overlaps Dell's PC exposure (27 November); PDD's 6-K was not a results release when screened on 27 November."
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json, content/wealth and content/news, company, private-company and Mag 8 ledgers for 14-28 Nov, open PRs (#323, #322 and older) and monitoring/earnings-review-queue.json (no job for this issuer). No existing analysis or active attempt answers this question.",
+  "claim_checks": [
+    {
+      "claim": "Revenue RMB28.83bn (US$4.3bn) +5.4% yoy, +12.3% qoq; deliveries 99,964 +7.2%; op loss RMB699.6m vs Q2 RMB2.3bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Highlights",
+      "result": "verified"
+    },
+    {
+      "claim": "Vehicle margin 15.3% vs 9.4% Q2 and 15.5% Q3 2025; mix explanation; Q3 2025 included estimated MEGA recall costs",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Cost of sales and gross margin section",
+      "result": "verified"
+    },
+    {
+      "claim": "New MEGA RMB509,800; Li i9 RMB369,800; 2026 Li i6 RMB249,800; MEGA/i9 deliveries from Sept, i6 from Oct",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Product lineup update",
+      "result": "verified"
+    },
+    {
+      "claim": "Vehicle sales per delivery: 27,093.9/99,964=271.0k; 24,066.5/98,330=244.8k; 25,867.1/93,211=277.5k",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Key financial results table",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Quarterly deliveries Q4'24 158,696; Q4'25 109,194; Q1-Q3'26 95,142/98,330/99,964; Q4'25 -31% vs Q4'24",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Deliveries table; 109194/158696",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Opex RMB5.5bn incl R&D RMB3.1bn vs gross profit RMB4.8bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Operating expenses",
+      "result": "verified"
+    },
+    {
+      "claim": "Q4 guide deliveries 110-115k (+0.7% to +5.3%), revenue RMB31.7-33.1bn (+10.1% to +15.1%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Business outlook",
+      "result": "verified"
+    },
+    {
+      "claim": "October deliveries 29,025, >3,000 new MEGA; Nov-Dec need 80,975-85,975 = 40.5-43.0k/month, +39.5% to +48.1% vs October",
+      "source_indexes": [
+        1,
+        0
+      ],
+      "location_or_arithmetic": "Delivery update; arithmetic",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Guided revenue per vehicle ~RMB288k at both ends (31.7/110, 33.1/115) vs Q3 288.4k; Q4'25 implied revenue 31.7/1.101=28.79bn /109,194 = 263.7k (+9%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Outlook arithmetic",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "OCF RMB3.23bn; capex RMB1.27bn; FCF RMB1.96bn (US$292.6m) vs -8.91bn and -1.30bn; company explanations",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Cash flow section",
+      "result": "verified"
+    },
+    {
+      "claim": "Cash position RMB88.2bn (broad definition); trade and notes payable RMB40.72bn; borrowings 0.29+10.00=RMB10.29bn",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Balance sheet; footnote 7",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "US$1.0bn buyback (24 Mar 2026); ~US$694.4m repurchased to date; weighted ADS 975.5m vs 1,009.4m (-3.4%)",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Share repurchase section; EPS table",
+      "result": "verified Compound calculation"
+    },
+    {
+      "claim": "Li 6 deliveries in Netherlands and Norway from Q1 2027",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Global expansion",
+      "result": "verified as company plan"
+    }
+  ],
+  "fact_check_notes": [
+    "Company-defined non-GAAP/adjusted measures are labelled as such and kept distinct from GAAP.",
+    "Guidance is presented as company forecast, not fact; management claims are attributed.",
+    "Compound calculations are labelled in the article."
+  ],
+  "unresolved_material_claims": [],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_originality": "passed",
+    "editorial_qa": "passed pre-publication self-check; editorial_review_status remains pending (no human review claimed)",
+    "image_license": "passed",
+    "offline_tests": "passed: pytest -q 439 passed, 2 subtests",
+    "ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Li_Mega_in_Shanghai_June_2025.jpg",
+    "remote_asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Li_Mega_in_Shanghai_June_2025.jpg?width=2400 (3840px rendition)",
+    "photographer": "4300streetcar",
+    "license": "CC BY 4.0",
+    "capture_date": "2025-06-03",
+    "description": "Li Auto Mega minivan in Shanghai",
+    "dimensions": [
+      1920,
+      1280
+    ],
+    "archival": true,
+    "unique_asset": true,
+    "repository_image_sha256": "3a0628ec25077c15fd1180eaa4250df5969b852fa210a4ff17b3c98922676f13",
+    "visual_inspection": "passed"
+  }
+}
